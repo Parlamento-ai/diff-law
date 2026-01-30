@@ -1,7 +1,5 @@
 # Estudios sobre el comparado legislativo
 
-# comparados-research
-
 Investigación sobre documentos de comparación legislativa ("comparados") y formatos abiertos para su publicación.
 
 ## Motivación
