@@ -10,6 +10,40 @@ Nuestra propuesta es `AKN++`, una extensión del estándar [Akoma Ntoso](http://
 ## Changelog
 
 ---
+**01/02/2026**
+
+Con lo satisfactorio que se veía en el Proof of Concept, nos preguntamos por qué no abarcar más con este nuevo formato: ¿Cómo podríamos agregar la votación de cada cambio en la interfaz? Esto agregaría una nueva capa de visibilidad y transparencia.
+
+El formato propuesto sería agregarle a nuestro `changeSet` el resultado final del voto, con los nombres. La razón de esto es porque, de la misma manera que los cambios, la votación en el formato actual simplemente es mencionada, pero en ningún momento se computa con un resultado final.
+
+En el archivo `DEBATE.xml` solamente hacen el guión como en una pieza de teatro en la que dice "Senador Pérez: a favor". Pero en ningún momento se registra el voto final en el documento (e.g. `a-favor: 5, en-contra:7`). 
+
+Agregamos estos campos a nuestro `AKN++` formato, dentro del `changeSet`:
+
+```md
+  ┌───────────────┬───────────────────────────────────────────────────────────────┐
+  │   Elemento    │                           Propósito                           │
+  ├───────────────┼───────────────────────────────────────────────────────────────┤
+  │ aknpp:vote    │ Consolida el resultado de la votación                         │
+  ├───────────────┼───────────────────────────────────────────────────────────────┤
+  │ date          │ Cuándo se votó                                                │
+  ├───────────────┼───────────────────────────────────────────────────────────────┤
+  │ result        │ approved, rejected, withdrawn, inadmissible, pending          │
+  ├───────────────┼───────────────────────────────────────────────────────────────┤
+  │ source        │ Referencia al documento debate donde está el detalle completo │
+  ├───────────────┼───────────────────────────────────────────────────────────────┤
+  │ aknpp:for     │ Lista de votantes a favor                                     │
+  ├───────────────┼───────────────────────────────────────────────────────────────┤
+  │ aknpp:against │ Lista de votantes en contra                                   │
+  ├───────────────┼───────────────────────────────────────────────────────────────┤
+  │ aknpp:abstain │ Lista de abstenciones (vacío si no hay)                       │
+  ├───────────────┼───────────────────────────────────────────────────────────────┤
+  │ aknpp:voter   │ Cada persona, con href (ID único) y showAs (nombre legible)   │
+  └───────────────┴───────────────────────────────────────────────────────────────┘
+```
+
+
+---
 **31/01/2026**
 
 Después de los descubrimientos bien pesimistas de ayer, decidimos irnos más en profundidad en este formato maravilla llamado *Akoma Ntoso* (AKN).
