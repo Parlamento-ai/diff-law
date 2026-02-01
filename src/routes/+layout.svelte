@@ -18,7 +18,10 @@
 			<a href="/" class="hover:opacity-80 transition-opacity">
 				<img src="/diff-logo-horizontal.svg" alt="Diff by parlamento.ai" class="h-7" />
 			</a>
-			<a href="/boletines" class="btn-secondary ml-auto text-sm">
+			<a href="/docs" class="ml-auto text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors font-heading">
+				Docs
+			</a>
+			<a href="/boletines" class="btn-secondary text-sm">
 				Ejemplos
 			</a>
 		</div>
