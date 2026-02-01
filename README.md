@@ -1,32 +1,42 @@
-# Estudios sobre el comparado legislativo
+# sv
 
-Investigación sobre documentos de comparación legislativa ("comparados") y formatos abiertos para su publicación.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Motivación
+## Creating a project
 
-Somos [parlamento.ai](https://parlamento.ai), una startup de seguimiento legislativo que partió en Chile. Venimos del mundo del software, no del seguimiento legislativo, y eso nos ha permitido ver con ojos frescos algo que los insiders dan por sentado: **los comparados son aberrantes**.
+If you're seeing this, you've probably already done this step. Congrats!
 
-Los comparados son documentos que muestran la evolución de un proyecto de ley a medida que avanza por las comisiones parlamentarias. En Chile —y en la mayoría de los países— se publican como PDFs complejos, opacos y difíciles de seguir. Para alguien acostumbrado a herramientas como `git diff`, esto es incomprensible.
+```sh
+# create a new project
+npx sv create my-app
+```
 
-¿Por qué la legislación —que afecta a todos— se publica en formatos menos transparentes que el código de cualquier proyecto open source?
+To recreate this project with the same configuration:
 
-## Objetivo
+```sh
+# recreate this project
+npx sv create --template minimal --types ts --add prettier eslint tailwindcss="plugins:typography,forms" mdsvex mcp="ide:claude-code+setup:remote" --install yarn .
+```
 
-Explorar cómo hacer los comparados "correctamente":
+## Developing
 
-- Documentar el estado del arte internacional
-- Investigar formatos abiertos existentes (XML, Akoma Ntoso, USLM, etc.)
-- Proponer estándares más universales y legibles por máquina
-- Eventualmente, construir herramientas que hagan la evolución legislativa tan clara como un pull request
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-## Contribuir
+```sh
+npm run dev
 
-Si trabajas en seguimiento legislativo, transparencia parlamentaria, o simplemente te frustra la opacidad de cómo se publican las leyes, abre un issue o manda un PR.
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-## Contacto
+## Building
 
-Este proyecto es parte del trabajo de investigación de [parlamento.ai](https://parlamento.ai).
+To create a production version of your app:
 
----
+```sh
+npm run build
+```
 
-*"La democracia muere en la oscuridad... y también en PDFs ilegibles."*
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

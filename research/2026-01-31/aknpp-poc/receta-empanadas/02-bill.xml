@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 2: Empanadas de Pino
+  Documento: bill (proyecto que reforma la receta)
+
+  Contexto: La Senadora Cocinera propone una reforma profunda:
+    - art_2: Cambiar manteca por mantequilla (nivel 1)
+    - art_5: Permitir carne molida como alternativa (nivel 2)
+    - art_7: Agregar orégano a los condimentos (nivel 1)
+    - art_9: Eliminar las pasas (nivel 1 — polémica nacional)
+    - art_nuevo 11bis: Agregar opción de fritura (inserción)
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <bill name="reforma-empanadas">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/bill/emp-2024-01"/>
+          <FRBRuri value="/poc/bill/emp-2024-01"/>
+          <FRBRdate date="2024-04-01" name="presentación"/>
+          <FRBRauthor href="/poc/persona/senadora-cocinera"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/bill/emp-2024-01/esp@2024-04-01"/>
+          <FRBRuri value="/poc/bill/emp-2024-01/esp@2024-04-01"/>
+          <FRBRdate date="2024-04-01" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/bill/emp-2024-01/esp@2024-04-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/senadora-cocinera" showAs="Sen. Cocinera"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Proyecto de ley que <docTitle>reforma la receta de Empanadas de Pino</docTitle></p>
+      </longTitle>
+      <p>Moción de la <docProponent>Senadora Cocinera</docProponent>.</p>
+      <p>Modifica la <ref href="/poc/receta/empanadas-de-pino">Receta N° 2 sobre Empanadas de Pino</ref>.</p>
+    </preface>
+
+    <preamble>
+      <p>Considerando:</p>
+      <p>1. Que la manteca de cerdo es difícil de conseguir en supermercados urbanos.</p>
+      <p>2. Que las pasas en la empanada son un tema de división nacional que debe resolverse.</p>
+      <p>3. Que no ofrecer alternativa de fritura discrimina a las regiones que tradicionalmente fríen sus empanadas.</p>
+      <p>4. Que la prohibición absoluta de carne molida es innecesariamente restrictiva.</p>
+    </preamble>
+
+    <body>
+      <article eId="art_1">
+        <heading>Artículo 1</heading>
+        <content>
+          <p>Modifícase el <ref href="/poc/receta/empanadas-de-pino#art_2">artículo 2</ref> de la
+          Receta N° 2, reemplazando <mod>"manteca de cerdo" por "mantequilla sin sal"</mod>.</p>
+        </content>
+      </article>
+
+      <article eId="art_2">
+        <heading>Artículo 2</heading>
+        <content>
+          <p>Reemplázase el <ref href="/poc/receta/empanadas-de-pino#art_5">artículo 5</ref> de la
+          Receta N° 2 por el siguiente:</p>
+          <p><mod>"Artículo 5. Carne. Se utilizarán 500 gramos de carne de vacuno picada en cubos
+          pequeños. Alternativamente, se podrá utilizar carne molida gruesa cuando no sea posible
+          picar la carne a mano."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_3">
+        <heading>Artículo 3</heading>
+        <content>
+          <p>Modifícase el <ref href="/poc/receta/empanadas-de-pino#art_7">artículo 7</ref> de la
+          Receta N° 2, intercalando la palabra <ins>"orégano"</ins> entre "ají de color" y "sal".</p>
+        </content>
+      </article>
+
+      <article eId="art_4">
+        <heading>Artículo 4</heading>
+        <content>
+          <p>Modifícase el <ref href="/poc/receta/empanadas-de-pino#art_9">artículo 9</ref> de la
+          Receta N° 2, eliminando la expresión <del>"y un trozo pequeño de pasas"</del>.</p>
+        </content>
+      </article>
+
+      <article eId="art_5">
+        <heading>Artículo 5</heading>
+        <content>
+          <p>Intercálase en la Receta N° 2, a continuación del
+          <ref href="/poc/receta/empanadas-de-pino#art_11">artículo 11</ref>,
+          el siguiente artículo 11 bis:</p>
+          <p><ins>"Artículo 11 bis. Fritura. Como método alternativo al horneado, las empanadas
+          podrán freírse en aceite abundante a 180 grados Celsius durante 5 minutos por lado o
+          hasta que estén doradas. En este caso, no se aplicará el pintado con huevo del
+          artículo 11."</ins></p>
+        </content>
+      </article>
+    </body>
+
+    <aknpp:changeSet
+      base="/poc/receta/empanadas-de-pino/esp@2023-03-15"
+      result="/poc/receta/empanadas-de-pino/esp@2024-04-01">
+
+      <!-- art_2: manteca → mantequilla -->
+      <aknpp:articleChange article="art_2" type="substitute">
+        <aknpp:old>Se utilizarán 200 gramos de manteca de cerdo.</aknpp:old>
+        <aknpp:new>Se utilizarán 200 gramos de mantequilla sin sal.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- art_5: reescritura completa, permite carne molida -->
+      <aknpp:articleChange article="art_5" type="substitute">
+        <aknpp:old>Se utilizarán 500 gramos de carne de vacuno picada en cubos pequeños. Queda prohibido el uso de carne molida.</aknpp:old>
+        <aknpp:new>Se utilizarán 500 gramos de carne de vacuno picada en cubos pequeños. Alternativamente, se podrá utilizar carne molida gruesa cuando no sea posible picar la carne a mano.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- art_7: agregar orégano -->
+      <aknpp:articleChange article="art_7" type="substitute">
+        <aknpp:old>Se utilizarán: comino, ají de color, sal y pimienta negra al gusto.</aknpp:old>
+        <aknpp:new>Se utilizarán: comino, ají de color, orégano, sal y pimienta negra al gusto.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- art_9: eliminar pasas -->
+      <aknpp:articleChange article="art_9" type="substitute">
+        <aknpp:old>Cada empanada llevará, además del pino: un cuarto de huevo duro, 2 aceitunas negras y un trozo pequeño de pasas.</aknpp:old>
+        <aknpp:new>Cada empanada llevará, además del pino: un cuarto de huevo duro y 2 aceitunas negras.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- art_11bis: nuevo artículo sobre fritura -->
+      <aknpp:articleChange article="art_11bis" type="insert" after="art_11">
+        <aknpp:new>Como método alternativo al horneado, las empanadas podrán freírse en aceite abundante a 180 grados Celsius durante 5 minutos por lado o hasta que estén doradas. En este caso, no se aplicará el pintado con huevo del artículo 11.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </bill>
+</akomaNtoso>

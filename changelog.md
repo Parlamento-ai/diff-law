@@ -12,11 +12,11 @@ Pero tiene dos problemas.
 
 El primero es que nunca fue realmente adoptado y muchos países optaron por sus propias implementaciones basadas en XML.
 
-El segundo problema es que, si bien es muy completo, no tiene el concepto de un comparado, solamente comprende el `AMENDMENT` Que básicamente es el cambio escrito en lenguaje natural, pero que no es computable para generar un comparado de forma automática.
+El segundo problema es que, si bien es muy completo, no tiene el concepto de un comparado, solamente comprende el `AMENDMENT` que básicamente es el cambio escrito en lenguaje natural, pero que no es computable para generar un comparado de forma automática.
 
 La razón por la cual no tiene un comparado como un tipo nativo es que, en realidad, el comparado no tiene lugar oficial en el ritual legislativo. Lo que cuenta es el `AMENDMENT`, y luego cada uno calcula el comparado por su lado, y tal vez esa es la raíz del problema. 
 
-Aquí hay un resumen hecho por AI que ejemplifica el problema:
+Aquí un resumen que ejemplifica el problema:
 ```md
   La analogía: una receta de cocina
 
@@ -77,7 +77,7 @@ Este es un ejemplo del `AMENDMENT`, pero con el nuevo campo `changeSet`:
   </amendment>
 ```
 
-Este campo se le agregaría a cualquier tipo que pueda modificar la ley textualmente, como, por ejemplo, también el `BILL`.
+Este campo se le agregaría a cualquier tipo que pueda modificar la ley textualmente, como, por ejemplo el `BILL`.
 
 Con este sistema puedo cargar un `AMENDMENT`, gracias a los links volver al inicio (`ACT`), y volver a construir todos los cambios computados para saber el comparado actual de forma automática.
 
@@ -93,6 +93,8 @@ Para esos casos, se podría complejizar un poco más el formato, agregando cambi
   <articleChange old="art_25" type="repeal"/>
   <articleChange new="art_23" type="insert"/>
 ```
+
+Valdría la pena hacer un Proof of concept, para ver los límites de esta implementación.
 
 
 ---
