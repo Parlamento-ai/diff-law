@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 4: Ratatouille Niçoise
+  Documento: act (ley vigente / receta original)
+  Estado: Receta publicada en el Boletín Oficial de Gastronomía, 21/06/2022
+
+  La receta original es la ortodoxa niçoise, estricta y sin concesiones.
+  10 artículos en 4 títulos: Verduras, Aromáticas, Cocción, Presentación.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="receta-ratatouille-nicoise">
+
+    <meta>
+      <identification source="#autor">
+        <FRBRWork>
+          <FRBRthis value="/poc/receta/ratatouille-nicoise"/>
+          <FRBRuri value="/poc/receta/ratatouille-nicoise"/>
+          <FRBRdate date="2022-06-21" name="publicación"/>
+          <FRBRauthor href="/poc/persona/deputee-nicoise"/>
+          <FRBRcountry value="fr"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/receta/ratatouille-nicoise/fra@2022-06-21"/>
+          <FRBRuri value="/poc/receta/ratatouille-nicoise/fra@2022-06-21"/>
+          <FRBRdate date="2022-06-21" name="versión"/>
+          <FRBRlanguage language="fra"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/receta/ratatouille-nicoise/fra@2022-06-21/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#autor">
+        <TLCPerson eId="autor" href="/poc/persona/deputee-nicoise" showAs="Dip. Niçoise"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Receta N° 4: <docTitle>Ratatouille Niçoise</docTitle></p>
+      </longTitle>
+      <p>Receta tradicional de ratatouille niçoise, publicada en el Boletín Oficial de la Gastronomía.</p>
+    </preface>
+
+    <body>
+      <!-- TÍTULO I: Las Verduras -->
+      <section eId="sec_verduras">
+        <heading>Título I — Las Verduras</heading>
+
+        <article eId="art_1">
+          <heading>Artículo 1. Verduras obligatorias</heading>
+          <content><p>La ratatouille niçoise se compone obligatoriamente de las siguientes verduras: berenjenas, calabacines, pimientos rojos y verdes, tomates y cebollas. Queda prohibida la adición de cualquier otra verdura.</p></content>
+        </article>
+
+        <article eId="art_2">
+          <heading>Artículo 2. Procedencia</heading>
+          <content><p>Las verduras deben provenir del mercado local y ser de temporada, cosechadas entre junio y septiembre. Queda prohibido el uso de verduras importadas o fuera de temporada.</p></content>
+        </article>
+
+        <article eId="art_3">
+          <heading>Artículo 3. Corte</heading>
+          <content><p>Cada verdura debe ser cortada por separado en rodajas de 3 mm de espesor. Queda prohibido todo corte irregular, en dados o en trozos gruesos.</p></content>
+        </article>
+
+        <article eId="art_4">
+          <heading>Artículo 4. Sin sustituciones</heading>
+          <content><p>Queda expresamente prohibido el uso de verduras congeladas, en conserva o de cualquier sustituto. Solo se permiten verduras frescas enteras.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO II: Las Aromáticas -->
+      <section eId="sec_aromaticas">
+        <heading>Título II — Las Aromáticas</heading>
+
+        <article eId="art_5">
+          <heading>Artículo 5. Base aromática</heading>
+          <content><p>La base aromática se compone de ajo fresco (4 dientes mínimo), tomillo fresco y laurel. Queda prohibido el uso de ajo en polvo, hierbas secas o cualquier aromática no listada.</p></content>
+        </article>
+
+        <article eId="art_6">
+          <heading>Artículo 6. Aceite de oliva</heading>
+          <content><p>Se utilizará exclusivamente aceite de oliva extra virgen de Provence, a razón de 80 ml mínimo. Queda prohibido el uso de cualquier otro aceite o grasa.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO III: La Cocción -->
+      <section eId="sec_coccion">
+        <heading>Título III — La Cocción</heading>
+
+        <article eId="art_7">
+          <heading>Artículo 7. Cocción separada</heading>
+          <content><p>Cada verdura debe ser salteada por separado a fuego vivo en aceite de oliva antes del ensamblaje. Queda prohibida la cocción de varias verduras juntas en la misma sartén.</p></content>
+        </article>
+
+        <article eId="art_8">
+          <heading>Artículo 8. Ensamblaje</heading>
+          <content><p>Las verduras cocidas se disponen en capas alternas en una fuente de barro. Cada capa debe ser sazonada individualmente. Queda prohibido el uso de fuentes de metal o vidrio.</p></content>
+        </article>
+
+        <article eId="art_9">
+          <heading>Artículo 9. Horno</heading>
+          <content><p>La cocción final se efectúa en horno a 180°C durante 45 minutos mínimo. Queda prohibido el uso del microondas, la cocción al vapor o cualquier otro método de cocción.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO IV: Presentación -->
+      <section eId="sec_presentacion">
+        <heading>Título IV — Presentación</heading>
+
+        <article eId="art_10">
+          <heading>Artículo 10. Servicio</heading>
+          <content><p>La ratatouille se sirve tibia, nunca caliente ni fría, acompañada de pan de campo. Queda prohibido el servicio en porción individual o en un recipiente distinto a la fuente de cocción.</p></content>
+        </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

@@ -8,7 +8,8 @@ const POC_DIR = 'research/2026-02-01/aknpp-poc';
 const BOLETIN_DIRS: Record<string, string> = {
 	'empanadas-de-pino': 'receta-empanadas',
 	'pan-de-campo': 'receta-pan',
-	'paella-valenciana': 'receta-paella'
+	'paella-valenciana': 'receta-paella',
+	'ratatouille-nicoise': 'receta-ratatouille'
 };
 
 const SLUG_MAP: Record<string, string> = {

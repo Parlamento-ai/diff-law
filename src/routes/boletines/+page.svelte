@@ -2,6 +2,7 @@
 	import BoletinCard from '$lib/components/boletin/BoletinCard.svelte';
 	import FlagCl from '~icons/circle-flags/cl';
 	import FlagEs from '~icons/circle-flags/es';
+	import FlagFr from '~icons/circle-flags/fr';
 	import type { Component } from 'svelte';
 
 	let { data } = $props();
@@ -9,16 +10,18 @@
 	const flagMap: Record<string, Component> = {
 		'empanadas-de-pino': FlagCl,
 		'pan-de-campo': FlagCl,
-		'paella-valenciana': FlagEs
+		'paella-valenciana': FlagEs,
+		'ratatouille-nicoise': FlagFr
 	};
 
 	const emojiMap: Record<string, string> = {
 		'empanadas-de-pino': '🥟',
 		'pan-de-campo': '🍞',
-		'paella-valenciana': '🥘'
+		'paella-valenciana': '🥘',
+		'ratatouille-nicoise': '🍆'
 	};
 
-	const order = ['paella-valenciana', 'empanadas-de-pino', 'pan-de-campo'];
+	const order = ['ratatouille-nicoise', 'paella-valenciana', 'empanadas-de-pino', 'pan-de-campo'];
 	const sorted = $derived(
 		[...data.boletines].sort((a, b) => order.indexOf(a.slug) - order.indexOf(b.slug))
 	);

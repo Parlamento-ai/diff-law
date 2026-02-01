@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 4: Ratatouille Niçoise
+  Documento: amendment 3 — "La enmienda del microondas"
+  Versión: con sistema de votación AKN++
+
+  Contexto: El Diputado Lyonés propone permitir el microondas como alternativa
+  al horno (sustitución del artículo 9). La enmienda es RETIRADA antes de la
+  votación tras un escándalo público — chefs con estrella Michelin publican
+  una tribuna en Le Monde y el hashtag #PasDeMicroOndes se vuelve viral.
+
+  Votación: RETIRADA antes del voto.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <amendment name="enmienda-microondas">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/amendment/rat-2025-01-ind3"/>
+          <FRBRuri value="/poc/amendment/rat-2025-01-ind3"/>
+          <FRBRdate date="2025-05-01" name="presentación"/>
+          <FRBRauthor href="/poc/persona/depute-lyonnais"/>
+          <FRBRcountry value="fr"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/amendment/rat-2025-01-ind3/fra@2025-05-01"/>
+          <FRBRuri value="/poc/amendment/rat-2025-01-ind3/fra@2025-05-01"/>
+          <FRBRdate date="2025-05-01" name="versión"/>
+          <FRBRlanguage language="fra"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/amendment/rat-2025-01-ind3/fra@2025-05-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/depute-lyonnais" showAs="Dip. Lyonés"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p>Enmienda del <docProponent>Diputado Lyonés</docProponent> al proyecto
+      <affectedDocument href="/poc/bill/rat-2025-01">que moderniza la receta de Ratatouille Niçoise</affectedDocument>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modifícase el artículo 9 de la Receta N° 4, sustituyendo su texto por el siguiente:</p>
+        <p>"Artículo 9. Horno y alternativas. La cocción final se efectúa en horno a 200°C
+        durante 30 minutos mínimo o, alternativamente, en microondas a potencia media
+        durante 15 minutos. La fuente de barro sigue siendo obligatoria en ambos casos."</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>El microondas está presente en el 92% de los hogares franceses. Para los estudiantes,
+        las personas mayores y las familias en viviendas colectivas sin horno, es a menudo el
+        único aparato de cocción disponible. Excluir el microondas es excluir a una parte
+        de la población de la cocina tradicional. Un microondas moderno a potencia media da
+        un resultado perfectamente honorable.</p>
+      </amendmentJustification>
+    </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      RETIRADA — la enmienda nunca fue votada
+      base y result son iguales porque no produce cambio
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/ratatouille-nicoise/fra@2025-04-20"
+      result="/poc/receta/ratatouille-nicoise/fra@2025-04-20">
+
+      <aknpp:vote date="2025-05-01"
+                  result="withdrawn"
+                  source="/poc/debate/rat-2025-01-comision-3">
+        <aknpp:for/>
+        <aknpp:against/>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- Propuesta retirada: permitir el microondas -->
+      <aknpp:articleChange article="art_9" type="substitute">
+        <aknpp:old>La cocción final se efectúa en horno a 200°C durante 30 minutos mínimo. Queda prohibido el uso del microondas.</aknpp:old>
+        <aknpp:new>La cocción final se efectúa en horno a 200°C durante 30 minutos mínimo o, alternativamente, en microondas a potencia media durante 15 minutos. La fuente de barro sigue siendo obligatoria en ambos casos.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </amendment>
+</akomaNtoso>

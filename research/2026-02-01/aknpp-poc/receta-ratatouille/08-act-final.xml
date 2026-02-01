@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 4: Ratatouille Niçoise
+  Documento: act (ley promulgada / receta final)
+
+  Estado: Resultado de aplicar el bill + enmiendas aprobadas (2 y 4).
+  Las enmiendas 1 (kétchup), 3 (microondas) y 5 (express) NO se aplicaron.
+
+  Cambios netos respecto al original:
+    - art_2: MODIFICADO. Verduras de supermercado todo el año (del bill, no revertido)
+    - art_5bis: NUEVO. Albahaca y pimiento de Espelette opcionales (de la enmienda 4)
+    - art_9: MODIFICADO. 30 min a 200°C (del bill, no revertido)
+
+  Sin cambios (gracias al blindaje niçois):
+    - art_3 (rodajas de 3mm — el bill lo cambió, la enmienda 2 lo revirtió)
+    - art_7 (cocción separada — el bill lo cambió, la enmienda 2 lo revirtió)
+    - art_1, art_4, art_5, art_6, art_8, art_10
+
+  Enmiendas que NO produjeron cambio:
+    - Enmienda 1 (kétchup): RECHAZADA por unanimidad
+    - Enmienda 3 (microondas): RETIRADA por el autor
+    - Enmienda 5 (express): RECHAZADA 2-6
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="receta-ratatouille-nicoise">
+
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/poc/receta/ratatouille-nicoise"/>
+          <FRBRuri value="/poc/receta/ratatouille-nicoise"/>
+          <FRBRdate date="2022-06-21" name="publicación"/>
+          <FRBRauthor href="/poc/persona/deputee-nicoise"/>
+          <FRBRcountry value="fr"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/receta/ratatouille-nicoise/fra@2025-07-01"/>
+          <FRBRuri value="/poc/receta/ratatouille-nicoise/fra@2025-07-01"/>
+          <FRBRdate date="2025-07-01" name="versión"/>
+          <FRBRlanguage language="fra"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/receta/ratatouille-nicoise/fra@2025-07-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <lifecycle source="#congreso">
+        <eventRef eId="e1" date="2022-06-21" type="generation" source="#autor"/>
+        <eventRef eId="e2" date="2025-03-15" type="amendment" source="/poc/bill/rat-2025-01"/>
+        <eventRef eId="e3" date="2025-04-01" type="amendment" source="/poc/amendment/rat-2025-01-ind1"/>
+        <eventRef eId="e4" date="2025-04-20" type="amendment" source="/poc/amendment/rat-2025-01-ind2"/>
+        <eventRef eId="e5" date="2025-05-01" type="amendment" source="/poc/amendment/rat-2025-01-ind3"/>
+        <eventRef eId="e6" date="2025-05-10" type="amendment" source="/poc/amendment/rat-2025-01-ind4"/>
+        <eventRef eId="e7" date="2025-05-20" type="amendment" source="/poc/amendment/rat-2025-01-ind5"/>
+        <eventRef eId="e8" date="2025-07-01" type="generation" source="#congreso"/>
+      </lifecycle>
+      <references source="#congreso">
+        <TLCPerson eId="autor" href="/poc/persona/deputee-nicoise" showAs="Dip. Niçoise"/>
+        <TLCOrganization eId="congreso" href="/poc/org/congreso" showAs="Congreso de Gastronomía"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Receta N° 4: <docTitle>Ratatouille Niçoise</docTitle></p>
+      </longTitle>
+      <p>Receta tradicional de ratatouille niçoise, modificada por Ley de Modernización Culinaria (2025).</p>
+    </preface>
+
+    <body>
+      <!-- TÍTULO I: Las Verduras -->
+      <section eId="sec_verduras">
+        <heading>Título I — Las Verduras</heading>
+
+        <article eId="art_1">
+          <heading>Artículo 1. Verduras obligatorias</heading>
+          <content><p>La ratatouille niçoise se compone obligatoriamente de las siguientes verduras: berenjenas, calabacines, pimientos rojos y verdes, tomates y cebollas. Queda prohibida la adición de cualquier otra verdura.</p></content>
+        </article>
+
+        <article eId="art_2">
+          <heading>Artículo 2. Procedencia</heading>
+          <content><p>Las verduras pueden provenir de cualquier comercio o supermercado y ser utilizadas todo el año. Las verduras de temporada y de mercado local son recomendadas pero no obligatorias.</p></content>
+        </article>
+
+        <article eId="art_3">
+          <heading>Artículo 3. Corte</heading>
+          <content><p>Cada verdura debe ser cortada por separado en rodajas de 3 mm de espesor. Queda prohibido todo corte irregular, en dados o en trozos gruesos.</p></content>
+        </article>
+
+        <article eId="art_4">
+          <heading>Artículo 4. Sin sustituciones</heading>
+          <content><p>Queda expresamente prohibido el uso de verduras congeladas, en conserva o de cualquier sustituto. Solo se permiten verduras frescas enteras.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO II: Las Aromáticas -->
+      <section eId="sec_aromaticas">
+        <heading>Título II — Las Aromáticas</heading>
+
+        <article eId="art_5">
+          <heading>Artículo 5. Base aromática</heading>
+          <content><p>La base aromática se compone de ajo fresco (4 dientes mínimo), tomillo fresco y laurel. Queda prohibido el uso de ajo en polvo, hierbas secas o cualquier aromática no listada.</p></content>
+        </article>
+
+        <article eId="art_5bis">
+          <heading>Artículo 5 bis. Aromáticas opcionales</heading>
+          <content><p>En complemento de la base aromática del artículo 5, el cocinero puede añadir albahaca fresca y una pizca de pimiento de Espelette. Estas aromáticas son facultativas y no sustituyen a las aromáticas obligatorias.</p></content>
+        </article>
+
+        <article eId="art_6">
+          <heading>Artículo 6. Aceite de oliva</heading>
+          <content><p>Se utilizará exclusivamente aceite de oliva extra virgen de Provence, a razón de 80 ml mínimo. Queda prohibido el uso de cualquier otro aceite o grasa.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO III: La Cocción -->
+      <section eId="sec_coccion">
+        <heading>Título III — La Cocción</heading>
+
+        <article eId="art_7">
+          <heading>Artículo 7. Cocción separada</heading>
+          <content><p>Cada verdura debe ser salteada por separado a fuego vivo en aceite de oliva antes del ensamblaje. Queda prohibida la cocción de varias verduras juntas en la misma sartén.</p></content>
+        </article>
+
+        <article eId="art_8">
+          <heading>Artículo 8. Ensamblaje</heading>
+          <content><p>Las verduras cocidas se disponen en capas alternas en una fuente de barro. Cada capa debe ser sazonada individualmente. Queda prohibido el uso de fuentes de metal o vidrio.</p></content>
+        </article>
+
+        <article eId="art_9">
+          <heading>Artículo 9. Horno</heading>
+          <content><p>La cocción final se efectúa en horno a 200°C durante 30 minutos mínimo. Queda prohibido el uso del microondas.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO IV: Presentación -->
+      <section eId="sec_presentacion">
+        <heading>Título IV — Presentación</heading>
+
+        <article eId="art_10">
+          <heading>Artículo 10. Servicio</heading>
+          <content><p>La ratatouille se sirve tibia, nunca caliente ni fría, acompañada de pan de campo. Queda prohibido el servicio en porción individual o en un recipiente distinto a la fuente de cocción.</p></content>
+        </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

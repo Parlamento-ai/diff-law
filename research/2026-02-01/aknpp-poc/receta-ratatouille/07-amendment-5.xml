@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 4: Ratatouille Niçoise
+  Documento: amendment 5 — "La enmienda express"
+  Versión: con sistema de votación AKN++
+
+  Contexto: El Diputado Parisino intenta una última ofensiva: reducir el tiempo
+  de horno a 20 minutos y aumentar la temperatura a 220°C para una versión
+  "gratinada express".
+
+  Votación: RECHAZADO 2-6. Solo el Dip. Parisino y el Dip. Lyonés votan a favor.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <amendment name="enmienda-express">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/amendment/rat-2025-01-ind5"/>
+          <FRBRuri value="/poc/amendment/rat-2025-01-ind5"/>
+          <FRBRdate date="2025-05-20" name="presentación"/>
+          <FRBRauthor href="/poc/persona/depute-parisien"/>
+          <FRBRcountry value="fr"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/amendment/rat-2025-01-ind5/fra@2025-05-20"/>
+          <FRBRuri value="/poc/amendment/rat-2025-01-ind5/fra@2025-05-20"/>
+          <FRBRdate date="2025-05-20" name="versión"/>
+          <FRBRlanguage language="fra"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/amendment/rat-2025-01-ind5/fra@2025-05-20/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/depute-parisien" showAs="Dip. Parisino"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p>Enmienda del <docProponent>Diputado Parisino</docProponent> al proyecto
+      <affectedDocument href="/poc/bill/rat-2025-01">que moderniza la receta de Ratatouille Niçoise</affectedDocument>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modifícase el artículo 9 de la Receta N° 4, sustituyendo su texto por el siguiente:</p>
+        <p>"Artículo 9. Horno express. La cocción final se efectúa en horno a 220°C durante
+        20 minutos mínimo, en modo grill para obtener una superficie gratinada. Queda prohibido
+        el uso del microondas."</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>Treinta minutos de horno siguen siendo excesivos para un plato del día a día. A 220°C
+        en modo grill, la ratatouille desarrolla una superficie gratinada crujiente en solo
+        20 minutos, conservando la textura tierna de las verduras en el interior. Esta técnica
+        se utiliza con éxito en los restaurantes rápidos gastronómicos de París y Lyon. El
+        tiempo ganado hace la receta compatible con el ritmo de vida de los activos.</p>
+      </amendmentJustification>
+    </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      RECHAZADO — la ratatouille necesita su tiempo
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/ratatouille-nicoise/fra@2025-05-10"
+      result="/poc/receta/ratatouille-nicoise/fra@2025-05-10">
+
+      <aknpp:vote date="2025-05-20"
+                  result="rejected"
+                  source="/poc/debate/rat-2025-01-comision-5">
+        <aknpp:for>
+          <aknpp:voter href="/poc/persona/depute-parisien" showAs="Dip. Parisino"/>
+          <aknpp:voter href="/poc/persona/depute-lyonnais" showAs="Dip. Lyonés"/>
+        </aknpp:for>
+        <aknpp:against>
+          <aknpp:voter href="/poc/persona/deputee-nicoise" showAs="Dip. Niçoise"/>
+          <aknpp:voter href="/poc/persona/deputee-provencale" showAs="Dip. Provenzal"/>
+          <aknpp:voter href="/poc/persona/deputee-bretonne" showAs="Dip. Bretona"/>
+          <aknpp:voter href="/poc/persona/depute-bordelais" showAs="Dip. Bordelés"/>
+          <aknpp:voter href="/poc/persona/deputee-alsacienne" showAs="Dip. Alsaciana"/>
+          <aknpp:voter href="/poc/persona/depute-marseillais" showAs="Dip. Marsellés"/>
+        </aknpp:against>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- Propuesta rechazada: reducir a 20min/220°C en modo grill -->
+      <aknpp:articleChange article="art_9" type="substitute">
+        <aknpp:old>La cocción final se efectúa en horno a 200°C durante 30 minutos mínimo. Queda prohibido el uso del microondas.</aknpp:old>
+        <aknpp:new>La cocción final se efectúa en horno a 220°C durante 20 minutos mínimo, en modo grill para obtener una superficie gratinada. Queda prohibido el uso del microondas.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </amendment>
+</akomaNtoso>

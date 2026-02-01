@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 4: Ratatouille Niçoise
+  Documento: amendment 1 — "La enmienda del kétchup"
+  Versión: con sistema de votación AKN++
+
+  Contexto: El Diputado Parisino, llevado por su impulso modernizador, propone
+  añadir kétchup como condimento aceptable (nuevo artículo 6 bis).
+
+  Votación: RECHAZADO por unanimidad. 0 a favor, 8 en contra.
+  Incluso los modernizadores consideran que esto es ir demasiado lejos.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <amendment name="enmienda-ketchup">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/amendment/rat-2025-01-ind1"/>
+          <FRBRuri value="/poc/amendment/rat-2025-01-ind1"/>
+          <FRBRdate date="2025-04-01" name="presentación"/>
+          <FRBRauthor href="/poc/persona/depute-parisien"/>
+          <FRBRcountry value="fr"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/amendment/rat-2025-01-ind1/fra@2025-04-01"/>
+          <FRBRuri value="/poc/amendment/rat-2025-01-ind1/fra@2025-04-01"/>
+          <FRBRdate date="2025-04-01" name="versión"/>
+          <FRBRlanguage language="fra"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/amendment/rat-2025-01-ind1/fra@2025-04-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/depute-parisien" showAs="Dip. Parisino"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p>Enmienda del <docProponent>Diputado Parisino</docProponent> al proyecto
+      <affectedDocument href="/poc/bill/rat-2025-01">que moderniza la receta de Ratatouille Niçoise</affectedDocument>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <p>Intercálase en la Receta N° 4, a continuación del artículo 6, el siguiente artículo 6 bis:</p>
+        <p>"Artículo 6 bis. Condimentos modernos. El kétchup, la salsa barbacoa o la salsa de soja
+        pueden añadirse como condimento complementario al momento del servicio,
+        a discreción del consumidor."</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>La cocina francesa debe abrirse al mundo. El kétchup es el condimento más consumido
+        en Francia por los menores de 25 años. Prohibir a las nuevas generaciones acompañar
+        la ratatouille según sus gustos es una forma de elitismo culinario que aleja a la
+        juventud de la cocina tradicional en lugar de acercarla.</p>
+      </amendmentJustification>
+    </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      RECHAZADO — unanimidad en contra
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/ratatouille-nicoise/fra@2025-03-15"
+      result="/poc/receta/ratatouille-nicoise/fra@2025-03-15">
+
+      <aknpp:vote date="2025-04-01"
+                  result="rejected"
+                  source="/poc/debate/rat-2025-01-comision-1">
+        <aknpp:for/>
+        <aknpp:against>
+          <aknpp:voter href="/poc/persona/deputee-nicoise" showAs="Dip. Niçoise"/>
+          <aknpp:voter href="/poc/persona/depute-parisien" showAs="Dip. Parisino"/>
+          <aknpp:voter href="/poc/persona/deputee-provencale" showAs="Dip. Provenzal"/>
+          <aknpp:voter href="/poc/persona/depute-lyonnais" showAs="Dip. Lyonés"/>
+          <aknpp:voter href="/poc/persona/deputee-bretonne" showAs="Dip. Bretona"/>
+          <aknpp:voter href="/poc/persona/depute-bordelais" showAs="Dip. Bordelés"/>
+          <aknpp:voter href="/poc/persona/deputee-alsacienne" showAs="Dip. Alsaciana"/>
+          <aknpp:voter href="/poc/persona/depute-marseillais" showAs="Dip. Marsellés"/>
+        </aknpp:against>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- Propuesta rechazada: añadir kétchup como condimento -->
+      <aknpp:articleChange article="art_6bis" type="insert" after="art_6">
+        <aknpp:new>El kétchup, la salsa barbacoa o la salsa de soja pueden añadirse como condimento complementario al momento del servicio, a discreción del consumidor.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </amendment>
+</akomaNtoso>
