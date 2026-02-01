@@ -1,28 +1,11 @@
-# diff-law
+# Diff by Parlamento.ai
 
-Herramienta para generar **comparados legislativos** de forma automática. El problema que resolvemos es simple: cuando se modifica una ley, no existe un formato estándar ni una herramienta pública que permita ver lado a lado qué cambió. Cada parlamento hace lo suyo, muchos solo publican PDFs, y el ciudadano queda a ciegas.
+Herramienta para generar **comparados legislativos** de forma automática. 
+
+El problema: cuando se modifica una ley, no existe un formato estándar ni una herramienta pública que permita ver lado a lado qué cambió. Cada parlamento hace lo suyo, muchos solo publican PDFs, y el ciudadano queda a ciegas.
 
 Nuestra propuesta es `AKN++`, una extensión del estándar [Akoma Ntoso](http://www.akomantoso.org/) que agrega un `changeSet` computable a los documentos legislativos, permitiendo reconstruir el comparado de cualquier modificación de forma automática.
 
-## Setup
-
-```sh
-npm install
-```
-
-## Desarrollo
-
-```sh
-npm run dev
-```
-
-## Build
-
-```sh
-npm run build
-```
-
----
 
 ## Changelog
 
