@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Akoma Ntoso Version 1.0. Part 2: Specifications
+     OASIS Standard
+     29 August 2018
+     Copyright (c) OASIS Open 2018. All Rights Reserved.
+     Source: http://docs.oasis-open.org/legaldocml/akn-core/v1.0/os/part2-specs/examples/
+     Latest version of the specification:  http://docs.oasis-open.org.legaldocml/akn-core/v1.0/akn-core-v1.0-part2-specs.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legaldocml/ipr.php
+-->
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0 ../schemas/akomantoso30.xsd " xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:myTags="http://mytags.xsd">
+	<!-- Task funded by UN/DESA. Analysis and markup performed by Monica Palmirani, CIRSFID, University of Bologna -->
+		<!-- Level 5 of compliance -->
+	<bill contains="originalVersion" name="bill">
+		<!-- example of bill with red-line method -->
+		<meta>
+			<identification source="#editor">
+				<FRBRWork>
+					<FRBRthis value="/akn/za/bill/2006-12-23/B24/!main"/>
+					<FRBRuri value="/akn/za/bill/2006-12-23/B24"/>
+					<FRBRdate date="2006-12-23" name="Enactment"/>
+					<FRBRauthor href="#parliament" as="#author"/>
+					<FRBRcountry value="za"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="/akn/za/bill/2006-12-23/B24/eng@/!main"/>
+					<FRBRuri value="/akn/za/bill/2006-12-23/B24//eng@"/>
+					<FRBRdate date="2010-11-24" name="Expression"/>
+					<FRBRauthor href="#somebody" as="#editor"/>
+					<FRBRlanguage language="eng"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="/akn/za/bill/2006-12-23/B24/eng@/!main.xml"/>
+					<FRBRuri value="/akn/za/bill/2006-12-23/B24/eng@/!main.akn"/>
+					<FRBRdate date="2010-11-24" name="XMLConversion"/>
+					<FRBRauthor href="#somebody" as="#editor"/>
+				</FRBRManifestation>
+			</identification>
+			<publication eId="publication" date="2006-01-26" showAs="Official Gazette" name="BG" number="28426"/>
+			<classification source="#somebody">
+				<keyword value="education" showAs="Education" dictionary="/eurovoc/step1/step2/voce4"/>
+			</classification>
+			<lifecycle source="#editor">
+				<eventRef date="2006-01-23" eId="e1" source="#ro1" type="generation"/>
+			</lifecycle>
+			<workflow source="#editor">
+				<step eId="step1" date="2005-01-01" by="#parliament" outcome="#firstReading" as="#legislator" href="/ke/bill/1345/eng@2004-12-15/!main">
+					<myTags:proprietary source="#editor">
+						<myWorkFlowTags/>
+					</myTags:proprietary>
+				</step>
+				<step eId="step2" date="2005-04-01" by="#parliament" href="/ke/bill/1345/eng@1979-06-13/!main" outcome="#sec_ondReading" as="#legislator"/>
+			</workflow>
+			<analysis source="#somebody">
+				<activeModifications>
+					<textualMod eId="amod_1" type="insertion">
+						<source href="#mod_1"/>
+						<destination href="/akn/za/act/1996-10-10/84/!main#sec_1"/>
+						<old href="#mod_1__qstr_1"/>
+						<new href="#mod_1__qstr_2"/>
+					</textualMod>
+					<textualMod eId="amod2" type="insertion">
+						<source href="#mod2"/>
+						<destination href="/akn/za/act/1996-10-10/84/!main#sec_1"/>
+						<old href="#mod_2__qstr_1"/>
+						<new href="#mod_2_qstr_2"/>
+					</textualMod>
+					<textualMod eId="amod_3" type="substitution">
+						<source href="#mod_3"/>
+						<destination href="/akn/za/act1996-10-10/84/!main#sec_9__subsec_1"/>
+						<new href="#mod_3__qstr_1"/>
+					</textualMod>
+				</activeModifications>
+			</analysis>
+			<references source="#editor">
+				<original eId="ro1" href="/akn/za/bill/2006-12-23/B24/!main" showAs="Original"/>
+				<activeRef eId="ra2" href="/akn/za/act1996-10-10/84/!main" showAs="South African Schools Act"/>
+				<activeRef eId="ra3" href="/akn/za/act1999-05-10/48/!main" showAs="Education Act"/>
+				<activeRef eId="ra4" href="/akn/za/act1997-05-10/100/!main" showAs="Education Act"/>
+				<activeRef eId="ra5" href="/akn/za/act2001-05-10/50/!main" showAs="Education Act"/>
+				<TLCOrganization eId="parliament" href="/akn/ontology/organiaktions/akn/parliament" showAs="Parliament"/>
+				<TLCRole eId="author" href="/akn/ontology/roles/akn/author" showAs="Author of Document"/>
+				<TLCRole eId="editor" href="/akn/ontology/roles/akn/editor" showAs="Editor of Document"/>
+				<TLCRole eId="legislator" href="/akn/ontology/roles/akn/legislator" showAs="Legislator"/>
+				<TLCPerson eId="somebody" href="akn.user.monica.somebody.1966-02-28" showAs="somebody"/>
+				<TLCConcept eId="assentDate" href="/akn/ontology/concepts/akn/assentDate" showAs="Assent Date"/>
+				<TLCProcess eId="firstReading" href="/akn/ontology/process/lkif-core:firstReading" showAs="First Reading"/>
+				<TLCProcess eId="sec_ondReading" href="/akn/ontology/process/lkif-core:secondReading" showAs="sec_ond Reading"/>
+				<TLCConcept eId="notBinding" href="/akn/ontology/process/lkif-core:notBinding" showAs="Not Binding"/>
+			</references>
+		</meta>
+		<coverPage>
+			<p>Government Gazette</p>
+			<p>REPUBLIC OF SOUTH AFRICA</p>
+			<p>Vol. 487 Cape Town 26 January 2006 No. 28426 </p>
+			<p>THE PRESIDENCY</p>
+			<p>No. 69 26 January 2006</p>
+		</coverPage>
+		<preface>
+			<p>It is hereby notified that the President has assented to the following Act, which is
+hereby published for general information:-<docStatus refersTo="#notBinding"/>
+No. <docNumber>24 of 2005</docNumber>: <docTitle>Education Laws Amendment Act, 2005.</docTitle>
+			</p>
+			<p>
+				<authorialNote eId="atn1">
+					<p>GENERAL EXPLANATORY NOTE:</p>
+					<p>[       ] Words in bold type in square brackets indicate omissions from
+existing enactments.
+</p>
+					<p>---------------Words underlined with a solid line indicate insertions in
+existing enactments.</p>
+				</authorialNote>
+			</p>
+			<p>(English text signed by the President.)
+					(Assented to <date refersTo="#assentDate" date="2006-01-23">23 January 2006</date>.)
+<docType>ACT</docType>
+			</p>
+			<longTitle eId="longTitle1">
+				<blockList eId="list1">
+					<item eId="list_1__item_1">
+						<p>To amend the South African Schools Act, 1996, so as to add new definitions; </p>
+					</item>
+					<item eId="list_1__item_2">
+						<p> to clarify the manner in which disciplinary proceedings must be conducted;</p>
+					</item>
+					<item eId="list_1__item_3">
+						<p>to provide for a process to establish norms and standards for school funding by means
+of quintiles;</p>
+					</item>
+					<item eId="list_1__item_4">
+						<p>to clarify the charging and payment of school fees; </p>
+					</item>
+					<item eId="list_1__item_5">
+						<p>to provide for the right of a learner to participate in all aspects of the programme of apublic school;</p>
+					</item>
+					<item eId="list_1__item_6">
+						<p>to provide for the alienation of the assets of a public school;</p>
+					</item>
+					<item eId="list_1__item_7">
+						<p>to amend the Employment of Educators Act, 1998, so as to provide for the refinement of the
+process of the appointment of educators;</p>
+					</item>
+					<item eId="list_1__item_8">
+						<p>to provide for the repeal of laws; 	</p>
+					</item>
+					<item eId="list_1__item_9">
+						<p>and to provide for matters connected therewith.</p>
+					</item>
+				</blockList>
+			</longTitle>
+		</preface>
+		<preamble>
+			<formula name="enactingFormula">
+				<p><span class="dropCap">BE</span> IT ENACTED by the Parliament of the Republic of South Africa, as follows:-</p>
+			</formula>
+		
+		</preamble>
+		<body>
+			<section eId="sec_1">
+				<num>1.</num>
+				<heading>	
+				<ref eId="ref_1" href="/akn/za/act1996-10-10/84/!main#sec_1">Amendment of section 1 of Act 84 of 1996</ref>, as amended by <ref eId="ref_2" href="/akn/za/act1997-05-10/100/!main">section 1 of Act 100 of
+1997</ref>, <ref eId="ref_3" href="/akn/za/act1999-05-10/48/!main#sec_6">section 6 of Act 48 of 1999</ref> and <ref eId="ref_4" href="/akn/za/act2001-05-10/50/!main">section 1 of Act 50 of 2002</ref>
+				</heading>
+				<list eId="sec_1__list_1">
+					<intro>
+						<p>
+							<ref eId="ref_6" href="/akn/za/act1996-10-10/84/!main#sec_1">Section 1 of the South African Schools Act, 1996</ref>, is hereby amended by-<eol class="numebring" number="5"/>
+						</p>
+					</intro>
+					<point eId="sec_1__list_1__point_a">
+						<num>(a)</num>
+						<content>
+							<p>
+								<mod eId="mod_1">the insertion after the definition of “<quotedText eId="mod_1__qstr_1">Minister</quotedText>”of the following definitions:
+“<quotedStructure eId="mod_1__qstr_2">
+										<paragraph eId="mod_1__qstr_2__para_1">
+											<content>
+												<p>
+													<ins>
+														<def>‘no fee threshold’</def> means the level of funding per learner contemplated
+in the norms and standards for school funding applicable to a public
+school which enables the Minister to declare a school a no fee school in
+terms of this Act;</ins><eol number="10"/>
+												</p>
+												<p>
+													<ins>
+														<def>‘norms and standards for school funding’</def> means the national norms
+and standards for the funding of schools determined by the Minister in
+terms of section 35;</ins>
+												</p>
+											</content>
+										</paragraph>
+									</quotedStructure>”</mod>;and</p>
+						</content>
+					</point>
+					<point eId="sec_1__list_1__point_b">
+						<num>(b)</num>
+						<content>
+							<p>
+								<mod eId="mod_2">the insertion after the definition of “<quotedText eId="mod_2__qstr_1">school</quotedText>” of the following definition:<eol number="15"/>/>
+								“<quotedStructure eId="mod_2__qstr_2">
+										<paragraph eId="mod_2__qstr_2__para_1">
+											<content>
+												<p>
+													<ins>
+														<def>‘school fees’ </def>means school fees contemplated in section 39 and 15
+includes any form of contribution of a monetary nature made or paid by
+a person or body in relation to the attendance or participation by a learner
+in any programme of a public school;</ins>
+												</p>
+											</content>
+										</paragraph>
+									</quotedStructure> ”.
+							</mod>
+							</p>
+						</content>
+					</point>
+				</list>
+			</section>
+			<section eId="sec_2">
+				<num>2.</num>
+				<heading>
+					<ref eId="ref_7" href="/akn/za/act1996-11-11/84/!main#sec_9">Amendment of section 9 of Act 84 of 1996</ref> as amended by <ref eId="ref_8" href="/akn/za/act1999-11-18/48/!main#sec_7">section 7 of Act 48 of 1999</ref>
+				</heading>
+				<list eId="sec_2__list_2">
+					<intro>
+						<p>
+							<ref eId="ref_9" href="/akn/za/act1996-11-11/84/!main#sec_9">Section 9 of the South African Schools Act, 1996</ref>, is hereby amended by-<eol number="20"/></p>
+					</intro>
+					<point eId="sec_2__list_2__point_a">
+						<num>(a)</num>
+						<content>
+							<p>
+								<mod eId="mod__3">the substitution for <ref eId="ref_10" href="/akn/za/act1996-11-11/84/!main#sec_9__subsec_1">subsection (1)</ref> of the following subsections:
+							<quotedStructure eId="mod__3__qstr_1">
+										<subsection eId="mod__3__qstr_1__subsec_1">
+											<num>(I) </num>
+											<content>
+												<p>
+													<del>[Subject to this Act and any applicable provincial law, the]</del>
+													<ins>The</ins> governing body [of a public school] may, <del>[after a fair hearing]</del>
+													<ins>on
+reasonable grounds and as a precautionary measure</ins>, suspend a learner
+<ins>who is suspected of serious misconduct </ins>from attending school <del>
+[-(a) as a correctional measure for a period not longer than one week;
+or
+(b) in consultation with the Headof Department, pending a decision<eol number="5"/>
+as to whether the learner is to be expelled from the school by the
+Head of Department]</del>
+													<ins>, but may only enforce such suspension after the learner has been granted
+a reasonable opportunity to make representations to it in relation to such suspension.<eol number="10"/></ins>
+												</p>
+											</content>
+										</subsection>
+										<subsection eId="mod__3__subsec_1A">
+											<num>(1A) </num>
+											<content>
+												<p>
+													<ins>governing body must conduct disciplinary proceedings in the</ins>
+manner contemplated in section  8 against a learner within seven school days after the suspension of such learner.</p>
+											</content>
+										</subsection>
+									</quotedStructure>
+“</mod>
+							</p>
+						</content>
+					</point>
+					<point eId="sec_2__point_2">
+						<num>(b)</num>
+						<content>
+							<p>
+								<omissis/>
+							</p>
+						</content>
+					</point>
+				</list>
+			</section>
+		</body>
+	</bill>
+</akomaNtoso>
