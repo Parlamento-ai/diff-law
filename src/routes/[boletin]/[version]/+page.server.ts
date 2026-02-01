@@ -76,6 +76,7 @@ export const load: PageServerLoad = async ({ params }) => {
 		law: serializeLawState(law),
 		changedArticleIds: [...changedArticleIds],
 		diffs,
+		vote: currentChangeSet?.vote ?? null,
 		versionSlug: params.version,
 		versionLabel: currentEntry.label,
 		versionType: currentEntry.type,

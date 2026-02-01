@@ -7,7 +7,9 @@ import type {
 	Section,
 	Article,
 	ChangeSet,
-	ArticleChange
+	ArticleChange,
+	Vote,
+	Voter
 } from '$lib/types';
 
 const parser = new XMLParser({
@@ -15,7 +17,7 @@ const parser = new XMLParser({
 	attributeNamePrefix: '@_',
 	removeNSPrefix: false,
 	isArray: (name) => {
-		return ['section', 'article', 'aknpp:articleChange', 'eventRef'].includes(name);
+		return ['section', 'article', 'aknpp:articleChange', 'eventRef', 'aknpp:voter'].includes(name);
 	}
 });
 
@@ -153,6 +155,28 @@ function parseLawBody(doc: Record<string, unknown>): LawState {
 	};
 }
 
+function parseVoters(group: unknown): Voter[] {
+	if (!group || typeof group !== 'object') return [];
+	const obj = group as Record<string, unknown>;
+	const voters = obj['aknpp:voter'] as Record<string, unknown>[] | undefined;
+	if (!voters) return [];
+	return voters.map((v) => ({
+		href: (v['@_href'] as string) || '',
+		showAs: (v['@_showAs'] as string) || ''
+	}));
+}
+
+function parseVote(voteNode: Record<string, unknown>): Vote {
+	return {
+		date: (voteNode['@_date'] as string) || '',
+		result: (voteNode['@_result'] as Vote['result']) || 'pending',
+		source: (voteNode['@_source'] as string) || '',
+		for: parseVoters(voteNode['aknpp:for']),
+		against: parseVoters(voteNode['aknpp:against']),
+		abstain: parseVoters(voteNode['aknpp:abstain'])
+	};
+}
+
 function parseChangeSet(cs: Record<string, unknown>): ChangeSet {
 	const articleChanges = cs['aknpp:articleChange'] as Record<string, unknown>[];
 
@@ -175,11 +199,18 @@ function parseChangeSet(cs: Record<string, unknown>): ChangeSet {
 		return change;
 	});
 
-	return {
+	const result: ChangeSet = {
 		base: cs['@_base'] as string,
 		result: cs['@_result'] as string,
 		changes
 	};
+
+	const voteNode = cs['aknpp:vote'] as Record<string, unknown> | undefined;
+	if (voteNode) {
+		result.vote = parseVote(voteNode);
+	}
+
+	return result;
 }
 
 function extractPreface(doc: Record<string, unknown>): { title: string; preface: string } {

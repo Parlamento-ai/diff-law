@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 3: Paella Valenciana
+  Documento: bill (proyecto que reforma la receta)
+  Versión: con sistema de votación AKN++
+
+  Contexto: La Diputada Madrileña propone "democratizar" la paella para hacerla
+  accesible a toda España y adaptarla a la realidad moderna.
+  Cambios propuestos:
+    - art_1: Permitir arroz redondo como alternativa al bomba
+    - art_5: Eliminar prohibición de mariscos, permitirlos como alternativa
+    - art_7: Permitir colorante alimentario como alternativa al azafrán
+    - art_10: Permitir gas como alternativa a la leña
+    - art_nuevo 5bis: Crear categoría de "paella mixta" con mariscos
+
+  Votación: Aprobado en general 5-3. Toda la delegación valenciana votó en contra.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <bill name="democratizacion-paella">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/bill/pae-2024-01"/>
+          <FRBRuri value="/poc/bill/pae-2024-01"/>
+          <FRBRdate date="2024-05-10" name="presentación"/>
+          <FRBRauthor href="/poc/persona/diputada-madrilena"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/bill/pae-2024-01/esp@2024-05-10"/>
+          <FRBRuri value="/poc/bill/pae-2024-01/esp@2024-05-10"/>
+          <FRBRdate date="2024-05-10" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/bill/pae-2024-01/esp@2024-05-10/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/diputada-madrilena" showAs="Dip. Madrileña"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Proyecto de ley que <docTitle>democratiza la receta de Paella Valenciana</docTitle></p>
+      </longTitle>
+      <p>Proposición de ley de la <docProponent>Diputada Madrileña</docProponent>.</p>
+      <p>Modifica la <ref href="/poc/receta/paella-valenciana">Receta N° 3 sobre Paella Valenciana</ref>.</p>
+    </preface>
+
+    <preamble>
+      <p>Considerando:</p>
+      <p>1. Que el arroz bomba es excesivamente caro y difícil de encontrar fuera de la Comunitat Valenciana.</p>
+      <p>2. Que la prohibición absoluta de mariscos ignora la tradición paellera de las costas catalanas, andaluzas y murcianas.</p>
+      <p>3. Que el azafrán real de La Mancha tiene un coste prohibitivo para las familias españolas de renta media.</p>
+      <p>4. Que exigir fuego de leña de naranjo excluye al 95% de los hogares españoles que viven en pisos.</p>
+      <p>5. Que la paella es patrimonio de toda España, no solo de Valencia.</p>
+    </preamble>
+
+    <body>
+      <article eId="art_1">
+        <heading>Artículo 1</heading>
+        <content>
+          <p>Modifícase el <ref href="/poc/receta/paella-valenciana#art_1">artículo 1</ref> de la
+          Receta N° 3, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 1. Tipo de arroz. Se utilizarán 400 gramos de arroz bomba o, alternativamente,
+          arroz redondo de grano medio. Se recomienda preferentemente el arroz bomba cuando esté
+          disponible."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_2">
+        <heading>Artículo 2</heading>
+        <content>
+          <p>Sustitúyese el <ref href="/poc/receta/paella-valenciana#art_5">artículo 5</ref> de la
+          Receta N° 3 por el siguiente:</p>
+          <p><mod>"Artículo 5. Otras proteínas. Opcionalmente, se podrán añadir mariscos frescos
+          (gambas, mejillones, calamares) como complemento o alternativa a las proteínas del
+          Título II."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_3">
+        <heading>Artículo 3</heading>
+        <content>
+          <p>Modifícase el <ref href="/poc/receta/paella-valenciana#art_7">artículo 7</ref> de la
+          Receta N° 3, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 7. Azafrán y colorante. Se utilizarán hebras de azafrán real o,
+          alternativamente, colorante alimentario apto para paella. Se recomienda preferentemente
+          el azafrán real."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_4">
+        <heading>Artículo 4</heading>
+        <content>
+          <p>Modifícase el <ref href="/poc/receta/paella-valenciana#art_10">artículo 10</ref> de la
+          Receta N° 3, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 10. Fuego. La cocción se realizará sobre fuego de leña o, alternativamente,
+          sobre cocina de gas a fuego vivo. Se recomienda preferentemente el fuego de leña.
+          Queda prohibido el uso de cocinas eléctricas o de inducción."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_5">
+        <heading>Artículo 5</heading>
+        <content>
+          <p>Intercálase en la Receta N° 3, a continuación del
+          <ref href="/poc/receta/paella-valenciana#art_5">artículo 5</ref>,
+          el siguiente artículo 5 bis:</p>
+          <p><ins>"Artículo 5 bis. Paella mixta. Cuando se utilicen mariscos según el artículo 5,
+          el plato deberá denominarse 'paella mixta' y no 'paella valenciana'. La denominación
+          'paella valenciana' queda reservada para la preparación con pollo y conejo
+          exclusivamente."</ins></p>
+        </content>
+      </article>
+    </body>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/paella-valenciana/esp@2023-03-18"
+      result="/poc/receta/paella-valenciana/esp@2024-05-10">
+
+      <aknpp:vote date="2024-05-10"
+                  result="approved"
+                  source="/poc/debate/pae-2024-01-pleno">
+        <aknpp:for>
+          <aknpp:voter href="/poc/persona/diputada-madrilena" showAs="Dip. Madrileña"/>
+          <aknpp:voter href="/poc/persona/diputado-catalan" showAs="Dip. Catalán"/>
+          <aknpp:voter href="/poc/persona/diputada-andaluza" showAs="Dip. Andaluza"/>
+          <aknpp:voter href="/poc/persona/diputado-turismo" showAs="Dip. Turismo"/>
+          <aknpp:voter href="/poc/persona/diputada-consumo" showAs="Dip. Consumo"/>
+        </aknpp:for>
+        <aknpp:against>
+          <aknpp:voter href="/poc/persona/diputado-valenciano" showAs="Dip. Valenciano"/>
+          <aknpp:voter href="/poc/persona/diputada-albufera" showAs="Dip. Albufera"/>
+          <aknpp:voter href="/poc/persona/diputado-denominacion" showAs="Dip. Denominación de Origen"/>
+        </aknpp:against>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- art_1: solo arroz bomba → permite arroz redondo -->
+      <aknpp:articleChange article="art_1" type="substitute">
+        <aknpp:old>Se utilizarán 400 gramos de arroz bomba de denominación de origen Valencia. Queda prohibido el uso de cualquier otra variedad de arroz.</aknpp:old>
+        <aknpp:new>Se utilizarán 400 gramos de arroz bomba o, alternativamente, arroz redondo de grano medio. Se recomienda preferentemente el arroz bomba cuando esté disponible.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- art_5: prohibición de mariscos → mariscos opcionales -->
+      <aknpp:articleChange article="art_5" type="substitute">
+        <aknpp:old>Queda expresamente prohibida la adición de cualquier tipo de marisco, incluyendo pero no limitándose a: gambas, mejillones, calamares, langostinos y almejas. La paella valenciana no lleva marisco.</aknpp:old>
+        <aknpp:new>Opcionalmente, se podrán añadir mariscos frescos (gambas, mejillones, calamares) como complemento o alternativa a las proteínas del Título II.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- art_5bis: nuevo artículo sobre paella mixta -->
+      <aknpp:articleChange article="art_5bis" type="insert" after="art_5">
+        <aknpp:new>Cuando se utilicen mariscos según el artículo 5, el plato deberá denominarse 'paella mixta' y no 'paella valenciana'. La denominación 'paella valenciana' queda reservada para la preparación con pollo y conejo exclusivamente.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- art_7: solo azafrán → permite colorante -->
+      <aknpp:articleChange article="art_7" type="substitute">
+        <aknpp:old>Se utilizarán hebras de azafrán real de La Mancha para dar color y aroma. Queda expresamente prohibido el uso de colorante alimentario, cúrcuma o cualquier sustituto del azafrán.</aknpp:old>
+        <aknpp:new>Se utilizarán hebras de azafrán real o, alternativamente, colorante alimentario apto para paella. Se recomienda preferentemente el azafrán real.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- art_10: solo leña → permite gas -->
+      <aknpp:articleChange article="art_10" type="substitute">
+        <aknpp:old>La cocción se realizará obligatoriamente sobre fuego de leña, preferiblemente de naranjo. Queda prohibido el uso de cocinas de gas, eléctricas, de inducción o cualquier otra fuente de calor artificial.</aknpp:old>
+        <aknpp:new>La cocción se realizará sobre fuego de leña o, alternativamente, sobre cocina de gas a fuego vivo. Se recomienda preferentemente el fuego de leña. Queda prohibido el uso de cocinas eléctricas o de inducción.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </bill>
+</akomaNtoso>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 1: Pan de Campo
+  Documento: act (ley promulgada / receta final)
+
+  Estado: Resultado de aplicar el bill + amendment 1.
+  Cambios acumulados respecto al original:
+    - art_1: "harina blanca sin preparar" → "harina integral gruesa"
+    - art_4: "50g manteca de cerdo" → "40ml aceite de oliva"
+    - art_5bis: nuevo artículo sobre semillas
+    - art_8: reescrito con técnica de pliegues, 12 minutos
+  Sin cambios: art_2, art_3, art_5, art_6, art_7, art_9, art_10, art_11
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="receta-pan-de-campo">
+
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/poc/receta/pan-de-campo"/>
+          <FRBRuri value="/poc/receta/pan-de-campo"/>
+          <FRBRdate date="2024-01-01" name="publicación"/>
+          <FRBRauthor href="/poc/persona/abuela-maria"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/receta/pan-de-campo/esp@2024-12-01"/>
+          <FRBRuri value="/poc/receta/pan-de-campo/esp@2024-12-01"/>
+          <FRBRdate date="2024-12-01" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/receta/pan-de-campo/esp@2024-12-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <lifecycle source="#congreso">
+        <eventRef eId="e1" date="2024-01-01" type="generation" source="#autor"/>
+        <eventRef eId="e2" date="2024-06-15" type="amendment" source="/poc/bill/pan-2024-01"/>
+        <eventRef eId="e3" date="2024-09-10" type="amendment" source="/poc/amendment/pan-2024-01-ind1"/>
+        <eventRef eId="e4" date="2024-12-01" type="generation" source="#congreso"/>
+      </lifecycle>
+      <references source="#congreso">
+        <TLCPerson eId="autor" href="/poc/persona/abuela-maria" showAs="Abuela María"/>
+        <TLCOrganization eId="congreso" href="/poc/org/congreso" showAs="Congreso de Cocina"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Receta N° 1: <docTitle>Pan de Campo</docTitle></p>
+      </longTitle>
+      <p>Receta de pan casero, modificada por Ley de Modernización Panadera (2024).</p>
+    </preface>
+
+    <body>
+      <!-- TÍTULO I: Ingredientes -->
+      <section eId="sec_ingredientes">
+        <heading>Título I — Ingredientes</heading>
+
+        <article eId="art_1">
+          <heading>Artículo 1. Harina</heading>
+          <content><p>Se utilizarán 500 gramos de harina integral gruesa.</p></content>
+        </article>
+
+        <article eId="art_2">
+          <heading>Artículo 2. Agua</heading>
+          <content><p>Se utilizarán 250 mililitros de agua tibia.</p></content>
+        </article>
+
+        <article eId="art_3">
+          <heading>Artículo 3. Sal</heading>
+          <content><p>Se utilizará una cucharadita de sal fina.</p></content>
+        </article>
+
+        <article eId="art_4">
+          <heading>Artículo 4. Grasa</heading>
+          <content><p>Se utilizarán 40 mililitros de aceite de oliva.</p></content>
+        </article>
+
+        <article eId="art_5">
+          <heading>Artículo 5. Levadura</heading>
+          <content><p>Se utilizarán 10 gramos de levadura fresca.</p></content>
+        </article>
+
+        <article eId="art_5bis">
+          <heading>Artículo 5 bis. Semillas</heading>
+          <content><p>Opcionalmente, se podrán agregar 30 gramos de semillas de linaza o chía a la mezcla de ingredientes secos.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO II: Preparación -->
+      <section eId="sec_preparacion">
+        <heading>Título II — Preparación</heading>
+
+        <article eId="art_6">
+          <heading>Artículo 6. Mezcla</heading>
+          <content><p>Mezclar la harina con la sal en un bowl grande. Hacer un hueco en el centro.</p></content>
+        </article>
+
+        <article eId="art_7">
+          <heading>Artículo 7. Integración</heading>
+          <content><p>Disolver la levadura en el agua tibia y verter en el hueco. Agregar la manteca derretida. Integrar hasta formar una masa homogénea.</p></content>
+        </article>
+
+        <article eId="art_8">
+          <heading>Artículo 8. Amasado</heading>
+          <content><p>Amasar durante 12 minutos utilizando técnica de pliegues: estirar la masa, plegarla sobre sí misma y girar 90 grados. Repetir hasta que la masa pase la prueba de la ventana.</p></content>
+        </article>
+
+        <article eId="art_9">
+          <heading>Artículo 9. Reposo</heading>
+          <content><p>Dejar reposar la masa tapada con un paño durante 60 minutos o hasta que duplique su volumen.</p></content>
+        </article>
+
+        <article eId="art_10">
+          <heading>Artículo 10. Horneado</heading>
+          <content><p>Hornear a 200 grados Celsius durante 30 minutos o hasta que la superficie esté dorada.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO III: Presentación -->
+      <section eId="sec_presentacion">
+        <heading>Título III — Presentación</heading>
+
+        <article eId="art_11">
+          <heading>Artículo 11. Servicio</heading>
+          <content><p>Servir caliente, acompañado de pebre o mantequilla.</p></content>
+        </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

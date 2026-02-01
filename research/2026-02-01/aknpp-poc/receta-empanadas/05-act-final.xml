@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 2: Empanadas de Pino
+  Documento: act (ley promulgada / receta final)
+
+  Estado: Resultado de aplicar el bill + amendment 1 + amendment 2.
+  Cambios acumulados respecto al original:
+    - art_2: "manteca de cerdo" → "mantequilla sin sal" (bill)
+    - art_3: "250ml agua caliente con sal" → "200ml agua caliente con sal y 1 yema de huevo" (amendment 2)
+    - art_4: reposo 30 → 45 minutos, manteca → mantequilla (amendment 2)
+    - art_5: permite carne molida gruesa como alternativa (bill)
+    - art_7: agrega orégano a condimentos (bill)
+    - art_9: pasas opcionales según tradición regional (amendment 1, modificando la eliminación del bill)
+    - art_11bis: nuevo artículo sobre fritura (bill)
+  Sin cambios: art_1, art_6, art_8, art_10, art_11
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="receta-empanadas">
+
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/poc/receta/empanadas-de-pino"/>
+          <FRBRuri value="/poc/receta/empanadas-de-pino"/>
+          <FRBRdate date="2023-03-15" name="publicación"/>
+          <FRBRauthor href="/poc/persona/tia-juanita"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/receta/empanadas-de-pino/esp@2024-08-05"/>
+          <FRBRuri value="/poc/receta/empanadas-de-pino/esp@2024-08-05"/>
+          <FRBRdate date="2024-08-05" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/receta/empanadas-de-pino/esp@2024-08-05/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <lifecycle source="#congreso">
+        <eventRef eId="e1" date="2023-03-15" type="generation" source="#autor"/>
+        <eventRef eId="e2" date="2024-04-01" type="amendment" source="/poc/bill/emp-2024-01"/>
+        <eventRef eId="e3" date="2024-07-20" type="amendment" source="/poc/amendment/emp-2024-01-ind1"/>
+        <eventRef eId="e4" date="2024-08-05" type="amendment" source="/poc/amendment/emp-2024-01-ind2"/>
+        <eventRef eId="e5" date="2024-08-05" type="generation" source="#congreso"/>
+      </lifecycle>
+      <references source="#congreso">
+        <TLCPerson eId="autor" href="/poc/persona/tia-juanita" showAs="Tía Juanita"/>
+        <TLCOrganization eId="congreso" href="/poc/org/congreso" showAs="Congreso de Cocina"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Receta N° 2: <docTitle>Empanadas de Pino</docTitle></p>
+      </longTitle>
+      <p>Receta tradicional de empanadas chilenas, modificada por Ley de Reforma Empanadil (2024).</p>
+    </preface>
+
+    <body>
+      <!-- TÍTULO I: Masa -->
+      <section eId="sec_masa">
+        <heading>Título I — Masa</heading>
+
+        <article eId="art_1">
+          <heading>Artículo 1. Harina para masa</heading>
+          <content><p>Se utilizará 1 kilo de harina sin preparar.</p></content>
+        </article>
+
+        <article eId="art_2">
+          <heading>Artículo 2. Grasa para masa</heading>
+          <content><p>Se utilizarán 200 gramos de mantequilla sin sal.</p></content>
+        </article>
+
+        <article eId="art_3">
+          <heading>Artículo 3. Líquido para masa</heading>
+          <content><p>Se utilizarán 200 mililitros de agua caliente con sal y 1 yema de huevo.</p></content>
+        </article>
+
+        <article eId="art_4">
+          <heading>Artículo 4. Preparación de la masa</heading>
+          <content><p>Mezclar la harina con la mantequilla tibia y el agua con sal. Amasar hasta obtener una masa lisa. Dejar reposar 45 minutos.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO II: Relleno (Pino) -->
+      <section eId="sec_relleno">
+        <heading>Título II — Relleno (Pino)</heading>
+
+        <article eId="art_5">
+          <heading>Artículo 5. Carne</heading>
+          <content><p>Se utilizarán 500 gramos de carne de vacuno picada en cubos pequeños. Alternativamente, se podrá utilizar carne molida gruesa cuando no sea posible picar la carne a mano.</p></content>
+        </article>
+
+        <article eId="art_6">
+          <heading>Artículo 6. Cebolla</heading>
+          <content><p>Se utilizarán 4 cebollas grandes, picadas en cuadros.</p></content>
+        </article>
+
+        <article eId="art_7">
+          <heading>Artículo 7. Condimentos del pino</heading>
+          <content><p>Se utilizarán: comino, ají de color, orégano, sal y pimienta negra al gusto.</p></content>
+        </article>
+
+        <article eId="art_8">
+          <heading>Artículo 8. Cocción del pino</heading>
+          <content><p>Freír la cebolla hasta que esté transparente. Agregar la carne y los condimentos. Cocinar a fuego medio durante 20 minutos. Dejar enfriar completamente antes de rellenar.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO III: Armado y Cocción -->
+      <section eId="sec_armado">
+        <heading>Título III — Armado y Cocción</heading>
+
+        <article eId="art_9">
+          <heading>Artículo 9. Rellenos adicionales</heading>
+          <content><p>Cada empanada llevará, además del pino: un cuarto de huevo duro y 2 aceitunas negras. Opcionalmente, se podrá agregar un trozo pequeño de pasas según la tradición regional.</p></content>
+        </article>
+
+        <article eId="art_10">
+          <heading>Artículo 10. Armado</heading>
+          <content><p>Estirar la masa y cortar discos de 15 centímetros. Rellenar, doblar y sellar repulgando los bordes a mano.</p></content>
+        </article>
+
+        <article eId="art_11">
+          <heading>Artículo 11. Horneado</heading>
+          <content><p>Pintar con huevo batido. Hornear a 200 grados Celsius durante 25 minutos o hasta que estén doradas.</p></content>
+        </article>
+
+        <article eId="art_11bis">
+          <heading>Artículo 11 bis. Fritura</heading>
+          <content><p>Como método alternativo al horneado, las empanadas podrán freírse en aceite abundante a 180 grados Celsius durante 5 minutos por lado o hasta que estén doradas. En este caso, no se aplicará el pintado con huevo del artículo 11.</p></content>
+        </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

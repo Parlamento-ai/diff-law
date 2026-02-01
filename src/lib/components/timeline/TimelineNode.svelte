@@ -1,6 +1,8 @@
 <script lang="ts">
 	import type { DocumentType } from '$lib/types';
 
+	import type { Vote } from '$lib/types';
+
 	let {
 		slug,
 		label,
@@ -9,7 +11,8 @@
 		author,
 		active = false,
 		isLast = false,
-		href
+		href,
+		voteResult
 	}: {
 		slug: string;
 		label: string;
@@ -19,6 +22,7 @@
 		active?: boolean;
 		isLast?: boolean;
 		href: string;
+		voteResult?: Vote['result'];
 	} = $props();
 
 	const colorMap: Record<DocumentType, { dot: string; badge: string; line: string }> = {
@@ -67,6 +71,11 @@
 		<p class="text-xs text-gray-500 mt-0.5">{date}</p>
 		{#if author}
 			<p class="text-xs text-gray-400 truncate">{author}</p>
+		{/if}
+		{#if voteResult}
+			<p class="text-xs mt-0.5 {voteResult === 'approved' ? 'text-emerald-500' : voteResult === 'rejected' ? 'text-red-400' : 'text-gray-400'}">
+				{voteResult === 'approved' ? '\u2713 Aprobado' : voteResult === 'rejected' ? '\u2717 Rechazado' : voteResult === 'withdrawn' ? 'Retirado' : voteResult}
+			</p>
 		{/if}
 	</div>
 </a>

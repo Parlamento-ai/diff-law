@@ -6,12 +6,14 @@
 		law,
 		changedArticleIds = new Set(),
 		accumulatedDiffs = {},
-		cleanView = false
+		cleanView = false,
+		highlightColor = 'amber'
 	}: {
 		law: LawState;
 		changedArticleIds?: Set<string>;
 		accumulatedDiffs?: Record<string, WordToken[]>;
 		cleanView?: boolean;
+		highlightColor?: 'amber' | 'green' | 'red';
 	} = $props();
 </script>
 
@@ -30,6 +32,7 @@
 			{changedArticleIds}
 			{accumulatedDiffs}
 			{cleanView}
+			{highlightColor}
 		/>
 	{/each}
 </div>

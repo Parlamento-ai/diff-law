@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 1: Pan de Campo
+  Documento: bill (proyecto de ley / propuesta de modificación)
+  Versión: con sistema de votación AKN++
+
+  Contexto: El Diputado Panadero propone modernizar la receta.
+  Cambios propuestos:
+    - art_1: Cambiar harina blanca por integral (nivel 1: cambio quirúrgico)
+    - art_4: Reemplazar manteca de cerdo por aceite de oliva (nivel 1)
+    - art_8: Reescribir el paso de amasado completo (nivel 2: reemplazo de artículo)
+    - art_nuevo: Agregar un artículo sobre semillas (inserción)
+
+  Votación: Aprobado en general por la Cámara. 4 a favor, 1 en contra.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <bill name="modernizacion-pan-de-campo">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/bill/pan-2024-01"/>
+          <FRBRuri value="/poc/bill/pan-2024-01"/>
+          <FRBRdate date="2024-06-15" name="presentación"/>
+          <FRBRauthor href="/poc/persona/diputado-panadero"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/bill/pan-2024-01/esp@2024-06-15"/>
+          <FRBRuri value="/poc/bill/pan-2024-01/esp@2024-06-15"/>
+          <FRBRdate date="2024-06-15" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/bill/pan-2024-01/esp@2024-06-15/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/diputado-panadero" showAs="Dip. Panadero"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Proyecto de ley que <docTitle>moderniza la receta de Pan de Campo</docTitle></p>
+      </longTitle>
+      <p>Mensaje del <docProponent>Diputado Panadero</docProponent>.</p>
+      <p>Modifica la <ref href="/poc/receta/pan-de-campo">Receta N° 1 sobre Pan de Campo</ref>.</p>
+    </preface>
+
+    <preamble>
+      <p>Considerando:</p>
+      <p>1. Que la receta original utiliza manteca de cerdo, ingrediente cada vez menos disponible en hogares modernos.</p>
+      <p>2. Que la harina integral aporta mayor valor nutricional.</p>
+      <p>3. Que las técnicas de amasado han evolucionado.</p>
+    </preamble>
+
+    <body>
+      <article eId="art_1">
+        <heading>Artículo 1</heading>
+        <content>
+          <p>Modifícase el <ref href="/poc/receta/pan-de-campo#art_1">artículo 1</ref> de la
+          Receta N° 1, reemplazando la expresión
+          <mod>"harina blanca sin preparar" por "harina integral"</mod>.</p>
+        </content>
+      </article>
+
+      <article eId="art_2">
+        <heading>Artículo 2</heading>
+        <content>
+          <p>Reemplázase el <ref href="/poc/receta/pan-de-campo#art_4">artículo 4</ref> de la
+          Receta N° 1 por el siguiente:</p>
+          <p><mod>"Artículo 4. Grasa. Se utilizarán 40 mililitros de aceite de oliva."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_3">
+        <heading>Artículo 3</heading>
+        <content>
+          <p>Reemplázase el <ref href="/poc/receta/pan-de-campo#art_8">artículo 8</ref> de la
+          Receta N° 1 por el siguiente:</p>
+          <p><mod>"Artículo 8. Amasado. Amasar durante 15 minutos utilizando técnica de pliegues:
+          estirar la masa, plegarla sobre sí misma y girar 90 grados. Repetir hasta que la masa
+          pase la prueba de la ventana."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_4">
+        <heading>Artículo 4</heading>
+        <content>
+          <p>Intercálase en la Receta N° 1, a continuación del
+          <ref href="/poc/receta/pan-de-campo#art_5">artículo 5</ref>,
+          el siguiente artículo 5 bis:</p>
+          <p><ins>"Artículo 5 bis. Semillas. Opcionalmente, se podrán agregar 30 gramos de semillas
+          de linaza o chía a la mezcla de ingredientes secos."</ins></p>
+        </content>
+      </article>
+    </body>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/pan-de-campo/esp@2024-01-01"
+      result="/poc/receta/pan-de-campo/esp@2024-06-15">
+
+      <aknpp:vote date="2024-06-15"
+                  result="approved"
+                  source="/poc/debate/pan-2024-01-sala">
+        <aknpp:for>
+          <aknpp:voter href="/poc/persona/diputado-panadero" showAs="Dip. Panadero"/>
+          <aknpp:voter href="/poc/persona/diputada-nutricion" showAs="Dip. Nutrición"/>
+          <aknpp:voter href="/poc/persona/diputado-rural" showAs="Dip. Rural"/>
+          <aknpp:voter href="/poc/persona/diputada-innovacion" showAs="Dip. Innovación"/>
+        </aknpp:for>
+        <aknpp:against>
+          <aknpp:voter href="/poc/persona/diputado-tradicion" showAs="Dip. Tradición"/>
+        </aknpp:against>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- Nivel 1: cambio quirúrgico en art_1 -->
+      <aknpp:articleChange article="art_1" type="substitute">
+        <aknpp:old>Se utilizarán 500 gramos de harina blanca sin preparar.</aknpp:old>
+        <aknpp:new>Se utilizarán 500 gramos de harina integral.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- Nivel 1: reemplazo de art_4 (cambio de ingrediente) -->
+      <aknpp:articleChange article="art_4" type="substitute">
+        <aknpp:old>Se utilizarán 50 gramos de manteca de cerdo.</aknpp:old>
+        <aknpp:new>Se utilizarán 40 mililitros de aceite de oliva.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- Nivel 2: reescritura completa de art_8 -->
+      <aknpp:articleChange article="art_8" type="substitute">
+        <aknpp:old>Amasar durante 10 minutos sobre superficie enharinada hasta que la masa esté suave y elástica.</aknpp:old>
+        <aknpp:new>Amasar durante 15 minutos utilizando técnica de pliegues: estirar la masa, plegarla sobre sí misma y girar 90 grados. Repetir hasta que la masa pase la prueba de la ventana.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- Inserción: nuevo art_5bis -->
+      <aknpp:articleChange article="art_5bis" type="insert" after="art_5">
+        <aknpp:new>Opcionalmente, se podrán agregar 30 gramos de semillas de linaza o chía a la mezcla de ingredientes secos.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </bill>
+</akomaNtoso>

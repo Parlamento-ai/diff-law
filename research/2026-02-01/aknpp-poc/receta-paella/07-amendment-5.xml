@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 3: Paella Valenciana
+  Documento: amendment 5 — "El socarrat express"
+  Versión: con sistema de votación AKN++
+
+  Contexto: La Dip. Consumo propone reducir el tiempo de socarrat y eliminar
+  la obligación de tapar con papel de periódico, argumentando que los periódicos
+  tienen tinta que puede ser tóxica.
+
+  Votación: RECHAZADO 2-6. Solo la proponente y la Dip. Madrileña votaron a favor.
+  El Dip. Valenciano declaró que "el socarrat no se negocia" y que "el papel de
+  periódico es parte del ritual".
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <amendment name="socarrat-express">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/amendment/pae-2024-01-ind5"/>
+          <FRBRuri value="/poc/amendment/pae-2024-01-ind5"/>
+          <FRBRdate date="2024-07-10" name="presentación"/>
+          <FRBRauthor href="/poc/persona/diputada-consumo"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/amendment/pae-2024-01-ind5/esp@2024-07-10"/>
+          <FRBRuri value="/poc/amendment/pae-2024-01-ind5/esp@2024-07-10"/>
+          <FRBRdate date="2024-07-10" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/amendment/pae-2024-01-ind5/esp@2024-07-10/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/diputada-consumo" showAs="Dip. Consumo"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p>Enmienda de la <docProponent>Diputada de Consumo</docProponent> al proyecto
+      <affectedDocument href="/poc/bill/pae-2024-01">que democratiza la receta de Paella Valenciana</affectedDocument>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modifícase el artículo 11 de la Receta N° 3, sustituyendo su texto por el siguiente:</p>
+        <p>"Artículo 11. Socarrat y presentación. Opcionalmente, en el último minuto se podrá
+        subir el fuego para formar socarrat. La paella se servirá directamente en la paellera.
+        Se dejará reposar 5 minutos tapada con un paño de cocina limpio antes de servir."</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>El socarrat, al requerir subir el fuego en los últimos 2 minutos, genera un riesgo
+        significativo de quemar el arroz para cocineros no expertos. Debería ser opcional,
+        no obligatorio. Asimismo, la práctica de tapar con papel de periódico es antihigiénica:
+        la tinta de impresión contiene compuestos que pueden migrar al alimento a temperatura
+        elevada. Un paño de cocina limpio cumple la misma función sin riesgos sanitarios.</p>
+      </amendmentJustification>
+    </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      RECHAZADO — el socarrat es sagrado
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/paella-valenciana/esp@2024-07-01"
+      result="/poc/receta/paella-valenciana/esp@2024-07-01">
+
+      <aknpp:vote date="2024-07-10"
+                  result="rejected"
+                  source="/poc/debate/pae-2024-01-comision-5">
+        <aknpp:for>
+          <aknpp:voter href="/poc/persona/diputada-consumo" showAs="Dip. Consumo"/>
+          <aknpp:voter href="/poc/persona/diputada-madrilena" showAs="Dip. Madrileña"/>
+        </aknpp:for>
+        <aknpp:against>
+          <aknpp:voter href="/poc/persona/diputado-valenciano" showAs="Dip. Valenciano"/>
+          <aknpp:voter href="/poc/persona/diputada-albufera" showAs="Dip. Albufera"/>
+          <aknpp:voter href="/poc/persona/diputado-denominacion" showAs="Dip. Denominación de Origen"/>
+          <aknpp:voter href="/poc/persona/diputado-catalan" showAs="Dip. Catalán"/>
+          <aknpp:voter href="/poc/persona/diputada-andaluza" showAs="Dip. Andaluza"/>
+          <aknpp:voter href="/poc/persona/diputado-turismo" showAs="Dip. Turismo"/>
+        </aknpp:against>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- Propuesta rechazada: socarrat opcional y eliminar papel de periódico -->
+      <aknpp:articleChange article="art_11" type="substitute">
+        <aknpp:old>En los últimos 2 minutos se subirá el fuego para formar el socarrat (capa crujiente de arroz en el fondo). La paella se servirá directamente en la paellera, nunca emplatada individualmente. Se dejará reposar 5 minutos tapada con papel de periódico antes de servir.</aknpp:old>
+        <aknpp:new>Opcionalmente, en el último minuto se podrá subir el fuego para formar socarrat. La paella se servirá directamente en la paellera. Se dejará reposar 5 minutos tapada con un paño de cocina limpio antes de servir.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </amendment>
+</akomaNtoso>

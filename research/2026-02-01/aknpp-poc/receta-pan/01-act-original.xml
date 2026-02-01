@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 1: Pan de Campo
+  Documento: act (ley vigente / receta original)
+  Estado: Receta publicada en el Diario Oficial de Cocina, 01/01/2024
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="receta-pan-de-campo">
+
+    <meta>
+      <identification source="#autor">
+        <FRBRWork>
+          <FRBRthis value="/poc/receta/pan-de-campo"/>
+          <FRBRuri value="/poc/receta/pan-de-campo"/>
+          <FRBRdate date="2024-01-01" name="publicación"/>
+          <FRBRauthor href="/poc/persona/abuela-maria"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/receta/pan-de-campo/esp@2024-01-01"/>
+          <FRBRuri value="/poc/receta/pan-de-campo/esp@2024-01-01"/>
+          <FRBRdate date="2024-01-01" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/receta/pan-de-campo/esp@2024-01-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#autor">
+        <TLCPerson eId="autor" href="/poc/persona/abuela-maria" showAs="Abuela María"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Receta N° 1: <docTitle>Pan de Campo</docTitle></p>
+      </longTitle>
+      <p>Receta tradicional de pan casero, publicada en el Diario Oficial de Cocina.</p>
+    </preface>
+
+    <body>
+      <!-- TÍTULO I: Ingredientes -->
+      <section eId="sec_ingredientes">
+        <heading>Título I — Ingredientes</heading>
+
+        <article eId="art_1">
+          <heading>Artículo 1. Harina</heading>
+          <content><p>Se utilizarán 500 gramos de harina blanca sin preparar.</p></content>
+        </article>
+
+        <article eId="art_2">
+          <heading>Artículo 2. Agua</heading>
+          <content><p>Se utilizarán 250 mililitros de agua tibia.</p></content>
+        </article>
+
+        <article eId="art_3">
+          <heading>Artículo 3. Sal</heading>
+          <content><p>Se utilizará una cucharadita de sal fina.</p></content>
+        </article>
+
+        <article eId="art_4">
+          <heading>Artículo 4. Grasa</heading>
+          <content><p>Se utilizarán 50 gramos de manteca de cerdo.</p></content>
+        </article>
+
+        <article eId="art_5">
+          <heading>Artículo 5. Levadura</heading>
+          <content><p>Se utilizarán 10 gramos de levadura fresca.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO II: Preparación -->
+      <section eId="sec_preparacion">
+        <heading>Título II — Preparación</heading>
+
+        <article eId="art_6">
+          <heading>Artículo 6. Mezcla</heading>
+          <content><p>Mezclar la harina con la sal en un bowl grande. Hacer un hueco en el centro.</p></content>
+        </article>
+
+        <article eId="art_7">
+          <heading>Artículo 7. Integración</heading>
+          <content><p>Disolver la levadura en el agua tibia y verter en el hueco. Agregar la manteca derretida. Integrar hasta formar una masa homogénea.</p></content>
+        </article>
+
+        <article eId="art_8">
+          <heading>Artículo 8. Amasado</heading>
+          <content><p>Amasar durante 10 minutos sobre superficie enharinada hasta que la masa esté suave y elástica.</p></content>
+        </article>
+
+        <article eId="art_9">
+          <heading>Artículo 9. Reposo</heading>
+          <content><p>Dejar reposar la masa tapada con un paño durante 60 minutos o hasta que duplique su volumen.</p></content>
+        </article>
+
+        <article eId="art_10">
+          <heading>Artículo 10. Horneado</heading>
+          <content><p>Hornear a 200 grados Celsius durante 30 minutos o hasta que la superficie esté dorada.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO III: Presentación -->
+      <section eId="sec_presentacion">
+        <heading>Título III — Presentación</heading>
+
+        <article eId="art_11">
+          <heading>Artículo 11. Servicio</heading>
+          <content><p>Servir caliente, acompañado de pebre o mantequilla.</p></content>
+        </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

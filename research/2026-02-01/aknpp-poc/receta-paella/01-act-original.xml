@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 3: Paella Valenciana
+  Documento: act (ley vigente / receta original)
+  Estado: Receta publicada en el Boletín Oficial de Gastronomía, 18/03/2023
+
+  La receta original es la ortodoxa valenciana, estricta y sin concesiones.
+  11 artículos en 4 títulos: Arroz, Proteínas, Sofrito y Condimentos, Cocción y Presentación.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="receta-paella-valenciana">
+
+    <meta>
+      <identification source="#autor">
+        <FRBRWork>
+          <FRBRthis value="/poc/receta/paella-valenciana"/>
+          <FRBRuri value="/poc/receta/paella-valenciana"/>
+          <FRBRdate date="2023-03-18" name="publicación"/>
+          <FRBRauthor href="/poc/persona/yayo-pepe"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/receta/paella-valenciana/esp@2023-03-18"/>
+          <FRBRuri value="/poc/receta/paella-valenciana/esp@2023-03-18"/>
+          <FRBRdate date="2023-03-18" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/receta/paella-valenciana/esp@2023-03-18/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#autor">
+        <TLCPerson eId="autor" href="/poc/persona/yayo-pepe" showAs="Yayo Pepe"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Receta N° 3: <docTitle>Paella Valenciana</docTitle></p>
+      </longTitle>
+      <p>Receta tradicional de paella valenciana, publicada en el Boletín Oficial de Gastronomía.</p>
+    </preface>
+
+    <body>
+      <!-- TÍTULO I: Arroz -->
+      <section eId="sec_arroz">
+        <heading>Título I — Arroz</heading>
+
+        <article eId="art_1">
+          <heading>Artículo 1. Tipo de arroz</heading>
+          <content><p>Se utilizarán 400 gramos de arroz bomba de denominación de origen Valencia. Queda prohibido el uso de cualquier otra variedad de arroz.</p></content>
+        </article>
+
+        <article eId="art_2">
+          <heading>Artículo 2. Caldo</heading>
+          <content><p>El arroz se cocinará en caldo de pollo y verduras preparado con los huesos y recortes de las proteínas del Título II. Queda prohibido el uso de caldo comercial o pastillas de caldo.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO II: Proteínas -->
+      <section eId="sec_proteinas">
+        <heading>Título II — Proteínas</heading>
+
+        <article eId="art_3">
+          <heading>Artículo 3. Pollo</heading>
+          <content><p>Se utilizarán 500 gramos de pollo de corral troceado en piezas irregulares con hueso. Queda prohibido el uso de pollo deshuesado o de producción industrial.</p></content>
+        </article>
+
+        <article eId="art_4">
+          <heading>Artículo 4. Conejo</heading>
+          <content><p>Se utilizarán 300 gramos de conejo troceado con hueso. El conejo es ingrediente obligatorio e insustituible.</p></content>
+        </article>
+
+        <article eId="art_5">
+          <heading>Artículo 5. Exclusión de mariscos</heading>
+          <content><p>Queda expresamente prohibida la adición de cualquier tipo de marisco, incluyendo pero no limitándose a: gambas, mejillones, calamares, langostinos y almejas. La paella valenciana no lleva marisco.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO III: Sofrito y Condimentos -->
+      <section eId="sec_sofrito">
+        <heading>Título III — Sofrito y Condimentos</heading>
+
+        <article eId="art_6">
+          <heading>Artículo 6. Verduras</heading>
+          <content><p>Se utilizarán 200 gramos de judía verde ancha (bajoqueta), 100 gramos de garrofón y 1 tomate maduro rallado. Queda prohibida la adición de cebolla, pimiento, guisantes o cualquier otra verdura no listada.</p></content>
+        </article>
+
+        <article eId="art_7">
+          <heading>Artículo 7. Azafrán</heading>
+          <content><p>Se utilizarán hebras de azafrán real de La Mancha para dar color y aroma. Queda expresamente prohibido el uso de colorante alimentario, cúrcuma o cualquier sustituto del azafrán.</p></content>
+        </article>
+
+        <article eId="art_8">
+          <heading>Artículo 8. Aceite y otros condimentos</heading>
+          <content><p>Se utilizará aceite de oliva virgen extra para el sofrito. Se sazonará con sal y una ramita de romero fresco. Queda prohibido el uso de cualquier otro aceite o hierba aromática.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO IV: Cocción y Presentación -->
+      <section eId="sec_coccion">
+        <heading>Título IV — Cocción y Presentación</heading>
+
+        <article eId="art_9">
+          <heading>Artículo 9. Recipiente</heading>
+          <content><p>La paella se cocinará exclusivamente en paellera de acero pulido de diámetro apropiado al número de comensales. Queda prohibido el uso de sartenes, cazuelas, ollas o paelleras antiadherentes.</p></content>
+        </article>
+
+        <article eId="art_10">
+          <heading>Artículo 10. Fuego</heading>
+          <content><p>La cocción se realizará obligatoriamente sobre fuego de leña, preferiblemente de naranjo. Queda prohibido el uso de cocinas de gas, eléctricas, de inducción o cualquier otra fuente de calor artificial.</p></content>
+        </article>
+
+        <article eId="art_11">
+          <heading>Artículo 11. Socarrat y presentación</heading>
+          <content><p>En los últimos 2 minutos se subirá el fuego para formar el socarrat (capa crujiente de arroz en el fondo). La paella se servirá directamente en la paellera, nunca emplatada individualmente. Se dejará reposar 5 minutos tapada con papel de periódico antes de servir.</p></content>
+        </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

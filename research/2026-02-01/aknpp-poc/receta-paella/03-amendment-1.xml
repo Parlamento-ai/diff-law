@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 3: Paella Valenciana
+  Documento: amendment 1 — "La enmienda del chorizo"
+  Versión: con sistema de votación AKN++
+
+  Contexto: Un diputado del grupo de Turismo Internacional propone permitir
+  chorizo en la paella, argumentando que es la versión más popular en el
+  extranjero y que España debería capitalizar su fama mundial.
+
+  Votación: RECHAZADO por unanimidad. 0 a favor, 8 en contra.
+  Es la primera vez en la historia de la Comisión que se alcanza unanimidad.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <amendment name="enmienda-chorizo">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/amendment/pae-2024-01-ind1"/>
+          <FRBRuri value="/poc/amendment/pae-2024-01-ind1"/>
+          <FRBRdate date="2024-06-01" name="presentación"/>
+          <FRBRauthor href="/poc/persona/diputado-turismo"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/amendment/pae-2024-01-ind1/esp@2024-06-01"/>
+          <FRBRuri value="/poc/amendment/pae-2024-01-ind1/esp@2024-06-01"/>
+          <FRBRdate date="2024-06-01" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/amendment/pae-2024-01-ind1/esp@2024-06-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/diputado-turismo" showAs="Dip. Turismo"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p>Enmienda del <docProponent>Diputado de Turismo</docProponent> al proyecto
+      <affectedDocument href="/poc/bill/pae-2024-01">que democratiza la receta de Paella Valenciana</affectedDocument>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <p>Intercálase en la Receta N° 3, a continuación del artículo 5 bis propuesto, el
+        siguiente artículo 5 ter:</p>
+        <p>"Artículo 5 ter. Chorizo. En las preparaciones destinadas a mercado internacional
+        o establecimientos turísticos, se podrá añadir 100 gramos de chorizo curado cortado
+        en rodajas como proteína complementaria."</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>La "paella con chorizo" es el plato español más conocido internacionalmente. Según
+        datos del Ministerio de Turismo, el 73% de los turistas británicos, alemanes y
+        estadounidenses asocian la paella con el chorizo. Negar esta realidad es un error
+        de marca-país que España no se puede permitir.</p>
+      </amendmentJustification>
+    </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      RECHAZADO — el changeSet registra la propuesta pero con result="rejected"
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/paella-valenciana/esp@2024-05-10"
+      result="/poc/receta/paella-valenciana/esp@2024-05-10">
+
+      <aknpp:vote date="2024-06-01"
+                  result="rejected"
+                  source="/poc/debate/pae-2024-01-comision-1">
+        <aknpp:for/>
+        <aknpp:against>
+          <aknpp:voter href="/poc/persona/diputado-valenciano" showAs="Dip. Valenciano"/>
+          <aknpp:voter href="/poc/persona/diputada-albufera" showAs="Dip. Albufera"/>
+          <aknpp:voter href="/poc/persona/diputado-denominacion" showAs="Dip. Denominación de Origen"/>
+          <aknpp:voter href="/poc/persona/diputada-madrilena" showAs="Dip. Madrileña"/>
+          <aknpp:voter href="/poc/persona/diputado-catalan" showAs="Dip. Catalán"/>
+          <aknpp:voter href="/poc/persona/diputada-andaluza" showAs="Dip. Andaluza"/>
+          <aknpp:voter href="/poc/persona/diputada-consumo" showAs="Dip. Consumo"/>
+          <aknpp:voter href="/poc/persona/diputado-turismo" showAs="Dip. Turismo"/>
+        </aknpp:against>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- Propuesta rechazada: insertar artículo sobre chorizo -->
+      <aknpp:articleChange article="art_5ter" type="insert" after="art_5bis">
+        <aknpp:new>En las preparaciones destinadas a mercado internacional o establecimientos turísticos, se podrá añadir 100 gramos de chorizo curado cortado en rodajas como proteína complementaria.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </amendment>
+</akomaNtoso>

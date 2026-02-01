@@ -7,13 +7,15 @@
 		articles,
 		changedArticleIds = new Set(),
 		accumulatedDiffs = {},
-		cleanView = false
+		cleanView = false,
+		highlightColor = 'amber'
 	}: {
 		heading: string;
 		articles: Article[];
 		changedArticleIds?: Set<string>;
 		accumulatedDiffs?: Record<string, WordToken[]>;
 		cleanView?: boolean;
+		highlightColor?: 'amber' | 'green' | 'red';
 	} = $props();
 </script>
 
@@ -26,6 +28,7 @@
 				heading={article.heading}
 				content={article.content}
 				highlighted={changedArticleIds.has(article.eId)}
+				{highlightColor}
 				wordDiff={accumulatedDiffs[article.eId]}
 				{cleanView}
 			/>

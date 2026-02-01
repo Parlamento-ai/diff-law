@@ -3,11 +3,12 @@ import { join } from 'node:path';
 import { parseAknDocument } from './xml-parser';
 import type { AknDocument, Boletin, TimelineEntry } from '$lib/types';
 
-const POC_DIR = 'research/2026-01-31/aknpp-poc';
+const POC_DIR = 'research/2026-02-01/aknpp-poc';
 
 const BOLETIN_DIRS: Record<string, string> = {
 	'empanadas-de-pino': 'receta-empanadas',
-	'pan-de-campo': 'receta-pan'
+	'pan-de-campo': 'receta-pan',
+	'paella-valenciana': 'receta-paella'
 };
 
 const SLUG_MAP: Record<string, string> = {
@@ -15,8 +16,12 @@ const SLUG_MAP: Record<string, string> = {
 	'02-bill.xml': 'bill',
 	'03-amendment-1.xml': 'amendment-1',
 	'04-amendment-2.xml': 'amendment-2',
+	'05-amendment-3.xml': 'amendment-3',
+	'06-amendment-4.xml': 'amendment-4',
+	'07-amendment-5.xml': 'amendment-5',
+	'04-act-final.xml': 'final',
 	'05-act-final.xml': 'final',
-	'04-act-final.xml': 'final'
+	'08-act-final.xml': 'final'
 };
 
 function fileToSlug(fileName: string): string {
@@ -29,6 +34,9 @@ function slugToLabel(slug: string): string {
 		bill: 'Proyecto de Ley',
 		'amendment-1': 'Indicación 1',
 		'amendment-2': 'Indicación 2',
+		'amendment-3': 'Indicación 3',
+		'amendment-4': 'Indicación 4',
+		'amendment-5': 'Indicación 5',
 		final: 'Ley Promulgada'
 	};
 	return labels[slug] || slug;
@@ -37,7 +45,7 @@ function slugToLabel(slug: string): string {
 function buildTimeline(documents: AknDocument[]): TimelineEntry[] {
 	return documents.map((doc) => {
 		const slug = fileToSlug(doc.fileName);
-		return {
+		const entry: TimelineEntry = {
 			slug,
 			label: slugToLabel(slug),
 			date: doc.frbr.date,
@@ -45,6 +53,10 @@ function buildTimeline(documents: AknDocument[]): TimelineEntry[] {
 			author: doc.frbr.authorLabel,
 			fileName: doc.fileName
 		};
+		if (doc.changeSet?.vote) {
+			entry.voteResult = doc.changeSet.vote.result;
+		}
+		return entry;
 	});
 }
 

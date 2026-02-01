@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 2: Empanadas de Pino
+  Documento: amendment 2 (indicación de la Comisión de Gastronomía)
+  Versión: con sistema de votación AKN++
+
+  Contexto: La comisión propone ajustar la masa.
+    - art_3: Agregar yema de huevo al líquido (mejor textura)
+    - art_4: Aumentar tiempo de reposo de 30 a 45 minutos
+
+  Votación: Aprobado por unanimidad. 5 a favor, 0 en contra.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <amendment name="indicacion-comision-empanadas">
+
+    <meta>
+      <identification source="#comision">
+        <FRBRWork>
+          <FRBRthis value="/poc/amendment/emp-2024-01-ind2"/>
+          <FRBRuri value="/poc/amendment/emp-2024-01-ind2"/>
+          <FRBRdate date="2024-08-05" name="presentación"/>
+          <FRBRauthor href="/poc/org/comision-gastronomia"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/amendment/emp-2024-01-ind2/esp@2024-08-05"/>
+          <FRBRuri value="/poc/amendment/emp-2024-01-ind2/esp@2024-08-05"/>
+          <FRBRdate date="2024-08-05" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/amendment/emp-2024-01-ind2/esp@2024-08-05/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#comision">
+        <TLCOrganization eId="comision" href="/poc/org/comision-gastronomia" showAs="Comisión de Gastronomía"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p>Indicación de la <docProponent>Comisión de Gastronomía</docProponent> al proyecto
+      <affectedDocument href="/poc/bill/emp-2024-01">que reforma la receta de Empanadas de Pino</affectedDocument>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <p>1. Modifícase el artículo 3, reemplazando "250 mililitros de agua caliente con sal"
+        por "200 mililitros de agua caliente con sal y 1 yema de huevo".</p>
+        <p>2. Modifícase el artículo 4, reemplazando "30 minutos" por "45 minutos".</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>La yema de huevo mejora la elasticidad y el color de la masa. El mayor tiempo de
+        reposo permite una mejor hidratación de la harina, resultando en una masa más
+        manejable y crujiente al hornear.</p>
+      </amendmentJustification>
+    </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/empanadas-de-pino/esp@2024-07-20"
+      result="/poc/receta/empanadas-de-pino/esp@2024-08-05">
+
+      <aknpp:vote date="2024-08-05"
+                  result="approved"
+                  source="/poc/debate/emp-2024-01-comision-2">
+        <aknpp:for>
+          <aknpp:voter href="/poc/persona/senadora-cocinera" showAs="Sen. Cocinera"/>
+          <aknpp:voter href="/poc/persona/senador-tradicionalista" showAs="Sen. Tradicionalista"/>
+          <aknpp:voter href="/poc/persona/senador-fitness" showAs="Sen. Fitness"/>
+          <aknpp:voter href="/poc/persona/senadora-abuela" showAs="Sen. Abuela"/>
+          <aknpp:voter href="/poc/persona/senadora-regional" showAs="Sen. Regional"/>
+        </aknpp:for>
+        <aknpp:against/>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <aknpp:articleChange article="art_3" type="substitute">
+        <aknpp:old>Se utilizarán 250 mililitros de agua caliente con sal.</aknpp:old>
+        <aknpp:new>Se utilizarán 200 mililitros de agua caliente con sal y 1 yema de huevo.</aknpp:new>
+      </aknpp:articleChange>
+
+      <aknpp:articleChange article="art_4" type="substitute">
+        <aknpp:old>Mezclar la harina con la manteca tibia y el agua con sal. Amasar hasta obtener una masa lisa. Dejar reposar 30 minutos.</aknpp:old>
+        <aknpp:new>Mezclar la harina con la mantequilla tibia y el agua con sal. Amasar hasta obtener una masa lisa. Dejar reposar 45 minutos.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </amendment>
+</akomaNtoso>

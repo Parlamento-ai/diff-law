@@ -1,14 +1,31 @@
 <script lang="ts">
-	import type { ArticleDiff } from '$lib/types';
+	import type { ArticleDiff, Vote } from '$lib/types';
 	import ArticleDiffCard from './ArticleDiffCard.svelte';
 
 	let {
 		diffs,
+		vote = undefined,
 		collapsed = false
 	}: {
 		diffs: ArticleDiff[];
+		vote?: Vote | null;
 		collapsed?: boolean;
 	} = $props();
+
+	const resultLabels: Record<string, string> = {
+		approved: 'Aprobado',
+		rejected: 'Rechazado',
+		withdrawn: 'Retirado',
+		inadmissible: 'Inadmisible',
+		pending: 'Pendiente'
+	};
+	const resultColors: Record<string, string> = {
+		approved: 'bg-emerald-50 border-emerald-200 text-emerald-800',
+		rejected: 'bg-red-50 border-red-200 text-red-800',
+		withdrawn: 'bg-gray-50 border-gray-200 text-gray-600',
+		inadmissible: 'bg-gray-50 border-gray-200 text-gray-600',
+		pending: 'bg-amber-50 border-amber-200 text-amber-800'
+	};
 
 	let isOpen = $state(true);
 
@@ -18,6 +35,34 @@
 </script>
 
 <div>
+	{#if vote}
+		<div class="px-4 py-3 border-b {resultColors[vote.result] || 'bg-gray-50 border-gray-200'}">
+			<div class="flex items-center gap-2 text-sm font-semibold">
+				<span>{vote.result === 'approved' ? '\u2713' : '\u2717'}</span>
+				<span>{resultLabels[vote.result] || vote.result}</span>
+				<span class="font-normal opacity-75">{vote.for.length}-{vote.against.length}-{vote.abstain.length}</span>
+			</div>
+			{#if vote.for.length > 0}
+				<p class="text-xs mt-1 opacity-75">
+					<span class="font-medium">A favor:</span>
+					{vote.for.map(v => v.showAs).join(', ')}
+				</p>
+			{/if}
+			{#if vote.against.length > 0}
+				<p class="text-xs mt-1 opacity-75">
+					<span class="font-medium">En contra:</span>
+					{vote.against.map(v => v.showAs).join(', ')}
+				</p>
+			{/if}
+			{#if vote.abstain.length > 0}
+				<p class="text-xs mt-1 opacity-75">
+					<span class="font-medium">Abstenciones:</span>
+					{vote.abstain.map(v => v.showAs).join(', ')}
+				</p>
+			{/if}
+		</div>
+	{/if}
+
 	<!-- Mobile toggle -->
 	<button
 		class="flex items-center justify-between w-full px-4 py-2 bg-gray-50 border-b border-gray-200 lg:hidden"

@@ -24,10 +24,25 @@ export interface ArticleChange {
 	after?: string;
 }
 
+export interface Voter {
+	href: string;
+	showAs: string;
+}
+
+export interface Vote {
+	date: string;
+	result: 'approved' | 'rejected' | 'withdrawn' | 'inadmissible' | 'pending';
+	source: string;
+	for: Voter[];
+	against: Voter[];
+	abstain: Voter[];
+}
+
 export interface ChangeSet {
 	base: string;
 	result: string;
 	changes: ArticleChange[];
+	vote?: Vote;
 }
 
 export type DocumentType = 'act' | 'bill' | 'amendment';
@@ -59,6 +74,7 @@ export interface TimelineEntry {
 	type: DocumentType;
 	author: string;
 	fileName: string;
+	voteResult?: Vote['result'];
 }
 
 export interface Boletin {

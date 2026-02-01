@@ -16,7 +16,7 @@ Con lo satisfactorio que se veía en el Proof of Concept, nos preguntamos por qu
 
 El formato propuesto sería agregarle a nuestro `changeSet` el resultado final del voto, con los nombres. La razón de esto es porque, de la misma manera que los cambios, la votación en el formato actual simplemente es mencionada, pero en ningún momento se computa con un resultado final.
 
-En el archivo `DEBATE.xml` solamente hacen el guión como en una pieza de teatro en la que dice "Senador Pérez: a favor". Pero en ningún momento se registra el voto final en el documento (e.g. `a-favor: 5, en-contra:7`). 
+En el archivo `DEBATE.xml` solamente hacen el guión como en una pieza de teatro en la que dice "Senador Pérez: a favor". Pero en ningún momento se registra el voto final en el documento (e.g. `a-favor: 5, en-contra: 7`). 
 
 Agregamos estos campos a nuestro `AKN++` formato, dentro del `changeSet`:
 
@@ -41,6 +41,10 @@ Agregamos estos campos a nuestro `AKN++` formato, dentro del `changeSet`:
   │ aknpp:voter   │ Cada persona, con href (ID único) y showAs (nombre legible)   │
   └───────────────┴───────────────────────────────────────────────────────────────┘
 ```
+
+El resultado en la interfaz es bastante atractivo:
+
+![AKN++ Votaciones](research/2026-02-01/aknpp-votes.png)
 
 
 ---

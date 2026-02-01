@@ -113,19 +113,33 @@ export function reconstructState(
 	let currentChangeSet: ChangeSet | undefined;
 
 	// Apply changeSets in order up to versionIndex
-	const changeSetsToApply = documents
-		.filter((d) => d.changeSet)
-		.slice(0, versionIndex);
+	// Skip rejected/withdrawn/inadmissible amendments — their changes don't carry forward
+	const currentDoc = documents[versionIndex];
+	const currentDocHasChangeSet = !!currentDoc?.changeSet;
 
-	for (let i = 0; i < changeSetsToApply.length; i++) {
-		const cs = changeSetsToApply[i].changeSet!;
-		const changed = applyChangeSet(law, cs);
+	const rejectedResults = new Set(['rejected', 'withdrawn', 'inadmissible']);
 
-		// Only track changes from the last applied changeSet
-		if (i === changeSetsToApply.length - 1) {
-			changedArticleIds = changed;
-			currentChangeSet = cs;
+	// Collect changeSets from documents before the current one
+	const previousChangeSets: { doc: AknDocument; cs: ChangeSet }[] = [];
+	for (let i = 0; i < versionIndex; i++) {
+		const doc = documents[i];
+		if (doc.changeSet) {
+			previousChangeSets.push({ doc, cs: doc.changeSet });
 		}
+	}
+
+	// Apply previous changeSets, skipping rejected ones
+	for (const { cs } of previousChangeSets) {
+		const wasRejected = cs.vote && rejectedResults.has(cs.vote.result);
+		if (!wasRejected) {
+			applyChangeSet(law, cs);
+		}
+	}
+
+	// If the current document itself has a changeSet, apply it as the "current step"
+	if (currentDocHasChangeSet) {
+		currentChangeSet = currentDoc.changeSet!;
+		changedArticleIds = applyChangeSet(law, currentChangeSet);
 	}
 
 	// Compute accumulated diffs: original vs current for every article

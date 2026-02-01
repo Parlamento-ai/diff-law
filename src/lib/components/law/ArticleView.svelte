@@ -7,6 +7,7 @@
 		heading,
 		content,
 		highlighted = false,
+		highlightColor = 'amber',
 		wordDiff,
 		cleanView = false
 	}: {
@@ -14,15 +15,22 @@
 		heading: string;
 		content: string;
 		highlighted?: boolean;
+		highlightColor?: 'amber' | 'green' | 'red';
 		wordDiff?: WordToken[];
 		cleanView?: boolean;
 	} = $props();
+
+	const colorMap: Record<string, string> = {
+		amber: 'border-amber-300 bg-amber-50',
+		green: 'border-emerald-300 bg-emerald-50',
+		red: 'border-red-300 bg-red-50'
+	};
 </script>
 
 <article
 	id={eId}
 	class="py-1 px-4 border-l-2 transition-colors
-		{highlighted ? 'border-amber-300 bg-amber-50' : 'border-transparent'}"
+		{highlighted ? colorMap[highlightColor] : 'border-transparent'}"
 >
 	<h4 class="text-sm font-semibold text-gray-800">{heading}</h4>
 	{#if wordDiff}

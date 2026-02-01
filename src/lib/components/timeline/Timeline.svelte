@@ -24,6 +24,7 @@
 			date={entry.date}
 			type={entry.type}
 			author={entry.author}
+			voteResult={entry.voteResult}
 			active={entry.slug === activeSlug}
 			isLast={i === entries.length - 1}
 			href="/{boletinSlug}/{entry.slug}"

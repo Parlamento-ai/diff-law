@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 3: Paella Valenciana
+  Documento: act (ley promulgada / receta final)
+
+  Estado: Resultado de aplicar el bill + enmiendas aprobadas (2 y 4).
+  Las enmiendas 1 (chorizo), 3 (cebolla) y 5 (socarrat) NO se aplicaron.
+
+  Cambios netos respecto al original:
+    - art_5: Reescrito. Prohibición de mariscos se mantiene pero remite al art_5bis
+    - art_5bis: NUEVO. Reconoce "arroz de marisco" como plato diferenciado
+    - art_10: Gas permitido como alternativa a leña. Eléctricas e inducción prohibidas.
+
+  Sin cambios (gracias al blindaje valenciano):
+    - art_1 (arroz bomba obligatorio — el bill lo cambió, la enmienda 2 lo revirtió)
+    - art_7 (azafrán real obligatorio — el bill lo cambió, la enmienda 2 lo revirtió)
+    - art_2, art_3, art_4, art_6, art_8, art_9, art_11
+
+  Enmiendas que NO produjeron cambio:
+    - Enmienda 1 (chorizo): RECHAZADA por unanimidad
+    - Enmienda 3 (cebolla): RETIRADA por la autora
+    - Enmienda 5 (socarrat): RECHAZADA 2-6
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="receta-paella-valenciana">
+
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/poc/receta/paella-valenciana"/>
+          <FRBRuri value="/poc/receta/paella-valenciana"/>
+          <FRBRdate date="2023-03-18" name="publicación"/>
+          <FRBRauthor href="/poc/persona/yayo-pepe"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/receta/paella-valenciana/esp@2024-09-01"/>
+          <FRBRuri value="/poc/receta/paella-valenciana/esp@2024-09-01"/>
+          <FRBRdate date="2024-09-01" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/receta/paella-valenciana/esp@2024-09-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <lifecycle source="#congreso">
+        <eventRef eId="e1" date="2023-03-18" type="generation" source="#autor"/>
+        <eventRef eId="e2" date="2024-05-10" type="amendment" source="/poc/bill/pae-2024-01"/>
+        <eventRef eId="e3" date="2024-06-01" type="amendment" source="/poc/amendment/pae-2024-01-ind1"/>
+        <eventRef eId="e4" date="2024-06-15" type="amendment" source="/poc/amendment/pae-2024-01-ind2"/>
+        <eventRef eId="e5" date="2024-06-20" type="amendment" source="/poc/amendment/pae-2024-01-ind3"/>
+        <eventRef eId="e6" date="2024-07-01" type="amendment" source="/poc/amendment/pae-2024-01-ind4"/>
+        <eventRef eId="e7" date="2024-07-10" type="amendment" source="/poc/amendment/pae-2024-01-ind5"/>
+        <eventRef eId="e8" date="2024-09-01" type="generation" source="#congreso"/>
+      </lifecycle>
+      <references source="#congreso">
+        <TLCPerson eId="autor" href="/poc/persona/yayo-pepe" showAs="Yayo Pepe"/>
+        <TLCOrganization eId="congreso" href="/poc/org/congreso" showAs="Congreso de Gastronomía"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Receta N° 3: <docTitle>Paella Valenciana</docTitle></p>
+      </longTitle>
+      <p>Receta tradicional de paella valenciana, modificada por Ley de Democratización Arrocera (2024).</p>
+    </preface>
+
+    <body>
+      <!-- TÍTULO I: Arroz -->
+      <section eId="sec_arroz">
+        <heading>Título I — Arroz</heading>
+
+        <article eId="art_1">
+          <heading>Artículo 1. Tipo de arroz</heading>
+          <content><p>Se utilizarán 400 gramos de arroz bomba de denominación de origen Valencia. Queda prohibido el uso de cualquier otra variedad de arroz.</p></content>
+        </article>
+
+        <article eId="art_2">
+          <heading>Artículo 2. Caldo</heading>
+          <content><p>El arroz se cocinará en caldo de pollo y verduras preparado con los huesos y recortes de las proteínas del Título II. Queda prohibido el uso de caldo comercial o pastillas de caldo.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO II: Proteínas -->
+      <section eId="sec_proteinas">
+        <heading>Título II — Proteínas</heading>
+
+        <article eId="art_3">
+          <heading>Artículo 3. Pollo</heading>
+          <content><p>Se utilizarán 500 gramos de pollo de corral troceado en piezas irregulares con hueso. Queda prohibido el uso de pollo deshuesado o de producción industrial.</p></content>
+        </article>
+
+        <article eId="art_4">
+          <heading>Artículo 4. Conejo</heading>
+          <content><p>Se utilizarán 300 gramos de conejo troceado con hueso. El conejo es ingrediente obligatorio e insustituible.</p></content>
+        </article>
+
+        <article eId="art_5">
+          <heading>Artículo 5. Exclusión de mariscos</heading>
+          <content><p>Queda prohibida la adición de mariscos en la paella valenciana. Para preparaciones con mariscos, véase el artículo 5 bis.</p></content>
+        </article>
+
+        <article eId="art_5bis">
+          <heading>Artículo 5 bis. Arroz de marisco</heading>
+          <content><p>Se reconoce el 'arroz de marisco' como preparación diferenciada. Podrá incluir gambas, mejillones, calamares, langostinos y almejas. Se preparará con caldo de pescado en lugar de caldo de pollo. No podrá denominarse 'paella valenciana' en ningún caso.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO III: Sofrito y Condimentos -->
+      <section eId="sec_sofrito">
+        <heading>Título III — Sofrito y Condimentos</heading>
+
+        <article eId="art_6">
+          <heading>Artículo 6. Verduras</heading>
+          <content><p>Se utilizarán 200 gramos de judía verde ancha (bajoqueta), 100 gramos de garrofón y 1 tomate maduro rallado. Queda prohibida la adición de cebolla, pimiento, guisantes o cualquier otra verdura no listada.</p></content>
+        </article>
+
+        <article eId="art_7">
+          <heading>Artículo 7. Azafrán</heading>
+          <content><p>Se utilizarán hebras de azafrán real de La Mancha para dar color y aroma. Queda expresamente prohibido el uso de colorante alimentario, cúrcuma o cualquier sustituto del azafrán.</p></content>
+        </article>
+
+        <article eId="art_8">
+          <heading>Artículo 8. Aceite y otros condimentos</heading>
+          <content><p>Se utilizará aceite de oliva virgen extra para el sofrito. Se sazonará con sal y una ramita de romero fresco. Queda prohibido el uso de cualquier otro aceite o hierba aromática.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO IV: Cocción y Presentación -->
+      <section eId="sec_coccion">
+        <heading>Título IV — Cocción y Presentación</heading>
+
+        <article eId="art_9">
+          <heading>Artículo 9. Recipiente</heading>
+          <content><p>La paella se cocinará exclusivamente en paellera de acero pulido de diámetro apropiado al número de comensales. Queda prohibido el uso de sartenes, cazuelas, ollas o paelleras antiadherentes.</p></content>
+        </article>
+
+        <article eId="art_10">
+          <heading>Artículo 10. Fuego</heading>
+          <content><p>La cocción se realizará sobre fuego de leña o, alternativamente, sobre cocina de gas a fuego vivo. Se recomienda preferentemente el fuego de leña. Queda prohibido el uso de cocinas eléctricas o de inducción.</p></content>
+        </article>
+
+        <article eId="art_11">
+          <heading>Artículo 11. Socarrat y presentación</heading>
+          <content><p>En los últimos 2 minutos se subirá el fuego para formar el socarrat (capa crujiente de arroz en el fondo). La paella se servirá directamente en la paellera, nunca emplatada individualmente. Se dejará reposar 5 minutos tapada con papel de periódico antes de servir.</p></content>
+        </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>
