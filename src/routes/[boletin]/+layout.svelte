@@ -41,6 +41,7 @@
 					{@const colors = { act: 'bg-addition-500', bill: 'bg-blue-500', amendment: 'bg-amber-500' }}
 					<a
 						href="/{data.boletin.slug}/{entry.slug}"
+						data-sveltekit-noscroll
 						class="shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-colors
 							{activeSlug === entry.slug ? 'bg-gray-100 font-semibold' : 'hover:bg-gray-50'}"
 					>

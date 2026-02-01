@@ -47,6 +47,7 @@
 
 <a
 	{href}
+	data-sveltekit-noscroll
 	class="group relative flex items-start gap-3 py-3 px-2 rounded-md transition-colors
 		{active ? 'bg-gray-100' : 'hover:bg-gray-50'}"
 >
