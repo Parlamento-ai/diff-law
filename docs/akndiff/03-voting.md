@@ -87,3 +87,6 @@ This matches real-world practice: a legislator votes for or against "Amendment 2
 
 The `source` attribute on `vote` links to a standard AKN `debate` document where the full session transcript lives — speeches, arguments, procedural notes. AKN Diff voting data complements but doesn't replace the debate record; it provides the structured, computable summary.
 
+---
+
+Previous: [The changeSet element](/docs/akndiff/changeset) | Next: [Examples walkthrough](/docs/akndiff/examples)

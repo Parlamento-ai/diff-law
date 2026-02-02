@@ -113,3 +113,6 @@ The FRBR model solves a real problem: when a legislator says "Article 5 of Act 3
 
 FRBR gives each of these a distinct, unambiguous identity. This is essential for cross-references, amendment tracking, and consolidated law databases.
 
+---
+
+Previous: [What is Akoma Ntoso?](/docs/akn/what-is-akn) | Next: [Document types](/docs/akn/document-types)

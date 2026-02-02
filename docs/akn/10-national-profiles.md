@@ -98,3 +98,6 @@ AKN accommodates national variations through the `<proprietary>` element in `<me
 
 This is similar in spirit to how [AKN Diff](/docs/akndiff/overview) extends AKN with the `akndiff` namespace — though AKN Diff adds elements to the document body rather than just metadata.
 
+---
+
+Previous: [Naming convention](/docs/akn/naming-convention)

@@ -55,3 +55,6 @@ AKN Diff introduces two top-level elements:
 
 For a complete walkthrough using a real example, see the [Paella Valenciana lifecycle](/docs/akndiff/examples).
 
+---
+
+Next: [The changeSet element](/docs/akndiff/changeset)

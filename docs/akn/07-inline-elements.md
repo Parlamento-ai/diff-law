@@ -221,3 +221,6 @@ The only element that uses standard HTML-style linking (not AKN IRIs):
 
 All other cross-references should use `<ref>` with AKN IRIs.
 
+---
+
+Previous: [Legislative hierarchy](/docs/akn/hierarchy) | Next: [Debates](/docs/akn/debates)

@@ -229,3 +229,6 @@ Examples:
 
 Full specification: [OASIS Akoma Ntoso Naming Convention v1.0](http://docs.oasis-open.org/legaldocml/akn-nc/v1.0/akn-nc-v1.0.html)
 
+---
+
+Previous: [Debates](/docs/akn/debates) | Next: [National profiles](/docs/akn/national-profiles)

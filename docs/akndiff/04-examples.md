@@ -251,3 +251,6 @@ The `lifecycle` element in the final act records all events:
 | Unanimous vote | Amendment 1 (0-8) |
 | Version chain reconstruction | Following `base`→`result` across all documents |
 
+---
+
+Previous: [The vote element](/docs/akndiff/voting)

@@ -218,3 +218,6 @@ The `start` and `end` attributes reference `eventRef` elements in `<lifecycle>`.
 - `<notes>` — contains `<note>` elements for footnotes and endnotes
 - `<proprietary>` — a container for any vendor/implementation-specific metadata (elements from other namespaces)
 
+---
+
+Previous: [Common structure](/docs/akn/structure) | Next: [Legislative hierarchy](/docs/akn/hierarchy)

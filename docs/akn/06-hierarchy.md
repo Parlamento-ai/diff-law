@@ -184,3 +184,6 @@ For tabular content within legislation:
 </table>
 ```
 
+---
+
+Previous: [Metadata](/docs/akn/metadata) | Next: [Inline elements](/docs/akn/inline-elements)
