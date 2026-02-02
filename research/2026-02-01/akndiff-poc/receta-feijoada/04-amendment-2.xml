@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 5: Feijoada Carioca
+  AKN Diff Proof of Concept — Receta 5: Feijoada Carioca
   Documento: amendment 2 — "La enmienda vegana"
-  Versión: con sistema de votación AKN++
+  Versión: con sistema de votación AKN Diff
 
   Contexto: La Senadora Amazónica propone añadir un nuevo artículo 6 bis que permita
   una "feijoada vegana" con tofu y hongos reemplazando todas las carnes.
@@ -11,7 +11,7 @@
   Incluso los modernizadores consideran que esto cruza una línea fundamental.
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <amendment name="enmienda-vegana">
 
     <meta>
@@ -64,38 +64,38 @@
 
     <!--
       ============================================================
-      EXTENSIÓN AKN++: changeSet con votación
+      EXTENSIÓN AKN Diff: changeSet con votación
       RECHAZADO — base y result son iguales porque no produce cambio
       ============================================================
     -->
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/feijoada-carioca/por@2025-03-10"
       result="/poc/receta/feijoada-carioca/por@2025-03-10">
 
-      <aknpp:vote date="2025-03-20"
+      <akndiff:vote date="2025-03-20"
                   result="rejected"
                   source="/poc/debate/fei-2025-01-comision-2">
-        <aknpp:for>
-          <aknpp:voter href="/poc/persona/senadora-amazonica" showAs="Sen. Amazónica"/>
-        </aknpp:for>
-        <aknpp:against>
-          <aknpp:voter href="/poc/persona/senador-carioca" showAs="Sen. Carioca"/>
-          <aknpp:voter href="/poc/persona/senadora-paulista" showAs="Sen. Paulista"/>
-          <aknpp:voter href="/poc/persona/senador-baiano" showAs="Sen. Baiano"/>
-          <aknpp:voter href="/poc/persona/senadora-mineira" showAs="Sen. Mineira"/>
-          <aknpp:voter href="/poc/persona/senador-gaucho" showAs="Sen. Gaúcho"/>
-          <aknpp:voter href="/poc/persona/senadora-nordestina" showAs="Sen. Nordestina"/>
-          <aknpp:voter href="/poc/persona/senador-goiano" showAs="Sen. Goiano"/>
-        </aknpp:against>
-        <aknpp:abstain/>
-      </aknpp:vote>
+        <akndiff:for>
+          <akndiff:voter href="/poc/persona/senadora-amazonica" showAs="Sen. Amazónica"/>
+        </akndiff:for>
+        <akndiff:against>
+          <akndiff:voter href="/poc/persona/senador-carioca" showAs="Sen. Carioca"/>
+          <akndiff:voter href="/poc/persona/senadora-paulista" showAs="Sen. Paulista"/>
+          <akndiff:voter href="/poc/persona/senador-baiano" showAs="Sen. Baiano"/>
+          <akndiff:voter href="/poc/persona/senadora-mineira" showAs="Sen. Mineira"/>
+          <akndiff:voter href="/poc/persona/senador-gaucho" showAs="Sen. Gaúcho"/>
+          <akndiff:voter href="/poc/persona/senadora-nordestina" showAs="Sen. Nordestina"/>
+          <akndiff:voter href="/poc/persona/senador-goiano" showAs="Sen. Goiano"/>
+        </akndiff:against>
+        <akndiff:abstain/>
+      </akndiff:vote>
 
       <!-- Propuesta rechazada: insertar artículo sobre feijoada vegana -->
-      <aknpp:articleChange article="art_6bis" type="insert" after="art_6">
-        <aknpp:new>Se reconoce la variante vegana de la feijoada, en la cual todas las carnes del Título II podrán ser sustituidas por tofu ahumado, hongos shiitake deshidratados y proteína de soja texturizada. La denominación 'feijoada vegana' será de uso exclusivo para esta variante.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_6bis" type="insert" after="art_6">
+        <akndiff:new>Se reconoce la variante vegana de la feijoada, en la cual todas las carnes del Título II podrán ser sustituidas por tofu ahumado, hongos shiitake deshidratados y proteína de soja texturizada. La denominación 'feijoada vegana' será de uso exclusivo para esta variante.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </amendment>
 </akomaNtoso>

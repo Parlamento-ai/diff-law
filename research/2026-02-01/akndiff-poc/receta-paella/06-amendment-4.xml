@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 3: Paella Valenciana
+  AKN Diff Proof of Concept — Receta 3: Paella Valenciana
   Documento: amendment 4 — "El gran compromiso de los mariscos"
-  Versión: con sistema de votación AKN++
+  Versión: con sistema de votación AKN Diff
 
   Contexto: El Dip. Catalán propone un compromiso sobre la cuestión del marisco.
   En lugar de simplemente "permitir mariscos", establece reglas claras:
@@ -14,7 +14,7 @@
   en que la distinción es innecesaria.
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <amendment name="compromiso-mariscos">
 
     <meta>
@@ -70,45 +70,45 @@
 
     <!--
       ============================================================
-      EXTENSIÓN AKN++: changeSet con votación
+      EXTENSIÓN AKN Diff: changeSet con votación
       APROBADO — reformula completamente la cuestión del marisco
       ============================================================
     -->
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/paella-valenciana/esp@2024-06-15"
       result="/poc/receta/paella-valenciana/esp@2024-07-01">
 
-      <aknpp:vote date="2024-07-01"
+      <akndiff:vote date="2024-07-01"
                   result="approved"
                   source="/poc/debate/pae-2024-01-comision-4">
-        <aknpp:for>
-          <aknpp:voter href="/poc/persona/diputado-catalan" showAs="Dip. Catalán"/>
-          <aknpp:voter href="/poc/persona/diputado-valenciano" showAs="Dip. Valenciano"/>
-          <aknpp:voter href="/poc/persona/diputada-albufera" showAs="Dip. Albufera"/>
-          <aknpp:voter href="/poc/persona/diputado-denominacion" showAs="Dip. Denominación de Origen"/>
-          <aknpp:voter href="/poc/persona/diputada-andaluza" showAs="Dip. Andaluza"/>
-          <aknpp:voter href="/poc/persona/diputado-turismo" showAs="Dip. Turismo"/>
-          <aknpp:voter href="/poc/persona/diputada-consumo" showAs="Dip. Consumo"/>
-        </aknpp:for>
-        <aknpp:against>
-          <aknpp:voter href="/poc/persona/diputada-madrilena" showAs="Dip. Madrileña"/>
-        </aknpp:against>
-        <aknpp:abstain/>
-      </aknpp:vote>
+        <akndiff:for>
+          <akndiff:voter href="/poc/persona/diputado-catalan" showAs="Dip. Catalán"/>
+          <akndiff:voter href="/poc/persona/diputado-valenciano" showAs="Dip. Valenciano"/>
+          <akndiff:voter href="/poc/persona/diputada-albufera" showAs="Dip. Albufera"/>
+          <akndiff:voter href="/poc/persona/diputado-denominacion" showAs="Dip. Denominación de Origen"/>
+          <akndiff:voter href="/poc/persona/diputada-andaluza" showAs="Dip. Andaluza"/>
+          <akndiff:voter href="/poc/persona/diputado-turismo" showAs="Dip. Turismo"/>
+          <akndiff:voter href="/poc/persona/diputada-consumo" showAs="Dip. Consumo"/>
+        </akndiff:for>
+        <akndiff:against>
+          <akndiff:voter href="/poc/persona/diputada-madrilena" showAs="Dip. Madrileña"/>
+        </akndiff:against>
+        <akndiff:abstain/>
+      </akndiff:vote>
 
       <!-- art_5: restaurar prohibición de mariscos en paella valenciana -->
-      <aknpp:articleChange article="art_5" type="substitute">
-        <aknpp:old>Opcionalmente, se podrán añadir mariscos frescos (gambas, mejillones, calamares) como complemento o alternativa a las proteínas del Título II.</aknpp:old>
-        <aknpp:new>Queda prohibida la adición de mariscos en la paella valenciana. Para preparaciones con mariscos, véase el artículo 5 bis.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_5" type="substitute">
+        <akndiff:old>Opcionalmente, se podrán añadir mariscos frescos (gambas, mejillones, calamares) como complemento o alternativa a las proteínas del Título II.</akndiff:old>
+        <akndiff:new>Queda prohibida la adición de mariscos en la paella valenciana. Para preparaciones con mariscos, véase el artículo 5 bis.</akndiff:new>
+      </akndiff:articleChange>
 
       <!-- art_5bis: reformular como "arroz de marisco" -->
-      <aknpp:articleChange article="art_5bis" type="substitute">
-        <aknpp:old>Cuando se utilicen mariscos según el artículo 5, el plato deberá denominarse 'paella mixta' y no 'paella valenciana'. La denominación 'paella valenciana' queda reservada para la preparación con pollo y conejo exclusivamente.</aknpp:old>
-        <aknpp:new>Se reconoce el 'arroz de marisco' como preparación diferenciada. Podrá incluir gambas, mejillones, calamares, langostinos y almejas. Se preparará con caldo de pescado en lugar de caldo de pollo. No podrá denominarse 'paella valenciana' en ningún caso.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_5bis" type="substitute">
+        <akndiff:old>Cuando se utilicen mariscos según el artículo 5, el plato deberá denominarse 'paella mixta' y no 'paella valenciana'. La denominación 'paella valenciana' queda reservada para la preparación con pollo y conejo exclusivamente.</akndiff:old>
+        <akndiff:new>Se reconoce el 'arroz de marisco' como preparación diferenciada. Podrá incluir gambas, mejillones, calamares, langostinos y almejas. Se preparará con caldo de pescado en lugar de caldo de pollo. No podrá denominarse 'paella valenciana' en ningún caso.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </amendment>
 </akomaNtoso>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 2: Empanadas de Pino
+  AKN Diff Proof of Concept — Receta 2: Empanadas de Pino
   Documento: amendment 1 (indicación del Senador Tradicionalista)
-  Versión: con sistema de votación AKN++
+  Versión: con sistema de votación AKN Diff
 
   Contexto: El Senador Tradicionalista se opone a eliminar las pasas.
   Propone reincorporarlas pero como opcionales.
@@ -11,7 +11,7 @@
   Hasta la Sen. Cocinera aceptó el compromiso. Solo Sen. Fitness votó en contra.
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <amendment name="indicacion-pasas">
 
     <meta>
@@ -61,34 +61,34 @@
 
     <!--
       ============================================================
-      EXTENSIÓN AKN++: changeSet con votación
+      EXTENSIÓN AKN Diff: changeSet con votación
       ============================================================
     -->
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/empanadas-de-pino/esp@2024-04-01"
       result="/poc/receta/empanadas-de-pino/esp@2024-07-20">
 
-      <aknpp:vote date="2024-07-20"
+      <akndiff:vote date="2024-07-20"
                   result="approved"
                   source="/poc/debate/emp-2024-01-comision-1">
-        <aknpp:for>
-          <aknpp:voter href="/poc/persona/senador-tradicionalista" showAs="Sen. Tradicionalista"/>
-          <aknpp:voter href="/poc/persona/senadora-cocinera" showAs="Sen. Cocinera"/>
-          <aknpp:voter href="/poc/persona/senadora-abuela" showAs="Sen. Abuela"/>
-          <aknpp:voter href="/poc/persona/senadora-regional" showAs="Sen. Regional"/>
-        </aknpp:for>
-        <aknpp:against>
-          <aknpp:voter href="/poc/persona/senador-fitness" showAs="Sen. Fitness"/>
-        </aknpp:against>
-        <aknpp:abstain/>
-      </aknpp:vote>
+        <akndiff:for>
+          <akndiff:voter href="/poc/persona/senador-tradicionalista" showAs="Sen. Tradicionalista"/>
+          <akndiff:voter href="/poc/persona/senadora-cocinera" showAs="Sen. Cocinera"/>
+          <akndiff:voter href="/poc/persona/senadora-abuela" showAs="Sen. Abuela"/>
+          <akndiff:voter href="/poc/persona/senadora-regional" showAs="Sen. Regional"/>
+        </akndiff:for>
+        <akndiff:against>
+          <akndiff:voter href="/poc/persona/senador-fitness" showAs="Sen. Fitness"/>
+        </akndiff:against>
+        <akndiff:abstain/>
+      </akndiff:vote>
 
-      <aknpp:articleChange article="art_9" type="substitute">
-        <aknpp:old>Cada empanada llevará, además del pino: un cuarto de huevo duro y 2 aceitunas negras.</aknpp:old>
-        <aknpp:new>Cada empanada llevará, además del pino: un cuarto de huevo duro y 2 aceitunas negras. Opcionalmente, se podrá agregar un trozo pequeño de pasas según la tradición regional.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_9" type="substitute">
+        <akndiff:old>Cada empanada llevará, además del pino: un cuarto de huevo duro y 2 aceitunas negras.</akndiff:old>
+        <akndiff:new>Cada empanada llevará, además del pino: un cuarto de huevo duro y 2 aceitunas negras. Opcionalmente, se podrá agregar un trozo pequeño de pasas según la tradición regional.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </amendment>
 </akomaNtoso>

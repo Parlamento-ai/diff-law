@@ -5,18 +5,18 @@ The `vote` element records the parliamentary vote on a `changeSet`. It lives ins
 ## Structure
 
 ```xml
-<aknpp:vote date="2024-05-10"
+<akndiff:vote date="2024-05-10"
             result="approved"
             source="/poc/debate/pae-2024-01-pleno">
-  <aknpp:for>
-    <aknpp:voter href="/poc/persona/diputada-madrilena" showAs="Dip. Madrileña"/>
-    <aknpp:voter href="/poc/persona/diputado-catalan" showAs="Dip. Catalán"/>
-  </aknpp:for>
-  <aknpp:against>
-    <aknpp:voter href="/poc/persona/diputado-valenciano" showAs="Dip. Valenciano"/>
-  </aknpp:against>
-  <aknpp:abstain/>
-</aknpp:vote>
+  <akndiff:for>
+    <akndiff:voter href="/poc/persona/diputada-madrilena" showAs="Dip. Madrileña"/>
+    <akndiff:voter href="/poc/persona/diputado-catalan" showAs="Dip. Catalán"/>
+  </akndiff:for>
+  <akndiff:against>
+    <akndiff:voter href="/poc/persona/diputado-valenciano" showAs="Dip. Valenciano"/>
+  </akndiff:against>
+  <akndiff:abstain/>
+</akndiff:vote>
 ```
 
 ## Attributes
@@ -43,33 +43,33 @@ The vote is broken into three containers, each holding zero or more `voter` elem
 
 | Container | Description |
 |---|---|
-| `<aknpp:for>` | Voters who voted in favor |
-| `<aknpp:against>` | Voters who voted against |
-| `<aknpp:abstain>` | Voters who abstained |
+| `<akndiff:for>` | Voters who voted in favor |
+| `<akndiff:against>` | Voters who voted against |
+| `<akndiff:abstain>` | Voters who abstained |
 
 Empty containers are still included for clarity:
 
 ```xml
 <!-- Unanimous rejection: nobody voted for -->
-<aknpp:for/>
-<aknpp:against>
-  <aknpp:voter href="..." showAs="..."/>
+<akndiff:for/>
+<akndiff:against>
+  <akndiff:voter href="..." showAs="..."/>
   <!-- ... all 8 voters ... -->
-</aknpp:against>
-<aknpp:abstain/>
+</akndiff:against>
+<akndiff:abstain/>
 ```
 
 ```xml
 <!-- Withdrawn before vote: all containers empty -->
-<aknpp:for/>
-<aknpp:against/>
-<aknpp:abstain/>
+<akndiff:for/>
+<akndiff:against/>
+<akndiff:abstain/>
 ```
 
 ## The voter element
 
 ```xml
-<aknpp:voter href="/poc/persona/diputada-madrilena" showAs="Dip. Madrileña"/>
+<akndiff:voter href="/poc/persona/diputada-madrilena" showAs="Dip. Madrileña"/>
 ```
 
 | Attribute | Required | Description |
@@ -85,5 +85,5 @@ This matches real-world practice: a legislator votes for or against "Amendment 2
 
 ## Relationship to AKN debate documents
 
-The `source` attribute on `vote` links to a standard AKN `debate` document where the full session transcript lives — speeches, arguments, procedural notes. AKN++ voting data complements but doesn't replace the debate record; it provides the structured, computable summary.
+The `source` attribute on `vote` links to a standard AKN `debate` document where the full session transcript lives — speeches, arguments, procedural notes. AKN Diff voting data complements but doesn't replace the debate record; it provides the structured, computable summary.
 

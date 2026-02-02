@@ -1,8 +1,8 @@
-# AKN++ Examples: The Paella Valenciana Lifecycle
+# AKN Diff Examples: The Paella Valenciana Lifecycle
 
-This walkthrough uses a fictional legislative process — the regulation of the Paella Valenciana recipe — to demonstrate every feature of AKN++. The story follows a traditional recipe through a bill, five amendments, and a final enacted version.
+This walkthrough uses a fictional legislative process — the regulation of the Paella Valenciana recipe — to demonstrate every feature of AKN Diff. The story follows a traditional recipe through a bill, five amendments, and a final enacted version.
 
-> All example files are in [`research/2026-02-01/aknpp-poc/receta-paella/`](../../research/2026-02-01/aknpp-poc/receta-paella/).
+> All example files are in [`research/2026-02-01/akndiff-poc/receta-paella/`](../../research/2026-02-01/akndiff-poc/receta-paella/).
 
 ## The cast
 
@@ -20,7 +20,7 @@ This walkthrough uses a fictional legislative process — the regulation of the 
 
 ## Stage 1: The original act
 
-**File**: `01-act-original.xml` — A standard AKN `<act>` with no AKN++ extensions.
+**File**: `01-act-original.xml` — A standard AKN `<act>` with no AKN Diff extensions.
 
 The recipe has 11 articles across 4 titles, with strict rules: bomba rice only, no seafood, real saffron only, wood fire only.
 
@@ -28,7 +28,7 @@ The recipe has 11 articles across 4 titles, with strict rules: bomba rice only, 
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
   <act name="receta-paella-valenciana">
     <!-- Standard AKN: meta + preface + body -->
-    <!-- No aknpp namespace needed yet -->
+    <!-- No akndiff namespace needed yet -->
   </act>
 </akomaNtoso>
 ```
@@ -45,14 +45,14 @@ Key articles that will be contested:
 
 ## Stage 2: The bill — "Democratizing" the recipe
 
-**File**: `02-bill.xml` — An AKN `<bill>` with an AKN++ `changeSet`.
+**File**: `02-bill.xml` — An AKN `<bill>` with an AKN Diff `changeSet`.
 
 The Diputada Madrileña proposes 5 changes to make the recipe more accessible. The bill is voted on and **approved 5-3** (the entire Valencian delegation votes against).
 
 ### The changeSet
 
 ```xml
-<aknpp:changeSet
+<akndiff:changeSet
   base="/poc/receta/paella-valenciana/esp@2023-03-18"
   result="/poc/receta/paella-valenciana/esp@2024-05-10">
 ```
@@ -72,12 +72,12 @@ This tells us: applying these changes to the 2023-03-18 original produces a new 
 ### The vote
 
 ```xml
-<aknpp:vote date="2024-05-10" result="approved"
+<akndiff:vote date="2024-05-10" result="approved"
             source="/poc/debate/pae-2024-01-pleno">
-  <aknpp:for>   <!-- 5 votes --> </aknpp:for>
-  <aknpp:against> <!-- 3 votes (Valencian delegation) --> </aknpp:against>
-  <aknpp:abstain/>
-</aknpp:vote>
+  <akndiff:for>   <!-- 5 votes --> </akndiff:for>
+  <akndiff:against> <!-- 3 votes (Valencian delegation) --> </akndiff:against>
+  <akndiff:abstain/>
+</akndiff:vote>
 ```
 
 ## Stage 3: Amendment 1 — "The chorizo amendment"
@@ -89,7 +89,7 @@ The Dip. Turismo proposes adding chorizo for international markets. Even the bil
 ### Key pattern: rejected amendment
 
 ```xml
-<aknpp:changeSet
+<akndiff:changeSet
   base="/poc/receta/paella-valenciana/esp@2024-05-10"
   result="/poc/receta/paella-valenciana/esp@2024-05-10">
 ```
@@ -97,12 +97,12 @@ The Dip. Turismo proposes adding chorizo for international markets. Even the bil
 Note: `base` and `result` are **identical**. The amendment proposed changes but they were not applied.
 
 ```xml
-<aknpp:vote date="2024-06-01" result="rejected" ...>
-  <aknpp:for/>  <!-- empty: zero votes in favor -->
-  <aknpp:against>
+<akndiff:vote date="2024-06-01" result="rejected" ...>
+  <akndiff:for/>  <!-- empty: zero votes in favor -->
+  <akndiff:against>
     <!-- all 8 members, including the proposer himself -->
-  </aknpp:against>
-</aknpp:vote>
+  </akndiff:against>
+</akndiff:vote>
 ```
 
 The `articleChange` still records what was proposed (insert art_5ter for chorizo), preserving the full legislative record.
@@ -120,20 +120,20 @@ The Valencian delegation fights back. They accept gas as a heat source but deman
 The `<old>` text matches the bill's `<new>` text, and the `<new>` text matches the original act:
 
 ```xml
-<aknpp:articleChange article="art_1" type="substitute">
-  <aknpp:old>Se utilizarán 400 gramos de arroz bomba o, alternativamente,
+<akndiff:articleChange article="art_1" type="substitute">
+  <akndiff:old>Se utilizarán 400 gramos de arroz bomba o, alternativamente,
   arroz redondo de grano medio. Se recomienda preferentemente el arroz
-  bomba cuando esté disponible.</aknpp:old>
-  <aknpp:new>Se utilizarán 400 gramos de arroz bomba de denominación de
+  bomba cuando esté disponible.</akndiff:old>
+  <akndiff:new>Se utilizarán 400 gramos de arroz bomba de denominación de
   origen Valencia. Queda prohibido el uso de cualquier otra variedad
-  de arroz.</aknpp:new>
-</aknpp:articleChange>
+  de arroz.</akndiff:new>
+</akndiff:articleChange>
 ```
 
 The `base`→`result` chain advances:
 
 ```xml
-<aknpp:changeSet
+<akndiff:changeSet
   base="/poc/receta/paella-valenciana/esp@2024-05-10"
   result="/poc/receta/paella-valenciana/esp@2024-06-15">
 ```
@@ -147,7 +147,7 @@ The Dip. Andaluza proposes allowing onion in the sofrito. Social media backlash 
 ### Key pattern: withdrawn amendment
 
 ```xml
-<aknpp:changeSet
+<akndiff:changeSet
   base="/poc/receta/paella-valenciana/esp@2024-06-15"
   result="/poc/receta/paella-valenciana/esp@2024-06-15">
 ```
@@ -155,11 +155,11 @@ The Dip. Andaluza proposes allowing onion in the sofrito. Social media backlash 
 Again `base == result` (no new version produced). But the vote record is different from a rejection:
 
 ```xml
-<aknpp:vote date="2024-06-20" result="withdrawn" ...>
-  <aknpp:for/>
-  <aknpp:against/>
-  <aknpp:abstain/>
-</aknpp:vote>
+<akndiff:vote date="2024-06-20" result="withdrawn" ...>
+  <akndiff:for/>
+  <akndiff:against/>
+  <akndiff:abstain/>
+</akndiff:vote>
 ```
 
 All voter containers are empty — the vote never took place.
@@ -175,7 +175,7 @@ Changes:
 - **art_5bis**: Replaces "paella mixta" with a proper "arroz de marisco" definition
 
 ```xml
-<aknpp:changeSet
+<akndiff:changeSet
   base="/poc/receta/paella-valenciana/esp@2024-06-15"
   result="/poc/receta/paella-valenciana/esp@2024-07-01">
 ```
@@ -187,21 +187,21 @@ Changes:
 The Dip. Consumo proposes making socarrat optional and replacing newspaper with a kitchen towel. The commission rejects it decisively.
 
 ```xml
-<aknpp:changeSet
+<akndiff:changeSet
   base="/poc/receta/paella-valenciana/esp@2024-07-01"
   result="/poc/receta/paella-valenciana/esp@2024-07-01">
 
-<aknpp:vote date="2024-07-10" result="rejected" ...>
-  <aknpp:for>   <!-- 2 votes --> </aknpp:for>
-  <aknpp:against> <!-- 6 votes --> </aknpp:against>
-</aknpp:vote>
+<akndiff:vote date="2024-07-10" result="rejected" ...>
+  <akndiff:for>   <!-- 2 votes --> </akndiff:for>
+  <akndiff:against> <!-- 6 votes --> </akndiff:against>
+</akndiff:vote>
 ```
 
 ## Stage 8: The final act
 
 **File**: `08-act-final.xml` — Standard AKN `<act>`, the enacted result.
 
-The final act reflects only the **approved** amendments (bill + amendments 2 and 4). It has no AKN++ extensions itself — it's the resulting document.
+The final act reflects only the **approved** amendments (bill + amendments 2 and 4). It has no AKN Diff extensions itself — it's the resulting document.
 
 ### Net changes from original to final
 
@@ -238,7 +238,7 @@ The `lifecycle` element in the final act records all events:
 </lifecycle>
 ```
 
-## Summary of AKN++ patterns demonstrated
+## Summary of AKN Diff patterns demonstrated
 
 | Pattern | Example |
 |---|---|

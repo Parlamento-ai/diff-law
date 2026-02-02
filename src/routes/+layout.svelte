@@ -11,14 +11,14 @@
 		title: 'Diff — Comparado Legislativo',
 		titleTemplate: '%s | Diff by Parlamento.ai',
 		description:
-			'Proof-of-concept de comparados legislativos automaticos. Visualiza que lineas se agregan, retiran o modifican en cada etapa del proceso legislativo con AKN++.',
+			'Proof-of-concept de comparados legislativos automaticos. Visualiza que lineas se agregan, retiran o modifican en cada etapa del proceso legislativo con AKN Diff.',
 		canonical: SITE_URL,
 		openGraph: {
 			type: 'website',
 			url: SITE_URL,
 			title: 'Diff — Comparado Legislativo Automatico',
 			description:
-				'Proof-of-concept de comparados legislativos automaticos. Visualiza que lineas se agregan, retiran o modifican en cada etapa del proceso legislativo con AKN++.',
+				'Proof-of-concept de comparados legislativos automaticos. Visualiza que lineas se agregan, retiran o modifican en cada etapa del proceso legislativo con AKN Diff.',
 			siteName: 'Diff by Parlamento.ai',
 			locale: 'es_CL',
 			images: [
@@ -34,7 +34,7 @@
 			cardType: 'summary_large_image',
 			title: 'Diff — Comparado Legislativo Automatico',
 			description:
-				'Proof-of-concept de comparados legislativos automaticos con AKN++, una extension de Akoma Ntoso.',
+				'Proof-of-concept de comparados legislativos automaticos con AKN Diff, una extension de Akoma Ntoso.',
 			image: `${SITE_URL}/diff-thumbnail.jpg`,
 			imageAlt: 'Diff — Comparado Legislativo Automatico'
 		},

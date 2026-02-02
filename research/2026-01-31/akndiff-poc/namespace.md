@@ -1,14 +1,14 @@
-# AKN++ Proof of Concept — Namespace y convenciones
+# AKN Diff Proof of Concept — Namespace y convenciones
 
 ## Extensión propuesta: `changeSet`
 
-El elemento `changeSet` es la extensión AKN++ al estándar Akoma Ntoso. Se agrega como hijo
+El elemento `changeSet` es la extensión AKN Diff al estándar Akoma Ntoso. Se agrega como hijo
 directo del documento (`bill` o `amendment`) y contiene los cambios computables.
 
 ### Namespace
 
 - AKN estándar: `http://docs.oasis-open.org/legaldocml/ns/akn/3.0`
-- Extensión AKN++: `http://parlamento.ai/ns/aknpp/1.0`
+- Extensión AKN Diff: `http://parlamento.ai/ns/akndiff/1.0`
 
 ### Atributos de `changeSet`
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 5: Feijoada Carioca
+  AKN Diff Proof of Concept — Receta 5: Feijoada Carioca
   Documento: amendment 1 — "La enmienda del cerdo"
-  Versión: con sistema de votación AKN++
+  Versión: con sistema de votación AKN Diff
 
   Contexto: El Senador Gaúcho, experto en carnes, argumenta que el proyecto fue
   demasiado lejos al eliminar la oreja y el rabo de cerdo — son el alma de la feijoada.
@@ -11,7 +11,7 @@
   Votación: APROBADO 6-2. Solo la Senadora Paulista y la Senadora Amazónica votaron en contra.
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <amendment name="enmienda-cerdo">
 
     <meta>
@@ -61,39 +61,39 @@
 
     <!--
       ============================================================
-      EXTENSIÓN AKN++: changeSet con votación
+      EXTENSIÓN AKN Diff: changeSet con votación
       APROBADO — restaura oreja y rabo como obligatorios
       ============================================================
     -->
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/feijoada-carioca/por@2025-02-20"
       result="/poc/receta/feijoada-carioca/por@2025-03-10">
 
-      <aknpp:vote date="2025-03-10"
+      <akndiff:vote date="2025-03-10"
                   result="approved"
                   source="/poc/debate/fei-2025-01-comision-1">
-        <aknpp:for>
-          <aknpp:voter href="/poc/persona/senador-gaucho" showAs="Sen. Gaúcho"/>
-          <aknpp:voter href="/poc/persona/senador-carioca" showAs="Sen. Carioca"/>
-          <aknpp:voter href="/poc/persona/senador-baiano" showAs="Sen. Baiano"/>
-          <aknpp:voter href="/poc/persona/senadora-nordestina" showAs="Sen. Nordestina"/>
-          <aknpp:voter href="/poc/persona/senadora-mineira" showAs="Sen. Mineira"/>
-          <aknpp:voter href="/poc/persona/senador-goiano" showAs="Sen. Goiano"/>
-        </aknpp:for>
-        <aknpp:against>
-          <aknpp:voter href="/poc/persona/senadora-paulista" showAs="Sen. Paulista"/>
-          <aknpp:voter href="/poc/persona/senadora-amazonica" showAs="Sen. Amazónica"/>
-        </aknpp:against>
-        <aknpp:abstain/>
-      </aknpp:vote>
+        <akndiff:for>
+          <akndiff:voter href="/poc/persona/senador-gaucho" showAs="Sen. Gaúcho"/>
+          <akndiff:voter href="/poc/persona/senador-carioca" showAs="Sen. Carioca"/>
+          <akndiff:voter href="/poc/persona/senador-baiano" showAs="Sen. Baiano"/>
+          <akndiff:voter href="/poc/persona/senadora-nordestina" showAs="Sen. Nordestina"/>
+          <akndiff:voter href="/poc/persona/senadora-mineira" showAs="Sen. Mineira"/>
+          <akndiff:voter href="/poc/persona/senador-goiano" showAs="Sen. Goiano"/>
+        </akndiff:for>
+        <akndiff:against>
+          <akndiff:voter href="/poc/persona/senadora-paulista" showAs="Sen. Paulista"/>
+          <akndiff:voter href="/poc/persona/senadora-amazonica" showAs="Sen. Amazónica"/>
+        </akndiff:against>
+        <akndiff:abstain/>
+      </akndiff:vote>
 
       <!-- art_4: restaurar oreja y rabo como obligatorios -->
-      <aknpp:articleChange article="art_4" type="substitute">
-        <aknpp:old>Costilla de cerdo ahumada, linguiça calabresa ou paio y carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</aknpp:old>
-        <aknpp:new>Costilla de cerdo ahumada, oreja de cerdo, rabo de cerdo, linguiça calabresa ou paio y carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_4" type="substitute">
+        <akndiff:old>Costilla de cerdo ahumada, linguiça calabresa ou paio y carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</akndiff:old>
+        <akndiff:new>Costilla de cerdo ahumada, oreja de cerdo, rabo de cerdo, linguiça calabresa ou paio y carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </amendment>
 </akomaNtoso>

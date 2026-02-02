@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import { parseAknDocument } from './xml-parser';
 import type { AknDocument, Boletin, TimelineEntry } from '$lib/types';
 
-const POC_DIR = 'research/2026-02-01/aknpp-poc';
+const POC_DIR = 'research/2026-02-01/akndiff-poc';
 
 const BOLETIN_DIRS: Record<string, string> = {
 	'empanadas-de-pino': 'receta-empanadas',

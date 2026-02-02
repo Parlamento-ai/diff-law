@@ -17,7 +17,7 @@ const parser = new XMLParser({
 	attributeNamePrefix: '@_',
 	removeNSPrefix: false,
 	isArray: (name) => {
-		return ['section', 'article', 'aknpp:articleChange', 'eventRef', 'aknpp:voter'].includes(name);
+		return ['section', 'article', 'akndiff:articleChange', 'eventRef', 'akndiff:voter'].includes(name);
 	}
 });
 
@@ -158,7 +158,7 @@ function parseLawBody(doc: Record<string, unknown>): LawState {
 function parseVoters(group: unknown): Voter[] {
 	if (!group || typeof group !== 'object') return [];
 	const obj = group as Record<string, unknown>;
-	const voters = obj['aknpp:voter'] as Record<string, unknown>[] | undefined;
+	const voters = obj['akndiff:voter'] as Record<string, unknown>[] | undefined;
 	if (!voters) return [];
 	return voters.map((v) => ({
 		href: (v['@_href'] as string) || '',
@@ -171,14 +171,14 @@ function parseVote(voteNode: Record<string, unknown>): Vote {
 		date: (voteNode['@_date'] as string) || '',
 		result: (voteNode['@_result'] as Vote['result']) || 'pending',
 		source: (voteNode['@_source'] as string) || '',
-		for: parseVoters(voteNode['aknpp:for']),
-		against: parseVoters(voteNode['aknpp:against']),
-		abstain: parseVoters(voteNode['aknpp:abstain'])
+		for: parseVoters(voteNode['akndiff:for']),
+		against: parseVoters(voteNode['akndiff:against']),
+		abstain: parseVoters(voteNode['akndiff:abstain'])
 	};
 }
 
 function parseChangeSet(cs: Record<string, unknown>): ChangeSet {
-	const articleChanges = cs['aknpp:articleChange'] as Record<string, unknown>[];
+	const articleChanges = cs['akndiff:articleChange'] as Record<string, unknown>[];
 
 	const changes: ArticleChange[] = (articleChanges || []).map((ac) => {
 		const change: ArticleChange = {
@@ -186,11 +186,11 @@ function parseChangeSet(cs: Record<string, unknown>): ChangeSet {
 			type: ac['@_type'] as ArticleChange['type']
 		};
 
-		if (ac['aknpp:old']) {
-			change.oldText = extractText(ac['aknpp:old']);
+		if (ac['akndiff:old']) {
+			change.oldText = extractText(ac['akndiff:old']);
 		}
-		if (ac['aknpp:new']) {
-			change.newText = extractText(ac['aknpp:new']);
+		if (ac['akndiff:new']) {
+			change.newText = extractText(ac['akndiff:new']);
 		}
 		if (ac['@_after']) {
 			change.after = ac['@_after'] as string;
@@ -205,7 +205,7 @@ function parseChangeSet(cs: Record<string, unknown>): ChangeSet {
 		changes
 	};
 
-	const voteNode = cs['aknpp:vote'] as Record<string, unknown> | undefined;
+	const voteNode = cs['akndiff:vote'] as Record<string, unknown> | undefined;
 	if (voteNode) {
 		result.vote = parseVote(voteNode);
 	}
@@ -283,7 +283,7 @@ export function parseAknDocument(xml: string, fileName: string): AknDocument {
 	}
 
 	// Parse changeSet if present
-	const changeSet = doc['aknpp:changeSet'] as Record<string, unknown> | undefined;
+	const changeSet = doc['akndiff:changeSet'] as Record<string, unknown> | undefined;
 	if (changeSet) {
 		result.changeSet = parseChangeSet(changeSet);
 	}

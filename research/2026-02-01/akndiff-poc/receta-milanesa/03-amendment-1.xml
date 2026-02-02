@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 6: Milanesa Argentina
+  AKN Diff Proof of Concept — Receta 6: Milanesa Argentina
   Documento: amendment 1 — "La enmienda napolitana"
-  Versión: con sistema de votación AKN++
+  Versión: con sistema de votación AKN Diff
 
   Contexto: La Diputada Santafesina, experta en quesos, propone reconocer oficialmente
   la "milanesa a la napolitana" como variante legítima. Se añade un nuevo artículo 8 bis
@@ -13,7 +13,7 @@
   "deshonra la fritura original" y la Patagónica objeta por salud.
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <amendment name="enmienda-napolitana">
 
     <meta>
@@ -67,38 +67,38 @@
 
     <!--
       ============================================================
-      EXTENSIÓN AKN++: changeSet con votación
+      EXTENSIÓN AKN Diff: changeSet con votación
       APROBADO — agrega la napolitana como variante oficial
       ============================================================
     -->
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/milanesa-argentina/esp@2025-03-15"
       result="/poc/receta/milanesa-argentina/esp@2025-04-10">
 
-      <aknpp:vote date="2025-04-10"
+      <akndiff:vote date="2025-04-10"
                   result="approved"
                   source="/poc/debate/mil-2025-01-comision-1">
-        <aknpp:for>
-          <aknpp:voter href="/poc/persona/diputada-santafesina" showAs="Dip. Santafesina"/>
-          <aknpp:voter href="/poc/persona/diputado-cordobes" showAs="Dip. Cordobés"/>
-          <aknpp:voter href="/poc/persona/diputada-rosarina" showAs="Dip. Rosarina"/>
-          <aknpp:voter href="/poc/persona/diputada-bonaerense" showAs="Dip. Bonaerense"/>
-          <aknpp:voter href="/poc/persona/diputado-tucumano" showAs="Dip. Tucumano"/>
-          <aknpp:voter href="/poc/persona/diputado-mendocino" showAs="Dip. Mendocino"/>
-        </aknpp:for>
-        <aknpp:against>
-          <aknpp:voter href="/poc/persona/diputado-porteno" showAs="Dip. Porteño"/>
-          <aknpp:voter href="/poc/persona/diputada-patagonica" showAs="Dip. Patagónica"/>
-        </aknpp:against>
-        <aknpp:abstain/>
-      </aknpp:vote>
+        <akndiff:for>
+          <akndiff:voter href="/poc/persona/diputada-santafesina" showAs="Dip. Santafesina"/>
+          <akndiff:voter href="/poc/persona/diputado-cordobes" showAs="Dip. Cordobés"/>
+          <akndiff:voter href="/poc/persona/diputada-rosarina" showAs="Dip. Rosarina"/>
+          <akndiff:voter href="/poc/persona/diputada-bonaerense" showAs="Dip. Bonaerense"/>
+          <akndiff:voter href="/poc/persona/diputado-tucumano" showAs="Dip. Tucumano"/>
+          <akndiff:voter href="/poc/persona/diputado-mendocino" showAs="Dip. Mendocino"/>
+        </akndiff:for>
+        <akndiff:against>
+          <akndiff:voter href="/poc/persona/diputado-porteno" showAs="Dip. Porteño"/>
+          <akndiff:voter href="/poc/persona/diputada-patagonica" showAs="Dip. Patagónica"/>
+        </akndiff:against>
+        <akndiff:abstain/>
+      </akndiff:vote>
 
       <!-- art_8bis: nuevo artículo reconociendo la milanesa napolitana -->
-      <aknpp:articleChange article="art_8bis" type="insert" after="art_8">
-        <aknpp:new>Se reconoce como variante oficial la milanesa a la napolitana, consistente en una milanesa frita según los artículos precedentes, cubierta con salsa de tomate casera, una feta de jamón cocido y muzzarella, gratinada al horno hasta que el queso funda y dore. La denominación 'milanesa a la napolitana' será de uso exclusivo para esta variante.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_8bis" type="insert" after="art_8">
+        <akndiff:new>Se reconoce como variante oficial la milanesa a la napolitana, consistente en una milanesa frita según los artículos precedentes, cubierta con salsa de tomate casera, una feta de jamón cocido y muzzarella, gratinada al horno hasta que el queso funda y dore. La denominación 'milanesa a la napolitana' será de uso exclusivo para esta variante.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </amendment>
 </akomaNtoso>

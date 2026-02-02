@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 6: Milanesa Argentina
+  AKN Diff Proof of Concept — Receta 6: Milanesa Argentina
   Documento: amendment 4 — "La enmienda vegana"
-  Versión: con sistema de votación AKN++
+  Versión: con sistema de votación AKN Diff
 
   Contexto: La Diputada Patagónica, ya derrotada en la enmienda del horno, intenta
   una segunda jugada: permitir milanesa de soja o berenjena como variante oficial.
@@ -12,7 +12,7 @@
   "rebozar y freír la enmienda."
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <amendment name="enmienda-vegana">
 
     <meta>
@@ -64,37 +64,37 @@
 
     <!--
       ============================================================
-      EXTENSIÓN AKN++: changeSet con votación
+      EXTENSIÓN AKN Diff: changeSet con votación
       RECHAZADO — unanimidad total contra la milanesa vegana
       ============================================================
     -->
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/milanesa-argentina/esp@2025-05-20"
       result="/poc/receta/milanesa-argentina/esp@2025-05-20">
 
-      <aknpp:vote date="2025-06-01"
+      <akndiff:vote date="2025-06-01"
                   result="rejected"
                   source="/poc/debate/mil-2025-01-comision-4">
-        <aknpp:for/>
-        <aknpp:against>
-          <aknpp:voter href="/poc/persona/diputado-porteno" showAs="Dip. Porteño"/>
-          <aknpp:voter href="/poc/persona/diputada-bonaerense" showAs="Dip. Bonaerense"/>
-          <aknpp:voter href="/poc/persona/diputado-cordobes" showAs="Dip. Cordobés"/>
-          <aknpp:voter href="/poc/persona/diputada-rosarina" showAs="Dip. Rosarina"/>
-          <aknpp:voter href="/poc/persona/diputado-mendocino" showAs="Dip. Mendocino"/>
-          <aknpp:voter href="/poc/persona/diputada-patagonica" showAs="Dip. Patagónica"/>
-          <aknpp:voter href="/poc/persona/diputado-tucumano" showAs="Dip. Tucumano"/>
-          <aknpp:voter href="/poc/persona/diputada-santafesina" showAs="Dip. Santafesina"/>
-        </aknpp:against>
-        <aknpp:abstain/>
-      </aknpp:vote>
+        <akndiff:for/>
+        <akndiff:against>
+          <akndiff:voter href="/poc/persona/diputado-porteno" showAs="Dip. Porteño"/>
+          <akndiff:voter href="/poc/persona/diputada-bonaerense" showAs="Dip. Bonaerense"/>
+          <akndiff:voter href="/poc/persona/diputado-cordobes" showAs="Dip. Cordobés"/>
+          <akndiff:voter href="/poc/persona/diputada-rosarina" showAs="Dip. Rosarina"/>
+          <akndiff:voter href="/poc/persona/diputado-mendocino" showAs="Dip. Mendocino"/>
+          <akndiff:voter href="/poc/persona/diputada-patagonica" showAs="Dip. Patagónica"/>
+          <akndiff:voter href="/poc/persona/diputado-tucumano" showAs="Dip. Tucumano"/>
+          <akndiff:voter href="/poc/persona/diputada-santafesina" showAs="Dip. Santafesina"/>
+        </akndiff:against>
+        <akndiff:abstain/>
+      </akndiff:vote>
 
       <!-- Propuesta rechazada: insertar artículo sobre milanesa vegana -->
-      <aknpp:articleChange article="art_1ter" type="insert" after="art_1bis">
-        <aknpp:new>Se reconoce como variante la milanesa elaborada con medallones de soja texturizada, berenjenas en rodajas gruesas o seitan, empanada y frita según los procedimientos de los Títulos II, III y IV. La denominación 'milanesa vegana' será de uso exclusivo para esta variante.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_1ter" type="insert" after="art_1bis">
+        <akndiff:new>Se reconoce como variante la milanesa elaborada con medallones de soja texturizada, berenjenas en rodajas gruesas o seitan, empanada y frita según los procedimientos de los Títulos II, III y IV. La denominación 'milanesa vegana' será de uso exclusivo para esta variante.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </amendment>
 </akomaNtoso>

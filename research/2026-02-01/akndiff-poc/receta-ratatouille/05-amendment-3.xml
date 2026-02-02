@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 4: Ratatouille Niçoise
+  AKN Diff Proof of Concept — Receta 4: Ratatouille Niçoise
   Documento: amendment 3 — "La enmienda del microondas"
-  Versión: con sistema de votación AKN++
+  Versión: con sistema de votación AKN Diff
 
   Contexto: El Diputado Lyonés propone permitir el microondas como alternativa
   al horno (sustitución del artículo 9). La enmienda es RETIRADA antes de la
@@ -12,7 +12,7 @@
   Votación: RETIRADA antes del voto.
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <amendment name="enmienda-microondas">
 
     <meta>
@@ -64,30 +64,30 @@
 
     <!--
       ============================================================
-      EXTENSIÓN AKN++: changeSet con votación
+      EXTENSIÓN AKN Diff: changeSet con votación
       RETIRADA — la enmienda nunca fue votada
       base y result son iguales porque no produce cambio
       ============================================================
     -->
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/ratatouille-nicoise/fra@2025-04-20"
       result="/poc/receta/ratatouille-nicoise/fra@2025-04-20">
 
-      <aknpp:vote date="2025-05-01"
+      <akndiff:vote date="2025-05-01"
                   result="withdrawn"
                   source="/poc/debate/rat-2025-01-comision-3">
-        <aknpp:for/>
-        <aknpp:against/>
-        <aknpp:abstain/>
-      </aknpp:vote>
+        <akndiff:for/>
+        <akndiff:against/>
+        <akndiff:abstain/>
+      </akndiff:vote>
 
       <!-- Propuesta retirada: permitir el microondas -->
-      <aknpp:articleChange article="art_9" type="substitute">
-        <aknpp:old>La cocción final se efectúa en horno a 200°C durante 30 minutos mínimo. Queda prohibido el uso del microondas.</aknpp:old>
-        <aknpp:new>La cocción final se efectúa en horno a 200°C durante 30 minutos mínimo o, alternativamente, en microondas a potencia media durante 15 minutos. La fuente de barro sigue siendo obligatoria en ambos casos.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_9" type="substitute">
+        <akndiff:old>La cocción final se efectúa en horno a 200°C durante 30 minutos mínimo. Queda prohibido el uso del microondas.</akndiff:old>
+        <akndiff:new>La cocción final se efectúa en horno a 200°C durante 30 minutos mínimo o, alternativamente, en microondas a potencia media durante 15 minutos. La fuente de barro sigue siendo obligatoria en ambos casos.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </amendment>
 </akomaNtoso>

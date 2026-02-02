@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 3: Paella Valenciana
+  AKN Diff Proof of Concept — Receta 3: Paella Valenciana
   Documento: amendment 2 — "El blindaje valenciano"
-  Versión: con sistema de votación AKN++
+  Versión: con sistema de votación AKN Diff
 
   Contexto: La delegación valenciana contraataca. Acepta la realidad del gas
   como fuente de calor alternativa, pero exige blindar:
@@ -13,7 +13,7 @@
   El resto aceptó el compromiso: gas sí, pero arroz bomba y azafrán real obligatorios.
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <amendment name="blindaje-valenciano">
 
     <meta>
@@ -65,45 +65,45 @@
 
     <!--
       ============================================================
-      EXTENSIÓN AKN++: changeSet con votación
+      EXTENSIÓN AKN Diff: changeSet con votación
       APROBADO — revierte dos cambios del bill
       ============================================================
     -->
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/paella-valenciana/esp@2024-05-10"
       result="/poc/receta/paella-valenciana/esp@2024-06-15">
 
-      <aknpp:vote date="2024-06-15"
+      <akndiff:vote date="2024-06-15"
                   result="approved"
                   source="/poc/debate/pae-2024-01-comision-2">
-        <aknpp:for>
-          <aknpp:voter href="/poc/persona/diputado-valenciano" showAs="Dip. Valenciano"/>
-          <aknpp:voter href="/poc/persona/diputada-albufera" showAs="Dip. Albufera"/>
-          <aknpp:voter href="/poc/persona/diputado-denominacion" showAs="Dip. Denominación de Origen"/>
-          <aknpp:voter href="/poc/persona/diputado-catalan" showAs="Dip. Catalán"/>
-          <aknpp:voter href="/poc/persona/diputada-andaluza" showAs="Dip. Andaluza"/>
-          <aknpp:voter href="/poc/persona/diputado-turismo" showAs="Dip. Turismo"/>
-        </aknpp:for>
-        <aknpp:against>
-          <aknpp:voter href="/poc/persona/diputada-madrilena" showAs="Dip. Madrileña"/>
-          <aknpp:voter href="/poc/persona/diputada-consumo" showAs="Dip. Consumo"/>
-        </aknpp:against>
-        <aknpp:abstain/>
-      </aknpp:vote>
+        <akndiff:for>
+          <akndiff:voter href="/poc/persona/diputado-valenciano" showAs="Dip. Valenciano"/>
+          <akndiff:voter href="/poc/persona/diputada-albufera" showAs="Dip. Albufera"/>
+          <akndiff:voter href="/poc/persona/diputado-denominacion" showAs="Dip. Denominación de Origen"/>
+          <akndiff:voter href="/poc/persona/diputado-catalan" showAs="Dip. Catalán"/>
+          <akndiff:voter href="/poc/persona/diputada-andaluza" showAs="Dip. Andaluza"/>
+          <akndiff:voter href="/poc/persona/diputado-turismo" showAs="Dip. Turismo"/>
+        </akndiff:for>
+        <akndiff:against>
+          <akndiff:voter href="/poc/persona/diputada-madrilena" showAs="Dip. Madrileña"/>
+          <akndiff:voter href="/poc/persona/diputada-consumo" showAs="Dip. Consumo"/>
+        </akndiff:against>
+        <akndiff:abstain/>
+      </akndiff:vote>
 
       <!-- art_1: revertir a arroz bomba obligatorio -->
-      <aknpp:articleChange article="art_1" type="substitute">
-        <aknpp:old>Se utilizarán 400 gramos de arroz bomba o, alternativamente, arroz redondo de grano medio. Se recomienda preferentemente el arroz bomba cuando esté disponible.</aknpp:old>
-        <aknpp:new>Se utilizarán 400 gramos de arroz bomba de denominación de origen Valencia. Queda prohibido el uso de cualquier otra variedad de arroz.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_1" type="substitute">
+        <akndiff:old>Se utilizarán 400 gramos de arroz bomba o, alternativamente, arroz redondo de grano medio. Se recomienda preferentemente el arroz bomba cuando esté disponible.</akndiff:old>
+        <akndiff:new>Se utilizarán 400 gramos de arroz bomba de denominación de origen Valencia. Queda prohibido el uso de cualquier otra variedad de arroz.</akndiff:new>
+      </akndiff:articleChange>
 
       <!-- art_7: revertir a azafrán real obligatorio -->
-      <aknpp:articleChange article="art_7" type="substitute">
-        <aknpp:old>Se utilizarán hebras de azafrán real o, alternativamente, colorante alimentario apto para paella. Se recomienda preferentemente el azafrán real.</aknpp:old>
-        <aknpp:new>Se utilizarán hebras de azafrán real de La Mancha para dar color y aroma. Queda expresamente prohibido el uso de colorante alimentario, cúrcuma o cualquier sustituto del azafrán.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_7" type="substitute">
+        <akndiff:old>Se utilizarán hebras de azafrán real o, alternativamente, colorante alimentario apto para paella. Se recomienda preferentemente el azafrán real.</akndiff:old>
+        <akndiff:new>Se utilizarán hebras de azafrán real de La Mancha para dar color y aroma. Queda expresamente prohibido el uso de colorante alimentario, cúrcuma o cualquier sustituto del azafrán.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </amendment>
 </akomaNtoso>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 2: Empanadas de Pino
+  AKN Diff Proof of Concept — Receta 2: Empanadas de Pino
   Documento: bill (proyecto que reforma la receta)
 
   Contexto: La Senadora Cocinera propone una reforma profunda:
@@ -11,7 +11,7 @@
     - art_nuevo 11bis: Agregar opción de fritura (inserción)
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <bill name="reforma-empanadas">
 
     <meta>
@@ -105,40 +105,40 @@
       </article>
     </body>
 
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/empanadas-de-pino/esp@2023-03-15"
       result="/poc/receta/empanadas-de-pino/esp@2024-04-01">
 
       <!-- art_2: manteca → mantequilla -->
-      <aknpp:articleChange article="art_2" type="substitute">
-        <aknpp:old>Se utilizarán 200 gramos de manteca de cerdo.</aknpp:old>
-        <aknpp:new>Se utilizarán 200 gramos de mantequilla sin sal.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_2" type="substitute">
+        <akndiff:old>Se utilizarán 200 gramos de manteca de cerdo.</akndiff:old>
+        <akndiff:new>Se utilizarán 200 gramos de mantequilla sin sal.</akndiff:new>
+      </akndiff:articleChange>
 
       <!-- art_5: reescritura completa, permite carne molida -->
-      <aknpp:articleChange article="art_5" type="substitute">
-        <aknpp:old>Se utilizarán 500 gramos de carne de vacuno picada en cubos pequeños. Queda prohibido el uso de carne molida.</aknpp:old>
-        <aknpp:new>Se utilizarán 500 gramos de carne de vacuno picada en cubos pequeños. Alternativamente, se podrá utilizar carne molida gruesa cuando no sea posible picar la carne a mano.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_5" type="substitute">
+        <akndiff:old>Se utilizarán 500 gramos de carne de vacuno picada en cubos pequeños. Queda prohibido el uso de carne molida.</akndiff:old>
+        <akndiff:new>Se utilizarán 500 gramos de carne de vacuno picada en cubos pequeños. Alternativamente, se podrá utilizar carne molida gruesa cuando no sea posible picar la carne a mano.</akndiff:new>
+      </akndiff:articleChange>
 
       <!-- art_7: agregar orégano -->
-      <aknpp:articleChange article="art_7" type="substitute">
-        <aknpp:old>Se utilizarán: comino, ají de color, sal y pimienta negra al gusto.</aknpp:old>
-        <aknpp:new>Se utilizarán: comino, ají de color, orégano, sal y pimienta negra al gusto.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_7" type="substitute">
+        <akndiff:old>Se utilizarán: comino, ají de color, sal y pimienta negra al gusto.</akndiff:old>
+        <akndiff:new>Se utilizarán: comino, ají de color, orégano, sal y pimienta negra al gusto.</akndiff:new>
+      </akndiff:articleChange>
 
       <!-- art_9: eliminar pasas -->
-      <aknpp:articleChange article="art_9" type="substitute">
-        <aknpp:old>Cada empanada llevará, además del pino: un cuarto de huevo duro, 2 aceitunas negras y un trozo pequeño de pasas.</aknpp:old>
-        <aknpp:new>Cada empanada llevará, además del pino: un cuarto de huevo duro y 2 aceitunas negras.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_9" type="substitute">
+        <akndiff:old>Cada empanada llevará, además del pino: un cuarto de huevo duro, 2 aceitunas negras y un trozo pequeño de pasas.</akndiff:old>
+        <akndiff:new>Cada empanada llevará, además del pino: un cuarto de huevo duro y 2 aceitunas negras.</akndiff:new>
+      </akndiff:articleChange>
 
       <!-- art_11bis: nuevo artículo sobre fritura -->
-      <aknpp:articleChange article="art_11bis" type="insert" after="art_11">
-        <aknpp:new>Como método alternativo al horneado, las empanadas podrán freírse en aceite abundante a 180 grados Celsius durante 5 minutos por lado o hasta que estén doradas. En este caso, no se aplicará el pintado con huevo del artículo 11.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_11bis" type="insert" after="art_11">
+        <akndiff:new>Como método alternativo al horneado, las empanadas podrán freírse en aceite abundante a 180 grados Celsius durante 5 minutos por lado o hasta que estén doradas. En este caso, no se aplicará el pintado con huevo del artículo 11.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </bill>
 </akomaNtoso>

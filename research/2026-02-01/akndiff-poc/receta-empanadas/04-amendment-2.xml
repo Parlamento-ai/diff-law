@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 2: Empanadas de Pino
+  AKN Diff Proof of Concept — Receta 2: Empanadas de Pino
   Documento: amendment 2 (indicación de la Comisión de Gastronomía)
-  Versión: con sistema de votación AKN++
+  Versión: con sistema de votación AKN Diff
 
   Contexto: La comisión propone ajustar la masa.
     - art_3: Agregar yema de huevo al líquido (mejor textura)
@@ -11,7 +11,7 @@
   Votación: Aprobado por unanimidad. 5 a favor, 0 en contra.
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <amendment name="indicacion-comision-empanadas">
 
     <meta>
@@ -60,38 +60,38 @@
 
     <!--
       ============================================================
-      EXTENSIÓN AKN++: changeSet con votación
+      EXTENSIÓN AKN Diff: changeSet con votación
       ============================================================
     -->
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/empanadas-de-pino/esp@2024-07-20"
       result="/poc/receta/empanadas-de-pino/esp@2024-08-05">
 
-      <aknpp:vote date="2024-08-05"
+      <akndiff:vote date="2024-08-05"
                   result="approved"
                   source="/poc/debate/emp-2024-01-comision-2">
-        <aknpp:for>
-          <aknpp:voter href="/poc/persona/senadora-cocinera" showAs="Sen. Cocinera"/>
-          <aknpp:voter href="/poc/persona/senador-tradicionalista" showAs="Sen. Tradicionalista"/>
-          <aknpp:voter href="/poc/persona/senador-fitness" showAs="Sen. Fitness"/>
-          <aknpp:voter href="/poc/persona/senadora-abuela" showAs="Sen. Abuela"/>
-          <aknpp:voter href="/poc/persona/senadora-regional" showAs="Sen. Regional"/>
-        </aknpp:for>
-        <aknpp:against/>
-        <aknpp:abstain/>
-      </aknpp:vote>
+        <akndiff:for>
+          <akndiff:voter href="/poc/persona/senadora-cocinera" showAs="Sen. Cocinera"/>
+          <akndiff:voter href="/poc/persona/senador-tradicionalista" showAs="Sen. Tradicionalista"/>
+          <akndiff:voter href="/poc/persona/senador-fitness" showAs="Sen. Fitness"/>
+          <akndiff:voter href="/poc/persona/senadora-abuela" showAs="Sen. Abuela"/>
+          <akndiff:voter href="/poc/persona/senadora-regional" showAs="Sen. Regional"/>
+        </akndiff:for>
+        <akndiff:against/>
+        <akndiff:abstain/>
+      </akndiff:vote>
 
-      <aknpp:articleChange article="art_3" type="substitute">
-        <aknpp:old>Se utilizarán 250 mililitros de agua caliente con sal.</aknpp:old>
-        <aknpp:new>Se utilizarán 200 mililitros de agua caliente con sal y 1 yema de huevo.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_3" type="substitute">
+        <akndiff:old>Se utilizarán 250 mililitros de agua caliente con sal.</akndiff:old>
+        <akndiff:new>Se utilizarán 200 mililitros de agua caliente con sal y 1 yema de huevo.</akndiff:new>
+      </akndiff:articleChange>
 
-      <aknpp:articleChange article="art_4" type="substitute">
-        <aknpp:old>Mezclar la harina con la manteca tibia y el agua con sal. Amasar hasta obtener una masa lisa. Dejar reposar 30 minutos.</aknpp:old>
-        <aknpp:new>Mezclar la harina con la mantequilla tibia y el agua con sal. Amasar hasta obtener una masa lisa. Dejar reposar 45 minutos.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_4" type="substitute">
+        <akndiff:old>Mezclar la harina con la manteca tibia y el agua con sal. Amasar hasta obtener una masa lisa. Dejar reposar 30 minutos.</akndiff:old>
+        <akndiff:new>Mezclar la harina con la mantequilla tibia y el agua con sal. Amasar hasta obtener una masa lisa. Dejar reposar 45 minutos.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </amendment>
 </akomaNtoso>

@@ -4,7 +4,7 @@ Herramienta para generar **comparados legislativos** de forma automática.
 
 El problema: cuando se modifica una ley, no existe un formato estándar ni una herramienta pública que permita ver lado a lado qué cambió. Cada parlamento hace lo suyo, muchos solo publican PDFs, y el ciudadano queda a ciegas.
 
-Nuestra propuesta es `AKN++`, una extensión del estándar [Akoma Ntoso](http://www.akomantoso.org/) que agrega un `changeSet` computable a los documentos legislativos, permitiendo reconstruir el comparado de cualquier modificación de forma automática.
+Nuestra propuesta es `AKN Diff`, una extensión del estándar [Akoma Ntoso](http://www.akomantoso.org/) que agrega un `changeSet` computable a los documentos legislativos, permitiendo reconstruir el comparado de cualquier modificación de forma automática.
 
 
 ## Changelog
@@ -18,13 +18,13 @@ El formato propuesto sería agregarle a nuestro `changeSet` el resultado final d
 
 En el archivo `DEBATE.xml` solamente hacen el guión como en una pieza de teatro en la que dice "Senador Pérez: a favor". Pero en ningún momento se registra el voto final en el documento (e.g. `a-favor: 5, en-contra: 7`). 
 
-Agregamos estos campos a nuestro `AKN++` formato, dentro del `changeSet`:
+Agregamos estos campos a nuestro `AKN Diff` formato, dentro del `changeSet`:
 
 ```md
   ┌───────────────┬───────────────────────────────────────────────────────────────┐
   │   Elemento    │                           Propósito                           │
   ├───────────────┼───────────────────────────────────────────────────────────────┤
-  │ aknpp:vote    │ Consolida el resultado de la votación                         │
+  │ akndiff:vote    │ Consolida el resultado de la votación                         │
   ├───────────────┼───────────────────────────────────────────────────────────────┤
   │ date          │ Cuándo se votó                                                │
   ├───────────────┼───────────────────────────────────────────────────────────────┤
@@ -32,19 +32,19 @@ Agregamos estos campos a nuestro `AKN++` formato, dentro del `changeSet`:
   ├───────────────┼───────────────────────────────────────────────────────────────┤
   │ source        │ Referencia al documento debate donde está el detalle completo │
   ├───────────────┼───────────────────────────────────────────────────────────────┤
-  │ aknpp:for     │ Lista de votantes a favor                                     │
+  │ akndiff:for     │ Lista de votantes a favor                                     │
   ├───────────────┼───────────────────────────────────────────────────────────────┤
-  │ aknpp:against │ Lista de votantes en contra                                   │
+  │ akndiff:against │ Lista de votantes en contra                                   │
   ├───────────────┼───────────────────────────────────────────────────────────────┤
-  │ aknpp:abstain │ Lista de abstenciones (vacío si no hay)                       │
+  │ akndiff:abstain │ Lista de abstenciones (vacío si no hay)                       │
   ├───────────────┼───────────────────────────────────────────────────────────────┤
-  │ aknpp:voter   │ Cada persona, con href (ID único) y showAs (nombre legible)   │
+  │ akndiff:voter   │ Cada persona, con href (ID único) y showAs (nombre legible)   │
   └───────────────┴───────────────────────────────────────────────────────────────┘
 ```
 
 El resultado en la interfaz es bastante atractivo:
 
-![AKN++ Votaciones](research/2026-02-01/aknpp-votes.png)
+![AKN Diff Votaciones](research/2026-02-01/akndiff-votes.png)
 
 
 ---
@@ -94,7 +94,7 @@ Aquí un resumen que ejemplifica el problema:
 
 Lo que se nos ocurrió es aumentar el formato AKN Para poder agregar los cambios computados. La primera idea fue crear un nuevo tipo `RED-LINE` dónde vivirían los comparados. La segunda idea que vino, que nos pareció mucho mejor, fue aumentar cada uno de los tipos para agregarles la manera de representar el cambio computado.
 
-Decidimos llamarlo `AKN++`.
+Decidimos llamarlo `AKN Diff`.
 
 Este es un ejemplo del `AMENDMENT`, pero con el nuevo campo `changeSet`:
 
@@ -142,7 +142,7 @@ Para esos casos, se podría complejizar un poco más el formato, agregando cambi
 
 A partir de ese formato, construimos un proof of concept que parece funcionar bastante bien.
 
-![AKN++ Proof of Concept](research/2026-01-31/aknpp-v0.1.png)
+![AKN Diff Proof of Concept](research/2026-01-31/akndiff-v0.1.png)
 
 Realmente nos permite hacer un seguimiento mucho más agradable y comprensible. Ahora el ejemplo es una simple receta, no una verdadera ley. Faltaría ver cómo funciona con más datos.
 

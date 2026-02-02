@@ -1,15 +1,15 @@
 export interface DocEntry {
 	slug: string;
 	title: string;
-	section: 'aknpp' | 'akn';
+	section: 'akndiff' | 'akn';
 }
 
 export const docs: DocEntry[] = [
-	// AKN++ (on top)
-	{ slug: 'aknpp/overview', title: 'Overview', section: 'aknpp' },
-	{ slug: 'aknpp/changeset', title: 'The changeSet element', section: 'aknpp' },
-	{ slug: 'aknpp/voting', title: 'The vote element', section: 'aknpp' },
-	{ slug: 'aknpp/examples', title: 'Examples walkthrough', section: 'aknpp' },
+	// AKN Diff (on top)
+	{ slug: 'akndiff/overview', title: 'Overview', section: 'akndiff' },
+	{ slug: 'akndiff/changeset', title: 'The changeSet element', section: 'akndiff' },
+	{ slug: 'akndiff/voting', title: 'The vote element', section: 'akndiff' },
+	{ slug: 'akndiff/examples', title: 'Examples walkthrough', section: 'akndiff' },
 	// AKN
 	{ slug: 'akn/what-is-akn', title: 'What is Akoma Ntoso?', section: 'akn' },
 	{ slug: 'akn/frbr', title: 'The FRBR model', section: 'akn' },
@@ -25,10 +25,10 @@ export const docs: DocEntry[] = [
 
 /** Map from URL slug to actual filename on disk */
 export const slugToFile: Record<string, string> = {
-	'aknpp/overview': 'aknpp/01-overview.md',
-	'aknpp/changeset': 'aknpp/02-changeset.md',
-	'aknpp/voting': 'aknpp/03-voting.md',
-	'aknpp/examples': 'aknpp/04-examples.md',
+	'akndiff/overview': 'akndiff/01-overview.md',
+	'akndiff/changeset': 'akndiff/02-changeset.md',
+	'akndiff/voting': 'akndiff/03-voting.md',
+	'akndiff/examples': 'akndiff/04-examples.md',
 	'akn/what-is-akn': 'akn/01-what-is-akn.md',
 	'akn/frbr': 'akn/02-frbr.md',
 	'akn/document-types': 'akn/03-document-types.md',

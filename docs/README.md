@@ -1,17 +1,17 @@
 # diff-law Documentation
 
-This documentation covers two topics: **AKN++**, our extension to Akoma Ntoso for computable change tracking and voting records, and a **beginner's guide to Akoma Ntoso** (AKN) itself.
+This documentation covers two topics: **AKN Diff**, our extension to Akoma Ntoso for computable change tracking and voting records, and a **beginner's guide to Akoma Ntoso** (AKN) itself.
 
-## AKN++ — Computable Diffs for Legislative Documents
+## AKN Diff — Computable Diffs for Legislative Documents
 
-AKN++ extends the Akoma Ntoso standard with `changeSet` and `vote` elements that make amendment tracking and voting records machine-readable.
+AKN Diff extends the Akoma Ntoso standard with `changeSet` and `vote` elements that make amendment tracking and voting records machine-readable.
 
-1. [Overview](aknpp/01-overview.md) — What AKN++ adds and why
-2. [The changeSet element](aknpp/02-changeset.md) — `base`/`result`, `articleChange`, version chaining
-3. [The vote element](aknpp/03-voting.md) — `for`/`against`/`abstain`, voter records
-4. [Examples walkthrough](aknpp/04-examples.md) — The Paella Valenciana recipe lifecycle
+1. [Overview](akndiff/01-overview.md) — What AKN Diff adds and why
+2. [The changeSet element](akndiff/02-changeset.md) — `base`/`result`, `articleChange`, version chaining
+3. [The vote element](akndiff/03-voting.md) — `for`/`against`/`abstain`, voter records
+4. [Examples walkthrough](akndiff/04-examples.md) — The Paella Valenciana recipe lifecycle
 
-**Namespace:** `http://parlamento.ai/ns/aknpp/1.0`
+**Namespace:** `http://parlamento.ai/ns/akndiff/1.0`
 
 ## Akoma Ntoso — Beginner's Guide
 

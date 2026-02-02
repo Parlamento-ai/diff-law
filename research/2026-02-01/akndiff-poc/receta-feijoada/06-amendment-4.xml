@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 5: Feijoada Carioca
+  AKN Diff Proof of Concept — Receta 5: Feijoada Carioca
   Documento: amendment 4 — "La enmienda del microondas"
-  Versión: con sistema de votación AKN++
+  Versión: con sistema de votación AKN Diff
 
   Contexto: La Senadora Paulista, ya derrotada en el tema del arroz, intenta una
   jugada desesperada: permitir el recalentamiento en microondas como equivalente
@@ -12,7 +12,7 @@
   Incluso la proponente vota en contra tras leer el ambiente de la sala.
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <amendment name="enmienda-microondas">
 
     <meta>
@@ -62,38 +62,38 @@
 
     <!--
       ============================================================
-      EXTENSIÓN AKN++: changeSet con votación
+      EXTENSIÓN AKN Diff: changeSet con votación
       RECHAZADO — unanimidad total contra el microondas
       ============================================================
     -->
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/feijoada-carioca/por@2025-04-15"
       result="/poc/receta/feijoada-carioca/por@2025-04-15">
 
-      <aknpp:vote date="2025-05-01"
+      <akndiff:vote date="2025-05-01"
                   result="rejected"
                   source="/poc/debate/fei-2025-01-comision-4">
-        <aknpp:for/>
-        <aknpp:against>
-          <aknpp:voter href="/poc/persona/senador-carioca" showAs="Sen. Carioca"/>
-          <aknpp:voter href="/poc/persona/senadora-paulista" showAs="Sen. Paulista"/>
-          <aknpp:voter href="/poc/persona/senador-baiano" showAs="Sen. Baiano"/>
-          <aknpp:voter href="/poc/persona/senadora-mineira" showAs="Sen. Mineira"/>
-          <aknpp:voter href="/poc/persona/senador-gaucho" showAs="Sen. Gaúcho"/>
-          <aknpp:voter href="/poc/persona/senadora-nordestina" showAs="Sen. Nordestina"/>
-          <aknpp:voter href="/poc/persona/senador-goiano" showAs="Sen. Goiano"/>
-          <aknpp:voter href="/poc/persona/senadora-amazonica" showAs="Sen. Amazónica"/>
-        </aknpp:against>
-        <aknpp:abstain/>
-      </aknpp:vote>
+        <akndiff:for/>
+        <akndiff:against>
+          <akndiff:voter href="/poc/persona/senador-carioca" showAs="Sen. Carioca"/>
+          <akndiff:voter href="/poc/persona/senadora-paulista" showAs="Sen. Paulista"/>
+          <akndiff:voter href="/poc/persona/senador-baiano" showAs="Sen. Baiano"/>
+          <akndiff:voter href="/poc/persona/senadora-mineira" showAs="Sen. Mineira"/>
+          <akndiff:voter href="/poc/persona/senador-gaucho" showAs="Sen. Gaúcho"/>
+          <akndiff:voter href="/poc/persona/senadora-nordestina" showAs="Sen. Nordestina"/>
+          <akndiff:voter href="/poc/persona/senador-goiano" showAs="Sen. Goiano"/>
+          <akndiff:voter href="/poc/persona/senadora-amazonica" showAs="Sen. Amazónica"/>
+        </akndiff:against>
+        <akndiff:abstain/>
+      </akndiff:vote>
 
       <!-- Propuesta rechazada: permitir microondas como método de cocción -->
-      <aknpp:articleChange article="art_2" type="substitute">
-        <aknpp:old>Cocción lenta en olla de barro durante 3 horas a fuego bajo o, alternativamente, en olla a presión durante 1 hora. Se recomienda preferentemente la cocción lenta.</aknpp:old>
-        <aknpp:new>Cocción lenta en olla de barro durante 3 horas a fuego bajo, en olla a presión durante 1 hora, o recalentamiento en microondas de feijoada previamente preparada. Se recomienda preferentemente la cocción lenta.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_2" type="substitute">
+        <akndiff:old>Cocción lenta en olla de barro durante 3 horas a fuego bajo o, alternativamente, en olla a presión durante 1 hora. Se recomienda preferentemente la cocción lenta.</akndiff:old>
+        <akndiff:new>Cocción lenta en olla de barro durante 3 horas a fuego bajo, en olla a presión durante 1 hora, o recalentamiento en microondas de feijoada previamente preparada. Se recomienda preferentemente la cocción lenta.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </amendment>
 </akomaNtoso>

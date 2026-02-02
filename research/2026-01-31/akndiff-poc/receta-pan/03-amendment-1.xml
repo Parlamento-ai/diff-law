@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 1: Pan de Campo
+  AKN Diff Proof of Concept — Receta 1: Pan de Campo
   Documento: amendment (indicación de la Comisión de Gastronomía)
 
   Contexto: La comisión revisó el proyecto y propone dos ajustes:
@@ -10,7 +10,7 @@
       porque 15 es demasiado para harina integral.
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <amendment name="indicacion-comision-pan">
 
     <meta>
@@ -61,28 +61,28 @@
 
     <!--
       ============================================================
-      EXTENSIÓN AKN++: changeSet
+      EXTENSIÓN AKN Diff: changeSet
       Base: el estado del texto después del bill (v2).
       Result: el estado después de esta indicación (v3).
       ============================================================
     -->
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/pan-de-campo/esp@2024-06-15"
       result="/poc/receta/pan-de-campo/esp@2024-09-10">
 
       <!-- Ajuste en art_1: "integral" → "integral gruesa" -->
-      <aknpp:articleChange article="art_1" type="substitute">
-        <aknpp:old>Se utilizarán 500 gramos de harina integral.</aknpp:old>
-        <aknpp:new>Se utilizarán 500 gramos de harina integral gruesa.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_1" type="substitute">
+        <akndiff:old>Se utilizarán 500 gramos de harina integral.</akndiff:old>
+        <akndiff:new>Se utilizarán 500 gramos de harina integral gruesa.</akndiff:new>
+      </akndiff:articleChange>
 
       <!-- Ajuste en art_8: "15 minutos" → "12 minutos" -->
-      <aknpp:articleChange article="art_8" type="substitute">
-        <aknpp:old>Amasar durante 15 minutos utilizando técnica de pliegues: estirar la masa, plegarla sobre sí misma y girar 90 grados. Repetir hasta que la masa pase la prueba de la ventana.</aknpp:old>
-        <aknpp:new>Amasar durante 12 minutos utilizando técnica de pliegues: estirar la masa, plegarla sobre sí misma y girar 90 grados. Repetir hasta que la masa pase la prueba de la ventana.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_8" type="substitute">
+        <akndiff:old>Amasar durante 15 minutos utilizando técnica de pliegues: estirar la masa, plegarla sobre sí misma y girar 90 grados. Repetir hasta que la masa pase la prueba de la ventana.</akndiff:old>
+        <akndiff:new>Amasar durante 12 minutos utilizando técnica de pliegues: estirar la masa, plegarla sobre sí misma y girar 90 grados. Repetir hasta que la masa pase la prueba de la ventana.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </amendment>
 </akomaNtoso>

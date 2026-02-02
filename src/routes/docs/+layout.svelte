@@ -5,7 +5,7 @@
 
 	const activeSlug = $derived(page.params.slug || '');
 
-	const aknppDocs = $derived(data.docs.filter((d: any) => d.section === 'aknpp'));
+	const akndiffDocs = $derived(data.docs.filter((d: any) => d.section === 'akndiff'));
 	const aknDocs = $derived(data.docs.filter((d: any) => d.section === 'akn'));
 </script>
 
@@ -23,13 +23,13 @@
 		<!-- Sidebar navigation -->
 		<aside class="hidden lg:block w-56 shrink-0">
 			<div class="sticky top-20 space-y-3">
-				<!-- AKN++ section -->
+				<!-- AKN Diff section -->
 				<div class="rounded-[10px] border border-addition-200 bg-addition-50 p-3 shadow-[0_1px_3px_rgba(0,0,0,0.06)]">
 					<h3 class="text-xs font-bold font-mono uppercase tracking-wider text-addition-800 px-2 py-1 mb-1">
-						AKN++
+						AKN Diff
 					</h3>
 					<ul class="space-y-0.5">
-						{#each aknppDocs as doc (doc.slug)}
+						{#each akndiffDocs as doc (doc.slug)}
 							<li>
 								<a
 									href="/docs/{doc.slug}"
@@ -77,7 +77,7 @@
 						href="/docs/{doc.slug}"
 						class="shrink-0 px-3 py-1.5 rounded-full text-xs font-medium transition-colors whitespace-nowrap
 							{activeSlug === doc.slug
-								? (doc.section === 'aknpp' ? 'bg-addition-50 text-addition-800' : 'bg-gray-100 text-gray-800')
+								? (doc.section === 'akndiff' ? 'bg-addition-50 text-addition-800' : 'bg-gray-100 text-gray-800')
 								: 'text-gray-500 hover:bg-gray-50'}"
 					>
 						{doc.title}

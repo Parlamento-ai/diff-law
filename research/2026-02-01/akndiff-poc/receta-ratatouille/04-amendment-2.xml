@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 4: Ratatouille Niçoise
+  AKN Diff Proof of Concept — Receta 4: Ratatouille Niçoise
   Documento: amendment 2 — "El blindaje niçois"
-  Versión: con sistema de votación AKN++
+  Versión: con sistema de votación AKN Diff
 
   Contexto: La Diputada Niçoise contraataca. Acepta los cambios sobre
   la procedencia (art_2) y el horno (art_9), pero exige restablecer:
@@ -12,7 +12,7 @@
   Votación: APROBADO 6-2. Solo el Dip. Parisino y el Dip. Lyonés votaron en contra.
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <amendment name="blindaje-nicois">
 
     <meta>
@@ -65,45 +65,45 @@
 
     <!--
       ============================================================
-      EXTENSIÓN AKN++: changeSet con votación
+      EXTENSIÓN AKN Diff: changeSet con votación
       APROBADO — restablece el corte y la cocción separada
       ============================================================
     -->
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/ratatouille-nicoise/fra@2025-03-15"
       result="/poc/receta/ratatouille-nicoise/fra@2025-04-20">
 
-      <aknpp:vote date="2025-04-20"
+      <akndiff:vote date="2025-04-20"
                   result="approved"
                   source="/poc/debate/rat-2025-01-comision-2">
-        <aknpp:for>
-          <aknpp:voter href="/poc/persona/deputee-nicoise" showAs="Dip. Niçoise"/>
-          <aknpp:voter href="/poc/persona/deputee-provencale" showAs="Dip. Provenzal"/>
-          <aknpp:voter href="/poc/persona/deputee-bretonne" showAs="Dip. Bretona"/>
-          <aknpp:voter href="/poc/persona/depute-marseillais" showAs="Dip. Marsellés"/>
-          <aknpp:voter href="/poc/persona/deputee-alsacienne" showAs="Dip. Alsaciana"/>
-          <aknpp:voter href="/poc/persona/depute-bordelais" showAs="Dip. Bordelés"/>
-        </aknpp:for>
-        <aknpp:against>
-          <aknpp:voter href="/poc/persona/depute-parisien" showAs="Dip. Parisino"/>
-          <aknpp:voter href="/poc/persona/depute-lyonnais" showAs="Dip. Lyonés"/>
-        </aknpp:against>
-        <aknpp:abstain/>
-      </aknpp:vote>
+        <akndiff:for>
+          <akndiff:voter href="/poc/persona/deputee-nicoise" showAs="Dip. Niçoise"/>
+          <akndiff:voter href="/poc/persona/deputee-provencale" showAs="Dip. Provenzal"/>
+          <akndiff:voter href="/poc/persona/deputee-bretonne" showAs="Dip. Bretona"/>
+          <akndiff:voter href="/poc/persona/depute-marseillais" showAs="Dip. Marsellés"/>
+          <akndiff:voter href="/poc/persona/deputee-alsacienne" showAs="Dip. Alsaciana"/>
+          <akndiff:voter href="/poc/persona/depute-bordelais" showAs="Dip. Bordelés"/>
+        </akndiff:for>
+        <akndiff:against>
+          <akndiff:voter href="/poc/persona/depute-parisien" showAs="Dip. Parisino"/>
+          <akndiff:voter href="/poc/persona/depute-lyonnais" showAs="Dip. Lyonés"/>
+        </akndiff:against>
+        <akndiff:abstain/>
+      </akndiff:vote>
 
       <!-- art_3: restablecer rodajas de 3mm -->
-      <aknpp:articleChange article="art_3" type="substitute">
-        <aknpp:old>Las verduras se cortan en trozos regulares de tamaño homogéneo. La forma y el espesor exacto quedan a criterio del cocinero.</aknpp:old>
-        <aknpp:new>Cada verdura debe ser cortada por separado en rodajas de 3 mm de espesor. Queda prohibido todo corte irregular, en dados o en trozos gruesos.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_3" type="substitute">
+        <akndiff:old>Las verduras se cortan en trozos regulares de tamaño homogéneo. La forma y el espesor exacto quedan a criterio del cocinero.</akndiff:old>
+        <akndiff:new>Cada verdura debe ser cortada por separado en rodajas de 3 mm de espesor. Queda prohibido todo corte irregular, en dados o en trozos gruesos.</akndiff:new>
+      </akndiff:articleChange>
 
       <!-- art_7: restablecer cocción separada -->
-      <aknpp:articleChange article="art_7" type="substitute">
-        <aknpp:old>Las verduras pueden cocinarse juntas en una sola sartén o por separado, a elección del cocinero. El aceite de oliva sigue siendo obligatorio.</aknpp:old>
-        <aknpp:new>Cada verdura debe ser salteada por separado a fuego vivo en aceite de oliva antes del ensamblaje. Queda prohibida la cocción de varias verduras juntas en la misma sartén.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_7" type="substitute">
+        <akndiff:old>Las verduras pueden cocinarse juntas en una sola sartén o por separado, a elección del cocinero. El aceite de oliva sigue siendo obligatorio.</akndiff:old>
+        <akndiff:new>Cada verdura debe ser salteada por separado a fuego vivo en aceite de oliva antes del ensamblaje. Queda prohibida la cocción de varias verduras juntas en la misma sartén.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </amendment>
 </akomaNtoso>

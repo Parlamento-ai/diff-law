@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 4: Ratatouille Niçoise
+  AKN Diff Proof of Concept — Receta 4: Ratatouille Niçoise
   Documento: amendment 4 — "El compromiso mediterráneo"
-  Versión: con sistema de votación AKN++
+  Versión: con sistema de votación AKN Diff
 
   Contexto: La Diputada Provenzal propone un añadido consensual: autorizar
   la albahaca fresca y el pimiento de Espelette como aromáticas opcionales
@@ -12,7 +12,7 @@
   cualquier adición a las aromáticas tradicionales.
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <amendment name="compromiso-mediterraneo">
 
     <meta>
@@ -65,38 +65,38 @@
 
     <!--
       ============================================================
-      EXTENSIÓN AKN++: changeSet con votación
+      EXTENSIÓN AKN Diff: changeSet con votación
       APROBADO — añade albahaca y pimiento de Espelette como opcionales
       ============================================================
     -->
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/ratatouille-nicoise/fra@2025-04-20"
       result="/poc/receta/ratatouille-nicoise/fra@2025-05-10">
 
-      <aknpp:vote date="2025-05-10"
+      <akndiff:vote date="2025-05-10"
                   result="approved"
                   source="/poc/debate/rat-2025-01-comision-4">
-        <aknpp:for>
-          <aknpp:voter href="/poc/persona/deputee-provencale" showAs="Dip. Provenzal"/>
-          <aknpp:voter href="/poc/persona/depute-parisien" showAs="Dip. Parisino"/>
-          <aknpp:voter href="/poc/persona/depute-lyonnais" showAs="Dip. Lyonés"/>
-          <aknpp:voter href="/poc/persona/deputee-bretonne" showAs="Dip. Bretona"/>
-          <aknpp:voter href="/poc/persona/depute-bordelais" showAs="Dip. Bordelés"/>
-          <aknpp:voter href="/poc/persona/deputee-alsacienne" showAs="Dip. Alsaciana"/>
-          <aknpp:voter href="/poc/persona/depute-marseillais" showAs="Dip. Marsellés"/>
-        </aknpp:for>
-        <aknpp:against>
-          <aknpp:voter href="/poc/persona/deputee-nicoise" showAs="Dip. Niçoise"/>
-        </aknpp:against>
-        <aknpp:abstain/>
-      </aknpp:vote>
+        <akndiff:for>
+          <akndiff:voter href="/poc/persona/deputee-provencale" showAs="Dip. Provenzal"/>
+          <akndiff:voter href="/poc/persona/depute-parisien" showAs="Dip. Parisino"/>
+          <akndiff:voter href="/poc/persona/depute-lyonnais" showAs="Dip. Lyonés"/>
+          <akndiff:voter href="/poc/persona/deputee-bretonne" showAs="Dip. Bretona"/>
+          <akndiff:voter href="/poc/persona/depute-bordelais" showAs="Dip. Bordelés"/>
+          <akndiff:voter href="/poc/persona/deputee-alsacienne" showAs="Dip. Alsaciana"/>
+          <akndiff:voter href="/poc/persona/depute-marseillais" showAs="Dip. Marsellés"/>
+        </akndiff:for>
+        <akndiff:against>
+          <akndiff:voter href="/poc/persona/deputee-nicoise" showAs="Dip. Niçoise"/>
+        </akndiff:against>
+        <akndiff:abstain/>
+      </akndiff:vote>
 
       <!-- art_5bis: nuevo artículo — aromáticas opcionales -->
-      <aknpp:articleChange article="art_5bis" type="insert" after="art_5">
-        <aknpp:new>En complemento de la base aromática del artículo 5, el cocinero puede añadir albahaca fresca y una pizca de pimiento de Espelette. Estas aromáticas son facultativas y no sustituyen a las aromáticas obligatorias.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_5bis" type="insert" after="art_5">
+        <akndiff:new>En complemento de la base aromática del artículo 5, el cocinero puede añadir albahaca fresca y una pizca de pimiento de Espelette. Estas aromáticas son facultativas y no sustituyen a las aromáticas obligatorias.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </amendment>
 </akomaNtoso>

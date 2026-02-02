@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 3: Paella Valenciana
+  AKN Diff Proof of Concept — Receta 3: Paella Valenciana
   Documento: amendment 1 — "La enmienda del chorizo"
-  Versión: con sistema de votación AKN++
+  Versión: con sistema de votación AKN Diff
 
   Contexto: Un diputado del grupo de Turismo Internacional propone permitir
   chorizo en la paella, argumentando que es la versión más popular en el
@@ -12,7 +12,7 @@
   Es la primera vez en la historia de la Comisión que se alcanza unanimidad.
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <amendment name="enmienda-chorizo">
 
     <meta>
@@ -64,37 +64,37 @@
 
     <!--
       ============================================================
-      EXTENSIÓN AKN++: changeSet con votación
+      EXTENSIÓN AKN Diff: changeSet con votación
       RECHAZADO — el changeSet registra la propuesta pero con result="rejected"
       ============================================================
     -->
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/paella-valenciana/esp@2024-05-10"
       result="/poc/receta/paella-valenciana/esp@2024-05-10">
 
-      <aknpp:vote date="2024-06-01"
+      <akndiff:vote date="2024-06-01"
                   result="rejected"
                   source="/poc/debate/pae-2024-01-comision-1">
-        <aknpp:for/>
-        <aknpp:against>
-          <aknpp:voter href="/poc/persona/diputado-valenciano" showAs="Dip. Valenciano"/>
-          <aknpp:voter href="/poc/persona/diputada-albufera" showAs="Dip. Albufera"/>
-          <aknpp:voter href="/poc/persona/diputado-denominacion" showAs="Dip. Denominación de Origen"/>
-          <aknpp:voter href="/poc/persona/diputada-madrilena" showAs="Dip. Madrileña"/>
-          <aknpp:voter href="/poc/persona/diputado-catalan" showAs="Dip. Catalán"/>
-          <aknpp:voter href="/poc/persona/diputada-andaluza" showAs="Dip. Andaluza"/>
-          <aknpp:voter href="/poc/persona/diputada-consumo" showAs="Dip. Consumo"/>
-          <aknpp:voter href="/poc/persona/diputado-turismo" showAs="Dip. Turismo"/>
-        </aknpp:against>
-        <aknpp:abstain/>
-      </aknpp:vote>
+        <akndiff:for/>
+        <akndiff:against>
+          <akndiff:voter href="/poc/persona/diputado-valenciano" showAs="Dip. Valenciano"/>
+          <akndiff:voter href="/poc/persona/diputada-albufera" showAs="Dip. Albufera"/>
+          <akndiff:voter href="/poc/persona/diputado-denominacion" showAs="Dip. Denominación de Origen"/>
+          <akndiff:voter href="/poc/persona/diputada-madrilena" showAs="Dip. Madrileña"/>
+          <akndiff:voter href="/poc/persona/diputado-catalan" showAs="Dip. Catalán"/>
+          <akndiff:voter href="/poc/persona/diputada-andaluza" showAs="Dip. Andaluza"/>
+          <akndiff:voter href="/poc/persona/diputada-consumo" showAs="Dip. Consumo"/>
+          <akndiff:voter href="/poc/persona/diputado-turismo" showAs="Dip. Turismo"/>
+        </akndiff:against>
+        <akndiff:abstain/>
+      </akndiff:vote>
 
       <!-- Propuesta rechazada: insertar artículo sobre chorizo -->
-      <aknpp:articleChange article="art_5ter" type="insert" after="art_5bis">
-        <aknpp:new>En las preparaciones destinadas a mercado internacional o establecimientos turísticos, se podrá añadir 100 gramos de chorizo curado cortado en rodajas como proteína complementaria.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_5ter" type="insert" after="art_5bis">
+        <akndiff:new>En las preparaciones destinadas a mercado internacional o establecimientos turísticos, se podrá añadir 100 gramos de chorizo curado cortado en rodajas como proteína complementaria.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </amendment>
 </akomaNtoso>

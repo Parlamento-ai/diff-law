@@ -48,7 +48,7 @@ Aquí un resumen que ejemplifica el problema:
 
 Lo que se nos ocurrió es aumentar el formato AKN Para poder agregar los cambios computados. La primera idea fue crear un nuevo tipo `RED-LINE` dónde vivirían los comparados. La segunda idea que vino, que nos pareció mucho mejor, fue aumentar cada uno de los tipos para agregarles la manera de representar el cambio computado.
 
-Decidimos llamarlo `AKN++`.
+Decidimos llamarlo `AKN Diff`.
 
 Este es un ejemplo del `AMENDMENT`, pero con el nuevo campo `changeSet`:
 
@@ -96,7 +96,7 @@ Para esos casos, se podría complejizar un poco más el formato, agregando cambi
 
 A partir de ese formato, construimos un proof of concept que parece funcionar bastante bien. 
 
-![AKN++ Proof of Concept](research/2026-01-31/aknpp-v0.1.png)
+![AKN Diff Proof of Concept](research/2026-01-31/akndiff-v0.1.png)
 
 Realmente nos permite hacer un seguimiento mucho más agradable y comprensible. Ahora el ejemplo es una simple receta, no una verdadera ley. Faltaría ver cómo funciona con más datos. 
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 1: Pan de Campo
+  AKN Diff Proof of Concept — Receta 1: Pan de Campo
   Documento: bill (proyecto de ley / propuesta de modificación)
-  Versión: con sistema de votación AKN++
+  Versión: con sistema de votación AKN Diff
 
   Contexto: El Diputado Panadero propone modernizar la receta.
   Cambios propuestos:
@@ -14,7 +14,7 @@
   Votación: Aprobado en general por la Cámara. 4 a favor, 1 en contra.
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <bill name="modernizacion-pan-de-campo">
 
     <meta>
@@ -101,52 +101,52 @@
 
     <!--
       ============================================================
-      EXTENSIÓN AKN++: changeSet con votación
+      EXTENSIÓN AKN Diff: changeSet con votación
       ============================================================
     -->
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/pan-de-campo/esp@2024-01-01"
       result="/poc/receta/pan-de-campo/esp@2024-06-15">
 
-      <aknpp:vote date="2024-06-15"
+      <akndiff:vote date="2024-06-15"
                   result="approved"
                   source="/poc/debate/pan-2024-01-sala">
-        <aknpp:for>
-          <aknpp:voter href="/poc/persona/diputado-panadero" showAs="Dip. Panadero"/>
-          <aknpp:voter href="/poc/persona/diputada-nutricion" showAs="Dip. Nutrición"/>
-          <aknpp:voter href="/poc/persona/diputado-rural" showAs="Dip. Rural"/>
-          <aknpp:voter href="/poc/persona/diputada-innovacion" showAs="Dip. Innovación"/>
-        </aknpp:for>
-        <aknpp:against>
-          <aknpp:voter href="/poc/persona/diputado-tradicion" showAs="Dip. Tradición"/>
-        </aknpp:against>
-        <aknpp:abstain/>
-      </aknpp:vote>
+        <akndiff:for>
+          <akndiff:voter href="/poc/persona/diputado-panadero" showAs="Dip. Panadero"/>
+          <akndiff:voter href="/poc/persona/diputada-nutricion" showAs="Dip. Nutrición"/>
+          <akndiff:voter href="/poc/persona/diputado-rural" showAs="Dip. Rural"/>
+          <akndiff:voter href="/poc/persona/diputada-innovacion" showAs="Dip. Innovación"/>
+        </akndiff:for>
+        <akndiff:against>
+          <akndiff:voter href="/poc/persona/diputado-tradicion" showAs="Dip. Tradición"/>
+        </akndiff:against>
+        <akndiff:abstain/>
+      </akndiff:vote>
 
       <!-- Nivel 1: cambio quirúrgico en art_1 -->
-      <aknpp:articleChange article="art_1" type="substitute">
-        <aknpp:old>Se utilizarán 500 gramos de harina blanca sin preparar.</aknpp:old>
-        <aknpp:new>Se utilizarán 500 gramos de harina integral.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_1" type="substitute">
+        <akndiff:old>Se utilizarán 500 gramos de harina blanca sin preparar.</akndiff:old>
+        <akndiff:new>Se utilizarán 500 gramos de harina integral.</akndiff:new>
+      </akndiff:articleChange>
 
       <!-- Nivel 1: reemplazo de art_4 (cambio de ingrediente) -->
-      <aknpp:articleChange article="art_4" type="substitute">
-        <aknpp:old>Se utilizarán 50 gramos de manteca de cerdo.</aknpp:old>
-        <aknpp:new>Se utilizarán 40 mililitros de aceite de oliva.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_4" type="substitute">
+        <akndiff:old>Se utilizarán 50 gramos de manteca de cerdo.</akndiff:old>
+        <akndiff:new>Se utilizarán 40 mililitros de aceite de oliva.</akndiff:new>
+      </akndiff:articleChange>
 
       <!-- Nivel 2: reescritura completa de art_8 -->
-      <aknpp:articleChange article="art_8" type="substitute">
-        <aknpp:old>Amasar durante 10 minutos sobre superficie enharinada hasta que la masa esté suave y elástica.</aknpp:old>
-        <aknpp:new>Amasar durante 15 minutos utilizando técnica de pliegues: estirar la masa, plegarla sobre sí misma y girar 90 grados. Repetir hasta que la masa pase la prueba de la ventana.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_8" type="substitute">
+        <akndiff:old>Amasar durante 10 minutos sobre superficie enharinada hasta que la masa esté suave y elástica.</akndiff:old>
+        <akndiff:new>Amasar durante 15 minutos utilizando técnica de pliegues: estirar la masa, plegarla sobre sí misma y girar 90 grados. Repetir hasta que la masa pase la prueba de la ventana.</akndiff:new>
+      </akndiff:articleChange>
 
       <!-- Inserción: nuevo art_5bis -->
-      <aknpp:articleChange article="art_5bis" type="insert" after="art_5">
-        <aknpp:new>Opcionalmente, se podrán agregar 30 gramos de semillas de linaza o chía a la mezcla de ingredientes secos.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_5bis" type="insert" after="art_5">
+        <akndiff:new>Opcionalmente, se podrán agregar 30 gramos de semillas de linaza o chía a la mezcla de ingredientes secos.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </bill>
 </akomaNtoso>

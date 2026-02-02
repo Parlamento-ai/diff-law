@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  AKN++ Proof of Concept — Receta 2: Empanadas de Pino
+  AKN Diff Proof of Concept — Receta 2: Empanadas de Pino
   Documento: amendment 1 (indicación del Senador Tradicionalista)
 
   Contexto: El Senador Tradicionalista se opone a eliminar las pasas.
   Propone reincorporarlas pero como opcionales.
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
-            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
   <amendment name="indicacion-pasas">
 
     <meta>
@@ -55,16 +55,16 @@
       </amendmentJustification>
     </amendmentBody>
 
-    <aknpp:changeSet
+    <akndiff:changeSet
       base="/poc/receta/empanadas-de-pino/esp@2024-04-01"
       result="/poc/receta/empanadas-de-pino/esp@2024-07-20">
 
-      <aknpp:articleChange article="art_9" type="substitute">
-        <aknpp:old>Cada empanada llevará, además del pino: un cuarto de huevo duro y 2 aceitunas negras.</aknpp:old>
-        <aknpp:new>Cada empanada llevará, además del pino: un cuarto de huevo duro y 2 aceitunas negras. Opcionalmente, se podrá agregar un trozo pequeño de pasas según la tradición regional.</aknpp:new>
-      </aknpp:articleChange>
+      <akndiff:articleChange article="art_9" type="substitute">
+        <akndiff:old>Cada empanada llevará, además del pino: un cuarto de huevo duro y 2 aceitunas negras.</akndiff:old>
+        <akndiff:new>Cada empanada llevará, además del pino: un cuarto de huevo duro y 2 aceitunas negras. Opcionalmente, se podrá agregar un trozo pequeño de pasas según la tradición regional.</akndiff:new>
+      </akndiff:articleChange>
 
-    </aknpp:changeSet>
+    </akndiff:changeSet>
 
   </amendment>
 </akomaNtoso>
