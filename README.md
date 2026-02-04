@@ -12,19 +12,32 @@ Nuestra propuesta es `AKN Diff`, una extensión del estándar [Akoma Ntoso](http
 ---
 **04/02/2026**
 
-La preocupacion de abrir la caja de pandora nos siguio dando vueltas por la cabeza. Decidimos ver que tan real era.
+La preocupacion de abrir la "caja de pandora" nos siguio dando vueltas por la cabeza. Decidimos ver que tan real era.
 
 Despues de varias busquedas se llego a la conclucion que no seguia un effecto caja de pandora. Y que basicamente faltaban solo 2 tipos mas para englobar todo el rito parlamentario: `questions` y `comunications`.
 
 `questions` es para las preguntas parlamentarias. Y `comunitactions` para la comunicacion oficial entre los organos.
-
-Nos llevaria a un total de 3 nuevos tipos.
 
 No pasamos mucho tiempo diseñando cada tipo, priorisamos seguir avanzando en el experimento.
 
 La próxima pregunta fue: ¿cómo podríamos rediseñar una página de un parlamento 100 % basado en las primitivas de AKN? En este caso, no estaríamos buscando re-inventar cómo funcionarían los links y todo eso, sino reemplazar lo existente y que funcione bastante similar. La única diferencia es que, atrás, todo está representado en AKN. 
 
 ![AKN Dashboard - Bills in Progress con links a documentos](research/2026-02-04/akn-full-dashboard-with-links.jpg)
+
+El resultado fue nuevamente positivo. Navegar los distintos conceptos es bastante natural cuando todo esta bien conectado.
+
+Lo que me sorprendio del POC es que podemos ver cuales boletines ya fueron citados para comission, es lo que se ve en el screenshot. Parece basico, pero no es como se ve muy comunmente.
+
+Esto es gracias a que todo esta conectado por links como en la web. La citacion esta conectada al boletine mecanicamente.
+
+La proxima pregunta es: que tan viable y juridicamente correctos son estos links.
+
+![AKN Dashboard - Historial de documentos](research/2026-02-04/akn-dashboard-history.jpg)
+
+Por ejemplo en ese screenshot podemos ver el historial de un boletin, pero gracias a los links tambien marca las citaciones, mensages y debates.
+
+Es el historial de un boletin algo juridico? o es a discrecion de cada comision que se puede o no declarar como parte del boletin.
+
 
 
 ---
