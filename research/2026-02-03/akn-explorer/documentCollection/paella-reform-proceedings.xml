@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <documentCollection name="paella-reform-proceedings">
+    <meta>
+      <identification source="#secretary">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/documentCollection/paella-reform-proceedings"/>
+          <FRBRuri value="/akn/poc/documentCollection/paella-reform-proceedings"/>
+          <FRBRdate date="2024-10-01" name="compilation"/>
+          <FRBRauthor href="/org/parliament-of-gastronomia"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/documentCollection/paella-reform-proceedings/eng@2024-10-01"/>
+          <FRBRuri value="/akn/poc/documentCollection/paella-reform-proceedings/eng@2024-10-01"/>
+          <FRBRdate date="2024-10-01" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/documentCollection/paella-reform-proceedings/eng@2024-10-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#secretary">
+        <TLCOrganization eId="secretary" href="/org/parliament-of-gastronomia" showAs="Parliament of Gastronomia"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p><docTitle>Complete Proceedings: Reform of the Valencian Paella Recipe</docTitle></p>
+      </longTitle>
+      <p>Complete dossier of the parliamentary proceedings for the reform of <ref href="/akn/poc/act/valencian-paella-recipe">Act No. 42/2023 on Valencian Paella</ref>.</p>
+    </preface>
+
+    <collectionBody>
+      <component eId="comp_ley_original">
+        <heading>1. Current law</heading>
+        <componentRef src="/akn/poc/act/valencian-paella-recipe" showAs="Act No. 42/2023 — Official Valencian Paella Recipe"/>
+        <p>The <ref href="/akn/poc/act/valencian-paella-recipe">original act</ref> published on March 18, 2023.</p>
+      </component>
+
+      <component eId="comp_proyecto">
+        <heading>2. Bill</heading>
+        <componentRef src="/akn/poc/bill/paella-reform-2024" showAs="Bill to Reform the Valencian Paella Recipe"/>
+        <p>The <ref href="/akn/poc/bill/paella-reform-2024">reform bill</ref> submitted by Rep. Madrid on May 10, 2024.</p>
+      </component>
+
+      <component eId="comp_enmiendas">
+        <heading>3. Amendments</heading>
+        <componentRef src="/akn/poc/amendment/amendment-brown-rice" showAs="Amendment: Inclusion of brown rice"/>
+        <componentRef src="/akn/poc/amendment/amendment-optional-socarrat" showAs="Amendment: Optional socarrat"/>
+        <componentRef src="/akn/poc/amendment/amendment-protected-designation" showAs="Amendment: Protected designation of origin"/>
+        <p>Three amendments submitted to the bill:</p>
+        <p>- <ref href="/akn/poc/amendment/amendment-brown-rice">Brown rice</ref> (Rep. Naturist)</p>
+        <p>- <ref href="/akn/poc/amendment/amendment-optional-socarrat">Optional socarrat</ref> (Rep. Modern)</p>
+        <p>- <ref href="/akn/poc/amendment/amendment-protected-designation">Protected designation</ref> (Rep. Valencia)</p>
+      </component>
+
+      <component eId="comp_comision">
+        <heading>4. Committee work</heading>
+        <componentRef src="/akn/poc/debate/gastronomy-committee" showAs="Committee on Gastronomy Session"/>
+        <componentRef src="/akn/poc/doc/gastronomy-committee-report" showAs="Committee on Gastronomy Report"/>
+        <p>The <ref href="/akn/poc/debate/gastronomy-committee">committee session</ref> and the resulting <ref href="/akn/poc/doc/gastronomy-committee-report">report</ref>.</p>
+      </component>
+
+      <component eId="comp_pleno">
+        <heading>5. Plenary debate</heading>
+        <componentRef src="/akn/poc/debate/plenary-paella-reform" showAs="Plenary Session on Paella Reform"/>
+        <p>The <ref href="/akn/poc/debate/plenary-paella-reform">plenary debate</ref> of June 15, 2024.</p>
+      </component>
+
+      <component eId="comp_ley_final">
+        <heading>6. Amended act</heading>
+        <componentRef src="/akn/poc/act/valencian-paella-recipe-amended" showAs="Act No. 42/2023 as amended"/>
+        <p>The <ref href="/akn/poc/act/valencian-paella-recipe-amended">consolidated text</ref> following the reform.</p>
+      </component>
+
+      <component eId="comp_sentencia">
+        <heading>7. Judicial review</heading>
+        <componentRef src="/akn/poc/judgment/mixed-paella-ruling" showAs="Judgment 127/2024 of the Supreme Gastronomic Court"/>
+        <p>The <ref href="/akn/poc/judgment/mixed-paella-ruling">judgment</ref> of the Supreme Gastronomic Court on the challenge against the reform.</p>
+      </component>
+    </collectionBody>
+  </documentCollection>
+</akomaNtoso>

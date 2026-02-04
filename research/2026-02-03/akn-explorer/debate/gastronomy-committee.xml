@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <debate name="gastronomy-committee">
+    <meta>
+      <identification source="#secretary">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/debate/gastronomy-committee"/>
+          <FRBRuri value="/akn/poc/debate/gastronomy-committee"/>
+          <FRBRdate date="2024-06-05" name="session"/>
+          <FRBRauthor href="/org/gastronomy-committee"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/debate/gastronomy-committee/eng@2024-06-05"/>
+          <FRBRuri value="/akn/poc/debate/gastronomy-committee/eng@2024-06-05"/>
+          <FRBRdate date="2024-06-05" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/debate/gastronomy-committee/eng@2024-06-05/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#secretary">
+        <TLCOrganization eId="secretary" href="/org/gastronomy-committee" showAs="Committee on Gastronomy"/>
+        <TLCPerson eId="presidenta" href="/persona/committee-chair" showAs="Committee Chair"/>
+        <TLCPerson eId="chef" href="/persona/guest-chef" showAs="Chef Ramon Expert"/>
+        <TLCPerson eId="madrilena" href="/persona/rep-madrid" showAs="Rep. Madrid"/>
+        <TLCPerson eId="valenciano" href="/persona/rep-valencia" showAs="Rep. Valencia"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p><docTitle>Committee on Gastronomy Session: Hearing on Paella Reform</docTitle></p>
+      </longTitle>
+      <p>Session of June 5, 2024 of the Parliamentary Committee on Gastronomy.</p>
+      <p>Subject: Review of the <ref href="/akn/poc/bill/paella-reform-2024">Paella Reform Bill</ref>. Expert witness hearing.</p>
+    </preface>
+
+    <debateBody>
+      <debateSection eId="dbsect_apertura" name="opening">
+        <heading>Opening</heading>
+        <speech eId="speech_1" by="#presidenta">
+          <from>Committee Chair</from>
+          <p>The session of the Committee on Gastronomy is called to order. Today we welcome Chef Ramon Expert to discuss the technical aspects of the <ref href="/akn/poc/bill/paella-reform-2024">reform bill</ref>.</p>
+        </speech>
+      </debateSection>
+
+      <debateSection eId="dbsect_audiencia" name="hearing">
+        <heading>Expert witness hearing</heading>
+        <speech eId="speech_2" by="#chef">
+          <from>Chef Ramon Expert</from>
+          <p>Thank you, Madam Chair. As a chef with 30 years of experience, I can confirm that bomba rice has unique absorption properties. However, a good round-grain rice can yield acceptable results.</p>
+          <p>Regarding seafood, it is technically incompatible with the cooking times of chicken and rabbit. Mixing them compromises both textures.</p>
+        </speech>
+        <speech eId="speech_3" by="#madrilena">
+          <from>Rep. Madrid</from>
+          <p>Chef, but is it not true that millions of families already prepare paella with seafood?</p>
+        </speech>
+        <speech eId="speech_4" by="#chef">
+          <from>Chef Ramon Expert</from>
+          <p>They prepare rice with seafood, which is excellent. But technically it is not Valencian paella. The representative's bill at least proposes the designation 'mixed paella', which I find reasonable.</p>
+        </speech>
+        <speech eId="speech_5" by="#valenciano">
+          <from>Rep. Valencia</from>
+          <p>Exactly! The chef confirms our position. The <ref href="/akn/poc/doc/gastronomy-committee-report">committee report</ref> must reflect this technical distinction.</p>
+        </speech>
+      </debateSection>
+
+      <debateSection eId="dbsect_cierre" name="closing">
+        <heading>Closing</heading>
+        <speech eId="speech_6" by="#presidenta">
+          <from>Committee Chair</from>
+          <p>We thank the Chef for his testimony. The committee will issue its <ref href="/akn/poc/doc/gastronomy-committee-report">report</ref> before the <ref href="/akn/poc/debate/plenary-paella-reform">plenary debate</ref>. The session is adjourned.</p>
+        </speech>
+      </debateSection>
+    </debateBody>
+  </debate>
+</akomaNtoso>

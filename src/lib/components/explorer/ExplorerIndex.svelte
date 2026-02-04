@@ -17,16 +17,16 @@
 	};
 
 	const TYPE_NAMES: Record<ExplorerDocType, string> = {
-		act: 'Acts (Leyes)',
-		bill: 'Bills (Proyectos de Ley)',
-		amendment: 'Amendments (Enmiendas)',
-		debate: 'Debates (Actas)',
-		judgment: 'Judgments (Sentencias)',
-		officialGazette: 'Official Gazettes (Boletines Oficiales)',
-		documentCollection: 'Document Collections (Colecciones)',
-		doc: 'Generic Documents (Documentos)',
-		statement: 'Statements (Declaraciones)',
-		portion: 'Portions (Porciones)'
+		act: 'Acts',
+		bill: 'Bills',
+		amendment: 'Amendments',
+		debate: 'Debates',
+		judgment: 'Judgments',
+		officialGazette: 'Official Gazettes',
+		documentCollection: 'Document Collections',
+		doc: 'Generic Documents',
+		statement: 'Statements',
+		portion: 'Portions'
 	};
 
 	const TYPE_DESCRIPTIONS: Record<ExplorerDocType, string> = {

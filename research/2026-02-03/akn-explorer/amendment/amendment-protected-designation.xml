@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <amendment name="amendment-protected-designation">
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/amendment/amendment-protected-designation"/>
+          <FRBRuri value="/akn/poc/amendment/amendment-protected-designation"/>
+          <FRBRdate date="2024-06-03" name="submission"/>
+          <FRBRauthor href="/persona/rep-valencia"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/amendment/amendment-protected-designation/eng@2024-06-03"/>
+          <FRBRuri value="/akn/poc/amendment/amendment-protected-designation/eng@2024-06-03"/>
+          <FRBRdate date="2024-06-03" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/amendment/amendment-protected-designation/eng@2024-06-03/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/persona/rep-valencia" showAs="Rep. Valencia"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Amendment to the <ref href="/akn/poc/bill/paella-reform-2024">Paella Reform Bill</ref>: <docTitle>Protected Designation of Origin</docTitle></p>
+      </longTitle>
+      <p>Submitted by <docProponent>Representative Valencia</docProponent>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <block name="amendment">
+          <p>It is proposed to add a new <ref href="/akn/poc/act/valencian-paella-recipe#art_11">Article 12</ref> on protected designation:</p>
+          <p><ins>"Article 12. Protected designation. Only a preparation that fully complies with this Act may be called 'Valencian Paella'. Any variation must use a different name."</ins></p>
+        </block>
+        <block name="justification">
+          <p>It is essential to protect the designation 'Valencian Paella' as intangible cultural heritage. Allowing variations without a name change dilutes our gastronomic identity.</p>
+        </block>
+      </amendmentContent>
+    </amendmentBody>
+  </amendment>
+</akomaNtoso>

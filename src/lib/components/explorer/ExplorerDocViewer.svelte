@@ -30,7 +30,7 @@
 
 <div>
 	<!-- Browser chrome -->
-	<div class="card-layout mb-4">
+	<div class="card-layout mb-4 overflow-hidden">
 		<div class="flex items-center gap-2 px-3 py-2 border-b border-gray-100">
 			<a href="/docs/explorer/overview" class="text-sm text-gray-400 hover:text-gray-600 transition-colors px-2 py-1 rounded hover:bg-gray-50" title="Back to index">
 				&larr;

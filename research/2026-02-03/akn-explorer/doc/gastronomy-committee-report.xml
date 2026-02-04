@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <doc name="gastronomy-committee-report">
+    <meta>
+      <identification source="#committee">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/doc/gastronomy-committee-report"/>
+          <FRBRuri value="/akn/poc/doc/gastronomy-committee-report"/>
+          <FRBRdate date="2024-06-10" name="approval"/>
+          <FRBRauthor href="/org/gastronomy-committee"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/doc/gastronomy-committee-report/eng@2024-06-10"/>
+          <FRBRuri value="/akn/poc/doc/gastronomy-committee-report/eng@2024-06-10"/>
+          <FRBRdate date="2024-06-10" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/doc/gastronomy-committee-report/eng@2024-06-10/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#committee">
+        <TLCOrganization eId="committee" href="/org/gastronomy-committee" showAs="Committee on Gastronomy"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p><docTitle>Committee on Gastronomy Report on the Paella Reform Bill</docTitle></p>
+      </longTitle>
+      <p>Report approved on June 10, 2024, prior to the <ref href="/akn/poc/debate/plenary-paella-reform">plenary debate</ref>.</p>
+    </preface>
+
+    <mainBody>
+      <section eId="sec_objeto">
+        <heading>I. Purpose of the report</heading>
+        <p>The Committee on Gastronomy has examined the <ref href="/akn/poc/bill/paella-reform-2024">Bill to Reform the Valencian Paella Recipe</ref>, as well as the three amendments submitted, following a <ref href="/akn/poc/debate/gastronomy-committee">hearing with experts</ref>.</p>
+      </section>
+
+      <section eId="sec_conclusiones">
+        <heading>II. Conclusions</heading>
+        <p>1. The relaxation of the rice type requirement is reasonable from an accessibility standpoint, although bomba rice remains technically superior for this dish.</p>
+        <p>2. The creation of the 'mixed paella' category is a balanced solution that allows innovation without diluting the traditional designation.</p>
+        <p>3. The substitution of saffron with food coloring is acceptable given the prohibitive cost of real saffron for household use.</p>
+        <p>4. The relaxation of the heat source requirement (allowing gas) is necessary for the viability of the recipe in urban settings.</p>
+      </section>
+
+      <section eId="sec_enmiendas">
+        <heading>III. Amendments</heading>
+        <p>On the <ref href="/akn/poc/amendment/amendment-brown-rice">brown rice amendment</ref>: REJECTION is recommended. Brown rice fundamentally alters the texture and cooking time of the dish.</p>
+        <p>On the <ref href="/akn/poc/amendment/amendment-optional-socarrat">optional socarrat amendment</ref>: REJECTION is recommended. The socarrat is a defining element of Valencian paella.</p>
+        <p>On the <ref href="/akn/poc/amendment/amendment-protected-designation">protected designation amendment</ref>: APPROVAL is recommended. Protecting the designation is compatible with the reform and strengthens it.</p>
+      </section>
+
+      <section eId="sec_recomendacion">
+        <heading>IV. Recommendation</heading>
+        <p>The Committee recommends approval of the <ref href="/akn/poc/bill/paella-reform-2024">bill</ref> with the incorporation of the protected designation amendment, and refers the complete dossier to the <ref href="/akn/poc/documentCollection/paella-reform-proceedings">parliamentary proceedings</ref>.</p>
+      </section>
+    </mainBody>
+  </doc>
+</akomaNtoso>

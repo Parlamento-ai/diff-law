@@ -42,7 +42,7 @@ export const load: PageServerLoad = async ({ params }) => {
 		};
 	}
 
-	// Explorer document viewer (e.g. explorer/akn/poc/act/receta-paella-valenciana)
+	// Explorer document viewer (e.g. explorer/akn/poc/act/valencian-paella-recipe)
 	if (slug.startsWith('explorer/') && slug !== 'explorer/overview') {
 		const uri = '/' + slug.replace('explorer/', '');
 		try {
