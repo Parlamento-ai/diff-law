@@ -33,7 +33,9 @@ A raíz del punto 1 y 3 decidimos hacer un test de cómo podríamos hacer un vis
 
 Hicimos como si fuera un navegador web para ejemplificar aún más. En la imagen se puede ver la 'split view' en la que se ven el modo renderizado y el XML al mismo tiempo.
 
-Siguiendo en la misma idea, nos preguntamos cómo podríamos crear una interfaz para cualquier persona que trabaje o siga el reto parlamentario 100 % basada en los formatos AKN. Es como si creáramos una plantilla para cualquier parlamento, poder simplemente copiar, pegar y, basada en AKN, todo podría estar conectado. Pienso esto para, en primer lugar, Parlamento.ai que necesita organización y queremos seguir varios parlamentos, pero también para crear un proyecto open source para cualquier parlamento que le gustaría tomar una interfaz ya trabajada y compatible con AKN.
+Siguiendo la misma idea, nos preguntamos cómo sería crear un portal web 100 % basado en AKN. Ver si un portal de algún parlamento, con todas sus distintas páginas y complejidades, pudiera ser representado con este formato solamente. 
+
+Pienso esto para Parlamento.ai que necesita organización y queremos seguir varios parlamentos, pero también para crear un proyecto open source para cualquier parlamento que le gustaría tomar una interfaz ya trabajada y compatible con AKN.
 
 Analizando cómo ver el problema, nos dimos cuenta de que no existía una forma ordenada de representar el "orden del día". La solución que propone el formato es hacer un documento genérico, que podría ser un reporte, una conclusión o una citación, pero no tiene un formato específico para la citación.
 
