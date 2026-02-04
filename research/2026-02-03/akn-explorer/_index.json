@@ -83,6 +83,27 @@
       "title": "Committee on Gastronomy Report",
       "description": "Report with conclusions and recommendations on the reform.",
       "filePath": "doc/gastronomy-committee-report.xml"
+    },
+    {
+      "uri": "/akn/poc/citation/plenary-session-paella-reform",
+      "type": "citation",
+      "title": "Citation: Plenary Session on Paella Reform",
+      "description": "Call to the plenary session debating the paella reform and amendments.",
+      "filePath": "citation/plenary-session-paella-reform.xml"
+    },
+    {
+      "uri": "/akn/poc/question/written-question-saffron-budget",
+      "type": "question",
+      "title": "Written Question: Saffron Budget Spending",
+      "description": "Question to the Ministry of Gastronomy about saffron procurement spending.",
+      "filePath": "question/written-question-saffron-budget.xml"
+    },
+    {
+      "uri": "/akn/poc/communication/oficio-committee-to-plenary",
+      "type": "communication",
+      "title": "Communication: Committee Report Transmission",
+      "description": "Transmission of the gastronomy committee report to the plenary.",
+      "filePath": "communication/oficio-committee-to-plenary.xml"
     }
   ]
 }

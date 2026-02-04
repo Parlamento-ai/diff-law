@@ -20,6 +20,9 @@
 		officialGazette: 'text-gray-700 bg-gray-50 border-gray-200',
 		documentCollection: 'text-cyan-700 bg-cyan-50 border-cyan-200',
 		doc: 'text-stone-700 bg-stone-50 border-stone-200',
+		citation: 'text-teal-700 bg-teal-50 border-teal-200',
+		question: 'text-orange-700 bg-orange-50 border-orange-200',
+		communication: 'text-violet-700 bg-violet-50 border-violet-200'
 	};
 </script>
 

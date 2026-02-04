@@ -13,7 +13,10 @@
 		documentCollection: 'documentCollection',
 		doc: 'doc',
 		statement: 'statement',
-		portion: 'portion'
+		portion: 'portion',
+		citation: 'citation*',
+		question: 'question*',
+		communication: 'communication*'
 	};
 
 	const TYPE_NAMES: Record<ExplorerDocType, string> = {
@@ -26,7 +29,10 @@
 		documentCollection: 'Document Collections',
 		doc: 'Generic Documents',
 		statement: 'Statements',
-		portion: 'Portions'
+		portion: 'Portions',
+		citation: 'Citations',
+		question: 'Questions',
+		communication: 'Communications'
 	};
 
 	const TYPE_DESCRIPTIONS: Record<ExplorerDocType, string> = {
@@ -39,7 +45,10 @@
 		documentCollection: 'A document collection groups related documents into a single navigable package. It is used for legislative dossiers — linking together the original law, bills, amendments, debate records, and final texts of a single legislative process.',
 		doc: 'A generic document type for anything that does not fit the more specific categories — committee reports, technical studies, opinions, or administrative documents that are part of the legislative process but have their own format.',
 		statement: 'A statement is a formal declaration by a person or body, such as a minister\'s policy statement or an official position paper.',
-		portion: 'A portion represents a fragment of a larger document, used when only part of a text needs to be referenced or transmitted independently.'
+		portion: 'A portion represents a fragment of a larger document, used when only part of a text needs to be referenced or transmitted independently.',
+		citation: 'A citation is a formal call to a session, including date, time, place, and the ordered agenda of items to be discussed.',
+		question: 'A question is a written parliamentary query to the executive, tracking status, deadlines, and the eventual response in a single document.',
+		communication: 'A communication is a formal transmission between institutions, recording who sends what to whom and which document it refers to.'
 	};
 
 	const TYPE_COLORS: Record<ExplorerDocType, string> = {
@@ -52,12 +61,16 @@
 		documentCollection: 'text-cyan-700 bg-cyan-50 border-cyan-200',
 		doc: 'text-stone-700 bg-stone-50 border-stone-200',
 		statement: 'text-pink-700 bg-pink-50 border-pink-200',
-		portion: 'text-indigo-700 bg-indigo-50 border-indigo-200'
+		portion: 'text-indigo-700 bg-indigo-50 border-indigo-200',
+		citation: 'text-teal-700 bg-teal-50 border-teal-200',
+		question: 'text-orange-700 bg-orange-50 border-orange-200',
+		communication: 'text-violet-700 bg-violet-50 border-violet-200'
 	};
 
 	const TYPE_ORDER: ExplorerDocType[] = [
 		'act', 'bill', 'amendment', 'debate', 'judgment',
-		'officialGazette', 'documentCollection', 'doc'
+		'officialGazette', 'documentCollection', 'doc',
+		'citation', 'question', 'communication'
 	];
 
 	const grouped = $derived.by(() => {
@@ -67,6 +80,15 @@
 			groups[doc.type].push(doc);
 		}
 		return groups;
+	});
+
+	const EXTENSION_TYPES: ExplorerDocType[] = ['citation', 'question', 'communication'];
+
+	const firstExtensionWithDocs = $derived.by(() => {
+		for (const type of EXTENSION_TYPES) {
+			if (grouped[type]?.length) return type;
+		}
+		return null;
 	});
 </script>
 
@@ -89,6 +111,17 @@
 	{#each TYPE_ORDER as type}
 		{@const docs = grouped[type]}
 		{#if docs && docs.length > 0}
+			{#if firstExtensionWithDocs === type}
+				<div class="mb-6 border-t border-dashed border-gray-200 pt-6">
+					<h2 class="text-sm font-heading font-semibold text-gray-700 uppercase tracking-wide mb-2">
+						Parlamento.ai Extensions
+					</h2>
+					<p class="text-sm text-gray-600 leading-relaxed">
+						The following document types are not part of the Akoma Ntoso standard. They are extensions designed by Parlamento.ai to cover gaps in parliamentary operations.
+						Labels marked with an asterisk (*) indicate these non-standard types.
+					</p>
+				</div>
+			{/if}
 			<div class="mb-8 scroll-mt-20" id={type}>
 				<div class="flex items-center gap-2 mb-2">
 					<span class="badge {TYPE_COLORS[type]}">{TYPE_LABELS[type]}</span>

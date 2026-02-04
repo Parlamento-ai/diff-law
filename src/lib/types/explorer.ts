@@ -15,7 +15,10 @@ export type ExplorerDocType =
 	| 'documentCollection'
 	| 'doc'
 	| 'statement'
-	| 'portion';
+	| 'portion'
+	| 'citation'
+	| 'question'
+	| 'communication';
 
 export interface FRBRMeta {
 	workUri: string;

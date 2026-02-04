@@ -8,6 +8,9 @@
 	import GazetteRenderer from './renderers/GazetteRenderer.svelte';
 	import CollectionRenderer from './renderers/CollectionRenderer.svelte';
 	import GenericDocRenderer from './renderers/GenericDocRenderer.svelte';
+	import CitationRenderer from './renderers/CitationRenderer.svelte';
+	import QuestionRenderer from './renderers/QuestionRenderer.svelte';
+	import CommunicationRenderer from './renderers/CommunicationRenderer.svelte';
 
 	let { document, manifest = [] }: {
 		document: { type: ExplorerDocType; root: AknNode };
@@ -29,6 +32,12 @@
 	<GazetteRenderer root={document.root} {manifest} />
 {:else if document.type === 'documentCollection'}
 	<CollectionRenderer root={document.root} {manifest} />
+{:else if document.type === 'citation'}
+	<CitationRenderer root={document.root} {manifest} />
+{:else if document.type === 'question'}
+	<QuestionRenderer root={document.root} {manifest} />
+{:else if document.type === 'communication'}
+	<CommunicationRenderer root={document.root} {manifest} />
 {:else}
 	<GenericDocRenderer root={document.root} {manifest} />
 {/if}

@@ -17,7 +17,10 @@ const DOC_TYPES: ExplorerDocType[] = [
 	'documentCollection',
 	'doc',
 	'statement',
-	'portion'
+	'portion',
+	'citation',
+	'question',
+	'communication'
 ];
 
 const parser = new XMLParser({
@@ -165,4 +168,3 @@ export function parseGenericAkn(xml: string): GenericAknDocument {
 		rawXml: xml
 	};
 }
-

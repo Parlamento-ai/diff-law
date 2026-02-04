@@ -20,6 +20,9 @@ export const docs: DocEntry[] = [
 	{ slug: 'explorer/officialGazette', title: 'officialGazette', section: 'explorer' },
 	{ slug: 'explorer/documentCollection', title: 'documentCollection', section: 'explorer' },
 	{ slug: 'explorer/doc', title: 'doc', section: 'explorer' },
+	{ slug: 'explorer/citation', title: 'citation*', section: 'explorer' },
+	{ slug: 'explorer/question', title: 'question*', section: 'explorer' },
+	{ slug: 'explorer/communication', title: 'communication*', section: 'explorer' },
 	// AKN
 	{ slug: 'akn/what-is-akn', title: 'What is Akoma Ntoso?', section: 'akn' },
 	{ slug: 'akn/frbr', title: 'The FRBR model', section: 'akn' },
