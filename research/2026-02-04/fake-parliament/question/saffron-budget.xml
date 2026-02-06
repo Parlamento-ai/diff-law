@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
-  <question name="saffron-budget">
+  <question name="presupuesto-azafran">
     <meta>
-      <identification source="#secretariat">
+      <identification source="#secretaria">
         <FRBRWork>
-          <FRBRthis value="/akn/poc/question/saffron-budget"/>
-          <FRBRuri value="/akn/poc/question/saffron-budget"/>
-          <FRBRdate date="2024-06-01" name="tabling"/>
-          <FRBRauthor href="/persona/rep-luna"/>
+          <FRBRthis value="/akn/poc/question/presupuesto-azafran"/>
+          <FRBRuri value="/akn/poc/question/presupuesto-azafran"/>
+          <FRBRdate date="2024-06-01" name="presentación"/>
+          <FRBRauthor href="/persona/dip-luna"/>
           <FRBRcountry value="ga"/>
         </FRBRWork>
         <FRBRExpression>
-          <FRBRthis value="/akn/poc/question/saffron-budget/eng@2024-06-01"/>
-          <FRBRuri value="/akn/poc/question/saffron-budget/eng@2024-06-01"/>
-          <FRBRdate date="2024-06-01" name="tabling"/>
-          <FRBRlanguage language="eng"/>
+          <FRBRthis value="/akn/poc/question/presupuesto-azafran/spa@2024-06-01"/>
+          <FRBRuri value="/akn/poc/question/presupuesto-azafran/spa@2024-06-01"/>
+          <FRBRdate date="2024-06-01" name="presentación"/>
+          <FRBRlanguage language="spa"/>
         </FRBRExpression>
         <FRBRManifestation>
-          <FRBRthis value="/akn/poc/question/saffron-budget/eng@2024-06-01/main.xml"/>
+          <FRBRthis value="/akn/poc/question/presupuesto-azafran/spa@2024-06-01/main.xml"/>
           <FRBRformat value="application/akn+xml"/>
         </FRBRManifestation>
       </identification>
-      <references source="#secretariat">
-        <TLCPerson eId="rep-luna" href="/persona/rep-luna" showAs="Rep. Luna"/>
-        <TLCOrganization eId="min-gastronomy" href="/org/ministry-gastronomy" showAs="Ministry of Gastronomy"/>
-        <TLCOrganization eId="camara" href="/org/camara-ingredientes" showAs="Camara de Ingredientes"/>
+      <references source="#secretaria">
+        <TLCPerson eId="dip-luna" href="/persona/dip-luna" showAs="Dip. Luna"/>
+        <TLCOrganization eId="min-gastronomia" href="/org/ministerio-gastronomia" showAs="Ministerio de Gastronomía"/>
+        <TLCOrganization eId="camara" href="/org/camara-ingredientes" showAs="Cámara de Ingredientes"/>
       </references>
     </meta>
 
     <preface>
-      <p class="title">Written Question No. 118/2024</p>
-      <p class="subtitle">From Rep. Luna to the Ministry of Gastronomy</p>
+      <p class="title">Pregunta Escrita N° 118/2024</p>
+      <p class="subtitle">Del Dip. Luna al Ministerio de Gastronomía</p>
     </preface>
 
     <questionBody>
       <questionStatus
         status="answered"
-        askedBy="#rep-luna"
-        addressedTo="#min-gastronomy"
+        askedBy="#dip-luna"
+        addressedTo="#min-gastronomia"
         dateAsked="2024-06-01"
         dateAnswered="2024-06-20"
         deadline="2024-06-21"
@@ -45,16 +45,16 @@
 
       <questionContent>
         <question eId="q_1">
-          <p>What share of the 2024 culinary budget was allocated to saffron procurement for the preparation of official events?</p>
+          <p>¿Qué porcentaje del presupuesto culinario 2024 se destinó a la adquisición de azafrán para la preparación de eventos oficiales?</p>
         </question>
         <question eId="q_2">
-          <p>Does the Ministry plan to update the saffron guidance in the <ref href="/akn/poc/act/valencian-paella-recipe">Official Valencian Paella Recipe Act</ref> to reflect the current market price?</p>
+          <p>¿Tiene el Ministerio previsto actualizar las directrices sobre azafrán en la <ref href="/akn/poc/act/receta-paella-valenciana">Ley de la Receta Oficial de Paella Valenciana</ref> para reflejar el precio actual del mercado?</p>
         </question>
       </questionContent>
 
       <answerContent>
-        <p>The Ministry allocated 12% of the 2024 culinary budget to certified saffron purchases, prioritizing local suppliers.</p>
-        <p>No amendment to the act is planned for the current session, but a review will be considered after the 2024 harvest cycle.</p>
+        <p>El Ministerio destinó el 12% del presupuesto culinario 2024 a la compra de azafrán certificado, priorizando a los proveedores locales.</p>
+        <p>No se prevé ninguna modificación de la ley para la sesión actual, pero se considerará una revisión tras el ciclo de cosecha 2024.</p>
       </answerContent>
     </questionBody>
   </question>

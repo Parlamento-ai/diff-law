@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
-  <citation name="camara-plenary-upcoming">
+  <citation name="camara-pleno-proxima">
     <meta>
-      <identification source="#secretariat">
+      <identification source="#secretaria">
         <FRBRWork>
-          <FRBRthis value="/akn/poc/citation/camara-plenary-upcoming"/>
-          <FRBRuri value="/akn/poc/citation/camara-plenary-upcoming"/>
-          <FRBRdate date="2025-03-15" name="session"/>
+          <FRBRthis value="/akn/poc/citation/camara-pleno-proxima"/>
+          <FRBRuri value="/akn/poc/citation/camara-pleno-proxima"/>
+          <FRBRdate date="2025-03-15" name="sesión"/>
           <FRBRauthor href="/org/camara-ingredientes"/>
           <FRBRcountry value="ga"/>
         </FRBRWork>
         <FRBRExpression>
-          <FRBRthis value="/akn/poc/citation/camara-plenary-upcoming/eng@2025-03-10"/>
-          <FRBRuri value="/akn/poc/citation/camara-plenary-upcoming/eng@2025-03-10"/>
-          <FRBRdate date="2025-03-10" name="publication"/>
-          <FRBRlanguage language="eng"/>
+          <FRBRthis value="/akn/poc/citation/camara-pleno-proxima/spa@2025-03-10"/>
+          <FRBRuri value="/akn/poc/citation/camara-pleno-proxima/spa@2025-03-10"/>
+          <FRBRdate date="2025-03-10" name="publicación"/>
+          <FRBRlanguage language="spa"/>
         </FRBRExpression>
         <FRBRManifestation>
-          <FRBRthis value="/akn/poc/citation/camara-plenary-upcoming/eng@2025-03-10/main.xml"/>
+          <FRBRthis value="/akn/poc/citation/camara-pleno-proxima/spa@2025-03-10/main.xml"/>
           <FRBRformat value="application/akn+xml"/>
         </FRBRManifestation>
       </identification>
-      <references source="#secretariat">
-        <TLCOrganization eId="camara" href="/org/camara-ingredientes" showAs="Camara de Ingredientes"/>
-        <TLCPerson eId="speaker" href="/persona/speaker-morales" showAs="Speaker Morales"/>
-        <TLCPerson eId="secretariat" href="/persona/secretariat" showAs="Secretariat of the Camara"/>
+      <references source="#secretaria">
+        <TLCOrganization eId="camara" href="/org/camara-ingredientes" showAs="Cámara de Ingredientes"/>
+        <TLCPerson eId="presidente" href="/persona/presidente-morales" showAs="Presidente Morales"/>
+        <TLCPerson eId="secretaria" href="/persona/secretaria" showAs="Secretaría de la Cámara"/>
       </references>
     </meta>
 
     <preface>
       <longTitle>
-        <p><docTitle>Upcoming Plenary Session: Sushi Standards and Pending Amendments</docTitle></p>
+        <p><docTitle>Próxima Sesión Plenaria: Estándares del Sushi y Enmiendas Pendientes</docTitle></p>
       </longTitle>
-      <p>Issued by the Secretariat of the Camara de Ingredientes for the upcoming session.</p>
+      <p>Emitida por la Secretaría de la Cámara de Ingredientes para la próxima sesión.</p>
     </preface>
 
     <citationBody>
-      <session date="2025-03-15" time="10:00" place="Sala del Pleno" chair="#speaker">
-        <body>Camara de Ingredientes</body>
+      <session date="2025-03-15" time="10:00" place="Sala del Pleno" chair="#presidente">
+        <body>Cámara de Ingredientes</body>
       </session>
 
       <agenda>
-        <agendaSection eId="agenda_order">
-          <heading>Order of the Day</heading>
+        <agendaSection eId="agenda_orden">
+          <heading>Orden del Día</heading>
           <agendaItem eId="item_sushi" status="scheduled">
-            <heading>First Reading: Sushi Rice Quality Standards</heading>
-            <step type="first-reading" showAs="First reading debate"/>
-            <ref href="/akn/poc/bill/sushi-rice-regulation">Bill: Regulate Sushi Rice Quality Standards</ref>
+            <heading>Primera Lectura: Estándares de Calidad del Arroz para Sushi</heading>
+            <step type="first-reading" showAs="Debate en primera lectura"/>
+            <ref href="/akn/poc/bill/regulacion-arroz-sushi">Proyecto: Regulación de Estándares de Calidad del Arroz para Sushi</ref>
           </agendaItem>
-          <agendaItem eId="item_questions" status="scheduled">
-            <heading>Question Time</heading>
-            <step type="question-time" showAs="Oral questions to the Ministry"/>
+          <agendaItem eId="item_preguntas" status="scheduled">
+            <heading>Hora de Preguntas</heading>
+            <step type="question-time" showAs="Preguntas orales al Ministerio"/>
           </agendaItem>
         </agendaSection>
       </agenda>

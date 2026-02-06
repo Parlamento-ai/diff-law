@@ -1,48 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
-  <amendment name="amendment-brown-rice">
+<!--
+  Parlamento de Gastronomía — Enmienda
+  Documento: amendment (enmienda al proyecto de reforma de paella)
+
+  Contexto: El Diputado Naturista propone incluir el arroz integral
+  como alternativa saludable en la receta de paella.
+
+  Votación: RECHAZADA 1-7-1 — El arroz integral fue considerado
+  una aberración culinaria por la mayoría de los diputados.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="enmienda-arroz-integral">
     <meta>
       <identification source="#proponente">
         <FRBRWork>
-          <FRBRthis value="/akn/poc/amendment/amendment-brown-rice"/>
-          <FRBRuri value="/akn/poc/amendment/amendment-brown-rice"/>
-          <FRBRdate date="2024-06-01" name="submission"/>
-          <FRBRauthor href="/persona/rep-naturist"/>
+          <FRBRthis value="/akn/poc/amendment/enmienda-arroz-integral"/>
+          <FRBRuri value="/akn/poc/amendment/enmienda-arroz-integral"/>
+          <FRBRdate date="2024-06-01" name="presentación"/>
+          <FRBRauthor href="/persona/dip-naturista"/>
           <FRBRcountry value="ga"/>
         </FRBRWork>
         <FRBRExpression>
-          <FRBRthis value="/akn/poc/amendment/amendment-brown-rice/eng@2024-06-01"/>
-          <FRBRuri value="/akn/poc/amendment/amendment-brown-rice/eng@2024-06-01"/>
-          <FRBRdate date="2024-06-01" name="version"/>
-          <FRBRlanguage language="eng"/>
+          <FRBRthis value="/akn/poc/amendment/enmienda-arroz-integral/spa@2024-06-01"/>
+          <FRBRuri value="/akn/poc/amendment/enmienda-arroz-integral/spa@2024-06-01"/>
+          <FRBRdate date="2024-06-01" name="versión"/>
+          <FRBRlanguage language="spa"/>
         </FRBRExpression>
         <FRBRManifestation>
-          <FRBRthis value="/akn/poc/amendment/amendment-brown-rice/eng@2024-06-01/main.xml"/>
+          <FRBRthis value="/akn/poc/amendment/enmienda-arroz-integral/spa@2024-06-01/main.xml"/>
           <FRBRformat value="application/akn+xml"/>
         </FRBRManifestation>
       </identification>
       <references source="#proponente">
-        <TLCPerson eId="proponente" href="/persona/rep-naturist" showAs="Rep. Naturist"/>
+        <TLCPerson eId="proponente" href="/persona/dip-naturista" showAs="Dip. Naturista"/>
       </references>
     </meta>
 
     <preface>
       <longTitle>
-        <p>Amendment to the <ref href="/akn/poc/bill/paella-reform-2024">Paella Reform Bill</ref>: <docTitle>Inclusion of Brown Rice</docTitle></p>
+        <p>Enmienda al <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto de Reforma de la Paella</ref>: <docTitle>Inclusión del Arroz Integral</docTitle></p>
       </longTitle>
-      <p>Submitted by <docProponent>Representative Naturist</docProponent> to the <ref href="/akn/poc/bill/paella-reform-2024">Paella Reform Bill</ref>.</p>
+      <p>Presentada por el <docProponent>Diputado Naturista</docProponent> al <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto de Reforma de la Paella</ref>.</p>
     </preface>
 
     <amendmentBody>
       <amendmentContent>
-        <block name="amendment">
-          <p>It is proposed to amend <ref href="/akn/poc/act/valencian-paella-recipe#art_1">Article 1</ref> to include brown rice as a healthy alternative:</p>
-          <p><mod>"Article 1. Type of rice. 400 grams of bomba rice, medium-grain round rice, or brown rice shall be used. Bomba rice is preferably recommended when available."</mod></p>
+        <block name="enmienda">
+          <p>Se propone modificar el <ref href="/akn/poc/act/receta-paella-valenciana#art_1">artículo 1</ref> para incluir el arroz integral como alternativa saludable:</p>
+          <p><mod>"Artículo 1. Tipo de arroz. Se utilizarán 400 gramos de arroz bomba, arroz redondo de grano medio o arroz integral. Se recomienda preferentemente el arroz bomba cuando esté disponible."</mod></p>
         </block>
-        <block name="justification">
-          <p>Brown rice provides greater nutritional value, fiber, and minerals. Its inclusion promotes healthier eating habits without altering the spirit of the recipe.</p>
+        <block name="justificación">
+          <p>El arroz integral proporciona mayor valor nutricional, fibra y minerales. Su inclusión promueve hábitos alimenticios más saludables sin alterar el espíritu de la receta.</p>
         </block>
       </amendmentContent>
     </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN Diff: changeSet con votación — RECHAZADA
+      El changeSet registra la propuesta pero con result="rejected"
+      ============================================================
+    -->
+    <akndiff:changeSet
+      base="/akn/poc/act/receta-paella-valenciana/spa@2023-03-18"
+      result="/akn/poc/act/receta-paella-valenciana/spa@2023-03-18">
+
+      <akndiff:vote date="2024-06-15"
+                  result="rejected"
+                  source="/akn/poc/debate/camara-pleno-paella">
+        <akndiff:for>
+          <akndiff:voter href="/persona/dip-naturista" showAs="Dip. Naturista"/>
+        </akndiff:for>
+        <akndiff:against>
+          <akndiff:voter href="/persona/dip-valenciano" showAs="Dip. Valenciano"/>
+          <akndiff:voter href="/persona/dip-albufera" showAs="Dip. Albufera"/>
+          <akndiff:voter href="/persona/dip-denominacion" showAs="Dip. Denominación de Origen"/>
+          <akndiff:voter href="/persona/dip-madrilena" showAs="Dip. Madrileña"/>
+          <akndiff:voter href="/persona/dip-catalan" showAs="Dip. Catalán"/>
+          <akndiff:voter href="/persona/dip-andaluza" showAs="Dip. Andaluza"/>
+          <akndiff:voter href="/persona/dip-modernidad" showAs="Dip. Modernidad"/>
+        </akndiff:against>
+        <akndiff:abstain>
+          <akndiff:voter href="/persona/dip-turismo" showAs="Dip. Turismo"/>
+        </akndiff:abstain>
+      </akndiff:vote>
+
+      <!-- Propuesta rechazada: incluir arroz integral -->
+      <akndiff:articleChange article="art_1" type="substitute">
+        <akndiff:old>Se utilizarán 400 gramos de arroz bomba o, alternativamente, arroz redondo de grano medio. Se recomienda preferentemente el arroz bomba cuando esté disponible.</akndiff:old>
+        <akndiff:new>Se utilizarán 400 gramos de arroz bomba, arroz redondo de grano medio o arroz integral. Se recomienda preferentemente el arroz bomba cuando esté disponible.</akndiff:new>
+      </akndiff:articleChange>
+
+    </akndiff:changeSet>
+
   </amendment>
 </akomaNtoso>

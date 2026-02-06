@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
-  <officialGazette name="gastronomy-gazette-2024">
+  <officialGazette name="gaceta-gastronomia-2024">
     <meta>
       <identification source="#editor">
         <FRBRWork>
-          <FRBRthis value="/akn/poc/officialGazette/gastronomy-gazette-2024"/>
-          <FRBRuri value="/akn/poc/officialGazette/gastronomy-gazette-2024"/>
-          <FRBRdate date="2024-10-01" name="publication"/>
-          <FRBRauthor href="/org/official-gazette"/>
+          <FRBRthis value="/akn/poc/officialGazette/gaceta-gastronomia-2024"/>
+          <FRBRuri value="/akn/poc/officialGazette/gaceta-gastronomia-2024"/>
+          <FRBRdate date="2024-10-01" name="publicación"/>
+          <FRBRauthor href="/org/diario-oficial"/>
           <FRBRcountry value="ga"/>
         </FRBRWork>
         <FRBRExpression>
-          <FRBRthis value="/akn/poc/officialGazette/gastronomy-gazette-2024/eng@2024-10-01"/>
-          <FRBRuri value="/akn/poc/officialGazette/gastronomy-gazette-2024/eng@2024-10-01"/>
-          <FRBRdate date="2024-10-01" name="version"/>
-          <FRBRlanguage language="eng"/>
+          <FRBRthis value="/akn/poc/officialGazette/gaceta-gastronomia-2024/spa@2024-10-01"/>
+          <FRBRuri value="/akn/poc/officialGazette/gaceta-gastronomia-2024/spa@2024-10-01"/>
+          <FRBRdate date="2024-10-01" name="versión"/>
+          <FRBRlanguage language="spa"/>
         </FRBRExpression>
         <FRBRManifestation>
-          <FRBRthis value="/akn/poc/officialGazette/gastronomy-gazette-2024/eng@2024-10-01/main.xml"/>
+          <FRBRthis value="/akn/poc/officialGazette/gaceta-gastronomia-2024/spa@2024-10-01/main.xml"/>
           <FRBRformat value="application/akn+xml"/>
         </FRBRManifestation>
       </identification>
       <references source="#editor">
-        <TLCOrganization eId="editor" href="/org/official-gazette" showAs="Official Gazette of Gastronomia"/>
+        <TLCOrganization eId="editor" href="/org/diario-oficial" showAs="Diario Oficial de Gastronomía"/>
       </references>
     </meta>
 
     <preface>
       <longTitle>
-        <p><docTitle>Official Gazette of Gastronomia — No. 2024-37</docTitle></p>
+        <p><docTitle>Diario Oficial de Gastronomía — N° 2024-37</docTitle></p>
       </longTitle>
-      <p>Published on October 1, 2024.</p>
+      <p>Publicado el 1 de octubre de 2024.</p>
     </preface>
 
     <collectionBody>
       <component eId="comp_1">
-        <heading>I. Legislation</heading>
-        <componentRef src="/akn/poc/act/valencian-paella-recipe-amended" showAs="Act No. 42/2023 as amended — Official Valencian Paella Recipe"/>
-        <p>The consolidated text of <ref href="/akn/poc/act/valencian-paella-recipe-amended">Act No. 42/2023</ref> following the reform enacted by the <ref href="/akn/poc/bill/paella-reform-2024">Paella Reform Bill</ref> is hereby published.</p>
+        <heading>I. Legislación</heading>
+        <componentRef src="/akn/poc/act/receta-paella-valenciana-reformada" showAs="Ley N° 42/2023 reformada — Receta Oficial de Paella Valenciana"/>
+        <p>Se publica el texto refundido de la <ref href="/akn/poc/act/receta-paella-valenciana-reformada">Ley N° 42/2023</ref> tras la reforma aprobada por el <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto de Reforma de la Paella</ref>.</p>
       </component>
 
       <component eId="comp_2">
-        <heading>II. Case Law</heading>
-        <componentRef src="/akn/poc/judgment/mixed-paella-ruling" showAs="Judgment 127/2024 — Challenge against paella reform"/>
-        <p><ref href="/akn/poc/judgment/mixed-paella-ruling">Judgment No. 127/2024 of the Supreme Gastronomic Court</ref> on the constitutional challenge against the reform is hereby published.</p>
+        <heading>II. Jurisprudencia</heading>
+        <componentRef src="/akn/poc/judgment/sentencia-paella-mixta" showAs="Sentencia 127/2024 — Recurso contra la reforma de la paella"/>
+        <p>Se publica la <ref href="/akn/poc/judgment/sentencia-paella-mixta">Sentencia N° 127/2024 del Tribunal Supremo Gastronómico</ref> sobre el recurso de inconstitucionalidad contra la reforma.</p>
       </component>
 
       <component eId="comp_3">
-        <heading>III. Parliamentary Proceedings</heading>
-        <componentRef src="/akn/poc/documentCollection/paella-reform-proceedings" showAs="Complete proceedings of the paella reform"/>
-        <p>Complete dossier of the <ref href="/akn/poc/documentCollection/paella-reform-proceedings">reform proceedings</ref>, including the bill, amendments, debates, and votes.</p>
+        <heading>III. Trámites Parlamentarios</heading>
+        <componentRef src="/akn/poc/documentCollection/tramitacion-reforma-paella" showAs="Expediente completo de la reforma de la paella"/>
+        <p>Expediente completo de la <ref href="/akn/poc/documentCollection/tramitacion-reforma-paella">tramitación de la reforma</ref>, incluyendo el proyecto, enmiendas, debates y votaciones.</p>
       </component>
     </collectionBody>
   </officialGazette>

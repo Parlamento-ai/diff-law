@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
-  <question name="rice-imports-pending">
+  <question name="importaciones-arroz-pendiente">
     <meta>
-      <identification source="#secretariat">
+      <identification source="#secretaria">
         <FRBRWork>
-          <FRBRthis value="/akn/poc/question/rice-imports-pending"/>
-          <FRBRuri value="/akn/poc/question/rice-imports-pending"/>
-          <FRBRdate date="2024-11-10" name="tabling"/>
+          <FRBRthis value="/akn/poc/question/importaciones-arroz-pendiente"/>
+          <FRBRuri value="/akn/poc/question/importaciones-arroz-pendiente"/>
+          <FRBRdate date="2024-11-10" name="presentación"/>
           <FRBRauthor href="/persona/sen-tokio"/>
           <FRBRcountry value="ga"/>
         </FRBRWork>
         <FRBRExpression>
-          <FRBRthis value="/akn/poc/question/rice-imports-pending/eng@2024-11-10"/>
-          <FRBRuri value="/akn/poc/question/rice-imports-pending/eng@2024-11-10"/>
-          <FRBRdate date="2024-11-10" name="tabling"/>
-          <FRBRlanguage language="eng"/>
+          <FRBRthis value="/akn/poc/question/importaciones-arroz-pendiente/spa@2024-11-10"/>
+          <FRBRuri value="/akn/poc/question/importaciones-arroz-pendiente/spa@2024-11-10"/>
+          <FRBRdate date="2024-11-10" name="presentación"/>
+          <FRBRlanguage language="spa"/>
         </FRBRExpression>
         <FRBRManifestation>
-          <FRBRthis value="/akn/poc/question/rice-imports-pending/eng@2024-11-10/main.xml"/>
+          <FRBRthis value="/akn/poc/question/importaciones-arroz-pendiente/spa@2024-11-10/main.xml"/>
           <FRBRformat value="application/akn+xml"/>
         </FRBRManifestation>
       </identification>
-      <references source="#secretariat">
+      <references source="#secretaria">
         <TLCPerson eId="sen-tokio" href="/persona/sen-tokio" showAs="Sen. Tokio"/>
-        <TLCOrganization eId="min-commerce" href="/org/ministry-commerce" showAs="Ministry of Commerce"/>
-        <TLCOrganization eId="senado" href="/org/senado-gastronomia" showAs="Senado de Gastronomia"/>
+        <TLCOrganization eId="min-comercio" href="/org/ministerio-comercio" showAs="Ministerio de Comercio"/>
+        <TLCOrganization eId="senado" href="/org/senado-gastronomia" showAs="Senado de Gastronomía"/>
       </references>
     </meta>
 
     <preface>
-      <p class="title">Written Question No. 205/2024</p>
-      <p class="subtitle">From Sen. Tokio to the Ministry of Commerce</p>
+      <p class="title">Pregunta Escrita N° 205/2024</p>
+      <p class="subtitle">Del Sen. Tokio al Ministerio de Comercio</p>
     </preface>
 
     <questionBody>
       <questionStatus
         status="pending"
         askedBy="#sen-tokio"
-        addressedTo="#min-commerce"
+        addressedTo="#min-comercio"
         dateAsked="2024-11-10"
         deadline="2024-12-10"
       />
 
       <questionContent>
         <question eId="q_1">
-          <p>What is the current volume and origin of japonica rice imports into the Republic of Gastronomia?</p>
+          <p>¿Cuál es el volumen actual y el origen de las importaciones de arroz japónica a la República de Gastronomía?</p>
         </question>
         <question eId="q_2">
-          <p>Are there plans to establish quality certification standards for imported sushi-grade rice, in line with the proposed <ref href="/akn/poc/bill/sushi-rice-regulation">Sushi Rice Quality Standards Bill</ref>?</p>
+          <p>¿Existen planes para establecer estándares de certificación de calidad para el arroz importado de grado sushi, en línea con el <ref href="/akn/poc/bill/regulacion-arroz-sushi">Proyecto de Estándares de Calidad del Arroz para Sushi</ref> propuesto?</p>
         </question>
       </questionContent>
     </questionBody>

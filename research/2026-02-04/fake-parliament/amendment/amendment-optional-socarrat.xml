@@ -1,48 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
-  <amendment name="amendment-optional-socarrat">
+<!--
+  Parlamento de Gastronomía — Enmienda
+  Documento: amendment (enmienda al proyecto de reforma de paella)
+
+  Contexto: El Diputado Modernidad propone hacer el socarrat opcional
+  para aumentar la accesibilidad de la receta.
+
+  Votación: APROBADA 6-2-1
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="enmienda-socarrat-opcional">
     <meta>
       <identification source="#proponente">
         <FRBRWork>
-          <FRBRthis value="/akn/poc/amendment/amendment-optional-socarrat"/>
-          <FRBRuri value="/akn/poc/amendment/amendment-optional-socarrat"/>
-          <FRBRdate date="2024-06-02" name="submission"/>
-          <FRBRauthor href="/persona/rep-modern"/>
+          <FRBRthis value="/akn/poc/amendment/enmienda-socarrat-opcional"/>
+          <FRBRuri value="/akn/poc/amendment/enmienda-socarrat-opcional"/>
+          <FRBRdate date="2024-06-02" name="presentación"/>
+          <FRBRauthor href="/persona/dip-modernidad"/>
           <FRBRcountry value="ga"/>
         </FRBRWork>
         <FRBRExpression>
-          <FRBRthis value="/akn/poc/amendment/amendment-optional-socarrat/eng@2024-06-02"/>
-          <FRBRuri value="/akn/poc/amendment/amendment-optional-socarrat/eng@2024-06-02"/>
-          <FRBRdate date="2024-06-02" name="version"/>
-          <FRBRlanguage language="eng"/>
+          <FRBRthis value="/akn/poc/amendment/enmienda-socarrat-opcional/spa@2024-06-02"/>
+          <FRBRuri value="/akn/poc/amendment/enmienda-socarrat-opcional/spa@2024-06-02"/>
+          <FRBRdate date="2024-06-02" name="versión"/>
+          <FRBRlanguage language="spa"/>
         </FRBRExpression>
         <FRBRManifestation>
-          <FRBRthis value="/akn/poc/amendment/amendment-optional-socarrat/eng@2024-06-02/main.xml"/>
+          <FRBRthis value="/akn/poc/amendment/enmienda-socarrat-opcional/spa@2024-06-02/main.xml"/>
           <FRBRformat value="application/akn+xml"/>
         </FRBRManifestation>
       </identification>
       <references source="#proponente">
-        <TLCPerson eId="proponente" href="/persona/rep-modern" showAs="Rep. Modern"/>
+        <TLCPerson eId="proponente" href="/persona/dip-modernidad" showAs="Dip. Modernidad"/>
       </references>
     </meta>
 
     <preface>
       <longTitle>
-        <p>Amendment to the <ref href="/akn/poc/bill/paella-reform-2024">Paella Reform Bill</ref>: <docTitle>Optional Socarrat</docTitle></p>
+        <p>Enmienda al <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto de Reforma de la Paella</ref>: <docTitle>Socarrat Opcional</docTitle></p>
       </longTitle>
-      <p>Submitted by <docProponent>Representative Modern</docProponent>.</p>
+      <p>Presentada por el <docProponent>Diputado Modernidad</docProponent>.</p>
     </preface>
 
     <amendmentBody>
       <amendmentContent>
-        <block name="amendment">
-          <p>It is proposed to amend <ref href="/akn/poc/act/valencian-paella-recipe#art_11">Article 11</ref> to make the socarrat optional:</p>
-          <p><mod>"Article 11. Socarrat and presentation. Optionally, during the last 2 minutes the heat may be raised to form the socarrat. The paella may be served in the pan or plated according to preference."</mod></p>
+        <block name="enmienda">
+          <p>Se propone modificar el <ref href="/akn/poc/act/receta-paella-valenciana#art_11">artículo 11</ref> para hacer el socarrat opcional:</p>
+          <p><mod>"Artículo 11. Socarrat y presentación. Opcionalmente, durante los últimos 2 minutos se podrá subir el fuego para formar el socarrat. La paella podrá servirse en la paellera o emplatada según preferencia."</mod></p>
         </block>
-        <block name="justification">
-          <p>Burnt socarrat is the leading cause of rejection among diners unfamiliar with the dish. Making it optional increases the accessibility of the recipe.</p>
+        <block name="justificación">
+          <p>El socarrat quemado es la principal causa de rechazo entre comensales no familiarizados con el plato. Hacerlo opcional aumenta la accesibilidad de la receta.</p>
         </block>
       </amendmentContent>
     </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN Diff: changeSet con votación — APROBADA
+      ============================================================
+    -->
+    <akndiff:changeSet
+      base="/akn/poc/act/receta-paella-valenciana/spa@2023-03-18"
+      result="/akn/poc/act/receta-paella-valenciana-reformada/spa@2024-10-01">
+
+      <akndiff:vote date="2024-06-15"
+                  result="approved"
+                  source="/akn/poc/debate/camara-pleno-paella">
+        <akndiff:for>
+          <akndiff:voter href="/persona/dip-modernidad" showAs="Dip. Modernidad"/>
+          <akndiff:voter href="/persona/dip-madrilena" showAs="Dip. Madrileña"/>
+          <akndiff:voter href="/persona/dip-catalan" showAs="Dip. Catalán"/>
+          <akndiff:voter href="/persona/dip-andaluza" showAs="Dip. Andaluza"/>
+          <akndiff:voter href="/persona/dip-turismo" showAs="Dip. Turismo"/>
+          <akndiff:voter href="/persona/dip-consumo" showAs="Dip. Consumo"/>
+        </akndiff:for>
+        <akndiff:against>
+          <akndiff:voter href="/persona/dip-valenciano" showAs="Dip. Valenciano"/>
+          <akndiff:voter href="/persona/dip-albufera" showAs="Dip. Albufera"/>
+        </akndiff:against>
+        <akndiff:abstain>
+          <akndiff:voter href="/persona/dip-denominacion" showAs="Dip. Denominación de Origen"/>
+        </akndiff:abstain>
+      </akndiff:vote>
+
+      <!-- art_11: socarrat obligatorio → socarrat opcional -->
+      <akndiff:articleChange article="art_11" type="substitute">
+        <akndiff:old>Durante los últimos 2 minutos se subirá el fuego para formar el socarrat (capa de arroz crujiente del fondo). La paella se servirá directamente en la paellera, nunca emplatada individualmente. Se dejará reposar 5 minutos tapada con papel de periódico antes de servir.</akndiff:old>
+        <akndiff:new>Opcionalmente, durante los últimos 2 minutos se podrá subir el fuego para formar el socarrat. La paella podrá servirse en la paellera o emplatada según preferencia.</akndiff:new>
+      </akndiff:articleChange>
+
+    </akndiff:changeSet>
+
   </amendment>
 </akomaNtoso>

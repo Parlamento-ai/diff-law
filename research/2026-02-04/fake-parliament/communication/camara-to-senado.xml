@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
-  <communication name="camara-to-senado">
+  <communication name="camara-a-senado">
     <meta>
-      <identification source="#camara-secretary">
+      <identification source="#secretaria-camara">
         <FRBRWork>
-          <FRBRthis value="/akn/poc/communication/camara-to-senado"/>
-          <FRBRuri value="/akn/poc/communication/camara-to-senado"/>
-          <FRBRdate date="2024-06-16" name="transmission"/>
+          <FRBRthis value="/akn/poc/communication/camara-a-senado"/>
+          <FRBRuri value="/akn/poc/communication/camara-a-senado"/>
+          <FRBRdate date="2024-06-16" name="transmisión"/>
           <FRBRauthor href="/org/camara-ingredientes"/>
           <FRBRcountry value="ga"/>
         </FRBRWork>
         <FRBRExpression>
-          <FRBRthis value="/akn/poc/communication/camara-to-senado/eng@2024-06-16"/>
-          <FRBRuri value="/akn/poc/communication/camara-to-senado/eng@2024-06-16"/>
-          <FRBRdate date="2024-06-16" name="transmission"/>
-          <FRBRlanguage language="eng"/>
+          <FRBRthis value="/akn/poc/communication/camara-a-senado/spa@2024-06-16"/>
+          <FRBRuri value="/akn/poc/communication/camara-a-senado/spa@2024-06-16"/>
+          <FRBRdate date="2024-06-16" name="transmisión"/>
+          <FRBRlanguage language="spa"/>
         </FRBRExpression>
         <FRBRManifestation>
-          <FRBRthis value="/akn/poc/communication/camara-to-senado/eng@2024-06-16/main.xml"/>
+          <FRBRthis value="/akn/poc/communication/camara-a-senado/spa@2024-06-16/main.xml"/>
           <FRBRformat value="application/akn+xml"/>
         </FRBRManifestation>
       </identification>
-      <references source="#camara-secretary">
-        <TLCOrganization eId="camara" href="/org/camara-ingredientes" showAs="Camara de Ingredientes"/>
-        <TLCOrganization eId="senado" href="/org/senado-gastronomia" showAs="Senado de Gastronomia"/>
-        <TLCPerson eId="speaker" href="/persona/speaker-morales" showAs="Speaker Morales"/>
-        <TLCPerson eId="camara-secretary" href="/persona/camara-secretary" showAs="Secretary of the Camara"/>
+      <references source="#secretaria-camara">
+        <TLCOrganization eId="camara" href="/org/camara-ingredientes" showAs="Cámara de Ingredientes"/>
+        <TLCOrganization eId="senado" href="/org/senado-gastronomia" showAs="Senado de Gastronomía"/>
+        <TLCPerson eId="presidente" href="/persona/presidente-morales" showAs="Presidente Morales"/>
+        <TLCPerson eId="secretaria-camara" href="/persona/secretaria-camara" showAs="Secretaria de la Cámara"/>
       </references>
     </meta>
 
     <preface>
-      <p class="title">Official Communication No. 45/2024</p>
-      <p class="subtitle">From the Camara de Ingredientes to the Senado de Gastronomia</p>
+      <p class="title">Comunicación Oficial N° 45/2024</p>
+      <p class="subtitle">De la Cámara de Ingredientes al Senado de Gastronomía</p>
     </preface>
 
     <communicationBody>
@@ -41,18 +41,18 @@
         to="#senado"
         type="bill-transmission"
         date="2024-06-16"
-        refersTo="/akn/poc/bill/paella-reform-2024"
-        signedBy="#speaker"
+        refersTo="/akn/poc/bill/reforma-paella-2024"
+        signedBy="#presidente"
       />
 
       <content eId="content_1">
-        <p>The Camara de Ingredientes hereby transmits the <ref href="/akn/poc/bill/paella-reform-2024">Bill to Reform the Valencian Paella Recipe</ref>, approved in plenary session on June 15, 2024.</p>
-        <p>The bill was approved with the following amendments incorporated: <ref href="/akn/poc/amendment/amendment-optional-socarrat">Optional Socarrat</ref>. The <ref href="/akn/poc/amendment/amendment-brown-rice">Brown Rice Amendment</ref> was rejected.</p>
+        <p>La Cámara de Ingredientes transmite por la presente el <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto de Ley de Reforma de la Receta de Paella Valenciana</ref>, aprobado en sesión plenaria el 15 de junio de 2024.</p>
+        <p>El proyecto fue aprobado con las siguientes enmiendas incorporadas: <ref href="/akn/poc/amendment/enmienda-socarrat-opcional">Socarrat Opcional</ref>. La <ref href="/akn/poc/amendment/enmienda-arroz-integral">Enmienda del Arroz Integral</ref> fue rechazada.</p>
       </content>
 
       <rationale eId="rat_1">
-        <heading>Rationale</heading>
-        <p>The bill was approved by a vote of 28 in favor, 12 against, and 5 abstentions. It is transmitted for Senado review per Article 72 of the Parliamentary Rules.</p>
+        <heading>Fundamento</heading>
+        <p>El proyecto fue aprobado con una votación de 28 a favor, 12 en contra y 5 abstenciones. Se transmite para revisión del Senado conforme al Artículo 72 del Reglamento Parlamentario.</p>
       </rationale>
     </communicationBody>
   </communication>

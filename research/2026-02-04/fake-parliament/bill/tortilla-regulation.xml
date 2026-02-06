@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Parlamento de Gastronomía — Proyecto de Ley
+  Documento: bill (proyecto nuevo sobre tortilla de patatas)
+
+  Contexto: El Senador Tradición propone regular la preparación de la
+  tortilla de patatas, estableciendo estándares de calidad y prohibiendo
+  ingredientes no tradicionales.
+
+  Estado: En tramitación en comisión
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <bill name="regulacion-tortilla-patatas">
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/bill/regulacion-tortilla-patatas"/>
+          <FRBRuri value="/akn/poc/bill/regulacion-tortilla-patatas"/>
+          <FRBRdate date="2024-11-20" name="presentación"/>
+          <FRBRauthor href="/persona/sen-tradicion"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/bill/regulacion-tortilla-patatas/spa@2024-11-20"/>
+          <FRBRuri value="/akn/poc/bill/regulacion-tortilla-patatas/spa@2024-11-20"/>
+          <FRBRdate date="2024-11-20" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/bill/regulacion-tortilla-patatas/spa@2024-11-20/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/persona/sen-tradicion" showAs="Sen. Tradición"/>
+        <TLCOrganization eId="senado" href="/org/senado-gastronomia" showAs="Senado de Gastronomía"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Proyecto de ley que <docTitle>Regula la Preparación de la Tortilla de Patatas</docTitle></p>
+      </longTitle>
+      <p>Proposición de ley presentada por el <docProponent>Senador Tradición</docProponent> al Senado de Gastronomía.</p>
+    </preface>
+
+    <preamble>
+      <p>Considerando:</p>
+      <p>1. Que la tortilla de patatas es patrimonio culinario nacional de la República de Gastronomía.</p>
+      <p>2. Que existe un debate histórico no resuelto sobre la inclusión de cebolla en la preparación.</p>
+      <p>3. Que el punto de cuajado (jugosa vs. bien hecha) divide a la nación.</p>
+      <p>4. Que la proliferación de versiones "gourmet" con ingredientes no tradicionales amenaza la esencia del plato.</p>
+      <p>5. Que es necesario establecer un marco normativo que permita la coexistencia pacífica de las distintas tradiciones.</p>
+    </preamble>
+
+    <body>
+      <section eId="sec_ingredientes">
+        <heading>Título I — De los Ingredientes Básicos</heading>
+        <article eId="art_1">
+          <heading>Artículo 1. Ingredientes obligatorios</heading>
+          <content>
+            <p>Toda tortilla de patatas deberá contener, como mínimo: patatas, huevos y aceite de oliva. La proporción recomendada es de 1kg de patatas por cada 6 huevos.</p>
+          </content>
+        </article>
+        <article eId="art_2">
+          <heading>Artículo 2. La cuestión de la cebolla</heading>
+          <content>
+            <p>La cebolla es un ingrediente opcional. La denominación "tortilla de patatas" podrá usarse tanto con como sin cebolla. Se prohíbe cualquier forma de discriminación gastronómica basada en preferencias de cebolla.</p>
+          </content>
+        </article>
+        <article eId="art_3">
+          <heading>Artículo 3. Ingredientes prohibidos</heading>
+          <content>
+            <p>Queda expresamente prohibida la adición de: chorizo, pimiento, calabacín, espinacas, trufa, foie gras, o cualquier otro ingrediente "gourmet" que desvirtúe la naturaleza del plato.</p>
+          </content>
+        </article>
+      </section>
+
+      <section eId="sec_preparacion">
+        <heading>Título II — De la Preparación</heading>
+        <article eId="art_4">
+          <heading>Artículo 4. Corte de la patata</heading>
+          <content>
+            <p>Las patatas se cortarán en rodajas finas o en cachelos según la tradición regional. Queda prohibido el uso de patata congelada o precocinada.</p>
+          </content>
+        </article>
+        <article eId="art_5">
+          <heading>Artículo 5. Punto de cuajado</heading>
+          <content>
+            <p>El punto de cuajado de la tortilla será a elección del cocinero y del comensal. Tanto la versión "jugosa" como la versión "bien hecha" son igualmente válidas y protegidas por esta Ley.</p>
+          </content>
+        </article>
+        <article eId="art_6">
+          <heading>Artículo 6. El volteo</heading>
+          <content>
+            <p>El volteo de la tortilla se realizará con plato, tapa o técnica tradicional. Queda prohibido el uso de utensilios mecánicos o eléctricos para el volteo.</p>
+          </content>
+        </article>
+      </section>
+
+      <section eId="sec_servicio">
+        <heading>Título III — Del Servicio</heading>
+        <article eId="art_7">
+          <heading>Artículo 7. Temperatura de servicio</heading>
+          <content>
+            <p>La tortilla podrá servirse caliente, templada o fría según preferencia. Se recomienda especialmente el consumo en formato "pincho" o "tapa".</p>
+          </content>
+        </article>
+        <article eId="art_8">
+          <heading>Artículo 8. Acompañamientos</heading>
+          <content>
+            <p>La tortilla podrá acompañarse de pan, alioli, o salsa brava. Queda prohibido el acompañamiento con kétchup o mayonesa industrial.</p>
+          </content>
+        </article>
+      </section>
+    </body>
+  </bill>
+</akomaNtoso>

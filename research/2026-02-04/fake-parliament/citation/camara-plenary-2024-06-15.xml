@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
-  <citation name="camara-plenary-2024-06-15">
+  <citation name="camara-pleno-2024-06-15">
     <meta>
-      <identification source="#secretariat">
+      <identification source="#secretaria">
         <FRBRWork>
-          <FRBRthis value="/akn/poc/citation/camara-plenary-2024-06-15"/>
-          <FRBRuri value="/akn/poc/citation/camara-plenary-2024-06-15"/>
-          <FRBRdate date="2024-06-15" name="session"/>
+          <FRBRthis value="/akn/poc/citation/camara-pleno-2024-06-15"/>
+          <FRBRuri value="/akn/poc/citation/camara-pleno-2024-06-15"/>
+          <FRBRdate date="2024-06-15" name="sesión"/>
           <FRBRauthor href="/org/camara-ingredientes"/>
           <FRBRcountry value="ga"/>
         </FRBRWork>
         <FRBRExpression>
-          <FRBRthis value="/akn/poc/citation/camara-plenary-2024-06-15/eng@2024-06-12"/>
-          <FRBRuri value="/akn/poc/citation/camara-plenary-2024-06-15/eng@2024-06-12"/>
-          <FRBRdate date="2024-06-12" name="publication"/>
-          <FRBRlanguage language="eng"/>
+          <FRBRthis value="/akn/poc/citation/camara-pleno-2024-06-15/spa@2024-06-12"/>
+          <FRBRuri value="/akn/poc/citation/camara-pleno-2024-06-15/spa@2024-06-12"/>
+          <FRBRdate date="2024-06-12" name="publicación"/>
+          <FRBRlanguage language="spa"/>
         </FRBRExpression>
         <FRBRManifestation>
-          <FRBRthis value="/akn/poc/citation/camara-plenary-2024-06-15/eng@2024-06-12/main.xml"/>
+          <FRBRthis value="/akn/poc/citation/camara-pleno-2024-06-15/spa@2024-06-12/main.xml"/>
           <FRBRformat value="application/akn+xml"/>
         </FRBRManifestation>
       </identification>
-      <references source="#secretariat">
-        <TLCOrganization eId="camara" href="/org/camara-ingredientes" showAs="Camara de Ingredientes"/>
-        <TLCOrganization eId="plenary" href="/org/camara-ingredientes/plenary" showAs="Plenary of the Camara"/>
-        <TLCPerson eId="speaker" href="/persona/speaker-morales" showAs="Speaker Morales"/>
-        <TLCPerson eId="secretariat" href="/persona/secretariat" showAs="Secretariat of the Camara"/>
+      <references source="#secretaria">
+        <TLCOrganization eId="camara" href="/org/camara-ingredientes" showAs="Cámara de Ingredientes"/>
+        <TLCOrganization eId="pleno" href="/org/camara-ingredientes/pleno" showAs="Pleno de la Cámara"/>
+        <TLCPerson eId="presidente" href="/persona/presidente-morales" showAs="Presidente Morales"/>
+        <TLCPerson eId="secretaria" href="/persona/secretaria" showAs="Secretaría de la Cámara"/>
       </references>
     </meta>
 
     <preface>
       <longTitle>
-        <p><docTitle>Plenary Session Citation: Debate on the Paella Reform</docTitle></p>
+        <p><docTitle>Citación a Sesión Plenaria: Debate sobre la Reforma de la Paella</docTitle></p>
       </longTitle>
-      <p>Issued by the Secretariat of the Camara de Ingredientes for the session of June 15, 2024.</p>
+      <p>Emitida por la Secretaría de la Cámara de Ingredientes para la sesión del 15 de junio de 2024.</p>
     </preface>
 
     <citationBody>
-      <session date="2024-06-15" time="10:00" place="Sala del Pleno" chair="#speaker">
-        <body>Camara de Ingredientes</body>
+      <session date="2024-06-15" time="10:00" place="Sala del Pleno" chair="#presidente">
+        <body>Cámara de Ingredientes</body>
       </session>
 
       <agenda>
-        <agendaSection eId="agenda_easy">
-          <heading>Easy Dispatch</heading>
-          <agendaItem eId="item_brown_rice" status="fast-track">
-            <heading>Vote on the Brown Rice Amendment</heading>
-            <step type="amendment-vote" showAs="Amendment vote"/>
-            <ref href="/akn/poc/amendment/amendment-brown-rice">Amendment: Inclusion of Brown Rice</ref>
+        <agendaSection eId="agenda_facil">
+          <heading>Despacho Fácil</heading>
+          <agendaItem eId="item_arroz_integral" status="fast-track">
+            <heading>Votación de la Enmienda del Arroz Integral</heading>
+            <step type="amendment-vote" showAs="Votación de enmienda"/>
+            <ref href="/akn/poc/amendment/enmienda-arroz-integral">Enmienda: Inclusión del Arroz Integral</ref>
           </agendaItem>
         </agendaSection>
 
-        <agendaSection eId="agenda_order">
-          <heading>Order of the Day</heading>
+        <agendaSection eId="agenda_orden">
+          <heading>Orden del Día</heading>
           <agendaItem eId="item_debate" status="scheduled">
-            <heading>Debate on the Paella Reform Bill</heading>
-            <step type="second-reading" showAs="Second reading debate"/>
-            <ref href="/akn/poc/bill/paella-reform-2024">Bill: Reform of the Valencian Paella Recipe</ref>
-            <ref href="/akn/poc/debate/camara-plenary-paella">Resulting plenary debate record</ref>
+            <heading>Debate del Proyecto de Reforma de la Paella</heading>
+            <step type="second-reading" showAs="Debate en segunda lectura"/>
+            <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto: Reforma de la Receta de Paella Valenciana</ref>
+            <ref href="/akn/poc/debate/camara-pleno-paella">Acta de debate plenario resultante</ref>
           </agendaItem>
-          <agendaItem eId="item_amendments" status="scheduled">
-            <heading>Votes on Submitted Amendments</heading>
-            <step type="amendment-vote" showAs="Amendment votes"/>
-            <ref href="/akn/poc/amendment/amendment-optional-socarrat">Amendment: Optional Socarrat</ref>
+          <agendaItem eId="item_enmiendas" status="scheduled">
+            <heading>Votación de Enmiendas Presentadas</heading>
+            <step type="amendment-vote" showAs="Votación de enmiendas"/>
+            <ref href="/akn/poc/amendment/enmienda-socarrat-opcional">Enmienda: Socarrat Opcional</ref>
           </agendaItem>
         </agendaSection>
       </agenda>

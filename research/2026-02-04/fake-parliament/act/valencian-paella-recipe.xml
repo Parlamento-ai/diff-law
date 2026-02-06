@@ -1,97 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
-  <act name="valencian-paella-recipe">
+  <act name="receta-paella-valenciana">
     <meta>
       <identification source="#autor">
         <FRBRWork>
-          <FRBRthis value="/akn/poc/act/valencian-paella-recipe"/>
-          <FRBRuri value="/akn/poc/act/valencian-paella-recipe"/>
-          <FRBRdate date="2023-03-18" name="publication"/>
-          <FRBRauthor href="/persona/grandpa-pepe"/>
+          <FRBRthis value="/akn/poc/act/receta-paella-valenciana"/>
+          <FRBRuri value="/akn/poc/act/receta-paella-valenciana"/>
+          <FRBRdate date="2023-03-18" name="publicación"/>
+          <FRBRauthor href="/persona/abuelo-pepe"/>
           <FRBRcountry value="ga"/>
         </FRBRWork>
         <FRBRExpression>
-          <FRBRthis value="/akn/poc/act/valencian-paella-recipe/eng@2023-03-18"/>
-          <FRBRuri value="/akn/poc/act/valencian-paella-recipe/eng@2023-03-18"/>
-          <FRBRdate date="2023-03-18" name="version"/>
-          <FRBRlanguage language="eng"/>
+          <FRBRthis value="/akn/poc/act/receta-paella-valenciana/spa@2023-03-18"/>
+          <FRBRuri value="/akn/poc/act/receta-paella-valenciana/spa@2023-03-18"/>
+          <FRBRdate date="2023-03-18" name="versión"/>
+          <FRBRlanguage language="spa"/>
         </FRBRExpression>
         <FRBRManifestation>
-          <FRBRthis value="/akn/poc/act/valencian-paella-recipe/eng@2023-03-18/main.xml"/>
+          <FRBRthis value="/akn/poc/act/receta-paella-valenciana/spa@2023-03-18/main.xml"/>
           <FRBRformat value="application/akn+xml"/>
         </FRBRManifestation>
       </identification>
       <references source="#autor">
-        <TLCPerson eId="autor" href="/persona/grandpa-pepe" showAs="Grandpa Pepe"/>
-        <TLCOrganization eId="parlamento" href="/org/parliament-of-gastronomia" showAs="Parliament of Gastronomia"/>
+        <TLCPerson eId="autor" href="/persona/abuelo-pepe" showAs="Abuelo Pepe"/>
+        <TLCOrganization eId="parlamento" href="/org/parlamento-de-gastronomia" showAs="Parlamento de Gastronomía"/>
       </references>
     </meta>
 
     <preface>
       <longTitle>
-        <p>Act No. 42/2023: <docTitle>Official Valencian Paella Recipe</docTitle></p>
+        <p>Ley N° 42/2023: <docTitle>Receta Oficial de Paella Valenciana</docTitle></p>
       </longTitle>
-      <p>Traditional Valencian paella recipe, approved by the Parliament of Gastronomia and published in the <ref href="/akn/poc/officialGazette/gastronomy-gazette-2024">Official Gazette of Gastronomia</ref>.</p>
+      <p>Receta tradicional de paella valenciana, aprobada por el Parlamento de Gastronomía y publicada en el <ref href="/akn/poc/officialGazette/gaceta-gastronomia-2024">Diario Oficial de Gastronomía</ref>.</p>
     </preface>
 
     <body>
       <section eId="sec_arroz">
-        <heading>Title I — Rice</heading>
+        <heading>Título I — Del Arroz</heading>
         <article eId="art_1">
-          <heading>Article 1. Type of rice</heading>
-          <content><p>400 grams of bomba rice with Valencia designation of origin shall be used. The use of any other variety of rice is prohibited.</p></content>
+          <heading>Artículo 1. Tipo de arroz</heading>
+          <content><p>Se utilizarán 400 gramos de arroz bomba de denominación de origen Valencia. Queda prohibido el uso de cualquier otra variedad de arroz.</p></content>
         </article>
         <article eId="art_2">
-          <heading>Article 2. Broth</heading>
-          <content><p>The rice shall be cooked in chicken and vegetable broth prepared from the bones and trimmings of the proteins in Title II. The use of commercial broth or bouillon cubes is prohibited.</p></content>
+          <heading>Artículo 2. Caldo</heading>
+          <content><p>El arroz se cocinará en caldo de pollo y verduras preparado con los huesos y recortes de las proteínas del Título II. Queda prohibido el uso de caldo comercial o cubitos de caldo.</p></content>
         </article>
       </section>
 
       <section eId="sec_proteinas">
-        <heading>Title II — Proteins</heading>
+        <heading>Título II — De las Proteínas</heading>
         <article eId="art_3">
-          <heading>Article 3. Chicken</heading>
-          <content><p>500 grams of free-range chicken cut into irregular bone-in pieces shall be used. The use of boneless or industrially-produced chicken is prohibited.</p></content>
+          <heading>Artículo 3. Pollo</heading>
+          <content><p>Se utilizarán 500 gramos de pollo de corral cortado en trozos irregulares con hueso. Queda prohibido el uso de pollo sin hueso o de producción industrial.</p></content>
         </article>
         <article eId="art_4">
-          <heading>Article 4. Rabbit</heading>
-          <content><p>300 grams of bone-in chopped rabbit shall be used. Rabbit is a mandatory and irreplaceable ingredient.</p></content>
+          <heading>Artículo 4. Conejo</heading>
+          <content><p>Se utilizarán 300 gramos de conejo troceado con hueso. El conejo es un ingrediente obligatorio e irremplazable.</p></content>
         </article>
         <article eId="art_5">
-          <heading>Article 5. Exclusion of seafood</heading>
-          <content><p>The addition of any type of seafood is expressly prohibited, including but not limited to: shrimp, mussels, squid, prawns, and clams. Valencian paella does not contain seafood.</p></content>
+          <heading>Artículo 5. Exclusión de mariscos</heading>
+          <content><p>Queda expresamente prohibida la adición de cualquier tipo de marisco, incluyendo pero no limitándose a: gambas, mejillones, calamares, langostinos y almejas. La paella valenciana no lleva marisco.</p></content>
         </article>
       </section>
 
       <section eId="sec_sofrito">
-        <heading>Title III — Sofrito and Seasonings</heading>
+        <heading>Título III — Del Sofrito y Condimentos</heading>
         <article eId="art_6">
-          <heading>Article 6. Vegetables</heading>
-          <content><p>200 grams of broad green beans (bajoqueta), 100 grams of lima beans (garrofon), and 1 grated ripe tomato shall be used. The addition of onion, bell pepper, peas, or any other unlisted vegetable is prohibited.</p></content>
+          <heading>Artículo 6. Verduras</heading>
+          <content><p>Se utilizarán 200 gramos de judía verde ancha (bajoqueta), 100 gramos de garrofón y 1 tomate maduro rallado. Queda prohibida la adición de cebolla, pimiento, guisantes o cualquier otra verdura no listada.</p></content>
         </article>
         <article eId="art_7">
-          <heading>Article 7. Saffron</heading>
-          <content><p>Real La Mancha saffron threads shall be used for color and aroma. The use of food coloring, turmeric, or any saffron substitute is expressly prohibited.</p></content>
+          <heading>Artículo 7. Azafrán</heading>
+          <content><p>Se utilizarán hebras de azafrán real de La Mancha para dar color y aroma. Queda expresamente prohibido el uso de colorante alimentario, cúrcuma o cualquier sustituto del azafrán.</p></content>
         </article>
         <article eId="art_8">
-          <heading>Article 8. Oil and other seasonings</heading>
-          <content><p>Extra virgin olive oil shall be used for the sofrito. The dish shall be seasoned with salt and a sprig of fresh rosemary. The use of any other oil or aromatic herb is prohibited.</p></content>
+          <heading>Artículo 8. Aceite y otros condimentos</heading>
+          <content><p>Se utilizará aceite de oliva virgen extra para el sofrito. El plato se sazonará con sal y una ramita de romero fresco. Queda prohibido el uso de cualquier otro aceite o hierba aromática.</p></content>
         </article>
       </section>
 
       <section eId="sec_coccion">
-        <heading>Title IV — Cooking and Presentation</heading>
+        <heading>Título IV — De la Cocción y Presentación</heading>
         <article eId="art_9">
-          <heading>Article 9. Cooking vessel</heading>
-          <content><p>The paella shall be cooked exclusively in a polished steel paella pan of appropriate diameter for the number of diners. The use of frying pans, casseroles, pots, or non-stick paella pans is prohibited.</p></content>
+          <heading>Artículo 9. Recipiente de cocción</heading>
+          <content><p>La paella se cocinará exclusivamente en paellera de acero pulido de diámetro apropiado al número de comensales. Queda prohibido el uso de sartenes, cazuelas, ollas o paelleras antiadherentes.</p></content>
         </article>
         <article eId="art_10">
-          <heading>Article 10. Heat source</heading>
-          <content><p>Cooking shall be performed exclusively over a wood fire, preferably orange wood. The use of gas, electric, induction, or any other artificial heat source is prohibited.</p></content>
+          <heading>Artículo 10. Fuego</heading>
+          <content><p>La cocción se realizará obligatoriamente sobre fuego de leña, preferiblemente de naranjo. Queda prohibido el uso de cocinas de gas, eléctricas, de inducción o cualquier otra fuente de calor artificial.</p></content>
         </article>
         <article eId="art_11">
-          <heading>Article 11. Socarrat and presentation</heading>
-          <content><p>During the last 2 minutes, the heat shall be raised to form the socarrat (crispy rice layer at the bottom). The paella shall be served directly in the pan, never plated individually. It shall rest for 5 minutes covered with newspaper before serving.</p></content>
+          <heading>Artículo 11. Socarrat y presentación</heading>
+          <content><p>Durante los últimos 2 minutos se subirá el fuego para formar el socarrat (capa de arroz crujiente del fondo). La paella se servirá directamente en la paellera, nunca emplatada individualmente. Se dejará reposar 5 minutos tapada con papel de periódico antes de servir.</p></content>
         </article>
       </section>
     </body>

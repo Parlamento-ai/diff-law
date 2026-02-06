@@ -1,76 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Parlamento de Gastronomía — Proyecto de Ley
+  Documento: bill (proyecto nuevo sobre estándares de arroz para sushi)
+
+  Contexto: El Senador Tokio propone regular la calidad del arroz para sushi
+  en los establecimientos de la República de Gastronomía.
+
+  Estado: En tramitación (pendiente de votación)
+-->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
-  <bill name="sushi-rice-regulation">
+  <bill name="regulacion-arroz-sushi">
     <meta>
       <identification source="#proponente">
         <FRBRWork>
-          <FRBRthis value="/akn/poc/bill/sushi-rice-regulation"/>
-          <FRBRuri value="/akn/poc/bill/sushi-rice-regulation"/>
-          <FRBRdate date="2024-09-15" name="submission"/>
+          <FRBRthis value="/akn/poc/bill/regulacion-arroz-sushi"/>
+          <FRBRuri value="/akn/poc/bill/regulacion-arroz-sushi"/>
+          <FRBRdate date="2024-09-15" name="presentación"/>
           <FRBRauthor href="/persona/sen-tokio"/>
           <FRBRcountry value="ga"/>
         </FRBRWork>
         <FRBRExpression>
-          <FRBRthis value="/akn/poc/bill/sushi-rice-regulation/eng@2024-09-15"/>
-          <FRBRuri value="/akn/poc/bill/sushi-rice-regulation/eng@2024-09-15"/>
-          <FRBRdate date="2024-09-15" name="version"/>
-          <FRBRlanguage language="eng"/>
+          <FRBRthis value="/akn/poc/bill/regulacion-arroz-sushi/spa@2024-09-15"/>
+          <FRBRuri value="/akn/poc/bill/regulacion-arroz-sushi/spa@2024-09-15"/>
+          <FRBRdate date="2024-09-15" name="versión"/>
+          <FRBRlanguage language="spa"/>
         </FRBRExpression>
         <FRBRManifestation>
-          <FRBRthis value="/akn/poc/bill/sushi-rice-regulation/eng@2024-09-15/main.xml"/>
+          <FRBRthis value="/akn/poc/bill/regulacion-arroz-sushi/spa@2024-09-15/main.xml"/>
           <FRBRformat value="application/akn+xml"/>
         </FRBRManifestation>
       </identification>
       <references source="#proponente">
         <TLCPerson eId="proponente" href="/persona/sen-tokio" showAs="Sen. Tokio"/>
-        <TLCOrganization eId="senado" href="/org/senado-gastronomia" showAs="Senado de Gastronomia"/>
+        <TLCOrganization eId="senado" href="/org/senado-gastronomia" showAs="Senado de Gastronomía"/>
       </references>
     </meta>
 
     <preface>
       <longTitle>
-        <p>Bill to <docTitle>Regulate Sushi Rice Quality Standards</docTitle></p>
+        <p>Proyecto de ley que <docTitle>Regula los Estándares de Calidad del Arroz para Sushi</docTitle></p>
       </longTitle>
-      <p>Legislative proposal submitted by <docProponent>Senator Tokio</docProponent> to the Senado de Gastronomia.</p>
+      <p>Proposición de ley presentada por el <docProponent>Senador Tokio</docProponent> al Senado de Gastronomía.</p>
     </preface>
 
     <preamble>
-      <p>Whereas:</p>
-      <p>1. Sushi has become one of the most consumed dishes in the Republic of Gastronomia, yet quality standards for sushi rice remain unregulated.</p>
-      <p>2. Inferior rice varieties are being used by establishments marketing dishes as "authentic sushi", misleading consumers.</p>
-      <p>3. The traditional short-grain japonica rice (Oryza sativa var. japonica) is essential for proper sushi preparation.</p>
-      <p>4. Vinegar seasoning ratios directly affect the quality and safety of sushi rice.</p>
+      <p>Considerando:</p>
+      <p>1. Que el sushi se ha convertido en uno de los platos más consumidos en la República de Gastronomía, pero los estándares de calidad del arroz para sushi permanecen sin regular.</p>
+      <p>2. Que variedades inferiores de arroz están siendo utilizadas por establecimientos que comercializan platos como "sushi auténtico", engañando a los consumidores.</p>
+      <p>3. Que el arroz japónica de grano corto tradicional (Oryza sativa var. japonica) es esencial para la preparación adecuada del sushi.</p>
+      <p>4. Que las proporciones del aderezo de vinagre afectan directamente la calidad y seguridad del arroz para sushi.</p>
     </preamble>
 
     <body>
       <article eId="art_1">
-        <heading>Article 1. Rice variety</heading>
+        <heading>Artículo 1. Variedad de arroz</heading>
         <content>
-          <p>Only short-grain japonica rice with a minimum amylopectin content of 80% shall be used for sushi preparation in licensed establishments.</p>
+          <p>Solo se utilizará arroz japónica de grano corto con un contenido mínimo de amilopectina del 80% para la preparación de sushi en establecimientos autorizados.</p>
         </content>
       </article>
       <article eId="art_2">
-        <heading>Article 2. Washing and soaking</heading>
+        <heading>Artículo 2. Lavado y remojo</heading>
         <content>
-          <p>Rice shall be washed a minimum of three times until the water runs clear, then soaked for 30 minutes before cooking. The use of pre-washed or instant rice is prohibited for sushi preparation.</p>
+          <p>El arroz se lavará un mínimo de tres veces hasta que el agua salga clara, y luego se remojará durante 30 minutos antes de la cocción. Queda prohibido el uso de arroz prelavado o instantáneo para la preparación de sushi.</p>
         </content>
       </article>
       <article eId="art_3">
-        <heading>Article 3. Vinegar seasoning</heading>
+        <heading>Artículo 3. Aderezo de vinagre</heading>
         <content>
-          <p>The seasoning mixture shall contain rice vinegar, sugar, and salt in a ratio of 4:2:1 by weight. The use of synthetic vinegar or artificial sweeteners is prohibited.</p>
+          <p>La mezcla de aderezo contendrá vinagre de arroz, azúcar y sal en proporción de 4:2:1 en peso. Queda prohibido el uso de vinagre sintético o edulcorantes artificiales.</p>
         </content>
       </article>
       <article eId="art_4">
-        <heading>Article 4. Temperature requirements</heading>
+        <heading>Artículo 4. Requisitos de temperatura</heading>
         <content>
-          <p>Seasoned sushi rice shall be served at body temperature (approximately 37 degrees Celsius). Refrigerated rice shall not be used for nigiri or maki preparation.</p>
+          <p>El arroz de sushi aderezado se servirá a temperatura corporal (aproximadamente 37 grados Celsius). No se utilizará arroz refrigerado para la preparación de nigiri o maki.</p>
         </content>
       </article>
       <article eId="art_5">
-        <heading>Article 5. Labeling</heading>
+        <heading>Artículo 5. Etiquetado</heading>
         <content>
-          <p>Establishments not complying with these standards may not use the term "sushi" in their menus or marketing materials. The term "rice roll" shall be used instead.</p>
+          <p>Los establecimientos que no cumplan con estos estándares no podrán usar el término "sushi" en sus menús o materiales de marketing. Deberá usarse el término "rollo de arroz" en su lugar.</p>
         </content>
       </article>
     </body>

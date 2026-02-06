@@ -1,7 +1,15 @@
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseGenericAkn } from './akn-parser';
+import {
+	parseActToLawState,
+	parseBillChanges,
+	applyChangesToLaw,
+	computeLawDiffs,
+	extractTargetActUri
+} from './akn-diff-computer';
 import type { GenericAknDocument } from '$lib/types/explorer';
+import type { LawState, ChangeSet, ArticleDiff, WordToken } from '$lib/types';
 import type {
 	ParliamentMeta,
 	ParliamentManifest,
@@ -445,4 +453,81 @@ export async function loadDocumentByUri(uri: string): Promise<{
 	}
 	const doc = await loadDocument(entry);
 	return { doc, entry, manifest };
+}
+
+export interface BillWithDiffs {
+	bill: GenericAknDocument;
+	entry: ParliamentManifestEntry;
+	timeline: TimelineEvent[];
+	relatedDocs: { entry: ParliamentManifestEntry; doc: GenericAknDocument }[];
+	// Diff-related data
+	targetAct: GenericAknDocument | null;
+	originalLaw: LawState | null;
+	modifiedLaw: LawState | null;
+	changeSet: ChangeSet | null;
+	diffs: ArticleDiff[];
+	accumulatedDiffs: Record<string, WordToken[]>;
+	changedArticleIds: string[];
+}
+
+export async function loadBillWithDiffs(billUri: string): Promise<BillWithDiffs> {
+	const manifest = await loadParliamentManifest();
+	const billEntry = manifest.documents.find((d) => d.uri === billUri);
+	if (!billEntry || billEntry.type !== 'bill') {
+		throw new Error(`Bill not found: ${billUri}`);
+	}
+
+	const docs = await loadAllDocuments(manifest);
+	const bill = docs.get(billUri)!;
+
+	// Get basic bill detail (timeline, related docs)
+	const detail = await loadBillDetail(billUri);
+
+	// Find target act
+	const targetActUri = extractTargetActUri(bill);
+	let targetAct: GenericAknDocument | null = null;
+	let originalLaw: LawState | null = null;
+	let modifiedLaw: LawState | null = null;
+	let changeSet: ChangeSet | null = null;
+	let diffs: ArticleDiff[] = [];
+	let accumulatedDiffs: Record<string, WordToken[]> = {};
+	let changedArticleIds: string[] = [];
+
+	if (targetActUri) {
+		// Find the act in the manifest
+		const actEntry = manifest.documents.find(
+			(d) => d.type === 'act' && d.uri === targetActUri
+		);
+		if (actEntry) {
+			targetAct = docs.get(actEntry.uri) || null;
+		}
+
+		// If we have the target act, compute the diffs
+		if (targetAct) {
+			originalLaw = parseActToLawState(targetAct);
+			changeSet = parseBillChanges(bill, originalLaw);
+
+			const applied = applyChangesToLaw(originalLaw, changeSet);
+			modifiedLaw = applied.modifiedLaw;
+			changedArticleIds = [...applied.changedArticleIds];
+
+			const computed = computeLawDiffs(originalLaw, changeSet);
+			diffs = computed.diffs;
+			accumulatedDiffs = computed.accumulatedDiffs;
+		}
+	}
+
+	return {
+		bill,
+		entry: billEntry,
+		timeline: detail.timeline,
+		relatedDocs: detail.relatedDocs,
+		targetAct,
+		originalLaw,
+		modifiedLaw,
+		changeSet,
+		diffs,
+		accumulatedDiffs,
+		changedArticleIds
+	};
 }

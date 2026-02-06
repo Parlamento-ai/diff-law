@@ -1,85 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
-  <bill name="paella-reform-2024">
+<!--
+  Parlamento de Gastronomía — Proyecto de Ley
+  Documento: bill (proyecto que reforma la receta de paella)
+  Versión: con sistema de votación AKN Diff
+
+  Contexto: La Diputada Madrileña propone "democratizar" la paella para hacerla
+  accesible a toda Gastronomía y adaptarla a la realidad moderna.
+
+  Cambios propuestos:
+    - art_1: Permitir arroz redondo como alternativa al bomba
+    - art_5: Eliminar prohibición de mariscos, permitirlos como alternativa
+    - art_7: Permitir colorante alimentario como alternativa al azafrán
+    - art_10: Permitir gas como alternativa a la leña
+    - art_nuevo 5bis: Crear categoría de "paella mixta" con mariscos
+
+  Votación: Aprobado 28-12-5 en la Cámara de Ingredientes.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <bill name="reforma-paella-2024">
     <meta>
       <identification source="#proponente">
         <FRBRWork>
-          <FRBRthis value="/akn/poc/bill/paella-reform-2024"/>
-          <FRBRuri value="/akn/poc/bill/paella-reform-2024"/>
-          <FRBRdate date="2024-05-10" name="submission"/>
-          <FRBRauthor href="/persona/rep-madrid"/>
+          <FRBRthis value="/akn/poc/bill/reforma-paella-2024"/>
+          <FRBRuri value="/akn/poc/bill/reforma-paella-2024"/>
+          <FRBRdate date="2024-05-10" name="presentación"/>
+          <FRBRauthor href="/persona/dip-madrilena"/>
           <FRBRcountry value="ga"/>
         </FRBRWork>
         <FRBRExpression>
-          <FRBRthis value="/akn/poc/bill/paella-reform-2024/eng@2024-05-10"/>
-          <FRBRuri value="/akn/poc/bill/paella-reform-2024/eng@2024-05-10"/>
-          <FRBRdate date="2024-05-10" name="version"/>
-          <FRBRlanguage language="eng"/>
+          <FRBRthis value="/akn/poc/bill/reforma-paella-2024/spa@2024-05-10"/>
+          <FRBRuri value="/akn/poc/bill/reforma-paella-2024/spa@2024-05-10"/>
+          <FRBRdate date="2024-05-10" name="versión"/>
+          <FRBRlanguage language="spa"/>
         </FRBRExpression>
         <FRBRManifestation>
-          <FRBRthis value="/akn/poc/bill/paella-reform-2024/eng@2024-05-10/main.xml"/>
+          <FRBRthis value="/akn/poc/bill/reforma-paella-2024/spa@2024-05-10/main.xml"/>
           <FRBRformat value="application/akn+xml"/>
         </FRBRManifestation>
       </identification>
       <references source="#proponente">
-        <TLCPerson eId="proponente" href="/persona/rep-madrid" showAs="Rep. Madrid"/>
-        <TLCOrganization eId="camara" href="/org/camara-ingredientes" showAs="Camara de Ingredientes"/>
+        <TLCPerson eId="proponente" href="/persona/dip-madrilena" showAs="Dip. Madrileña"/>
+        <TLCOrganization eId="camara" href="/org/camara-ingredientes" showAs="Cámara de Ingredientes"/>
       </references>
     </meta>
 
     <preface>
       <longTitle>
-        <p>Bill to <docTitle>Reform the Valencian Paella Recipe</docTitle></p>
+        <p>Proyecto de ley que <docTitle>Reforma la Receta de Paella Valenciana</docTitle></p>
       </longTitle>
-      <p>Legislative proposal submitted by <docProponent>Representative Madrid</docProponent> to the Camara de Ingredientes.</p>
-      <p>Amends <ref href="/akn/poc/act/valencian-paella-recipe">Act No. 42/2023 on Valencian Paella</ref>.</p>
+      <p>Proposición de ley presentada por la <docProponent>Diputada Madrileña</docProponent> a la Cámara de Ingredientes.</p>
+      <p>Modifica la <ref href="/akn/poc/act/valencian-paella-recipe">Ley N° 42/2023 sobre Paella Valenciana</ref>.</p>
     </preface>
 
     <preamble>
-      <p>Whereas:</p>
-      <p>1. Bomba rice is excessively expensive and difficult to find outside the Valencia region.</p>
-      <p>2. The absolute prohibition on seafood ignores the paella traditions of Catalonia, Andalusia, and Murcia.</p>
-      <p>3. Real La Mancha saffron has a prohibitive cost for middle-income families.</p>
-      <p>4. Requiring orange wood fire excludes 95% of households living in apartments.</p>
-      <p>5. Paella is the heritage of the entire nation, not just Valencia.</p>
+      <p>Considerando:</p>
+      <p>1. Que el arroz bomba es excesivamente caro y difícil de encontrar fuera de la región de Valencia.</p>
+      <p>2. Que la prohibición absoluta de mariscos ignora las tradiciones paelleras de Cataluña, Andalucía y Murcia.</p>
+      <p>3. Que el azafrán real de La Mancha tiene un coste prohibitivo para las familias de renta media.</p>
+      <p>4. Que exigir fuego de leña de naranjo excluye al 95% de los hogares que viven en apartamentos.</p>
+      <p>5. Que la paella es patrimonio de toda la nación, no solo de Valencia.</p>
     </preamble>
 
     <body>
       <article eId="art_1">
-        <heading>Article 1</heading>
+        <heading>Artículo 1</heading>
         <content>
-          <p><ref href="/akn/poc/act/valencian-paella-recipe#art_1">Article 1</ref> of Act No. 42/2023 is amended, replacing its text with the following:</p>
-          <p><mod>"Article 1. Type of rice. 400 grams of bomba rice or, alternatively, medium-grain round rice shall be used. Bomba rice is preferably recommended when available."</mod></p>
+          <p>Modifícase el <ref href="/akn/poc/act/valencian-paella-recipe#art_1">artículo 1</ref> de la Ley N° 42/2023, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 1. Tipo de arroz. Se utilizarán 400 gramos de arroz bomba o, alternativamente, arroz redondo de grano medio. Se recomienda preferentemente el arroz bomba cuando esté disponible."</mod></p>
         </content>
       </article>
       <article eId="art_2">
-        <heading>Article 2</heading>
+        <heading>Artículo 2</heading>
         <content>
-          <p><ref href="/akn/poc/act/valencian-paella-recipe#art_5">Article 5</ref> of Act No. 42/2023 is replaced with the following:</p>
-          <p><mod>"Article 5. Other proteins. Optionally, fresh seafood (shrimp, mussels, squid) may be added as a complement or alternative to the proteins in Title II."</mod></p>
+          <p>Sustitúyese el <ref href="/akn/poc/act/valencian-paella-recipe#art_5">artículo 5</ref> de la Ley N° 42/2023 por el siguiente:</p>
+          <p><mod>"Artículo 5. Otras proteínas. Opcionalmente, se podrán añadir mariscos frescos (gambas, mejillones, calamares) como complemento o alternativa a las proteínas del Título II."</mod></p>
         </content>
       </article>
       <article eId="art_3">
-        <heading>Article 3</heading>
+        <heading>Artículo 3</heading>
         <content>
-          <p><ref href="/akn/poc/act/valencian-paella-recipe#art_7">Article 7</ref> of Act No. 42/2023 is amended, replacing its text with the following:</p>
-          <p><mod>"Article 7. Saffron and coloring. Real saffron threads or, alternatively, food coloring suitable for paella shall be used. Real saffron is preferably recommended."</mod></p>
+          <p>Modifícase el <ref href="/akn/poc/act/valencian-paella-recipe#art_7">artículo 7</ref> de la Ley N° 42/2023, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 7. Azafrán y colorante. Se utilizarán hebras de azafrán real o, alternativamente, colorante alimentario apto para paella. Se recomienda preferentemente el azafrán real."</mod></p>
         </content>
       </article>
       <article eId="art_4">
-        <heading>Article 4</heading>
+        <heading>Artículo 4</heading>
         <content>
-          <p><ref href="/akn/poc/act/valencian-paella-recipe#art_10">Article 10</ref> of Act No. 42/2023 is amended, replacing its text with the following:</p>
-          <p><mod>"Article 10. Heat source. Cooking shall be performed over a wood fire or, alternatively, on a gas stove at high heat. Wood fire is preferably recommended. The use of electric or induction stoves is prohibited."</mod></p>
+          <p>Modifícase el <ref href="/akn/poc/act/valencian-paella-recipe#art_10">artículo 10</ref> de la Ley N° 42/2023, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 10. Fuego. La cocción se realizará sobre fuego de leña o, alternativamente, sobre cocina de gas a fuego vivo. Se recomienda preferentemente el fuego de leña. Queda prohibido el uso de cocinas eléctricas o de inducción."</mod></p>
         </content>
       </article>
       <article eId="art_5">
-        <heading>Article 5</heading>
+        <heading>Artículo 5</heading>
         <content>
-          <p>The following Article 5 bis is inserted into Act No. 42/2023, after <ref href="/akn/poc/act/valencian-paella-recipe#art_5">Article 5</ref>:</p>
-          <p><ins>"Article 5 bis. Mixed paella. When seafood is used per Article 5, the dish shall be called 'mixed paella' and not 'Valencian paella'."</ins></p>
+          <p>Intercálase en la Ley N° 42/2023, a continuación del <ref href="/akn/poc/act/valencian-paella-recipe#art_5">artículo 5</ref>, el siguiente artículo 5 bis:</p>
+          <p><ins>"Artículo 5 bis. Paella mixta. Cuando se utilicen mariscos según el artículo 5, el plato deberá denominarse 'paella mixta' y no 'paella valenciana'."</ins></p>
         </content>
       </article>
     </body>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN Diff: changeSet con votación
+      ============================================================
+    -->
+    <akndiff:changeSet
+      base="/akn/poc/act/valencian-paella-recipe/spa@2023-03-18"
+      result="/akn/poc/act/valencian-paella-recipe-reformada/spa@2024-10-01">
+
+      <akndiff:vote date="2024-06-15"
+                  result="approved"
+                  source="/akn/poc/debate/camara-pleno-paella">
+        <akndiff:for>
+          <akndiff:voter href="/persona/dip-madrilena" showAs="Dip. Madrileña"/>
+          <akndiff:voter href="/persona/dip-catalan" showAs="Dip. Catalán"/>
+          <akndiff:voter href="/persona/dip-andaluza" showAs="Dip. Andaluza"/>
+          <akndiff:voter href="/persona/dip-turismo" showAs="Dip. Turismo"/>
+          <akndiff:voter href="/persona/dip-consumo" showAs="Dip. Consumo"/>
+          <akndiff:voter href="/persona/dip-modernidad" showAs="Dip. Modernidad"/>
+        </akndiff:for>
+        <akndiff:against>
+          <akndiff:voter href="/persona/dip-valenciano" showAs="Dip. Valenciano"/>
+          <akndiff:voter href="/persona/dip-albufera" showAs="Dip. Albufera"/>
+          <akndiff:voter href="/persona/dip-denominacion" showAs="Dip. Denominación de Origen"/>
+        </akndiff:against>
+        <akndiff:abstain>
+          <akndiff:voter href="/persona/sen-tokio" showAs="Sen. Tokio"/>
+        </akndiff:abstain>
+      </akndiff:vote>
+
+      <!-- art_1: solo arroz bomba → permite arroz redondo -->
+      <akndiff:articleChange article="art_1" type="substitute">
+        <akndiff:old>Se utilizarán 400 gramos de arroz bomba de denominación de origen Valencia. Queda prohibido el uso de cualquier otra variedad de arroz.</akndiff:old>
+        <akndiff:new>Se utilizarán 400 gramos de arroz bomba o, alternativamente, arroz redondo de grano medio. Se recomienda preferentemente el arroz bomba cuando esté disponible.</akndiff:new>
+      </akndiff:articleChange>
+
+      <!-- art_5: prohibición de mariscos → mariscos opcionales -->
+      <akndiff:articleChange article="art_5" type="substitute">
+        <akndiff:old>Queda expresamente prohibida la adición de cualquier tipo de marisco, incluyendo pero no limitándose a: gambas, mejillones, calamares, langostinos y almejas. La paella valenciana no lleva marisco.</akndiff:old>
+        <akndiff:new>Opcionalmente, se podrán añadir mariscos frescos (gambas, mejillones, calamares) como complemento o alternativa a las proteínas del Título II.</akndiff:new>
+      </akndiff:articleChange>
+
+      <!-- art_5bis: nuevo artículo sobre paella mixta -->
+      <akndiff:articleChange article="art_5bis" type="insert" after="art_5">
+        <akndiff:new>Cuando se utilicen mariscos según el artículo 5, el plato deberá denominarse 'paella mixta' y no 'paella valenciana'.</akndiff:new>
+      </akndiff:articleChange>
+
+      <!-- art_7: solo azafrán → permite colorante -->
+      <akndiff:articleChange article="art_7" type="substitute">
+        <akndiff:old>Se utilizarán hebras de azafrán real de La Mancha para dar color y aroma. Queda expresamente prohibido el uso de colorante alimentario, cúrcuma o cualquier sustituto del azafrán.</akndiff:old>
+        <akndiff:new>Se utilizarán hebras de azafrán real o, alternativamente, colorante alimentario apto para paella. Se recomienda preferentemente el azafrán real.</akndiff:new>
+      </akndiff:articleChange>
+
+      <!-- art_10: solo leña → permite gas -->
+      <akndiff:articleChange article="art_10" type="substitute">
+        <akndiff:old>La cocción se realizará obligatoriamente sobre fuego de leña, preferiblemente de naranjo. Queda prohibido el uso de cocinas de gas, eléctricas, de inducción o cualquier otra fuente de calor artificial.</akndiff:old>
+        <akndiff:new>La cocción se realizará sobre fuego de leña o, alternativamente, sobre cocina de gas a fuego vivo. Se recomienda preferentemente el fuego de leña. Queda prohibido el uso de cocinas eléctricas o de inducción.</akndiff:new>
+      </akndiff:articleChange>
+
+    </akndiff:changeSet>
+
   </bill>
 </akomaNtoso>

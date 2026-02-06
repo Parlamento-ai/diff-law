@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <question name="calidad-aceite-oliva">
+    <meta>
+      <identification source="#secretaria">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/question/calidad-aceite-oliva"/>
+          <FRBRuri value="/akn/poc/question/calidad-aceite-oliva"/>
+          <FRBRdate date="2024-07-15" name="presentación"/>
+          <FRBRauthor href="/persona/dip-andaluza"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/question/calidad-aceite-oliva/spa@2024-07-15"/>
+          <FRBRuri value="/akn/poc/question/calidad-aceite-oliva/spa@2024-07-15"/>
+          <FRBRdate date="2024-07-15" name="presentación"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/question/calidad-aceite-oliva/spa@2024-07-15/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#secretaria">
+        <TLCPerson eId="dip-andaluza" href="/persona/dip-andaluza" showAs="Dip. Andaluza"/>
+        <TLCOrganization eId="min-agricultura" href="/org/ministerio-agricultura" showAs="Ministerio de Agricultura"/>
+        <TLCOrganization eId="camara" href="/org/camara-ingredientes" showAs="Cámara de Ingredientes"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p class="title">Pregunta Escrita N° 156/2024</p>
+      <p class="subtitle">De la Dip. Andaluza al Ministerio de Agricultura</p>
+    </preface>
+
+    <questionBody>
+      <questionStatus
+        status="answered"
+        askedBy="#dip-andaluza"
+        addressedTo="#min-agricultura"
+        dateAsked="2024-07-15"
+        dateAnswered="2024-08-01"
+        deadline="2024-08-15"
+      />
+
+      <questionContent>
+        <question eId="q_1">
+          <p>¿Cuántas inspecciones de calidad se han realizado a productores de aceite de oliva virgen extra durante el primer semestre de 2024?</p>
+        </question>
+        <question eId="q_2">
+          <p>¿Qué medidas tiene previstas el Ministerio para garantizar que el aceite de oliva usado en recetas tradicionales como la <ref href="/akn/poc/act/receta-paella-valenciana">paella valenciana</ref> cumpla con los estándares de calidad?</p>
+        </question>
+        <question eId="q_3">
+          <p>¿Existen planes para crear una certificación específica de "aceite de oliva apto para cocina tradicional"?</p>
+        </question>
+      </questionContent>
+
+      <answerContent>
+        <p>Durante el primer semestre de 2024 se realizaron 1.247 inspecciones a productores y envasadores de aceite de oliva, con un índice de conformidad del 94,3%.</p>
+        <p>El Ministerio está trabajando en un protocolo de trazabilidad que permitirá verificar el origen y calidad del aceite utilizado en establecimientos de restauración.</p>
+        <p>Se está estudiando la viabilidad de una certificación "Aceite para Cocina Tradicional" en coordinación con las denominaciones de origen.</p>
+      </answerContent>
+    </questionBody>
+  </question>
+</akomaNtoso>
