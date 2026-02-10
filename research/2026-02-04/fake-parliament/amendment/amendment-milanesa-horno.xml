@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN Diff Proof of Concept — Receta 6: Milanesa Argentina
+  Documento: amendment 2 — "La enmienda del horno"
+  Versión: con sistema de votación AKN Diff
+
+  Contexto: La Diputada Patagónica propone modificar el artículo 7 para permitir
+  la cocción al horno a 200°C como equivalente a la fritura, argumentando beneficios
+  para la salud.
+
+  Votación: RECHAZADO 2-6. Solo la proponente y la Rosarina votaron a favor.
+  El consenso es que una milanesa al horno es "otra cosa completamente distinta."
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="enmienda-horno">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/amendment/mil-2025-01-ind2"/>
+          <FRBRuri value="/akn/poc/amendment/mil-2025-01-ind2"/>
+          <FRBRdate date="2025-04-20" name="presentación"/>
+          <FRBRauthor href="/persona/diputada-patagonica"/>
+          <FRBRcountry value="ar"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/amendment/mil-2025-01-ind2/esp@2025-04-20"/>
+          <FRBRuri value="/akn/poc/amendment/mil-2025-01-ind2/esp@2025-04-20"/>
+          <FRBRdate date="2025-04-20" name="versión"/>
+          <FRBRlanguage language="esp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/amendment/mil-2025-01-ind2/esp@2025-04-20/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/persona/diputada-patagonica" showAs="Dip. Patagónica"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p>Enmienda de la <docProponent>Diputada Patagónica</docProponent> al proyecto
+      <affectedDocument href="/akn/poc/bill/mil-2025-01">que moderniza la receta de Milanesa Argentina</affectedDocument>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modifícase el artículo 7 de la Receta N° 6, sustituyendo su texto por el siguiente:</p>
+        <p>"Artículo 7. Cocción. Se fríe en abundante aceite de girasol, maíz o alto oleico a 180°C,
+        o alternativamente, se cocina al horno a 200°C durante 15-20 minutos sobre placa
+        aceitada, dando vuelta a mitad de cocción. Se permite el uso de manteca como medio de
+        fritura. Queda prohibida la fritura superficial."</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>La salud de los argentinos no puede ser ignorada en nombre de la tradición. La cocción
+        al horno produce una milanesa igualmente crocante con una fracción de la grasa. Miles de
+        familias argentinas ya hornean sus milanesas por razones de salud. Prohibir esta práctica
+        es negar la realidad y poner en riesgo la salud pública. Una milanesa al horno bien hecha
+        es tan milanesa como una frita.</p>
+      </amendmentJustification>
+    </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN Diff: changeSet con votación
+      RECHAZADO — la milanesa al horno "es otra cosa"
+      ============================================================
+    -->
+    <akndiff:changeSet
+      base="/akn/poc/act/milanesa-argentina/esp@2025-04-10"
+      result="/akn/poc/act/milanesa-argentina/esp@2025-04-10">
+
+      <akndiff:vote date="2025-04-20"
+                  result="rejected"
+                  source="/akn/poc/debate/mil-2025-01-comision-2">
+        <akndiff:for>
+          <akndiff:voter href="/persona/diputada-patagonica" showAs="Dip. Patagónica"/>
+          <akndiff:voter href="/persona/diputada-rosarina" showAs="Dip. Rosarina"/>
+        </akndiff:for>
+        <akndiff:against>
+          <akndiff:voter href="/persona/diputado-porteno" showAs="Dip. Porteño"/>
+          <akndiff:voter href="/persona/diputada-bonaerense" showAs="Dip. Bonaerense"/>
+          <akndiff:voter href="/persona/diputado-cordobes" showAs="Dip. Cordobés"/>
+          <akndiff:voter href="/persona/diputado-mendocino" showAs="Dip. Mendocino"/>
+          <akndiff:voter href="/persona/diputado-tucumano" showAs="Dip. Tucumano"/>
+          <akndiff:voter href="/persona/diputada-santafesina" showAs="Dip. Santafesina"/>
+        </akndiff:against>
+        <akndiff:abstain/>
+      </akndiff:vote>
+
+      <!-- Propuesta rechazada: permitir cocción al horno como equivalente -->
+      <akndiff:articleChange article="art_7" type="substitute">
+        <akndiff:old>Se fríe en abundante aceite de girasol, maíz o alto oleico a 180°C. El aceite debe cubrir completamente la milanesa. Se permite el uso de manteca como medio de fritura. Queda prohibida la fritura superficial.</akndiff:old>
+        <akndiff:new>Se fríe en abundante aceite de girasol, maíz o alto oleico a 180°C, o alternativamente, se cocina al horno a 200°C durante 15-20 minutos sobre placa aceitada, dando vuelta a mitad de cocción. Se permite el uso de manteca como medio de fritura. Queda prohibida la fritura superficial.</akndiff:new>
+      </akndiff:articleChange>
+
+    </akndiff:changeSet>
+
+  </amendment>
+</akomaNtoso>

@@ -174,13 +174,15 @@ export function getBillsInProgress(
 			if (!otherDoc) continue;
 
 			const refs = findAllNodes(otherDoc.root, 'ref');
+			const affectedDocs = findAllNodes(otherDoc.root, 'affectedDocument');
 			const transmissions = findAllNodes(otherDoc.root, 'transmission');
 			const hasRef = refs.some((r) => r.attributes['href'] === entry.uri);
+			const hasAffectedDoc = affectedDocs.some((a) => a.attributes['href'] === entry.uri);
 			const hasTransmission = transmissions.some(
 				(t) => t.attributes['refersTo'] === entry.uri
 			);
 
-			if (hasRef || hasTransmission) {
+			if (hasRef || hasAffectedDoc || hasTransmission) {
 				relatedDocs.push({
 					uri: otherEntry.uri,
 					title: otherEntry.title,
@@ -218,7 +220,11 @@ export function getBillsInProgress(
 			const otherDoc = docs.get(otherEntry.uri);
 			if (!otherDoc) continue;
 			const refs = findAllNodes(otherDoc.root, 'ref');
-			if (refs.some((r) => r.attributes['href'] === entry.uri)) {
+			const affectedDocs = findAllNodes(otherDoc.root, 'affectedDocument');
+			if (
+				refs.some((r) => r.attributes['href'] === entry.uri) ||
+				affectedDocs.some((a) => a.attributes['href'] === entry.uri)
+			) {
 				if (!relatedDocs.some((d) => d.uri === otherEntry.uri)) {
 					relatedDocs.push({
 						uri: otherEntry.uri,
@@ -382,13 +388,15 @@ export async function loadBillDetail(
 		if (!otherDoc) continue;
 
 		const refs = findAllNodes(otherDoc.root, 'ref');
+		const affectedDocs = findAllNodes(otherDoc.root, 'affectedDocument');
 		const transmissions = findAllNodes(otherDoc.root, 'transmission');
 		const hasRef = refs.some((r) => r.attributes['href'] === billUri);
+		const hasAffectedDoc = affectedDocs.some((a) => a.attributes['href'] === billUri);
 		const hasTransmission = transmissions.some(
 			(t) => t.attributes['refersTo'] === billUri
 		);
 
-		if (hasRef || hasTransmission) {
+		if (hasRef || hasAffectedDoc || hasTransmission) {
 			relatedDocs.push({ entry: otherEntry, doc: otherDoc });
 
 			let description = otherEntry.description;
@@ -422,7 +430,10 @@ export async function loadBillDetail(
 		if (!otherDoc) continue;
 
 		const refs = findAllNodes(otherDoc.root, 'ref');
-		const targetsThisBill = refs.some((r) => r.attributes['href'] === billUri);
+		const affectedDocs = findAllNodes(otherDoc.root, 'affectedDocument');
+		const targetsThisBill =
+			refs.some((r) => r.attributes['href'] === billUri) ||
+			affectedDocs.some((a) => a.attributes['href'] === billUri);
 		if (targetsThisBill) {
 			relatedDocs.push({ entry: otherEntry, doc: otherDoc });
 			timeline.push({

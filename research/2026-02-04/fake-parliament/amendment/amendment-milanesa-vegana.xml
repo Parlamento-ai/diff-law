@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN Diff Proof of Concept — Receta 6: Milanesa Argentina
+  Documento: amendment 4 — "La enmienda vegana"
+  Versión: con sistema de votación AKN Diff
+
+  Contexto: La Diputada Patagónica, ya derrotada en la enmienda del horno, intenta
+  una segunda jugada: permitir milanesa de soja o berenjena como variante oficial.
+
+  Votación: RECHAZADO 0-8. Unanimidad total en contra.
+  Incluso la proponente vota en contra después de que el Cordobés amenaza con
+  "rebozar y freír la enmienda."
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="enmienda-vegana">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/amendment/mil-2025-01-ind4"/>
+          <FRBRuri value="/akn/poc/amendment/mil-2025-01-ind4"/>
+          <FRBRdate date="2025-06-01" name="presentación"/>
+          <FRBRauthor href="/persona/diputada-patagonica"/>
+          <FRBRcountry value="ar"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/amendment/mil-2025-01-ind4/esp@2025-06-01"/>
+          <FRBRuri value="/akn/poc/amendment/mil-2025-01-ind4/esp@2025-06-01"/>
+          <FRBRdate date="2025-06-01" name="versión"/>
+          <FRBRlanguage language="esp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/amendment/mil-2025-01-ind4/esp@2025-06-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/persona/diputada-patagonica" showAs="Dip. Patagónica"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p>Enmienda de la <docProponent>Diputada Patagónica</docProponent> al proyecto
+      <affectedDocument href="/akn/poc/bill/mil-2025-01">que moderniza la receta de Milanesa Argentina</affectedDocument>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <p>Intercálase en la Receta N° 6, a continuación del artículo 1 bis, el siguiente artículo 1 ter:</p>
+        <p>"Artículo 1 ter. Milanesa vegana. Se reconoce como variante la milanesa elaborada
+        con medallones de soja texturizada, berenjenas en rodajas gruesas o seitan, empanada
+        y frita según los procedimientos de los Títulos II, III y IV. La denominación
+        'milanesa vegana' será de uso exclusivo para esta variante."</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>Argentina tiene una comunidad vegana y vegetariana en crecimiento. La milanesa de
+        berenjena ya es un clásico en muchos hogares. Negar su existencia es negar una
+        realidad culinaria. Si aceptamos la milanesa de pollo, ¿por qué no la de soja o
+        berenjena? La técnica del empanado y la fritura es la misma.</p>
+      </amendmentJustification>
+    </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN Diff: changeSet con votación
+      RECHAZADO — unanimidad total contra la milanesa vegana
+      ============================================================
+    -->
+    <akndiff:changeSet
+      base="/akn/poc/act/milanesa-argentina/esp@2025-05-20"
+      result="/akn/poc/act/milanesa-argentina/esp@2025-05-20">
+
+      <akndiff:vote date="2025-06-01"
+                  result="rejected"
+                  source="/akn/poc/debate/mil-2025-01-comision-4">
+        <akndiff:for/>
+        <akndiff:against>
+          <akndiff:voter href="/persona/diputado-porteno" showAs="Dip. Porteño"/>
+          <akndiff:voter href="/persona/diputada-bonaerense" showAs="Dip. Bonaerense"/>
+          <akndiff:voter href="/persona/diputado-cordobes" showAs="Dip. Cordobés"/>
+          <akndiff:voter href="/persona/diputada-rosarina" showAs="Dip. Rosarina"/>
+          <akndiff:voter href="/persona/diputado-mendocino" showAs="Dip. Mendocino"/>
+          <akndiff:voter href="/persona/diputada-patagonica" showAs="Dip. Patagónica"/>
+          <akndiff:voter href="/persona/diputado-tucumano" showAs="Dip. Tucumano"/>
+          <akndiff:voter href="/persona/diputada-santafesina" showAs="Dip. Santafesina"/>
+        </akndiff:against>
+        <akndiff:abstain/>
+      </akndiff:vote>
+
+      <!-- Propuesta rechazada: insertar artículo sobre milanesa vegana -->
+      <akndiff:articleChange article="art_1ter" type="insert" after="art_1bis">
+        <akndiff:new>Se reconoce como variante la milanesa elaborada con medallones de soja texturizada, berenjenas en rodajas gruesas o seitan, empanada y frita según los procedimientos de los Títulos II, III y IV. La denominación 'milanesa vegana' será de uso exclusivo para esta variante.</akndiff:new>
+      </akndiff:articleChange>
+
+    </akndiff:changeSet>
+
+  </amendment>
+</akomaNtoso>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN Diff Proof of Concept — Receta 4: Ratatouille Niçoise
+  Documento: bill (proyecto que reforma la receta)
+  Versión: con sistema de votación AKN Diff
+
+  Contexto: El Diputado Parisino propone "modernizar" la ratatouille para
+  hacerla accesible a toda Francia y adaptarla a la vida moderna.
+  Cambios propuestos:
+    - art_2: Permitir verduras de supermercado todo el año
+    - art_3: Simplificar el corte (sin precisión de 3mm)
+    - art_7: Permitir cocción de todas las verduras juntas
+    - art_9: Reducir tiempo, aumentar temperatura
+
+  Votación: Aprobado 5-3.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <bill name="modernizacion-ratatouille">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/bill/rat-2025-01"/>
+          <FRBRuri value="/akn/poc/bill/rat-2025-01"/>
+          <FRBRdate date="2025-03-15" name="presentación"/>
+          <FRBRauthor href="/persona/depute-parisien"/>
+          <FRBRcountry value="fr"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/bill/rat-2025-01/fra@2025-03-15"/>
+          <FRBRuri value="/akn/poc/bill/rat-2025-01/fra@2025-03-15"/>
+          <FRBRdate date="2025-03-15" name="versión"/>
+          <FRBRlanguage language="fra"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/bill/rat-2025-01/fra@2025-03-15/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/persona/depute-parisien" showAs="Dip. Parisino"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Proyecto de ley que <docTitle>moderniza la receta de Ratatouille Niçoise</docTitle></p>
+      </longTitle>
+      <p>Proposición de ley del <docProponent>Diputado Parisino</docProponent>.</p>
+      <p>Modifica la <ref href="/akn/poc/act/ratatouille-nicoise">Receta N° 4 sobre Ratatouille Niçoise</ref>.</p>
+    </preface>
+
+    <preamble>
+      <p>Considerando:</p>
+      <p>1. Que las verduras de mercado local solo están disponibles tres meses al año, excluyendo a la mayoría de los franceses de esta receta.</p>
+      <p>2. Que el corte en rodajas de 3 mm de espesor exige un nivel de precisión inaccesible para los cocineros amateurs.</p>
+      <p>3. Que la cocción separada de cada verdura multiplica el tiempo de preparación por cinco y desalienta a las familias activas.</p>
+      <p>4. Que 45 minutos de cocción a 180°C son excesivos y que una cocción más rápida a mayor temperatura da un resultado comparable.</p>
+      <p>5. Que la ratatouille es patrimonio de toda Francia, no solo de Niza.</p>
+    </preamble>
+
+    <body>
+      <article eId="art_1">
+        <heading>Artículo 1</heading>
+        <content>
+          <p>Modifícase el <ref href="/akn/poc/act/ratatouille-nicoise#art_2">artículo 2</ref> de la
+          Receta N° 4, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 2. Procedencia. Las verduras pueden provenir de cualquier comercio o supermercado y ser utilizadas todo el año. Las verduras de temporada y de mercado local son recomendadas pero no obligatorias."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_2">
+        <heading>Artículo 2</heading>
+        <content>
+          <p>Modifícase el <ref href="/akn/poc/act/ratatouille-nicoise#art_3">artículo 3</ref> de la
+          Receta N° 4, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 3. Corte. Las verduras se cortan en trozos regulares de tamaño homogéneo. La forma y el espesor exacto quedan a criterio del cocinero."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_3">
+        <heading>Artículo 3</heading>
+        <content>
+          <p>Modifícase el <ref href="/akn/poc/act/ratatouille-nicoise#art_7">artículo 7</ref> de la
+          Receta N° 4, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 7. Cocción de las verduras. Las verduras pueden cocinarse juntas en una sola sartén o por separado, a elección del cocinero. El aceite de oliva sigue siendo obligatorio."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_4">
+        <heading>Artículo 4</heading>
+        <content>
+          <p>Modifícase el <ref href="/akn/poc/act/ratatouille-nicoise#art_9">artículo 9</ref> de la
+          Receta N° 4, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 9. Horno. La cocción final se efectúa en horno a 200°C durante 30 minutos mínimo. Queda prohibido el uso del microondas."</mod></p>
+        </content>
+      </article>
+    </body>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN Diff: changeSet con votación
+      ============================================================
+    -->
+    <akndiff:changeSet
+      base="/akn/poc/act/ratatouille-nicoise/fra@2022-06-21"
+      result="/akn/poc/act/ratatouille-nicoise/fra@2025-03-15">
+
+      <akndiff:vote date="2025-03-15"
+                  result="approved"
+                  source="/akn/poc/debate/rat-2025-01-pleno">
+        <akndiff:for>
+          <akndiff:voter href="/persona/depute-parisien" showAs="Dip. Parisino"/>
+          <akndiff:voter href="/persona/depute-lyonnais" showAs="Dip. Lyonés"/>
+          <akndiff:voter href="/persona/depute-bordelais" showAs="Dip. Bordelés"/>
+          <akndiff:voter href="/persona/deputee-alsacienne" showAs="Dip. Alsaciana"/>
+          <akndiff:voter href="/persona/deputee-provencale" showAs="Dip. Provenzal"/>
+        </akndiff:for>
+        <akndiff:against>
+          <akndiff:voter href="/persona/deputee-nicoise" showAs="Dip. Niçoise"/>
+          <akndiff:voter href="/persona/deputee-bretonne" showAs="Dip. Bretona"/>
+          <akndiff:voter href="/persona/depute-marseillais" showAs="Dip. Marsellés"/>
+        </akndiff:against>
+        <akndiff:abstain/>
+      </akndiff:vote>
+
+      <!-- art_2: mercado local/temporada → supermercado todo el año -->
+      <akndiff:articleChange article="art_2" type="substitute">
+        <akndiff:old>Las verduras deben provenir del mercado local y ser de temporada, cosechadas entre junio y septiembre. Queda prohibido el uso de verduras importadas o fuera de temporada.</akndiff:old>
+        <akndiff:new>Las verduras pueden provenir de cualquier comercio o supermercado y ser utilizadas todo el año. Las verduras de temporada y de mercado local son recomendadas pero no obligatorias.</akndiff:new>
+      </akndiff:articleChange>
+
+      <!-- art_3: rodajas 3mm → trozos regulares -->
+      <akndiff:articleChange article="art_3" type="substitute">
+        <akndiff:old>Cada verdura debe ser cortada por separado en rodajas de 3 mm de espesor. Queda prohibido todo corte irregular, en dados o en trozos gruesos.</akndiff:old>
+        <akndiff:new>Las verduras se cortan en trozos regulares de tamaño homogéneo. La forma y el espesor exacto quedan a criterio del cocinero.</akndiff:new>
+      </akndiff:articleChange>
+
+      <!-- art_7: cocción separada → cocción conjunta permitida -->
+      <akndiff:articleChange article="art_7" type="substitute">
+        <akndiff:old>Cada verdura debe ser salteada por separado a fuego vivo en aceite de oliva antes del ensamblaje. Queda prohibida la cocción de varias verduras juntas en la misma sartén.</akndiff:old>
+        <akndiff:new>Las verduras pueden cocinarse juntas en una sola sartén o por separado, a elección del cocinero. El aceite de oliva sigue siendo obligatorio.</akndiff:new>
+      </akndiff:articleChange>
+
+      <!-- art_9: 180°C/45min → 200°C/30min -->
+      <akndiff:articleChange article="art_9" type="substitute">
+        <akndiff:old>La cocción final se efectúa en horno a 180°C durante 45 minutos mínimo. Queda prohibido el uso del microondas, la cocción al vapor o cualquier otro método de cocción.</akndiff:old>
+        <akndiff:new>La cocción final se efectúa en horno a 200°C durante 30 minutos mínimo. Queda prohibido el uso del microondas.</akndiff:new>
+      </akndiff:articleChange>
+
+    </akndiff:changeSet>
+
+  </bill>
+</akomaNtoso>

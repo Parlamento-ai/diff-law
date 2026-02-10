@@ -17,6 +17,86 @@
       "chamber": null
     },
     {
+      "uri": "/akn/poc/act/empanadas-de-pino",
+      "type": "act",
+      "title": "Receta N° 2: Empanadas de Pino",
+      "description": "Receta tradicional de empanadas chilenas, publicada en el Diario Oficial de Cocina.",
+      "filePath": "act/empanadas-de-pino.xml",
+      "chamber": null
+    },
+    {
+      "uri": "/akn/poc/act/empanadas-de-pino-amended",
+      "type": "act",
+      "title": "Receta N° 2: Empanadas de Pino (texto refundido post-reforma)",
+      "description": "Texto consolidado tras la reforma de 2024.",
+      "filePath": "act/empanadas-de-pino-amended.xml",
+      "chamber": null
+    },
+    {
+      "uri": "/akn/poc/act/ratatouille-nicoise",
+      "type": "act",
+      "title": "Receta N° 4: Ratatouille Niçoise",
+      "description": "Receta oficial de la ratatouille niçoise, aprobada por el Parlamento de Gastronomía.",
+      "filePath": "act/ratatouille-nicoise.xml",
+      "chamber": null
+    },
+    {
+      "uri": "/akn/poc/act/ratatouille-nicoise-amended",
+      "type": "act",
+      "title": "Receta N° 4: Ratatouille Niçoise (texto refundido post-reforma)",
+      "description": "Texto consolidado tras la reforma de 2025.",
+      "filePath": "act/ratatouille-nicoise-amended.xml",
+      "chamber": null
+    },
+    {
+      "uri": "/akn/poc/act/feijoada-carioca",
+      "type": "act",
+      "title": "Receta N° 5: Feijoada Carioca",
+      "description": "Receta tradicional de feijoada carioca, registrada en el Diário Oficial da Cozinha.",
+      "filePath": "act/feijoada-carioca.xml",
+      "chamber": null
+    },
+    {
+      "uri": "/akn/poc/act/feijoada-carioca-amended",
+      "type": "act",
+      "title": "Receta N° 5: Feijoada Carioca (texto refundido post-reforma)",
+      "description": "Texto consolidado tras la reforma de 2025.",
+      "filePath": "act/feijoada-carioca-amended.xml",
+      "chamber": null
+    },
+    {
+      "uri": "/akn/poc/act/milanesa-argentina",
+      "type": "act",
+      "title": "Receta N° 6: Milanesa Argentina",
+      "description": "Receta oficial de la milanesa argentina, publicada en el Boletín Oficial de Cocina.",
+      "filePath": "act/milanesa-argentina.xml",
+      "chamber": null
+    },
+    {
+      "uri": "/akn/poc/act/milanesa-argentina-amended",
+      "type": "act",
+      "title": "Receta N° 6: Milanesa Argentina (texto refundido post-reforma)",
+      "description": "Texto consolidado tras la reforma de 2025.",
+      "filePath": "act/milanesa-argentina-amended.xml",
+      "chamber": null
+    },
+    {
+      "uri": "/akn/poc/act/pan-de-campo",
+      "type": "act",
+      "title": "Receta N° 1: Pan de Campo",
+      "description": "Receta de pan casero chileno, publicada en el Diario Oficial de Cocina.",
+      "filePath": "act/pan-de-campo.xml",
+      "chamber": null
+    },
+    {
+      "uri": "/akn/poc/act/pan-de-campo-amended",
+      "type": "act",
+      "title": "Receta N° 1: Pan de Campo (texto refundido post-reforma)",
+      "description": "Texto consolidado tras la Ley de Modernización Panadera (2024).",
+      "filePath": "act/pan-de-campo-amended.xml",
+      "chamber": null
+    },
+    {
       "uri": "/akn/poc/bill/paella-reform-2024",
       "type": "bill",
       "title": "Bill: Reform of the Valencian Paella Recipe",
@@ -33,6 +113,46 @@
       "chamber": "senado"
     },
     {
+      "uri": "/akn/poc/bill/emp-2024-01",
+      "type": "bill",
+      "title": "Proyecto: Reforma de la receta de Empanadas de Pino",
+      "description": "Moción de la Senadora Cocinera para modernizar la receta de empanadas.",
+      "filePath": "bill/empanadas-reform-2024.xml",
+      "chamber": "senado"
+    },
+    {
+      "uri": "/akn/poc/bill/rat-2025-01",
+      "type": "bill",
+      "title": "Proyecto: Modernización de la receta de Ratatouille Niçoise",
+      "description": "Moción del Diputado Parisino para modernizar la ratatouille.",
+      "filePath": "bill/ratatouille-reform-2025.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/bill/fei-2025-01",
+      "type": "bill",
+      "title": "Proyecto: Simplificación de la receta de Feijoada Carioca",
+      "description": "Moción de la Senadora Paulista para simplificar la feijoada.",
+      "filePath": "bill/feijoada-reform-2025.xml",
+      "chamber": "senado"
+    },
+    {
+      "uri": "/akn/poc/bill/mil-2025-01",
+      "type": "bill",
+      "title": "Proyecto: Modernización de la receta de Milanesa Argentina",
+      "description": "Moción de la Diputada Rosarina para modernizar la milanesa.",
+      "filePath": "bill/milanesa-reform-2025.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/bill/pan-2024-01",
+      "type": "bill",
+      "title": "Proyecto: Modernización de la receta de Pan de Campo",
+      "description": "Moción del Diputado Panadero para modernizar el pan de campo.",
+      "filePath": "bill/pan-reform-2024.xml",
+      "chamber": "camara"
+    },
+    {
       "uri": "/akn/poc/amendment/amendment-brown-rice",
       "type": "amendment",
       "title": "Amendment: Inclusion of Brown Rice",
@@ -46,6 +166,150 @@
       "title": "Amendment: Optional Socarrat",
       "description": "Proposal by Rep. Modern to make the socarrat optional.",
       "filePath": "amendment/amendment-optional-socarrat.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/amendment/emp-2024-01-ind1",
+      "type": "amendment",
+      "title": "Indicación: Compromiso de las pasas",
+      "description": "Propuesta del Sen. Tradicionalista para reincorporar las pasas como opcionales.",
+      "filePath": "amendment/amendment-empanadas-pasas.xml",
+      "chamber": "senado"
+    },
+    {
+      "uri": "/akn/poc/amendment/emp-2024-01-ind2",
+      "type": "amendment",
+      "title": "Indicación: Mejoras a la masa",
+      "description": "Propuesta de la Comisión de Gastronomía para mejorar la receta de la masa.",
+      "filePath": "amendment/amendment-empanadas-masa.xml",
+      "chamber": "senado"
+    },
+    {
+      "uri": "/akn/poc/amendment/rat-2025-01-ind1",
+      "type": "amendment",
+      "title": "Enmienda del ketchup",
+      "description": "Propuesta del Dip. Parisino para permitir condimentos industriales. RECHAZADA 0-8.",
+      "filePath": "amendment/amendment-ratatouille-ketchup.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/amendment/rat-2025-01-ind2",
+      "type": "amendment",
+      "title": "El blindaje niçois",
+      "description": "Propuesta de la Dip. Niçoise para restablecer corte y técnica tradicional.",
+      "filePath": "amendment/amendment-ratatouille-blindaje.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/amendment/rat-2025-01-ind3",
+      "type": "amendment",
+      "title": "Enmienda del microondas",
+      "description": "Propuesta del Dip. Lyonés para permitir el microondas. RETIRADA.",
+      "filePath": "amendment/amendment-ratatouille-microondas.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/amendment/rat-2025-01-ind4",
+      "type": "amendment",
+      "title": "El compromiso mediterráneo",
+      "description": "Propuesta de la Dip. Provenzal para permitir albahaca y piment d'Espelette.",
+      "filePath": "amendment/amendment-ratatouille-mediterraneo.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/amendment/rat-2025-01-ind5",
+      "type": "amendment",
+      "title": "La enmienda express",
+      "description": "Propuesta del Dip. Parisino para reducir tiempo de cocción. RECHAZADA 2-6.",
+      "filePath": "amendment/amendment-ratatouille-express.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/amendment/fei-2025-01-ind1",
+      "type": "amendment",
+      "title": "La enmienda del cerdo",
+      "description": "Propuesta del Sen. Gaúcho para restablecer oreja y rabo como obligatorios.",
+      "filePath": "amendment/amendment-feijoada-cerdo.xml",
+      "chamber": "senado"
+    },
+    {
+      "uri": "/akn/poc/amendment/fei-2025-01-ind2",
+      "type": "amendment",
+      "title": "La enmienda vegana",
+      "description": "Propuesta de la Sen. Amazónica para crear una feijoada vegana. RECHAZADA 1-7.",
+      "filePath": "amendment/amendment-feijoada-vegana.xml",
+      "chamber": "senado"
+    },
+    {
+      "uri": "/akn/poc/amendment/fei-2025-01-ind3",
+      "type": "amendment",
+      "title": "El blindaje carioca",
+      "description": "Propuesta del Sen. Carioca para restablecer el arroz tradicional.",
+      "filePath": "amendment/amendment-feijoada-blindaje.xml",
+      "chamber": "senado"
+    },
+    {
+      "uri": "/akn/poc/amendment/fei-2025-01-ind4",
+      "type": "amendment",
+      "title": "La enmienda del microondas",
+      "description": "Propuesta de la Sen. Paulista para permitir el microondas. RECHAZADA 0-8.",
+      "filePath": "amendment/amendment-feijoada-microondas.xml",
+      "chamber": "senado"
+    },
+    {
+      "uri": "/akn/poc/amendment/fei-2025-01-ind5",
+      "type": "amendment",
+      "title": "El compromiso bahiano",
+      "description": "Propuesta del Sen. Baiano para agregar aceite de dendê. RETIRADA.",
+      "filePath": "amendment/amendment-feijoada-bahiano.xml",
+      "chamber": "senado"
+    },
+    {
+      "uri": "/akn/poc/amendment/mil-2025-01-ind1",
+      "type": "amendment",
+      "title": "La enmienda napolitana",
+      "description": "Propuesta de la Dip. Santafesina para reconocer la milanesa a la napolitana.",
+      "filePath": "amendment/amendment-milanesa-napolitana.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/amendment/mil-2025-01-ind2",
+      "type": "amendment",
+      "title": "La enmienda del horno",
+      "description": "Propuesta de la Dip. Patagónica para permitir la milanesa al horno. RECHAZADA 2-6.",
+      "filePath": "amendment/amendment-milanesa-horno.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/amendment/mil-2025-01-ind3",
+      "type": "amendment",
+      "title": "La enmienda del pollo",
+      "description": "Propuesta de la Dip. Bonaerense para reconocer la milanesa de pollo.",
+      "filePath": "amendment/amendment-milanesa-pollo.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/amendment/mil-2025-01-ind4",
+      "type": "amendment",
+      "title": "La enmienda vegana",
+      "description": "Propuesta de la Dip. Patagónica para crear milanesa vegana. RECHAZADA 0-8.",
+      "filePath": "amendment/amendment-milanesa-vegana.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/amendment/mil-2025-01-ind5",
+      "type": "amendment",
+      "title": "El compromiso cordobés",
+      "description": "Propuesta del Dip. Cordobés para reconocer la milanesa a caballo. RETIRADA.",
+      "filePath": "amendment/amendment-milanesa-caballo.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/amendment/pan-2024-01-ind1",
+      "type": "amendment",
+      "title": "Indicación: Refinamiento de la Comisión",
+      "description": "Ajustes de la Comisión de Gastronomía al tipo de harina y tiempo de amasado.",
+      "filePath": "amendment/amendment-pan-refinamiento.xml",
       "chamber": "camara"
     },
     {
