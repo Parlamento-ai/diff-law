@@ -1,0 +1,442 @@
+<akomaNtoso xmlns="http://www.akomantoso.org/2.0" xmlns:bcn="http://datos.bcn.cl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://www.akomantoso.org/2.0 akomantoso20_BCN.xsd">
+  <bill>
+<meta>
+<identification source="#org2">
+				<FRBRWork>
+<FRBRthis value="http://datos.bcn.cl/recurso/cl/documento/695681"/>
+<FRBRuri value="http://datos.bcn.cl/recurso/cl/documento/695681"/>
+<FRBRdate date="2021-11-08" name="workDate"/>
+<FRBRauthor href="#org0"/>
+<FRBRcountry value="cl"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://datos.bcn.cl/recurso/cl/documento/695681/es@2021-11-08"/>
+<FRBRuri value="http://datos.bcn.cl/recurso/cl/documento/695681/es@2021-11-08"/>
+<FRBRdate date="2021-11-08" name="expDate"/>
+<FRBRauthor href="#org1"/>
+<FRBRlanguage language="es"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://datos.bcn.cl/recurso/cl/documento/695681/es@2021-11-08/main.xml"/>
+<FRBRuri value="http://datos.bcn.cl/recurso/cl/documento/695681/es@2021-11-08.akn"/>
+<FRBRdate date="2021-11-08" name="manDate"/>
+<FRBRauthor href="#org2"/>
+</FRBRManifestation>
+</identification>
+<publication date="2021-11-24" name="#org2" showAs="BIBLIOTECA DEL CONGRESO NACIONAL"/>
+<analysis source="#org2">
+				<otherAnalysis xmlns="http://www.akomantoso.org/2.0" source="#org2">
+				<bcn:MetadataBCN xmlns:bcn="http://datos.bcn.cl" bcn:id="metadataBCN1"><bcn:AtributosInformeComision bcn:uriProyectoLey="#PL_AUT_MARCAJE_id_14002-13" bcn:uriCamara="#org0" bcn:uriTipoDocumento="#VersionProyectoDeLey" bcn:uriTramiteReglamentario="#OficioLeyAPresidenteDeLaRepublica" bcn:uriTramiteConstitucional="#Tramite-Finalizacion"/>
+				</bcn:MetadataBCN></otherAnalysis>
+				</analysis>
+<references source="#org2">
+<TLCOrganization id="org1" showAs="Oficina de redacción del Senado" href="http://datos.bcn.cl/recurso/cl/organismo/oficina-redaccion-del-senado"/>
+<TLCOrganization id="org2" showAs="BIBLIOTECA DEL CONGRESO NACIONAL" href="http://datos.bcn.cl/recurso/cl/organismo/biblioteca-del-congreso-nacional"/>
+<TLCOrganization id="org0" showAs="Senado" href="http://datos.bcn.cl/recurso/cl/organismo/senado"/>
+<TLCReference id="Insistencia" showAs="Insistencia del Ejecutivo           " name="Insistencia" href="http://datos.bcn.cl/ontologies/bcn-bills#InsistenciaDelEjecutivo"/>
+<TLCOrganization id="com37" showAs="Comisión de Intereses Marítimos, Pesca y Acuicultura del Senado" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-intereses-maritimos_pesca-y-acuicultura"/>
+<TLCReference id="SesionReunionSolemne" showAs="Sesión Reunión Solemne" name="SesionReunionSolemne" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionReunionSolemne"/>
+<TLCReference id="SegundoInforme" showAs="Segundo Informe de Comisión " name="SegundoInforme" href="http://datos.bcn.cl/ontologies/bcn-bills#SegundoInformeDeComision"/>
+<TLCOrganization id="com49" showAs="Comisiones unidas de economía y de transporte y telecomunicaciones" href="http://datos.bcn.cl/recurso/cl/organismo/comisiones-unidas-de-economia-y-de-transporte-y-telecomunicaciones"/>
+<TLCReference id="InformeComisionMixta" showAs="Informe Comisión Mixta" name="InformeComisionMixta" href="http://datos.bcn.cl/ontologies/bcn-resources#InformeComisionMixta"/>
+<TLCReference id="MocionInadmisible" showAs="Moción Inadmisible" name="MocionInadmisible" href="http://datos.bcn.cl/ontologies/bcn-resources#MocionInadmisible"/>
+<TLCReference id="RetiroPatrocinioDeProyecto" showAs="Retiro Patrocinio de Proyecto" name="RetiroPatrocinioDeProyecto" href="http://datos.bcn.cl/ontologies/bcn-resources#RetiroPatrocinioDeProyecto"/>
+<TLCReference id="refundidoPor" showAs="Relacionado por tramitación" name="refundidoPor" href="http://datos.bcn.cl/ontologies/bcn-resources#refundidoPor"/>
+<TLCReference id="ComisionMixtaLeyDePresupuesto" showAs="Comisión Mixta Ley de Presupuesto" name="ComisionMixtaLeyDePresupuesto" href="http://datos.bcn.cl/ontologies/bcn-bills#ComisionMixtaLeyDePresupuesto"/>
+<TLCOrganization id="com26" showAs="comisión de economía, fomento y desarrollo" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-economia_fomento-y-desarrollo"/>
+<TLCReference id="ComisionDeServicioAlExtrangero" showAs="Comisión de Servicio al Extranjero" name="ComisionDeServicioAlExtrangero" href="http://datos.bcn.cl/ontologies/bcn-resources#ComisionDeServicioAlExtrangero"/>
+<TLCReference id="BoletinDeIndicaciones" showAs="Boletín de Indicaciones" name="BoletinDeIndicaciones" href="http://datos.bcn.cl/ontologies/bcn-resources#BoletinIndicaciones"/>
+<TLCOrganization id="com70" showAs="Comisión Especial de Seguridad Ciudadana del Senado" href="http://datos.bcn.cl/recurso/cl/organismo/comision-especial-15"/>
+<TLCOrganization id="com3" showAs="comisión de constitución, legislación y justicia" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-constitucion_legislacion-y-justicia"/>
+<TLCOrganization id="com64" showAs="Comisión Investigadora sobre Administración de la ARCIS, en lo relativo al proceso de acreditación, de la Cámara de Diputados" href="http://datos.bcn.cl/recurso/cl/organismo/comision-investigadora-9"/>
+<TLCReference id="OficioAprobacionObservacionesDelEjecutivo" showAs="Oficio aprobación observaciones del Ejecutivo" name="OficioAprobacionObservacionesDelEjecutivo" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioAprobacionObservacionesDelEjecutivo"/>
+<TLCRole id="editorIdDiputado" showAs="Diputado" href="http://datos.bcn.cl/recurso/cl/cargo/1"/>
+<TLCOrganization id="com38" showAs="comisión de salud del senado" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-salud-del-senado"/>
+<TLCOrganization id="com15" showAs="comisión de régimen interior" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-regimen-interior"/>
+<TLCReference id="OficioAprobacionSinModificaciones" showAs="Oficio Aprobación sin Modificaciones " name="OficioAprobacionSinModificaciones" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioAprobacionSinModificaciones"/>
+<TLCOrganization id="com68" showAs="Comisión Bicameral encargada de dar cumplimiento al artículo 6° del Convenio N° 169 de la OIT del Senado" href="http://datos.bcn.cl/recurso/cl/organismo/comision-especial-13"/>
+<TLCReference id="InformeComisionMixtaDePresupuestos" showAs="Informe Comisión Mixta de Presupuestos" name="InformeComisionMixtaDePresupuestos" href="http://datos.bcn.cl/ontologies/bcn-resources#InformeComisionMixtaDePresupuestos"/>
+<TLCReference id="Plebiscito-Reforma-Constitucional" showAs="Plebiscito Reforma Constitucional" name="Plebiscito-Reforma-Constitucional" href="http://datos.bcn.cl/ontologies/bcn-bills#PlebiscitoReformaConstitucional"/>
+<TLCReference id="resultadoDebate_inadmisible" showAs="Inadmisible" name="resultadoDebate_inadmisible" href="http://datos.bcn.cl/ontologies/bcn-resources#inadmisible"/>
+<TLCReference id="InformeComisionLegislativa" showAs="Informe Comisión Legislativa" name="InformeComisionLegislativa" href="http://datos.bcn.cl/ontologies/bcn-resources#InformeComisionLegislativa"/>
+<TLCReference id="SesionCongresoPleno" showAs="Sesión parlamentaria de congreso pleno" name="SesionCongresoPleno" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionCongresoPleno"/>
+<TLCReference id="resultadoDebate_seRechazaModificacionesAComisionMixta" showAs="Se rechazan modificaciones" name="resultadoDebate_seRechazaModificacionesAComisionMixta" href="http://datos.bcn.cl/ontologies/bcn-resources#seRechazanModificaciones"/>
+<TLCReference id="SesionOrdinaria" showAs="Sesión parlamentaria ordinaria" name="SesionOrdinaria" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionOrdinaria"/>
+<TLCReference id="LicenciaMedica" showAs="Licencia Médica" name="LicenciaMedica" href="http://datos.bcn.cl/ontologies/bcn-resources#LicenciaMedica"/>
+<TLCReference id="SentenciaDeRequerimientoDeInconstitucionalidad" showAs="Sentencia de Requerimiento de Inconstitucionalidad" name="SentenciaDeRequerimientoDeInconstitucionalidad" href="http://datos.bcn.cl/ontologies/bcn-bills#SentenciaDeRequerimientoDeInconstitucionalidad"/>
+<TLCReference id="metadato1" showAs="Nombre de uso común" name="metadato1" href="http://datos.bcn.cl/recurso/metadato/1"/>
+<TLCReference id="IntervencionPeticionOficio" showAs="Intervención Petición de oficio" name="IntervencionPeticionOficio" href="http://datos.bcn.cl/ontologies/bcn-resources#IntervencionPeticionDeOficio"/>
+<TLCReference id="OficioConvocatoriaPlebiscito" showAs="Oficio del Ejecutivo, comunica convocatoria a Plebiscito" name="OficioConvocatoriaPlebiscito" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioDelEjecutivoComunicaConvocatoriaAPlebiscito"/>
+<TLCOrganization id="com50" showAs="comisiones unidas de hacienda y salud del senado" href="http://datos.bcn.cl/recurso/cl/organismo/comisiones-unidas-de-hacienda-y-salud-del-senado"/>
+<TLCReference id="OficioRechazoDeProyecto" showAs="Oficio Rechazo Proyecto de Ley al Ejecutivo" name="OficioRechazoDeProyecto" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioRechazoProyectoDeLeyAlEjecutivo"/>
+<TLCReference id="InformeFinanciero" showAs="Informe Financiero" name="InformeFinanciero" href="http://datos.bcn.cl/ontologies/bcn-resources#InformeFinanciero"/>
+<TLCOrganization id="com65" showAs="Comisión Economía y de Transportes y Telecomunicaciones, unidas del Senado" href="http://datos.bcn.cl/recurso/cl/organismo/comision-especial-10"/>
+<TLCOrganization id="com41" showAs="comisión de revisora de cuentas de la cámara de diputados" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-revisora-de-cuentas-de-la-camara-de-diputados"/>
+<TLCReference id="relacion3" showAs="Normas Jurídicas" name="relacion3" href="http://datos.bcn.cl/recurso/editor/relacion/3"/>
+<TLCReference id="OficioLeyAPresidenteDeLaRepublica" showAs="Oficio Ley a S. E. El Presidente de la República" name="OficioLeyAPresidenteDeLaRepublica" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioLeyAPresidenteDeLaRepublica"/>
+<TLCReference id="resultadoDebate_seAcuerdaNoInsistir" showAs="Se acuerda no insistir" name="resultadoDebate_seAcuerdaNoInsistir" href="http://datos.bcn.cl/ontologies/bcn-resources#seAcuerdaNoInsistir"/>
+<TLCReference id="InformeComplementario" showAs="Informe complementario" name="InformeComplementario" href="http://datos.bcn.cl/ontologies/bcn-resources#InformeComplementario"/>
+<TLCOrganization id="com46" showAs="comisión de pesca, acuicultura e intereses marítimos" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-pesca_acuicultura-e-intereses-maritimos"/>
+<TLCReference id="resultadoDebate_seApruebaEnGeneral" showAs="Se aprueba en general" name="resultadoDebate_seApruebaEnGeneral" href="http://datos.bcn.cl/ontologies/bcn-resources#seApruebaEnGeneral"/>
+<TLCOrganization id="com23" showAs="comisión de revisora de cuentas del senado" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-revisora-de-cuentas-del-senado"/>
+<TLCReference id="InformeDeComision" showAs="Informe Comisión Legislativa" name="InformeDeComision" href="http://datos.bcn.cl/ontologies/bcn-bills#InformeComisionLegislativa"/>
+<TLCReference id="rechazado" showAs="Rechazado" name="rechazado" href="http://datos.bcn.cl/ontologies/bcn-resources#rechazado"/>
+<TLCReference id="SesionSecreta" showAs="Secret Parliamentary session" name="SesionSecreta" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionSecreta"/>
+<TLCReference id="ComisionMixta_Senado_CamaraDeDiputados" showAs="Comisión Mixta: Senado – Cámara de Diputados" name="ComisionMixta:Senado–CamaraDeDiputados" href="http://datos.bcn.cl/ontologies/bcn-bills#ComisionMixta:Senado–CamaraDeDiputados"/>
+<TLCOrganization id="com19" showAs="comisión de zonas extremas de la cámara de diputados" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-zonas-extremas-de-la-camara-de-diputados"/>
+<TLCOrganization id="com2" showAs="comisión de relaciones exteriores, asuntos interparlamentarios e integración latinoamericana" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-relaciones-exteriores_asuntos-interparlamentarios-e-integracion-latinoamericana"/>
+<TLCReference id="PresentacionAcusacionConstitucional" showAs="Presentación Acusación Constitucional" name="PresentacionAcusacionConstitucional" href="http://datos.bcn.cl/ontologies/bcn-resources#PresentacionAcusacionConstitucional"/>
+<TLCReference id="resultadoDebate_aprobadoConModificaciones" showAs="Aprobado con modificaciones" name="resultadoDebate_aprobadoConModificaciones" href="http://datos.bcn.cl/ontologies/bcn-resources#aprobadoConModificaciones"/>
+<TLCOrganization id="com36" showAs="comisión de seguridad ciudadana y drogas" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-seguridad-ciudadana-y-drogas"/>
+<TLCRole id="editorIdSenador" showAs="Senador" href="http://datos.bcn.cl/recurso/cl/cargo/2"/>
+<TLCOrganization id="com76" showAs="Tercera Subcomisión Especial Mixta de Presupuestos" href="http://datos.bcn.cl/recurso/cl/organismo/comision-especial-21"/>
+<TLCReference id="subcategoria7" showAs="Otras Normas" name="subcategoria7" href="http://datos.bcn.cl/recurso/editor/subcategoria/7"/>
+<TLCReference id="ProyectoDeAcuerdo" showAs="Proyecto de Acuerdo" name="ProyectoDeAcuerdo" href="http://datos.bcn.cl/ontologies/bcn-resources#ProyectoDeAcuerdo"/>
+<TLCReference id="DiscusionObservaciones" showAs="Discusión Observaciones Presidente de la República" name="DiscusionObservaciones" href="http://datos.bcn.cl/ontologies/bcn-bills#DiscusionObservaciones"/>
+<TLCOrganization id="com39" showAs="comisión de superación de la pobreza, planificación y desarrollo social" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-superacion-de-la-pobreza_planificacion-y-desarrollo-social"/>
+<TLCOrganization id="com31" showAs="comisión de familia" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-familia"/>
+<TLCOrganization id="com11" showAs="comisión de economía" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-economia"/>
+<TLCReference id="DiscusionUnica" showAs="Discusión única" name="DiscusionUnica" href="http://datos.bcn.cl/ontologies/bcn-bills#DiscusionUnica"/>
+<TLCReference id="AutorDeProyectoDeResolucion" showAs="Autor de Proyecto de Resolución" name="AutorDeProyectoDeResolucion" href="http://datos.bcn.cl/ontologies/bcn-resources#AutorDeProyectoDeResolucion"/>
+<TLCReference id="exitosa" showAs="Exitosa" name="exitosa" href="http://datos.bcn.cl/ontologies/bcn-sessiondaily#SesionExitosa"/>
+<TLCReference id="NuevoSegundoInforme" showAs="Nuevo Segundo Informe de Comisión" name="NuevoSegundoInforme" href="http://datos.bcn.cl/ontologies/bcn-bills#NuevoSegundoInformeDeComision"/>
+<TLCReference id="Tramite-Finalizacion" showAs="Trámite Finalización" name="Tramite-Finalizacion" href="http://datos.bcn.cl/ontologies/bcn-bills#TramiteFinalizacion"/>
+<TLCReference id="Participacion" showAs="Participación" name="Participacion" href="http://datos.bcn.cl/ontologies/bcn-resources#Participacion"/>
+<TLCReference id="OficioAprobacionObservaciones" showAs="Oficio Aprobación Observaciones " name="OficioAprobacionObservaciones" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioAprobacionObservaciones"/>
+<TLCReference id="totalVotosSeInhabilita" showAs="Total votos se inhabilita" name="totalVotosSeInhabilita" href="http://datos.bcn.cl/ontologies/bcn-resources#totalVotosSeInhabilita"/>
+<TLCReference id="PeticionDeOficio" showAs="Petición de oficio" name="PeticionDeOficio" href="http://datos.bcn.cl/ontologies/bcn-resources#PeticionDeOficio"/>
+<TLCOrganization id="com44" showAs="comisión de obras públicas, transportes y telecomunicaciones" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-obras-publicas_transportes-y-telecomunicaciones"/>
+<TLCReference id="OficioRechazoInsistencia" showAs="Oficio Rechazo Insistencia  " name="OficioRechazoInsistencia" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioRechazoInsistencia"/>
+<TLCOrganization id="com67" showAs="Comisión Especial destinada a abordar la catástrofe por el incendio en Valparaíso del Senado" href="http://datos.bcn.cl/recurso/cl/organismo/comision-especial-12"/>
+<TLCReference id="relacion5" showAs="Otro documento" name="relacion5" href="http://datos.bcn.cl/recurso/editor/relacion/5"/>
+<TLCReference id="Tramite-Veto-Presidencial" showAs="Trámite Veto Presidencial" name="Tramite-Veto-Presidencial" href="http://datos.bcn.cl/ontologies/bcn-bills#TramiteVetoPresidencial"/>
+<TLCReference id="OficioDeComisionALaCorteSuprema" showAs="Oficio de Comisión a la Corte Suprema" name="OficioDeComisionALaCorteSuprema" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioDeComisionALaCorteSuprema"/>
+<TLCReference id="categoria6" showAs="Jurisprudencia Constitucional" name="categoria6" href="http://datos.bcn.cl/recurso/editor/categoria/6"/>
+<TLCReference id="Primer-Tramite-Camara-de-Origen" showAs="Primer Trámite Constitucional" name="Primer-Tramite-Camara-de-Origen" href="http://datos.bcn.cl/ontologies/bcn-bills#PrimerTramiteConstitucional"/>
+<TLCReference id="metadato3" showAs="Nota de Contexto" name="metadato3" href="http://datos.bcn.cl/recurso/metadato/3"/>
+<TLCReference id="AutorDeInformeDeDiplomaciaParlamentaria" showAs="Autor de Informe de Diplomacia Parlamentaria" name="AutorDeInformeDeDiplomaciaParlamentaria" href="http://datos.bcn.cl/ontologies/bcn-resources#AutorDeInformeDeDiplomaciaParlamentaria"/>
+<TLCReference id="OficioAprobacionInformeComisionMixta" showAs="Oficio Aprobación Informe Comisión Mixta" name="OficioAprobacionInformeComisionMixta" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioAprobacionInformeComisionMixta"/>
+<TLCRole id="AgrupSemanticoPresidentesDS" showAs="Presidente de la sesión" href="http://datos.bcn.cl/recurso/cl/cargo/322"/>
+<TLCReference id="AcuerdoDePresidenteDeSegundaComisionLegislativa" showAs="Acuerdo de Presidente de Segunda Comisión Legislativa" name="AcuerdoDePresidenteDeSegundaComisionLegislativa" href="http://datos.bcn.cl/ontologies/bcn-bills#AcuerdoDePresidenteDeSegundaComisionLegislativa"/>
+<TLCReference id="SesionExtraordinaria" showAs="Extraordinary parliamentary session" name="SesionExtraordinaria" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionExtraordinaria"/>
+<TLCReference id="categoria5" showAs="Jurisprudencia Administrativa" name="categoria5" href="http://datos.bcn.cl/recurso/editor/categoria/5"/>
+<TLCReference id="metadato6" showAs="Documento solo uso interno" name="metadato6" href="http://datos.bcn.cl/recurso/metadato/6"/>
+<TLCReference id="OficioDeFiscalizacion" showAs="Oficio de Fiscalizacion" name="OficioDeFiscalizacion" href="http://datos.bcn.cl/ontologies/bcn-resources#OficioDeFiscalizacion"/>
+<TLCReference id="Desafuero" showAs="Desafuero" name="Desafuero" href="http://datos.bcn.cl/ontologies/bcn-resources#Desafuero"/>
+<TLCRole id="editorIdPresidenteDelSenado" showAs="Presidente del Senado" href="http://datos.bcn.cl/recurso/cl/cargo/4"/>
+<TLCReference id="subcategoria3" showAs="Tribunal Constitucional" name="subcategoria3" href="http://datos.bcn.cl/recurso/editor/subcategoria/3"/>
+<TLCReference id="Mensaje" showAs="Mensaje" name="Mensaje" href="http://datos.bcn.cl/ontologies/bcn-resources#Mensaje"/>
+<TLCReference id="MensajeDelEjecutivoRefundido" showAs="Mensaje del ejecutivo refundido" name="MensajeDelEjecutivoRefundido" href="http://datos.bcn.cl/ontologies/bcn-resources#MensajeDelEjecutivoRefundido"/>
+<TLCOrganization id="com24" showAs="comisión de relaciones exteriores" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-relaciones-exteriores"/>
+<TLCReference id="InformeDeDiplomaciaParlamentaria" showAs="Informe de Diplomacia Parlamentaria" name="InformeDeDiplomaciaParlamentaria" href="http://datos.bcn.cl/ontologies/bcn-resources#InformeDeDiplomaciaParlamentaria"/>
+<TLCOrganization id="com16" showAs="comisión de de ética y transparencia" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-de-etica-y-transparencia"/>
+<TLCConcept id="peticionPendiente" showAs="Peticion de oficio pendiente" href="http://datos.bcn.cl/ontologies/bcn-sessiondaily#peticionDeOficioPendiente"/>
+<TLCReference id="TramiteVetoPresidencialCamaraDeDiputados" showAs="Trámite Veto Presidencial: Cámara de Diputados" name="TramiteVetoPresidencialCamaraDeDiputados" href="http://datos.bcn.cl/ontologies/bcn-bills#TramiteVetoPresidencialCamaraDeDiputados"/>
+<TLCRole id="editorIdEmbajador" showAs="Embajador" href="http://datos.bcn.cl/recurso/cl/cargo/332"/>
+<TLCReference id="Observacion" showAs="Observación" name="Observacion" href="http://datos.bcn.cl/ontologies/bcn-resources#Observacion"/>
+<TLCReference id="AutorInformeDeComision" showAs="Autor de Informe de Comision" name="AutorInformeDeComision" href="http://datos.bcn.cl/ontologies/bcn-resources#AutorInformeDeComision"/>
+<TLCReference id="OficioLeyDeConsultaFacultadDeVeto" showAs="Oficio de Ley Consulta Facultad de Veto" name="OficioLeyDeConsultaFacultadDeVeto" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioDeLeyConsultaFacultadDeVeto"/>
+<TLCReference id="DeclaracionDeInadmisibilidad" showAs="Declaracion De Inadmisibilidad" name="DeclaracionDeInadmisibilidad" href="http://datos.bcn.cl/ontologies/bcn-resources#DeclaracionDeInadmisibilidad"/>
+<TLCReference id="fracasada" showAs="Fracasada" name="fracasada" href="http://datos.bcn.cl/ontologies/bcn-sessiondaily#SesionFracasada"/>
+<TLCReference id="resultadoDebate_seAcuerdaInsistir" showAs="Se acuerda insistir" name="resultadoDebate_seAcuerdaInsistir" href="http://datos.bcn.cl/ontologies/bcn-resources#seAcuerdaInsistir"/>
+<TLCConcept id="AgrupSemanticoPortadaCamaraDS" showAs="Cámara" href="http://datos.bcn.cl/ontologies/bcn-congress#Camara"/>
+<TLCOrganization id="com52" showAs="Comisión de Deportes y Recreación" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-deportes-y-recreacion"/>
+<TLCReference id="totalVotosEnContra" showAs="Total votos en contra" name="totalVotosEnContra" href="http://datos.bcn.cl/ontologies/bcn-resources#totalVotosEnContra"/>
+<TLCReference id="SesionEspecial" showAs="Sesión parlamentaria especial" name="SesionEspecial" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionEspecial"/>
+<TLCOrganization id="com47" showAs="comisión de especial de zonas extremas" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-especial-de-zonas-extremas"/>
+<TLCReference id="PrimerInforme" showAs="Primer Informe de Comisión" name="PrimerInforme" href="http://datos.bcn.cl/ontologies/bcn-bills#PrimerInformeDeComision"/>
+<TLCReference id="normasOrganicasConstitucionales" showAs="Normas orgánicas constitucionales" name="normasOrganicasConstitucionales" href="http://datos.bcn.cl/ontologies/bcn-resources#normasOrganicasConstitucionales"/>
+<TLCReference id="resultadoDebate_seRechaza" showAs="Se rechaza" name="resultadoDebate_seRechaza" href="http://datos.bcn.cl/ontologies/bcn-resources#seRechaza"/>
+<TLCReference id="aprobado" showAs="Aprobado" name="aprobado" href="http://datos.bcn.cl/ontologies/bcn-resources#aprobado"/>
+<TLCReference id="NuevoPrimerInforme" showAs="Nuevo Primer Informe de Comisión" name="NuevoPrimerInforme" href="http://datos.bcn.cl/ontologies/bcn-bills#NuevoPrimerInformeDeComision"/>
+<TLCReference id="docComunicacion" showAs="Comunicación" name="docComunicacion" href="http://datos.bcn.cl/ontologies/bcn-resources#Comunicacion"/>
+<TLCReference id="camaraConjunta" showAs="Cámara Conjunta" name="camaraConjunta" href="http://datos.bcn.cl/recurso/cl/organismo/camara-conjunta"/>
+<TLCReference id="Tercer-Tramite-Camara-de-Origen" showAs="Tercer Trámite Constitucional" name="Tercer-Tramite-Camara-de-Origen" href="http://datos.bcn.cl/ontologies/bcn-bills#TercerTramiteConstitucional"/>
+<TLCOrganization id="com35" showAs="comisión de salud de la cámara de diputados" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-salud-de-la-camara-de-diputados"/>
+<TLCOrganization id="com54" showAs="comisión de recursos hídricos y desertificación" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-recursos-hidricos-y-desertificacion"/>
+<TLCConcept id="AgrupSemanticoInformanteComision" showAs="Informante Comisión" href="http://datos.bcn.cl/ontologies/bcn-sessiondaily#InformanteComision"/>
+<TLCOrganization id="com42" showAs="comisión de trabajo y seguridad social" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-trabajo-y-seguridad-social"/>
+<TLCReference id="relacion6" showAs="Página Web" name="relacion6" href="http://datos.bcn.cl/recurso/editor/relacion/6"/>
+<TLCReference id="OficioDeLaCorteSupremaAComision" showAs="Oficio de la Corte Suprema a Comisión" name="OficioDeLaCorteSupremaAComision" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioDeLaCorteSupremaAComision"/>
+<TLCReference id="aFavor" showAs="A Favor" name="aFavor" href="http://datos.bcn.cl/ontologies/bcn-resources#aFavor"/>
+<TLCReference id="PresentacionProyectoDeAcuerdo" showAs="Presentación Proyecto de Acuerdo" name="PresentacionProyectoDeAcuerdo" href="http://datos.bcn.cl/ontologies/bcn-resources#PresentacionProyectoDeAcuerdo"/>
+<TLCConcept id="AgrupSemanticoAutorDocumento" showAs="Autor de un documento" href="http://purl.org/vocab/frbr/core#creator"/>
+<TLCOrganization id="com48" showAs="comisión de recursos naturales, bienes nacionales y medio ambiente" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-recursos-naturales_bienes-nacionales-y-medio-ambiente"/>
+<TLCReference id="editorIdOficioRechazoProyectoDeLey_Tramite" showAs="Oficio Rechazo Proyecto de Ley       " name="editorIdOficioRechazoProyectoDeLey_Tramite" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioRechazoProyectoDeLey"/>
+<TLCRole id="AgrupSemanticoInvitadosSesion" showAs="Invitado de la sesión" href="http://datos.bcn.cl/recurso/cl/cargo/326"/>
+<TLCReference id="OficioSolicitudArchivoDeProyecto" showAs="Oficio Solicitud Archivo " name="OficioSolicitudArchivoDeProyecto" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioSolicitudArchivo"/>
+<TLCOrganization id="com32" showAs="comisión de hacienda de la cámara de diputados" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-hacienda-de-la-camara-de-diputados"/>
+<TLCReference id="editorIdDiscusion_Tramite" showAs="Discusión" name="editorIdDiscusion_Tramite" href="http://datos.bcn.cl/ontologies/bcn-bills#Discusion"/>
+<TLCReference id="DiscusionInformeComisionMixta" showAs="Discusión Informe Comisión Mixta" name="DiscusionInformeComisionMixta" href="http://datos.bcn.cl/ontologies/bcn-bills#DiscusionInformeComisionMixta"/>
+<TLCReference id="totalVotosSeAbstiene" showAs="Total votos se abstiene" name="totalVotosSeAbstiene" href="http://datos.bcn.cl/ontologies/bcn-resources#totalVotosSeAbstiene"/>
+<TLCReference id="MocionParlamentaria" showAs="Moción Parlamentaria" name="MocionParlamentaria" href="http://datos.bcn.cl/ontologies/bcn-resources#MocionParlamentaria"/>
+<TLCReference id="DiscusionInformeComisionEspecialMixtaDePresupuesto" showAs="Discusión Informe Comisión Especial Mixta de Presupuesto" name="DiscusionInformeComisionEspecialMixtaDePresupuesto" href="http://datos.bcn.cl/ontologies/bcn-bills#DiscusionInformeComisionEspecialMixtaDePresupuesto"/>
+<TLCReference id="InformeInsistencia" showAs="Informe Insistencia                 " name="InformeInsistencia" href="http://datos.bcn.cl/ontologies/bcn-bills#InformeInsistencia"/>
+<TLCReference id="OficioObservacionesDelEjecutivo" showAs="Oficio Observaciones Del Ejecutivo" name="OficioObservacionesDelEjecutivo" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioObservacionesDelEjecutivo"/>
+<TLCReference id="VersionProyectoDeLey" showAs="Version Proyecto de Ley" name="VersionProyectoDeLey" href="http://datos.bcn.cl/ontologies/bcn-resources#VersionProyectoDeLey"/>
+<TLCReference id="SesionCuasiOrdinaria" showAs="Sesión cuasi ordinaria" name="SesionCuasiOrdinaria" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionCuasiOrdinaria"/>
+<TLCReference id="ProyectoDeResolucionTipoDoc" showAs="Proyecto de Resolución (Tipo Doc)" name="ProyectoDeResolucionTipoDoc" href="http://datos.bcn.cl/ontologies/bcn-resources#ProyectoDeResolucionTipoDoc"/>
+<TLCReference id="categoria8" showAs="OtrasNormas" name="categoria8" href="http://datos.bcn.cl/recurso/editor/categoria/8"/>
+<TLCReference id="resultadoDebate_seApruebanObservaciones" showAs="Se aprueban observaciones" name="resultadoDebate_seApruebanObservaciones" href="http://datos.bcn.cl/ontologies/bcn-resources#seApruebanObservaciones"/>
+<TLCOrganization id="com61" showAs="Comisión Investigadora sobre irregularidades cometidas en perjuicio de la Empresa Nacional, de la Cámara de Diputados" href="http://datos.bcn.cl/recurso/cl/organismo/comision-investigadora-6"/>
+<TLCReference id="SesionClausura" showAs="Sesión clausura" name="SesionClausura" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionClausura"/>
+<TLCConcept id="Pareo" showAs="Parlamentarios que se parean" href="http://datos.bcn.cl/ontologies/bcn-resources#Pareo"/>
+<TLCReference id="VotoDeCensura" showAs="Voto de Censura" name="VotoDeCensura" href="http://datos.bcn.cl/ontologies/bcn-resources#VotoDeCensura"/>
+<TLCReference id="relacion4" showAs="Mismo documento" name="relacion4" href="http://datos.bcn.cl/recurso/editor/relacion/4"/>
+<TLCReference id="resultadoDebate_seApruebaEnParticularConModificaciones" showAs="Se aprueba en particular con modificaciones" name="resultadoDebate_seApruebaEnParticularConModificaciones" href="http://datos.bcn.cl/ontologies/bcn-resources#seApruebaEnParticularConModificaciones"/>
+<TLCReference id="Oficio" showAs="Oficio" name="Oficio" href="http://datos.bcn.cl/ontologies/bcn-resources#Oficio"/>
+<TLCOrganization id="com73" showAs="Primera Subcomisión Especial Mixta de Presupuestos (Partidas 07 y 50)" href="http://datos.bcn.cl/recurso/cl/organismo/comision-especial-18"/>
+<TLCReference id="OficioAlTribunalConstitucional" showAs="Oficio al Tribunal Constitucional" name="OficioAlTribunalConstitucional" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioAlTribunalConstitucional"/>
+<TLCRole id="editorIdProsecretarioAccidentalSesion" showAs="Prosecretario accidental de sesión" href="http://datos.bcn.cl/recurso/cl/cargo/320"/>
+<TLCReference id="Permiso" showAs="Permiso" name="Permiso" href="http://datos.bcn.cl/ontologies/bcn-resources#Permiso"/>
+<TLCReference id="tieneEmisor" showAs="tiene emisor" name="tieneEmisor" href="http://datos.bcn.cl/ontologies/bcn-resources#tieneEmisor"/>
+<TLCOrganization id="com60" showAs="Comisión Investigadora sobre pérdidas incurridas por Codelco, de la Cámara de Diputados" href="http://datos.bcn.cl/recurso/cl/organismo/comision-investigadora-5"/>
+<TLCConcept id="AgrupSemanticoPermisosSimples" showAs="Permiso simple para inasistencia" href="http://datos.bcn.cl/ontologies/bcn-sessiondaily#PermisoSimpleInasistencia"/>
+<TLCRole id="editorIdMinistro" showAs="Ministro" href="http://datos.bcn.cl/recurso/cl/cargo/331"/>
+<TLCOrganization id="com53" showAs="comisión de régimen interno, comisión y reglamento" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-regimen-interno-administracion-y-reglamento"/>
+<TLCReference id="SesionOrdinaria1" showAs="Ordinary parliamentary session" name="SesionOrdinaria" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionOrdinaria"/>
+<TLCReference id="OficioAprobacionConModificaciones" showAs="Oficio Aprobación con Modificaciones " name="OficioAprobacionConModificaciones" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioAprobacionConModificaciones"/>
+<TLCReference id="InformeDePrimeraComisionLegislativa" showAs="Informe de Primera Comisión Legislativa" name="InformeDePrimeraComisionLegislativa" href="http://datos.bcn.cl/ontologies/bcn-bills#InformeDePrimeraComisionLegislativa"/>
+<TLCOrganization id="com63" showAs="Comisión Investigadora sobre Uso de recursos Ley sobre Subvención Escolar Preferencial, de la Cámara de Diputados" href="http://datos.bcn.cl/recurso/cl/organismo/comision-investigadora-8"/>
+<TLCConcept id="respPendiente" showAs="Respuesta oficio pendiente" href="http://datos.bcn.cl/ontologies/bcn-sessiondaily#respuestaOficioPendiente"/>
+<TLCReference id="OtroDocumento" showAs="Otro Documento" name="OtroDocumento" href="http://datos.bcn.cl/ontologies/bcn-resources#OtroDocumento"/>
+<TLCReference id="OficioDeCorteSuprema" showAs="Oficio de Corte Suprema" name="OficioDeCorteSuprema" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioDeCorteSuprema"/>
+<TLCOrganization id="com1" showAs="comisión de ciencia y tecnología" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-ciencia-y-tecnologia"/>
+<TLCReference id="IndicacionesDelEjecutivoYDeParlamentarios" showAs="Indicaciones del Ejecutivo y de Parlamentarios" name="IndicacionesDelEjecutivoYDeParlamentarios" href="http://datos.bcn.cl/ontologies/bcn-bills#IndicacionesDelEjecutivoYDeParlamentarios"/>
+<TLCReference id="normasOrdinarias" showAs="Normas ordinarias" name="normasOrdinarias" href="http://datos.bcn.cl/ontologies/bcn-resources#normasOrdinarias"/>
+<TLCReference id="OficioALaCorteSuprema" showAs="Oficio a La Corte Suprema" name="OficioALaCorteSuprema" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioALaCorteSuprema"/>
+<TLCReference id="editorIdInhabilitacion" showAs="Inhabilitación" name="editorIdInhabilitacion" href="http://datos.bcn.cl/ontologies/bcn-resources#Inhabilitacion"/>
+<TLCReference id="TipoDocumentoAcusacionConstitucional" showAs="Acusación Constitucional" name="TipoDocumentoAcusacionConstitucional" href="http://datos.bcn.cl/ontologies/bcn-resources#TipoDocumentoAcusacionConstitucional"/>
+<TLCReference id="documentoGenerico" showAs="Documento Genérico" name="documentoGenerico" href="http://xmlns.com/foaf/0.1/Document"/>
+<TLCReference id="AcusacionConstitucional" showAs="Acusación Constitucional" name="AcusacionConstitucional" href="http://datos.bcn.cl/ontologies/bcn-resources#AcusacionConstitucional"/>
+<TLCOrganization id="com13" showAs="comisión de educación, cultura, ciencia y tecnología" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-educacion_cultura_ciencia-y-tecnologia"/>
+<TLCReference id="aprobacionUnanime" showAs="Aprobación unánime" name="aprobacionUnanime" href="http://datos.bcn.cl/ontologies/bcn-resources#aprobacionUnanime"/>
+<TLCReference id="Juramento" showAs="Juramento" name="Juramento" href="http://datos.bcn.cl/ontologies/bcn-resources#Juramento"/>
+<TLCReference id="Presentacion" showAs="Presentación" name="Presentacion" href="http://datos.bcn.cl/ontologies/bcn-resources#Presentacion"/>
+<TLCReference id="DiscusionLeyDePresupuestos_CamaraDeDiputados" showAs="Discusión Ley de Presupuestos: Cámara de Diputados" name="DiscusionLeyDePresupuestos:CamaraDeDiputados" href="http://datos.bcn.cl/ontologies/bcn-bills#DiscusionLeyDePresupuestos:CamaraDeDiputados"/>
+<TLCOrganization id="com56" showAs="Comisión Investigadora sobre denuncias de fraude en el Gobierno Regional de Valparaíso de la Cámara de Diputados" href="http://datos.bcn.cl/recurso/cl/organismo/comision-investigadora-1"/>
+<TLCReference id="editorIdInformeComplementario_Tramite" showAs="Informe Complementario" name="editorIdInformeComplementario_Tramite" href="http://datos.bcn.cl/ontologies/bcn-bills#InformeComplementario"/>
+<TLCReference id="Indicacion" showAs="Indicación" name="Indicacion" href="http://datos.bcn.cl/ontologies/bcn-resources#Indicacion"/>
+<TLCReference id="InformePrimeraSubcomisionEspecialMixtaDePresupuestos" showAs="Informe Primera Subcomisión Especial Mixta de Presupuestos" name="InformePrimeraSubcomisionEspecialMixtaDePresupuestos" href="http://datos.bcn.cl/ontologies/bcn-bills#InformePrimeraSubcomisionEspecialMixtaDePresupuestos"/>
+<TLCReference id="senado" showAs="Senado" name="senado" href="http://datos.bcn.cl/recurso/cl/organismo/senado"/>
+<TLCRole id="editorIdPresidenteDeLaRepublica" showAs="Presidente De La República" href="http://datos.bcn.cl/recurso/cl/cargo/15"/>
+<TLCReference id="normasDeQuorumCalificado" showAs="Normas de quorum calificado" name="normasDeQuorumCalificado" href="http://datos.bcn.cl/ontologies/bcn-resources#normasDeQuorumCalificado"/>
+<TLCReference id="resultadoDebate_seApruebaModificaciones" showAs="Se aprueban modificaciones" name="resultadoDebate_seApruebaModificaciones" href="http://datos.bcn.cl/ontologies/bcn-resources#seApruebanModificaciones"/>
+<TLCOrganization id="com20" showAs="comisión de gobierno interior y regionalización" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-gobierno-interior-y-regionalizacion"/>
+<TLCConcept id="tipoLegislatura" showAs="Legislatura" href="http://datos.bcn.cl/ontologies/bcn-congress#Legislatura"/>
+<TLCOrganization id="com29" showAs="comisión de educación, deportes y recreación" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-educacion_deportes-y-recreacion"/>
+<TLCReference id="relacionadoCon" showAs="Relacionado por tema" name="relacionadoCon" href="http://datos.bcn.cl/ontologies/bcn-resources#relacionadoCon"/>
+<TLCReference id="AntecedentesDelRelator" showAs="Antecedentes del Relator" name="AntecedentesDelRelator" href="http://datos.bcn.cl/ontologies/bcn-bills#AntecedentesDelRelator"/>
+<TLCRole id="editorIdPresidenteDeLaCamara" showAs="Presidente de la Cámara de Diputados" href="http://datos.bcn.cl/recurso/cl/cargo/3"/>
+<TLCOrganization id="com62" showAs="Comisión Investigadora sobre compras de tierras para personas y comunidades indígenas, de la Cámara de Diputados" href="http://datos.bcn.cl/recurso/cl/organismo/comision-investigadora-7"/>
+<TLCOrganization id="com28" showAs="comisión de minería y energía del senado" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-mineria-y-energia-del-senado"/>
+<TLCReference id="congresoPleno" showAs="Congreso Pleno" name="congresoPleno" href="http://datos.bcn.cl/recurso/cl/organismo/congreso-pleno"/>
+<TLCOrganization id="com59" showAs="Comisión Investigadora del conflicto entre accionistas de la empresa SOQUIMICH, de la Cámara de Diputados" href="http://datos.bcn.cl/recurso/cl/organismo/comision-investigadora-4"/>
+<TLCReference id="resultadoDebate_seApruebaEnGeneralYParticular" showAs="Se aprueba en general y particular" name="resultadoDebate_seApruebaEnGeneralYParticular" href="http://datos.bcn.cl/ontologies/bcn-resources#seApruebaEnGeneralYParticular"/>
+<TLCReference id="editorIdBoletinIndicaciones_Tramite" showAs="Boletín Indicaciones" name="editorIdBoletinIndicaciones_Tramite" href="http://datos.bcn.cl/ontologies/bcn-bills#BoletinIndicaciones"/>
+<TLCReference id="InformeDeComisionEspecialMixtaDePresupuestos" showAs="Informe de Comisión Especial Mixta de Presupuestos" name="InformeDeComisionEspecialMixtaDePresupuestos" href="http://datos.bcn.cl/ontologies/bcn-bills#InformeDeComisionEspecialMixtaDePresupuestos"/>
+<TLCReference id="Cuenta" showAs="Cuenta" name="Cuenta" href="http://datos.bcn.cl/ontologies/bcn-resources#Cuenta"/>
+<TLCOrganization id="com80" showAs="Comisión Especial de Deportes" href="http://datos.bcn.cl/recurso/cl/organismo/comision-especial-de-deportes-de-la-camara-de-diputados"/>
+<TLCReference id="InformeCuartaSubcomisionEspecialMixtaDePresupuestos" showAs="Informe Cuarta Subcomisión Especial Mixta de Presupuestos" name="InformeCuartaSubcomisionEspecialMixtaDePresupuestos" href="http://datos.bcn.cl/ontologies/bcn-bills#InformeCuartaSubcomisionEspecialMixtaDePresupuestos"/>
+<TLCOrganization id="com33" showAs="comisión de vivienda y urbanismo" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-vivienda-y-urbanismo"/>
+<TLCReference id="Proclamacion" showAs="Proclamación" name="Proclamacion" href="http://datos.bcn.cl/ontologies/bcn-resources#Proclamacion"/>
+<TLCReference id="SesionReunionSolemne1" showAs="Parliamentary meeing" name="SesionReunionSolemne" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionReunionSolemne"/>
+<TLCReference id="OficioDeExamenDeConstitucionalidad" showAs="Oficio de examen de Constitucionalidad" name="OficioDeExamenDeConstitucionalidad" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioDeExamenDeConstitucionalidad"/>
+<TLCReference id="SesionConjuntaComisionesLegislativas" showAs="Sesión Conjunta Comisiones Legislativas" name="SesionConjuntaComisionesLegislativas" href="http://datos.bcn.cl/ontologies/bcn-bills#SesionConjuntaComisionesLegislativas"/>
+<TLCOrganization id="com4" showAs="comisión de derechos humanos, nacionalidad y ciudadanía de la cámara de diputados" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-derechos-humanos_nacionalidad-y-ciudadania-de-la-camara-de-diputados"/>
+<TLCReference id="SesionConjunta" showAs="Sesión conjunta" name="SesionConjunta" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionConjunta"/>
+<TLCOrganization id="com66" showAs="Comisión Especial encargada de conocer proyectos relativos a probidad y transparencia del Senado" href="http://datos.bcn.cl/recurso/cl/organismo/comision-especial-11"/>
+<TLCReference id="OficioDelTribunalConstitucional" showAs="Oficio del Tribunal Constitucional" name="OficioDelTribunalConstitucional" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioDelTribunalConstitucional"/>
+<TLCReference id="Resumen" showAs="Resumen" name="Resumen" href="http://datos.bcn.cl/ontologies/bcn-resources#Resumen"/>
+<TLCOrganization id="com72" showAs="Quinta Subcomisión Especial Mixta de Presupuestos" href="http://datos.bcn.cl/recurso/cl/organismo/comision-especial-17"/>
+<TLCReference id="totalVotosAFavor" showAs="Total votos a favor" name="totalVotosAFavor" href="http://datos.bcn.cl/ontologies/bcn-resources#totalVotosAFavor"/>
+<TLCReference id="DiarioDeSesion" showAs="Diario de Sesión" name="DiarioDeSesion" href="http://datos.bcn.cl/ontologies/bcn-resources#DiarioDeSesion"/>
+<TLCReference id="MocionesRefundidas" showAs="Mociones Refundidas        " name="MocionesRefundidas" href="http://datos.bcn.cl/ontologies/bcn-bills#MocionesRefundidas"/>
+<TLCReference id="Urgencia" showAs="Urgencia" name="Urgencia" href="http://datos.bcn.cl/ontologies/bcn-resources#Urgencia"/>
+<TLCReference id="DiscusionLeyDePresupuestos" showAs="Discusión ley de presupuestos" name="DiscusionLeyDePresupuestos" href="http://datos.bcn.cl/ontologies/bcn-resources#DiscusionLeyDePresupuestos"/>
+<TLCOrganization id="com75" showAs="Segunda Subcomisión Especial Mixta de Presupuestos" href="http://datos.bcn.cl/recurso/cl/organismo/comision-especial-20"/>
+<TLCOrganization id="com74" showAs="Primera Subcomisión Especial Mixta de Presupuestos (Partidas 08 y 21 )" href="http://datos.bcn.cl/recurso/cl/organismo/comision-especial-19"/>
+<TLCReference id="LegislaturaExtraordinaria" showAs="Legislatura extraordinaria" name="LegislaturaExtraordinaria" href="http://datos.bcn.cl/ontologies/bcn-congress#LegislaturaExtraordinaria"/>
+<TLCReference id="Segundo-Tramite-Camara-Revisora" showAs="Segundo Trámite Constitucional" name="Segundo-Tramite-Camara-Revisora" href="http://datos.bcn.cl/ontologies/bcn-bills#SegundoTramiteConstitucional"/>
+<TLCOrganization id="com34" showAs="comisión de gobierno, descentralización y regionalización" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-gobierno_descentralizacion-y-regionalizacion"/>
+<TLCReference id="MocionRechazada" showAs="Moción Rechazada" name="MocionRechazada" href="http://datos.bcn.cl/ontologies/bcn-resources#MocionRechazada"/>
+<TLCOrganization id="com14" showAs="comisión de desafíos del futuro" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-desafios-del-futuro"/>
+<TLCOrganization id="com7" showAs="comisión de cultura y las artes" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-cultura-y-las-artes"/>
+<TLCReference id="Mocion" showAs="Moción" name="Mocion" href="http://datos.bcn.cl/ontologies/bcn-resources#Mocion"/>
+<TLCReference id="Certificado" showAs="Certificado" name="Certificado" href="http://datos.bcn.cl/ontologies/bcn-bills#Certificado"/>
+<TLCReference id="TramiteDeInsistenciaRechazoGeneral" showAs="Trámite de Insistencia Rechazo General" name="TramiteDeInsistenciaRechazoGeneral" href="http://datos.bcn.cl/ontologies/bcn-bills#TramiteDeInsistenciaRechazoGeneral"/>
+<TLCReference id="IndicacionEjecutivo" showAs="Indicaciones del Ejecutivo" name="IndicacionEjecutivo" href="http://datos.bcn.cl/ontologies/bcn-bills#IndicacionesDelEjecutivo"/>
+<TLCReference id="OficioAprobacionInsistencia" showAs="Oficio Aprobación Insistencia       " name="OficioAprobacionInsistencia" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioAprobacionInsistencia"/>
+<TLCReference id="seInhabilita" showAs="Se inhabilita" name="seInhabilita" href="http://datos.bcn.cl/ontologies/bcn-resources#seInhabilita"/>
+<TLCReference id="refundeA" showAs="Refundido con" name="refundeA" href="http://datos.bcn.cl/ontologies/bcn-resources#refundeA"/>
+<TLCReference id="Informe" showAs="Informe" name="Informe" href="http://datos.bcn.cl/ontologies/bcn-resources#Informe"/>
+<TLCReference id="MensajeDelEjecutivoRefundido1" showAs="Mensaje del Ejecutivo refundido" name="MensajeDelEjecutivoRefundido" href="http://datos.bcn.cl/ontologies/bcn-bills#MensajeDelEjecutivoRefundido"/>
+<TLCReference id="InformeQuintaSubcomisionEspecialMixtaDePresupuestos" showAs="Informe Quinta Subcomisión Especial Mixta de Presupuestos" name="InformeQuintaSubcomisionEspecialMixtaDePresupuestos" href="http://datos.bcn.cl/ontologies/bcn-bills#InformeQuintaSubcomisionEspecialMixtaDePresupuestos"/>
+<TLCOrganization id="com6" showAs="comisión de constitución, legislación, justicia y reglamento" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-constitucion_legislacion_justicia-y-reglamento"/>
+<TLCReference id="RespuestaOficio" showAs="Respuesta oficio" name="RespuestaOficio" href="http://datos.bcn.cl/ontologies/bcn-resources#RespuestaOficio"/>
+<TLCReference id="resultadoDebate_seApruebaEnGeneralYParticularConModificaciones" showAs="Se aprueba en general y particular con modificaciones" name="resultadoDebate_seApruebaEnGeneralYParticularConModificaciones" href="http://datos.bcn.cl/ontologies/bcn-resources#seApruebaEnGeneralYParticularConModificaciones"/>
+<TLCReference id="AcuerdosDeComite" showAs="Acuerdos de Comité" name="AcuerdosDeComite" href="http://datos.bcn.cl/ontologies/bcn-resources#AcuerdosDeComite"/>
+<TLCRole id="AgrupSemanticoVicePresidenteDS" showAs="Vicepresidente de la sesión" href="http://datos.bcn.cl/recurso/cl/cargo/323"/>
+<TLCReference id="OficioInsistenciaACamaraRevisora" showAs="Oficio Insistencia a Cámara Revisora" name="OficioInsistenciaACamaraRevisora" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioInsistenciaACamaraRevisora"/>
+<TLCReference id="enContra" showAs="En Contra" name="enContra" href="http://datos.bcn.cl/ontologies/bcn-resources#enContra"/>
+<TLCOrganization id="com51" showAs="Comisión de Intereses Marítimos, Pesca y Acuicultura del Senado" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-intereses-maritimos-pesca-y-acuicultura"/>
+<TLCReference id="DiscusionGeneralYParticular" showAs="Discusión General y Particular " name="DiscusionGeneralYParticular" href="http://datos.bcn.cl/ontologies/bcn-bills#DiscusionGeneralYParticular"/>
+<TLCReference id="metadato4" showAs="Nota al pie" name="metadato4" href="http://datos.bcn.cl/recurso/metadato/4"/>
+<TLCReference id="InformeTecnico" showAs="Informe Técnico" name="InformeTecnico" href="http://datos.bcn.cl/ontologies/bcn-bills#InformeTecnico"/>
+<TLCReference id="InformeTerceraSubcomisionEspecialMixtaDePresupuestos" showAs="Informe Tercera Subcomisión Especial Mixta de Presupuestos" name="InformeTerceraSubcomisionEspecialMixtaDePresupuestos" href="http://datos.bcn.cl/ontologies/bcn-bills#InformeTerceraSubcomisionEspecialMixtaDePresupuestos"/>
+<TLCReference id="seApruebaAlgunasRechazanOtras" showAs="Se aprueban algunas y se rechazan otras" name="seApruebaAlgunasRechazanOtras" href="http://datos.bcn.cl/ontologies/bcn-resources#seApruebaAlgunasRechazanOtras"/>
+<TLCReference id="RatificacionReformaConstitucional" showAs="Ratificación Reforma Constitucional" name="RatificacionReformaConstitucional" href="http://datos.bcn.cl/ontologies/bcn-bills#TramiteRatificacionReformaConstitucional"/>
+<TLCOrganization id="com25" showAs="comisión de minería y energía de la cámara de diputados" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-mineria-y-energia-de-la-camara-de-diputados"/>
+<TLCReference id="AsistenciaSesionDeSala" showAs="Asistencia a sesión de sala" name="AsistenciaSesionDeSala" href="http://datos.bcn.cl/ontologies/bcn-resources#AsistenciaSesionDeSala"/>
+<TLCReference id="Tramite-Insistencia-Rechazo-Modificaciones" showAs="Trámite Insistencia Rechazo Modificaciones" name="Tramite-Insistencia-Rechazo-Modificaciones" href="http://datos.bcn.cl/ontologies/bcn-bills#TramiteInsistenciaRechazoModificaciones"/>
+<TLCReference id="nulo" showAs="null" name="nulo" href="http://datos.bcn.cl/recurso/nulo"/>
+<TLCReference id="Intervencion" showAs="Intervención" name="Intervencion" href="http://datos.bcn.cl/ontologies/bcn-resources#Intervencion"/>
+<TLCReference id="DiscusionLeyDePresupuestos_Senado" showAs="Discusión Ley de Presupuestos: Senado" name="DiscusionLeyDePresupuestos:Senado" href="http://datos.bcn.cl/ontologies/bcn-bills#DiscusionLeyDePresupuestos:Senado"/>
+<TLCReference id="metadato7" showAs="Documento solo uso interno" name="metadato7" href="http://datos.bcn.cl/recurso/metadato/7"/>
+<TLCReference id="x652514" showAs="652514" name="652514" href="http://datos.bcn.cl/ontologies/bcn-resources#652514"/>
+<TLCOrganization id="com69" showAs="Comisión Especial sobre Recursos Hídricos, Desertificación y Sequía del Senado" href="http://datos.bcn.cl/recurso/cl/organismo/comision-especial-14"/>
+<TLCReference id="AcusacionConstitucional1" showAs="Acusación constitucional" name="AcusacionConstitucional" href="http://datos.bcn.cl/ontologies/bcn-resources#AcusacionConstitucional"/>
+<TLCOrganization id="com5" showAs="comisión de hacienda del senado" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-hacienda-del-senado"/>
+<TLCOrganization id="com18" showAs="comisión de agricultura, silvicultura y desarrollo rural" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-agricultura_silvicultura-y-desarrollo-rural"/>
+<TLCConcept id="SolicitudDePatrocinioConstitucional" showAs="Solicitud de Patrocinio Constitucional" href="http://datos.bcn.cl/ontologies/bcn-resources#SolicitudDePatrocinioConstitucional"/>
+<TLCOrganization id="com12" showAs="comisión de defensa nacional del senado" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-defensa-nacional-del-senado"/>
+<TLCRole id="editorIdSSecretarioComisionParlamentaria" showAs="Secretario de comisión parlamentaria" href="http://datos.bcn.cl/recurso/cl/cargo/329"/>
+<TLCReference id="OficioIntegrantesComisionMixta" showAs="Oficio integrantes Comisión Mixta" name="OficioIntegrantesComisionMixta" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioIntegrantesComisionMixta"/>
+<TLCReference id="resultadoDebate_seApruebaEnParticularSinModificaciones" showAs="Se aprueba en particular sin modificaciones" name="resultadoDebate_seApruebaEnParticularSinModificaciones" href="http://datos.bcn.cl/ontologies/bcn-resources#seApruebaEnParticularSinModificaciones"/>
+<TLCReference id="Adhesion" showAs="Adhesion" name="Adhesion" href="http://datos.bcn.cl/ontologies/bcn-resources#Adhesion"/>
+<TLCReference id="SesionInstalacion" showAs="installation parliamentary session" name="SesionInstalacion" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionInstalacion"/>
+<TLCOrganization id="com71" showAs="Comisión Especial sobre contaminación ambiental en las zonas Centro y Sur del país del Senado" href="http://datos.bcn.cl/recurso/cl/organismo/comision-especial-16"/>
+<TLCRole id="editorIdDiputadoInformante" showAs="Diputado informante" href="http://datos.bcn.cl/recurso/cl/cargo/330"/>
+<TLCReference id="SesionCongresoPleno1" showAs="Full congress parliamentary session" name="SesionCongresoPleno" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionCongresoPleno"/>
+<TLCReference id="LegislaturaOrdinaria" showAs="Legislatura ordinaria" name="LegislaturaOrdinaria" href="http://datos.bcn.cl/ontologies/bcn-congress#LegislaturaOrdinaria"/>
+<TLCReference id="OficioAprobacionDeModificaciones" showAs="Oficio Aprobación de Modificaciones" name="OficioAprobacionDeModificaciones" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioAprobacionDeModificaciones"/>
+<TLCOrganization id="com10" showAs="comisión de defensa nacional de la cámara de diputados" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-defensa-nacional-de-la-camara-de-diputados"/>
+<TLCReference id="InformeComisionInvestigadora" showAs="Informe Comisión Investigadora" name="InformeComisionInvestigadora" href="http://datos.bcn.cl/ontologies/bcn-resources#InformeComisionInvestigadora"/>
+<TLCConcept id="AgrupSemanticoIntervencion" showAs="Intervencion en informe" href="http://datos.bcn.cl/ontologies/bcn-sessiondaily#IntervencionEnInforme"/>
+<TLCReference id="seAbstiene" showAs="Se Abstiene" name="seAbstiene" href="http://datos.bcn.cl/ontologies/bcn-resources#seAbstiene"/>
+<TLCReference id="resultadoDebate_seAprueba" showAs="Se aprueba" name="resultadoDebate_seAprueba" href="http://datos.bcn.cl/ontologies/bcn-resources#seAprueba"/>
+<TLCReference id="rechazoUnanime" showAs="Rechazo unánime" name="rechazoUnanime" href="http://datos.bcn.cl/ontologies/bcn-resources#rechazoUnanime"/>
+<TLCReference id="ProyectoDeResolucion" showAs="Proyecto de Resolución" name="ProyectoDeResolucion" href="http://datos.bcn.cl/ontologies/bcn-resources#ProyectoDeResolucion"/>
+<TLCReference id="InformeComplementario1" showAs="Informe Complementario" name="InformeComplementario" href="http://datos.bcn.cl/ontologies/bcn-resources#InformeComplementario"/>
+<TLCReference id="Nombramiento" showAs="Nombramiento" name="Nombramiento" href="http://datos.bcn.cl/ontologies/bcn-resources#Nombramiento"/>
+<TLCReference id="SesionPreparatoria" showAs="Sesión preparatoria" name="SesionPreparatoria" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionPreparatoria"/>
+<TLCReference id="relacion1" showAs="Enlace a otra entidad u organismo" name="relacion1" href="http://datos.bcn.cl/recurso/editor/relacion/1"/>
+<TLCReference id="InformeSecretariaDeLegislacion" showAs="Informe Secretaría de Legislación" name="InformeSecretariaDeLegislacion" href="http://datos.bcn.cl/ontologies/bcn-bills#InformeSecretariaDeLegislacion"/>
+<TLCOrganization id="com9" showAs="comisión de ética y transparencia" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-etica-y-transparencia"/>
+<TLCReference id="SesionInstalacion1" showAs="Sesión parlamentaria de instalación" name="SesionInstalacion" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionInstalacion"/>
+<TLCReference id="OficioLeyAS.e.LaPresidentaDeLaRepublica" showAs="Oficio Ley a S.E. La Presidenta de la República" name="OficioLeyAS.e.LaPresidentaDeLaRepublica" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioLeyAS.e.LaPresidentaDeLaRepublica"/>
+<TLCReference id="OficioSolicitudDesarchivoDeProyecto" showAs="Oficio Solicitud Desarchivo" name="OficioSolicitudDesarchivoDeProyecto" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioSolicitudDesarchivo"/>
+<TLCReference id="InformeObservaciones" showAs="Informe Observaciones" name="InformeObservaciones" href="http://datos.bcn.cl/ontologies/bcn-bills#InformeObservaciones"/>
+<TLCReference id="TramiteInsistenciaRechazoModificacionesSenado" showAs="Trámite Insistencia Rechazo Modificaciones: Senado" name="TramiteInsistenciaRechazoModificacionesSenado" href="http://datos.bcn.cl/ontologies/bcn-bills#TramiteInsistenciaRechazoModificacionesSenado"/>
+<TLCReference id="DiscusionGeneral" showAs="Discusión General" name="DiscusionGeneral" href="http://datos.bcn.cl/ontologies/bcn-bills#DiscusionGeneral"/>
+<TLCReference id="TramiteInsistenciaRechazoModificacionesCamaraDeDiputados" showAs="Trámite Insistencia Rechazo Modificaciones: Cámara de Diputados" name="TramiteInsistenciaRechazoModificacionesCamaraDeDiputados" href="http://datos.bcn.cl/ontologies/bcn-bills#TramiteInsistenciaRechazoModificacionesCamaraDeDiputados"/>
+<TLCOrganization id="com43" showAs="comisión de obras públicas" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-obras-publicas"/>
+<TLCReference id="relacion7" showAs="Imágen" name="relacion7" href="http://datos.bcn.cl/recurso/editor/relacion/7"/>
+<TLCConcept id="numero" showAs="número" href="http://datos.bcn.cl/ontologies/bcn-congress#numero"/>
+<TLCReference id="AutorAcusacionConstitucional" showAs="Autor Acusación Constitucional" name="AutorAcusacionConstitucional" href="http://datos.bcn.cl/ontologies/bcn-resources#AutorAcusacionConstitucional"/>
+<TLCReference id="camaraDeDiputados" showAs="Cámara de Diputados" name="camaraDeDiputados" href="http://datos.bcn.cl/recurso/cl/organismo/camara-de-diputados"/>
+<TLCReference id="SolicitudALaSala" showAs="Solicitud a la sala" name="SolicitudALaSala" href="http://datos.bcn.cl/ontologies/bcn-resources#SolicitudALaSala"/>
+<TLCConcept id="tipoLegislatura1" showAs="Legislature" href="http://datos.bcn.cl/ontologies/bcn-congress#Legislatura"/>
+<TLCOrganization id="com58" showAs="Comisión Investigadora sobre denuncias de robo en la División El Salvador de Codelco, de la Cámara de Diputados" href="http://datos.bcn.cl/recurso/cl/organismo/comision-investigadora-3"/>
+<TLCReference id="InformeSegundaSubcomisionEspecialMixtaDePresupuestos" showAs="Informe Segunda Subcomisión Especial Mixta de Presupuestos" name="InformeSegundaSubcomisionEspecialMixtaDePresupuestos" href="http://datos.bcn.cl/ontologies/bcn-bills#InformeSegundaSubcomisionEspecialMixtaDePresupuestos"/>
+<TLCReference id="DiscusionInsistencia" showAs="Discusión Insistencia               " name="DiscusionInsistencia" href="http://datos.bcn.cl/ontologies/bcn-bills#DiscusionInsistencia"/>
+<TLCConcept id="numero1" showAs="number" href="http://datos.bcn.cl/ontologies/bcn-congress#numero"/>
+<TLCReference id="orden" showAs="Orden" name="orden" href="http://datos.bcn.cl/recurso/metadato/5"/>
+<TLCReference id="SentenciaDelTribunalConstitucional" showAs="Sentencia del Tribunal Constitucional" name="SentenciaDelTribunalConstitucional" href="http://datos.bcn.cl/ontologies/bcn-bills#SentenciaDelTribunalConstitucional"/>
+<TLCReference id="categoria1" showAs="Páginas Web BCN" name="categoria1" href="http://datos.bcn.cl/recurso/editor/categoria/1"/>
+<TLCReference id="OficioRechazoObservaciones" showAs="Oficio Rechazo Observaciones" name="OficioRechazoObservaciones" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioRechazoObservaciones"/>
+<TLCReference id="IngresoProyectoDeLey" showAs="Ingreso Proyecto de Ley" name="IngresoProyectoDeLey" href="http://datos.bcn.cl/ontologies/bcn-bills#IngresoProyectoDeLey"/>
+<TLCReference id="AutorDeInformeDeDelegacionParlamentaria" showAs="Autor de Informe de Delegación Parlamentaria" name="AutorDeInformeDeDelegacionParlamentaria" href="http://datos.bcn.cl/ontologies/bcn-resources#AutorDeInformeDeDelegacionParlamentaria"/>
+<TLCReference id="EnmiendasVersionProyectoDeLey" showAs="Enmiendas Versión Proyecto de Ley" name="EnmiendasVersionProyectoDeLey" href="http://datos.bcn.cl/ontologies/bcn-resources#EnmiendasVersionProyectoDeLey"/>
+<TLCRole id="AgrupSemanticoSecretarioDS" showAs="Secretario de la sesión" href="http://datos.bcn.cl/recurso/cl/cargo/321"/>
+<TLCReference id="OficioRechazoInformeComisionMixta" showAs="Oficio Rechazo Informe Comisión Mixta" name="OficioRechazoInformeComisionMixta" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioRechazoInformeComisionMixta"/>
+<TLCOrganization id="com45" showAs="comisión de especial sobre emergencia y reconstrucción" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-especial-sobre-emergencia-y-reconstruccion"/>
+<TLCReference id="OficioAS.e.ElPresidenteDeLaRepublica" showAs="Oficio a S.E. El Presidente de la República" name="OficioAS.e.ElPresidenteDeLaRepublica" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioAS.e.ElPresidenteDeLaRepublica"/>
+<TLCRole id="AgrupSemanticoProsecretarioDS" showAs="Prosecretario de la sesión" href="http://datos.bcn.cl/recurso/cl/cargo/325"/>
+<TLCOrganization id="com78" showAs="Comisiones Unidas" href="http://datos.bcn.cl/recurso/cl/organismo/comisiones-unidas"/>
+<TLCReference id="SesionSecreta1" showAs="Sesión parlamentaria secreta" name="SesionSecreta" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionSecreta"/>
+<TLCConcept id="AgrupSemanticoAutorParte" showAs="Agrupador semántico - autor de una parte" href="http://datos.bcn.cl/ontologies/bcn-resources#tieneAutor"/>
+<TLCReference id="categoria4" showAs="Páginas Web  Otras entidades" name="categoria4" href="http://datos.bcn.cl/recurso/editor/categoria/4"/>
+<TLCReference id="editorIdAsistenciaASesionComision" showAs="Asistencia a Sesión de comisión" name="editorIdAsistenciaASesionComision" href="http://datos.bcn.cl/ontologies/bcn-resources#AsistenciaEnComision"/>
+<TLCReference id="TramiteVetoPresidencialSenado" showAs="Trámite Veto Presidencial: Senado" name="TramiteVetoPresidencialSenado" href="http://datos.bcn.cl/ontologies/bcn-bills#TramiteVetoPresidencialSenado"/>
+<TLCReference id="DiscusionLeyDePresupuesto" showAs="Discusión Ley de Presupuesto" name="DiscusionLeyDePresupuesto" href="http://datos.bcn.cl/ontologies/bcn-bills#DiscusionLeyDePresupuesto"/>
+<TLCReference id="SesionExtraordinaria1" showAs="Sesión parlamentaria extraordinaria" name="SesionExtraordinaria" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionExtraordinaria"/>
+<TLCReference id="Tramite-Insistencia-Rechazo-General" showAs="Trámite Insistencia Rechazo General" name="Tramite-Insistencia-Rechazo-General" href="http://datos.bcn.cl/ontologies/bcn-bills#TramiteInsistenciaRechazoGeneral"/>
+<TLCReference id="RequerimientoAlTribunalConstitucional" showAs="Requerimiento al Tribunal Constitucional" name="RequerimientoAlTribunalConstitucional" href="http://datos.bcn.cl/ontologies/bcn-bills#RequerimientoAlTribunalConstitucional"/>
+<TLCReference id="OficioLeyACamaraRevisora" showAs="Oficio de Ley a Cámara Revisora" name="OficioLeyACamaraRevisora" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioDeLeyACamaraRevisora"/>
+<TLCReference id="OficioDeclaraInadmisibilidadDelProyecto" showAs="Oficio declara inadmisibilidad del proyecto" name="OficioDeclaraInadmisibilidadDelProyecto" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioDeclaraInadmisibilidadDelProyecto"/>
+<TLCRole id="AgrupSemanticoPresidentesCom" showAs="Presidente de comisión parlamentaria" href="http://datos.bcn.cl/recurso/cl/cargo/327"/>
+<TLCReference id="resultadoDebate_seRechazanObservaciones" showAs="Se rechazan observaciones" name="resultadoDebate_seRechazanObservaciones" href="http://datos.bcn.cl/ontologies/bcn-resources#seRechazanObservaciones"/>
+<TLCReference id="ObservacionesDelEjecutivo" showAs="Observaciones del Ejecutivo" name="ObservacionesDelEjecutivo" href="http://datos.bcn.cl/ontologies/bcn-resources#ObservacionesDelEjecutivo"/>
+<TLCOrganization id="com22" showAs="comisión de agricultura" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-agricultura"/>
+<TLCReference id="resultadoDebate_seApruebaEnParticular" showAs="Se aprueba en particular" name="resultadoDebate_seApruebaEnParticular" href="http://datos.bcn.cl/ontologies/bcn-resources#seApruebaEnParticular"/>
+<TLCReference id="subcategoria6" showAs="Decretos Leyes" name="subcategoria6" href="http://datos.bcn.cl/recurso/editor/subcategoria/6"/>
+<TLCReference id="normasDeReformaConstitucional" showAs="Normas de reforma constitucional" name="normasDeReformaConstitucional" href="http://datos.bcn.cl/ontologies/bcn-resources#normasDeReformaConstitucional"/>
+<TLCOrganization id="com30" showAs="comisión de transportes y telecomunicaciones" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-transportes-y-telecomunicaciones"/>
+<TLCReference id="CertificadoComision" showAs="Certificado Comisión" name="CertificadoComision" href="http://datos.bcn.cl/ontologies/bcn-resources#CertificadoComision"/>
+<TLCOrganization id="com79" showAs="Comisión Especial de la Discapacidad y el Adulto Mayor" href="http://datos.bcn.cl/recurso/cl/organismo/comision-especial-de-la-discapacidad-y-el-adulto-mayor-del-senado"/>
+<TLCReference id="relacion2" showAs="Jurisprudencia" name="relacion2" href="http://datos.bcn.cl/recurso/editor/relacion/2"/>
+<TLCConcept id="AgrupSemanticoPermisoConstiucional" showAs="Permiso constitucional para inasistencia" href="http://datos.bcn.cl/ontologies/bcn-sessiondaily#PermisoConstitucionalInasistencia"/>
+<TLCOrganization id="com77" showAs="Cuarta Subcomisión Especial Mixta de Presupuestos" href="http://datos.bcn.cl/recurso/cl/organismo/comision-especial-22"/>
+<TLCReference id="PresentacionDeProyectoDeResolucion" showAs="Presentación de Proyecto de Resolución" name="PresentacionDeProyectoDeResolucion" href="http://datos.bcn.cl/ontologies/bcn-resources#PresentacionDeProyectoDeResolucion"/>
+<TLCReference id="Tramite-Comision-Mixta" showAs="Trámite Comisión Mixta" name="Tramite-Comision-Mixta" href="http://datos.bcn.cl/ontologies/bcn-bills#TramiteComisionMixta"/>
+<TLCReference id="IndicacionSustitutiva" showAs="Indicación Sustitutiva del Ejecutivo" name="IndicacionSustitutiva" href="http://datos.bcn.cl/ontologies/bcn-bills#IndicacionSustitutivaDelEjecutivo"/>
+<TLCReference id="tieneReceptor" showAs="tiene receptor" name="tieneReceptor" href="http://datos.bcn.cl/ontologies/bcn-resources#tieneReceptor"/>
+<TLCReference id="SesionPedida" showAs="Sesión pedida" name="SesionPedida" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionPedida"/>
+<TLCReference id="Renuncia" showAs="Renuncia" name="Renuncia" href="http://datos.bcn.cl/ontologies/bcn-resources#Renuncia"/>
+<TLCReference id="Tramite-Tribunal-Constitucional" showAs="Trámite Tribunal Constitucional" name="Tramite-Tribunal-Constitucional" href="http://datos.bcn.cl/ontologies/bcn-bills#TramiteTribunalConstitucional"/>
+<TLCReference id="RequerimientoDelTribunalConstitucional" showAs="Requerimiento del Tribunal Constitucional" name="RequerimientoDelTribunalConstitucional" href="http://datos.bcn.cl/ontologies/bcn-bills#RequerimientoDelTribunalConstitucional"/>
+<TLCOrganization id="com8" showAs="comisión de derechos humanos, nacionalidad y ciudadanía del senado" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-derechos-humanos_nacionalidad-y-ciudadania-del-senado"/>
+<TLCReference id="DiscusionParticular" showAs="Discusión Particular" name="DiscusionParticular" href="http://datos.bcn.cl/ontologies/bcn-bills#DiscusionParticular"/>
+<TLCReference id="metadato2" showAs="Título alternativo" name="metadato2" href="http://datos.bcn.cl/recurso/metadato/2"/>
+<TLCReference id="Homenaje" showAs="Homenaje" name="Homenaje" href="http://datos.bcn.cl/ontologies/bcn-resources#Homenaje"/>
+<TLCReference id="OficioDelEjecutivo_FormulaReserva" showAs="Oficio del Ejecutivo, formula reserva" name="OficioDelEjecutivo,FormulaReserva" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioDelEjecutivo,FormulaReserva"/>
+<TLCOrganization id="com40" showAs="comisión de medio ambiente y bienes nacionales" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-medio-ambiente-y-bienes-nacionales"/>
+<TLCReference id="PeticionDeInformacion" showAs="Peticion De Información" name="PeticionDeInformacion" href="http://datos.bcn.cl/ontologies/bcn-resources#PeticionDeInformacion"/>
+<TLCReference id="subcategoria1" showAs="Contraloría" name="subcategoria1" href="http://datos.bcn.cl/recurso/editor/subcategoria/1"/>
+<TLCOrganization id="com21" showAs="comisión de la micro, pequeña y mediana empresa" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-la-micro_pequena-y-mediana-empresa"/>
+<TLCReference id="categoria7" showAs="Leyes" name="categoria7" href="http://datos.bcn.cl/recurso/editor/categoria/7"/>
+<TLCReference id="OficioRechazoDeModificaciones" showAs="Oficio Rechazo de Modificaciones" name="OficioRechazoDeModificaciones" href="http://datos.bcn.cl/ontologies/bcn-bills#OficioRechazoDeModificaciones"/>
+<TLCOrganization id="com17" showAs="comisión de vivienda y desarrollo urbano" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-vivienda-y-desarrollo-urbano"/>
+<TLCReference id="categoria3" showAs="Páginas Web Gobierno" name="categoria3" href="http://datos.bcn.cl/recurso/editor/categoria/3"/>
+<TLCReference id="InformeDelegacionParlamentaria" showAs="Informe Delegación Parlamentaria" name="InformeDelegacionParlamentaria" href="http://datos.bcn.cl/ontologies/bcn-resources#InformeDelegacionParlamentaria"/>
+<TLCReference id="AntecedentesTramitacionLegislativa" showAs="Antecedentes Tramitación Legislativa" name="AntecedentesTramitacionLegislativa" href="http://datos.bcn.cl/ontologies/bcn-bills#AntecedentesTramitacionLegislativa"/>
+<TLCReference id="tramReglInformeComisionMixta" showAs="Informe Comisión Mixta" name="tramReglInformeComisionMixta" href="http://datos.bcn.cl/ontologies/bcn-bills#InformeComisionMixta"/>
+<TLCReference id="subcategoria5" showAs="Decretos con Fuerza de Ley" name="subcategoria5" href="http://datos.bcn.cl/recurso/editor/subcategoria/5"/>
+<TLCReference id="resultadoDebate_pendiente" showAs="Pendiente" name="resultadoDebate_pendiente" href="http://datos.bcn.cl/ontologies/bcn-resources#pendiente"/>
+<TLCReference id="categoria2" showAs="Páginas Web Congreso" name="categoria2" href="http://datos.bcn.cl/recurso/editor/categoria/2"/>
+<TLCOrganization id="com27" showAs="comisión de trabajo y previsión social" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-trabajo-y-prevision-social"/>
+<TLCReference id="Integracion" showAs="Integración" name="Integracion" href="http://datos.bcn.cl/ontologies/bcn-resources#Integracion"/>
+<TLCReference id="normasInterpelativasDeLaConsticucion" showAs="Normas interpelativas de la constitución" name="normasInterpelativasDeLaConsticucion" href="http://datos.bcn.cl/ontologies/bcn-resources#normasInterpelativasDeLaConsticucion"/>
+<TLCRole id="AgrupSemanticoPresidenteAccidDS" showAs="Presidente accidental de la sesión" href="http://datos.bcn.cl/recurso/cl/cargo/324"/>
+<TLCReference id="tituloDentroUnParrafo" showAs="Titulo en el parrafo " name="tituloDentroUnParrafo" href="http://datos.bcn.cl/ontologies/bcn-resources#tituloDentroUnParrafo"/>
+<TLCReference id="InformeFinancieroDelProyectoDeLey" showAs="Informe Financiero Del Proyecto De Ley" name="InformeFinancieroDelProyectoDeLey" href="http://datos.bcn.cl/ontologies/bcn-bills#InformeFinancieroDelProyectoDeLey"/>
+<TLCReference id="Votacion" showAs="Votación" name="Votacion" href="http://datos.bcn.cl/ontologies/bcn-resources#Votacion"/>
+<TLCReference id="Certificado1" showAs="Certificado" name="Certificado" href="http://datos.bcn.cl/ontologies/bcn-resources#Certificado"/>
+<TLCReference id="AutorDeInformeDeComisionInvestigadora" showAs="Autor de Informe de Comisión Investigadora" name="AutorDeInformeDeComisionInvestigadora" href="http://datos.bcn.cl/ontologies/bcn-resources#AutorDeInformeDeComisionInvestigadora"/>
+<TLCReference id="SesionEspecial1" showAs="Special parliamentary session" name="SesionEspecial" href="http://datos.bcn.cl/ontologies/bcn-congress#SesionEspecial"/>
+<TLCOrganization id="com55" showAs="Comisión de Control del sistema de inteligencia del estado" href="http://datos.bcn.cl/recurso/cl/organismo/comision-de-control-del-sistema-de-inteligencia-del-estado"/>
+<TLCReference id="resultadoDebate_seApruebaEnGeneralYParticularSinModificaciones" showAs="Se aprueba en general y particular sin modificaciones" name="resultadoDebate_seApruebaEnGeneralYParticularSinModificaciones" href="http://datos.bcn.cl/ontologies/bcn-resources#seApruebaEnGeneralYParticularSinModificaciones"/>
+<TLCOrganization id="com57" showAs="Comisión Investigadora de la inversión pública en infraestructura hospitalaria de la Cámara de Diputados" href="http://datos.bcn.cl/recurso/cl/organismo/comision-investigadora-2"/>
+<TLCReference id="PL_AUT_MARCAJE_id_14002-13" showAs="Boletín N° 14002-13" name="PL_AUT_MARCAJE_name_14002-13" href="http://datos.bcn.cl/recurso/cl/proyecto-de-ley/14002-13"/>
+				</references>
+</meta>
+
+  
+
+
+  
+
+
+
+
+<preface id="akn695681-pf1"><p id="akn695681-pf1-p1">PROYECTO DE LEY:</p>
+<p id="akn695681-pf1-p2"/>
+
+</preface>
+<body id="body1587289925"><article id="akn695681-ar1" bcn:ubn="articulo"><num id="tmpidp1131313944">Artículo único.-</num><clause id="akn695681-ar1-cl1"><content id="akn695681-ar1-cl1-ct1"><p id="akn695681-ar1-cl1-ct1-p3"> Agrégase en el Título II, “De la protección a la maternidad, la paternidad y la vida familiar”, del Libro II del Código del Trabajo, el siguiente artículo 206 bis, nuevo:</p><p id="akn695681-ar1-cl1-ct1-p4">“Artículo 206 bis.-Si la autoridad declarare estado de excepción constitucional de catástrofe, por calamidad pública o una alerta sanitaria con ocasión de una epidemia o pandemia a causa de una enfermedad contagiosa, el empleador deberá ofrecer al trabajador que tenga el cuidado personal de al menos un niño o niña en etapa preescolar, la modalidad de trabajo a distancia o teletrabajo, regulada en el Capítulo IX del Título II del Libro I del presente Código, en la medida que la naturaleza de sus funciones lo permitiere, sin reducción de remuneraciones. Si ambos padres son trabajadores y tienen el cuidado personal de un niño o niña, cualquiera de ellos, a elección de la madre, podrá hacer uso de esta prerrogativa.</p><p id="akn695681-ar1-cl1-ct1-p5">Si la autoridad declarare estado de excepción constitucional de catástrofe, por calamidad pública, o una alerta sanitaria con ocasión de una epidemia o pandemia a causa de una enfermedad contagiosa, y adoptare medidas que impliquen el cierre de establecimientos de educación básica o impidan la asistencia a los mismos, el empleador deberá ofrecer al trabajador que tenga el cuidado personal de al menos un niño o niña menor de doce años, que se vea afectado por dichas circunstancias, la modalidad de trabajo a distancia o teletrabajo, en la medida que la naturaleza de sus funciones lo permitiere, sin reducción de remuneraciones. En este caso, el trabajador deberá entregar al empleador una declaración jurada de que dicho cuidado lo ejerce sin ayuda o concurrencia de otra persona adulta.</p><p id="akn695681-ar1-cl1-ct1-p6">Esta modalidad de trabajo se mantendrá vigente durante el período de tiempo en que se mantengan las circunstancias descritas anteriormente, salvo acuerdo de las partes.</p><p id="akn695681-ar1-cl1-ct1-p7">La misma regla del inciso primero se aplicará para aquellos trabajadores que tengan a su cuidado personas con discapacidad. Esta circunstancia deberá ser acreditada a través del respectivo certificado de inscripción en el Registro Nacional de la Discapacidad, conforme a lo dispuesto en la letra b) del artículo 56 de la ley N° 20.422, al que deberá acompañarse además la correspondiente copia del certificado, credencial o inscripción de discapacidad en el referido registro, emitido por la autoridad competente en los términos de los artículos 13 y 17, ambos de la citada ley, correspondientes a la persona cuyo cuidado tengan. Podrá asimismo acreditarse la discapacidad de esta última a través de la calidad de asignatario de pensión de invalidez de cualquier régimen previsional, conforme a los registros disponibles en el Sistema Nacional de Información de Seguridad y Salud en el Trabajo de la Superintendencia de Seguridad Social.”.</p></content></clause></article></body>
+<conclusions id="conclusions_aut_555"><p id="akn695681-p8"/></conclusions>
+
+
+</bill>
+</akomaNtoso>

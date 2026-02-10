@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Votacion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/">
+  <ID>26710</ID>
+  <Fecha>2023-11-15T12:07:41</Fecha>
+  <Tipo Codigo="2">Particular</Tipo>
+  <Resultado Codigo="2">Rechazado</Resultado>
+  <Quorum Codigo="1">Quorum Simple</Quorum>
+  <Sesion>
+    <ID>4415</ID>
+    <Numero>103</Numero>
+    <Fecha>2023-11-15T09:33:02</Fecha>
+    <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+    <Tipo Codigo="60">Ordinaria</Tipo>
+  </Sesion>
+  <Boletin>16330-05</Boletin>
+  <Articulo>Indicación N° 72 de la Partida 09.
+
+Part 09 - Cap 29 - Prog 01
+
+</Articulo>
+  <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+  <Informe Codigo="1">PRIMER INFORME</Informe>
+  <TotalAfirmativos>60</TotalAfirmativos>
+  <TotalNegativos>75</TotalNegativos>
+  <TotalAbstenciones>7</TotalAbstenciones>
+  <TotalDispensados>0</TotalDispensados>
+  <Votos>
+    <Voto>
+      <Diputado>
+        <DIPID>1096</DIPID>
+        <Nombre>María Candelaria</Nombre>
+        <Apellido_Paterno>Acevedo</Apellido_Paterno>
+        <Apellido_Materno>Sáez</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1097</DIPID>
+        <Nombre>Eric</Nombre>
+        <Apellido_Paterno>Aedo</Apellido_Paterno>
+        <Apellido_Materno>Jeldres</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1098</DIPID>
+        <Nombre>Yovana</Nombre>
+        <Apellido_Paterno>Ahumada</Apellido_Paterno>
+        <Apellido_Materno>Palma</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1009</DIPID>
+        <Nombre>Jorge</Nombre>
+        <Apellido_Paterno>Alessandri</Apellido_Paterno>
+        <Apellido_Materno>Vergara</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>803</DIPID>
+        <Nombre>René</Nombre>
+        <Apellido_Paterno>Alinco</Apellido_Paterno>
+        <Apellido_Materno>Bustos</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1099</DIPID>
+        <Nombre>Jaime</Nombre>
+        <Apellido_Paterno>Araya</Apellido_Paterno>
+        <Apellido_Materno>Guerrero</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1100</DIPID>
+        <Nombre>Cristián</Nombre>
+        <Apellido_Paterno>Araya</Apellido_Paterno>
+        <Apellido_Materno>Lerdo de Tejada</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1101</DIPID>
+        <Nombre>Mónica</Nombre>
+        <Apellido_Paterno>Arce</Apellido_Paterno>
+        <Apellido_Materno>Castro</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="2">Abstencion</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1102</DIPID>
+        <Nombre>Roberto</Nombre>
+        <Apellido_Paterno>Arroyo</Apellido_Paterno>
+        <Apellido_Materno>Muñoz</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1103</DIPID>
+        <Nombre>Danisa</Nombre>
+        <Apellido_Paterno>Astudillo</Apellido_Paterno>
+        <Apellido_Materno>Peiretti</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="2">Abstencion</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1104</DIPID>
+        <Nombre>Chiara</Nombre>
+        <Apellido_Paterno>Barchiesi</Apellido_Paterno>
+        <Apellido_Materno>Chávez</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1012</DIPID>
+        <Nombre>Boris</Nombre>
+        <Apellido_Paterno>Barrera</Apellido_Paterno>
+        <Apellido_Materno>Moreno</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1105</DIPID>
+        <Nombre>Héctor</Nombre>
+        <Apellido_Paterno>Barría</Apellido_Paterno>
+        <Apellido_Materno>Angulo</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1106</DIPID>
+        <Nombre>Miguel Ángel</Nombre>
+        <Apellido_Paterno>Becker</Apellido_Paterno>
+        <Apellido_Materno>Alvear</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1107</DIPID>
+        <Nombre>María Francisca</Nombre>
+        <Apellido_Paterno>Bello</Apellido_Paterno>
+        <Apellido_Materno>Campos</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1108</DIPID>
+        <Nombre>Juan Carlos</Nombre>
+        <Apellido_Paterno>Beltrán</Apellido_Paterno>
+        <Apellido_Materno>Silva</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1109</DIPID>
+        <Nombre>Gustavo</Nombre>
+        <Apellido_Paterno>Benavente</Apellido_Paterno>
+        <Apellido_Materno>Vergara</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>971</DIPID>
+        <Nombre>Bernardo</Nombre>
+        <Apellido_Paterno>Berger</Apellido_Paterno>
+        <Apellido_Materno>Fett</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1013</DIPID>
+        <Nombre>Alejandro</Nombre>
+        <Apellido_Paterno>Bernales</Apellido_Paterno>
+        <Apellido_Materno>Maldonado</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1110</DIPID>
+        <Nombre>Carlos</Nombre>
+        <Apellido_Paterno>Bianchi</Apellido_Paterno>
+        <Apellido_Materno>Chelech</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>815</DIPID>
+        <Nombre>Sergio</Nombre>
+        <Apellido_Paterno>Bobadilla</Apellido_Paterno>
+        <Apellido_Materno>Muñoz</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1111</DIPID>
+        <Nombre>Fernando</Nombre>
+        <Apellido_Paterno>Bórquez</Apellido_Paterno>
+        <Apellido_Materno>Montecinos</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1112</DIPID>
+        <Nombre>Ana María</Nombre>
+        <Apellido_Paterno>Bravo</Apellido_Paterno>
+        <Apellido_Materno>Castro</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1015</DIPID>
+        <Nombre>Jorge</Nombre>
+        <Apellido_Paterno>Brito</Apellido_Paterno>
+        <Apellido_Materno>Hasbún</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1114</DIPID>
+        <Nombre>Félix</Nombre>
+        <Apellido_Paterno>Bugueño</Apellido_Paterno>
+        <Apellido_Materno>Sotelo</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1016</DIPID>
+        <Nombre>Miguel Ángel</Nombre>
+        <Apellido_Paterno>Calisto</Apellido_Paterno>
+        <Apellido_Materno>Águila</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>973</DIPID>
+        <Nombre>Karol</Nombre>
+        <Apellido_Paterno>Cariola</Apellido_Paterno>
+        <Apellido_Materno>Oliva</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1017</DIPID>
+        <Nombre>Álvaro</Nombre>
+        <Apellido_Paterno>Carter</Apellido_Paterno>
+        <Apellido_Materno>Fernández</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1117</DIPID>
+        <Nombre>Nathalie</Nombre>
+        <Apellido_Paterno>Castillo</Apellido_Paterno>
+        <Apellido_Materno>Rojas</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1019</DIPID>
+        <Nombre>José Miguel</Nombre>
+        <Apellido_Paterno>Castro</Apellido_Paterno>
+        <Apellido_Materno>Bascuñán</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1021</DIPID>
+        <Nombre>Andrés</Nombre>
+        <Apellido_Paterno>Celis</Apellido_Paterno>
+        <Apellido_Materno>Montt</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>975</DIPID>
+        <Nombre>Daniella</Nombre>
+        <Apellido_Paterno>Cicardini</Apellido_Paterno>
+        <Apellido_Materno>Milla</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1022</DIPID>
+        <Nombre>Sofía</Nombre>
+        <Apellido_Paterno>Cid</Apellido_Paterno>
+        <Apellido_Materno>Versalovic</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1118</DIPID>
+        <Nombre>Ricardo</Nombre>
+        <Apellido_Paterno>Cifuentes</Apellido_Paterno>
+        <Apellido_Materno>Lillo</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>976</DIPID>
+        <Nombre>Juan Antonio</Nombre>
+        <Apellido_Paterno>Coloma</Apellido_Paterno>
+        <Apellido_Materno>Álamos</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1119</DIPID>
+        <Nombre>Sara</Nombre>
+        <Apellido_Paterno>Concha</Apellido_Paterno>
+        <Apellido_Materno>Smith</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1121</DIPID>
+        <Nombre>Eduardo</Nombre>
+        <Apellido_Paterno>Cornejo</Apellido_Paterno>
+        <Apellido_Materno>Lagos</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1122</DIPID>
+        <Nombre>Luis Alberto</Nombre>
+        <Apellido_Paterno>Cuello</Apellido_Paterno>
+        <Apellido_Materno>Peña y Lillo</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1124</DIPID>
+        <Nombre>Tomás</Nombre>
+        <Apellido_Paterno>De Rementería</Apellido_Paterno>
+        <Apellido_Materno>Venegas</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1125</DIPID>
+        <Nombre>Viviana</Nombre>
+        <Apellido_Paterno>Delgado</Apellido_Paterno>
+        <Apellido_Materno>Riquelme</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1126</DIPID>
+        <Nombre>Felipe</Nombre>
+        <Apellido_Paterno>Donoso</Apellido_Paterno>
+        <Apellido_Materno>Castro</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1027</DIPID>
+        <Nombre>Jorge</Nombre>
+        <Apellido_Paterno>Durán</Apellido_Paterno>
+        <Apellido_Materno>Espinoza</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1028</DIPID>
+        <Nombre>Eduardo</Nombre>
+        <Apellido_Paterno>Durán</Apellido_Paterno>
+        <Apellido_Materno>Salinas</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1030</DIPID>
+        <Nombre>Camila</Nombre>
+        <Apellido_Paterno>Flores</Apellido_Paterno>
+        <Apellido_Materno>Oporto</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1127</DIPID>
+        <Nombre>Lorena</Nombre>
+        <Apellido_Paterno>Fries</Apellido_Paterno>
+        <Apellido_Materno>Monleón</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1031</DIPID>
+        <Nombre>Juan</Nombre>
+        <Apellido_Paterno>Fuenzalida</Apellido_Paterno>
+        <Apellido_Materno>Cobo</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1128</DIPID>
+        <Nombre>Ana María</Nombre>
+        <Apellido_Paterno>Gazmuri</Apellido_Paterno>
+        <Apellido_Materno>Vieira</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1129</DIPID>
+        <Nombre>Andrés</Nombre>
+        <Apellido_Paterno>Giordano</Apellido_Paterno>
+        <Apellido_Materno>Salazar</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1034</DIPID>
+        <Nombre>Félix</Nombre>
+        <Apellido_Paterno>González</Apellido_Paterno>
+        <Apellido_Materno>Gatica</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1130</DIPID>
+        <Nombre>Marta</Nombre>
+        <Apellido_Paterno>González</Apellido_Paterno>
+        <Apellido_Materno>Olea</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1131</DIPID>
+        <Nombre>Mauro</Nombre>
+        <Apellido_Paterno>González</Apellido_Paterno>
+        <Apellido_Materno>Villarroel</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="2">Abstencion</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1132</DIPID>
+        <Nombre>Jorge</Nombre>
+        <Apellido_Paterno>Guzmán</Apellido_Paterno>
+        <Apellido_Materno>Zepeda</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1035</DIPID>
+        <Nombre>Carmen</Nombre>
+        <Apellido_Paterno>Hertz</Apellido_Paterno>
+        <Apellido_Materno>Cádiz</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1037</DIPID>
+        <Nombre>Diego</Nombre>
+        <Apellido_Paterno>Ibáñez</Apellido_Paterno>
+        <Apellido_Materno>Cotroneo</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1038</DIPID>
+        <Nombre>Marcos</Nombre>
+        <Apellido_Paterno>Ilabaca</Apellido_Paterno>
+        <Apellido_Materno>Cerda</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1133</DIPID>
+        <Nombre>Juan</Nombre>
+        <Apellido_Paterno>Irarrázaval</Apellido_Paterno>
+        <Apellido_Materno>Rossel</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1039</DIPID>
+        <Nombre>Pamela</Nombre>
+        <Apellido_Paterno>Jiles</Apellido_Paterno>
+        <Apellido_Materno>Moreno</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1134</DIPID>
+        <Nombre>Andrés</Nombre>
+        <Apellido_Paterno>Jouannet</Apellido_Paterno>
+        <Apellido_Materno>Valderrama</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1040</DIPID>
+        <Nombre>Harry</Nombre>
+        <Apellido_Paterno>Jürgensen</Apellido_Paterno>
+        <Apellido_Materno>Rundshagen</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1135</DIPID>
+        <Nombre>Johannes</Nombre>
+        <Apellido_Paterno>Kaiser</Apellido_Paterno>
+        <Apellido_Materno>Barents-Von Hohenhagen</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1094</DIPID>
+        <Nombre>Cristian</Nombre>
+        <Apellido_Paterno>Labbé</Apellido_Paterno>
+        <Apellido_Materno>Martínez</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1136</DIPID>
+        <Nombre>Paula</Nombre>
+        <Apellido_Paterno>Labra</Apellido_Paterno>
+        <Apellido_Materno>Besserer</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1137</DIPID>
+        <Nombre>Tomás</Nombre>
+        <Apellido_Paterno>Lagomarsino</Apellido_Paterno>
+        <Apellido_Materno>Guzmán</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>989</DIPID>
+        <Nombre>Joaquín</Nombre>
+        <Apellido_Paterno>Lavín</Apellido_Paterno>
+        <Apellido_Materno>León</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1138</DIPID>
+        <Nombre>Henry</Nombre>
+        <Apellido_Paterno>Leal</Apellido_Paterno>
+        <Apellido_Materno>Bizama</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1044</DIPID>
+        <Nombre>Raúl</Nombre>
+        <Apellido_Paterno>Leiva</Apellido_Paterno>
+        <Apellido_Materno>Carvajal</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1140</DIPID>
+        <Nombre>Daniel</Nombre>
+        <Apellido_Paterno>Lilayu</Apellido_Paterno>
+        <Apellido_Materno>Vivanco</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1046</DIPID>
+        <Nombre>Andrés</Nombre>
+        <Apellido_Paterno>Longton</Apellido_Paterno>
+        <Apellido_Materno>Herrera</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1141</DIPID>
+        <Nombre>Luis</Nombre>
+        <Apellido_Paterno>Malla</Apellido_Paterno>
+        <Apellido_Materno>Valenzuela</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1142</DIPID>
+        <Nombre>Daniel</Nombre>
+        <Apellido_Paterno>Manouchehri</Apellido_Paterno>
+        <Apellido_Materno>Lobos</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1143</DIPID>
+        <Nombre>Cristóbal</Nombre>
+        <Apellido_Paterno>Martínez</Apellido_Paterno>
+        <Apellido_Materno>Ramírez</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1144</DIPID>
+        <Nombre>Christian</Nombre>
+        <Apellido_Paterno>Matheson</Apellido_Paterno>
+        <Apellido_Materno>Villán</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1145</DIPID>
+        <Nombre>Karen</Nombre>
+        <Apellido_Paterno>Medina</Apellido_Paterno>
+        <Apellido_Materno>Vásquez</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="2">Abstencion</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1049</DIPID>
+        <Nombre>Cosme</Nombre>
+        <Apellido_Paterno>Mellado</Apellido_Paterno>
+        <Apellido_Materno>Pino</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="2">Abstencion</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1050</DIPID>
+        <Nombre>Miguel</Nombre>
+        <Apellido_Paterno>Mellado</Apellido_Paterno>
+        <Apellido_Materno>Suazo</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>990</DIPID>
+        <Nombre>Daniel</Nombre>
+        <Apellido_Paterno>Melo</Apellido_Paterno>
+        <Apellido_Materno>Contreras</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1146</DIPID>
+        <Nombre>José Carlos</Nombre>
+        <Apellido_Paterno>Meza</Apellido_Paterno>
+        <Apellido_Materno>Pereira</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>991</DIPID>
+        <Nombre>Vlado</Nombre>
+        <Apellido_Paterno>Mirosevic</Apellido_Paterno>
+        <Apellido_Materno>Verdugo</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1051</DIPID>
+        <Nombre>Claudia</Nombre>
+        <Apellido_Paterno>Mix</Apellido_Paterno>
+        <Apellido_Materno>Jiménez</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1147</DIPID>
+        <Nombre>Helia</Nombre>
+        <Apellido_Paterno>Molina</Apellido_Paterno>
+        <Apellido_Materno>Milman</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1148</DIPID>
+        <Nombre>Javiera</Nombre>
+        <Apellido_Paterno>Morales</Apellido_Paterno>
+        <Apellido_Materno>Alvarado</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1149</DIPID>
+        <Nombre>Carla</Nombre>
+        <Apellido_Paterno>Morales</Apellido_Paterno>
+        <Apellido_Materno>Maldonado</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1053</DIPID>
+        <Nombre>Cristhian</Nombre>
+        <Apellido_Paterno>Moreira</Apellido_Paterno>
+        <Apellido_Materno>Barros</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1150</DIPID>
+        <Nombre>Benjamín</Nombre>
+        <Apellido_Paterno>Moreno</Apellido_Paterno>
+        <Apellido_Materno>Bascur</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>872</DIPID>
+        <Nombre>Jaime</Nombre>
+        <Apellido_Paterno>Mulet</Apellido_Paterno>
+        <Apellido_Materno>Martínez</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1054</DIPID>
+        <Nombre>Francesca</Nombre>
+        <Apellido_Paterno>Muñoz</Apellido_Paterno>
+        <Apellido_Materno>González</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1151</DIPID>
+        <Nombre>Camila</Nombre>
+        <Apellido_Paterno>Musante</Apellido_Paterno>
+        <Apellido_Materno>Müller</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>74</DIPID>
+        <Nombre>Jaime</Nombre>
+        <Apellido_Paterno>Naranjo</Apellido_Paterno>
+        <Apellido_Materno>Ortiz</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1152</DIPID>
+        <Nombre>Gloria</Nombre>
+        <Apellido_Paterno>Naveillan</Apellido_Paterno>
+        <Apellido_Materno>Arriagada</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1056</DIPID>
+        <Nombre>Emilia</Nombre>
+        <Apellido_Paterno>Nuyado</Apellido_Paterno>
+        <Apellido_Materno>Ancapichún</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1153</DIPID>
+        <Nombre>Coca Ericka</Nombre>
+        <Apellido_Paterno>Ñanco</Apellido_Paterno>
+        <Apellido_Materno>Vásquez</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1154</DIPID>
+        <Nombre>Mauricio</Nombre>
+        <Apellido_Paterno>Ojeda</Apellido_Paterno>
+        <Apellido_Materno>Rebolledo</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1057</DIPID>
+        <Nombre>Erika</Nombre>
+        <Apellido_Paterno>Olivera</Apellido_Paterno>
+        <Apellido_Materno>De La Fuente</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1059</DIPID>
+        <Nombre>Ximena</Nombre>
+        <Apellido_Paterno>Ossandón</Apellido_Paterno>
+        <Apellido_Materno>Irarrázabal</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1155</DIPID>
+        <Nombre>Rubén Darío</Nombre>
+        <Apellido_Paterno>Oyarzo</Apellido_Paterno>
+        <Apellido_Materno>Figueroa</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1156</DIPID>
+        <Nombre>Hernán</Nombre>
+        <Apellido_Paterno>Palma</Apellido_Paterno>
+        <Apellido_Materno>Pérez</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1157</DIPID>
+        <Nombre>Marlene</Nombre>
+        <Apellido_Paterno>Pérez</Apellido_Paterno>
+        <Apellido_Materno>Cartes</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1063</DIPID>
+        <Nombre>Catalina</Nombre>
+        <Apellido_Paterno>Pérez</Apellido_Paterno>
+        <Apellido_Materno>Salinas</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1158</DIPID>
+        <Nombre>Víctor Alejandro</Nombre>
+        <Apellido_Paterno>Pino</Apellido_Paterno>
+        <Apellido_Materno>Fuentes</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1159</DIPID>
+        <Nombre>Lorena</Nombre>
+        <Apellido_Paterno>Pizarro</Apellido_Paterno>
+        <Apellido_Materno>Sierra</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1160</DIPID>
+        <Nombre>Alejandra</Nombre>
+        <Apellido_Paterno>Placencia</Apellido_Paterno>
+        <Apellido_Materno>Cabello</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1161</DIPID>
+        <Nombre>Francisco</Nombre>
+        <Apellido_Paterno>Pulgar</Apellido_Paterno>
+        <Apellido_Materno>Castillo</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1065</DIPID>
+        <Nombre>Guillermo</Nombre>
+        <Apellido_Paterno>Ramírez</Apellido_Paterno>
+        <Apellido_Materno>Diez</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1162</DIPID>
+        <Nombre>Matías</Nombre>
+        <Apellido_Paterno>Ramírez</Apellido_Paterno>
+        <Apellido_Materno>Pascal</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1163</DIPID>
+        <Nombre>Marcia</Nombre>
+        <Apellido_Paterno>Raphael</Apellido_Paterno>
+        <Apellido_Materno>Mora</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>999</DIPID>
+        <Nombre>Jorge</Nombre>
+        <Apellido_Paterno>Rathgeb</Apellido_Paterno>
+        <Apellido_Materno>Schifferli</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1067</DIPID>
+        <Nombre>Hugo</Nombre>
+        <Apellido_Paterno>Rey</Apellido_Paterno>
+        <Apellido_Materno>Martínez</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1164</DIPID>
+        <Nombre>Marcela</Nombre>
+        <Apellido_Paterno>Riquelme</Apellido_Paterno>
+        <Apellido_Materno>Aliaga</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>948</DIPID>
+        <Nombre>Gaspar</Nombre>
+        <Apellido_Paterno>Rivas</Apellido_Paterno>
+        <Apellido_Materno>Sánchez</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1068</DIPID>
+        <Nombre>Camila</Nombre>
+        <Apellido_Paterno>Rojas</Apellido_Paterno>
+        <Apellido_Materno>Valderrama</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1165</DIPID>
+        <Nombre>Agustín</Nombre>
+        <Apellido_Paterno>Romero</Apellido_Paterno>
+        <Apellido_Materno>Leiva</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1166</DIPID>
+        <Nombre>Natalia</Nombre>
+        <Apellido_Paterno>Romero</Apellido_Paterno>
+        <Apellido_Materno>Talguia</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1070</DIPID>
+        <Nombre>Patricio</Nombre>
+        <Apellido_Paterno>Rosas</Apellido_Paterno>
+        <Apellido_Materno>Barrientos</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1167</DIPID>
+        <Nombre>Jaime</Nombre>
+        <Apellido_Paterno>Sáez</Apellido_Paterno>
+        <Apellido_Materno>Quiroz</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1168</DIPID>
+        <Nombre>Jorge</Nombre>
+        <Apellido_Paterno>Saffirio</Apellido_Paterno>
+        <Apellido_Materno>Espinoza</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1169</DIPID>
+        <Nombre>Clara</Nombre>
+        <Apellido_Paterno>Sagardía</Apellido_Paterno>
+        <Apellido_Materno>Cabezas</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1170</DIPID>
+        <Nombre>Luis</Nombre>
+        <Apellido_Paterno>Sánchez</Apellido_Paterno>
+        <Apellido_Materno>Ossa</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1073</DIPID>
+        <Nombre>Juan</Nombre>
+        <Apellido_Paterno>Santana</Apellido_Paterno>
+        <Apellido_Materno>Castillo</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>953</DIPID>
+        <Nombre>Frank</Nombre>
+        <Apellido_Paterno>Sauerbaum</Apellido_Paterno>
+        <Apellido_Materno>Muñoz</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1075</DIPID>
+        <Nombre>Diego</Nombre>
+        <Apellido_Paterno>Schalper</Apellido_Paterno>
+        <Apellido_Materno>Sepúlveda</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1171</DIPID>
+        <Nombre>Emilia</Nombre>
+        <Apellido_Paterno>Schneider</Apellido_Paterno>
+        <Apellido_Materno>Videla</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1172</DIPID>
+        <Nombre>Stephan</Nombre>
+        <Apellido_Paterno>Schubert</Apellido_Paterno>
+        <Apellido_Materno>Rubio</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1076</DIPID>
+        <Nombre>Alexis</Nombre>
+        <Apellido_Paterno>Sepúlveda</Apellido_Paterno>
+        <Apellido_Materno>Soto</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="2">Abstencion</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1173</DIPID>
+        <Nombre>Daniela</Nombre>
+        <Apellido_Paterno>Serrano</Apellido_Paterno>
+        <Apellido_Materno>Salazar</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1002</DIPID>
+        <Nombre>Leonardo</Nombre>
+        <Apellido_Paterno>Soto</Apellido_Paterno>
+        <Apellido_Materno>Ferrada</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1077</DIPID>
+        <Nombre>Raúl</Nombre>
+        <Apellido_Paterno>Soto</Apellido_Paterno>
+        <Apellido_Materno>Mardones</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1174</DIPID>
+        <Nombre>Marco Antonio</Nombre>
+        <Apellido_Paterno>Sulantay</Apellido_Paterno>
+        <Apellido_Materno>Olivares</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1175</DIPID>
+        <Nombre>Cristián</Nombre>
+        <Apellido_Paterno>Tapia</Apellido_Paterno>
+        <Apellido_Materno>Ramos</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1176</DIPID>
+        <Nombre>Hotuiti</Nombre>
+        <Apellido_Paterno>Teao</Apellido_Paterno>
+        <Apellido_Materno>Drago</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1177</DIPID>
+        <Nombre>Carolina</Nombre>
+        <Apellido_Paterno>Tello</Apellido_Paterno>
+        <Apellido_Materno>Rojas</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1003</DIPID>
+        <Nombre>Renzo</Nombre>
+        <Apellido_Paterno>Trisotti</Apellido_Paterno>
+        <Apellido_Materno>Martínez</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1178</DIPID>
+        <Nombre>Héctor</Nombre>
+        <Apellido_Paterno>Ulloa</Apellido_Paterno>
+        <Apellido_Materno>Aguilera</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1081</DIPID>
+        <Nombre>Francisco</Nombre>
+        <Apellido_Paterno>Undurraga</Apellido_Paterno>
+        <Apellido_Materno>Gazitúa</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1179</DIPID>
+        <Nombre>Alberto</Nombre>
+        <Apellido_Paterno>Undurraga</Apellido_Paterno>
+        <Apellido_Materno>Vicuña</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="2">Abstencion</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1082</DIPID>
+        <Nombre>Cristóbal</Nombre>
+        <Apellido_Paterno>Urruticoechea</Apellido_Paterno>
+        <Apellido_Materno>Ríos</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1180</DIPID>
+        <Nombre>Consuelo</Nombre>
+        <Apellido_Paterno>Veloso</Apellido_Paterno>
+        <Apellido_Materno>Ávila</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1181</DIPID>
+        <Nombre>Nelson</Nombre>
+        <Apellido_Paterno>Venegas</Apellido_Paterno>
+        <Apellido_Materno>Salazar</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1182</DIPID>
+        <Nombre>Sebastián</Nombre>
+        <Apellido_Paterno>Videla</Apellido_Paterno>
+        <Apellido_Materno>Castillo</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>917</DIPID>
+        <Nombre>Gastón</Nombre>
+        <Apellido_Paterno>Von Mühlenbrock</Apellido_Paterno>
+        <Apellido_Materno>Zamora</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1183</DIPID>
+        <Nombre>Flor</Nombre>
+        <Apellido_Paterno>Weisse</Apellido_Paterno>
+        <Apellido_Materno>Novoa</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="0">En Contra</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1086</DIPID>
+        <Nombre>Gonzalo</Nombre>
+        <Apellido_Paterno>Winter</Apellido_Paterno>
+        <Apellido_Materno>Etcheberry</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+    <Voto>
+      <Diputado>
+        <DIPID>1087</DIPID>
+        <Nombre>Gael</Nombre>
+        <Apellido_Paterno>Yeomans</Apellido_Paterno>
+        <Apellido_Materno>Araya</Apellido_Materno>
+      </Diputado>
+      <Opcion Codigo="1">Afirmativo</Opcion>
+    </Voto>
+  </Votos>
+  <Pareos>
+    <Pareo>
+      <Diputado1>
+        <DIPID>1058</DIPID>
+        <Nombre>Maite</Nombre>
+        <Apellido_Paterno>Orsini</Apellido_Paterno>
+        <Apellido_Materno>Pascal</Apellido_Materno>
+      </Diputado1>
+      <Diputado2>
+        <DIPID>1123</DIPID>
+        <Nombre>Gonzalo</Nombre>
+        <Apellido_Paterno>De la Carrera</Apellido_Paterno>
+        <Apellido_Materno>Correa</Apellido_Materno>
+      </Diputado2>
+    </Pareo>
+    <Pareo>
+      <Diputado1>
+        <DIPID>1036</DIPID>
+        <Nombre>Tomás</Nombre>
+        <Apellido_Paterno>Hirsch</Apellido_Paterno>
+        <Apellido_Materno>Goldschmidt</Apellido_Materno>
+      </Diputado1>
+      <Diputado2>
+        <DIPID>1025</DIPID>
+        <Nombre>Catalina</Nombre>
+        <Apellido_Paterno>Del Real</Apellido_Paterno>
+        <Apellido_Materno>Mihovilovic</Apellido_Materno>
+      </Diputado2>
+    </Pareo>
+    <Pareo>
+      <Diputado1>
+        <DIPID>1048</DIPID>
+        <Nombre>Carolina</Nombre>
+        <Apellido_Paterno>Marzán</Apellido_Paterno>
+        <Apellido_Materno>Pinto</Apellido_Materno>
+      </Diputado1>
+      <Diputado2>
+        <DIPID>1069</DIPID>
+        <Nombre>Leonidas</Nombre>
+        <Apellido_Paterno>Romero</Apellido_Paterno>
+        <Apellido_Materno>Sáez</Apellido_Materno>
+      </Diputado2>
+    </Pareo>
+    <Pareo>
+      <Diputado1>
+        <DIPID>1115</DIPID>
+        <Nombre>Mercedes</Nombre>
+        <Apellido_Paterno>Bulnes</Apellido_Paterno>
+        <Apellido_Materno>Núñez</Apellido_Materno>
+      </Diputado1>
+      <Diputado2>
+        <DIPID>1113</DIPID>
+        <Nombre>Marta</Nombre>
+        <Apellido_Paterno>Bravo</Apellido_Paterno>
+        <Apellido_Materno>Salinas</Apellido_Materno>
+      </Diputado2>
+    </Pareo>
+  </Pareos>
+</Votacion>

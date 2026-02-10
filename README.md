@@ -28,7 +28,7 @@ Surgieron dos preguntas, qué quisimos responder:
 > 3. DMN = las reglas (por qué se toman las decisiones)
 > Cada país tendría su modelo BPMN del rito parlamentario, con sus tablas DMN de reglas. Los nodos del proceso BPMN referenciarían los tipos de documentos AKN que se producen en cada paso. 
 
-Después de investigar, llegamos a la conclusión de [este reporte](research/2026-02-10/bpmn-dmn-para-rito-parlamentario.md). La idea de poder representar los flujos legalmente a través de diagramas es totalmente factible y podría ser super interesante. Nos desvía un poco de la idea principal, por ende lo dejaremos en pausa por ahora.
+Después de investigar, llegamos a la conclusión de [este reporte](research/2026-02-10/bpmn-dmn-para-rito-parlamentario.md). La idea de poder representar los flujos legalmente a través de diagramas es totalmente factible y podría ser super interesante. Nos desvía un poco de la idea principal, por ende lo dejaremos en pausa por ahora. 
 
 
 

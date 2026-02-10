@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Votaciones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/">
+  <Votacion>
+    <ID>41219</ID>
+    <Fecha>2024-09-25T14:00:12</Fecha>
+    <Tipo Codigo="6">Única</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4534</ID>
+      <Numero>79</Numero>
+      <Fecha>2024-09-25T10:03:26</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Propuesta del Senado para agregar los numerales 3 y 4 al artículo 8, nuevo, del proyecto, cuya votación separada ha sido solicitada por el diputado Agustín Romero, y que consta en las páginas 738 a 742 del comparado. 
+</Articulo>
+    <Tramite Codigo="3">TERCER TRÁMITE</Tramite>
+    <Informe Codigo="7">SIN INFORME</Informe>
+    <TotalAfirmativos>123</TotalAfirmativos>
+    <TotalNegativos>17</TotalNegativos>
+    <TotalAbstenciones>0</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>41218</ID>
+    <Fecha>2024-09-25T13:59:24</Fecha>
+    <Tipo Codigo="6">Única</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4534</ID>
+      <Numero>79</Numero>
+      <Fecha>2024-09-25T10:03:26</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Enmiendas incorporadas por el Senado al numeral 5 del artículo 3 del proyecto, cuya votación separada ha sido solicitada por el diputado Agustín Romero, y que consta en las páginas 475 a 487 del comparado. 
+</Articulo>
+    <Tramite Codigo="3">TERCER TRÁMITE</Tramite>
+    <Informe Codigo="7">SIN INFORME</Informe>
+    <TotalAfirmativos>124</TotalAfirmativos>
+    <TotalNegativos>14</TotalNegativos>
+    <TotalAbstenciones>2</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>41217</ID>
+    <Fecha>2024-09-25T13:57:36</Fecha>
+    <Tipo Codigo="6">Única</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4534</ID>
+      <Numero>79</Numero>
+      <Fecha>2024-09-25T10:03:26</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Enmiendas incorporadas por el Senado al numeral 4 del artículo 2 del proyecto, cuya votación separada ha sido solicitada por el diputado Agustín Romero, y que consta en las páginas 443 a 462 del comparado. 
+</Articulo>
+    <Tramite Codigo="3">TERCER TRÁMITE</Tramite>
+    <Informe Codigo="7">SIN INFORME</Informe>
+    <TotalAfirmativos>124</TotalAfirmativos>
+    <TotalNegativos>16</TotalNegativos>
+    <TotalAbstenciones>0</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>41216</ID>
+    <Fecha>2024-09-25T13:56:44</Fecha>
+    <Tipo Codigo="6">Única</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4534</ID>
+      <Numero>79</Numero>
+      <Fecha>2024-09-25T10:03:26</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Enmiendas incorporadas por el Senado al artículo 100 quinquies contenido en el numeral 39 del artículo 1, cuya votación separada ha sido solicitada por el diputado Felipe Donoso, y que consta en las páginas 278 a 279 del comparado. 
+</Articulo>
+    <Tramite Codigo="3">TERCER TRÁMITE</Tramite>
+    <Informe Codigo="7">SIN INFORME</Informe>
+    <TotalAfirmativos>98</TotalAfirmativos>
+    <TotalNegativos>39</TotalNegativos>
+    <TotalAbstenciones>3</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>41215</ID>
+    <Fecha>2024-09-25T13:55:42</Fecha>
+    <Tipo Codigo="6">Única</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4534</ID>
+      <Numero>79</Numero>
+      <Fecha>2024-09-25T10:03:26</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Enmiendas incorporadas por el Senado al numeral 33 (que ha pasado a ser 39) del artículo 1 del proyecto, cuya votación separada ha sido solicitada por el diputado Agustín Romero, y que consta en las páginas 270 a 280 del comparado, con la salvedad de las modificaciones propuestas al artículo 100 quinquies, cuya votación separada a su vez ha sido solicitada. 
+Cabe hacer presente que los incisos primero, tercero y final del artículo 100 quáter incorporado por el numeral 39, requiere para su aprobación del voto favorable de 78 diputadas y diputados por tratarse de normas de quorum calificado. 
+</Articulo>
+    <Tramite Codigo="3">TERCER TRÁMITE</Tramite>
+    <Informe Codigo="7">SIN INFORME</Informe>
+    <TotalAfirmativos>123</TotalAfirmativos>
+    <TotalNegativos>17</TotalNegativos>
+    <TotalAbstenciones>0</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>41214</ID>
+    <Fecha>2024-09-25T13:54:24</Fecha>
+    <Tipo Codigo="6">Única</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4534</ID>
+      <Numero>79</Numero>
+      <Fecha>2024-09-25T10:03:26</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Enmiendas incorporadas por el Senado al numeral 25 (que ha pasado a ser 27), del artículo 1 del proyecto, cuya votación separada ha sido solicitada por el diputado Agustín Romero, y que consta en las páginas 170 a 178 del comparado. 
+</Articulo>
+    <Tramite Codigo="3">TERCER TRÁMITE</Tramite>
+    <Informe Codigo="7">SIN INFORME</Informe>
+    <TotalAfirmativos>124</TotalAfirmativos>
+    <TotalNegativos>16</TotalNegativos>
+    <TotalAbstenciones>0</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>41213</ID>
+    <Fecha>2024-09-25T13:53:18</Fecha>
+    <Tipo Codigo="6">Única</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4534</ID>
+      <Numero>79</Numero>
+      <Fecha>2024-09-25T10:03:26</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Enmienda incorporada por el Senado para agregar un numeral 7), nuevo, al artículo 1 del proyecto, cuya votación separada ha sido solicitada por el diputado Agustín Romero, y que consta en las páginas 46 a 51 del comparado. 
+Cabe hacer presente que el párrafo sexto del número 1° del artículo 6° bis contenido en el numeral 7 requiere para su aprobación del voto favorable de 78 diputadas y diputados por tratarse de una norma de quorum calificado. 
+</Articulo>
+    <Tramite Codigo="3">TERCER TRÁMITE</Tramite>
+    <Informe Codigo="7">SIN INFORME</Informe>
+    <TotalAfirmativos>124</TotalAfirmativos>
+    <TotalNegativos>16</TotalNegativos>
+    <TotalAbstenciones>0</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>41212</ID>
+    <Fecha>2024-09-25T13:52:17</Fecha>
+    <Tipo Codigo="6">Única</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4534</ID>
+      <Numero>79</Numero>
+      <Fecha>2024-09-25T10:03:26</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Enmienda incorporada por el Senado para agregar una nueva letra c) en el numeral 6) del artículo 1 del proyecto, cuya votación separada ha sido solicitada por el diputado Agustín Romero, y que consta en las páginas 44 a 46 del comparado. 
+</Articulo>
+    <Tramite Codigo="3">TERCER TRÁMITE</Tramite>
+    <Informe Codigo="7">SIN INFORME</Informe>
+    <TotalAfirmativos>124</TotalAfirmativos>
+    <TotalNegativos>16</TotalNegativos>
+    <TotalAbstenciones>0</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>41211</ID>
+    <Fecha>2024-09-25T13:51:27</Fecha>
+    <Tipo Codigo="6">Única</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4534</ID>
+      <Numero>79</Numero>
+      <Fecha>2024-09-25T10:03:26</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Enmienda incorporada por el Senado para reemplazar el numeral 5 del artículo 1 del proyecto, cuya votación separada ha sido solicitada por el diputado Agustín Romero, y que consta en las páginas 11 a 16 del comparado. 
+</Articulo>
+    <Tramite Codigo="3">TERCER TRÁMITE</Tramite>
+    <Informe Codigo="7">SIN INFORME</Informe>
+    <TotalAfirmativos>124</TotalAfirmativos>
+    <TotalNegativos>16</TotalNegativos>
+    <TotalAbstenciones>0</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>41210</ID>
+    <Fecha>2024-09-25T13:50:38</Fecha>
+    <Tipo Codigo="6">Única</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4534</ID>
+      <Numero>79</Numero>
+      <Fecha>2024-09-25T10:03:26</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Enmiendas incorporadas por el Senado para reemplazar las letras d) y e) aprobadas en primer trámite constitucional por una nueva letra d) en el numeral 2 del artículo 1 del proyecto, cuya votación separada ha sido solicitada por el diputado Agustín Romero, y que consta en las páginas 4 a 5 del comparado. 
+</Articulo>
+    <Tramite Codigo="3">TERCER TRÁMITE</Tramite>
+    <Informe Codigo="7">SIN INFORME</Informe>
+    <TotalAfirmativos>124</TotalAfirmativos>
+    <TotalNegativos>16</TotalNegativos>
+    <TotalAbstenciones>0</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>41209</ID>
+    <Fecha>2024-09-25T13:49:43</Fecha>
+    <Tipo Codigo="6">Única</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="2">Quorum Calificado (Qc Y Loc)</Quorum>
+    <Sesion>
+      <ID>4534</ID>
+      <Numero>79</Numero>
+      <Fecha>2024-09-25T10:03:26</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 25; el artículo 65 bis contenido en el numeral 28; el número 2 del artículo 65 ter incorporado por el numeral 29; el artículo 92 ter propuesto en el numeral 36; las letras e) y f) del numeral 57, todos numerales del artículo 1 permanente; el inciso tercero del artículo 8 bis incorporado por el numeral 1; el numeral 5; todos numerales del artículo 4 permanente; el numeral 1, los párrafos primero y tercero de la letra D del artículo 3° ter propuesto en el numeral 2 y el numeral 6 del artículo 8 permanente, por tratarse de normas orgánicas constitucionales. Por su parte, el párrafo segundo del número 4 del numeral 24 y el numeral 76, ambos numerales del artículo 1 permanente, por tratarse de normas de quorum calificado.  
+</Articulo>
+    <Tramite Codigo="3">TERCER TRÁMITE</Tramite>
+    <Informe Codigo="7">SIN INFORME</Informe>
+    <TotalAfirmativos>122</TotalAfirmativos>
+    <TotalNegativos>16</TotalNegativos>
+    <TotalAbstenciones>2</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>41208</ID>
+    <Fecha>2024-09-25T13:47:44</Fecha>
+    <Tipo Codigo="6">Única</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4534</ID>
+      <Numero>79</Numero>
+      <Fecha>2024-09-25T10:03:26</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Enmiendas del Senado recaídas en el proyecto de ley, originado en mensaje, que “Dicta normas para asegurar el cumplimiento de las obligaciones tributarias dentro del Pacto por el Crecimiento Económico, el Progreso Social y la Responsabilidad Fiscal”, con la salvedad de aquellas que requieren quorum especial de aprobación y de aquellas cuya votación separada ha sido solicitada. 
+</Articulo>
+    <Tramite Codigo="3">TERCER TRÁMITE</Tramite>
+    <Informe Codigo="7">SIN INFORME</Informe>
+    <TotalAfirmativos>124</TotalAfirmativos>
+    <TotalNegativos>16</TotalNegativos>
+    <TotalAbstenciones>0</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37563</ID>
+    <Fecha>2024-04-10T13:37:04</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="2">Rechazado</Resultado>
+    <Quorum Codigo="2">Quorum Calificado (Qc Y Loc)</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 54 del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda.</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>75</TotalAfirmativos>
+    <TotalNegativos>66</TotalNegativos>
+    <TotalAbstenciones>1</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37562</ID>
+    <Fecha>2024-04-10T13:35:38</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="2">Rechazado</Resultado>
+    <Quorum Codigo="2">Quorum Calificado (Qc Y Loc)</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 40  del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda.</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>75</TotalAfirmativos>
+    <TotalNegativos>66</TotalNegativos>
+    <TotalAbstenciones>1</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37561</ID>
+    <Fecha>2024-04-10T13:34:22</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="2">Quorum Calificado (Qc Y Loc)</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 39, literal b) del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda.</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>79</TotalAfirmativos>
+    <TotalNegativos>60</TotalNegativos>
+    <TotalAbstenciones>3</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37560</ID>
+    <Fecha>2024-04-10T13:33:15</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="2">Quorum Calificado (Qc Y Loc)</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 39 del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda.</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>99</TotalAfirmativos>
+    <TotalNegativos>42</TotalNegativos>
+    <TotalAbstenciones>0</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37559</ID>
+    <Fecha>2024-04-10T13:31:52</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 37, del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda.
+</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>79</TotalAfirmativos>
+    <TotalNegativos>59</TotalNegativos>
+    <TotalAbstenciones>2</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37558</ID>
+    <Fecha>2024-04-10T13:30:52</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="2">Quorum Calificado (Qc Y Loc)</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 36, del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda.</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>98</TotalAfirmativos>
+    <TotalNegativos>38</TotalNegativos>
+    <TotalAbstenciones>5</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37557</ID>
+    <Fecha>2024-04-10T13:29:45</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 34 del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda.</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>99</TotalAfirmativos>
+    <TotalNegativos>41</TotalNegativos>
+    <TotalAbstenciones>1</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37556</ID>
+    <Fecha>2024-04-10T13:28:47</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 33, letra h) del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda.</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>77</TotalAfirmativos>
+    <TotalNegativos>54</TotalNegativos>
+    <TotalAbstenciones>10</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37555</ID>
+    <Fecha>2024-04-10T13:27:53</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 27, del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda.</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>81</TotalAfirmativos>
+    <TotalNegativos>58</TotalNegativos>
+    <TotalAbstenciones>2</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37554</ID>
+    <Fecha>2024-04-10T13:26:53</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="2">Rechazado</Resultado>
+    <Quorum Codigo="2">Quorum Calificado (Qc Y Loc)</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 25, del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda.</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>77</TotalAfirmativos>
+    <TotalNegativos>56</TotalNegativos>
+    <TotalAbstenciones>8</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37553</ID>
+    <Fecha>2024-04-10T13:25:34</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Letra d) del numeral 24) del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda, cuya votación separada ha sido solicitada por el diputado Boris Barrera, y que consta en la página 154 del comparado.
+</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>95</TotalAfirmativos>
+    <TotalNegativos>45</TotalNegativos>
+    <TotalAbstenciones>1</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37552</ID>
+    <Fecha>2024-04-10T13:24:33</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 24, del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda, cuya votación separada ha sido solicitada por los diputados Miguel Mellado, Guillermo Ramírez, Agustín Romero que consta en las páginas 141 a 154 del comparado, con la salvedad de su letra d), cuya votación separada a su vez ha sido solicitada.
+</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>77</TotalAfirmativos>
+    <TotalNegativos>54</TotalNegativos>
+    <TotalAbstenciones>10</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37551</ID>
+    <Fecha>2024-04-10T13:23:34</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 6, del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda, cuya votación separada ha sido solicitada por los diputados Miguel Mellado, Guillermo Ramírez y Agustín Romero, y que consta en las páginas 17 a 33 del comparado. 
+</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>75</TotalAfirmativos>
+    <TotalNegativos>58</TotalNegativos>
+    <TotalAbstenciones>8</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37550</ID>
+    <Fecha>2024-04-10T13:22:38</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="2">Rechazado</Resultado>
+    <Quorum Codigo="2">Quorum Calificado (Qc Y Loc)</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 5, del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda, cuya votación separada ha sido solicitada por los diputados  Miguel Mellado, Guillermo Ramírez y Agustín Romero, que consta en las páginas 9 a 17 del comparado, y que requiere para su aprobación del voto favorable de 78 diputadas y diputados, es decir, la mayoría absoluta de los diputados en ejercicio, según lo dispuesto en el inciso segundo del artículo 66 de la Constitución Política de la República.
+</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>73</TotalAfirmativos>
+    <TotalNegativos>59</TotalNegativos>
+    <TotalAbstenciones>9</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37549</ID>
+    <Fecha>2024-04-10T13:21:36</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 4, del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda.
+</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>81</TotalAfirmativos>
+    <TotalNegativos>57</TotalNegativos>
+    <TotalAbstenciones>3</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37548</ID>
+    <Fecha>2024-04-10T13:20:47</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="2">Quorum Calificado (Qc Y Loc)</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 3, del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda, cuya votación separada ha sido solicitada por los diputados Guillermo Ramírez y Agustín Romero, y que consta en las páginas 6 a 8 del comparado. 
+Cabe hacer presente que su letra j), párrafo 10, requiere para su aprobación del voto favorable de 78 diputadas y diputados, es decir, la mayoría absoluta de los diputados en ejercicio, según lo dispuesto en el inciso segundo del artículo 66 de la Constitución Política de la República.
+</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>80</TotalAfirmativos>
+    <TotalNegativos>59</TotalNegativos>
+    <TotalAbstenciones>2</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37547</ID>
+    <Fecha>2024-04-10T13:19:41</Fecha>
+    <Tipo Codigo="2">Particular</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Numeral 2 del artículo primero del proyecto, en los términos sugeridos por la Comisión de Hacienda, cuya votación separada ha sido solicitada por los diputados Guillermo Ramírez y Agustín Romero, y que consta en las páginas 2 a 6 del comparado. 
+</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>74</TotalAfirmativos>
+    <TotalNegativos>59</TotalNegativos>
+    <TotalAbstenciones>8</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37546</ID>
+    <Fecha>2024-04-10T13:18:13</Fecha>
+    <Tipo Codigo="1">General</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="2">Quorum Calificado (Qc Y Loc)</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Número 36 del artículo primero; el número 3, letra j), párrafo 10, del artículo segundo; por tratarse de normas propias de quorum calificado; y los números 5, 21, 25,  28, 29, 39, 40, 41, 44, 46, letra a), 50, 52, 53 y 54, todos del artículo primero; números 7, 9, 23, todos del artículo quinto;  1; 2, letra b), ambos del artículo undécimo.</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>120</TotalAfirmativos>
+    <TotalNegativos>19</TotalNegativos>
+    <TotalAbstenciones>2</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+  <Votacion>
+    <ID>37545</ID>
+    <Fecha>2024-04-10T13:16:43</Fecha>
+    <Tipo Codigo="1">General</Tipo>
+    <Resultado Codigo="1">Aprobado</Resultado>
+    <Quorum Codigo="1">Quorum Simple</Quorum>
+    <Sesion>
+      <ID>4471</ID>
+      <Numero>17</Numero>
+      <Fecha>2024-04-10T10:02:42</Fecha>
+      <FechaTermino>0001-01-01T00:00:00</FechaTermino>
+      <Tipo Codigo="60">Ordinaria</Tipo>
+    </Sesion>
+    <Boletin>16621-05</Boletin>
+    <Articulo>Número 36 del artículo primero; el número 3, letra j), párrafo 10, del artículo segundo; por tratarse de normas propias de quorum calificado; y los números 5, 21, 25,  28, 29, 39, 40, 41, 44, 46, letra a), 50, 52, 53 y 54, todos del artículo primero; números 7, 9, 23, todos del artículo quinto;  1; 2, letra b), ambos del artículo undécimo.</Articulo>
+    <Tramite Codigo="1">PRIMER TRÁMITE</Tramite>
+    <Informe Codigo="1">PRIMER INFORME</Informe>
+    <TotalAfirmativos>120</TotalAfirmativos>
+    <TotalNegativos>18</TotalNegativos>
+    <TotalAbstenciones>3</TotalAbstenciones>
+    <TotalDispensados>0</TotalDispensados>
+  </Votacion>
+</Votaciones>

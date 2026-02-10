@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><Norma xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.leychile.cl/esquemas" xsi:schemaLocation="http://www.leychile.cl/esquemas http://www.leychile.cl/esquemas/EsquemaIntercambioNorma-v1-0.xsd" normaId="243302" esTratado="no tratado" fechaVersion="2005-10-28" SchemaVersion="1.0" derogado="no derogado">
+  <Identificador fechaPromulgacion="2005-09-28" fechaPublicacion="2005-10-28">
+    <TiposNumeros>
+      <TipoNumero>
+        <Tipo>Resoluci&#243;n</Tipo>
+        <Numero>3240 EXENTA</Numero>
+      </TipoNumero>
+    </TiposNumeros>
+    <Organismos>
+      <Organismo>MINISTERIO DE ECONOM&#205;A</Organismo>
+      <Organismo>FOMENTO Y RECONSTRUCCION</Organismo>
+      <Organismo>SUBSECRETAR&#205;A DE PESCA</Organismo>
+    </Organismos>
+  </Identificador>
+  <Metadatos>
+    <TituloNorma>&#160;</TituloNorma>
+    
+    
+    
+    <IdentificacionFuente>Diario Oficial</IdentificacionFuente>
+    <NumeroFuente>38298</NumeroFuente>
+  </Metadatos>
+  <Encabezado fechaVersion="2005-10-28" derogado="no derogado">
+    <Texto>&#160;</Texto>
+  </Encabezado>
+  <EstructurasFuncionales>
+    <EstructuraFuncional transitorio="no transitorio" tipoParte="Art&#237;culo" fechaVersion="2005-10-28" derogado="no derogado" idParte="6545485">
+      <Texto>     Por resoluci&#243;n exenta N&#186; 3.240 de 28 de septiembre de 2005, de esta Subsecretar&#237;a, autor&#237;zase a Germ&#225;n Ra&#250;l Valenzuela Uribe, para instalar por el per&#237;odo de seis meses contados desde la fecha de la presente resoluci&#243;n, colectores de semillas de mit&#237;lidos, en el estero Quintupeu, X Regi&#243;n, en una superficie de 10,04 hect&#225;reas, cuyas coordenadas geogr&#225;ficas, seg&#250;n la carta Shoa N&#186; 7340, son las siguientes:
+
+ V&#233;rtice   Latitud (S)   Longitud (W)
+   A   42&#176;10'11,80"   73&#176;25'11,00"
+   B   42&#176;10'11,80"   73&#176;24'49,60"
+   C   42&#176;10'18,40"   73&#176;24'49,60"
+   D   42&#176;10'18,40"   73&#176;25'11,00"</Texto>
+      <Metadatos>
+        <NombreParte presente="no">&#160;</NombreParte>
+        <TituloParte presente="no">&#160;</TituloParte>
+        
+      </Metadatos>
+    </EstructuraFuncional>
+  </EstructurasFuncionales>
+  <Promulgacion fechaVersion="2005-10-28" derogado="no derogado">
+    <Texto>     Valpara&#237;so, 28 de septiembre de 2005.- Felipe Sandoval Precht, Subsecretario de Pesca.</Texto>
+  </Promulgacion>
+  
+</Norma>

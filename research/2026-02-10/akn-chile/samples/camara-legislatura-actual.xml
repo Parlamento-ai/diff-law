@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Legislatura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/">
+  <ID>57</ID>
+  <Numero>373</Numero>
+  <Tipo Codigo="72"> </Tipo>
+  <FechaInicio>2025-03-11T00:00:00</FechaInicio>
+  <FechaTermino>2026-03-10T23:59:59</FechaTermino>
+</Legislatura>
