@@ -10,9 +10,30 @@ Partimos de un problema concreto: no existe una herramienta pública para ver qu
 ---
 **10/02/2026**
 
-El proyecto va bien encaminado. Nos surgieron tres preguntas:
+Surgieron tres preguntas, qué quisimos responder:
 1. ¿Cómo representar el hecho de que varios países nombran las cosas de forma distinta? ¿AKN tiene forma de representar eso?
+
+Respuesta generada por AI:
+```md
+No necesitas "escribir todo en inglés y traducir en la interfaz". La solución de AKN es más elegante:
+
+1. El XML usa elementos en inglés (forzado por el schema) — esto da interoperabilidad entre países
+2. Los metadatos llevan los nombres locales (name, showAs, FRBRname) — esto da la localización
+3. Tu interfaz simplemente lee el showAs para mostrar al usuario — no necesitas tabla de traducciones
+
+Lo que AKN no resuelve (y que sería trabajo tuyo si lo necesitas): una ontología cross-jurisdicción que diga "Cámara de Diputados == House of Representatives == Camera dei Deputati". AKN te da el framework (TLCConcept con href apuntando a una ontología), pero no viene con el mapeo hecho. Si quieres que tu interfaz muestre "equivalencias" entre países, tendrías que construir esa ontología.
+```
+
 2. AKN solamente representa el dato como es. No comprende las reglas del rito parlamentario. ¿Habrá algún formato que nos permita transformar todo el proceso en algo fácil de leer por una máquina y un humano? Tal vez un formato para construir diagramas de decisiones o algo de ese estilo, que nos permita traducir las leyes legislativas de un país.
+
+Respuesta generada por AI:
+```md
+1. AKN = los documentos (qué se produjo)
+2. BPMN = el proceso (cómo se mueven los documentos)
+3. DMN = las reglas (por qué se toman las decisiones)
+Cada país tendría su modelo BPMN del rito parlamentario, con sus tablas DMN de reglas. Los nodos del proceso BPMN referenciarían los tipos de documentos AKN que se producen en cada paso. 
+```
+
 3. ¿Podríamos convertir los datos públicos de algún Parlamento a nuestro nuevo formato AKN? Habría que ver que Parlamento tiene bastantes datos bien ordenados públicamente y ver si, con una combinación de mecánica y humano, podríamos convertirlo en este formato. 
 
 
