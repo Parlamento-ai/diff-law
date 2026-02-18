@@ -45,7 +45,7 @@
 					{vote.result === 'approved' ? '\u2713' : '\u2717'}
 				</span>
 				<span>{resultLabels[vote.result] || vote.result}</span>
-				<span class="font-mono font-normal opacity-75">{vote.for.length}-{vote.against.length}-{vote.abstain.length}</span>
+				<span class="font-mono font-normal opacity-75">{vote.forCount ?? vote.for.length}-{vote.againstCount ?? vote.against.length}-{vote.abstainCount ?? vote.abstain.length}</span>
 			</div>
 			{#if vote.for.length > 0}
 				<p class="text-xs mt-1 opacity-75">
@@ -101,23 +101,7 @@
 		{/each}
 
 		{#if diffs.length === 0}
-			<!-- Skeleton placeholders -->
-			{#each { length: 3 } as _, i}
-				<div class="border border-gray-100 rounded-lg overflow-hidden animate-pulse">
-					<div class="flex items-center justify-between px-3 py-2 bg-gray-50 border-b border-gray-100">
-						<div class="h-3 w-20 bg-gray-200 rounded"></div>
-						<div class="h-4 w-16 bg-gray-200 rounded-full"></div>
-					</div>
-					<div class="p-3 space-y-2">
-						<div class="h-2.5 w-full bg-gray-100 rounded"></div>
-						<div class="h-2.5 w-4/5 bg-gray-100 rounded"></div>
-						{#if i === 0}
-							<div class="h-2.5 w-3/5 bg-gray-100 rounded"></div>
-						{/if}
-					</div>
-				</div>
-			{/each}
-			<p class="text-xs text-gray-300 italic text-center">
+			<p class="text-xs text-gray-300 italic text-center py-2">
 				Sin cambios en esta versión
 			</p>
 		{/if}

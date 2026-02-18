@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Read(//c/tmp/**)",
+      "WebFetch(domain:www.diariooficial.interior.gob.cl)",
+      "Bash(node scripts/ley-21735/extract.mjs:*)",
+      "Bash(node scripts/ley-21735/extract-real.mjs:*)",
+      "Bash(node scripts/ley-21735/analyze-xml.mjs:*)",
+      "Bash(node scripts/ley-21735/extract-versions.mjs:*)",
+      "Bash(node scripts/ley-21735/discover-ajax.mjs:*)",
+      "Bash(node scripts/ley-21735/extract-json-api.mjs:*)",
+      "Bash(node scripts/ley-21735/compare-versions.mjs:*)"
+    ]
+  }
+}

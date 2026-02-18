@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="mod-ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-18045/1993-06-01"/>
+          <FRBRuri value="/cl/amendment/ley-18045/1993-06-01"/>
+          <FRBRdate date="1993-06-01" name="publicación"/>
+          <FRBRauthor href="/cl/org/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@1993-06-01"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@1993-06-01"/>
+          <FRBRdate date="1993-06-01" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@1993-06-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>Ley 19.221</docTitle></p>
+      </longTitle>
+      <p>Establece mayoría de edad a 18 años</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Ley 19.221 modifica la Ley 18.045. 1 artículos afectados.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@1989-12-30"
+      result="/cl/act/ley-18045/spa@1993-06-01">
+      <akndiff:articleChange article="art_46" type="repeal">
+        <akndiff:old>Artículo 46.- Para ser director de una bolsa de valores se requiere a lo menos: a) Tener como mínimo 21 años de edad; b) Haber aprobado el cuarto año medio o estudios equivalentes y tener una experiencia laboral de a lo menos tres años en actividades del mercado de valores. No será necesario acreditar tal experiencia a los profesionales universitarios de carrera de diez semestres a lo menos; c) No haber sido sancionado por la Superintenden cia con la medida de suspensión o de cancelación de su inscripción en el Registro de Corredores y Agentes de Valores o en cualquiera de los otros Registros que lleva este organismo; d) No haber sido condenado por los delitos establecidos en la presente ley, por delito económico a que se refiere el decreto ley número 280, de 1974 y, en general, por delitos que merezcan pena afictiva, y e) No haber sido declarado en quiebra o no haber celebrado convenios judiciales o extrajudiciales con sus acreedores. En caso de duda respecto del cumplimiento de cualquiera de los requisitos o exigencias a que se refiere este artículo, resolverá la Superintendencia administrativamente y sin ulterior recurso.</akndiff:old>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

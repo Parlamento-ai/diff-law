@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="ley-21735-3er-tramite">
+    <meta>
+      <identification source="#camara">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-21735/3er-tramite"/>
+          <FRBRuri value="/cl/amendment/ley-21735/3er-tramite"/>
+          <FRBRdate date="2025-01-29" name="aprobación"/>
+          <FRBRauthor href="/cl/org/camara-diputados"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/amendment/ley-21735/3er-tramite/spa@2025-01-29"/>
+          <FRBRuri value="/cl/amendment/ley-21735/3er-tramite/spa@2025-01-29"/>
+          <FRBRdate date="2025-01-29" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/amendment/ley-21735/3er-tramite/spa@2025-01-29/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#camara">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+        <TLCOrganization eId="camara" href="/cl/org/camara-diputados" showAs="Cámara de Diputados"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>3er Trámite Constitucional</docTitle></p>
+      </longTitle>
+      <p>La Cámara de Diputados aprueba las modificaciones del Senado.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Sesión 134ª especial, legislatura 372ª (29/01/2025). La Cámara aprueba las enmiendas incorporadas por el Senado. Votación general: 110-38-0. Se realizan 51 votaciones separadas sobre artículos con quórum especial. Se despacha al Ejecutivo y al Tribunal Constitucional.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/bill/ley-21735/spa@2022-11-07"
+      result="/cl/act/ley-21735/spa@2025-03-26">
+      <akndiff:vote date="2025-01-29" result="approved"
+        source="/cl/debate/camara-sesion-134-372">
+        <akndiff:for count="110"/>
+        <akndiff:against count="38"/>
+        <akndiff:abstain count="0"/>
+      </akndiff:vote>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

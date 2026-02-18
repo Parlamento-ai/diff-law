@@ -1,0 +1,18 @@
+<Votaciones>
+  <Votacion>
+    <Tramite Codigo="1">Primer Trámite Constitucional</Tramite>
+    <Tipo Codigo="1">General</Tipo>
+    <Fecha>2024-01-24</Fecha>
+    <TotalAfirmativos>84</TotalAfirmativos>
+    <TotalNegativos>64</TotalNegativos>
+    <TotalAbstenciones>3</TotalAbstenciones>
+  </Votacion>
+  <Votacion>
+    <Tramite Codigo="3">Tercer Trámite Constitucional</Tramite>
+    <Tipo Codigo="1">General</Tipo>
+    <Fecha>2025-01-29</Fecha>
+    <TotalAfirmativos>110</TotalAfirmativos>
+    <TotalNegativos>38</TotalNegativos>
+    <TotalAbstenciones>0</TotalAbstenciones>
+  </Votacion>
+</Votaciones>

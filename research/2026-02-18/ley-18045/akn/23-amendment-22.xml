@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="mod-ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-18045/2012-02-01"/>
+          <FRBRuri value="/cl/amendment/ley-18045/2012-02-01"/>
+          <FRBRdate date="2012-02-01" name="publicación"/>
+          <FRBRauthor href="/cl/org/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@2012-02-01"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@2012-02-01"/>
+          <FRBRdate date="2012-02-01" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@2012-02-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>Ley 20.552</docTitle></p>
+      </longTitle>
+      <p>Modifica Ley de Mercado de Valores</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Ley 20.552 modifica la Ley 18.045. 1 artículos afectados.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@2010-10-01"
+      result="/cl/act/ley-18045/spa@2012-02-01">
+      <akndiff:articleChange article="art_4bis" type="substitute">
+        <akndiff:old>Artículo 4° bis.- En los mercados de valores se entenderá por: a) Mercado secundario formal: aquél en que los compradores y vendedores están simultánea y públicamente participando en forma directa o a través de un agente de valores o corredor de bolsa en la determinación de los precios de los títulos que se transan en él, siempre que diariamente se publiquen el volumen y el precio de las transacciones efectuadas y cumpla con los requisitos relativos a número de participantes, reglamentación interna y aquellos tendientes a garantizar la transparencia de las transacciones que se efectúan en él, que establezca la Superintendencia mediante norma de carácter general; b) Instrumentos únicos: aquellos emitidos individualmente y que por su naturaleza no son susceptibles de conformar una serie; c) Instrumentos seriados: el conjunto de instrumentos que guardan relación entre sí por corresponder a una misma emisión y que poseen idénticas características en cuanto a su fecha de vencimiento, tasa de interés, tipo de amortización, condiciones de rescate, garantías, preferencias y tipo de reajuste, y d) Accionista minoritario: toda persona que por sí sola o en conjunto con otras con las que tenga acuerdo de actuación conjunta, posea menos del 10% de las acciones con derecho a voto de una sociedad, siempre que dicho porcentaje no le permita designar un director. e) Inversionistas institucionales: a los bancos, sociedades financieras, compañías de seguros, entidades nacionales de reaseguro y administradoras de fondos autorizados por ley. También tendrán este carácter, las entidades que señale la Superintendencia mediante una norma de carácter general, siempre que se cumplan las siguientes condiciones copulativas: a) que el giro principal de las entidades sea la realización de inversiones financieras o en activos financieros, con fondos de terceros; b) que el volumen de transacciones, naturaleza de sus activos u otras características, permita calificar de relevante su participación en el mercado. f) Inversionistas calificados: a los inversionistas institucionales e intermediarios de valores en operaciones de cuenta propia, como también aquellas personas naturales o jurídicas que realicen habitualmente operaciones con valores por montos significativos o bien que por su profesión, actividad o patrimonio quepa presumir que poseen un conocimiento acabado del funcionamiento del mercado de valores. La Superintendencia, mediante norma de carácter general, fijará las condiciones y parámetros que determinen que estas personas califican como inversionistas de esta clase.</akndiff:old>
+        <akndiff:new>Artículo 4° bis.- En los mercados de valores se entenderá por: a) Mercado secundario formal: aquél en que los compradores y vendedores están simultánea y públicamente participando en forma directa o a través de un agente de valores o corredor de bolsa en la determinación de los precios de los títulos que se transan en él, siempre que diariamente se publiquen el volumen y el precio de las transacciones efectuadas y cumpla con los requisitos relativos a número de participantes, reglamentación interna y aquellos tendientes a garantizar la transparencia de las transacciones que se efectúan en él, que establezca la Superintendencia mediante norma de carácter general; b) Instrumentos únicos: aquellos emitidos individualmente y que por su naturaleza no son susceptibles de conformar una serie; c) Instrumentos seriados: el conjunto de instrumentos que guardan relación entre sí por corresponder a una misma emisión y que poseen idénticas características en cuanto a su fecha de vencimiento, tasa de interés, tipo de amortización, condiciones de rescate, garantías, preferencias y tipo de reajuste, y d) Accionista minoritario: toda persona que por sí sola o en conjunto con otras con las que tenga acuerdo de actuación conjunta, posea menos del 10% de las acciones con derecho a voto de una sociedad, siempre que dicho porcentaje no le permita designar un director. e) Inversionistas institucionales: a los bancos, sociedades financieras, compañías de seguros, entidades nacionales de reaseguro y administradoras de fondos autorizados por ley. También tendrán este carácter, las entidades que señale la Superintendencia mediante una norma de carácter general, siempre que se cumplan las siguientes condiciones copulativas: a) que el giro principal de las entidades sea la realización de inversiones financieras o en activos financieros, con fondos de terceros; b) que el volumen de transacciones, naturaleza de sus activos u otras características, permita calificar de relevante su participación en el mercado. f) Inversionistas calificados: a los inversionistas institucionales e intermediarios de valores en operaciones de cuenta propia, como también aquellas personas naturales o jurídicas que realicen habitualmente operaciones con valores por montos significativos o bien que por su profesión, actividad o patrimonio quepa presumir que poseen un conocimiento acabado del funcionamiento del mercado de valores. La Superintendencia, mediante norma de carácter general, fijará las condiciones y parámetros que determinen que estas personas califican como inversionistas de esta clase. g) Valores de presencia bursátil: aquellos que cumplan con los requisitos establecidos para tales efectos por la Superintendencia a través de una norma de carácter general, los que deberán responder a condiciones que, de acuerdo a la Superintendencia, sean indicativas de la liquidez de los valores o de la profundidad de los mercados en que se negocien los valores en cuestión, a efectos de propiciar una correcta formación de precios. Dichos requisitos deberán tener en consideración elementos tales como el volumen, periodicidad, número de cedentes, adquirentes u oferentes, cuantía u otras circunstancias semejantes relativas a las transacciones o cotizaciones de los valores. Con todo, dichos valores deberán tener una presencia ajustada igual o superior a veinticinco por ciento. Para estos efectos, se determinará la presencia ajustada de la siguiente forma: (a) dentro de los últimos ciento ochenta días hábiles bursátiles, se determinará el número de días en que las transacciones bursátiles totales diarias hayan alcanzado un monto mínimo definido por la Superintendencia a través de norma de carácter general, el cual no podrá ser inferior al equivalente en pesos a mil unidades de fomento; (b) dicho número será dividido por ciento ochenta, y el cuociente así resultante se multiplicará por cien, quedando expresado en porcentaje. Asimismo, tales requisitos podrán establecer la condición de presencia bursátil en virtud de contratos que aseguren la existencia diaria de ofertas de compra y venta de los valores, por la cuantía, tiempo y condiciones que defina la Superintendencia. Las referencias que se hagan a acciones, títulos o, en general, valores de transacción, cotización o presencia bursátil, contenidas en leyes, decretos, reglamentos, resoluciones, estatutos o cualquier otro cuerpo normativo, se entenderán hechas a aquellos que posean la condición de presencia bursátil en virtud de lo dispuesto en este artículo. Asimismo, las referencias que se hagan en las leyes o en otros cuerpos legales a la normativa mediante la cual la Superintendencia de Valores y Seguros determinará qué valores son de transacción o presencia bursátil, se entenderán hechas a la norma de carácter general que emita aquélla en uso de las facultades conferidas en este artículo.</akndiff:new>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="ley-21735-1er-tramite">
+    <meta>
+      <identification source="#camara">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-21735/1er-tramite"/>
+          <FRBRuri value="/cl/amendment/ley-21735/1er-tramite"/>
+          <FRBRdate date="2024-01-24" name="aprobación"/>
+          <FRBRauthor href="/cl/org/camara-diputados"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/amendment/ley-21735/1er-tramite/spa@2024-01-24"/>
+          <FRBRuri value="/cl/amendment/ley-21735/1er-tramite/spa@2024-01-24"/>
+          <FRBRdate date="2024-01-24" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/amendment/ley-21735/1er-tramite/spa@2024-01-24/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#camara">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+        <TLCOrganization eId="camara" href="/cl/org/camara-diputados" showAs="Cámara de Diputados"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>1er Trámite Constitucional</docTitle></p>
+      </longTitle>
+      <p>Aprobado en general y particular por la Cámara de Diputados.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Sesión 136ª, legislatura 371ª. La Cámara aprueba el proyecto en general (84-64-3) y en votación particular los artículos del proyecto con quórum especial. Se despacha al Senado como Cámara Revisora.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/dfl-28/spa@2025-03-25"
+      result="/cl/act/dfl-28/spa@2025-03-26">
+      <akndiff:vote date="2024-01-24" result="approved"
+        source="/cl/debate/camara-sesion-136-371">
+        <akndiff:for count="84"/>
+        <akndiff:against count="64"/>
+        <akndiff:abstain count="3"/>
+      </akndiff:vote>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

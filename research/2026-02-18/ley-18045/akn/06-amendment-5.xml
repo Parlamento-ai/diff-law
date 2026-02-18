@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="mod-ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-18045/1987-10-20"/>
+          <FRBRuri value="/cl/amendment/ley-18045/1987-10-20"/>
+          <FRBRdate date="1987-10-20" name="publicación"/>
+          <FRBRauthor href="/cl/org/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@1987-10-20"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@1987-10-20"/>
+          <FRBRdate date="1987-10-20" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@1987-10-20/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>Ley 18.660</docTitle></p>
+      </longTitle>
+      <p>Modifica Ley de Mercado de Valores</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Ley 18.660 modifica la Ley 18.045. 7 artículos afectados.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@1985-12-28"
+      result="/cl/act/ley-18045/spa@1987-10-20">
+      <akndiff:articleChange article="art_96" type="insert" after="art_69">
+        <akndiff:new>Artículo 96.- Grupo empresarial es el conjunto de entidades que presentan vínculos de tal naturaleza en su propiedad, administración o responsabilidad crediticia, que hacen presumir que la actuación económica y financiera de sus integrantes está guiada por los intereses comunes del grupo o subordinada a éstos, o que existen riesgos financieros comunes en los créditos que se les otorgan o en la adquisición de valores que emiten. Forman parte de un mismo grupo empresarial:
+a) Una sociedad y su controlador;
+b) Todas las sociedades que tienen un controlador común, y este último, y
+c) Toda entidad que determine la Superintendencia considerando la concurrencia de una o más de las siguientes circunstancias: 1. Que un porcentaje significativo del activo de la sociedad está comprometido en el grupo empresarial, ya sea en la forma de inversión en valores, derechos en sociedades, acreencias o garantías; 2. Que la sociedad tiene un significativo nivel de endeudamiento y que el grupo empresarial tiene importante participación como acreedor o garante de dicha deuda; 3. Que la sociedad sea miembro de un controlador de algunas de las entidades mencionadas en las letras a) o b), cuando este controlador corresponda a un grupo de personas y existan razones fundadas en lo dispuesto en el inciso primero para incluirla en el grupo empresarial, y 4. Que la sociedad sea controlada por uno o más miembros del controlador de alguna de las entidades del grupo empresarial, si dicho controlador está compuesto por más de una persona, y existan razones fundadas en lo dispuesto en el inciso primero para incluirla en el grupo empresarial.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_97" type="insert" after="art_96">
+        <akndiff:new>Artículo 97.- Es controlador de una sociedad toda persona o grupo de personas con acuerdo de actuación conjunta que, directamente o a través de otras personas naturales o jurídicas, participa en su propiedad y tiene poder para realizar alguna de las siguientes actuaciones:
+a) Asegurar la mayoría de votos en las juntas de accionistas y elegir a la mayoría de los directores tratándose de sociedades anónimas, o asegurar la mayoría de votos en las asambleas o reuniones de sus miembros y designar al administrador o representante legal o a la mayoría de ellos, en otro tipo de sociedades, o
+b) Influir decisivamente en la administración de la sociedad. Cuando un grupo de personas tiene acuerdo de actuación conjunta para ejercer alguno de los poderes señalados en las letras anteriores, cada una de ellas se denominará miembro del controlador. En las sociedades en comandita por acciones se entenderá que es controlador el socio gestor.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_98" type="insert" after="art_97">
+        <akndiff:new>Artículo 98.- Acuerdo de actuación conjunta es la convención entre dos o más personas que participan simultáneamente en la propiedad de una sociedad, directamente o a través de otras personas naturales o jurídicas controladas, mediante la cual se comprometen a participar con idéntico interés en la gestión de la sociedad u obtener el control de la misma. Se presumirá que existe tal acuerdo entre las siguientes personas: entre representantes y representados, entre una persona y su cónyuge o sus parientes hasta el segundo grado de consanguinidad o afinidad, entre entidades pertenecientes a un mismo grupo empresarial, y entre una sociedad y su controlador o cada uno de sus miembros. La Superintendencia podrá calificar si entre dos o más personas existe acuerdo de actuación conjunta considerando entre otras circunstancias, el número de empresas en cuya propiedad participan simultáneamente, la frecuencia de votación coincidente en la elección de directores o designación de administradores y en los acuerdos de las juntas extraordinarias de accionistas. Si en una sociedad hubiere como socios o accionistas, personas jurídicas extranjeras de cuya propiedad no haya información suficiente, se presumirá que tienen acuerdo de actuación conjunta con el otro socio o accionista, o grupo de ellos con acuerdo de actuación conjunta, que tenga la mayor participación en la propiedad de la sociedad.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_99" type="insert" after="art_98">
+        <akndiff:new>Artículo 99.- Se entenderá que influye decisivamente en la administración o en la gestión de una sociedad toda persona, o grupo de personas con acuerdo de actuación conjunta, que, directamente o a través de otras personas naturales o jurídicas, controla al menos un 25% del capital con derecho a voto de la sociedad, o del capital de ella si no se tratare de una sociedad por acciones, con las siguientes excepciones:
+a) Que exista otra persona, u otro grupo de personas con acuerdo de actuación conjunta, que controle, directamente o a través de otras personas naturales o jurídicas, un porcentaje igual o mayor;
+b) Que no controle directamente o a través de otras personas naturales o jurídicas más del 40% del capital con derecho a voto de la sociedad, o del capital de ella si no se tratare de una sociedad por acciones, y que simultáneamente el porcentaje controlado sea inferior a la suma de las participaciones de los demás socios o accionistas con más de un 5% de dicho capital. Para determinar el porcentaje en que participen dichos socios o accionistas, se deberá sumar el que posean por sí solos con el de aquéllos con quienes tengan acuerdo de actuación conjunta;
+c) Cuando así lo determine la Superintendencia en consideración de la distribución y dispersión de la propiedad de la sociedad.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_100" type="insert" after="art_99">
+        <akndiff:new>Artículo 100.- Son relacionadas con una sociedad las siguientes personas:
+a) Las entidades del grupo empresarial al que pertenece la sociedad;
+b) Las personas jurídicas que tengan, respecto de la sociedad, la calidad de matriz, coligante, filial o coligada, en conformidad a las definiciones contenidas en la ley N° 18.046;
+c) Quienes sean directores, gerentes, administradores o liquidadores de la sociedad, y sus cónyuges o sus parientes hasta el segundo grado de consanguinidad o afinidad, y
+d) Toda persona que, por sí sola o con otras con que tenga acuerdo de actuación conjunta, pueda designar al menos un miembro de la administración de la sociedad o controle un 10% o más del capital o del capital con derecho a voto si se tratare de una sociedad por acciones. La Superintendencia podrá establecer mediante norma de carácter general, que es relacionada a una sociedad toda persona natural o jurídica que por relaciones patrimoniales, de administración, de parentesco, de responsabilidad o de subordinación, haga presumir que:
+1.- Por sí sola, o con otras con quienes tenga acuerdo de actuación conjunta, tiene poder de voto suficiente para influir en la gestión de la sociedad;
+2.- Sus negocios con la sociedad originan conflictos de interés;
+3.- Su gestión es influenciada por la sociedad, si se trata de una persona jurídica, o
+4.- Si por su cargo o posición está en situación de disponer de información de la sociedad y de sus negocios, que no haya sido divulgada públicamente al mercado, y que sea capaz de influir en la cotización de los valores de la sociedad. No se considerará relacionada a la sociedad una persona por el sólo hecho de participar hasta en un 5% del capital o 5% del capital con derecho a voto si se tratare de una sociedad por acciones, o si sólo es empleado no directivo de esa sociedad.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_101" type="insert" after="art_100">
+        <akndiff:new>Artículo 101.- Las entidades fiscalizadas por la Superintendencia proporcionarán a ésta y al público información acerca de las operaciones con sus personas relacionadas. Las sociedades anónimas que tengan inscritas sus acciones en el Registro de Valores informarán a la Superintendencia y a las bolsas de valores las transacciones de sus acciones que efectúen sus personas relacionadas. La Superintendencia determinará la forma, contenido y periodicidad de la información requerida en los incisos precedentes.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_102" type="insert" after="art_101">
+        <akndiff:new>Artículo 102.- Para los fines del presente Título, la Superintendencia impartirá las instrucciones necesarias y tendrá amplias facultades para requerir la información conducente a determinar los vínculos señalados en los artículos anteriores, y la necesaria para establecer si una entidad pertenece o no a un grupo empresarial. A su vez, podrá solicitar mayores antecedentes de todas aquellas entidades cuya información sea necesaria para determinar la situación financiera de las sociedades bajo su fiscalización. Toda entidad perteneciente al mismo grupo empresarial de una sociedad fiscalizada por la Superintendencia que efectúe operaciones comerciales significativas con ella, deberá informar a dicha sociedad que ambas tienen un controlador común. Asimismo, para el sólo efecto del cumplimiento de lo dispuesto en los artículos 101 de esta ley, y 89 de la ley N° 18.046, las entidades fiscalizadas por la Superintendencia podrán requerir de sus accionistas o socios que identifiquen si corresponden a personas relacionadas y qué tipo de relación tienen, y ellos estarán obligados a proporcionar dicha información.</akndiff:new>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="mod-ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-18045/1997-07-30"/>
+          <FRBRuri value="/cl/amendment/ley-18045/1997-07-30"/>
+          <FRBRdate date="1997-07-30" name="publicación"/>
+          <FRBRauthor href="/cl/org/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@1997-07-30"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@1997-07-30"/>
+          <FRBRdate date="1997-07-30" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@1997-07-30/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>Ley 19.506</docTitle></p>
+      </longTitle>
+      <p>Modifica competencias SVS</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Ley 19.506 modifica la Ley 18.045. 1 artículos afectados.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@1995-05-18"
+      result="/cl/act/ley-18045/spa@1997-07-30">
+      <akndiff:articleChange article="art_153" type="substitute">
+        <akndiff:old>Artículo 153.- La emisión de títulos de deuda a que se refiere el presente Título, estará exenta del impuesto establecido en el artículo 1°, N°3, del decreto ley N° 3.475, de 1980, sobre Impuesto de Timbres y Estampillas, siempre que al activo del patrimonio separado respectivo esté constituido por mutuos hipotecarios endosables, en un monto al menos equivalente al de la deuda por bonos correspondientes a dicho patrimonio. El pago al Fisco de las obligaciones tributarias de la sociedad, cualesquiera fuere su naturaleza u origen, será de responsabilidad exclusiva de su patrimonio común y no de la de los patrimonios separados que haya creado o formado. Estos patrimonios deberán aportar los recursos necesarios al patrimonio común de la sociedad, cuando ésta lo requiera para dar cumplimiento a lo prescrito en el inciso final del artículo 140. No se considerará renta la diferencia entre el valor de adquisición de un crédito securitizado y el valor nominal de éste, sino que sólo se entenderá por tal el resultado que provenga de comparar, en su oportunidad, el costo de adquisición del crédito, debidamente corregido, con el de su recuperación parcial o definitiva, que se haya producido al efectuarse el cobro efectivo del mismo, o el valor de venta si éste se enajena. Para los efectos de lo dispuesto en el artículo 31 de la Ley sobre Impuesto a la Renta, se considerarán gastos aceptados en la Primera Categoría de dicha ley, las provisiones y castigos de los créditos securitizados, incorporados o no a los patrimonios separados, que se encuentren vencidos, así como las emisiones que de ellos se hagan, estén o no vencidos. Las características que deban reunir las provisiones, remisiones y castigos para que proceda lo dispuesto en esta norma, serán establecidas por la Superintendencia de Valores y Seguros, previa consulta al Servicio de Impuestos Internos. Las comisiones y otras remuneraciones que las sociedades a que se refiere este Título, paguen a terceros por la administración y custodia de los bienes integrantes de los patrimonios separados que posean, en los términos que dispone el inciso primero del artículo 141, estarán exentas del Impuesto al Valor Agregado establecido en el decreto ley N° 825, de 1974.</akndiff:old>
+        <akndiff:new>Artículo 153.- La emisión de títulos de deuda a que se refiere el presente Título, estará exenta del impuesto establecido en el artículo 1°, N°3, del decreto ley N° 3.475, de 1980, sobre Impuesto de Timbres y Estampillas, siempre que al activo del patrimonio separado respectivo esté constituido por documentos, que en su emisión, otorgamiento o suscripción, se hubieren gravado con el impuesto señalado o se encontraren exentos de él, en un monto al menos equivalente al de la deuda por bonos correspondientes a dicho patrimonio. El pago al Fisco de las obligaciones tributarias de la sociedad, cualesquiera fuere su naturaleza u origen, será de responsabilidad exclusiva de su patrimonio común y no de la de los patrimonios separados que haya creado o formado. Estos patrimonios deberán aportar los recursos necesarios al patrimonio común de la sociedad, cuando ésta lo requiera para dar cumplimiento a lo prescrito en el inciso final del artículo 140. No se considerará renta la diferencia entre el valor de adquisición de un crédito securitizado y el valor nominal de éste, sino que sólo se entenderá por tal el resultado que provenga de comparar, en su oportunidad, el costo de adquisición del crédito, debidamente corregido, con el de su recuperación parcial o definitiva, que se haya producido al efectuarse el cobro efectivo del mismo, o el valor de venta si éste se enajena. Para los efectos de lo dispuesto en el artículo 31 de la Ley sobre Impuesto a la Renta, se considerarán gastos aceptados en la Primera Categoría de dicha ley, las provisiones y castigos de los créditos securitizados, incorporados o no a los patrimonios separados, que se encuentren vencidos, así como las remisiones que de ellos se hagan, estén o no vencidos. Las características que deban reunir las provisiones, remisiones y castigos para que proceda lo dispuesto en esta norma, serán establecidas por la Superintendencia de Valores y Seguros, previa consulta al Servicio de Impuestos Internos. Las comisiones y otras remuneraciones que las sociedades a que se refiere este Título, paguen a terceros por la administración y custodia de los bienes integrantes de los patrimonios separados que posean, en los términos que dispone el inciso primero del artículo 141, estarán exentas del Impuesto al Valor Agregado establecido en el decreto ley N° 825, de 1974.</akndiff:new>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

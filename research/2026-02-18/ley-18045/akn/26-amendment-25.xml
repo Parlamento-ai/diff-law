@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="mod-ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-18045/2020-10-19"/>
+          <FRBRuri value="/cl/amendment/ley-18045/2020-10-19"/>
+          <FRBRdate date="2020-10-19" name="publicación"/>
+          <FRBRauthor href="/cl/org/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@2020-10-19"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@2020-10-19"/>
+          <FRBRdate date="2020-10-19" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@2020-10-19/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>Ley 21.276</docTitle></p>
+      </longTitle>
+      <p>Nuevo delito de uso de información privilegiada</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Ley 21.276 modifica la Ley 18.045. 1 artículos afectados.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@2014-10-10"
+      result="/cl/act/ley-18045/spa@2020-10-19">
+      <akndiff:articleChange article="art_8ter" type="insert" after="art_8bis">
+        <akndiff:new>Artículo 8° ter.- Los títulos de deuda que emitan emisores ya inscritos en el Registro de Valores y que cumplan con las características o condiciones que establezca la Comisión para el Mercado Financiero mediante norma de carácter general, ya sea respecto del emisor, la emisión, la colocación o del inversionista al que se dirige la oferta, entre otras, podrán acogerse a la modalidad de registro automático establecido en este artículo. Para tal efecto, el emisor deberá acompañar a su solicitud de inscripción automática, la o las clasificaciones de riesgo a que se refiere el artículo 8° bis de esta ley, el ejemplar de la escritura pública exigido por los artículos 104 o 137 de la misma, según el tipo de título del cual se trate, y el resto de la documentación que la Comisión para el Mercado Financiero establezca, mediante norma de carácter general, respecto de los títulos de deuda o línea de títulos de deuda y, en su caso, de las modificaciones respectivas. A partir del día hábil siguiente de efectuado el pago de derechos por la solicitud de inscripción, quedarán inscritos en el Registro de Valores por el solo ministerio de la ley, los títulos de deuda de emisores inscritos cuya petición y pago de los derechos correspondientes sea efectuada a través del sistema o procedimiento de inscripción automática que la Comisión para el Mercado Financiero establezca para tal efecto.</akndiff:new>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="ley-21735-2do-tramite">
+    <meta>
+      <identification source="#senado">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-21735/2do-tramite"/>
+          <FRBRuri value="/cl/amendment/ley-21735/2do-tramite"/>
+          <FRBRdate date="2025-01-27" name="aprobación"/>
+          <FRBRauthor href="/cl/org/senado"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/amendment/ley-21735/2do-tramite/spa@2025-01-27"/>
+          <FRBRuri value="/cl/amendment/ley-21735/2do-tramite/spa@2025-01-27"/>
+          <FRBRdate date="2025-01-27" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/amendment/ley-21735/2do-tramite/spa@2025-01-27/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#senado">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+        <TLCOrganization eId="senado" href="/cl/org/senado" showAs="Senado de Chile"/>
+        <TLCPerson eId="coloma-c-juan-antonio" href="/cl/persona/coloma-c-juan-antonio" showAs="Sen. Coloma C., Juan Antonio"/>
+        <TLCPerson eId="garcia-r-jose" href="/cl/persona/garcia-r-jose" showAs="Sen. García R., José"/>
+        <TLCPerson eId="kuschel-s-carlos-ignacio" href="/cl/persona/kuschel-s-carlos-ignacio" showAs="Sen. Kuschel S., Carlos Ignacio"/>
+        <TLCPerson eId="allende-b-isabel" href="/cl/persona/allende-b-isabel" showAs="Sen. Allende B., Isabel"/>
+        <TLCPerson eId="chahuan-c-francisco" href="/cl/persona/chahuan-c-francisco" showAs="Sen. Chahuán C., Francisco"/>
+        <TLCPerson eId="lagos-w-ricardo" href="/cl/persona/lagos-w-ricardo" showAs="Sen. Lagos W., Ricardo"/>
+        <TLCPerson eId="quintana-l-jaime" href="/cl/persona/quintana-l-jaime" showAs="Sen. Quintana L., Jaime"/>
+        <TLCPerson eId="araya-g-pedro" href="/cl/persona/araya-g-pedro" showAs="Sen. Araya G., Pedro"/>
+        <TLCPerson eId="de-urresti-l-alfonso" href="/cl/persona/de-urresti-l-alfonso" showAs="Sen. De Urresti L., Alfonso"/>
+        <TLCPerson eId="ossandon-i-manuel-jose" href="/cl/persona/ossandon-i-manuel-jose" showAs="Sen. Ossandón I., Manuel José"/>
+        <TLCPerson eId="durana-s-jose-miguel" href="/cl/persona/durana-s-jose-miguel" showAs="Sen. Durana S., José Miguel"/>
+        <TLCPerson eId="insulza-s-jose-miguel" href="/cl/persona/insulza-s-jose-miguel" showAs="Sen. Insulza S., José Miguel"/>
+        <TLCPerson eId="ebensperger-o-luz-eliana" href="/cl/persona/ebensperger-o-luz-eliana" showAs="Sen. Ebensperger O., Luz Eliana"/>
+        <TLCPerson eId="soria-q-jorge" href="/cl/persona/soria-q-jorge" showAs="Sen. Soria Q., Jorge"/>
+        <TLCPerson eId="prohens-e-rafael" href="/cl/persona/prohens-e-rafael" showAs="Sen. Prohens E., Rafael"/>
+        <TLCPerson eId="provoste-c-yasna" href="/cl/persona/provoste-c-yasna" showAs="Sen. Provoste C., Yasna"/>
+        <TLCPerson eId="latorre-r-juan-ignacio" href="/cl/persona/latorre-r-juan-ignacio" showAs="Sen. Latorre R., Juan Ignacio"/>
+        <TLCPerson eId="pugh-o-kenneth" href="/cl/persona/pugh-o-kenneth" showAs="Sen. Pugh O., Kenneth"/>
+        <TLCPerson eId="galilea-v-rodrigo" href="/cl/persona/galilea-v-rodrigo" showAs="Sen. Galilea V., Rodrigo"/>
+        <TLCPerson eId="aravena-a-carmen-gloria" href="/cl/persona/aravena-a-carmen-gloria" showAs="Sen. Aravena A., Carmen Gloria"/>
+        <TLCPerson eId="huenchumilla-j-francisco" href="/cl/persona/huenchumilla-j-francisco" showAs="Sen. Huenchumilla J., Francisco"/>
+        <TLCPerson eId="kast-s-felipe" href="/cl/persona/kast-s-felipe" showAs="Sen. Kast S., Felipe"/>
+        <TLCPerson eId="ordenes-n-ximena" href="/cl/persona/ordenes-n-ximena" showAs="Sen. Ordenes N., Ximena"/>
+        <TLCPerson eId="sandoval-p-david" href="/cl/persona/sandoval-p-david" showAs="Sen. Sandoval P., David"/>
+        <TLCPerson eId="carvajal-a-loreto" href="/cl/persona/carvajal-a-loreto" showAs="Sen. Carvajal A., Loreto"/>
+        <TLCPerson eId="bianchi-r-karim" href="/cl/persona/bianchi-r-karim" showAs="Sen. Bianchi R., Karim"/>
+        <TLCPerson eId="castro-g-juan-luis" href="/cl/persona/castro-g-juan-luis" showAs="Sen. Castro G., Juan Luis"/>
+        <TLCPerson eId="cruz-coke-c-luciano" href="/cl/persona/cruz-coke-c-luciano" showAs="Sen. Cruz-Coke C., Luciano"/>
+        <TLCPerson eId="edwards-s-rojo" href="/cl/persona/edwards-s-rojo" showAs="Sen. Edwards S., Rojo"/>
+        <TLCPerson eId="espinoza-s-fidel" href="/cl/persona/espinoza-s-fidel" showAs="Sen. Espinoza S., Fidel"/>
+        <TLCPerson eId="flores-g-ivan" href="/cl/persona/flores-g-ivan" showAs="Sen. Flores G., Iván"/>
+        <TLCPerson eId="gahona-s-sergio" href="/cl/persona/gahona-s-sergio" showAs="Sen. Gahona S., Sergio"/>
+        <TLCPerson eId="gatica-b-maria-jose" href="/cl/persona/gatica-b-maria-jose" showAs="Sen. Gatica B., María José"/>
+        <TLCPerson eId="kusanovic-g-alejandro" href="/cl/persona/kusanovic-g-alejandro" showAs="Sen. Kusanovic G., Alejandro"/>
+        <TLCPerson eId="macaya-d-javier" href="/cl/persona/macaya-d-javier" showAs="Sen. Macaya D., Javier"/>
+        <TLCPerson eId="nunez-a-daniel" href="/cl/persona/nunez-a-daniel" showAs="Sen. Núñez A., Daniel"/>
+        <TLCPerson eId="nunez-u-paulina" href="/cl/persona/nunez-u-paulina" showAs="Sen. Núñez U., Paulina"/>
+        <TLCPerson eId="pascual-g-claudia" href="/cl/persona/pascual-g-claudia" showAs="Sen. Pascual G., Claudia"/>
+        <TLCPerson eId="saavedra-c-gaston" href="/cl/persona/saavedra-c-gaston" showAs="Sen. Saavedra C., Gastón"/>
+        <TLCPerson eId="sanhueza-d-gustavo" href="/cl/persona/sanhueza-d-gustavo" showAs="Sen. Sanhueza D., Gustavo"/>
+        <TLCPerson eId="sepulveda-o-alejandra" href="/cl/persona/sepulveda-o-alejandra" showAs="Sen. Sepúlveda O., Alejandra"/>
+        <TLCPerson eId="van-rysselberghe-h-enrique" href="/cl/persona/van-rysselberghe-h-enrique" showAs="Sen. Van Rysselberghe H., Enrique"/>
+        <TLCPerson eId="velasquez-n-esteban" href="/cl/persona/velasquez-n-esteban" showAs="Sen. Velásquez N., Esteban"/>
+        <TLCPerson eId="walker-p-matias" href="/cl/persona/walker-p-matias" showAs="Sen. Walker P., Matías"/>
+        <TLCPerson eId="moreira-b-ivan" href="/cl/persona/moreira-b-ivan" showAs="Sen. Moreira B., Iván"/>
+        <TLCPerson eId="keitel-b-sebastian" href="/cl/persona/keitel-b-sebastian" showAs="Sen. Keitel B., Sebastián"/>
+        <TLCPerson eId="vodanovic-r-paulina" href="/cl/persona/vodanovic-r-paulina" showAs="Sen. Vodanovic R., Paulina"/>
+        <TLCOrganization eId="senado" href="/cl/org/senado" showAs="Senado de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>2do Trámite Constitucional</docTitle></p>
+      </longTitle>
+      <p>Aprobado en general y particular con modificaciones por el Senado.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Sesión 98ª, legislatura 372ª. El Senado aprueba el proyecto en general y particular con modificaciones. Votación en general: 40 a favor, 7 en contra. Se envía oficio de modificaciones a la Cámara de Origen.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@2025-03-25"
+      result="/cl/act/ley-18045/spa@2025-03-26">
+      <akndiff:vote date="2025-01-27" result="approved"
+        source="/cl/debate/senado-sesion-98-372">
+        <akndiff:for>
+          <akndiff:voter href="/cl/persona/coloma-c-juan-antonio" showAs="Sen. Coloma C., Juan Antonio"/>
+          <akndiff:voter href="/cl/persona/garcia-r-jose" showAs="Sen. García R., José"/>
+          <akndiff:voter href="/cl/persona/allende-b-isabel" showAs="Sen. Allende B., Isabel"/>
+          <akndiff:voter href="/cl/persona/chahuan-c-francisco" showAs="Sen. Chahuán C., Francisco"/>
+          <akndiff:voter href="/cl/persona/lagos-w-ricardo" showAs="Sen. Lagos W., Ricardo"/>
+          <akndiff:voter href="/cl/persona/quintana-l-jaime" showAs="Sen. Quintana L., Jaime"/>
+          <akndiff:voter href="/cl/persona/araya-g-pedro" showAs="Sen. Araya G., Pedro"/>
+          <akndiff:voter href="/cl/persona/de-urresti-l-alfonso" showAs="Sen. De Urresti L., Alfonso"/>
+          <akndiff:voter href="/cl/persona/ossandon-i-manuel-jose" showAs="Sen. Ossandón I., Manuel José"/>
+          <akndiff:voter href="/cl/persona/insulza-s-jose-miguel" showAs="Sen. Insulza S., José Miguel"/>
+          <akndiff:voter href="/cl/persona/ebensperger-o-luz-eliana" showAs="Sen. Ebensperger O., Luz Eliana"/>
+          <akndiff:voter href="/cl/persona/soria-q-jorge" showAs="Sen. Soria Q., Jorge"/>
+          <akndiff:voter href="/cl/persona/prohens-e-rafael" showAs="Sen. Prohens E., Rafael"/>
+          <akndiff:voter href="/cl/persona/provoste-c-yasna" showAs="Sen. Provoste C., Yasna"/>
+          <akndiff:voter href="/cl/persona/latorre-r-juan-ignacio" showAs="Sen. Latorre R., Juan Ignacio"/>
+          <akndiff:voter href="/cl/persona/galilea-v-rodrigo" showAs="Sen. Galilea V., Rodrigo"/>
+          <akndiff:voter href="/cl/persona/huenchumilla-j-francisco" showAs="Sen. Huenchumilla J., Francisco"/>
+          <akndiff:voter href="/cl/persona/kast-s-felipe" showAs="Sen. Kast S., Felipe"/>
+          <akndiff:voter href="/cl/persona/ordenes-n-ximena" showAs="Sen. Ordenes N., Ximena"/>
+          <akndiff:voter href="/cl/persona/sandoval-p-david" showAs="Sen. Sandoval P., David"/>
+          <akndiff:voter href="/cl/persona/carvajal-a-loreto" showAs="Sen. Carvajal A., Loreto"/>
+          <akndiff:voter href="/cl/persona/bianchi-r-karim" showAs="Sen. Bianchi R., Karim"/>
+          <akndiff:voter href="/cl/persona/castro-g-juan-luis" showAs="Sen. Castro G., Juan Luis"/>
+          <akndiff:voter href="/cl/persona/cruz-coke-c-luciano" showAs="Sen. Cruz-Coke C., Luciano"/>
+          <akndiff:voter href="/cl/persona/espinoza-s-fidel" showAs="Sen. Espinoza S., Fidel"/>
+          <akndiff:voter href="/cl/persona/flores-g-ivan" showAs="Sen. Flores G., Iván"/>
+          <akndiff:voter href="/cl/persona/gahona-s-sergio" showAs="Sen. Gahona S., Sergio"/>
+          <akndiff:voter href="/cl/persona/macaya-d-javier" showAs="Sen. Macaya D., Javier"/>
+          <akndiff:voter href="/cl/persona/nunez-a-daniel" showAs="Sen. Núñez A., Daniel"/>
+          <akndiff:voter href="/cl/persona/nunez-u-paulina" showAs="Sen. Núñez U., Paulina"/>
+          <akndiff:voter href="/cl/persona/pascual-g-claudia" showAs="Sen. Pascual G., Claudia"/>
+          <akndiff:voter href="/cl/persona/saavedra-c-gaston" showAs="Sen. Saavedra C., Gastón"/>
+          <akndiff:voter href="/cl/persona/sanhueza-d-gustavo" showAs="Sen. Sanhueza D., Gustavo"/>
+          <akndiff:voter href="/cl/persona/sepulveda-o-alejandra" showAs="Sen. Sepúlveda O., Alejandra"/>
+          <akndiff:voter href="/cl/persona/van-rysselberghe-h-enrique" showAs="Sen. Van Rysselberghe H., Enrique"/>
+          <akndiff:voter href="/cl/persona/velasquez-n-esteban" showAs="Sen. Velásquez N., Esteban"/>
+          <akndiff:voter href="/cl/persona/walker-p-matias" showAs="Sen. Walker P., Matías"/>
+          <akndiff:voter href="/cl/persona/moreira-b-ivan" showAs="Sen. Moreira B., Iván"/>
+          <akndiff:voter href="/cl/persona/keitel-b-sebastian" showAs="Sen. Keitel B., Sebastián"/>
+          <akndiff:voter href="/cl/persona/vodanovic-r-paulina" showAs="Sen. Vodanovic R., Paulina"/>
+        </akndiff:for>
+        <akndiff:against>
+          <akndiff:voter href="/cl/persona/kuschel-s-carlos-ignacio" showAs="Sen. Kuschel S., Carlos Ignacio"/>
+          <akndiff:voter href="/cl/persona/durana-s-jose-miguel" showAs="Sen. Durana S., José Miguel"/>
+          <akndiff:voter href="/cl/persona/pugh-o-kenneth" showAs="Sen. Pugh O., Kenneth"/>
+          <akndiff:voter href="/cl/persona/aravena-a-carmen-gloria" showAs="Sen. Aravena A., Carmen Gloria"/>
+          <akndiff:voter href="/cl/persona/edwards-s-rojo" showAs="Sen. Edwards S., Rojo"/>
+          <akndiff:voter href="/cl/persona/gatica-b-maria-jose" showAs="Sen. Gatica B., María José"/>
+          <akndiff:voter href="/cl/persona/kusanovic-g-alejandro" showAs="Sen. Kusanovic G., Alejandro"/>
+        </akndiff:against>
+        <akndiff:abstain></akndiff:abstain>
+      </akndiff:vote>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

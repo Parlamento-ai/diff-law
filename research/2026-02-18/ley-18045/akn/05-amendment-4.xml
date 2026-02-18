@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="mod-ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-18045/1985-12-28"/>
+          <FRBRuri value="/cl/amendment/ley-18045/1985-12-28"/>
+          <FRBRdate date="1985-12-28" name="publicación"/>
+          <FRBRauthor href="/cl/org/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@1985-12-28"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@1985-12-28"/>
+          <FRBRdate date="1985-12-28" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@1985-12-28/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>Ley 18.482</docTitle></p>
+      </longTitle>
+      <p>Incentivos al sector exportador</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Ley 18.482 modifica la Ley 18.045. 1 artículos afectados.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@1981-12-31"
+      result="/cl/act/ley-18045/spa@1985-12-28">
+      <akndiff:articleChange article="art_23" type="repeal">
+        <akndiff:old>Artículo 23.- El mercado secundario de valores estará organizado como sigue: a) Todas las acciones que de conformidad a esta ley deban inscribirse en el Registro de Valores deben también registrarse en una bolsa de valores, la que no podrá rechazar dicha inscripción. b) Las acciones de sociedades no inscritas en el Registro de Valores no podrán ser cotizadas ni transadas diariamente en bolsa. Asimismo, los agentes de valores no podrán participar en la intermediación de estos valores y los corredores de bolsa sólo podrán hacerlo en pública subasta en la forma dispuesta en esta letra. Dos veces en el mes, en las épocas que determine el reglamento de la bolsa respectiva, se efectuará una rueda especial para la subasta de acciones no inscritas, en la que se anunciará públicamente esta circunstancia. Los corredores de bolsa respecto de estas acciones estarán obligados a destacar avisos en sus oficinas que indiquen que se trata de valores sin inscripción y que carecen de información obligatoria, sin perjuicio de poder dar la información fidedigna que de ellos tengan. c) Las acciones inscritas en el Registro de Valores sólo podrán ser intermediadas por los corredores de bolsa. Estas transacciones deberán efectuarse en la rueda de la bolsa de la que ellos sean miembros. Los bancos y sociedades financieras que de acuerdo con sus facultades reciban órdenes de sus clientes para comprar o vender este tipo de acciones deberán ejecutar dichas órdenes a través de un corredor de bolsa. Sin perjuicio de lo dispuesto en los incisos anteriores, los corredores de bolsa y los agentes de valores que participen en una oferta pública de acciones de una nueva emisión podrán, por un período de 90 días a contar de la fecha del Registro en la Superintendencia de dicha emisión, efectuar fuera de bolsa las transacciones necesarias para llevar adelante la oferta. d) Otros valores distintos de las acciones, que estén inscritos en el Registro, podrán ser intermediados por cualquier corredor de bolsa o agente de valores registrados en la Superintendencia, o por los bancos y sociedades financieras, de acuerdo a sus facultades legales. Las transacciones de estos valores podrán efectuarse dentro de las bolsas, por corredores de bolsa, sólo cuando hayan sido aceptados a cotización por la bolsa respectiva. e) La intermediación de valores a que se refiere el inciso segundo del artículo 3° de la presente ley y los emitidos por bancos e instituciones financieras se sujetará a las normas establecidas en las letras precedentes.</akndiff:old>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

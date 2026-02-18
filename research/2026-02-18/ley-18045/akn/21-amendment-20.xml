@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="mod-ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-18045/2010-09-06"/>
+          <FRBRuri value="/cl/amendment/ley-18045/2010-09-06"/>
+          <FRBRdate date="2010-09-06" name="publicación"/>
+          <FRBRauthor href="/cl/org/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@2010-09-06"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@2010-09-06"/>
+          <FRBRdate date="2010-09-06" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@2010-09-06/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>Ley 20.345</docTitle></p>
+      </longTitle>
+      <p>Compensación y liquidación de valores</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Ley 20.345 modifica la Ley 18.045. 7 artículos afectados.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@2010-01-01"
+      result="/cl/act/ley-18045/spa@2010-09-06">
+      <akndiff:articleChange article="art_154" type="substitute">
+        <akndiff:old>Artículo 154.- Las bolsas de valores podrán constituir o formar parte de una Cámara de Compensación, la que tendrá por objeto ser la contraparte de todas las compras y ventas de contratos de futuro, de opciones de valores y de otros de similar naturaleza que les autorice la Superintendencia, que se efectúen en la respectiva bolsa, a partir del registro de dichas operaciones en la mencionada Cámara. Asimismo, la Cámara administrará, controlará y liquidará las operaciones, posiciones abiertas, cuentas corrientes, márgenes y saldos disponibles que efectúen y mantengan clientes y corredores en estos mercados.</akndiff:old>
+        <akndiff:new>Articulo 154°.- (DEROGADO)</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_155" type="substitute">
+        <akndiff:old>Artículo 155.- Las Cámaras estarán sujetas a las siguientes reglas: a) Deberán constituirse como sociedades anónimas especiales de conformidad a lo establecido en el artículo 126 de la ley N° 18.046, y les serán aplicables en lo que no fueren incompatibles con las disposiciones de la presente ley, las normas aplicables a las sociedades anónimas abiertas y las normas de carácter general dictadas por la Superintendencia. En su nombre deberán incluir la expresión &amp;quot;Cámara de Compensación&amp;quot;; b) Tendrán como objeto exclusivo el indicado en el artículo anterior; c) El capital mínimo pagado, expresado en pesos, no podrá ser inferior al equivalente en dinero efectivo, a quince mil unidades de fomento; d) Tendrán un directorio integrado por 5 miembros a lo menos, que podrán ser o no accionistas, pudiendo ser reelegidos; a) Las acciones serán nominativas y sin valor nominal; f) Sólo podrán estar constituidas por bolsas de valores y sus respectivos corredores; g) Tendrán un tribunal arbitral integrado por a lo menos 3 miembros, encargado de aplicar las medidas disciplinarias que contemplen sus estatutos y las que se indican en esta ley; sin perjuicio de las otras facultades que a éste se le otorguen en el estatuto; y h) A lo menos 30% de las utilidades de cada ejercicio se destinará a formar un Fondo de Contingencia, que tendrá por objeto cubrir obligaciones pendientes derivadas de operaciones registradas en la Cámara. Lo anterior será obligatorio hasta que el Fondo sea equivalente al capital y reservas de la cámara.</akndiff:old>
+        <akndiff:new>Articulo 155°.- (DEROGADO)</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_156" type="substitute">
+        <akndiff:old>Artículo 156.- Las Cámaras tendrán las siguientes funciones: a) Emitir y registrar los contratos de las operaciones de futuro y de opciones y ser la contraparte de los mismos; b) Recibir de los corredores los márgenes iniciales, dineros y valores correspondientes y acreditar los mismos en las respectivas cuentas corrientes. Los márgenes que constituyan los contratantes con una cámara de compensación, para responder de sus obligaciones, especialmente la de cubrir las diferencias de precios que se produzcan en los contratos de futuros y opciones, se podrán constituir transfiriéndole en dominio el bien respectivo, que se detentará por la cámara a nombre propio. Cuando fuere necesario hacer efectivo dichos márgenes, la cámara los realizará extrajudicialmente, actuando como señor y dueño, pero rindiendo cuenta como encargada fiduciaria de su contraparte. Lo anterior es sin perjuicio de lo dispuesto en el artículo 179 de la presente ley; c) Actualizar diariamente las posiciones abiertas de los clientes, debiendo ajustar los márgenes, establecer las variaciones diarias de precios y cargar o abonar a cada cuenta corriente las pérdidas o ganancias correspondientes; d) informar a los corredores la falta o el exceso de margen y de los saldos de las cuentas corrientes de sus clientes, al igual que la necesidad que éstos completen el margen, cuando corresponda; e) Ordenar a los corredores el cierre parcial o total de las posiciones abiertas de sus clientes por no cumplir éstos con los requerimientos de margen o coberturas; f) Liquidar, en la fecha de vencimiento, las posiciones abiertas del contrato que vence, disminuyendo el margen correspondiente y cargando o abonando las pérdidas o ganancias producidas, y g) Las demás que establezca la reglamentación interna de la respectiva cámara con la autorización de la Superintendencia.</akndiff:old>
+        <akndiff:new>Articulo 156°.- (DEROGADO)</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_157" type="substitute">
+        <akndiff:old>Artículo 157.- Con el solo registro de una operación en la Cámara, se entienden celebrados los contratos de futuro y de opciones en su caso, entre la Cámara y cada una de las partes de la respectiva negociación. Los contratos registrados no podrán ser posteriormente transferidos. Toda cesión, traspaso u otro acto de comercio deberá ejecutarse mediante un nuevo contrato.</akndiff:old>
+        <akndiff:new>Articulo 157°.- (DEROGADO)</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_158" type="substitute">
+        <akndiff:old>Artículo 158.- Las garantías especiales comprendidas en cada contrato serán liberadas en el momento en que las operaciones se hayan liquidado por cumplimiento de sus condiciones. En aquellos casos de liquidación en parcialidades, las garantías se liberarán en forma proporcional a la liquidación.</akndiff:old>
+        <akndiff:new>Articulo 158°.- (DEROGADO)</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_159" type="substitute">
+        <akndiff:old>Artículo 159.- Sin perjuicio de las facultades de la Superintendencia, el Tribunal Arbitral de la Cámara de Compensación podrá aplicar a los corredores que operen en la Cámara las sanciones de amonestación por escrito, multa de 50 a 500 unidades de fomento, a beneficio del respectivo fondo de contingencia, suspensión temporal de hasta por 30 días y expulsión de la Cámara, siempre que incurra en alguna de las siguientes infracciones: 1) Incumplimiento de las obligaciones que se deriven de los contratos registrados en la Cámara que se transen por su intermedio. 2) No constituir oportunamente los márgenes generales o especiales que se exijan para los contratos registrados en la Cámara o no constituir las garantías particulares que ésta establezca. 3) Proporcionar a la Cámara datos o informes incompletos o erróneos sobre los contratos que intermedian o sobre su situación financiera. 4) infringir las normas de operaciones de la Cámara establecida en sus estatutos o en el Reglamento interno. Quienes hubieran sido sancionados por el Tribunal Arbitral podrán solicitar, dentro de los cinco días hábiles siguientes a la notificación de la medida, revisión de la sanción ante el directorio de la Cámara.</akndiff:old>
+        <akndiff:new>Articulo 159°.- (DEROGADO)</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_160" type="substitute">
+        <akndiff:old>Artículo 160.- Corresponde a la Superintendencia fiscalizar y supervigilar el funcionamiento y actuaciones de las Cámaras de Compensación que se establezcan, de acuerdo a las facultades y atribuciones que le confieren esta ley, su ley orgánica y las demás leyes de su competencia, en especial, las referidas a las bolsas de valores. Para establecer y operar una cámara de compensación, se requerirá la autorización previa de la Superintendencia, quien aprobará sus reglamentos y normas que se dicten para su funcionamiento y en su caso, las modificaciones a los mismos. Dicho Organismo estará facultado para rechazar o proponer modificaciones a los proyectos de reglamentos y normas, dentro de un plazo de 90 días contados desde su presentación. En los casos en que la Superintendencia proponga modificaciones, el transcurso del plazo se suspenderá desde la fecha de la comunicación que contenga dicha proposición y sólo se reanudará cuando se haya cumplido con dicho trámite. Subsanados los defectos o atendidas las observaciones formuladas, en su caso, y vencido el plazo anteriormente indicado, la Superintendencia deberá autorizar los reglamentos o normas presentados, dentro del quinto día.</akndiff:old>
+        <akndiff:new>Articulo 160°.- (DEROGADO)</akndiff:new>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

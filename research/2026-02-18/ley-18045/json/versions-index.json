@@ -1,0 +1,166 @@
+{
+  "idNorma": 29472,
+  "nombre": "Ley 18.045 — Ley de Mercado de Valores",
+  "versions": [
+    {
+      "index": 1,
+      "date": "1981-10-22",
+      "filename": "v01-1981-10-22.json"
+    },
+    {
+      "index": 2,
+      "date": "1981-10-23",
+      "filename": "v02-1981-10-23.json"
+    },
+    {
+      "index": 3,
+      "date": "1981-10-31",
+      "filename": "v03-1981-10-31.json"
+    },
+    {
+      "index": 4,
+      "date": "1981-12-31",
+      "filename": "v04-1981-12-31.json"
+    },
+    {
+      "index": 5,
+      "date": "1985-12-28",
+      "filename": "v05-1985-12-28.json"
+    },
+    {
+      "index": 6,
+      "date": "1987-10-20",
+      "filename": "v06-1987-10-20.json"
+    },
+    {
+      "index": 7,
+      "date": "1989-12-21",
+      "filename": "v07-1989-12-21.json"
+    },
+    {
+      "index": 8,
+      "date": "1989-12-30",
+      "filename": "v08-1989-12-30.json"
+    },
+    {
+      "index": 9,
+      "date": "1993-06-01",
+      "filename": "v09-1993-06-01.json"
+    },
+    {
+      "index": 10,
+      "date": "1994-03-19",
+      "filename": "v10-1994-03-19.json"
+    },
+    {
+      "index": 11,
+      "date": "1995-05-18",
+      "filename": "v11-1995-05-18.json"
+    },
+    {
+      "index": 12,
+      "date": "1997-07-30",
+      "filename": "v12-1997-07-30.json"
+    },
+    {
+      "index": 13,
+      "date": "1999-01-18",
+      "filename": "v13-1999-01-18.json"
+    },
+    {
+      "index": 14,
+      "date": "1999-08-26",
+      "filename": "v14-1999-08-26.json"
+    },
+    {
+      "index": 15,
+      "date": "2000-12-20",
+      "filename": "v15-2000-12-20.json"
+    },
+    {
+      "index": 16,
+      "date": "2001-11-07",
+      "filename": "v16-2001-11-07.json"
+    },
+    {
+      "index": 17,
+      "date": "2002-05-31",
+      "filename": "v17-2002-05-31.json"
+    },
+    {
+      "index": 18,
+      "date": "2007-06-05",
+      "filename": "v18-2007-06-05.json"
+    },
+    {
+      "index": 19,
+      "date": "2009-04-28",
+      "filename": "v19-2009-04-28.json"
+    },
+    {
+      "index": 20,
+      "date": "2010-01-01",
+      "filename": "v20-2010-01-01.json"
+    },
+    {
+      "index": 21,
+      "date": "2010-09-06",
+      "filename": "v21-2010-09-06.json"
+    },
+    {
+      "index": 22,
+      "date": "2010-10-01",
+      "filename": "v22-2010-10-01.json"
+    },
+    {
+      "index": 23,
+      "date": "2012-02-01",
+      "filename": "v23-2012-02-01.json"
+    },
+    {
+      "index": 24,
+      "date": "2014-05-01",
+      "filename": "v24-2014-05-01.json"
+    },
+    {
+      "index": 25,
+      "date": "2014-10-10",
+      "filename": "v25-2014-10-10.json"
+    },
+    {
+      "index": 26,
+      "date": "2020-10-19",
+      "filename": "v26-2020-10-19.json"
+    },
+    {
+      "index": 27,
+      "date": "2021-04-13",
+      "filename": "v27-2021-04-13.json"
+    },
+    {
+      "index": 28,
+      "date": "2022-02-01",
+      "filename": "v28-2022-02-01.json"
+    },
+    {
+      "index": 29,
+      "date": "2022-06-13",
+      "filename": "v29-2022-06-13.json"
+    },
+    {
+      "index": 30,
+      "date": "2023-08-17",
+      "filename": "v30-2023-08-17.json"
+    },
+    {
+      "index": 31,
+      "date": "2023-12-30",
+      "filename": "v31-2023-12-30.json"
+    },
+    {
+      "index": 32,
+      "date": "2025-03-26",
+      "filename": "v32-2025-03-26.json"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="mod-ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-18045/1981-12-31"/>
+          <FRBRuri value="/cl/amendment/ley-18045/1981-12-31"/>
+          <FRBRdate date="1981-12-31" name="publicación"/>
+          <FRBRauthor href="/cl/org/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@1981-12-31"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@1981-12-31"/>
+          <FRBRdate date="1981-12-31" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@1981-12-31/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>DFL 3</docTitle></p>
+      </longTitle>
+      <p>Ley General de Bancos</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>DFL 3 modifica la Ley 18.045. 1 artículos afectados.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@1981-10-31"
+      result="/cl/act/ley-18045/spa@1981-12-31">
+      <akndiff:articleChange article="art_57" type="repeal">
+        <akndiff:old>Artículo 57.- En virtud de la cancelación de la inscripción en el Registro de valores, los tenedores de Valores cuya inscripción hubiere sido cancelada tendrán derecho al cobro, en contra del emisor, de los perjuicios que la cancelación de la inscripción les hubiere ocasionado. Igual derecho de indemnización gozarán en contra de los administradores, gerentes o intermediarios, salvo que constare que dichos administradores o gerentes se opusieron o demostraron su diligencia en evitar que tales hechos ocurrieran, y respecto de los intermediarios, el desconocimiento de los hechos que motivaron la cancelación.</akndiff:old>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

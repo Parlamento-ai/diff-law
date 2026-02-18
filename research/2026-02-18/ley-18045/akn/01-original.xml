@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <act name="ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/act/ley-18045"/>
+          <FRBRuri value="/cl/act/ley-18045"/>
+          <FRBRdate date="1981-10-22" name="publicación"/>
+          <FRBRauthor href="/cl/org/junta-de-gobierno"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@1981-10-22"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@1981-10-22"/>
+          <FRBRdate date="1981-10-22" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@1981-10-22/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>Texto Original</docTitle></p>
+      </longTitle>
+      <p>Texto original publicado en el Diario Oficial el 22 de octubre de 1981.</p>
+    </preface>
+    <body>
+    <section eId="sec_titulo_1">
+      <heading>TITULO I Objetivos de la ley, fiscalización y definiciones</heading>
+      <article eId="art_1">
+        <heading>Artículo 1</heading>
+        <content>
+          <p>Artículo 1°.- A las disposiciones de la presente ley queda sometida la oferta pública de valores y sus respectivos mercados e intermediarios, los que comprenden las bolsas de valores, los corredores de la bolsa y los agentes de valores; los emisores e instrumentos de oferta pública y los mercados secundarios de dichos valores dentro y fuera de las bolsas, aplicándose este cuerpo legal y todas aquellas transacciones de valores que tengan su origen en ofertas públicas de los mismos o que se efectúen con intermediación por parte de corredores o agentes de valores. Asimismo, esta ley norma el mercado de las acciones de las sociedades anónimas y sociedades en comandita en las que a lo menos, el 10% de su capital suscrito pertenece a un mínimo de 100 accionistas, o que tienen 500 accionistas o más. Las transacciones de valores que no sean de aquellas a que se refiere el inciso primero del presente artículo, tendrán el carácter de privadas y quedarán excluidas de las disposiciones de esta ley, excepto en los casos en que ésta se remita expresamente a ellas.</p>
+        </content>
+      </article>
+      <article eId="art_2">
+        <heading>Artículo 2</heading>
+        <content>
+          <p>Artículo 2°.- Corresponderá a la Superintendencia de Valores y Seguros, en adelante la Superintendencia, vigilar el cumplimiento de las disposiciones de la presente ley, de acuerdo con las facultades que se confieren en su ley orgánica y en el presente cuerpo legal.</p>
+        </content>
+      </article>
+      <article eId="art_3">
+        <heading>Artículo 3</heading>
+        <content>
+          <p>Artículo 3°.- Para los efectos de esta ley, se entenderá por valores cualesquiera títulos transferibles incluyendo acciones, opciones a la compra y venta de acciones, bonos, debentures, cuotas de fondos mutuos, planes de ahorro, efectos de comercio y, en general, todo título de crédito o inversión. Las disposiciones de la presente ley no se aplican a los valores emitidos o garantizados por el Estado, por las instituciones públicas centralizadas o descentralizadas y por el Banco Central de Chile. La Superintendencia podrá eximir de algunas de las obligaciones establecidas en esta ley, a las entidades cuyas finalidades se relacionen exclusivamente con actividades deportivas o de beneficencia y sólo mientras mantenga esta especial característica. Asimismo, la Superintendencia, mediante resolución fundada, podrá eximir aquellas entidades cuyas finalidades se relacionen exclusivamente con actividades educacionales, de la obligación de información o de los sistemas de control contables establecidos o que puedan establecerse en virtud de esta ley.</p>
+        </content>
+      </article>
+      <article eId="art_4">
+        <heading>Artículo 4</heading>
+        <content>
+          <p>Artículo 4°.- Se entiende por oferta pública de valores la dirigida al público en general o a ciertos sectores o a grupos específicos de éste. La Superintendencia podrá, en caso de duda, determinar mediante resolución de carácter general si ciertos tipos de oferta de valores constituyen ofertas públicas. Asimismo, la Superintendencia podrá eximir ciertas ofertas públicas del cumplimiento de alguno de los requisitos de la presente ley, mediante resoluciones de carácter general. Los emisores que estén en liquidación no podrán hacer oferta pública de valores excepto si se tratare de sus propias acciones.</p>
+        </content>
+      </article>
+    </section>
+    <section eId="sec_titulo_2">
+      <heading>TITULO II Del Registro de Valores y de la informacion</heading>
+      <article eId="art_5">
+        <heading>Artículo 5</heading>
+        <content>
+          <p>Artículo 5°.- La Superintendencia llevará un Registro de Valores el cual estará a disposición del público. En el Registro de Valores se inscribirán: a) Los emisores de valores de oferta pública; b) Los valores que sean objeto de oferta pública; c) Las acciones de las sociedades a que se refiere el inciso segundo del artículo 1°, y d) Las acciones emitidas por sociedades que voluntariamente así lo soliciten.</p>
+        </content>
+      </article>
+      <article eId="art_6">
+        <heading>Artículo 6</heading>
+        <content>
+          <p>Artículo 6°.- Sólo podrá hacerse oferta pública de valores cuando éstos y su emisor, hayan sido inscritos en el Registro de Valores. La inscripción de los valores y sociedades a que se refiere el inciso segundo del artículo 1°, deberá efectuarse dentro de los sesenta días siguientes a la fecha en que se haya cumplido alguno de los requisitos allí mencionados.</p>
+        </content>
+      </article>
+      <article eId="art_7">
+        <heading>Artículo 7</heading>
+        <content>
+          <p>Artículo 7°.- Cualquier sociedad anónima podrá inscribir voluntariamente sus acciones en el Registro. La inscripción voluntaria somete a la sociedad inscrita a todas las disposiciones de esta ley y sus normas complementarias.</p>
+        </content>
+      </article>
+      <article eId="art_8">
+        <heading>Artículo 8</heading>
+        <content>
+          <p>Artículo 8°.- La Superintendencia deberá efectuar la inscripción en el Registro de Valores, una vez que el emisor le haya proporcionado la información que ésta requiera sobre su situación jurídica, económica y financiera, por medio de normas de carácter general, dictadas en consideración a las caracteristícas del emisor, de los valores y de las ofertas en su caso. Para proceder a la inscripción la Superintendencia dispondrá de un plazo de 30 días contados desde la fecha de la solicitud. Dicho plazo se suspenderá si la Superintendencia, mediante comunicación escrita, pide información adicional al peticionario o le solicita que modifique la petición o que rectifique sus antecedentes por no ajustarse éstos a las normas establecidas, reanudándose tan sólo cuando se haya cumplido con dicho trámite. Subsanados los defectos o atendidas las observaciones formuladas en su caso y vencido el plazo a que se refieren los incisos precedentes, la Superintendencia deberá efectuar la inscripción dentro de tercero día hábil.</p>
+        </content>
+      </article>
+      <article eId="art_9">
+        <heading>Artículo 9</heading>
+        <content>
+          <p>Artículo 9°.- La inscripción en el Registro de Valores obliga al emisor a divulgar en forma veraz, suficiente y oportuna toda información esencial respecto de sí mismo, de los valores ofrecidos y de la oferta. Se entiende por información esencial aquella que un hombre juicioso consideraría importante para sus decisiones sobre inversión.</p>
+        </content>
+      </article>
+    </section>
+    <section eId="sec_titulo_3">
+      <heading>TITULO III De la información continua y reservada</heading>
+      <article eId="art_10">
+        <heading>Artículo 10</heading>
+        <content>
+          <p>Artículo 10.- Las entidades inscritas en el Registro de Valores quedarán sujetas a esta ley y a sus normas complementarias y deberán proporcionar a la Superintendencia y al público en general la misma información a que están obligadas las sociedades anónimas abiertas y con la periodicidad, publicidad y en la forma que se exige a éstas. Asimismo, y sin perjuicio de lo dispuesto en el inciso anterior, las entidades comprendidas en él deberán divulgar en forma veraz, suficiente y oportuna, todo hecho o información esencial respecto de ellas mismas y de sus negocios al momento que él ocurra o llegue a su conocimiento. No obstante lo dispuesto en el inciso anterior, con la aprobación de las tres cuartas partes de los directores en ejercicio podrá darse el carácter de reservado a ciertos hechos o antecedentes que se refieran a negociaciones aún pendientes que al conocerse puedan perjudicar el interés social. Tratándose de emisores no administrados por un directorio u otro órgano colegiado, la decisión de reserva debe ser tomada por todos los administradores. Las decisiones y acuerdos a que se refiere el inciso anterior deberán ser comunicados a la Superintendencia al día siguiente hábil a su adopción. Los que dolosa o culpablemente califiquen o concurran con su voto favorable a declarar como reservado un hecho o antecedente, de aquellos a que se refiere el inciso tercero de este artículo, responderán en la forma y términos establecidos en el artículo 55 de esta ley.</p>
+        </content>
+      </article>
+      <article eId="art_11">
+        <heading>Artículo 11</heading>
+        <content>
+          <p>Artículo 11.- Las citaciones a juntas de accionistas o asambleas de socios que se efectúen por entidades distintas a las sociedades anónimas, pero sujetas a la fiscalización de la Superintendencia de conformidad a la presente ley, deberán a lo menos ser enviadas por correo a cada asociado, con una anticipación mínima de 15 días a la fecha en que se celebrará la reunión respectiva y deberán contener una referencia a las materias a ser tratadas en ella. El no envío de la referida comunicación no producirá la nulidad de la citación, pero la sociedad infractora quedará sujeta a las sanciones que la Superintendencia pueda aplicar y responderá de los perjuicios que le hubiere causado a sus asociados.</p>
+        </content>
+      </article>
+      <article eId="art_12">
+        <heading>Artículo 12</heading>
+        <content>
+          <p>Artículo 12.- Las personas que directamente, o a través de otras personas naturales o jurídicas posean el 10% o más del capital suscrito de una sociedad cuyas acciones se encuentren inscritas en el Registro de Valores, o que a causa de una adquisición, de acciones lleguen a tener dicho porcentaje, y los directores, gerente general y gerentes, en su caso, de dichas sociedades, cualesquiera sea el número de acciones que posean, deberán informar a la Superintendencia y a cada una de las bolsas de valores del país en que la sociedad tenga valores registrados para su cotización, de toda adquisición o enajenación de acciones que efectúe de esa sociedad, dentro de los cinco días siguientes al de la transacción o transacciones respectivas.</p>
+        </content>
+      </article>
+      <article eId="art_13">
+        <heading>Artículo 13</heading>
+        <content>
+          <p>Artículo 13.- Los directores, administradores y, en general, cualquiera persona que en razón de su cargo o posición tenga acceso a información de la sociedad y de sus negocios, que aún no haya sido divulgada oficialmente al mercado por la compañía en cumplimiento de lo dispuesto en la presente ley y que sea capaz de incluir en la cotización de los valores de la misma, deberán guardar estricta reserva. Asimismo, se prohibe a las personas mencionadas en el inciso anterior valerse de la información reservada para obtener para sí o para otros, ventajas mediante la compra o venta de valores. Ellas deberán velar para que esto tampoco ocurra a través de subordinados o terceros de su confianza. Las personas mencionadas en el inciso primero que hayan actuado en contravención a lo establecido en este artículo, deberán devolver a la caja social toda utilidad que hubieren obtenido a través de transacciones de valores de la sociedad. Toda persona perjudicada por infracción a lo dispuesto en el presente artículo tendrá derecho a demandar indemnización en contra de las personas indicadas en el inciso primero, excepto si estaba en conocimiento de la información reservada.</p>
+        </content>
+      </article>
+      <article eId="art_14">
+        <heading>Artículo 14</heading>
+        <content>
+          <p>Artículo 14.- La Superintendencia, mediante resolución fundada, podrá suspender hasta por 30 días la oferta, las cotizaciones o las transacciones de cualquier valor, regido por esta ley, si a su juicio así lo requiere el interés público o la protección de los inversionistas. El plazo antes indicado podrá ser prorrogado hasta por 120 días si a juicio de la Comisión aún se mantienen las circunstancias que originaron la suspensión. Si vencida la prórroga subsistieren tales circunstancias, la Comisión cancelará la inscripción pertinente en el Registro de Valores.</p>
+        </content>
+      </article>
+      <article eId="art_15">
+        <heading>Artículo 15</heading>
+        <content>
+          <p>Artículo 15.- La cancelación de la inscripción de un valor en el Registro de Valores procederá en los casos siguientes: a) En el caso de acciones cuando el emisor así lo solicite porque durante el curso de los 6 meses precedentes la sociedad no ha reunido los requisitos establecidos en el inciso segundo del artículo 1° de la presente ley; b) Cuando un emisor inscrito voluntariamente lo solicite, siempre que no cumpla con alguna de las condiciones que hacen obligatoria la inscripción; c) Cuando la Superintendencia lo resuelva de acuerdo a lo establecido en el artículo 14; d) Cuando la Superintendencia, en caso grave y por resolución fundada así lo determine, en razón de que: 1.- Se hubiere obtenido la inscripción por medio de informaciones o antecedentes falsos; 2.- Durante la vigencia de la emisión, el emisor entregare al Registro de Valores, a las Bolsas o a los corredores o agentes de valores, informaciones o antecedentes falsos; 3.- Con ocasión de su oferta en el mercado, el emisor difundiere noticias o propaganda falsas; 4.- El valor no cumpla con los requisitos que hicieron necesaria su inscripción. e) Los derechos conferidos por el valor inscrito se hayan extinguido totalmente. Las resoluciones que la Superintendencia dicte de conformidad a la letra c) del presente artículo también serán reclamables ante la Corte de Apelaciones de Santiago, de acuerdo al procedimiento establecido en el artículo 64.</p>
+        </content>
+      </article>
+    </section>
+    <section eId="sec_titulo_4">
+      <heading>TITULO IV De la emisión de tItulos de deuda a largo plazo</heading>
+      <article eId="art_16">
+        <heading>Artículo 16</heading>
+        <content>
+          <p>Artículo 16.- La oferta pública de valores representativos de deuda cuyo plazo sea superior a un año, sólo podrá efectuarse mediante bonos y con sujeción a las disposiciones generales establecidas en la presente ley y a las especiales que se consignan en los títulos siguientes. Sin embargo, los bancos y sociedades financieras que operan en el país no quedarán sujetos a esta limitación y, si estuvieren autorizados para emitir bonos en conformidad a las normas que los rijan, los requisitos que este Título establece se cumplirán ante la Superintendencia de Bancos e Instituciones Financieras.</p>
+        </content>
+      </article>
+      <article eId="art_17">
+        <heading>Artículo 17</heading>
+        <content>
+          <p>Artículo 17.- Al requerirse la inscripción de una emisión de bonos, el emisor deberá acompañar a la Superintendencia ejemplares de la escritura pública que hubiere otorgado con el o los representantes de los futuros tenedores de bonos, la que contendrá todas las características y modalidades de la emisión y la determinación de los derechos y obligaciones del emisor, de los tenedores de bonos y de sus representantes. La Superintendencia, mediante la dictación de normas de aplicación general, establecerá las menciones obligatorias que deberá contener la escritura pública, las cuales deberán referirse, a lo menos, salvo las excepciones que este organismo determine, a normas relativas a: a) Informaciones jurídicas y económicas respecto del emisor y del representante de los tenedores de bonos; b) Monto de la emisión, series, número, cupones y características de los títulos, plazos de colocación, intereses y reajustes a pagarse en su caso; forma y épocas de amortización, de sorteos y de rescates; fecha y modalidades de los pagos y garantías que los caucionen en caso que las hubieren; c) Procedimientos de rescates anticipados, los que sólo podrán efectuarse mediante sorteos u otros procedimientos que aseguren un tratamiento equitativo para todos los tenedores de bonos; d) Obligaciones adicionales, limitaciones y prohibiciones a que se sujetará el emisor mientras esté vigente la emisión, en defensa de los intereses de los tenedores de bonos, particularmente respecto a las informaciones a proporcionarles en este período, a la mantención, sustitución o renovación de activos o garantías, facultades de fiscalización otorgadas a estos acreedores y a sus representantes y medidas de protección al tratamiento igualitario a los tenedores de bonos, y e) Procedimiento de elección, reemplazo y remoción, derechos, deberes y responsabilidades de los representantes de los tenedores de bonos y normas relativas al funcionamiento de las juntas a celebrarse por estos acreedores.</p>
+        </content>
+      </article>
+      <article eId="art_18">
+        <heading>Artículo 18</heading>
+        <content>
+          <p>Artículo 18.- La suscripción o adquisición de bonos implica para el suscriptor o adquirente, la aceptación y ratificación de todas las estipulaciones, normas y condiciones establecidas en la escritura de emisión.</p>
+        </content>
+      </article>
+      <article eId="art_19">
+        <heading>Artículo 19</heading>
+        <content>
+          <p>Artículo 19.- La emisión de bonos podrá hacerse con o sin garantía, pudiendo utilizarse en el primer caso cualquiera de las garantías generales o especiales establecidas por la ley. Si la caución consistiere en prenda, la entrega de la cosa empeñada, en su caso, se hará a los representantes de los tenedores de bonos o a quien éstos designen. En las inscripciones de hipotecas o prendas no será necesario individualizar a los acreedores, bastando expresar el nombre de los representantes de los tenedores de bonos designados en la escritura y la calidad que invisten, anotándose al margen de estas inscripciones los reemplazos que se efectuaren. Las citaciones y notificaciones que de acuerdo a la ley deben practicarse respecto de los acreedores hipotecarios o prendarios, se entenderán cumplidas al efectuarse a los representantes de los tenedores de bonos. A dichos representantes corresponderá igualmente aceptar las modificaciones o sustituciones de las garantías constituidas o consentir en su alzamiento.</p>
+        </content>
+      </article>
+      <article eId="art_20">
+        <heading>Artículo 20</heading>
+        <content>
+          <p>Artículo 20.- Los bonos vencidos por sorteo, rescate o expiración del plazo de su vencimiento y los cupones también vencidos tendrán mérito ejecutivo en contra del emisor. En caso de bonos sorteados, estos deberán figurar en el acta respectiva.</p>
+        </content>
+      </article>
+      <article eId="art_21">
+        <heading>Artículo 21</heading>
+        <content>
+          <p>Artículo 21.- Una sociedad anónima emisora de bonos podrá conceder a los tenedores opción colectiva para canjearlos por acciones ordinarias o privilegiadas de la misma sociedad, de acuerdo a las condiciones establecidas en el contrato de emisión y a las disposiciones legales vigentes.</p>
+        </content>
+      </article>
+      <article eId="art_22">
+        <heading>Artículo 22</heading>
+        <content>
+          <p>Artículo 22.- Sólo podrán ser representantes provisorios de los tenedores de bonos los bancos y las sociedades financieras y las demás personas que autorice la Superintendencia de Valores y Seguros. La función de representante de los tenedores de bonos es indelegable. Los representantes designados por el emisor en la escritura de emisión podrán ser sustituidos por la junta general de tenedores de bonos, una vez colocada la totalidad del empréstito o vencido el plazo de colocación. Además de las facultades que les corresponde como mandatarios y de las que se les otorguen en la escritura de emisión o por la junta general de tenedores de bonos, los representantes se entenderán autorizados para ejercer con las facultades ordinarias del mandato judicial, todas las acci ones judiciales que corresponda en defensa del interés común de sus representados o para el cobro de los cupones y bonos sorteados o vencidos. Las señaladas facultades pueden ejercerse aún cuando el emisor fuere declarado en quiebra. En las demandas y demás gestiones judiciales que entablen los representantes en interés de todos o algunos de los tenedores de bonos no será necesario expresar el nombre de cada uno de éstos ni especificarles individualmente. Los representantes de los tenedores de bonos podrán examinar los libros del emisor en la medida que ello sea necesario para proteger los intereses de sus representados, pudiendo asistir sin derecho a voto a las juntas de accionistas, si ésta fuere una sociedad por acciones. Los representantes no podrán revelar aquello de que hubieren tomado conocimiento por sus facultades inspectivas en cuanto no fuere estrictamente indispensable para el cumplimiento de sus funciones.</p>
+        </content>
+      </article>
+    </section>
+    <section eId="sec_titulo_5">
+      <heading>TITULO V Del Mercado Secundario</heading>
+      <article eId="art_23">
+        <heading>Artículo 23</heading>
+        <content>
+          <p>Artículo 23.- El mercado secundario de valores estará organizado como sigue: a) Todas las acciones que de conformidad a esta ley deban inscribirse en el Registro de Valores deben también registrarse en una bolsa de valores, la que no podrá rechazar dicha inscripción. b) Las acciones de sociedades no inscritas en el Registro de Valores no podrán ser cotizadas ni transadas diariamente en bolsa. Asimismo, los agentes de valores no podrán participar en la intermediación de estos valores y los corredores de bolsa sólo podrán hacerlo en pública subasta en la forma dispuesta en esta letra. Dos veces en el mes, en las épocas que determine el reglamento de la bolsa respectiva, se efectuará una rueda especial para la subasta de acciones no inscritas, en la que se anunciará públicamente esta circunstancia. Los corredores de bolsa respecto de estas acciones estarán obligados a destacar avisos en sus oficinas que indiquen que se trata de valores sin inscripción y que carecen de información obligatoria, sin perjuicio de poder dar la información fidedigna que de ellos tengan. c) Las acciones inscritas en el Registro de Valores sólo podrán ser intermediadas por los corredores de bolsa. Estas transacciones deberán efectuarse en la rueda de la bolsa de la que ellos sean miembros. Los bancos y sociedades financieras que de acuerdo con sus facultades reciban órdenes de sus clientes para comprar o vender este tipo de acciones deberán ejecutar dichas órdenes a través de un corredor de bolsa. Sin perjuicio de lo dispuesto en los incisos anteriores, los corredores de bolsa y los agentes de valores que participen en una oferta pública de acciones de una nueva emisión podrán, por un período de 90 días a contar de la fecha del Registro en la Superintendencia de dicha emisión, efectuar fuera de bolsa las transacciones necesarias para llevar adelante la oferta. d) Otros valores distintos de las acciones, que estén inscritos en el Registro, podrán ser intermediados por cualquier corredor de bolsa o agente de valores registrados en la Superintendencia, o por los bancos y sociedades financieras, de acuerdo a sus facultades legales. Las transacciones de estos valores podrán efectuarse dentro de las bolsas, por corredores de bolsa, sólo cuando hayan sido aceptados a cotización por la bolsa respectiva. e) La intermediación de valores a que se refiere el inciso segundo del artículo 3° de la presente ley y los emitidos por bancos e instituciones financieras se sujetará a las normas establecidas en las letras precedentes.</p>
+        </content>
+      </article>
+    </section>
+    <section eId="sec_titulo_6">
+      <heading>TITULO VI De los Corredores de Bolsa y de los Agentes de Valores</heading>
+      <article eId="art_24">
+        <heading>Artículo 24</heading>
+        <content>
+          <p>Artículo 24.- Son intermediarios de valores las personas naturales o jurídicas que se dedican a las operaciones de corretaje de valores. Cumplidas las exigencias técnicas y patrimoniales que esta ley establece y las que la Superintendencia determine mediante normas de aplicación general, las personas mencionadas en el inciso anterior podrán dedicarse también a la compra o venta de valores por cuenta propia con ánimo de transferir derechos sobre los mismos. Sin perjuicio de las demás obligaciones establecidas en esta ley, cada vez que un intermediario opere por cuenta propia, deberá informar esta circunstancia a la o las personas que concurran a la negociación y no podrá adquirir los valores que se le ordenó enajenar ni enajenar de los suyos a quien le ordenó adquirir, sin autorización expresa del cliente. Los intermediarios que actúan como miembros de una bolsa de valores, se denominan corredores de bolsa y aquellos que operan fuera de bolsa agentes de valores. Sin perjuicio de lo establecido en leyes especiales y en el artículo siguiente, ninguna persona podrá actuar como corredor de bolsa o agente de valores sin que previamente se haya inscrito en los registros que para el efecto llevará la Comisión.</p>
+        </content>
+      </article>
+      <article eId="art_25">
+        <heading>Artículo 25</heading>
+        <content>
+          <p>Artículo 25.- Los bancos y sociedades financieras no estarán obligados a inscribirse en el Registro de Corredores de Bolsa y Agentes de Valores para efectuar las funciones de intermediación de acuerdo a las facultades que les confiere la Ley General de Bancos. Sin embargo, quedarán sujetos a todas las otras disposiciones de la presente ley en lo referente a sus actividades como tales.</p>
+        </content>
+      </article>
+      <article eId="art_26">
+        <heading>Artículo 26</heading>
+        <content>
+          <p>Artículo 26.- Para ser inscritos en el Registro de Corredores de Bolsa y Agentes de Valores los interesados deberán acreditar, a satisfacción de la Superintendencia, lo siguiente: a) ser mayor de edad; b) haber aprobado el cuarto año medio o acreditar estudios equivalentes; c) poseer una oficina instalada para desarrollar las actividades de intermediario de valores; d) mantener permanentemente un patrimonio mínimo de 6.000 unidades de fomento para desempeñar la función de corredor de bolsa o agente de valores. No obstante lo anterior, para efectuar las operaciones indicadas en el inciso segundo del artículo 24 de la presente ley se deberá mantener un patrimonio mínimo de 14.000 unidades de fomento; e) constituir las garantías en la forma y por los montos que se establecen en la presente ley; f) no haber sido cancelada su inscripción en el Registro de Corredores de Bolsa y Agentes de Valores; g) no haber sido condenado por los delitos establecidos en la presente ley, por delito económico a que se refiere el decreto ley número 280, de 1974, y en general por delitos que merezcan pena aflictiva; h) no haber sido declarado en quiebra, e i) cualquier otro requisito que la Superintendencia determine por medio de normas de carácter general. La Superintendencia por medio de normas de carácter general, establecerá los medios y la forma en que los interesados deberán acreditar las circunstancias enumeradas en el presente artículo y los antecedentes que con tal fin deberán acompañar a sus solicitudes de inscripción.</p>
+        </content>
+      </article>
+      <article eId="art_27">
+        <heading>Artículo 27</heading>
+        <content>
+          <p>Artículo 27.- Las personas jurídicas pueden ser corredores de bolsa o agentes de valores, siempre que incluyan en su nombre la expresión corredores de bolsa o agente de valores respectivamente y tengan como exclusivo objeto el señalado en el artículo 24 de la presente ley, pudiendo realizar además, las actividades complementarias que les autorice la Superintendencia. En el caso de las personas jurídicas, los requisitos establecidos en las letras a), b), f), g), h) e i) del artículo anterior, deberán acreditarse respecto de sus directores y administradores individualmente considerados.</p>
+        </content>
+      </article>
+      <article eId="art_28">
+        <heading>Artículo 28</heading>
+        <content>
+          <p>Artículo 28.- La Superintendencia deberá pronunciarse sobre las solicitudes de inscripción en el Registro de Corredores de Bolsa y Agentes de Valores dentro del plazo de 30 días a contar de la fecha de la solicitud respectiva. El plazo indicado en el inciso anterior se suspenderá si la Comisión, mediante comunicación escrita pide al solicitante que modifique o complemente su solicitud, o que proporcione mayores informaciones y sólo se reanudará cuando se haya cumplido con dicho trámite. Subsanados los defectos o atendidas las observaciones formuladas en su caso y vencido el plazo a que se refiere este artículo, la Comisión deberá efectuar la inscripción dentro de tercero día.</p>
+        </content>
+      </article>
+      <article eId="art_29">
+        <heading>Artículo 29</heading>
+        <content>
+          <p>Artículo 29.- Los corredores de bolsa y agentes de valores, deberán cumplir y mantener los márgenes de endeudamiento, de colocaciones y otras condiciones de liquidez y solvencia patrimonial que la Superintendencia establezca mediante normas de aplicación general que dictará especialmente en relación a la naturaleza de las operaciones, su cuantía, el tipo de instrumentos que se negocien y la clase de intermediarios a que deben aplicarse.</p>
+        </content>
+      </article>
+      <article eId="art_30">
+        <heading>Artículo 30</heading>
+        <content>
+          <p>Artículo 30.- Los corredores de bolsa y los agentes de valores deberán constituir una garantía previa al desempeño de sus cargos, para asegurar el correcto y cabal cumplimiento de todas sus obligaciones como intermediarios de valores, en beneficio de los acreedores presentes o futuros que tengan o llegaren a tener en razón de sus operaciones de corretaje. La garantía será de un monto inicial equivalente a 4.000 unidades de fomento. La Superintendencia podrá exigir mayores garantías en razón del volumen y naturaleza de las operaciones del intermediario, del total de las comisiones ganadas en el año precedente al de la exigencia, de los endeudamientos que afectaren al agente o corredor o de otras circunstancias semejantes. La garantía podrá constituirse en dinero efectivo, boleta bancaria, póliza de seguros o prenda sobre acciones de sociedades anónimas abiertas u otros valores de oferta pública y se mantendrá reajustada en la misma proporción en que varíe el monto de las unidades de fomento. Con todo, el monto de la garantía que se constituya en prenda sobre acciones de sociedades anónimas abiertas, no podrá exceder del veinticinco por ciento del total de la misma. La garantía deberá mantenerse hasta los seis meses posteriores a la pérdida de la calidad de agente de valores o de corredor de la bolsa o hasta que se resuelvan por sentencia ejecutoriada las acciones judiciales que se hayan entablado en su contra, dentro de dicho plazo, por los acreedores beneficiarios a que se refiere esta disposición. Si estos demandantes no obtuvieren sentencia favorable serán necesariamente condenados en costas.</p>
+        </content>
+      </article>
+      <article eId="art_31">
+        <heading>Artículo 31</heading>
+        <content>
+          <p>Artículo 31.- Los corredores de bolsa o los agentes de valores deberán designar a una bolsa de valores o a un banco respectivamente, como representante de los acreedores beneficiarios de la garantía a que se refiere el artículo anterior, quienes a este respecto sólo desempeñarán las funciones que se señalan en los incisos siguientes. Si la garantía consistiere en depósitos de dinero o prenda sobre valores, la entrega del dinero o de los bienes pignorados se hará al representante de los acreedores beneficiarios. En las inscripciones de prenda en su caso, no será necesario individualizar a los acreedores, bastando expresar el nombre de sus representantes, anotándose al margen los reemplazos que se efectuaren. Asimismo, las citaciones y notificaciones que de acuerdo a la ley deban practicarse a los acreedores prendarios, se entenderán cumplidas al hacerse a sus representantes. Si la garantía consistiere en boleta bancaria o póliza de seguros, los representantes de los acreedores beneficiarios serán los tenedores de los documentos justificativos de las mismas. El banco o compañía de seguros otorgante deberá pagar el valor exigido por tales representantes a su simple requerimiento y hasta el monto garantizado. No obstante lo dispuesto en el inciso precedente y sin que sea necesario acreditarlo a las entidades otorgantes los representantes de los acreedores beneficiarios de boletas de garantía o de póliza de seguros, para hacerlas efectivas deberán haber sido notificados judicialmente del hecho de haberse interpuesto demanda en contra del intermediario de valores caucionado. Los dineros provenientes de la realización de la boleta bancaria o de la póliza de seguros quedarán en prenda de pleno derecho en sustitución de esas garantías, manteniéndose en depósitos reajustables por los representantes hasta que termine la obligación de garantía.</p>
+        </content>
+      </article>
+      <article eId="art_32">
+        <heading>Artículo 32</heading>
+        <content>
+          <p>Artículo 32.- Los corredores de bolsa y los agentes de valores estarán obligados, de acuerdo a las normas de carácter general que imparta la Superintendencia, y sin perjuicio de sus otras atribuciones a: a) Llevar los libros y registros que prescribe la ley y los que determine la Superintendencia, los que deberán ser preparados conforme a sus instrucciones; b) Proporcionar a la Superintendencia, en forma periódica, información sobre las operaciones que realicen; c) Enviar a la Superintendencia los estados financieros que éste solicite en la forma y periodicidad que determine, la cual podrá exigirles que ellos sean objeto de auditoría por auditores independientes; d) Informar a la Superintendencia, con a lo menos un mes de anticipación, de la apertura o cierre de nuevas oficinas y sucursales, y e) Proporcionar los demás antecedentes que a juicio de la Superintendencia sean necesarios para mantener actualizada la información del Registro.</p>
+        </content>
+      </article>
+      <article eId="art_33">
+        <heading>Artículo 33</heading>
+        <content>
+          <p>Artículo 33.- Las transacciones de valores en que participen corre dores de bolsa o agentes de valores, deberán ajustarse a las normas y procedimientos establecidos en la ley, a los que determine la Superintendencia por instrucciones de general aplicación, y en su caso, conforme a lo dispuesto en los estatutos y reglamentos internos de las bolsas de valores o de las asociaciones de agentes de valores de que sean miembros. Toda orden para efectuar una operación de bolsa se entenderá respecto del comitente, efectuada sobre la base de que éste queda sujeto a los reglamentos de la bolsa respectiva aprobados por la Superintendencia. Los corredores de bolsa y los agentes de valores que actúen en la compraventa de valores, quedan personalmente obligados a pagar el precio de la compra o a hacer la entrega de los valores vendidos y en caso alguno se les admitirá la excepción de falta de provisión. Estos intermediarios no pueden compensar las sumas que recibieren para comprar valores ni el precio que se les entregare de los vendidos por él, con las cantidades que les deba su cliente, comprador o vendedor. Las minutas que entregaren a sus clientes y las que se dieren recíprocamente, en los casos en que dos o más intermediarios concurran a la celebración de un negocio por encargo de diversas personas, hacen prueba contra el corredor de bolsa o agente de valores que las suscribe.</p>
+        </content>
+      </article>
+      <article eId="art_34">
+        <heading>Artículo 34</heading>
+        <content>
+          <p>Artículo 34.- Los corredores de bolsa y los agentes de valores serán responsables de la identidad y capacidad legal de las personas que contrataren por su intermedio; de la autenticidad e integridad de los valores que negocien, de la inscripción de su último titular en los registros del emisor cuando esto sea necesario y de la autenticidad del último endoso, cuando proceda.</p>
+        </content>
+      </article>
+      <article eId="art_35">
+        <heading>Artículo 35</heading>
+        <content>
+          <p>Artículo 35.- Los agentes de valores podrán formar asociaciones con el objeto de facilitar el desarrollo de sus operaciones de intermediación y de asegurar el cumplimiento por parte de sus miembros de las disposiciones de la presente ley y sus normas complementarias. Para este efecto sólo podrán hacerlo mediante la constitución de corporaciones de derecho privado. Estas corporaciones deberán constituirse y funcionar con a lo menos quince miembros, tendrán como objeto exclusivo el señalado en el inciso precedente y para la aprobación de su existencia y de sus estatutos, de la modificación de éstos, de su disolución o de la cancelación de su personalidad jurídica, bastará la pertinente resolución de la Superintendencia no siendo necesaria la intervención, decisión o informe de ninguna otra autoridad administrativa. Las corporaciones de agentes de valores quedarán sujetas a la fiscalización de la Superintendencia, con las facultades que le son propias y con las demás que a otras autoridades se otorgan respecto de las corporaciones comunes de derecho privado. Las normas que estas corporaciones adopten respecto a la actuación de sus miembros en el mercado de valores deberán ser similares, en lo pertinente, a aquellas de las bolsas de valores y deberán ser aprobadas por la Superintendencia. Lo anterior es sin perjuicio de la facultad de la Superintendencia para impartir a estas corporaciones y a sus agentes las instrucciones y normas que estime necesarias para el cumplimiento de esta ley. Las infracciones a las normas y reglamentos de las asociaciones por parte de sus miembros serán sancionadas en la misma forma que esta ley y sus normas complementarias disponen respecto de las infracciones a las normas y reglamentos de las bolsas de valores.</p>
+        </content>
+      </article>
+      <article eId="art_36">
+        <heading>Artículo 36</heading>
+        <content>
+          <p>Artículo 36.- La inscripción de un corredor de bolsa o de un agente de valores podrá ser cancelada o suspendida hasta por el plazo máximo de un año, cuando la Superintendencia mediante resolución fundada y previa audiencia del afectado así lo determine. En toda caso, la referida cancelación o suspensión sólo procederá por haber incurrido el corredor o agente en alguna de las siguientes causales: a) Dejar de cumplir con todos los requisitos necesarios para la inscripción. La Superintendencia, en casos calificados podrá otorgar al interesado un plazo para subsanar la situación, el que en ningún caso podrá exceder de 120 días. b) Incurrir en graves violaciones a las obligaciones que le imponen esta ley, sus normas complementarias u otras disposiciones que los rijan. c) Tomar parte en forma culpable o dolosa en transacciones no compatibles con las sanas prácticas de los mercados de valores. d) Dejar de desempeñar la función de corredor o agente activo por más de un año. Participar en ofertas públicas de valores o en transacciones de valores que de conformidad a la presente ley deben inscribirse y mantener vigente su inscripción en el Registro de Valores sin que hayan cumplido dichas formalidades, o respecto de las cuales se haya suspendido la cotización. f) Dejar de cumplir, por razones que le son imputables, obligaciones originadas en transacciones de valores en que ha tomado parte.</p>
+        </content>
+      </article>
+      <article eId="art_37">
+        <heading>Artículo 37</heading>
+        <content>
+          <p>Artículo 37.- Se reserva el uso de las expresiones &amp;quot;corredores de bolsa&amp;quot; y &amp;quot;agentes de valores&amp;quot; u otras semejantes que impliquen la facultad de intermediar en valores, para las personas y entidades autorizadas de conformidad a la presente ley para desempeñarse como tales.</p>
+        </content>
+      </article>
+    </section>
+    <section eId="sec_titulo_7">
+      <heading>TITULO VII De las Bolsas de Valores</heading>
+      <article eId="art_38">
+        <heading>Artículo 38</heading>
+        <content>
+          <p>Artículo 38.- Las bolsas de valores son entidades que tienen por objeto proveer a sus miembros la implementación necesaria para que puedan realizar eficazmente, en el lugar que les proporcione, las transacciones de valores mediante mecanismos continuos de subasta pública y para que puedan efectuar las demás actividades de intermediación de valores que procedan en conformidad a la ley.</p>
+        </content>
+      </article>
+      <article eId="art_39">
+        <heading>Artículo 39</heading>
+        <content>
+          <p>Artículo 39.- Las bolsas de valores deberán reglamentar su actividad bursátil y la de los corredores de bolsa, vigilando su estricto cumplimiento de manera de asegurar la existencia de un mercado equitativo, competitivo, ordenado y transparente. Lo anterior, es sin perjuicio de la facultad de la Superintendencia para impartir a las bolsas y a sus corredores las instrucciones y normas que estime necesarias para el cumplimiento de los objetivos señalados en el inciso anterior.</p>
+        </content>
+      </article>
+      <article eId="art_40">
+        <heading>Artículo 40</heading>
+        <content>
+          <p>Artículo 40.- Las Bolsas de Valores se regirán en lo que no fuere contrario a lo dispuesto en el presente título por las normas aplicables a las sociedades anónimas abiertas y quedarán sometidas a la fiscalización de la Superintendencia. En especial las bolsas de valores estarán sujetas a las siguientes modalidades: 1) Deben incluir en su nombre la expresión &amp;quot;bolsa de valores&amp;quot;. 2) Tiene por exclusivo objeto el precisado en el artículo 38, pudiendo efectuar además las actividades que la Superintendencia les autorice o exija de acuerdo a sus facultades. 3) Su duración es indefinida. 4) Deben constituirse con 15 accionistas a lo meno y con un capital pagado mínimo equivalente a 80.000 unidades de fomento, dividido en acciones sin valor nominal. Si durante la vigencia de la sociedad el número de sus accionistas o el monto de su patrimonio neto se redujeren a cifras inferiores a las establecidas en el inciso precedente, la bolsa dispondrá de un plazo de 3 meses para subsanar los déficit producidos. Vencido este plazo sin que así haya ocurrido, podrá serla revocada su autorización de existencia por la Superintendencia, a menos que este organismo le autorice la reducción de su capital social o del número de sus accionistas. 5) Cada accionista sólo podrá ser dueño de una acción en la bolsa respectiva. Un corredor podrá ejercer su actividad en más de una bolsa, adquiriendo en cada una de ellas la acción correspondiente. 6) Toda persona aceptada como corredor de una bolsa y que no haya optado por adquirir la acción respectiva en el mercado podrá exigir, en cualquier tiempo, que ésta le emita la acción necesaria para ejercer su cargo para lo cual el capital y el número de accionistas en que es dividido se entenderá aumentado de pleno derecho. El precio de suscripción de la acción será el de su valor de libros actualizado a la fecha de su emisión, el que será certificado por los auditores externos que deban informar el ejercicio correspondiente, debiendo pagarse en dinero efectivo y de contado. 7) Todos los derechos que corresponden a la acción de un corredor que cesa en el cargo por cualquier causa, excepto el de su enajenación, quedarán suspendidos en su ejercicio desde la ocurrencia del hecho que motiva el término de sus funciones. El título respectivo deberá entregarse a la sociedad y permanecerá en custodia en la caja social hasta la enajenación de la acción. La transferencia de la acción en custodia a que se refiere el inciso precedente sólo podrá efectuarse por su titular o por sus herederos y cónyuge sobreviviente, en su caso, a quien haya sido aceptado previamente como corredor de la bolsa según certificación que otorgue al efecto el gerente de la misma. El precio y condiciones de la enajenación será convenido libremente por las partes. 8) Las acciones tendrán igual valor y no podrá establecerse series de acciones ni acciones privilegiadas. 9) El Directorio estará compuesto a lo menos, por cinco miembros que podrán ser o no accionistas y se renovarán anualmente, pudiendo ser reelegidos. 10) El beneficio que las bolsas proporcionen a sus miembros consiste exclusivamente en posibilitarles el ejercicio de la función de corredores de la misma. 11) Las bolsas podrán en cualquier tiempo requerir de sus accionistas corredores el pago de cuotas para sufragar sus gastos y costos de conservación, mantención y reposición de sus bienes y de expansión y mejoramiento de sus actividades. 12) Disuelta una bolsa de valores por cualquier causa, su liquidación será efectuada por el Superintendente, quien podrá delegar esta función en uno de los funcionarios del organismo a su cargo. Sin perjuicio de lo anterior el Superintendente podrá facultar a la bolsa respectiva para que practique su liquidación. 13) Al liquidarse una bolsa de valores, una vez absorbidas las pérdidas y pagado el pasivo social, el patrimonio neto resultante se distribuirá entre los dueños de las acciones. 14) Las demás que contemplen los estatutos y reglamentos internos aprobados por la Superintendencia.</p>
+        </content>
+      </article>
+      <article eId="art_41">
+        <heading>Artículo 41</heading>
+        <content>
+          <p>Artículo 41.- Para establecer una bolsa de valores se requerirá la autorización previa de la Superintendencia.</p>
+        </content>
+      </article>
+      <article eId="art_42">
+        <heading>Artículo 42</heading>
+        <content>
+          <p>Artículo 42.- Toda bolsa de valores, para operar, deberá acreditar, a satisfacción de la Superintendencia que: a) Se encuentra organizada y tiene la capacidad necesaria para realizar las funciones de una bolsa de valores de acuerdo con lo dispuesto por la presente ley; b) Ha adoptado la reglamentación interna exigida por esta ley; c) Tiene la capacidad necesaria para cumplir y hacer cumplir a sus miembros, las disposiciones de la presente ley, sus normas complementarias y sus estatutos y demás normas internas; d) Cuenta con los medios necesarios y con los procedimientos adecuados tendientes a asegurar un mercado unificado que permita a los inversionistas la mejor ejecución de sus órdenes, y e) Lleva los libros y registros y mantiene toda otra información requerida por la Superintendencia, los que deberán estar a disposición de la Superintendencia para su examen y verificación.</p>
+        </content>
+      </article>
+      <article eId="art_43">
+        <heading>Artículo 43</heading>
+        <content>
+          <p>Artículo 43.- Para desarrollar su objeto, las bolsas de valores, a lo menos, deberán: a) Establecer instalaciones y sistemas que permitan el encuentro ordenado de las ofertas de compra y venta de valores y la ejecución de las transacciones correspondientes; b) Proporcionar y mantener a disposición del público información sobre los valores cotizados y transados en la bolsa, sus emisores, intermediarios y las operaciones bursátiles; c) Velar por el estricto cumplimiento por parte de sus miembros de los más elevados principios de ética comercial y de todas las disposiciones legales y reglamentarias que les sean aplicables; d) Informar y certificar las cotizaciones y transacciones de bolsa y proporcionar diariamente amplia información sobre dichas cotizaciones y transacciones, incluyendo las que se efectúen sobre valores transados en más de una bolsa, y e) Realizar las demás actividades que les autorice la Superintendencia, o que ésta, de acuerdo a sus facultades, pueda exigirles.</p>
+        </content>
+      </article>
+      <article eId="art_44">
+        <heading>Artículo 44</heading>
+        <content>
+          <p>Artículo 44.- En la reglamentación de sus propias actividades y la de sus miembros, las bolsas de valores deberán contemplar normas, sobre las materias que a continuación se indican: a) Normas que establezcan los derechos y obligaciones de los corredores de bolsa en relación a las operaciones que realizan y, en especial: 1.- Que establezcan cuando, en los casos que no exista una norma legal al respecto, los corredores de bolsa, deben llevar las órdenes que reciban directamente a la rueda, de modo de garantizar la reunión en ésta, en un mercado activo y de continua subasta, de todos los intereses de compra y de venta a fin de que todas las transacciones se efectúen en un mercado abierto y el inversionista pueda obtener la más conveniente ejecución de sus órdenes; 2.- Que establezcan la prioridad, paridad y precedencia de las órdenes, de modo de garantizar mercados justos y ordenados, y un adecuado cumplimiento de todas las órdenes recibidas; 3.- Que establezcan en qué casos los corredores de bolsa pueden negociar por su propia cuenta, de modo de asegurar que la bolsa funcione como un mercado abierto e informado en beneficio de los inversionistas en general. 4.- Que establezcan procedimientos de canje y transferencias de las transacciones en forma rápida y ordenada, tanto de los volúmenes operacionales actuales como de los futuros previsibles; 5.- Que establezcan las obligaciones de los corredores con sus clientes, incluyendo aquellas derivadas de las recomendaciones de inversión que hagan éstos, y 6.- Que establezcan la organización administrativa interna de sus miembros necesaria para asegurar los fines de la presente ley. b) Normas tendientes a promover principios justos y equitativos en las transacciones de bolsa, y a proteger a los inversionistas de fraudes y otras prácticas ilegítimas. c) Normas y procedimientos justos y uniformes por los cuales los miembros de una bolsa de valores y los socios y empleados de éstos, puedan ser sancionados, suspendidos o expulsados de ella en caso que hayan incurrido en infracción a la presente ley y sus normas complementarias o de los estatutos o normas internas de la misma. d) Normas estableciendo que deberán llevar un sistema de registro de los reclamos interpuestos en contra de los corredores, y de las medidas tomadas y sanciones aplicadas por la bolsa en contra de sus miembros, cuando procediere. e) Normas estableciendo requisitos generales y uniformes para la inscripción y transacción de valores en la bolsa, y para la suspensión, cancelación y retiro de los mismos. f) Normas que establezcan con claridad los derechos y obligaciones de los emisores de valores registrados o transados en la bolsa, en particular, en lo relativo a las informaciones que deberán proporcionar al mercado respecto de su situación jurídica, económica y financiera, y demás hechos que puedan ser relevantes en la transacción de sus valores. Todas las normas internas que adopten las bolsas en relación a sus operaciones como tales, deberán ser previamente aprobadas por la Superintendencia, la que estará facultada para rechazarlas, modificarlas, o suprimirlas, mediante resolución fundada.</p>
+        </content>
+      </article>
+      <article eId="art_45">
+        <heading>Artículo 45</heading>
+        <content>
+          <p>Artículo 45.- Sólo podrán optar al cargo de corredor de una bolsa de valores, los agentes de valores con inscripción vigente en el Registro de Corredores de Bolsa y Agentes de Valores que lleva la Superintendencia. El interesado, una vez aceptado por la bolsa respectiva, será inscrito como corredor de bolsa en el indicado Registro por la Superintendencia, luego de acreditarle, a su satisfacción, que ha cumplido con todos los requisitos legales, estatutarios y reglamentarios pertinentes, y sólo podrá ejercer sus funciones como tal desde la fecha de su inscripción.</p>
+        </content>
+      </article>
+      <article eId="art_46">
+        <heading>Artículo 46</heading>
+        <content>
+          <p>Artículo 46.- Para ser director de una bolsa de valores se requiere a lo menos: a) Tener como mínimo 21 años de edad; b) Haber aprobado el cuarto año medio o estudios equivalentes y tener una experiencia laboral de a lo menos tres años en actividades del mercado de valores. No será necesario acreditar tal experiencia a los profesionales universitarios de carrera de diez semestres a lo menos; c) No haber sido sancionado por la Superintenden cia con la medida de suspensión o de cancelación de su inscripción en el Registro de Corredores y Agentes de Valores o en cualquiera de los otros Registros que lleva este organismo; d) No haber sido condenado por los delitos establecidos en la presente ley, por delito económico a que se refiere el decreto ley número 280, de 1974 y, en general, por delitos que merezcan pena afictiva, y e) No haber sido declarado en quiebra o no haber celebrado convenios judiciales o extrajudiciales con sus acreedores. En caso de duda respecto del cumplimiento de cualquiera de los requisitos o exigencias a que se refiere este artículo, resolverá la Superintendencia administrativamente y sin ulterior recurso.</p>
+        </content>
+      </article>
+      <article eId="art_47">
+        <heading>Artículo 47</heading>
+        <content>
+          <p>Artículo 47.- El documento emitido por el corredor de bolsa o por su oficina que acredite la liquidación de una operación efectuada entre éste y otros corredores o sus clientes, tendrá mérito ejecutivo.</p>
+        </content>
+      </article>
+      <article eId="art_48">
+        <heading>Artículo 48</heading>
+        <content>
+          <p>Artículo 48.- Para que una bolsa de valores pueda suspender las transacciones de un valor por más de cinco días, requerirá de la autorización previa de la Superintendencia. Toda suspensión o cancelación de inscripción de un valor por parte de una bolsa de valores, será reclamable por el emisor ante la Superintendencia en los términos previstos por el artículo 50.</p>
+        </content>
+      </article>
+      <article eId="art_49">
+        <heading>Artículo 49</heading>
+        <content>
+          <p>Artículo 49.- Las bolsas de valores deberán sancionar a sus miembros con expulsión en los siguientes casos: a) Si habiendo sido suspendidos por tres veces incurren nuevamente en causal de suspensión. b) Si éstos realizan actividades que constituyen violaciones a las disposiciones contenidas en los artículos 52 y 53. c) En cualquier otro caso en que las normas internas de una bolsa de valores establezcan la expulsión de sus miembros como sanción.</p>
+        </content>
+      </article>
+      <article eId="art_50">
+        <heading>Artículo 50</heading>
+        <content>
+          <p>Artículo 50.- Las personas que no sean admitidas como corredores de bolsa o que hayan sido suspendidas, expulsadas o sujetas a cualquier otra sanción, como asimismo, los emisores a quienes se deniegue la inscripción de sus valores en bolsa, podrán recurrir a la Superintendencia dentro de los quince días de notificados de la respectiva resolución, la que resolverá previa audiencia de la bolsa respectiva. Igual derecho les asistirá cuando la bolsa de valores no se pronuncie sobre sus solicitudes en los plazos que establezcan sus normas internas.</p>
+        </content>
+      </article>
+      <article eId="art_51">
+        <heading>Artículo 51</heading>
+        <content>
+          <p>Artículo 51.- Si una bolsa de valores deja de cumplir con uno o más de los requisitos u obligaciones que la presente ley y sus normas complementarias le imponen, la Superintendencia podrá limitar sus actividades a aquellas que no se vean afectadas por la falta de cumplimiento o suspender o cancelar su autorización para operar.</p>
+        </content>
+      </article>
+    </section>
+    <section eId="sec_titulo_8">
+      <heading>TITULO VIII De las actividades prohibidas.</heading>
+      <article eId="art_52">
+        <heading>Artículo 52</heading>
+        <content>
+          <p>Artículo 52.- Es contrario a la presente ley efectuar transacciones en valores con el objeto de estabilizar, fijar o hacer variar artificialmente los precios. Sin perjuicio de lo dispuesto en el inciso anterior, podrán efectuarse actividades de estabilización de precios en valores de acuerdo a reglas de carácter general que imparta la Superintendencia y únicamente para llevar adelante una oferta pública de valores nuevos o de valores anteriormente emitidos y que no habían sido objeto de oferta pública.</p>
+        </content>
+      </article>
+      <article eId="art_53">
+        <heading>Artículo 53</heading>
+        <content>
+          <p>Artículo 53.- Es contrario a la presente ley efectuar cotizaciones o transacciones ficticias respecto de cualquier valor, ya sea que las transacciones se lleven a cabo en el mercado de valores o a través de negociaciones privadas. Ninguna persona podrá efectuar transacciones o inducir o intentar inducir a la compra o venta de valores, regidos o no por esta ley, por medio de cualquier acto, práctica, mecanismo o artificio engañoso o fraudulento.</p>
+        </content>
+      </article>
+    </section>
+    <section eId="sec_titulo_9">
+      <heading>TITULO IX De la información en la obtención de control</heading>
+      <article eId="art_54">
+        <heading>Artículo 54</heading>
+        <content>
+          <p>Artículo 54.- Cuando una o más personas directamente o a través de una sociedad filial o coligada pretendan obtener el control de una sociedad, sometida a la fiscalización de la Superintendencia, deberán informar previamente tal propósito al público en general. En dicha información se indicará a lo menos el precio y condiciones de la negociación a efectuarse, cualquiera sea la forma de adquisición de las acciones comprendiéndose incluso la que pudiese realizarse por suscripciones directas o transacciones privadas. Para los fines señalados en el inciso precedente se enviará comunicación escrita a la Superintendencia y a las bolsas de valores y, cumplido lo anterior, se publicará un aviso destacado en un diario de circulación nacional. La adquisición de acciones sólo podrá perfeccionarse transcurridos 5 días hábiles desde la fecha en que se publique el aviso a que se refiere el artículo anterior.</p>
+        </content>
+      </article>
+    </section>
+    <section eId="sec_titulo_10">
+      <heading>TITULO X De la responsabilidad</heading>
+      <article eId="art_55">
+        <heading>Artículo 55</heading>
+        <content>
+          <p>Artículo 55.- La persona que infrinja las disposiciones contenidas en la presente ley, sus normas complementarias o las normas que imparta la Superintendencia ocasionando daño a otro, está obligada a la indemnización de los perjuicios. Lo anterior no obsta a las sanciones administrativas o penales que asimismo pudiere corresponderle. Por las personas jurídicas responderán además, civil, administrativa y penalmente sus administradores o representantes legales a menos que constare su falta de participación o su oposición al hecho constitutivo de infracción. Los directores, liquidadores, administradores, gerentes, y auditores de emisores de valores de oferta pública que infrinja las disposiciones legales, reglamentarias y estatutarias que rigen su organ ización institucional responderán solidariamente de los perjuicios que causaren.</p>
+        </content>
+      </article>
+      <article eId="art_56">
+        <heading>Artículo 56</heading>
+        <content>
+          <p>Artículo 56.- Los directores, liquidadores o el gerente de una bolsa de valores que no ejerza sus deberes de fiscalización conforme a sus estatutos, reglamentos internos y demás normas que las rijan, sea respecto del mercado que opera en dicha bolsa o de las personas que en él intervienen quedarán afectos a las sanciones administrativas que aplique la Superintendencia, en conformidad a la ley. Si de esta omisión, resultare daño a cualquier persona serán obligados a la indemnización de perjuicios respondiendo hasta de la culpa leve a menos que probaren haber actuado diligentemente.</p>
+        </content>
+      </article>
+      <article eId="art_57">
+        <heading>Artículo 57</heading>
+        <content>
+          <p>Artículo 57.- En virtud de la cancelación de la inscripción en el Registro de valores, los tenedores de Valores cuya inscripción hubiere sido cancelada tendrán derecho al cobro, en contra del emisor, de los perjuicios que la cancelación de la inscripción les hubiere ocasionado. Igual derecho de indemnización gozarán en contra de los administradores, gerentes o intermediarios, salvo que constare que dichos administradores o gerentes se opusieron o demostraron su diligencia en evitar que tales hechos ocurrieran, y respecto de los intermediarios, el desconocimiento de los hechos que motivaron la cancelación.</p>
+        </content>
+      </article>
+    </section>
+    <section eId="sec_titulo_11">
+      <heading>TITULO XI De las sanciones</heading>
+      <article eId="art_58">
+        <heading>Artículo 58</heading>
+        <content>
+          <p>Artículo 58.- La Superintendencia aplicará a los infractores de esta ley, de sus normas complementarias, de los estatutos y reglamentos internos de las bolsas de valores y de las resoluciones que dicte conforme a sus facultades, las sanciones y apremios establecidos en su ley orgánica y las administrativas que se establecen en la presente ley.</p>
+        </content>
+      </article>
+      <article eId="art_59">
+        <heading>Artículo 59</heading>
+        <content>
+          <p>Artículo 59.- Sufrirán las penas de presidio menor en su grado medio a presidio mayor en su grado mínimo: a) Los que maliciosamente proporcionaren antecentes falsos o certificaren hechos falsos a la Superintendencia o a una bolsa de valores, para los efectos de lo dispuesto en esta ley. b) Los administradores y apoderados de una bolsa de valores que den certificaciones falsas sobre las operaciones que se realicen en ella. c) Los corredores de bolsa y agentes de valores que den certificaciones falsas sobre las operaciones en que hubieren intervenido. d) Los contadores y auditores que dictaminen falsamente sobre la situación financiera de una persona sujeta a obligación de registro de conformidad a esta ley. e) Las personas que infrinjan las prohibiciones consignadas en los artículos 52 y 53 de la presente ley.</p>
+        </content>
+      </article>
+      <article eId="art_60">
+        <heading>Artículo 60</heading>
+        <content>
+          <p>Artículo 60.- Sufrirán las penas de presidio menor en cualquiera de sus grados: a) Los que hicieren oferta pública de valores sin cumplir con los requisitos de inscripción en el Registro de Valores que exige esta ley o lo hicieren respecto de valores cuya inscripción hubiere sido suspendida o cancelada. b) Los que actuaren como corredores de bolsa o agentes de valores sin estar inscritos en el Registro que exige esta ley o cuya inscripción hubiere sido suspendida o cancelada. c) Los que sin estar legalmente autorizados utilicen las expresiones reservadas a que se refiere el artículo 37. Con el fin de obtener los antecedentes o informaciones necesarias para configurar algunos de los casos señalados en el presente artículo y para clausurar las oficinas de los infractores en los casos que sea necesario, la Superintendencia podrá solicitar directamente el auxilio de la fuerza pública con facultades de allanamiento y descerrajamiento.</p>
+        </content>
+      </article>
+      <article eId="art_61">
+        <heading>Artículo 61</heading>
+        <content>
+          <p>Artículo 61.- Las personas que con el objeto de inducir a error en el mercado difundieren noticias falsas o tendenciosas, aun cuando no persiguieren con ello obtener ventajas o beneficios para sí o terceros sufrirán las penas de presidio menor en sus grados mínimo a medio.</p>
+        </content>
+      </article>
+      <article eId="art_62">
+        <heading>Artículo 62</heading>
+        <content>
+          <p>Artículo 62.- Se presume fraudulenta la quiebra de un corredor de bolsa o de un agente de valores producida por incumplimiento de contratos que provengan de operaciones sobre valores ejecutados por cuenta propia, siempre que a consecuencia de las pérdidas provenientes de esas operaciones no pueda satisfacer el cumplimiento de las que ejecutare por cuenta de sus comitentes.</p>
+        </content>
+      </article>
+      <article eId="art_63">
+        <heading>Artículo 63</heading>
+        <content>
+          <p>Artículo 63.- No podrá hacerse oferta pública de valores por emisores que se encuentren en estado de insolvencia. Igualmente, deberá suspenderse la emisión de valores de oferta pública desde que el emisor cayera en estado de insolvencia. Los administradores que sabiendo o debiendo saber el estado de insolvencia en que se encuentran las empresas por ellos administradas, acordaren, decidieren o permitieren que éstas incurran en hechos contrarios a lo establecido en el inciso anterior, serán sancionados con el máximo de las penas señaladas en el artículo 467 del Código Penal. Estas penas se aumentarán en un grado si las empresas consumaren su oferta y recibieren efectivamente dinero por los valores que en forma indebida hubieren ofertado públicamente. Lo dispuesto en los incisos anteriores es sin perjuicio de las responsabilidades civiles y sanciones administrativas que procedieren en conformidad a la ley.</p>
+        </content>
+      </article>
+    </section>
+    <section eId="sec_titulo_12">
+      <heading>TITULO XII Del recurso de ilegalidad</heading>
+      <article eId="art_64">
+        <heading>Artículo 64</heading>
+        <content>
+          <p>Artículo 64.- Las personas que estimen que una instrucción o resolución de la Superintendencia dictada en virtud de esta ley es ilegal y les causa perjuicio, podrán reclamar de ella ante la Corte de Apelaciones de Santiago, la que previamente deberá pronunciarse sobre la admisibilidad del recurso, para lo cual el reclamante señalará en su escrito, con precisión, la disposición de esta ley que supone infringida, la forma en que se ha producido la infracción y las razones por las cuales la instrucción o resolución lo perjudica. El tribunal rechazará de plano el recurso si la presentación no cumple con las condiciones señaladas en el inciso precedente. La reclamación deberá interponerse dentro del plazo de 10 días hábiles contado desde la notificación de la resolución reclamada. La interposición del recurso de ilegalidad no suspenderá los efectos de la resolución reclamada, a menos que se refiera a los casos establecidos en los artículos 15, 36 y 51 de la presente ley y siempre que la Corte estime que tal suspensión no agravará los efectos que la resolución reclamada trata de corregir. Si la Corte de Apelaciones declarare admisible la reclamación, dará traslado de ella por seis días a la Superintendencia. Evacuado el traslado por la Superintendencia, o acusada la rebeldía, la Corte dictará sentencia en el término de 30 días, contra la cual no procederá recurso alguno.</p>
+        </content>
+      </article>
+    </section>
+    <section eId="sec_titulo_13">
+      <heading>TITULO XIII Disposiciones generales.</heading>
+      <article eId="art_65">
+        <heading>Artículo 65</heading>
+        <content>
+          <p>Artículo 65.- La publicidad, propaganda y difusión que por cualquier medio hagan emisores, intermediarios de valores, bolsas de valores, corporaciones de agentes de valores y cualquiera otras personas o entidades que participen en una emisión o colocación de valores, no podrán contener declaraciones, alusiones o representaciones que puedan inducir a error, equívocos o confusión al público sobre la naturaleza, precios, rentabilidad, rescates, liquidez, garantías o cualquiera otras características de los valores de oferta pública o de sus emisores. Los prospectos y folletos informativos que se utilicen para la difusión y propaganda de una emisión de valores, deberán contener la totalidad de la información que la Superintendencia determine y no podrán difundirse si no hubieren sido previamente remitidos al registro de valores. La Superintendencia estará facultada para dictar las normas de aplicación general que sean conducentes a asegurar el cumplimiento de lo dispuesto en los incisos precedentes, y podrá, en caso de contravención a lo establecido en este artículo o en las normas generales que al respecto hubiere dictado, ordenar al infractor o al director responsable del medio de difusión que modifique o suspenda la publicidad, sin perjuicio de las demás sanciones que procedan.</p>
+        </content>
+      </article>
+      <article eId="art_66">
+        <heading>Artículo 66</heading>
+        <content>
+          <p>Artículo 66.- Las comisiones que puedan cobrarse por colocación o intermediación de valores serán libres.</p>
+        </content>
+      </article>
+      <article eId="art_67">
+        <heading>Artículo 67</heading>
+        <content>
+          <p>Artículo 67.- En caso de quiebra de un emisor de valores, los créditos de los terceros acreedores de la sociedad, cualquiera sea la clase a que pertenezcan, prevalecerán sobre los que posean los socios de la entidad emisora en contra de ésta proveniente de una disminución de capital que hubieren acordado y será aplicable el artículo 73 de Ley de Quiebras respecto de los pagos ya efectuados a éstos.</p>
+        </content>
+      </article>
+      <article eId="art_68">
+        <heading>Artículo 68</heading>
+        <content>
+          <p>Artículo 68.- La Superintendencia llevará un registro público de presidentes, directores, gerentes, administradores y liquidadores de las entidades sujetas a su vigilancia. Para este efecto, dichas entidades dentro del plazo de tercero día hábil de ocurrido el hecho deberán comunicarle todo nombramiento, vacancia o reemplazo que se produzca respecto de esos cargos. Las designaciones que consten de dicho registro se considerarán vigentes para todos los efectos judiciales y extrajudiciales concernientes a simples accionistas o terceros de buena fe.</p>
+        </content>
+      </article>
+      <article eId="art_69">
+        <heading>Artículo 69</heading>
+        <content>
+          <p>Artículo 69.- La Superintendencia de Bancos e Instituciones Financieras fiscalizará el cumplimiento de las disposiciones de la presente ley, respecto de los bancos y sociedades financieras. La Superintendencia mencionada impartirá a sus entidades fiscalizadas las instrucciones para la aplicación de las normas que rijan las actividades a que se refiere esta ley, adoptando al efecto las que dicte la Superintendencia de Valores y fiscalizará su cumplimiento. No será necesario registrar en la Superintendencia de Bancos e Instituciones Financieras los valores emitidos por bancos o sociedades financieras que operen en el país a menos que se trate de sus propias acciones de bonos en su caso o de otros títulos que la Superintendencia de Bancos e Instituciones Financieras especialmente determine.</p>
+        </content>
+      </article>
+      <article eId="art_70">
+        <heading>Artículo 70</heading>
+        <content>
+          <p>Artículo 70.- 1. Deróganse los textos legales y reglamentarios que a continuación se indican: a) Título IV del decreto con fuerza de ley N° 251, de 1931, artículos 140 al 153, ambos inclusive. b) Ley N° 16.394 publicada en el Diario Oficial de 18 de Diciembre de 1965. c) Reglamento de la ley N° 16.394, contenido en el decreto supremo N° 783, de 15 de Marzo de 1966, del Ministerio de Hacienda. d) Decreto ley N° 1.064, publicado en el Diario Oficial de 14 de Junio de 1975. e) Reglamento del decreto ley N° 1.064, contenido en el decreto supremo N° 956, de 5 de Agosto de 1975. f) El artículo 6° del decreto ley N° 1.638, de 1976. 2.- Introdúcense las siguientes modificaciones a los textos legales que a continuación se indican: a) En el artículo 11 del decreto ley N° 280, de 1974, elimínase la coma (,) que sigue a la palabra &amp;quot;moneda&amp;quot; y la frase que expresa &amp;quot;de los valores o efectos públicos negociados en las Bolsas de Comercio&amp;quot; y reemplázase las expresiones &amp;quot;o del&amp;quot; que anteceden a la palabra &amp;quot;régimen&amp;quot; por las expresiones &amp;quot;o el&amp;quot;. b) En el número 11 bis del artículo 83 de la Ley General de Bancos, contenida en el decreto con fuerza de ley N° 252, de 1960, y modifica por el decreto ley N° 3.345, de 1980, elimínase la frase &amp;quot;cobrando las comisiones que determine la Superintendencia de Bancos e Instituciones Financieras&amp;quot;, sustituyéndose la coma (,) que la antecede por un punto (.) seguido. c) En el artículo 9°, letra d) del decreto ley N° 1.078, elimínase la expresión &amp;quot;y dictar normas que está a continuación de la frase &amp;quot;determinar la política&amp;quot;.</p>
+        </content>
+      </article>
+    </section>
+    <section eId="sec_titulo_14">
+      <heading>DISPOSICIONES TRANSITORIAS </heading>
+      <article eId="art_1_t1">
+        <heading>Artículo 1</heading>
+        <content>
+          <p>Artículo 1°.- A las emisiones de títulos representativos de obligaciones a largo plazo efectuadas con anterioridad a la vigencia de la presente ley, les serán aplicables las leyes y normas que a dicha vigencia regían hasta el rescate o pago total de la emisión respectiva, cualesquiera fuere la forma o instrumentos empleados en ellas.</p>
+        </content>
+      </article>
+      <article eId="art_2_t1">
+        <heading>Artículo 2</heading>
+        <content>
+          <p>Artículo 2°.- Las bolsas de valores mobiliarios actualmente existentes podrán optar entre transformarse en una bolsa de valores de las que establece la presente ley, aportar el todo o parte de su activo y pasivo a una bolsa que se constituya de acuerdo a sus disposiciones, modificar sus estatutos para cambiar su giro al de actividades no bursátiles o acordar su disolución anticipada. En el caso de optarse por el proceso de transformación éste se perfeccionará modificándose en lo pertinente sus estatutos para adecuarlos a las características que en esta ley se establecen para las bolsas de valores, quedando subsistentes la personalidad jurídica de la sociedad transformada. Si al 31 de Diciembre de 1982, las actuales bolsas no hubieren perfeccionado ninguna de las alternativas a que se refiere el inciso primero de esta disposición, quedarán disueltos por el solo ministerio de la ley. Sin perjuicio de lo dispuesto en los incisos precedentes a las bolsas de valores y a los corredores de bolsa existentes a la fecha de publicación de la presente ley se les aplicarán sus disposiciones en lo que fuere compatible prevaleciendo sobre las normas estatutarias y reglamentarias que las regían.</p>
+        </content>
+      </article>
+      <article eId="art_3_t1">
+        <heading>Artículo 3</heading>
+        <content>
+          <p>Artículo 3°.- Las personas jurídicas que formaren su razón social con alguna de las expresiones a que se refiere el artículo 37 de la presente ley deberán dentro del plazo de 90 días contados desde la fecha de su vigencia, modificar sus estatutos a fin de eliminar de ellos dichas expresiones reservadas.</p>
+        </content>
+      </article>
+    </section>
+    </body>
+  </act>
+</akomaNtoso>

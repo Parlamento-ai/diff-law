@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="mod-ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-18045/1989-12-21"/>
+          <FRBRuri value="/cl/amendment/ley-18045/1989-12-21"/>
+          <FRBRdate date="1989-12-21" name="publicación"/>
+          <FRBRauthor href="/cl/org/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@1989-12-21"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@1989-12-21"/>
+          <FRBRdate date="1989-12-21" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@1989-12-21/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>Ley 18.876</docTitle></p>
+      </longTitle>
+      <p>Depósito y custodia de valores</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Ley 18.876 modifica la Ley 18.045. 1 artículos afectados.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@1987-10-20"
+      result="/cl/act/ley-18045/spa@1989-12-21">
+      <akndiff:articleChange article="art_64" type="repeal">
+        <akndiff:old>Artículo 64.- Las personas que estimen que una instrucción o resolución de la Superintendencia dictada en virtud de esta ley es ilegal y les causa perjuicio, podrán reclamar de ella ante la Corte de Apelaciones de Santiago, la que previamente deberá pronunciarse sobre la admisibilidad del recurso, para lo cual el reclamante señalará en su escrito, con precisión, la disposición de esta ley que supone infringida, la forma en que se ha producido la infracción y las razones por las cuales la instrucción o resolución lo perjudica. El tribunal rechazará de plano el recurso si la presentación no cumple con las condiciones señaladas en el inciso precedente. La reclamación deberá interponerse dentro del plazo de 10 días hábiles contado desde la notificación de la resolución reclamada. La interposición del recurso de ilegalidad no suspenderá los efectos de la resolución reclamada, a menos que se refiera a los casos establecidos en los artículos 15, 36 y 51 de la presente ley y siempre que la Corte estime que tal suspensión no agravará los efectos que la resolución reclamada trata de corregir. Si la Corte de Apelaciones declarare admisible la reclamación, dará traslado de ella por seis días a la Superintendencia. Evacuado el traslado por la Superintendencia, o acusada la rebeldía, la Corte dictará sentencia en el término de 30 días, contra la cual no procederá recurso alguno.</akndiff:old>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

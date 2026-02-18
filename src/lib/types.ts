@@ -36,6 +36,9 @@ export interface Vote {
 	for: Voter[];
 	against: Voter[];
 	abstain: Voter[];
+	forCount?: number;
+	againstCount?: number;
+	abstainCount?: number;
 }
 
 export interface ChangeSet {

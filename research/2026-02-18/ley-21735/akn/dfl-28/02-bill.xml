@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <bill name="ley-21735-mod-dfl-28">
+    <meta>
+      <identification source="#presidencia">
+        <FRBRWork>
+          <FRBRthis value="/cl/bill/ley-21735"/>
+          <FRBRuri value="/cl/bill/ley-21735"/>
+          <FRBRdate date="2022-11-07" name="presentación"/>
+          <FRBRauthor href="/cl/org/presidencia"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/bill/ley-21735/spa@2022-11-07"/>
+          <FRBRuri value="/cl/bill/ley-21735/spa@2022-11-07"/>
+          <FRBRdate date="2022-11-07" name="mensaje"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/bill/ley-21735/spa@2022-11-07/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#presidencia">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+        <TLCOrganization eId="presidencia" href="/cl/org/presidencia" showAs="Presidencia de la República"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p>Ley 21.735: <docTitle>Crea un Nuevo Sistema Mixto de Pensiones</docTitle></p>
+      </longTitle>
+      <p>Mensaje de S.E. el Presidente de la República.</p>
+      <p>Modifica el DFL N° 28 de 1981 del Ministerio del Trabajo.</p>
+      <p>Boletín N° 15.480-13.</p>
+    </preface>
+    <body>
+      <article eId="art_unico">
+        <heading>Artículo modificatorio</heading>
+        <content>
+          <p>Introdúcense las siguientes modificaciones en el DFL N° 28 de 1981 del Ministerio del Trabajo.</p>
+        </content>
+      </article>
+    </body>
+    <akndiff:changeSet
+      base="/cl/act/dfl-28/spa@2025-03-25"
+      result="/cl/act/dfl-28/spa@2025-03-26">
+
+    </akndiff:changeSet>
+  </bill>
+</akomaNtoso>

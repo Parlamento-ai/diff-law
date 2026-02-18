@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="mod-ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-18045/1989-12-30"/>
+          <FRBRuri value="/cl/amendment/ley-18045/1989-12-30"/>
+          <FRBRdate date="1989-12-30" name="publicación"/>
+          <FRBRauthor href="/cl/org/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@1989-12-30"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@1989-12-30"/>
+          <FRBRdate date="1989-12-30" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@1989-12-30/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>Ley 18.899</docTitle></p>
+      </longTitle>
+      <p>Deroga disposiciones legales</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Ley 18.899. Sin cambios detectables a nivel de artículo.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@1989-12-21"
+      result="/cl/act/ley-18045/spa@1989-12-30">
+
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

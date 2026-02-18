@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="mod-ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-18045/2009-04-28"/>
+          <FRBRuri value="/cl/amendment/ley-18045/2009-04-28"/>
+          <FRBRdate date="2009-04-28" name="publicación"/>
+          <FRBRauthor href="/cl/org/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@2009-04-28"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@2009-04-28"/>
+          <FRBRdate date="2009-04-28" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@2009-04-28/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>Ley 20.343</docTitle></p>
+      </longTitle>
+      <p>Modifica Ley de Mercado de Valores</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Ley 20.343 modifica la Ley 18.045. 1 artículos afectados.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@2007-06-05"
+      result="/cl/act/ley-18045/spa@2009-04-28">
+      <akndiff:articleChange article="art_136" type="substitute">
+        <akndiff:old>Artículo 136.- Las sociedades securitizadoras no podrán tener en cada uno de sus patrimonios separados más de un 35% de activos que hayan sido originados o vendidos por un mismo banco o sociedad financiera relacionada a la sociedad securitizadora. La misma restricción se aplicará a las administradoras de fondos de inversión de créditos securitizados a que se refiere la ley Nº 18.815, respecto de la inversión de cada fondo que administre. El Banco Central de Chile, previo informe de la Superintendencia de Bancos e Instituciones Financieras, requerido conforme al artículo 35 de su Ley Orgánica Constitucional, establecerá las condiciones y determinará los créditos, inversiones y los derechos sobre flujos provenientes de los mismos, que podrán ser objeto de venta o cesión por los bancos o sociedades financieras a las sociedades securitizadoras o fondos de inversión de créditos securitizados. Corresponderá a la referida Superintendencia la fiscalización del cumplimiento de las normas que se dicten conforme al inciso precedente.</akndiff:old>
+        <akndiff:new>Artículo 136. Las sociedades securitizadoras no podrán tener en cada uno de sus patrimonios separados activos que hayan sido originados o vendidos por un mismo banco o institución financiera relacionado a la misma, salvo que en los títulos de deuda que sean emitidos por dicha sociedad se exprese claramente la circunstancia de haber sido originados o vendidos por un banco o institución financiera relacionado y el porcentaje que ellos representan dentro del total de activos del patrimonio separado. La misma restricción se aplicará a las administradoras de fondos de inversión de créditos securitizados a que se refiere la ley N° 18.815, respecto de la inversión de cada fondo que administre. El Banco Central de Chile, previo informe de la Superintendencia de Bancos e Instituciones Financieras, requerido conforme al artículo 35 de su Ley Orgánica Constitucional, establecerá las condiciones y determinará los créditos, inversiones y los derechos sobre flujos provenientes de los mismos, que podrán ser objeto de venta o cesión por los bancos o sociedades financieras a las sociedades securitizadoras o fondos de inversión de créditos securitizados. Corresponderá a la referida Superintendencia la fiscalización del cumplimiento de las normas que se dicten conforme al inciso precedente.</akndiff:new>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

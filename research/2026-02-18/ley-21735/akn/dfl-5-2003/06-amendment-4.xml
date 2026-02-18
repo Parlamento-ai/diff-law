@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="ley-21735-tc">
+    <meta>
+      <identification source="#tc">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-21735/tribunal-constitucional"/>
+          <FRBRuri value="/cl/amendment/ley-21735/tribunal-constitucional"/>
+          <FRBRdate date="2025-03-10" name="fallo"/>
+          <FRBRauthor href="/cl/org/tribunal-constitucional"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/amendment/ley-21735/tribunal-constitucional/spa@2025-03-10"/>
+          <FRBRuri value="/cl/amendment/ley-21735/tribunal-constitucional/spa@2025-03-10"/>
+          <FRBRdate date="2025-03-10" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/amendment/ley-21735/tribunal-constitucional/spa@2025-03-10/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#tc">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+        <TLCOrganization eId="tc" href="/cl/org/tribunal-constitucional" showAs="Tribunal Constitucional"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>Control de Constitucionalidad</docTitle></p>
+      </longTitle>
+      <p>El Tribunal Constitucional declara la constitucionalidad del proyecto.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Rol N° 16189-25 CPR. Control preventivo de constitucionalidad. El requerimiento de inconstitucionalidad (Rol 16207-25 CPT) sobre el artículo 1, numeral 1, letra b) fue declarado inadmisible. El Presidente de la República comunica que no hará uso del veto (03/03/2025). Se oficia al Ejecutivo para promulgación (11/03/2025).</p>
+      </amendmentContent>
+    </amendmentBody>
+  </amendment>
+</akomaNtoso>

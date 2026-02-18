@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="mod-ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-18045/2023-12-30"/>
+          <FRBRuri value="/cl/amendment/ley-18045/2023-12-30"/>
+          <FRBRdate date="2023-12-30" name="publicación"/>
+          <FRBRauthor href="/cl/org/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@2023-12-30"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@2023-12-30"/>
+          <FRBRdate date="2023-12-30" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@2023-12-30/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>Ley 21.641</docTitle></p>
+      </longTitle>
+      <p>Modifica Ley de Mercado de Valores</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Ley 21.641 modifica la Ley 18.045. 1 artículos afectados.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@2023-08-17"
+      result="/cl/act/ley-18045/spa@2023-12-30">
+      <akndiff:articleChange article="art_48" type="substitute">
+        <akndiff:old>Artículo 48.- Para que una bolsa de valores pueda suspender las transacciones de un valor por más de cinco días, requerirá de la autorización previa de la Comisión. Toda suspensión o cancelación de inscripción de un valor por parte de una bolsa de valores, será reclamable por el emisor ante la Comisión en los términos previstos por el artículo 50.</akndiff:old>
+        <akndiff:new>Artículo 48.- Con el fin de resguardar el interés público y de los inversionistas, una bolsa de valores podrá suspender la transacción de uno o más valores por un plazo máximo de cinco días hábiles bursátiles. También podrá suspender la transacción de todos los valores en simultáneo, por un plazo máximo de un día hábil bursátil. Para suspender las transacciones por un plazo mayor, requerirá de la autorización previa de la Comisión. Los criterios para determinar la suspensión de las transacciones, según lo dispuesto en los incisos previos, deben ser objetivos y estar contenidos en su reglamentación interna. La bolsa que aplique las medidas de que trata este artículo deberá informar de inmediato a la Comisión de las circunstancias que llevaron a la suspensión y de las medidas remediales. Toda suspensión o cancelación de inscripción de un valor por parte de una bolsa de valores, será reclamable por el emisor ante la Comisión en los términos previstos por el artículo 50.</akndiff:new>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

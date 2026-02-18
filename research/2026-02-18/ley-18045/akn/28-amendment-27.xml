@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="mod-ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-18045/2022-02-01"/>
+          <FRBRuri value="/cl/amendment/ley-18045/2022-02-01"/>
+          <FRBRdate date="2022-02-01" name="publicación"/>
+          <FRBRauthor href="/cl/org/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@2022-02-01"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@2022-02-01"/>
+          <FRBRdate date="2022-02-01" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@2022-02-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>Ley 21.398</docTitle></p>
+      </longTitle>
+      <p>Ley pro-consumidor</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Ley 21.398 modifica la Ley 18.045. 1 artículos afectados.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@2021-04-13"
+      result="/cl/act/ley-18045/spa@2022-02-01">
+      <akndiff:articleChange article="art_44bis" type="substitute">
+        <akndiff:old>Artículo 44 bis.- Las bolsas de valores deberán establecer entre sí, sistemas expeditos de comunicación e información en tiempo real respecto de las transacciones de valores que se realicen en cada una de ellas, sin que puedan comercializar o reproducir estas informaciones, salvo autorización expresa de la bolsa que las origina. Las bolsas de valores convendrán sistemas de comunicación, información, entrega de dineros y títulos; uniformidad de procedimientos y demás que sean convenientes a fin de facilitar el cierre de operaciones entre corredores de distintas bolsas, permitiendo al público inversionista la mejor ejecución de sus órdenes e instando por la existencia de un mercado equitativo, competitivo, ordenado y transparente.</akndiff:old>
+        <akndiff:new>Artículo 44 bis.- Las bolsas de valores deberán establecer entre sí, sistemas expeditos de comunicación e información en tiempo real respecto de las transacciones de valores que se realicen en cada una de ellas, sin que puedan comercializar o reproducir estas informaciones, salvo autorización expresa de la bolsa que las origina. Asimismo, las bolsas deberán establecer mecanismos de interconexión en tiempo real, con calce vinculante y automático entre distintas bolsas de valores, de manera que permitan la mejor ejecución de las órdenes de los inversionistas, incluyendo aquellas que provengan de terceras bolsas. La Comisión establecerá, mediante norma de carácter general, los sistemas de negociación que deberán interconectarse de manera vinculante, así como la forma, condiciones, requisitos técnicos, de comunicación, de seguridad y cualquier otro que deban cumplir los mecanismos de interconexión, las bolsas y sus participantes, para efectos de implementar esta norma, velando siempre por el adecuado funcionamiento del mercado financiero. La Comisión, al momento de evaluar la aprobación de las normas de las bolsas que establezcan las estructuras tarifarias de interconexión, u otras condiciones aplicables a sus participantes o a terceras bolsas, deberá propender siempre a la búsqueda de un mercado equitativo, competitivo, ordenado y transparente. Sin perjuicio de lo dispuesto en el inciso final del artículo 44, la Comisión, en caso que considere que una o más condiciones establecidas en el reglamento de una bolsa de valores sean discriminatorias o afecten la libre competencia, rechazará, mediante resolución fundada, la solicitud de aprobación de dicha reglamentación. La resolución deberá contener un plazo prudente para que la bolsa respectiva subsane las observaciones de la Comisión, el que comenzará a correr desde que la referida resolución sea notificada a la bolsa de valores. En caso que la bolsa no corrija la situación en el plazo indicado, la Comisión podrá proceder de acuerdo al Título IV del decreto ley Nº 3.538, del Ministerio de Hacienda, de 1980, cuyo texto fue reemplazado por el artículo primero de la ley Nº 21.000, que crea la Comisión para el Mercado Financiero. Para efectos de lo establecido en el presente inciso, la Comisión podrá requerir del informe técnico de la Fiscalía Nacional Económica, la que deberá remitir dicho informe a más tardar dentro del plazo de noventa días de solicitado por la Comisión.</akndiff:new>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

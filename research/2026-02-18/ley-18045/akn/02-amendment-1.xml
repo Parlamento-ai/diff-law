@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="mod-ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-18045/1981-10-23"/>
+          <FRBRuri value="/cl/amendment/ley-18045/1981-10-23"/>
+          <FRBRdate date="1981-10-23" name="publicación"/>
+          <FRBRauthor href="/cl/org/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@1981-10-23"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@1981-10-23"/>
+          <FRBRdate date="1981-10-23" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@1981-10-23/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>DL 3.538</docTitle></p>
+      </longTitle>
+      <p>Crea la Superintendencia de Valores y Seguros</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>DL 3.538 modifica la Ley 18.045. 5 artículos afectados.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@1981-10-22"
+      result="/cl/act/ley-18045/spa@1981-10-23">
+      <akndiff:articleChange article="art_8" type="repeal">
+        <akndiff:old>Artículo 8°.- La Superintendencia deberá efectuar la inscripción en el Registro de Valores, una vez que el emisor le haya proporcionado la información que ésta requiera sobre su situación jurídica, económica y financiera, por medio de normas de carácter general, dictadas en consideración a las caracteristícas del emisor, de los valores y de las ofertas en su caso. Para proceder a la inscripción la Superintendencia dispondrá de un plazo de 30 días contados desde la fecha de la solicitud. Dicho plazo se suspenderá si la Superintendencia, mediante comunicación escrita, pide información adicional al peticionario o le solicita que modifique la petición o que rectifique sus antecedentes por no ajustarse éstos a las normas establecidas, reanudándose tan sólo cuando se haya cumplido con dicho trámite. Subsanados los defectos o atendidas las observaciones formuladas en su caso y vencido el plazo a que se refieren los incisos precedentes, la Superintendencia deberá efectuar la inscripción dentro de tercero día hábil.</akndiff:old>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_12" type="repeal">
+        <akndiff:old>Artículo 12.- Las personas que directamente, o a través de otras personas naturales o jurídicas posean el 10% o más del capital suscrito de una sociedad cuyas acciones se encuentren inscritas en el Registro de Valores, o que a causa de una adquisición, de acciones lleguen a tener dicho porcentaje, y los directores, gerente general y gerentes, en su caso, de dichas sociedades, cualesquiera sea el número de acciones que posean, deberán informar a la Superintendencia y a cada una de las bolsas de valores del país en que la sociedad tenga valores registrados para su cotización, de toda adquisición o enajenación de acciones que efectúe de esa sociedad, dentro de los cinco días siguientes al de la transacción o transacciones respectivas.</akndiff:old>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_55" type="repeal">
+        <akndiff:old>Artículo 55.- La persona que infrinja las disposiciones contenidas en la presente ley, sus normas complementarias o las normas que imparta la Superintendencia ocasionando daño a otro, está obligada a la indemnización de los perjuicios. Lo anterior no obsta a las sanciones administrativas o penales que asimismo pudiere corresponderle. Por las personas jurídicas responderán además, civil, administrativa y penalmente sus administradores o representantes legales a menos que constare su falta de participación o su oposición al hecho constitutivo de infracción. Los directores, liquidadores, administradores, gerentes, y auditores de emisores de valores de oferta pública que infrinja las disposiciones legales, reglamentarias y estatutarias que rigen su organ ización institucional responderán solidariamente de los perjuicios que causaren.</akndiff:old>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_58" type="repeal">
+        <akndiff:old>Artículo 58.- La Superintendencia aplicará a los infractores de esta ley, de sus normas complementarias, de los estatutos y reglamentos internos de las bolsas de valores y de las resoluciones que dicte conforme a sus facultades, las sanciones y apremios establecidos en su ley orgánica y las administrativas que se establecen en la presente ley.</akndiff:old>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_60" type="repeal">
+        <akndiff:old>Artículo 60.- Sufrirán las penas de presidio menor en cualquiera de sus grados: a) Los que hicieren oferta pública de valores sin cumplir con los requisitos de inscripción en el Registro de Valores que exige esta ley o lo hicieren respecto de valores cuya inscripción hubiere sido suspendida o cancelada. b) Los que actuaren como corredores de bolsa o agentes de valores sin estar inscritos en el Registro que exige esta ley o cuya inscripción hubiere sido suspendida o cancelada. c) Los que sin estar legalmente autorizados utilicen las expresiones reservadas a que se refiere el artículo 37. Con el fin de obtener los antecedentes o informaciones necesarias para configurar algunos de los casos señalados en el presente artículo y para clausurar las oficinas de los infractores en los casos que sea necesario, la Superintendencia podrá solicitar directamente el auxilio de la fuerza pública con facultades de allanamiento y descerrajamiento.</akndiff:old>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

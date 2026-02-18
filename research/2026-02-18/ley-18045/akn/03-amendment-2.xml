@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="mod-ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-18045/1981-10-31"/>
+          <FRBRuri value="/cl/amendment/ley-18045/1981-10-31"/>
+          <FRBRdate date="1981-10-31" name="publicación"/>
+          <FRBRauthor href="/cl/org/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@1981-10-31"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@1981-10-31"/>
+          <FRBRdate date="1981-10-31" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@1981-10-31/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>DFL 251</docTitle></p>
+      </longTitle>
+      <p>Ley de Seguros</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>DFL 251 modifica la Ley 18.045. 7 artículos afectados.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@1981-10-23"
+      result="/cl/act/ley-18045/spa@1981-10-31">
+      <akndiff:articleChange article="art_2" type="repeal">
+        <akndiff:old>Artículo 2°.- Corresponderá a la Superintendencia de Valores y Seguros, en adelante la Superintendencia, vigilar el cumplimiento de las disposiciones de la presente ley, de acuerdo con las facultades que se confieren en su ley orgánica y en el presente cuerpo legal.</akndiff:old>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_11" type="repeal">
+        <akndiff:old>Artículo 11.- Las citaciones a juntas de accionistas o asambleas de socios que se efectúen por entidades distintas a las sociedades anónimas, pero sujetas a la fiscalización de la Superintendencia de conformidad a la presente ley, deberán a lo menos ser enviadas por correo a cada asociado, con una anticipación mínima de 15 días a la fecha en que se celebrará la reunión respectiva y deberán contener una referencia a las materias a ser tratadas en ella. El no envío de la referida comunicación no producirá la nulidad de la citación, pero la sociedad infractora quedará sujeta a las sanciones que la Superintendencia pueda aplicar y responderá de los perjuicios que le hubiere causado a sus asociados.</akndiff:old>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_33" type="repeal">
+        <akndiff:old>Artículo 33.- Las transacciones de valores en que participen corre dores de bolsa o agentes de valores, deberán ajustarse a las normas y procedimientos establecidos en la ley, a los que determine la Superintendencia por instrucciones de general aplicación, y en su caso, conforme a lo dispuesto en los estatutos y reglamentos internos de las bolsas de valores o de las asociaciones de agentes de valores de que sean miembros. Toda orden para efectuar una operación de bolsa se entenderá respecto del comitente, efectuada sobre la base de que éste queda sujeto a los reglamentos de la bolsa respectiva aprobados por la Superintendencia. Los corredores de bolsa y los agentes de valores que actúen en la compraventa de valores, quedan personalmente obligados a pagar el precio de la compra o a hacer la entrega de los valores vendidos y en caso alguno se les admitirá la excepción de falta de provisión. Estos intermediarios no pueden compensar las sumas que recibieren para comprar valores ni el precio que se les entregare de los vendidos por él, con las cantidades que les deba su cliente, comprador o vendedor. Las minutas que entregaren a sus clientes y las que se dieren recíprocamente, en los casos en que dos o más intermediarios concurran a la celebración de un negocio por encargo de diversas personas, hacen prueba contra el corredor de bolsa o agente de valores que las suscribe.</akndiff:old>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_65" type="repeal">
+        <akndiff:old>Artículo 65.- La publicidad, propaganda y difusión que por cualquier medio hagan emisores, intermediarios de valores, bolsas de valores, corporaciones de agentes de valores y cualquiera otras personas o entidades que participen en una emisión o colocación de valores, no podrán contener declaraciones, alusiones o representaciones que puedan inducir a error, equívocos o confusión al público sobre la naturaleza, precios, rentabilidad, rescates, liquidez, garantías o cualquiera otras características de los valores de oferta pública o de sus emisores. Los prospectos y folletos informativos que se utilicen para la difusión y propaganda de una emisión de valores, deberán contener la totalidad de la información que la Superintendencia determine y no podrán difundirse si no hubieren sido previamente remitidos al registro de valores. La Superintendencia estará facultada para dictar las normas de aplicación general que sean conducentes a asegurar el cumplimiento de lo dispuesto en los incisos precedentes, y podrá, en caso de contravención a lo establecido en este artículo o en las normas generales que al respecto hubiere dictado, ordenar al infractor o al director responsable del medio de difusión que modifique o suspenda la publicidad, sin perjuicio de las demás sanciones que procedan.</akndiff:old>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_70" type="repeal">
+        <akndiff:old>Artículo 70.- 1. Deróganse los textos legales y reglamentarios que a continuación se indican: a) Título IV del decreto con fuerza de ley N° 251, de 1931, artículos 140 al 153, ambos inclusive. b) Ley N° 16.394 publicada en el Diario Oficial de 18 de Diciembre de 1965. c) Reglamento de la ley N° 16.394, contenido en el decreto supremo N° 783, de 15 de Marzo de 1966, del Ministerio de Hacienda. d) Decreto ley N° 1.064, publicado en el Diario Oficial de 14 de Junio de 1975. e) Reglamento del decreto ley N° 1.064, contenido en el decreto supremo N° 956, de 5 de Agosto de 1975. f) El artículo 6° del decreto ley N° 1.638, de 1976. 2.- Introdúcense las siguientes modificaciones a los textos legales que a continuación se indican: a) En el artículo 11 del decreto ley N° 280, de 1974, elimínase la coma (,) que sigue a la palabra &amp;quot;moneda&amp;quot; y la frase que expresa &amp;quot;de los valores o efectos públicos negociados en las Bolsas de Comercio&amp;quot; y reemplázase las expresiones &amp;quot;o del&amp;quot; que anteceden a la palabra &amp;quot;régimen&amp;quot; por las expresiones &amp;quot;o el&amp;quot;. b) En el número 11 bis del artículo 83 de la Ley General de Bancos, contenida en el decreto con fuerza de ley N° 252, de 1960, y modifica por el decreto ley N° 3.345, de 1980, elimínase la frase &amp;quot;cobrando las comisiones que determine la Superintendencia de Bancos e Instituciones Financieras&amp;quot;, sustituyéndose la coma (,) que la antecede por un punto (.) seguido. c) En el artículo 9°, letra d) del decreto ley N° 1.078, elimínase la expresión &amp;quot;y dictar normas que está a continuación de la frase &amp;quot;determinar la política&amp;quot;.</akndiff:old>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_2_t1" type="repeal">
+        <akndiff:old>Artículo 2°.- Las bolsas de valores mobiliarios actualmente existentes podrán optar entre transformarse en una bolsa de valores de las que establece la presente ley, aportar el todo o parte de su activo y pasivo a una bolsa que se constituya de acuerdo a sus disposiciones, modificar sus estatutos para cambiar su giro al de actividades no bursátiles o acordar su disolución anticipada. En el caso de optarse por el proceso de transformación éste se perfeccionará modificándose en lo pertinente sus estatutos para adecuarlos a las características que en esta ley se establecen para las bolsas de valores, quedando subsistentes la personalidad jurídica de la sociedad transformada. Si al 31 de Diciembre de 1982, las actuales bolsas no hubieren perfeccionado ninguna de las alternativas a que se refiere el inciso primero de esta disposición, quedarán disueltos por el solo ministerio de la ley. Sin perjuicio de lo dispuesto en los incisos precedentes a las bolsas de valores y a los corredores de bolsa existentes a la fecha de publicación de la presente ley se les aplicarán sus disposiciones en lo que fuere compatible prevaleciendo sobre las normas estatutarias y reglamentarias que las regían.</akndiff:old>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_3_t1" type="repeal">
+        <akndiff:old>Artículo 3°.- Las personas jurídicas que formaren su razón social con alguna de las expresiones a que se refiere el artículo 37 de la presente ley deberán dentro del plazo de 90 días contados desde la fecha de su vigencia, modificar sus estatutos a fin de eliminar de ellos dichas expresiones reservadas.</akndiff:old>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

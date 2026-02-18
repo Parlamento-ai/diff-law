@@ -166,8 +166,16 @@ function parseVoters(group: unknown): Voter[] {
 	}));
 }
 
+function parseVoteGroupCount(group: unknown): number | undefined {
+	if (!group || typeof group !== 'object') return undefined;
+	const obj = group as Record<string, unknown>;
+	const count = obj['@_count'];
+	if (count !== undefined) return Number(count);
+	return undefined;
+}
+
 function parseVote(voteNode: Record<string, unknown>): Vote {
-	return {
+	const vote: Vote = {
 		date: (voteNode['@_date'] as string) || '',
 		result: (voteNode['@_result'] as Vote['result']) || 'pending',
 		source: (voteNode['@_source'] as string) || '',
@@ -175,6 +183,13 @@ function parseVote(voteNode: Record<string, unknown>): Vote {
 		against: parseVoters(voteNode['akndiff:against']),
 		abstain: parseVoters(voteNode['akndiff:abstain'])
 	};
+	const forCount = parseVoteGroupCount(voteNode['akndiff:for']);
+	const againstCount = parseVoteGroupCount(voteNode['akndiff:against']);
+	const abstainCount = parseVoteGroupCount(voteNode['akndiff:abstain']);
+	if (forCount !== undefined) vote.forCount = forCount;
+	if (againstCount !== undefined) vote.againstCount = againstCount;
+	if (abstainCount !== undefined) vote.abstainCount = abstainCount;
+	return vote;
 }
 
 function parseChangeSet(cs: Record<string, unknown>): ChangeSet {

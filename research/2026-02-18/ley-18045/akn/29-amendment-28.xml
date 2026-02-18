@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="mod-ley-18045">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/cl/amendment/ley-18045/2022-06-13"/>
+          <FRBRuri value="/cl/amendment/ley-18045/2022-06-13"/>
+          <FRBRdate date="2022-06-13" name="publicación"/>
+          <FRBRauthor href="/cl/org/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/act/ley-18045/spa@2022-06-13"/>
+          <FRBRuri value="/cl/act/ley-18045/spa@2022-06-13"/>
+          <FRBRdate date="2022-06-13" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/act/ley-18045/spa@2022-06-13/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#congreso">
+        <TLCOrganization eId="congreso" href="/cl/org/congreso" showAs="Congreso Nacional de Chile"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>Ley 21.455</docTitle></p>
+      </longTitle>
+      <p>Ley Marco de Cambio Climático</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Ley 21.455 modifica la Ley 18.045. 1 artículos afectados.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/act/ley-18045/spa@2022-02-01"
+      result="/cl/act/ley-18045/spa@2022-06-13">
+      <akndiff:articleChange article="art_10" type="substitute">
+        <akndiff:old>Artículo 10. Las entidades inscritas en el Registro de Valores quedarán sujetas a esta ley y a sus normas complementarias y deberán proporcionar la información que establece la ley a la Comisión y al público en general con la periodicidad, publicidad y en la forma que la Comisión determine por norma de carácter general. Asimismo, y sin perjuicio de lo dispuesto en el inciso anterior, las entidades comprendidas en él deberán divulgar en forma veraz, suficiente y oportuna todo hecho o información esencial respecto de ellas mismas y de sus negocios en el momento en que éste ocurra o llegue a su conocimiento. El directorio o administrador de cada entidad deberá implementar políticas, procedimientos, sistemas y controles con el objeto de asegurar dicha divulgación y evitar que se filtre información esencial mientras no haya ocurrido la referida divulgación. La Comisión, mediante norma de carácter general, establecerá los requisitos y condiciones que deberán cumplir las políticas, procedimientos, sistemas y controles a que se refiere el inciso anterior. No obstante lo dispuesto en los incisos anteriores, con la aprobación de las tres cuartas partes de los directores en ejercicio podrá darse el carácter de reservado a ciertos hechos o antecedentes que se refieran a negociaciones aún pendientes que al conocerse puedan perjudicar el interés social. Tratándose de emisores no administrados por un directorio u otro órgano colegiado, la decisión de reserva debe ser tomada por todos los administradores. Las decisiones y acuerdos a que se refiere el inciso anterior deberán ser comunicados a la Comisión al día siguiente a su adopción por los medios tecnológicos que habilite la Comisión. Los que dolosa o culpablemente califiquen o concurran con su voto favorable a declarar como reservado un hecho o antecedente, de aquellos a que se refiere el inciso tercero de este artículo, responderán en la forma y términos establecidos en el artículo 55 de esta ley.</akndiff:old>
+        <akndiff:new>Artículo 10.- Las entidades inscritas en el Registro de Valores quedarán sujetas a esta ley y a sus normas complementarias y deberán proporcionar a la Comisión y al público en general, la información exigida por esta ley y por la Comisión, de conformidad a una norma de carácter general emitida por esta última. Dicha norma deberá exigir, a lo menos, información referida a los impactos ambientales y de cambio climático de las entidades inscritas, incluyendo la identificación, evaluación y gestión de los riesgos relacionados con esos factores, junto a las correspondientes métricas. La Comisión deberá especificar la forma, la publicidad y la periodicidad de la información a entregar por parte de las entidades inscritas, la que al menos será anual. En la elaboración de la citada normativa, la Comisión considerará estándares o recomendaciones nacionales o internacionales sobre la materia. Asimismo, y sin perjuicio de lo dispuesto en el inciso anterior, las entidades comprendidas en él deberán divulgar en forma veraz, suficiente y oportuna todo hecho o información esencial respecto de ellas mismas y de sus negocios en el momento en que éste ocurra o llegue a su conocimiento. El directorio o administrador de cada entidad deberá implementar políticas, procedimientos, sistemas y controles con el objeto de asegurar dicha divulgación y evitar que se filtre información esencial mientras no haya ocurrido la referida divulgación. La Comisión, mediante norma de carácter general, establecerá los requisitos y condiciones que deberán cumplir las políticas, procedimientos, sistemas y controles a que se refiere el inciso anterior. No obstante lo dispuesto en los incisos anteriores, con la aprobación de las tres cuartas partes de los directores en ejercicio podrá darse el carácter de reservado a ciertos hechos o antecedentes que se refieran a negociaciones aún pendientes que al conocerse puedan perjudicar el interés social. Tratándose de emisores no administrados por un directorio u otro órgano colegiado, la decisión de reserva debe ser tomada por todos los administradores. Las decisiones y acuerdos a que se refiere el inciso anterior deberán ser comunicados a la Comisión al día siguiente a su adopción por los medios tecnológicos que habilite la Comisión. Los que dolosa o culpablemente califiquen o concurran con su voto favorable a declarar como reservado un hecho o antecedente, de aquellos a que se refiere el inciso tercero de este artículo, responderán en la forma y términos establecidos en el artículo 55 de esta ley.</akndiff:new>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

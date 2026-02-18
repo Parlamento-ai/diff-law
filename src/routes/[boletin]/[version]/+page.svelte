@@ -58,7 +58,7 @@
 					<span class="badge {data.vote.result === 'approved' ? 'bg-addition-100' : 'bg-deletion-100'} {voteResultColor[data.vote.result] || 'text-gray-500'}">
 						{data.vote.result === 'approved' ? '✓' : '✗'}
 						{voteResultLabel[data.vote.result] || data.vote.result}
-						{data.vote.for.length}-{data.vote.against.length}-{data.vote.abstain.length}
+						{data.vote.forCount ?? data.vote.for.length}-{data.vote.againstCount ?? data.vote.against.length}-{data.vote.abstainCount ?? data.vote.abstain.length}
 					</span>
 				{/if}
 			</div>
@@ -104,7 +104,7 @@
 </div>
 
 <!-- Diff panel (mobile) -->
-{#if hasDiffs}
+{#if hasDiffs || data.vote}
 	<div class="lg:hidden mt-4 card-layout" transition:slide={{ duration: dur(300) }}>
 		<DiffView diffs={data.diffs} vote={data.vote} collapsed={true} />
 	</div>
