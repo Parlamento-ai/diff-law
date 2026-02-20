@@ -19,7 +19,9 @@
       "WebFetch(domain:joinup.ec.europa.eu)",
       "WebFetch(domain:eur-lex.europa.eu)",
       "WebFetch(domain:2023.eswc-conferences.org)",
-      "WebFetch(domain:en.wikipedia.org)"
+      "WebFetch(domain:en.wikipedia.org)",
+      "Bash(npx svelte-kit sync:*)",
+      "Bash(npx vite build)"
     ]
   },
   "enableAllProjectMcpServers": true,
