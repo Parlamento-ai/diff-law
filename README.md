@@ -8,22 +8,34 @@ Partimos de un problema concreto: no existe una herramienta pública para ver qu
 ## Changelog
 
 ---
-**19/02/2026**
+**20/02/2026**
 
-Investigamos la **API JSON de LeyChile** (endpoint con versionamiento, catálogo de vigencias, anotaciones de modificación) y construimos tres nuevos casos reales para documentar distintos escenarios legislativos:
+Pasamos del marco teórico a una pregunta concreta: **¿es factible convertir los datos legislativos públicos a AKN?**
 
-- **Ley 21.670 — Porte de Armas Aspirantes Policiales** (Boletín 15.995-02): primer boletín con tramitación completa — moción, 1er trámite (Cámara), 2do trámite con votación nominal del Senado (31-0-2) y ley publicada.
-- **Boletín 17.370-17 — Cumplimiento Alternativo de Penas**: primer caso con votación de rechazo — moción de 4 artículos, modificada por Comisión de DDHH, rechazada en Sala del Senado (21-24).
-- **Ley 21.120 — Identidad de Género** (Boletín 8924-07): primer caso con Comisión Mixta — la Cámara rechazó las modificaciones del Senado, activando la comisión bicameral. Incluye 6 votaciones de rechazo y la votación más estrecha del sistema (22-18).
+Como empresa privada sin acceso directo a las instituciones, todo debe construirse desde información públicamente accesible. El plan es crear un **reporte de factibilidad por fuente de datos** (por país si los datos están unificados, o por organismo si están separados).
 
-Construimos un **pipeline automatizado para regulaciones de la UE**, con 10 PoCs reutilizables que descargan desde CELLAR, EP Open Data y EUR-Lex, convierten a AKN 3.0, y generan viewer XMLs. Procesamos **dos regulaciones**: Digital Services Act (74 → 93 artículos, 456 enmiendas EP) y AI Act (85 → 113 artículos, 770 enmiendas EP). Agregar una nueva regulación es crear un `viewer-config.json` y correr el pipeline.
+La estructura de cada reporte sigue tres pasos:
 
-([paso a paso](research/2026-02-19/README.md), [documentación pipeline](research/2026-02-19/akn-eu/docs/pipeline.md))
+1. **Tipos AKN objetivo** — qué documentos AKN + AKN Diff queremos construir.
+2. **Fuentes de datos** — de dónde sale la información (PDFs, APIs, XMLs) y qué campos de cada fuente alimentan cada tipo.
+3. **Dificultad de conversión** — clasificada en una escala:
 
----
-**18/02/2026**
+| Nivel | Descripción | Ejemplo |
+|-------|-------------|---------|
+| 0 — Ya en AKN | Los datos ya están en formato AKN | — |
+| Mecánica simple | Transformar de un XML a otro | Europa con Formex |
+| Mecánica compleja | Involucra parsing de PDFs | — |
+| AI simple | Datos bien estandarizados, IA acierta ~99% | — |
+| AI + Humano | Formatos inestables, requiere revisión manual | — |
+| No disponible | Datos inexistentes o demasiado dispersos | — |
 
-Aplicamos AKN Diff a legislación real por primera vez: la **Ley 21.735 — Reforma de Pensiones** (Boletín 15.480-13), con 350 artículos, 5 normas modificadas y votación nominal del Senado (40-7). Como segundo caso, reconstruimos la **historia completa de la Ley 18.045** (Mercado de Valores) con 32 versiones en 44 años y 431 cambios. ([paso a paso](research/2026-02-18/README.md))
+Cada reporte produce **dos métricas**:
+
+- **Cobertura del rito legislativo**: el foco está en los datos que participan del proceso legislativo — proyectos de ley, mociones, informes de comisión, debates, votaciones, textos promulgados. Se busca identificar cuáles de estos datos están públicamente disponibles, en qué formato se encuentran hoy (PDF, XML, HTML, API), y qué proporción fue efectivamente utilizada para construir los documentos AKN. Esto también revela qué datos públicos existen pero no se aprovechan: información que está ahí, accesible, pero que ningún sistema estructura ni conecta.
+
+- **Completitud AKN**: % de los campos del esquema AKN que fueron correctamente completados a partir de las fuentes disponibles.
+
+Con esto respondemos dos preguntas: ¿AKN logra representar la información pública sin dejar la mitad atrás? Y ¿es viable hacer la conversión?
 
 
 ---
