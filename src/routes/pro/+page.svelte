@@ -2,6 +2,7 @@
 	import BoletinCard from '$lib/components/pro/boletin/BoletinCard.svelte';
 	import FlagCl from '~icons/circle-flags/cl';
 	import FlagEu from '~icons/circle-flags/eu';
+	import FlagUs from '~icons/circle-flags/us';
 	import type { Component } from 'svelte';
 
 	let { data } = $props();
@@ -19,7 +20,9 @@
 		'ley-21120-boletin': FlagCl,
 		'eu-dma': FlagEu,
 		'eu-dsa': FlagEu,
-		'eu-ai-act': FlagEu
+		'eu-ai-act': FlagEu,
+		'us-s5-laken-riley': FlagUs,
+		'us-s269-improper-payments': FlagUs
 	};
 
 	const normOrder = [
@@ -57,6 +60,9 @@
 	const euDma = $derived(data.boletines.find((b) => b.slug === 'eu-dma'));
 	const euDsa = $derived(data.boletines.find((b) => b.slug === 'eu-dsa'));
 	const euAiAct = $derived(data.boletines.find((b) => b.slug === 'eu-ai-act'));
+
+	const usS5 = $derived(data.boletines.find((b) => b.slug === 'us-s5-laken-riley'));
+	const usS269 = $derived(data.boletines.find((b) => b.slug === 'us-s269-improper-payments'));
 </script>
 
 <main class="max-w-4xl mx-auto px-4 py-12">
@@ -73,7 +79,7 @@
 		<h1 class="text-3xl font-bold text-gray-900">Área profesional</h1>
 		<p class="text-gray-500 mt-3 text-sm max-w-lg mx-auto leading-relaxed">
 			Legislación real representada en AKN Diff.
-			Boletines chilenos y regulaciones europeas que documentan distintos escenarios del proceso legislativo.
+			Boletines chilenos, regulaciones europeas y bills del Congreso de EE.UU. que documentan distintos escenarios del proceso legislativo.
 		</p>
 	</div>
 
@@ -270,6 +276,43 @@
 						title={euAiAct.title}
 						documentCount={euAiAct.documentCount}
 						flag={flagMap[euAiAct.slug]}
+					/>
+				{/if}
+			</div>
+		</section>
+	{/if}
+
+	<!-- US — United States Congress -->
+	{#if usS5 || usS269}
+		<section class="mb-14">
+			<div class="mb-5 max-w-lg mx-auto">
+				<h2 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
+					<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-red-100 text-red-700 text-xs font-bold">US</span>
+					United States Congress
+				</h2>
+				<p class="text-xs text-gray-400 mt-1.5 leading-relaxed">
+					Pipeline from Congress.gov Bill DTD XML + Senate/House roll call votes to AKN 3.0.
+					S.5 with roll call votes in both chambers; S.269 with voice votes and significant text amendments.
+				</p>
+			</div>
+
+			<div class="max-w-lg mx-auto flex flex-col gap-2">
+				{#if usS5}
+					<BoletinCard
+						slug={usS5.slug}
+						title={usS5.title}
+						documentCount={usS5.documentCount}
+						flag={flagMap[usS5.slug]}
+						firstVersion="bill"
+					/>
+				{/if}
+				{#if usS269}
+					<BoletinCard
+						slug={usS269.slug}
+						title={usS269.title}
+						documentCount={usS269.documentCount}
+						flag={flagMap[usS269.slug]}
+						firstVersion="bill"
 					/>
 				{/if}
 			</div>
