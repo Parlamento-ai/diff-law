@@ -23,19 +23,4 @@ export interface DiscoveredConfig {
 	comDate: string | null;
 }
 
-export type Status = 'PASS' | 'FAIL' | 'WARN';
-
-export interface StepResult {
-	step: number;
-	id: string;
-	name: string;
-	status: Status;
-	detail: string;
-	elapsed: number;
-}
-
-export interface CrossCheck {
-	name: string;
-	status: Status;
-	detail: string;
-}
+export type { Status, StepResult, CrossCheck } from '../shared/types.js';

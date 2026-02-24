@@ -4,7 +4,7 @@
  */
 import type { ArticleChange } from '../types.js';
 import type { ParsedSection, ParsedVote } from '../types.js';
-import { escapeXml, buildArticlesXml, today } from '../../cl/lib/xml-helpers.js';
+import { escapeXml, buildArticlesXml, today } from '../../shared/xml.js';
 
 interface USFRBRMeta {
 	thisValue: string; // e.g. /us/bill/119/s/5/pcs

@@ -2,13 +2,8 @@
  * Shared XML builder for EU pipeline modules
  */
 
-export function esc(s: string): string {
-	return s
-		.replace(/&/g, '&amp;')
-		.replace(/</g, '&lt;')
-		.replace(/>/g, '&gt;')
-		.replace(/"/g, '&quot;');
-}
+import { escapeXml } from '../../shared/xml.js';
+export const esc = escapeXml;
 
 export class XmlBuilder {
 	private lines: string[] = [];

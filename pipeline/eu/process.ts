@@ -9,7 +9,9 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import type { DiscoveredConfig, StepResult, CrossCheck } from './types.js';
-import { parseProcedure, countTag, extractFRBRuri, celexMatchesUri, pad, fmtTime } from './lib/helpers.js';
+import type { PipelineManifest } from '../shared/types.js';
+import { parseProcedure, countTag, extractFRBRuri, celexMatchesUri } from './lib/helpers.js';
+import { loadJson, formatReport } from '../shared/report.js';
 import { discover } from './phases/1-discover.js';
 import { configure } from './phases/2-configure.js';
 import { download } from './phases/3-download.js';
@@ -50,13 +52,6 @@ function parseArgs() {
 	}
 
 	return { procedureCode, startPhase };
-}
-
-function loadJson<T>(path: string, label: string): T {
-	if (!existsSync(path)) {
-		throw new Error(`${label} not found at ${path} — run earlier phases first`);
-	}
-	return JSON.parse(readFileSync(path, 'utf-8'));
 }
 
 async function main() {
@@ -220,41 +215,17 @@ async function main() {
 
 	// --- Report ---
 	const totalElapsed = Date.now() - t0Global;
-	const BAR = '\u2550'.repeat(55);
-	const lines: string[] = [];
+	const manifest: PipelineManifest = {
+		country: 'eu',
+		slug: config!.slug,
+		title: config!.title,
+		aknFiles: [],
+		elapsed: totalElapsed,
+		results: allResults,
+		crossChecks: checks
+	};
 
-	lines.push(BAR);
-	lines.push(`  EU AKN Pipeline: ${config!.slug}`);
-	lines.push(`  Procedure: ${config!.procedure}`);
-	lines.push(`  Title: ${config!.title}`);
-	lines.push(BAR);
-
-	for (const r of allResults) {
-		const status = `[${r.status}]`;
-		const stepLabel = `${r.step}. ${r.name}`;
-		lines.push(
-			`  ${pad(status, 6)}  ${pad(stepLabel, 22)} ${pad(r.detail, 35)} ${fmtTime(r.elapsed)}`
-		);
-	}
-
-	if (checks.length > 0) {
-		lines.push('');
-		lines.push('  Cross-checks:');
-		for (const c of checks) {
-			const detail = c.detail ? ` ${c.detail}` : '';
-			lines.push(`  [${c.status}]  ${c.name}${detail}`);
-		}
-	}
-
-	const pass = allResults.filter((r) => r.status === 'PASS').length;
-	const fail = allResults.filter((r) => r.status === 'FAIL').length;
-	const warn = allResults.filter((r) => r.status === 'WARN').length;
-
-	lines.push('');
-	lines.push(`  RESULT: ${pass} pass, ${fail} fail, ${warn} warn (${fmtTime(totalElapsed)})`);
-	lines.push(BAR);
-
-	const report = lines.join('\n');
+	const report = formatReport(manifest);
 	console.log(report);
 
 	const reportPath = join(regDir, 'pipeline-report.txt');
