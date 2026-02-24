@@ -4,7 +4,7 @@
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Config, Discovery, ParsedData, ParsedVote, ParsedSection } from '../types.js';
-import { computeChangeSet } from '../../cl/lib/changeset-computer.js';
+import { computeChangeSet } from '../../shared/changeset.js';
 import { buildBillXml, buildAmendmentXml, buildActXml } from '../lib/akn-builder.js';
 
 export async function generate(

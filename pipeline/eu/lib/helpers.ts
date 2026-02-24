@@ -66,10 +66,3 @@ export function isOjAmendmentHtml(html: string): boolean {
 	return html.includes('class="oj-table"');
 }
 
-export function pad(s: string, n: number): string {
-	return s.length >= n ? s : s + ' '.repeat(n - s.length);
-}
-
-export function fmtTime(ms: number): string {
-	return (ms / 1000).toFixed(1) + 's';
-}
