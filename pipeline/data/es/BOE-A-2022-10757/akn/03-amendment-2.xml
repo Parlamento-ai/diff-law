@@ -20,7 +20,7 @@
         <FRBRManifestation>
           <FRBRthis value="/es/l/2022/06/28/11/spa@2025-12-28/akn"/>
           <FRBRuri value="/es/l/2022/06/28/11/spa@2025-12-28/akn"/>
-          <FRBRdate date="2026-02-24" name="generacion"/>
+          <FRBRdate date="2026-02-25" name="generacion"/>
         </FRBRManifestation>
       </identification>
     </meta>
@@ -36,7 +36,365 @@
     <akndiff:changeSet
       base="/es/l/2022/06/28/11/spa@2023-06-29"
       result="/es/l/2022/06/28/11/spa@2025-12-28">
-        <akndiff:articleChange article="art_65" type="substitute">
+      <akndiff:vote date="2025-11-13" result="approved" source="https://www.congreso.es/es/opendata/votaciones" expediente="121/000012">
+        <akndiff:for count="179">
+          <akndiff:voter href="/es/diputado/sagastizabal-unzetabarrenetxea" showAs="Sagastizabal Unzetabarrenetxea, Idoia"/>
+          <akndiff:voter href="/es/diputado/martinez-barbero" showAs="Martínez Barbero, Verónica"/>
+          <akndiff:voter href="/es/diputado/santos-maraver" showAs="Santos Maraver, Agustín"/>
+          <akndiff:voter href="/es/diputado/rufian-romero" showAs="Rufián Romero, Gabriel"/>
+          <akndiff:voter href="/es/diputado/cobo-perez" showAs="Cobo Pérez, Noelia"/>
+          <akndiff:voter href="/es/diputado/vidal-saez" showAs="Vidal Sáez, Aina"/>
+          <akndiff:voter href="/es/diputado/pisarello-prados" showAs="Pisarello Prados, Gerardo"/>
+          <akndiff:voter href="/es/diputado/badia-casas" showAs="Badia Casas, Eloi"/>
+          <akndiff:voter href="/es/diputado/boada-danes" showAs="Boada Danés, Júlia"/>
+          <akndiff:voter href="/es/diputado/montero-cuadrado" showAs="Montero Cuadrado, María Jesús"/>
+          <akndiff:voter href="/es/diputado/andala-ubbi" showAs="Andala Ubbi, Teslem"/>
+          <akndiff:voter href="/es/diputado/diaz-perez" showAs="Díaz Pérez, Yolanda"/>
+          <akndiff:voter href="/es/diputado/conesa-coma" showAs="Conesa Coma, Ignasi"/>
+          <akndiff:voter href="/es/diputado/losada-fernandez" showAs="Losada Fernández, José"/>
+          <akndiff:voter href="/es/diputado/lorenzo-cazorla" showAs="Lorenzo Cazorla, Juan Antonio"/>
+          <akndiff:voter href="/es/diputado/rodriguez-palacios" showAs="Rodríguez Palacios, Javier"/>
+          <akndiff:voter href="/es/diputado/gutierrez-santiago" showAs="Gutiérrez Santiago, Víctor"/>
+          <akndiff:voter href="/es/diputado/soldevilla-novials" showAs="Soldevilla Novials, Alba"/>
+          <akndiff:voter href="/es/diputado/rodriguez-suarez" showAs="Rodríguez Suárez, Esther"/>
+          <akndiff:voter href="/es/diputado/moreno-fernandez" showAs="Moreno Fernández, Mª Isabel"/>
+          <akndiff:voter href="/es/diputado/ruiz-de-diego" showAs="Ruiz de Diego, Víctor Javier"/>
+          <akndiff:voter href="/es/diputado/mayoral-de-lamo" showAs="Mayoral de Lamo, Alberto"/>
+          <akndiff:voter href="/es/diputado/camino-minana" showAs="Camino Miñana, Víctor"/>
+          <akndiff:voter href="/es/diputado/lopez-zamora" showAs="López Zamora, Cristina"/>
+          <akndiff:voter href="/es/diputado/mayoral-perez" showAs="Mayoral Pérez, Jesús"/>
+          <akndiff:voter href="/es/diputado/almodovar-sanchez" showAs="Almodóvar Sánchez, Emilia"/>
+          <akndiff:voter href="/es/diputado/pare-aregall" showAs="Paré Aregall, Josep"/>
+          <akndiff:voter href="/es/diputado/gracia-blanco" showAs="Gracia Blanco, Marta"/>
+          <akndiff:voter href="/es/diputado/lopez-tagliafico" showAs="López Tagliafico, Candela"/>
+          <akndiff:voter href="/es/diputado/lago-penas" showAs="Lago Peñas, Manuel"/>
+          <akndiff:voter href="/es/diputado/de-la-rosa-baena" showAs="De la Rosa Baena, Olvido"/>
+          <akndiff:voter href="/es/diputado/otero-rodriguez" showAs="Otero Rodríguez, Patricia"/>
+          <akndiff:voter href="/es/diputado/garcia-chavarria" showAs="García Chavarría, María Montserrat"/>
+          <akndiff:voter href="/es/diputado/hita-tellez" showAs="Hita Téllez, Guillermo"/>
+          <akndiff:voter href="/es/diputado/sainz-martin" showAs="Sainz Martín, María"/>
+          <akndiff:voter href="/es/diputado/otero-garcia" showAs="Otero García, Mercedes"/>
+          <akndiff:voter href="/es/diputado/almiron-ruiz" showAs="Almirón Ruiz, Oriol"/>
+          <akndiff:voter href="/es/diputado/canelo-matito" showAs="Canelo Matito, Andrea"/>
+          <akndiff:voter href="/es/diputado/pages-i-masso" showAs="Pagès i Massó, Josep"/>
+          <akndiff:voter href="/es/diputado/montavez-aguillaume" showAs="Montávez Aguillaume, Vicente"/>
+          <akndiff:voter href="/es/diputado/estrems-fayos" showAs="Estrems Fayos, Etna"/>
+          <akndiff:voter href="/es/diputado/recas-martin" showAs="Recas Martín, Alda"/>
+          <akndiff:voter href="/es/diputado/quintero-hernandez" showAs="Quintero Hernández, Jonay"/>
+          <akndiff:voter href="/es/diputado/gomez-pina" showAs="Gómez Piña, Luis Antonio"/>
+          <akndiff:voter href="/es/diputado/ogou-i-corbi" showAs="Ogou i Corbi, Viviane"/>
+          <akndiff:voter href="/es/diputado/otero-gabirondo" showAs="Otero Gabirondo, Mikel"/>
+          <akndiff:voter href="/es/diputado/renteria-lasanta" showAs="Renteria Lasanta, Nerea"/>
+          <akndiff:voter href="/es/diputado/blanco-arrue" showAs="Blanco Arrúe, Gabriel"/>
+          <akndiff:voter href="/es/diputado/cacho-isla" showAs="Cacho Isla, Iván"/>
+          <akndiff:voter href="/es/diputado/antunano-colina" showAs="Antuñano Colina, Pablo"/>
+          <akndiff:voter href="/es/diputado/jodar-perez" showAs="Jódar Pérez, Irene"/>
+          <akndiff:voter href="/es/diputado/rodriguez-gomez-de-celis" showAs="Rodríguez Gómez de Celis, Alfonso"/>
+          <akndiff:voter href="/es/diputado/diouf-dioh" showAs="Diouf Dioh, Luc Andre"/>
+          <akndiff:voter href="/es/diputado/martin-rodriguez" showAs="Martín Rodríguez, Margarita"/>
+          <akndiff:voter href="/es/diputado/crespin-rubio" showAs="Crespín Rubio, Rafaela"/>
+          <akndiff:voter href="/es/diputado/rivera-arias" showAs="Rivera Arias, Engracia"/>
+          <akndiff:voter href="/es/diputado/mico-mico" showAs="Micó Micó, Àgueda"/>
+          <akndiff:voter href="/es/diputado/ibanez-mezquita" showAs="Ibáñez Mezquita, Alberto"/>
+          <akndiff:voter href="/es/diputado/gonzalez-lopez" showAs="González López, Nahuel"/>
+          <akndiff:voter href="/es/diputado/faneca-lopez" showAs="Faneca López, María Luisa"/>
+          <akndiff:voter href="/es/diputado/cruz-santana" showAs="Cruz Santana, Gabriel"/>
+          <akndiff:voter href="/es/diputado/velarde-gomez" showAs="Velarde Gómez, Martina"/>
+          <akndiff:voter href="/es/diputado/blanquer-alcaraz" showAs="Blanquer Alcaraz, Patricia"/>
+          <akndiff:voter href="/es/diputado/mellado-sierra" showAs="Mellado Sierra, Valle"/>
+          <akndiff:voter href="/es/diputado/rojo-blas" showAs="Rojo Blas, Alberto"/>
+          <akndiff:voter href="/es/diputado/nasarre-oliva" showAs="Nasarre Oliva, Begoña"/>
+          <akndiff:voter href="/es/diputado/martinez-salmeron" showAs="Martínez Salmerón, Joaquín"/>
+          <akndiff:voter href="/es/diputado/armengol-socias" showAs="Armengol Socias, Francina"/>
+          <akndiff:voter href="/es/diputado/herrera-garcia" showAs="Herrera García, Milena"/>
+          <akndiff:voter href="/es/diputado/corujo-berriel" showAs="Corujo Berriel, María Dolores"/>
+          <akndiff:voter href="/es/diputado/sanchez-perez-castejon" showAs="Sánchez Pérez-Castejón, Pedro"/>
+          <akndiff:voter href="/es/diputado/mercadal-baquero" showAs="Mercadal Baquero, Pepe"/>
+          <akndiff:voter href="/es/diputado/leal-fernandez" showAs="Leal Fernández, Isaura"/>
+          <akndiff:voter href="/es/diputado/vidal-matas" showAs="Vidal Matas, Vicenç"/>
+          <akndiff:voter href="/es/diputado/garcia-moris" showAs="García Morís, Roberto"/>
+          <akndiff:voter href="/es/diputado/pueyo-sanz" showAs="Pueyo Sanz, Jorge"/>
+          <akndiff:voter href="/es/diputado/martinez-ramirez" showAs="Martínez Ramírez, Carmen"/>
+          <akndiff:voter href="/es/diputado/sarria-morell" showAs="Sarrià Morell, Vicent Manuel"/>
+          <akndiff:voter href="/es/diputado/trenzano-rubio" showAs="Trenzano Rubio, Marta"/>
+          <akndiff:voter href="/es/diputado/granollers-cunillera" showAs="Granollers Cunillera, Inés"/>
+          <akndiff:voter href="/es/diputado/alvaro-vidal" showAs="Álvaro Vidal, Francesc-Marc"/>
+          <akndiff:voter href="/es/diputado/vallugera-balana" showAs="Vallugera Balañà, Pilar"/>
+          <akndiff:voter href="/es/diputado/jorda-i-roura" showAs="Jordà i Roura, Teresa"/>
+          <akndiff:voter href="/es/diputado/martin-urriza" showAs="Martín Urriza, Carlos"/>
+          <akndiff:voter href="/es/diputado/gonzalez-gracia" showAs="González Gracia, Juan Antonio"/>
+          <akndiff:voter href="/es/diputado/simancas-simancas" showAs="Simancas Simancas, Rafael"/>
+          <akndiff:voter href="/es/diputado/rives-arcayna" showAs="Rives Arcayna, Caridad"/>
+          <akndiff:voter href="/es/diputado/gutierrez-prieto" showAs="Gutiérrez Prieto, Sergio"/>
+          <akndiff:voter href="/es/diputado/rego-candamil" showAs="Rego Candamil, Néstor"/>
+          <akndiff:voter href="/es/diputado/gavin-i-valls" showAs="Gavin i Valls, Isidre"/>
+          <akndiff:voter href="/es/diputado/nogueras-i-camero" showAs="Nogueras i Camero, Míriam"/>
+          <akndiff:voter href="/es/diputado/cervera-pinart" showAs="Cervera Pinart, Josep Maria"/>
+          <akndiff:voter href="/es/diputado/calvo-gomez" showAs="Calvo Gómez, Pilar"/>
+          <akndiff:voter href="/es/diputado/cruset-domenech" showAs="Cruset Domènech, Josep Maria"/>
+          <akndiff:voter href="/es/diputado/madrenas-i-mir" showAs="Madrenas i Mir, Marta"/>
+          <akndiff:voter href="/es/diputado/alfonso-cendon" showAs="Alfonso Cendón, Javier"/>
+          <akndiff:voter href="/es/diputado/bolanos-garcia" showAs="Bolaños García, Félix"/>
+          <akndiff:voter href="/es/diputado/taboadela-alvarez" showAs="Taboadela Álvarez, Obdulia"/>
+          <akndiff:voter href="/es/diputado/belarra-urteaga" showAs="Belarra Urteaga, Ione"/>
+          <akndiff:voter href="/es/diputado/lopez-cano" showAs="López Cano, Ignacio"/>
+          <akndiff:voter href="/es/diputado/sierra-caballero" showAs="Sierra Caballero, Francisco"/>
+          <akndiff:voter href="/es/diputado/alonso-cantorne" showAs="Alonso Cantorné, Fèlix"/>
+          <akndiff:voter href="/es/diputado/narbona-ruiz" showAs="Narbona Ruiz, Cristina"/>
+          <akndiff:voter href="/es/diputado/guinart-moreno" showAs="Guinart Moreno, Lídia"/>
+          <akndiff:voter href="/es/diputado/azorin-salar" showAs="Azorín Salar, Lázaro"/>
+          <akndiff:voter href="/es/diputado/matute-garcia-de-jalon" showAs="Matute García de Jalón, Oskar"/>
+          <akndiff:voter href="/es/diputado/pozueta-fernandez" showAs="Pozueta Fernández, Isabel"/>
+          <akndiff:voter href="/es/diputado/inarritu-garcia" showAs="Iñarritu García, Jon"/>
+          <akndiff:voter href="/es/diputado/fullaondo-la-cruz" showAs="Fullaondo la Cruz, Marije"/>
+          <akndiff:voter href="/es/diputado/sanchez-serna" showAs="Sánchez Serna, Javier"/>
+          <akndiff:voter href="/es/diputado/soler-mur" showAs="Soler Mur, Alejandro"/>
+          <akndiff:voter href="/es/diputado/aizpurua-arzallus" showAs="Aizpurua Arzallus, Mertxe"/>
+          <akndiff:voter href="/es/diputado/vaquero-montero" showAs="Vaquero Montero, Maribel"/>
+          <akndiff:voter href="/es/diputado/agirretxea-urresti" showAs="Agirretxea Urresti, Joseba Andoni"/>
+          <akndiff:voter href="/es/diputado/legarda-uriarte" showAs="Legarda Uriarte, Mikel"/>
+          <akndiff:voter href="/es/diputado/ramirez-moreno" showAs="Ramírez Moreno, María de las Nieves"/>
+          <akndiff:voter href="/es/diputado/perez-ortiz" showAs="Pérez Ortiz, Isabel María"/>
+          <akndiff:voter href="/es/diputado/sahuquillo-garcia" showAs="Sahuquillo García, Luis Carlos"/>
+          <akndiff:voter href="/es/diputado/rey-de-las-heras" showAs="Rey de las Heras, Luis Alfonso"/>
+          <akndiff:voter href="/es/diputado/castilla-alvarez" showAs="Castilla Álvarez, María Carmen"/>
+          <akndiff:voter href="/es/diputado/senderos-oraa" showAs="Senderos Oraá, Daniel"/>
+          <akndiff:voter href="/es/diputado/jerez-antequera" showAs="Jerez Antequera, Juan Carlos"/>
+          <akndiff:voter href="/es/diputado/perea-i-conillas" showAs="Perea i Conillas, María Mercè"/>
+          <akndiff:voter href="/es/diputado/aranda-vargas" showAs="Aranda Vargas, Francisco"/>
+          <akndiff:voter href="/es/diputado/verdejo-vicente" showAs="Verdejo Vicente, Ferran"/>
+          <akndiff:voter href="/es/diputado/serrada-pariente" showAs="Serrada Pariente, David"/>
+          <akndiff:voter href="/es/diputado/fagundez-campo" showAs="Fagúndez Campo, Antidio"/>
+          <akndiff:voter href="/es/diputado/fernandez-beneitez" showAs="Fernández Benéitez, Andrea"/>
+          <akndiff:voter href="/es/diputado/santana-perera" showAs="Santana Perera, Noemí"/>
+          <akndiff:voter href="/es/diputado/zaragoza-alonso" showAs="Zaragoza Alonso, José"/>
+          <akndiff:voter href="/es/diputado/valido-garcia" showAs="Valido García, Cristina"/>
+          <akndiff:voter href="/es/diputado/poblador-pacheco" showAs="Poblador Pacheco, María Araceli"/>
+          <akndiff:voter href="/es/diputado/serrano-martinez" showAs="Serrano Martínez, Juan Francisco"/>
+          <akndiff:voter href="/es/diputado/garcia-lopez" showAs="García López, Maribel"/>
+          <akndiff:voter href="/es/diputado/diaz-marin" showAs="Díaz Marín, Raúl"/>
+          <akndiff:voter href="/es/diputado/rallo-lombarte" showAs="Rallo Lombarte, Artemi"/>
+          <akndiff:voter href="/es/diputado/ros-martinez" showAs="Ros Martínez, Susana"/>
+          <akndiff:voter href="/es/diputado/martin-martinez" showAs="Martín Martínez, Andreu"/>
+          <akndiff:voter href="/es/diputado/martinez-seijo" showAs="Martínez Seijo, María Luz"/>
+          <akndiff:voter href="/es/diputado/aceves-galindo" showAs="Aceves Galindo, José Luis"/>
+          <akndiff:voter href="/es/diputado/ruiz-boix" showAs="Ruiz Boix, Juan Carlos"/>
+          <akndiff:voter href="/es/diputado/sanchez-diaz" showAs="Sánchez Díaz, María Carmen"/>
+          <akndiff:voter href="/es/diputado/cobo-carmona" showAs="Cobo Carmona, Ana"/>
+          <akndiff:voter href="/es/diputado/salvador-i-duch" showAs="Salvador i Duch, Jordi"/>
+          <akndiff:voter href="/es/diputado/valero-morales" showAs="Valero Morales, Juan Antonio"/>
+          <akndiff:voter href="/es/diputado/marques-ates" showAs="Marqués Atés, Amador"/>
+          <akndiff:voter href="/es/diputado/minguez-garcia" showAs="Mínguez García, Montse"/>
+          <akndiff:voter href="/es/diputado/plaza-garcia" showAs="Plaza García, Inés"/>
+          <akndiff:voter href="/es/diputado/gil-de-reboleno-lastortres" showAs="Gil de Reboleño Lastortres, Esther"/>
+          <akndiff:voter href="/es/diputado/martinez-hierro" showAs="Martínez Hierro, Lander"/>
+          <akndiff:voter href="/es/diputado/puente-santiago" showAs="Puente Santiago, Óscar"/>
+          <akndiff:voter href="/es/diputado/sanz-martinez" showAs="Sanz Martínez, Luisa"/>
+          <akndiff:voter href="/es/diputado/guijarro-garcia" showAs="Guijarro García, Txema"/>
+          <akndiff:voter href="/es/diputado/morales-alvarez" showAs="Morales Álvarez, Álvaro"/>
+          <akndiff:voter href="/es/diputado/ramirez-carner" showAs="Ramírez Carner, Arnau"/>
+          <akndiff:voter href="/es/diputado/pena-camarero" showAs="Peña Camarero, Esther"/>
+          <akndiff:voter href="/es/diputado/arribas-maroto" showAs="Arribas Maroto, Manuel"/>
+          <akndiff:voter href="/es/diputado/redondo-cardenas" showAs="Redondo Cárdenas, Gonzalo"/>
+          <akndiff:voter href="/es/diputado/ramos-esteban" showAs="Ramos Esteban, César Joaquín"/>
+          <akndiff:voter href="/es/diputado/argota-castro" showAs="Argota Castro, Trinidad Carmen"/>
+          <akndiff:voter href="/es/diputado/maldonado-lopez" showAs="Maldonado López, Adriana"/>
+          <akndiff:voter href="/es/diputado/andres-anon" showAs="Andrés Añón, Carmen"/>
+          <akndiff:voter href="/es/diputado/lamua-estanol" showAs="Lamuà Estañol, Marc"/>
+          <akndiff:voter href="/es/diputado/cercas-mena" showAs="Cercas Mena, Blanca"/>
+          <akndiff:voter href="/es/diputado/romero-pozo" showAs="Romero Pozo, Rafaela"/>
+          <akndiff:voter href="/es/diputado/garcia-gurrutxaga" showAs="García Gurrutxaga, María Luisa"/>
+          <akndiff:voter href="/es/diputado/garrido-jimenez" showAs="Garrido Jiménez, Elisa"/>
+          <akndiff:voter href="/es/diputado/lopez-alvarez" showAs="López Álvarez, Patxi"/>
+          <akndiff:voter href="/es/diputado/cofino-fernandez" showAs="Cofiño Fernández, Rafael"/>
+          <akndiff:voter href="/es/diputado/santiago-romero" showAs="Santiago Romero, Enrique Fernando"/>
+          <akndiff:voter href="/es/diputado/abalos-meco" showAs="Ábalos Meco, José Luis"/>
+          <akndiff:voter href="/es/diputado/rodriguez-salas" showAs="Rodríguez Salas, José Antonio"/>
+          <akndiff:voter href="/es/diputado/pose-mesura" showAs="Pose Mesura, Modesto"/>
+          <akndiff:voter href="/es/diputado/sancho-iniguez" showAs="Sancho Íñiguez, Herminio Rufino"/>
+          <akndiff:voter href="/es/diputado/santana-aguilera" showAs="Santana Aguilera, Ada"/>
+          <akndiff:voter href="/es/diputado/alvarez-gonzalez" showAs="Álvarez González, Alicia"/>
+          <akndiff:voter href="/es/diputado/iniesta-egido" showAs="Iniesta Egido, Isabel"/>
+          <akndiff:voter href="/es/diputado/saez-cruz" showAs="Sáez Cruz, Emilio"/>
+          <akndiff:voter href="/es/diputado/adrio-taracido" showAs="Adrio Taracido, María"/>
+        </akndiff:for>
+        <akndiff:against count="33">
+          <akndiff:voter href="/es/diputado/alcaraz-martos" showAs="Alcaraz Martos, Francisco José"/>
+          <akndiff:voter href="/es/diputado/fernandez-hernandez" showAs="Fernández Hernández, Pedro"/>
+          <akndiff:voter href="/es/diputado/aizcorbe-torra" showAs="Aizcorbe Torra, Juan José"/>
+          <akndiff:voter href="/es/diputado/sanchez-garcia" showAs="Sánchez García, José María"/>
+          <akndiff:voter href="/es/diputado/saez-alonso-munumer" showAs="Sáez Alonso-Muñumer, Pablo"/>
+          <akndiff:voter href="/es/diputado/ramirez-del-rio" showAs="Ramírez del Río, José"/>
+          <akndiff:voter href="/es/diputado/lopez-maraver" showAs="López Maraver, Ángel"/>
+          <akndiff:voter href="/es/diputado/garcia-gomis" showAs="García Gomis, David"/>
+          <akndiff:voter href="/es/diputado/gil-lazaro" showAs="Gil Lázaro, Ignacio"/>
+          <akndiff:voter href="/es/diputado/gonzalez-robatto-perote" showAs="González-Robatto Perote, Jacobo"/>
+          <akndiff:voter href="/es/diputado/del-valle-rodriguez" showAs="Del Valle Rodríguez, Emilio Jesús"/>
+          <akndiff:voter href="/es/diputado/flores-juberias" showAs="Flores Juberías, Carlos"/>
+          <akndiff:voter href="/es/diputado/figaredo-alvarez-sala" showAs="Figaredo Álvarez-Sala, José María"/>
+          <akndiff:voter href="/es/diputado/hoces-iniguez" showAs="Hoces Íñiguez, Ignacio"/>
+          <akndiff:voter href="/es/diputado/mendez-monasterio" showAs="Méndez Monasterio, Lourdes"/>
+          <akndiff:voter href="/es/diputado/campos-asensi" showAs="Campos Asensi, Jorge"/>
+          <akndiff:voter href="/es/diputado/fernandez-rios" showAs="Fernández Ríos, Tomás"/>
+          <akndiff:voter href="/es/diputado/armario-gonzalez" showAs="Armario González, Blanca"/>
+          <akndiff:voter href="/es/diputado/rodriguez-almeida" showAs="Rodríguez Almeida, Andrés Alberto"/>
+          <akndiff:voter href="/es/diputado/mariscal-zabala" showAs="Mariscal Zabala, Manuel"/>
+          <akndiff:voter href="/es/diputado/ruiz-solas" showAs="Ruiz Solás, María de la Cabeza"/>
+          <akndiff:voter href="/es/diputado/de-meer-mendez" showAs="De Meer Méndez, Rocío"/>
+          <akndiff:voter href="/es/diputado/rueda-perello" showAs="Rueda Perelló, Patricia"/>
+          <akndiff:voter href="/es/diputado/chamorro-delmo" showAs="Chamorro Delmo, Ricardo"/>
+          <akndiff:voter href="/es/diputado/romero-vilches" showAs="Romero Vilches, María de los Reyes"/>
+          <akndiff:voter href="/es/diputado/asarta-cuevas" showAs="Asarta Cuevas, Alberto"/>
+          <akndiff:voter href="/es/diputado/abascal-conde" showAs="Abascal Conde, Santiago"/>
+          <akndiff:voter href="/es/diputado/robles-lopez" showAs="Robles López, Joaquín"/>
+          <akndiff:voter href="/es/diputado/ortega-smith-molina" showAs="Ortega Smith-Molina, Francisco Javier"/>
+          <akndiff:voter href="/es/diputado/mejias-sanchez" showAs="Mejías Sánchez, Carina"/>
+          <akndiff:voter href="/es/diputado/rodriguez-de-millan-parro" showAs="Rodríguez de Millán Parro, María José"/>
+          <akndiff:voter href="/es/diputado/hernandez-quero" showAs="Hernández Quero, Carlos"/>
+          <akndiff:voter href="/es/diputado/aguirre-gil-de-biedma" showAs="Aguirre Gil de Biedma, Rocío"/>
+        </akndiff:against>
+        <akndiff:abstain count="138">
+          <akndiff:voter href="/es/diputado/palencia-rubio" showAs="Palencia Rubio, Héctor"/>
+          <akndiff:voter href="/es/diputado/cabezon-casas" showAs="Cabezón Casas, Tomás"/>
+          <akndiff:voter href="/es/diputado/conde-bajen" showAs="Conde Bajén, Agustín"/>
+          <akndiff:voter href="/es/diputado/bravo-baena" showAs="Bravo Baena, Juan"/>
+          <akndiff:voter href="/es/diputado/rojas-garcia" showAs="Rojas García, Carlos"/>
+          <akndiff:voter href="/es/diputado/perez-osma" showAs="Pérez Osma, Daniel"/>
+          <akndiff:voter href="/es/diputado/garcia-felix" showAs="García Félix, Manuel"/>
+          <akndiff:voter href="/es/diputado/tellado-filgueira" showAs="Tellado Filgueira, Miguel"/>
+          <akndiff:voter href="/es/diputado/perez-lopez" showAs="Pérez López, Álvaro"/>
+          <akndiff:voter href="/es/diputado/munoz-de-la-iglesia" showAs="Muñoz de la Iglesia, Ester"/>
+          <akndiff:voter href="/es/diputado/franco-gonzalez" showAs="Franco González, Silvia"/>
+          <akndiff:voter href="/es/diputado/delgado-arce" showAs="Delgado Arce, Celso Luis"/>
+          <akndiff:voter href="/es/diputado/velasco-morillo" showAs="Velasco Morillo, Elvira"/>
+          <akndiff:voter href="/es/diputado/jimenez-linuesa" showAs="Jiménez Linuesa, Beatriz"/>
+          <akndiff:voter href="/es/diputado/garrido-valenzuela" showAs="Garrido Valenzuela, Irene"/>
+          <akndiff:voter href="/es/diputado/verano-dominguez" showAs="Verano Domínguez, Bella"/>
+          <akndiff:voter href="/es/diputado/cuesta-rodriguez" showAs="Cuesta Rodríguez, María del Socorro"/>
+          <akndiff:voter href="/es/diputado/perez-coronado" showAs="Pérez Coronado, Pablo"/>
+          <akndiff:voter href="/es/diputado/ramajo-prada" showAs="Ramajo Prada, Óscar"/>
+          <akndiff:voter href="/es/diputado/teniente-sanchez" showAs="Teniente Sánchez, Cristina"/>
+          <akndiff:voter href="/es/diputado/lorente-anaya" showAs="Lorente Anaya, Macarena"/>
+          <akndiff:voter href="/es/diputado/rodriguez-calleja" showAs="Rodríguez Calleja, Patricia"/>
+          <akndiff:voter href="/es/diputado/floriano-corrales" showAs="Floriano Corrales, Carlos Javier"/>
+          <akndiff:voter href="/es/diputado/roman-jasanada" showAs="Román Jasanada, Antonio"/>
+          <akndiff:voter href="/es/diputado/ramirez-martin" showAs="Ramírez Martín, María Lourdes"/>
+          <akndiff:voter href="/es/diputado/funez-de-gregorio" showAs="Fúnez de Gregorio, Carmen"/>
+          <akndiff:voter href="/es/diputado/hoyo-julia" showAs="Hoyo Juliá, Belén"/>
+          <akndiff:voter href="/es/diputado/acedo-reyes" showAs="Acedo Reyes, Sofía"/>
+          <akndiff:voter href="/es/diputado/prieto-serrano" showAs="Prieto Serrano, María Isabel"/>
+          <akndiff:voter href="/es/diputado/gallardo-barrena" showAs="Gallardo Barrena, Pedro Ignacio"/>
+          <akndiff:voter href="/es/diputado/vazquez-jimenez" showAs="Vázquez Jiménez, María del Mar"/>
+          <akndiff:voter href="/es/diputado/fernandez-gonzalez" showAs="Fernández González, María Mercedes"/>
+          <akndiff:voter href="/es/diputado/garre-murcia" showAs="Garre Murcia, Cristóbal"/>
+          <akndiff:voter href="/es/diputado/cortes-carballo" showAs="Cortés Carballo, Mario"/>
+          <akndiff:voter href="/es/diputado/perez-recuerda" showAs="Pérez Recuerda, Isabel Gema"/>
+          <akndiff:voter href="/es/diputado/tarno-blanco" showAs="Tarno Blanco, Ricardo"/>
+          <akndiff:voter href="/es/diputado/merino-martinez" showAs="Merino Martínez, Javier"/>
+          <akndiff:voter href="/es/diputado/rodriguez-serra" showAs="Rodríguez Serra, Santi"/>
+          <akndiff:voter href="/es/diputado/martinez-gomez" showAs="Martínez Gómez, Antonio"/>
+          <akndiff:voter href="/es/diputado/de-las-cuevas-cortes" showAs="De las Cuevas Cortés, Félix"/>
+          <akndiff:voter href="/es/diputado/fabra-part" showAs="Fabra Part, Alberto"/>
+          <akndiff:voter href="/es/diputado/clavell-lopez" showAs="Clavell López, Óscar"/>
+          <akndiff:voter href="/es/diputado/folch-blanc" showAs="Folch Blanc, Javier José"/>
+          <akndiff:voter href="/es/diputado/bermudez-de-castro-fernandez" showAs="Bermúdez de Castro Fernández, José Antonio"/>
+          <akndiff:voter href="/es/diputado/tomas-olivares" showAs="Tomás Olivares, Violante"/>
+          <akndiff:voter href="/es/diputado/requena-ruiz" showAs="Requena Ruiz, Juan Diego"/>
+          <akndiff:voter href="/es/diputado/mesquida-mayans" showAs="Mesquida Mayans, Joan"/>
+          <akndiff:voter href="/es/diputado/aguera-gago" showAs="Agüera Gago, Cristina"/>
+          <akndiff:voter href="/es/diputado/noriega-gomez" showAs="Noriega Gómez, Javier"/>
+          <akndiff:voter href="/es/diputado/alvarez-fanjul" showAs="Álvarez Fanjul, Beatriz"/>
+          <akndiff:voter href="/es/diputado/borrego-cortes" showAs="Borrego Cortés, Isabel María"/>
+          <akndiff:voter href="/es/diputado/sayas-lopez" showAs="Sayas López, Sergio"/>
+          <akndiff:voter href="/es/diputado/catalan-higueras" showAs="Catalán Higueras, Alberto"/>
+          <akndiff:voter href="/es/diputado/martin-garcia" showAs="Martín García, Pedro Samuel"/>
+          <akndiff:voter href="/es/diputado/moro-almaraz" showAs="Moro Almaraz, María Jesús"/>
+          <akndiff:voter href="/es/diputado/sanchez-ojeda" showAs="Sánchez Ojeda, Carlos Alberto"/>
+          <akndiff:voter href="/es/diputado/lima-garcia" showAs="Lima García, Laura María"/>
+          <akndiff:voter href="/es/diputado/rojas-manrique" showAs="Rojas Manrique, Juan Antonio"/>
+          <akndiff:voter href="/es/diputado/abades-martinez" showAs="Abades Martínez, Cristina"/>
+          <akndiff:voter href="/es/diputado/olano-vela" showAs="Olano Vela, Jaime Eduardo de"/>
+          <akndiff:voter href="/es/diputado/celaya-brey" showAs="Celaya Brey, Javier"/>
+          <akndiff:voter href="/es/diputado/arguelles-garcia" showAs="Argüelles García, Silverio"/>
+          <akndiff:voter href="/es/diputado/parra-gallego" showAs="Parra Gallego, Agustín"/>
+          <akndiff:voter href="/es/diputado/martin-blanco" showAs="Martín Blanco, Nacho"/>
+          <akndiff:voter href="/es/diputado/de-luna-tobarra" showAs="De Luna Tobarra, Llanos"/>
+          <akndiff:voter href="/es/diputado/belmonte-gomez" showAs="Belmonte Gómez, Rafael Benigno"/>
+          <akndiff:voter href="/es/diputado/sanchez-torregrosa" showAs="Sánchez Torregrosa, Maribel"/>
+          <akndiff:voter href="/es/diputado/ibanez-hernando" showAs="Ibáñez Hernando, Ángel"/>
+          <akndiff:voter href="/es/diputado/quintanilla-navarro" showAs="Quintanilla Navarro, Miguel Ángel"/>
+          <akndiff:voter href="/es/diputado/alia-aguado" showAs="Alía Aguado, María Pilar"/>
+          <akndiff:voter href="/es/diputado/velasco-retamosa" showAs="Velasco Retamosa, José Manuel"/>
+          <akndiff:voter href="/es/diputado/mari-boso" showAs="Marí Bosó, José Vicente"/>
+          <akndiff:voter href="/es/diputado/vazquez-blanco" showAs="Vázquez Blanco, Ana Belén"/>
+          <akndiff:voter href="/es/diputado/quintana-carballo" showAs="Quintana Carballo, Rosa"/>
+          <akndiff:voter href="/es/diputado/moraleja-gomez" showAs="Moraleja Gómez, Tristana María"/>
+          <akndiff:voter href="/es/diputado/puy-fraga" showAs="Puy Fraga, Pedro"/>
+          <akndiff:voter href="/es/diputado/gonzalez-vazquez" showAs="González Vázquez, Marta"/>
+          <akndiff:voter href="/es/diputado/hernando-fraile" showAs="Hernando Fraile, Rafael Antonio"/>
+          <akndiff:voter href="/es/diputado/moneo-diez" showAs="Moneo Díez, María Sandra"/>
+          <akndiff:voter href="/es/diputado/sastre-uya" showAs="Sastre Uyá, Miguel Ángel"/>
+          <akndiff:voter href="/es/diputado/belda-perez-pedrero" showAs="Belda Pérez-Pedrero, Enrique"/>
+          <akndiff:voter href="/es/diputado/bendodo-benasayag" showAs="Bendodo Benasayag, Elías"/>
+          <akndiff:voter href="/es/diputado/parra-aparicio" showAs="Parra Aparicio, Julia"/>
+          <akndiff:voter href="/es/diputado/melgarejo-moreno" showAs="Melgarejo Moreno, Joaquín"/>
+          <akndiff:voter href="/es/diputado/pascual-rocamora" showAs="Pascual Rocamora, Sandra"/>
+          <akndiff:voter href="/es/diputado/martinez-labella" showAs="Martínez Labella, Ana"/>
+          <akndiff:voter href="/es/diputado/navarro-lacoba" showAs="Navarro Lacoba, Carmen"/>
+          <akndiff:voter href="/es/diputado/montesinos-de-miguel" showAs="Montesinos de Miguel, Macarena"/>
+          <akndiff:voter href="/es/diputado/sanchez-perez" showAs="Sánchez Pérez, César"/>
+          <akndiff:voter href="/es/diputado/cantalapiedra-alvarez" showAs="Cantalapiedra Álvarez, María de las Mercedes"/>
+          <akndiff:voter href="/es/diputado/delgado-taramona-hernandez" showAs="Delgado-Taramona Hernández, Jimena"/>
+          <akndiff:voter href="/es/diputado/munoz-abrines" showAs="Muñoz Abrines, Pedro"/>
+          <akndiff:voter href="/es/diputado/reynal-reillo" showAs="Reynal Reillo, Esperanza"/>
+          <akndiff:voter href="/es/diputado/gil-santiago" showAs="Gil Santiago, Carlos"/>
+          <akndiff:voter href="/es/diputado/de-rosa-torner" showAs="De Rosa Torner, Fernando"/>
+          <akndiff:voter href="/es/diputado/navarro-lopez" showAs="Navarro López, Pedro"/>
+          <akndiff:voter href="/es/diputado/alfonso-silvestre" showAs="Alfonso Silvestre, Alma"/>
+          <akndiff:voter href="/es/diputado/mariscal-anaya" showAs="Mariscal Anaya, Guillermo"/>
+          <akndiff:voter href="/es/diputado/semper-pascual" showAs="Sémper Pascual, Borja"/>
+          <akndiff:voter href="/es/diputado/aragones-mendiguchia" showAs="Aragonés Mendiguchía, Carlos"/>
+          <akndiff:voter href="/es/diputado/madrid-olmo" showAs="Madrid Olmo, Bartolomé"/>
+          <akndiff:voter href="/es/diputado/garcia-adanero" showAs="García Adanero, Carlos"/>
+          <akndiff:voter href="/es/diputado/de-los-santos-gonzalez" showAs="De los Santos González, Jaime Miguel"/>
+          <akndiff:voter href="/es/diputado/clemente-munoz" showAs="Clemente Muñoz, Raquel"/>
+          <akndiff:voter href="/es/diputado/herrero-bono" showAs="Herrero Bono, José Alberto"/>
+          <akndiff:voter href="/es/diputado/sanchez-sierra" showAs="Sánchez Sierra, María del Mar"/>
+          <akndiff:voter href="/es/diputado/carazo-hermoso" showAs="Carazo Hermoso, Eduardo"/>
+          <akndiff:voter href="/es/diputado/beamonte-mesa" showAs="Beamonte Mesa, Luis María"/>
+          <akndiff:voter href="/es/diputado/macias-gata" showAs="Macías Gata, Alfonso Carlos"/>
+          <akndiff:voter href="/es/diputado/cavacasillas-rodriguez" showAs="Cavacasillas Rodríguez, Antonio"/>
+          <akndiff:voter href="/es/diputado/romani-cantera" showAs="Romaní Cantera, José Ignacio"/>
+          <akndiff:voter href="/es/diputado/gamarra-ruiz-clavijo" showAs="Gamarra Ruiz-Clavijo, Concepción"/>
+          <akndiff:voter href="/es/diputado/alvarez-de-toledo-peralta-ramos" showAs="Álvarez de Toledo Peralta-Ramos, Cayetana"/>
+          <akndiff:voter href="/es/diputado/cruz-guzman-garcia" showAs="Cruz-Guzmán García, María Soledad"/>
+          <akndiff:voter href="/es/diputado/marcos-ortega" showAs="Marcos Ortega, Milagros"/>
+          <akndiff:voter href="/es/diputado/paniagua-nunez" showAs="Paniagua Núñez, Miguel Ángel"/>
+          <akndiff:voter href="/es/diputado/cobo-vega" showAs="Cobo Vega, Manuel"/>
+          <akndiff:voter href="/es/diputado/alos-lopez" showAs="Alós López, Ana Isabel"/>
+          <akndiff:voter href="/es/diputado/pedreno-molina" showAs="Pedreño Molina, Juan Luis"/>
+          <akndiff:voter href="/es/diputado/llamazares-domingo" showAs="Llamazares Domingo, Esther"/>
+          <akndiff:voter href="/es/diputado/carballedo-berlanga" showAs="Carballedo Berlanga, María Eugenia"/>
+          <akndiff:voter href="/es/diputado/nunez-feijoo" showAs="Núñez Feijóo, Alberto"/>
+          <akndiff:voter href="/es/diputado/varela-pazos" showAs="Varela Pazos, Marta"/>
+          <akndiff:voter href="/es/diputado/nacarino-brabo-jimenez" showAs="Nacarino-Brabo Jiménez, Aurora"/>
+          <akndiff:voter href="/es/diputado/conde-lopez" showAs="Conde López, Francisco José"/>
+          <akndiff:voter href="/es/diputado/hispan-iglesias-de-ussel" showAs="Hispán Iglesias de Ussel, Pablo"/>
+          <akndiff:voter href="/es/diputado/guardiola-salmeron" showAs="Guardiola Salmerón, Mirian"/>
+          <akndiff:voter href="/es/diputado/torres-tejada" showAs="Torres Tejada, María"/>
+          <akndiff:voter href="/es/diputado/nunez-guijarro" showAs="Núñez Guijarro, José Enrique"/>
+          <akndiff:voter href="/es/diputado/uriarte-bengoechea" showAs="Uriarte Bengoechea, Edurne"/>
+          <akndiff:voter href="/es/diputado/barrio-baroja" showAs="Barrio Baroja, Carmelo"/>
+          <akndiff:voter href="/es/diputado/bayon-rolo" showAs="Bayón Rolo, Juan Andrés"/>
+          <akndiff:voter href="/es/diputado/vedrina-conesa" showAs="Vedrina Conesa, María Elisa"/>
+          <akndiff:voter href="/es/diputado/moreno-borras" showAs="Moreno Borrás, Cristina"/>
+          <akndiff:voter href="/es/diputado/molina-leon" showAs="Molina León, Ainhoa"/>
+          <akndiff:voter href="/es/diputado/cuevas-larrosa" showAs="Cuevas Larrosa, Raúl"/>
+          <akndiff:voter href="/es/diputado/simarro-vicens" showAs="Simarro Vicens, Carlos"/>
+          <akndiff:voter href="/es/diputado/rodriguez-herrer" showAs="Rodríguez Herrer, María Elvira"/>
+        </akndiff:abstain>
+      </akndiff:vote>
+<akndiff:articleChange article="art_65" type="substitute">
           <akndiff:old>1. Los derechos específicos de los usuarios finales y consumidores, según corresponda, de redes y servicios de comunicaciones electrónicas disponibles al público son, entre otros, los siguientes, que serán objeto de desarrollo mediante real decreto:
 a) el derecho a celebrar contratos por parte de los usuarios finales con los operadores que presten servicios de comunicaciones electrónicas disponibles al público, así como el contenido mínimo de dichos contratos, en los términos establecidos en el artículo 67;
 b) el derecho a rescindir el contrato anticipadamente y sin penalización en los supuestos contemplados en el artículo 67;

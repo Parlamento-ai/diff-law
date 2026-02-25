@@ -4,11 +4,12 @@
  * Given a BOE ID and a date hint (from the pipeline timeline), searches
  * Congreso Open Data for the corresponding plenary vote.
  *
- * Optimized:
- *  - Uses timeline date as starting point (no redundant BOE fetch for date)
- *  - Fetches HTML pages for multiple dates in parallel
- *  - Pre-filters by checking HTML text for keywords BEFORE downloading JSONs
- *  - Only downloads JSONs for the date that actually contains the law
+ * Matching strategy (in order):
+ *   1. Parse initiative groups from the HTML (expediente-based, most accurate)
+ *   2. Match keywords against group TITLES (not individual vote texts)
+ *   3. Select vote type based on rango (orgánica → conjunto, ordinaria → dictamen)
+ *   4. Validate rango consistency (prevents cross-contamination)
+ *   5. Fallback: keyword matching on all JSONs + rango validation (for old HTML)
  */
 import { fetchMetadata } from './boe-api.js';
 import { parseMetadata } from './boe-parser.js';
@@ -16,28 +17,61 @@ import {
 	getLegislatura,
 	fetchVotePage,
 	findFinalVoteFromUrls,
+	findVoteInGroup,
 	htmlContainsKeywords,
-	extractKeywords
+	extractKeywords,
+	getVoteTypeLabel
 } from './congreso-api.js';
-import type { CongresoVote } from './congreso-api.js';
+import type { CongresoVote, InitiativeGroup } from './congreso-api.js';
 
 export interface VoteMatch {
 	date: string; // YYYY-MM-DD
 	result: 'approved' | 'rejected';
 	source: string; // URL congreso
+	expediente: string; // e.g. "121/000007" — traceability
+	voteType: string; // "Votación de conjunto" / "Dictamen" / etc.
 	for: Array<{ name: string; group: string }>;
 	against: Array<{ name: string; group: string }>;
 	abstain: Array<{ name: string; group: string }>;
 }
 
+/** Normalize text for comparison (lowercase, strip accents) */
+function normalize(s: string): string {
+	return s
+		.toLowerCase()
+		.normalize('NFD')
+		.replace(/[\u0300-\u036f]/g, '');
+}
+
 /** Skip BOE IDs that don't go through Congress vote */
 function shouldSkip(titulo: string, rango: string): boolean {
-	const t = titulo.toLowerCase();
-	const r = rango.toLowerCase();
+	const t = normalize(titulo);
+	const r = normalize(rango);
 	if (t.includes('sentencia') || t.includes('stc')) return true;
 	if (r.includes('real decreto') && !r.includes('legislativo') && !r.includes('ley')) return true;
-	if (t.includes('corrección de error')) return true;
+	if (t.includes('correccion de error') || t.includes('correcion de error')) return true;
+	if (r.includes('circular')) return true;
 	return false;
+}
+
+/**
+ * Validate that the vote type is consistent with the law's rango.
+ * Prevents false positives like matching a "votación de conjunto" (orgánica only)
+ * to an ordinary law.
+ */
+function isRangoConsistent(vote: CongresoVote, rango: string): boolean {
+	const sub = normalize(vote.tituloSubGrupo);
+	// Check both tituloSubGrupo and textoExpediente for "conjunto" (some votes have it only in textoExpediente)
+	const isConjunto = sub.includes('conjunto') ||
+		(!vote.tituloSubGrupo.trim() && normalize(vote.textoExpediente).includes('votacion de conjunto'));
+	const isOrganica = normalize(rango).includes('organica');
+
+	// Orgánica must have "votación de conjunto"
+	if (isOrganica && !isConjunto) return false;
+	// Ordinary law must NOT have "votación de conjunto" (that's for orgánicas)
+	if (!isOrganica && isConjunto) return false;
+
+	return true;
 }
 
 /**
@@ -61,12 +95,13 @@ export async function findVoteForLaw(boeId: string, dateHint?: string): Promise<
 	const keywords = extractKeywords(meta.titulo);
 	if (keywords.length === 0) return null;
 
-	// 3. Search for plenary vote — fast parallel approach
-	const vote = await searchForVote(legislatura, startDate, keywords);
-	if (!vote) return null;
+	// 3. Search for plenary vote — structured approach with fallback
+	const result = await searchForVoteStructured(legislatura, startDate, keywords, meta.rango);
+	if (!result) return null;
 
 	// 4. Convert to VoteMatch
-	const result: 'approved' | 'rejected' =
+	const { vote, expediente } = result;
+	const voteResult: 'approved' | 'rejected' =
 		vote.totales.afavor > vote.totales.enContra ? 'approved' : 'rejected';
 
 	const dateParts = vote.date.split('/');
@@ -77,8 +112,10 @@ export async function findVoteForLaw(boeId: string, dateHint?: string): Promise<
 
 	return {
 		date: voteDate,
-		result,
+		result: voteResult,
 		source: `https://www.congreso.es/es/opendata/votaciones`,
+		expediente,
+		voteType: getVoteTypeLabel(vote),
 		for: vote.votaciones
 			.filter((v) => v.voto === 'Sí')
 			.map((v) => ({ name: v.diputado, group: v.grupo })),
@@ -91,20 +128,31 @@ export async function findVoteForLaw(boeId: string, dateHint?: string): Promise<
 	};
 }
 
+interface StructuredResult {
+	vote: CongresoVote;
+	expediente: string;
+}
+
 /**
- * Search backwards from startDate to find the plenary date.
+ * Search backwards from startDate using structured group matching.
  *
  * Strategy:
  *   1. Generate candidate dates (Tue/Thu only, up to 90 days back)
  *   2. Fetch HTML pages in parallel batches of 5
  *   3. Check HTML text for keywords — skip dates where the law isn't mentioned
- *   4. Only download JSONs for matching dates (typically just 1 date)
+ *   4. Parse initiative groups from the HTML
+ *   5. Match keywords against group TITLES (not individual vote JSONs)
+ *   6. Download only the JSONs from the matched group
+ *   7. Select vote type based on rango (orgánica vs ordinaria)
+ *   8. Validate rango consistency
+ *   9. Fallback: keyword matching on all JSONs if no groups found
  */
-async function searchForVote(
+async function searchForVoteStructured(
 	legislatura: string,
 	startDate: string,
-	keywords: string[]
-): Promise<CongresoVote | null> {
+	keywords: string[],
+	rango: string
+): Promise<StructuredResult | null> {
 	const start = new Date(startDate);
 	const MAX_DAYS = 90;
 
@@ -133,11 +181,53 @@ async function searchForVote(
 			// Fast pre-filter: check if HTML mentions our law
 			if (!htmlContainsKeywords(page.html, keywords)) continue;
 
-			// This date mentions our law — download JSONs and find the exact vote
-			console.log(`      Fecha del pleno: ${date} (${page.urls.length} votaciones)`);
+			console.log(`      Fecha del pleno: ${date} (${page.urls.length} votaciones, ${page.groups.length} grupos)`);
+
+			// Try structured matching via initiative groups first
+			if (page.groups.length > 0) {
+				const groupResult = await matchViaGroups(page.groups, keywords, rango);
+				if (groupResult) return groupResult;
+			}
+
+			// Fallback: old-style keyword matching on all JSONs + rango validation
 			const vote = await findFinalVoteFromUrls(page.urls, keywords);
-			if (vote) return vote;
+			if (vote && isRangoConsistent(vote, rango)) {
+				return { vote, expediente: '' };
+			}
 		}
+	}
+
+	return null;
+}
+
+/**
+ * Try to match the law against parsed initiative groups.
+ * Returns the first group whose title matches our keywords + rango validation passes.
+ */
+async function matchViaGroups(
+	groups: InitiativeGroup[],
+	keywords: string[],
+	rango: string
+): Promise<StructuredResult | null> {
+	for (const group of groups) {
+		const normalizedTitle = normalize(group.title);
+
+		// Check if this group's title matches our law keywords
+		if (!keywords.every((kw) => normalizedTitle.includes(kw))) continue;
+
+		console.log(`        Grupo: ${group.expediente} — "${group.title.slice(0, 80)}..." (${group.jsonUrls.length} votos)`);
+
+		// Download only this group's JSONs and find the right vote type
+		const vote = await findVoteInGroup(group.jsonUrls, rango);
+		if (!vote) continue;
+
+		// Validate rango consistency
+		if (!isRangoConsistent(vote, rango)) {
+			console.log(`        Descartado: rango inconsistente (${vote.tituloSubGrupo} vs ${rango})`);
+			continue;
+		}
+
+		return { vote, expediente: group.expediente };
 	}
 
 	return null;

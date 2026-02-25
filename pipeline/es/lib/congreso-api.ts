@@ -10,6 +10,13 @@
  * API: https://www.congreso.es/es/opendata/votaciones
  */
 
+/** A group of initiatives voted on the same plenary date, each with its expediente */
+export interface InitiativeGroup {
+	title: string; // "Proyecto de Ley Orgánica de..."
+	expediente: string; // "121/000007" extracted from <a class="n_exp">
+	jsonUrls: string[]; // Vote JSON URLs within this group
+}
+
 export interface CongresoVote {
 	sessionNumber: number;
 	voteNumber: number;
@@ -50,6 +57,7 @@ function toCongresoDate(isoDate: string): string {
 interface VotePage {
 	html: string;
 	urls: string[];
+	groups: InitiativeGroup[];
 }
 
 /**
@@ -75,7 +83,8 @@ export async function fetchVotePage(legislatura: string, date: string): Promise<
 	}
 
 	if (urls.length === 0) return null;
-	return { html, urls };
+	const groups = parseInitiativeGroups(html);
+	return { html, urls, groups };
 }
 
 /** Descarga un JSON de votacion y lo parsea */
@@ -126,13 +135,148 @@ export async function findFinalVoteFromUrls(
 
 	// Only accept "votación de conjunto" (final vote on the whole law).
 	// Other vote types (enmiendas, artículos separados) are partial and unreliable.
-	const conjunto = matching.find((v) =>
-		normalize(v.tituloSubGrupo).includes('conjunto')
-	);
+	const conjunto = matching.find((v) => isConjuntoVote(v));
 	return conjunto ?? null;
 }
 
+/**
+ * Parse initiative groups from the Congreso votaciones HTML page.
+ *
+ * The HTML contains expediente links (<a class="n_exp">) and section titles
+ * (<h5 class="con_est">). We extract groups of {expediente, title, jsonUrls}
+ * so we can match votes by expediente rather than keyword matching.
+ */
+export function parseInitiativeGroups(html: string): InitiativeGroup[] {
+	// Find expediente anchors — class="n_exp" can appear before or after the href
+	// Real HTML: <a href="..._iniciativas_id=121/000062" class="n_exp" target="_blank">
+	const expRe = /<a\s[^>]*_iniciativas_id=(\d{3}\/\d{6})[^>]*class="n_exp"[^>]*>|<a\s[^>]*class="n_exp"[^>]*_iniciativas_id=(\d{3}\/\d{6})[^>]*>/g;
+	// Find initiative titles: only <h5> (not <h6> which are sub-items like "Enmienda 134")
+	const titleRe = /<h5\s+class="con_est">([\s\S]*?)<\/h5>/g;
+	// Find JSON URLs
+	const jsonRe = /href="(\/webpublica\/opendata\/votaciones\/[^"]*\.json)"/g;
+
+	// Collect all matches with their positions
+	interface HtmlToken {
+		type: 'expediente' | 'title' | 'json';
+		pos: number;
+		value: string;
+	}
+	const tokens: HtmlToken[] = [];
+
+	let m: RegExpExecArray | null;
+	while ((m = expRe.exec(html)) !== null) {
+		tokens.push({ type: 'expediente', pos: m.index, value: m[1] || m[2] });
+	}
+	while ((m = titleRe.exec(html)) !== null) {
+		tokens.push({ type: 'title', pos: m.index, value: m[1].replace(/<[^>]+>/g, '').trim() });
+	}
+	while ((m = jsonRe.exec(html)) !== null) {
+		tokens.push({ type: 'json', pos: m.index, value: `https://www.congreso.es${m[1]}` });
+	}
+
+	// Sort by position in HTML
+	tokens.sort((a, b) => a.pos - b.pos);
+
+	// Build groups: each expediente starts a new group, collect titles and JSONs
+	const groups: InitiativeGroup[] = [];
+	let currentTitle = '';
+
+	for (const token of tokens) {
+		if (token.type === 'title') {
+			currentTitle = token.value;
+		} else if (token.type === 'expediente') {
+			groups.push({
+				title: currentTitle,
+				expediente: token.value,
+				jsonUrls: []
+			});
+		} else if (token.type === 'json' && groups.length > 0) {
+			groups[groups.length - 1].jsonUrls.push(token.value);
+		}
+	}
+
+	return groups;
+}
+
+/**
+ * Find the appropriate vote within a group's JSON URLs based on rango.
+ *
+ * - Ley Orgánica → "votación de conjunto" (required by parliamentary rules)
+ * - Ley ordinaria → "dictamen", then "enmiendas del Senado", then single vote
+ */
+export async function findVoteInGroup(
+	urls: string[],
+	rango: string
+): Promise<CongresoVote | null> {
+	if (urls.length === 0) return null;
+
+	const CONCURRENCY = 15;
+	const votes: CongresoVote[] = [];
+
+	for (let i = 0; i < urls.length; i += CONCURRENCY) {
+		const batch = urls.slice(i, i + CONCURRENCY);
+		const results = await Promise.allSettled(batch.map((u) => fetchVote(u)));
+		for (const r of results) {
+			if (r.status === 'fulfilled') votes.push(r.value);
+		}
+	}
+
+	const isOrganica = normalize(rango).includes('organica');
+
+	if (isOrganica) {
+		// Ley Orgánica requires "votación de conjunto"
+		return votes.find((v) => isConjuntoVote(v)) ?? null;
+	}
+
+	// Ley ordinaria: prefer dictamen, then enmiendas del Senado, then single vote
+	const dictamen = votes.find((v) => normalize(v.tituloSubGrupo).includes('dictamen'));
+	if (dictamen) return dictamen;
+
+	// "Enmiendas del Senado" — "senado" can be in titulo OR tituloSubGrupo
+	const enmiendasSenado = votes.find((v) => {
+		const titulo = normalize(v.titulo);
+		const sub = normalize(v.tituloSubGrupo);
+		const hasSenado = sub.includes('senado') || titulo.includes('senado');
+		const hasEnmienda = sub.includes('enmienda') || titulo.includes('enmienda');
+		return hasSenado && hasEnmienda;
+	});
+	if (enmiendasSenado) return enmiendasSenado;
+
+	// If there's exactly one vote in the group, use it
+	if (votes.length === 1) return votes[0];
+
+	return null;
+}
+
 // ── Helpers ──────────────────────────────────────────────────────────────
+
+/**
+ * Detect if a vote is a "votación de conjunto".
+ * Some votes have this in tituloSubGrupo, others in textoExpediente (when tituloSubGrupo is empty).
+ */
+function isConjuntoVote(v: CongresoVote): boolean {
+	const sub = normalize(v.tituloSubGrupo);
+	if (sub.includes('conjunto')) return true;
+	// Fallback: check textoExpediente (e.g. "Votación de conjunto del Proyecto de Ley Orgánica...")
+	if (!v.tituloSubGrupo.trim()) {
+		const texto = normalize(v.textoExpediente);
+		if (texto.includes('votacion de conjunto')) return true;
+	}
+	return false;
+}
+
+/**
+ * Get a descriptive vote type label.
+ * Uses tituloSubGrupo if available, otherwise extracts from textoExpediente.
+ */
+export function getVoteTypeLabel(v: CongresoVote): string {
+	if (v.tituloSubGrupo.trim()) return v.tituloSubGrupo;
+	if (isConjuntoVote(v)) return 'Votación de conjunto';
+	const texto = normalize(v.textoExpediente);
+	if (texto.includes('enmienda')) return 'Enmiendas del Senado';
+	if (texto.includes('dictamen')) return 'Dictamen';
+	return '';
+}
 
 function normalize(s: string): string {
 	return s

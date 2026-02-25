@@ -4,7 +4,7 @@
 ═══════════════════════════════════════════════════════
   [PASS]  0. Validate            14 snapshots OK                     0.0s
   [PASS]  5. Generate            15 AKN files                        0.1s
-  [PASS]  6. Enrich              vote enrichment                     48.8s
+  [PASS]  6. Enrich              vote enrichment                     23.7s
 
-  RESULT: 3 pass, 0 fail, 0 warn (49.0s)
+  RESULT: 3 pass, 0 fail, 0 warn (23.8s)
 ═══════════════════════════════════════════════════════

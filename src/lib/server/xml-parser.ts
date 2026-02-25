@@ -198,6 +198,10 @@ function parseVote(voteNode: Record<string, unknown>): Vote {
 		against: parseVoters(voteNode['akndiff:against']),
 		abstain: parseVoters(voteNode['akndiff:abstain'])
 	};
+	const expediente = voteNode['@_expediente'] as string | undefined;
+	if (expediente) vote.expediente = expediente;
+	const voteType = voteNode['@_voteType'] as string | undefined;
+	if (voteType) vote.voteType = voteType;
 	const forCount = parseVoteGroupCount(voteNode['akndiff:for']);
 	const againstCount = parseVoteGroupCount(voteNode['akndiff:against']);
 	const abstainCount = parseVoteGroupCount(voteNode['akndiff:abstain']);

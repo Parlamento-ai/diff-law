@@ -44,7 +44,9 @@ export async function enrich(config: PipelineConfig, outDir: string): Promise<vo
 		if (entry.modifyingLaw in cache) {
 			vote = cache[entry.modifyingLaw];
 			if (vote) {
-				console.log(`  [cached] ${entry.modifyingLaw} — ${vote.for.length} Sí, ${vote.against.length} No, ${vote.abstain.length} Abs`);
+				const expInfo = vote.expediente ? ` [${vote.expediente}]` : '';
+				const typeInfo = vote.voteType ? ` (${vote.voteType})` : '';
+				console.log(`  [cached] ${entry.modifyingLaw}${expInfo}${typeInfo} — ${vote.for.length} Sí, ${vote.against.length} No, ${vote.abstain.length} Abs`);
 			} else {
 				console.log(`  [cached] ${entry.modifyingLaw} — no vote`);
 			}
@@ -59,9 +61,11 @@ export async function enrich(config: PipelineConfig, outDir: string): Promise<vo
 			cache[entry.modifyingLaw] = vote;
 
 			if (vote) {
-				console.log(`    Found: ${vote.date} — ${vote.for.length} Sí, ${vote.against.length} No, ${vote.abstain.length} Abs`);
+				const expInfo = vote.expediente ? ` [${vote.expediente}]` : '';
+				const typeInfo = vote.voteType ? ` (${vote.voteType})` : '';
+				console.log(`    Found: ${vote.date}${expInfo}${typeInfo} — ${vote.for.length} Sí, ${vote.against.length} No, ${vote.abstain.length} Abs`);
 			} else {
-				console.log(`    No vote found (TC sentence, RD, or ley ordinaria sin votación de conjunto)`);
+				console.log(`    No vote found`);
 			}
 		}
 
@@ -103,7 +107,10 @@ function buildVoteXml(vote: VoteMatch): string {
 	const againstXml = buildVoterGroupXml(vote.against, 'against');
 	const abstainXml = buildVoterGroupXml(vote.abstain, 'abstain');
 
-	return `      <akndiff:vote date="${vote.date}" result="${vote.result}" source="${escapeXml(vote.source)}">
+	const expAttr = vote.expediente ? ` expediente="${escapeXml(vote.expediente)}"` : '';
+	const typeAttr = vote.voteType ? ` voteType="${escapeXml(vote.voteType)}"` : '';
+
+	return `      <akndiff:vote date="${vote.date}" result="${vote.result}" source="${escapeXml(vote.source)}"${expAttr}${typeAttr}>
 ${forXml}
 ${againstXml}
 ${abstainXml}

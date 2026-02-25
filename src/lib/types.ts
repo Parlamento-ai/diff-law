@@ -34,6 +34,8 @@ export interface Vote {
 	date: string;
 	result: 'approved' | 'rejected' | 'withdrawn' | 'inadmissible' | 'pending' | 'voice-vote';
 	source: string;
+	expediente?: string;
+	voteType?: string;
 	for: Voter[];
 	against: Voter[];
 	abstain: Voter[];

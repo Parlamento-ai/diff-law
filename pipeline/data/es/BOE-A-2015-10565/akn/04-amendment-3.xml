@@ -20,7 +20,7 @@
         <FRBRManifestation>
           <FRBRthis value="/es/l/2015/10/01/39/spa@2018-12-07/akn"/>
           <FRBRuri value="/es/l/2015/10/01/39/spa@2018-12-07/akn"/>
-          <FRBRdate date="2026-02-24" name="generacion"/>
+          <FRBRdate date="2026-02-25" name="generacion"/>
         </FRBRManifestation>
       </identification>
     </meta>
@@ -36,7 +36,7 @@
     <akndiff:changeSet
       base="/es/l/2015/10/01/39/spa@2018-09-04"
       result="/es/l/2015/10/01/39/spa@2018-12-07">
-      <akndiff:vote date="2018-10-18" result="approved" source="https://www.congreso.es/es/opendata/votaciones">
+      <akndiff:vote date="2018-10-18" result="approved" source="https://www.congreso.es/es/opendata/votaciones" expediente="121/000013" voteType="Votación de conjunto.">
         <akndiff:for count="343">
           <akndiff:voter href="/es/diputado/sahuquillo-garcia" showAs="Sahuquillo García, Luis Carlos"/>
           <akndiff:voter href="/es/diputado/mateu-isturiz" showAs="Mateu Istúriz, Jaime Miguel"/>
