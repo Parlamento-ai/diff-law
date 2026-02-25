@@ -1,0 +1,13 @@
+═══════════════════════════════════════════════════════
+  CL AKN Pipeline: boletin-17370-17
+  Title: Que regula la suspensión y el cumplimiento alternativo de penas privativas de libertad, para condenados que indica
+═══════════════════════════════════════════════════════
+  [PASS]  1. Discover            boletín 17370                       1.0s
+  [PASS]  2. Configure           boletin-17370-17                    0.0s
+  [PASS]  3. Download            2 docs                              5.0s
+  [PASS]  4. Extract                                                 0.0s
+  [PASS]  5. Parse                                                   0.0s
+  [PASS]  6. Generate            2 AKN files                         0.0s
+
+  RESULT: 6 pass, 0 fail, 0 warn (6.0s)
+═══════════════════════════════════════════════════════

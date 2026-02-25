@@ -5,6 +5,7 @@
 import type { Page } from 'playwright';
 import { writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
+import { withRetry } from '../../shared/retry.js';
 
 const SENADO_DOC_URL =
 	'https://www.senado.cl/appsenado/index.php?mo=tramitacion&ac=getDocto';
@@ -33,28 +34,43 @@ export async function downloadSenateDoc(
 	console.log(`  Downloading iddocto=${iddocto} (${tipodoc})...`);
 
 	try {
-		// Try download event first (for PDFs/DOCs)
-		const downloadPromise = page.waitForEvent('download', { timeout: 10000 }).catch(() => null);
-		await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 }).catch(() => {});
+		return await withRetry(
+			async () => {
+				// Try download event first (for PDFs/DOCs)
+				const downloadPromise = page
+					.waitForEvent('download', { timeout: 10000 })
+					.catch(() => null);
+				await page
+					.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 })
+					.catch(() => {});
 
-		const download = await downloadPromise;
+				const download = await downloadPromise;
 
-		if (download) {
-			const suggestedName = download.suggestedFilename();
-			const ext = suggestedName.split('.').pop() || 'pdf';
-			const finalPath = join(outDir, `${baseName}.${ext}`);
-			await download.saveAs(finalPath);
-			console.log(`  -> ${baseName}.${ext} (${suggestedName})`);
-			return finalPath;
-		}
+				if (download) {
+					const suggestedName = download.suggestedFilename();
+					const ext = suggestedName.split('.').pop() || 'pdf';
+					const finalPath = join(outDir, `${baseName}.${ext}`);
+					await download.saveAs(finalPath);
+					console.log(`  -> ${baseName}.${ext} (${suggestedName})`);
+					return finalPath;
+				}
 
-		// No download event — it's HTML content
-		await page.waitForTimeout(2000);
-		const html = await page.content();
-		const htmlPath = join(outDir, `${baseName}.html`);
-		writeFileSync(htmlPath, html, 'utf-8');
-		console.log(`  -> ${baseName}.html (${html.length} chars)`);
-		return htmlPath;
+				// No download event — it's HTML content
+				await page.waitForTimeout(2000);
+				const html = await page.content();
+
+				// Detect Cloudflare block pages
+				if (html.includes('challenge-platform') || html.includes('cf-browser-verification')) {
+					throw new Error('Cloudflare challenge detected');
+				}
+
+				const htmlPath = join(outDir, `${baseName}.html`);
+				writeFileSync(htmlPath, html, 'utf-8');
+				console.log(`  -> ${baseName}.html (${html.length} chars)`);
+				return htmlPath;
+			},
+			{ label: `doc ${baseName}`, maxAttempts: 3, initialDelay: 2000 }
+		);
 	} catch (err) {
 		console.error(`  ERROR downloading ${baseName}: ${(err as Error).message}`);
 		return null;
@@ -79,12 +95,22 @@ export async function downloadLeychileJson(
 	console.log(`  Downloading LeyChile idNorma=${idNorma}${version ? ` v=${version}` : ''}...`);
 
 	try {
-		await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
-		await page.waitForTimeout(3000);
-		const text = await page.innerText('body');
-		writeFileSync(outPath, text, 'utf-8');
-		console.log(`  -> ${outPath} (${text.length} chars)`);
-		return outPath;
+		return await withRetry(
+			async () => {
+				await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+				await page.waitForTimeout(3000);
+				const text = await page.innerText('body');
+
+				if (!text || text.length < 100) {
+					throw new Error(`LeyChile response too short (${text.length} chars)`);
+				}
+
+				writeFileSync(outPath, text, 'utf-8');
+				console.log(`  -> ${outPath} (${text.length} chars)`);
+				return outPath;
+			},
+			{ label: `leychile ${idNorma}`, maxAttempts: 3, initialDelay: 3000 }
+		);
 	} catch (err) {
 		console.error(`  ERROR: ${(err as Error).message}`);
 		return null;

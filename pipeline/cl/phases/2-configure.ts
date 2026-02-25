@@ -16,7 +16,12 @@ import type {
 	ReformaConfig
 } from '../types.js';
 
-export async function configure(discovery: Discovery, outDir: string): Promise<PipelineConfig> {
+export async function configure(
+	discovery: Discovery,
+	outDir: string,
+	options?: { auto?: boolean }
+): Promise<PipelineConfig> {
+	const auto = options?.auto ?? false;
 	console.log('\n=== Phase 2: CONFIGURE ===\n');
 
 	const configPath = join(outDir, 'config.json');
@@ -48,7 +53,7 @@ export async function configure(discovery: Discovery, outDir: string): Promise<P
 	for (const tramite of discovery.tramites) {
 		for (const doc of tramite.documentos || []) {
 			if (documentos.some((d) => d.iddocto === doc.iddocto)) continue;
-			const rol = inferDocumentRole(doc.tipodoc, doc.descripcion);
+			const rol = inferDocumentRole(doc.tipodoc, doc.descripcion, tramite.etapa);
 			if (rol) {
 				documentos.push({
 					iddocto: doc.iddocto,
@@ -69,13 +74,23 @@ export async function configure(discovery: Discovery, outDir: string): Promise<P
 	console.log(`  Votaciones: ${discovery.votaciones.length}`);
 	console.log(`  Documentos auto-discovered: ${documentos.length}\n`);
 
-	const reformaAnswer = await promptUser(
-		'  Does this bill modify existing law(s)? (y/n, default n): '
-	);
 	let reforma: ReformaConfig | null = null;
+	const looksLikeReforma = detectReformaFromTitle(discovery.titulo);
 
-	if (reformaAnswer.toLowerCase() === 'y') {
-		reforma = await promptReformaConfig();
+	if (auto) {
+		if (looksLikeReforma) {
+			console.log(`  Title suggests reforma ("${discovery.titulo.slice(0, 60)}...")`);
+			console.log('  Skipping reforma config in --auto mode. Re-run without --auto to configure.\n');
+		}
+	} else {
+		const defaultAnswer = looksLikeReforma ? 'y' : 'n';
+		const reformaAnswer = await promptUser(
+			`  Does this bill modify existing law(s)? (y/n, default ${defaultAnswer}): `
+		);
+		const answer = reformaAnswer || defaultAnswer;
+		if (answer.toLowerCase() === 'y') {
+			reforma = await promptReformaConfig();
+		}
 	}
 
 	// Detect published status
@@ -83,18 +98,22 @@ export async function configure(discovery: Discovery, outDir: string): Promise<P
 	let leychileFinal: { idNorma: number; fecha?: string } | undefined;
 
 	if (isPublished && !reforma) {
-		console.log('\n  Law is published. To generate act-final from LeyChile:');
-		const idNormaStr = await promptUser(
-			'  Enter LeyChile idNorma for the published law (or Enter to skip): '
-		);
-		if (idNormaStr) {
-			const fechaStr = await promptUser(
-				'  Enter publication date YYYY-MM-DD (or Enter for last tramite date): '
+		if (auto) {
+			console.log('  Published law detected. Skipping LeyChile idNorma in --auto mode (act-final will use oficio-ley).\n');
+		} else {
+			console.log('\n  Law is published. To generate act-final from LeyChile:');
+			const idNormaStr = await promptUser(
+				'  Enter LeyChile idNorma for the published law (or Enter to skip): '
 			);
-			leychileFinal = {
-				idNorma: parseInt(idNormaStr, 10),
-				fecha: fechaStr || undefined
-			};
+			if (idNormaStr) {
+				const fechaStr = await promptUser(
+					'  Enter publication date YYYY-MM-DD (or Enter for last tramite date): '
+				);
+				leychileFinal = {
+					idNorma: parseInt(idNormaStr, 10),
+					fecha: fechaStr || undefined
+				};
+			}
 		}
 	}
 
@@ -125,6 +144,10 @@ export async function configure(discovery: Discovery, outDir: string): Promise<P
 		console.log(`    ${entry.type.padEnd(14)} ${entry.slug.padEnd(16)} <- ${entry.source}${voteLabel}`);
 	}
 
+	if (auto) {
+		return config;
+	}
+
 	// Prompt user to review
 	console.log('\n  Please review and edit config.json if needed.');
 	console.log('  Add missing document IDs (iddocto) for informes, oficios, etc.');
@@ -143,6 +166,11 @@ function isMotion(iniciativa: string): boolean {
 	return lower.includes('mocion') || lower.includes('moción');
 }
 
+function detectReformaFromTitle(titulo: string): boolean {
+	const lower = titulo.toLowerCase();
+	return lower.startsWith('modifica') || lower.includes('que modifica');
+}
+
 function isLeyPublished(estado: string): boolean {
 	const lower = estado.toLowerCase();
 	return (
@@ -154,7 +182,8 @@ function isLeyPublished(estado: string): boolean {
 
 function inferDocumentRole(
 	tipodoc: string,
-	descripcion: string
+	descripcion: string,
+	etapa?: string
 ): ConfigDocumento['rol'] | null {
 	const desc = descripcion.toLowerCase();
 	const tipo = tipodoc.toLowerCase();
@@ -167,6 +196,13 @@ function inferDocumentRole(
 	if (desc.includes('comisión mixta') || desc.includes('comision mixta')) return 'comision-mixta';
 	if (desc.includes('indicacion')) return 'indicaciones';
 	if (desc.includes('oficio') && desc.includes('ley')) return 'oficio-ley';
+
+	// Use tramite etapa to disambiguate oficios with generic descriptions
+	if (tipo === 'ofic' && etapa) {
+		const e = etapa.toLowerCase();
+		if (e.includes('primer')) return 'oficio-1er-tramite';
+		if (e.includes('segundo')) return 'oficio-2do-tramite';
+	}
 
 	return null;
 }

@@ -1,11 +1,12 @@
 /**
- * Phase 1: DISCOVER — Fetch Senate APIs to gather boletín metadata
+ * Phase 1: DISCOVER — Fetch Senate + Cámara APIs to gather boletín metadata
  * 100% automated, no user input needed
  */
 import { writeFileSync } from 'fs';
 import { join } from 'path';
 import { fetchTramitacion, fetchVotaciones } from '../lib/senado-api.js';
-import type { Discovery } from '../types.js';
+import { fetchVotacionesCamara } from '../lib/camara-api.js';
+import type { Discovery, VotacionData } from '../types.js';
 
 export async function discover(boletin: string, outDir: string): Promise<Discovery> {
 	console.log('\n=== Phase 1: DISCOVER ===\n');
@@ -19,11 +20,27 @@ export async function discover(boletin: string, outDir: string): Promise<Discove
 	console.log(`  Cámara origen: ${tram.camaraOrigen}`);
 	console.log(`  Trámites: ${tram.tramites.length}`);
 
-	// Fetch votaciones
-	const votaciones = await fetchVotaciones(boletin);
-	console.log(`  Votaciones: ${votaciones.length}`);
+	// Fetch votaciones from BOTH chambers
+	const senadoVotes = await fetchVotaciones(boletin);
+	console.log(`  Votaciones Senado: ${senadoVotes.length}`);
+
+	let camaraVotes: VotacionData[] = [];
+	try {
+		camaraVotes = await fetchVotacionesCamara(tram.boletin);
+		console.log(`  Votaciones Cámara: ${camaraVotes.length}`);
+	} catch (err) {
+		console.warn(`  Warning: Could not fetch Cámara votes: ${(err as Error).message}`);
+	}
+
+	// Merge and sort by date
+	const votaciones = [...senadoVotes, ...camaraVotes].sort(
+		(a, b) => a.fecha.localeCompare(b.fecha)
+	);
+
+	console.log(`  Votaciones total: ${votaciones.length}`);
 	for (const v of votaciones) {
-		console.log(`    ${v.fecha}: ${v.si}-${v.no}-${v.abstencion} (${v.resultado})`);
+		const src = v.chamber === 'camara' ? 'Cámara' : 'Senado';
+		console.log(`    ${v.fecha}: ${v.si}-${v.no}-${v.abstencion} (${v.resultado}) [${src}]`);
 	}
 
 	const discovery: Discovery = {

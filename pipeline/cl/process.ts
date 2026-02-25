@@ -3,11 +3,12 @@
  * Pipeline CLI — Generate AKN Diff XMLs from a Chilean boletín number
  *
  * Usage:
- *   npx tsx pipeline/cl/process.ts <número-boletín> [--phase=N] [--out=DIR]
+ *   npx tsx pipeline/cl/process.ts <número-boletín> [--phase=N] [--out=DIR] [--auto]
  *
  * Examples:
  *   npx tsx pipeline/cl/process.ts 17370
  *   npx tsx pipeline/cl/process.ts 15480 --phase=6
+ *   npx tsx pipeline/cl/process.ts 17370 --auto          # non-interactive mode
  *   npx tsx pipeline/cl/process.ts 17370 --out=pipeline/data/cl/ley-17370
  */
 import { existsSync, mkdirSync, writeFileSync } from 'fs';
@@ -25,7 +26,7 @@ import { loadJson, formatReport } from '../shared/report.js';
 
 // --- CLI argument parsing ---
 
-function parseArgs(): { boletin: string; startPhase: number; outDir: string } {
+function parseArgs(): { boletin: string; startPhase: number; outDir: string; auto: boolean } {
 	const args = process.argv.slice(2);
 
 	if (args.length === 0 || args[0] === '--help' || args[0] === '-h') {
@@ -38,6 +39,7 @@ Usage:
 Options:
   --phase=N    Start from phase N (1-6, default: 1)
   --out=DIR    Output directory (default: pipeline/data/cl/<boletín>)
+  --auto       Non-interactive mode (skip prompts, use safe defaults)
   -h, --help   Show this help
 
 Examples:
@@ -55,6 +57,7 @@ Examples:
 
 	let startPhase = 1;
 	let outDir = '';
+	let auto = false;
 
 	for (const arg of args.slice(1)) {
 		if (arg.startsWith('--phase=')) {
@@ -65,6 +68,8 @@ Examples:
 			}
 		} else if (arg.startsWith('--out=')) {
 			outDir = arg.split('=')[1];
+		} else if (arg === '--auto') {
+			auto = true;
 		}
 	}
 
@@ -72,19 +77,20 @@ Examples:
 		outDir = join('pipeline', 'data', 'cl', boletin);
 	}
 
-	return { boletin, startPhase, outDir: resolve(outDir) };
+	return { boletin, startPhase, outDir: resolve(outDir), auto };
 }
 
 // --- Main ---
 
 async function main(): Promise<void> {
-	const { boletin, startPhase, outDir } = parseArgs();
+	const { boletin, startPhase, outDir, auto } = parseArgs();
 
 	console.log(`\n╔══════════════════════════════════════╗`);
 	console.log(`║  Pipeline Chile — Boletín ${boletin.padEnd(10)}║`);
 	console.log(`╚══════════════════════════════════════╝`);
 	console.log(`  Output: ${outDir}`);
 	console.log(`  Starting from phase: ${startPhase}`);
+	if (auto) console.log(`  Mode: --auto (non-interactive)`);
 
 	if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true });
 
@@ -106,7 +112,7 @@ async function main(): Promise<void> {
 	let config: PipelineConfig;
 	if (startPhase <= 2) {
 		const t0 = Date.now();
-		config = await configure(discovery, outDir);
+		config = await configure(discovery, outDir, { auto });
 		allResults.push({ step: 2, id: 'configure', name: 'Configure', status: 'PASS', detail: config.slug, elapsed: Date.now() - t0 });
 	} else {
 		console.log('\n=== Phase 2: CONFIGURE (loading cached) ===');

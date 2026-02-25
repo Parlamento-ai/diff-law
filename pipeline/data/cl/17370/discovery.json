@@ -92,7 +92,13 @@
       "si": 21,
       "no": 24,
       "abstencion": 0,
+      "pareo": 0,
       "resultado": "rejected",
+      "chamber": "senado",
+      "quorum": "Mayoría simple",
+      "tipoVotacion": "Discusión general",
+      "etapa": "Primer trámite constitucional",
+      "tema": "Solicitud para pasar el proyecto de ley a la Comisión de Constitución, Legislación, Justicia y Reglamento para su estudio",
       "votantes": {
         "for": [
           "De Urresti L., Alfonso",
