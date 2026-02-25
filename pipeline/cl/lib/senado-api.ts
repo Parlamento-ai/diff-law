@@ -6,6 +6,7 @@
  */
 import { XMLParser } from 'fast-xml-parser';
 import type { TramitacionData, Tramite, VotacionData } from '../types.js';
+import { fetchWithRetry } from '../../shared/retry.js';
 
 const SENADO_BASE = 'https://tramitacion.senado.cl/wspublico';
 
@@ -19,7 +20,7 @@ export async function fetchTramitacion(boletin: string): Promise<TramitacionData
 	const url = `${SENADO_BASE}/tramitacion.php?boletin=${boletin}`;
 	console.log(`  Fetching tramitación: ${url}`);
 
-	const resp = await fetch(url);
+	const resp = await fetchWithRetry(url, { label: 'tramitación' });
 	if (!resp.ok) throw new Error(`HTTP ${resp.status} fetching tramitación`);
 
 	const xml = await resp.text();
@@ -131,12 +132,21 @@ export async function fetchTramitacion(boletin: string): Promise<TramitacionData
 	return data;
 }
 
-/** Fetch and parse votaciones XML */
+/**
+ * Fetch and parse votaciones XML.
+ *
+ * Result determination:
+ *   1. Parse TEMA text for explicit "APROBADO" / "RECHAZADO"
+ *   2. Fallback: SI > NO (correct for "Mayoría simple"; may be incorrect
+ *      for quorum calificado or 4/7 — downstream should check quorum field)
+ *
+ * All counts (SI/NO/ABSTENCION/PAREO) come from the API's official fields.
+ */
 export async function fetchVotaciones(boletin: string): Promise<VotacionData[]> {
 	const url = `${SENADO_BASE}/votaciones.php?boletin=${boletin}`;
 	console.log(`  Fetching votaciones: ${url}`);
 
-	const resp = await fetch(url);
+	const resp = await fetchWithRetry(url, { label: 'votaciones' });
 	if (!resp.ok) throw new Error(`HTTP ${resp.status} fetching votaciones`);
 
 	const xml = await resp.text();
@@ -146,7 +156,7 @@ export async function fetchVotaciones(boletin: string): Promise<VotacionData[]> 
 	const results: VotacionData[] = [];
 
 	for (const v of votaciones) {
-		// UPPERCASE field names
+		// UPPERCASE field names from Senate API
 		const votos = ensureArray(v.DETALLE_VOTACION?.VOTO);
 		const forVoters: string[] = [];
 		const againstVoters: string[] = [];
@@ -158,12 +168,28 @@ export async function fetchVotaciones(boletin: string): Promise<VotacionData[]> 
 			if (seleccion === 'si' || seleccion === 'sí') forVoters.push(nombre);
 			else if (seleccion === 'no') againstVoters.push(nombre);
 			else if (seleccion.includes('absten')) abstainVoters.push(nombre);
-			else if (seleccion === 'pareo') { /* skip pareos */ }
+			// "Pareo" = paired absence, not a vote — skip
 		}
 
+		// Official counts from API
 		const si = Number(v.SI) || forVoters.length;
 		const no = Number(v.NO) || againstVoters.length;
 		const abstencion = Number(v.ABSTENCION) || abstainVoters.length;
+		const pareo = Number(v.PAREO) || 0;
+
+		// Determine result: prefer explicit text in TEMA, fallback to vote count
+		const tema = (v.TEMA || '').trim();
+		const temaLower = tema.toLowerCase();
+		let resultado: 'approved' | 'rejected';
+		if (temaLower.includes('aprobado')) {
+			resultado = 'approved';
+		} else if (temaLower.includes('rechazado')) {
+			resultado = 'rejected';
+		} else {
+			// No explicit result in TEMA — infer from counts
+			// Note: only reliable for "Mayoría simple"
+			resultado = si > no ? 'approved' : 'rejected';
+		}
 
 		results.push({
 			fecha: parseFecha(v.FECHA || ''),
@@ -171,7 +197,13 @@ export async function fetchVotaciones(boletin: string): Promise<VotacionData[]> 
 			si,
 			no,
 			abstencion,
-			resultado: si > no ? 'approved' : 'rejected',
+			pareo,
+			resultado,
+			chamber: 'senado',
+			quorum: (v.QUORUM || '').trim(),
+			tipoVotacion: (v.TIPOVOTACION || '').trim(),
+			etapa: (v.ETAPA || '').trim(),
+			tema,
 			votantes: {
 				for: forVoters,
 				against: againstVoters,

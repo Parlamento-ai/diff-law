@@ -44,7 +44,14 @@ export interface VotacionData {
 	si: number;
 	no: number;
 	abstencion: number;
+	pareo?: number; // Senate: paired absences
+	dispensados?: number; // Cámara: excused members
 	resultado: 'approved' | 'rejected';
+	chamber?: 'senado' | 'camara';
+	quorum?: string; // e.g., "Mayoría simple", "Q.C.", "Quorum Calificado (Qc Y Loc)"
+	tipoVotacion?: string; // e.g., "Discusión general", "General", "Única"
+	etapa?: string; // e.g., "Primer trámite constitucional", "PRIMER TRÁMITE"
+	tema?: string; // Topic/description of what was voted
 	votantes: {
 		for: string[];
 		against: string[];
