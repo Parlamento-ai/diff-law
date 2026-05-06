@@ -1,8 +1,4 @@
 <script lang="ts">
-	import { page } from '$app/state';
-	import { goto } from '$app/navigation';
-	import { browser } from '$app/environment';
-	import PlusIcon from '~icons/lucide/plus';
 	import AknTerm from '$lib/bill/AknTerm.svelte';
 	import BodyView from '$lib/bill/BodyView.svelte';
 	import type { TimelineRow, Modification } from '$lib/bill/parse';
@@ -11,114 +7,6 @@
 	const doc = $derived(data.doc);
 	const parsed = $derived(data.parsed);
 	const amendments = $derived(data.amendments);
-	const linkedDocs = $derived(data.linkedDocs);
-	const lint = $derived(data.lint);
-
-	type XmlSource = { key: string; type: string; nativeId: string; title: string; xml: string };
-	const xmlSources = $derived<XmlSource[]>([
-		{ key: 'bill', type: 'bill', nativeId: doc.nativeId, title: doc.title, xml: doc.xml },
-		...linkedDocs.map((d) => ({
-			key: `${d.type}:${d.nativeId}`,
-			type: d.type,
-			nativeId: d.nativeId,
-			title: d.title,
-			xml: d.xml
-		}))
-	]);
-	function searchParam(name: string) {
-		return browser ? page.url.searchParams.get(name) : null;
-	}
-
-	const activeXmlKey = $derived<string>(
-		(() => {
-			const requested = searchParam('doc');
-			if (!requested) return 'bill';
-			return xmlSources.some((s) => s.key === requested) ? requested : 'bill';
-		})()
-	);
-	const activeXmlSource = $derived(
-		xmlSources.find((s) => s.key === activeXmlKey) ?? xmlSources[0]
-	);
-
-	function setXmlSource(key: string) {
-		const url = new URL(page.url);
-		url.searchParams.set('tab', 'xml');
-		if (key === 'bill') url.searchParams.delete('doc');
-		else url.searchParams.set('doc', key);
-		goto(url, { replaceState: false, keepFocus: true, noScroll: true });
-	}
-
-	type Tab = 'document' | 'lint' | 'xml';
-	const TABS: Tab[] = ['document', 'lint', 'xml'];
-	const activeTab = $derived<Tab>(
-		((tab) => (TABS.includes(tab as Tab) ? (tab as Tab) : 'document'))(searchParam('tab'))
-	);
-	function setTab(tab: Tab) {
-		const url = new URL(page.url);
-		if (tab === 'document') url.searchParams.delete('tab');
-		else url.searchParams.set('tab', tab);
-		goto(url, { replaceState: false, keepFocus: true, noScroll: true });
-	}
-	let xmlCopied = $state(false);
-	let titleExpanded = $state(false);
-	let titleEl = $state<HTMLElement | null>(null);
-	let titleTruncated = $state(false);
-
-	$effect(() => {
-		void doc.title;
-		if (!titleEl || titleExpanded) return;
-		titleTruncated = titleEl.scrollWidth > titleEl.clientWidth + 1;
-	});
-
-	function copyXml() {
-		navigator.clipboard.writeText(activeXmlSource.xml).then(() => {
-			xmlCopied = true;
-			setTimeout(() => (xmlCopied = false), 1500);
-		});
-	}
-
-	function highlightXml(xml: string): string {
-		const escaped = xml
-			.replace(/&/g, '&amp;')
-			.replace(/</g, '&lt;')
-			.replace(/>/g, '&gt;');
-		return escaped
-			.replace(/(&lt;!--[\s\S]*?--&gt;)/g, '<span class="xml-comment">$1</span>')
-			.replace(
-				/(&lt;\/?)([a-zA-Z_][\w:-]*)([^&]*?)(\/?&gt;)/g,
-				(_match, open, tag, attrs, close) => {
-					const attrsHl = attrs.replace(
-						/([a-zA-Z_][\w:-]*)(=)(&quot;[^&]*?&quot;|"[^"]*?")/g,
-						'<span class="xml-attr">$1</span>$2<span class="xml-val">$3</span>'
-					);
-					return `<span class="xml-bracket">${open}</span><span class="xml-tag">${tag}</span>${attrsHl}<span class="xml-bracket">${close}</span>`;
-				}
-			);
-	}
-
-	const xmlLineCount = $derived(activeXmlSource.xml.split('\n').length);
-	const xmlGutter = $derived(
-		Array.from({ length: xmlLineCount }, (_, i) => i + 1).join('\n')
-	);
-	const xmlGutterWidth = $derived(`${String(xmlLineCount).length}ch`);
-
-	const completenessPct = $derived(Math.round(lint.completeness * 100));
-	const errorCount = $derived(lint.findings.filter((f) => f.severity === 'error').length);
-	const warnCount = $derived(lint.findings.filter((f) => f.severity === 'warn').length);
-	const infoCount = $derived(lint.findings.filter((f) => f.severity === 'info').length);
-
-	function scoreClass(pct: number) {
-		if (pct >= 90) return 'score-good';
-		if (pct >= 70) return 'score-mid';
-		return 'score-low';
-	}
-
-	function statusGlyph(status: string) {
-		if (status === 'ok') return '✓';
-		if (status === 'optional-missing') return '◦';
-		if (status === 'invalid') return '✗';
-		return '·';
-	}
 
 	let selectedId = $state<string | null>(null);
 
@@ -242,11 +130,11 @@
 	}
 
 	type Seg =
-		| { t: 'openTag'; tag: string; indent: number } // <tag (no closing bracket; attrs follow)
+		| { t: 'openTag'; tag: string; indent: number }
 		| { t: 'attr'; name: string; value: string; indent: number }
-		| { t: 'closeOpenTag'; selfClose: boolean; indent: number } // /> or >
-		| { t: 'tagLine'; tag: string; indent: number } // <tag>
-		| { t: 'closeLine'; tag: string; indent: number } // </tag>
+		| { t: 'closeOpenTag'; selfClose: boolean; indent: number }
+		| { t: 'tagLine'; tag: string; indent: number }
+		| { t: 'closeLine'; tag: string; indent: number }
 		| { t: 'comment'; text: string; indent: number }
 		| { t: 'ellipsis'; text: string; indent: number };
 
@@ -272,7 +160,6 @@
 			});
 		}
 
-		// <lifecycle>
 		lines.push({ t: 'tagLine', tag: 'lifecycle', indent: 0 });
 		if (row.lifecycle) {
 			lines.push({ t: 'openTag', tag: 'eventRef', indent: 1 });
@@ -299,7 +186,6 @@
 		}
 		lines.push({ t: 'closeLine', tag: 'lifecycle', indent: 0 });
 
-		// <workflow>
 		lines.push({ t: 'tagLine', tag: 'workflow', indent: 0 });
 		if (row.step) {
 			lines.push({ t: 'openTag', tag: 'step', indent: 1 });
@@ -327,7 +213,6 @@
 		}
 		lines.push({ t: 'closeLine', tag: 'workflow', indent: 0 });
 
-		// <analysis>
 		lines.push({ t: 'tagLine', tag: 'analysis', indent: 0 });
 		if (row.modifications.length) {
 			lines.push({ t: 'tagLine', tag: 'activeModifications', indent: 1 });
@@ -371,203 +256,16 @@
 	const provenanceSnippet = $derived(selectedRow ? buildProvenanceSnippet(selectedRow) : []);
 </script>
 
-<svelte:head>
-	<title>{doc.nativeId} — bill — research demo</title>
-</svelte:head>
-
-<div class="head-band">
-	<header class="head">
-		<div class="head-row" class:head-row-expanded={titleExpanded}>
-			<h1
-				class="head-title"
-				class:head-title-expanded={titleExpanded}
-				title={doc.title}
-				bind:this={titleEl}
-			><span class="head-id">{doc.nativeId}</span>{doc.title}</h1>
-			{#if !titleExpanded && titleTruncated}
-				<button
-					type="button"
-					class="head-title-toggle"
-					onclick={() => (titleExpanded = true)}
-					aria-expanded={false}
-					aria-label="show more"
-				><PlusIcon class="h-3 w-3" /></button>
-			{/if}
-		</div>
-		{#if titleExpanded}
-			<button
-				type="button"
-				class="head-title-collapse"
-				onclick={() => (titleExpanded = false)}
-				aria-expanded={true}
-			>show less</button>
-		{/if}
-
-		{#if parsed.warnings.length}
-			<div class="warnings">
-				{#each parsed.warnings as w (w)}
-					<div class="warn-card">⚠ {w}</div>
-				{/each}
-			</div>
-		{/if}
-	</header>
-
-	<!-- ─── TAB STRIP ─── -->
-	<nav class="bill-subnav" aria-label="Document views">
-		<button
-			type="button"
-			class="subtab"
-			class:subtab-active={activeTab === 'document'}
-			onclick={() => setTab('document')}
-		>
-			Document
-		</button>
-		<button
-			type="button"
-			class="subtab"
-			class:subtab-active={activeTab === 'lint'}
-			onclick={() => setTab('lint')}
-		>
-			AKN lint
-			<span class="tab-score {scoreClass(completenessPct)}">{completenessPct}%</span>
-			{#if errorCount}<span class="tab-pip pip-err">{errorCount}</span>{/if}
-			{#if warnCount}<span class="tab-pip pip-warn">{warnCount}</span>{/if}
-		</button>
-		<button
-			type="button"
-			class="subtab"
-			class:subtab-active={activeTab === 'xml'}
-			onclick={() => setTab('xml')}
-		>
-			XML
-		</button>
-	</nav>
-</div>
-
 <div class="page">
+	{#if parsed.warnings.length}
+		<div class="warnings">
+			{#each parsed.warnings as w (w)}
+				<div class="warn-card">⚠ {w}</div>
+			{/each}
+		</div>
+	{/if}
 
-	{#if activeTab === 'lint'}
-		<section class="lint-view">
-			<header class="lint-summary card">
-				<div class="lint-summary-main">
-					<div class="lint-score-block">
-						<span class="lint-score-num {scoreClass(completenessPct)}">{completenessPct}<span class="pct">%</span></span>
-						<span class="lint-score-label">completeness</span>
-					</div>
-					<dl class="lint-counts">
-						<div><dt>errors</dt><dd class="cnt-err">{errorCount}</dd></div>
-						<div><dt>warnings</dt><dd class="cnt-warn">{warnCount}</dd></div>
-						<div><dt>notes</dt><dd class="cnt-info">{infoCount}</dd></div>
-					</dl>
-				</div>
-				<p class="hint lint-hint">
-					Each facet is a slice of the document scored against an
-					expectation profile (<code>research/schema/profiles/{lint.docType}.ts</code>).
-					Optional fields show as notes; their absence does not lower the score.
-				</p>
-			</header>
-
-			<div class="facets">
-				{#each lint.facets as facet (facet.id)}
-					{@const pct = Math.round(facet.score * 100)}
-					<article class="facet card">
-						<header class="facet-head">
-							<div class="facet-title">
-								<h3>{facet.label}</h3>
-								<span class="facet-score {scoreClass(pct)}">{pct}%</span>
-								<span class="facet-meta">{facet.earned}/{facet.total} weighted</span>
-							</div>
-							<p class="facet-rationale">{facet.rationale}</p>
-						</header>
-
-						<div class="facet-body">
-							<table class="exp-table">
-								<thead>
-									<tr>
-										<th class="th-status"></th>
-										<th>Expectation</th>
-										<th class="th-xpath">XPath</th>
-										<th class="th-w">w</th>
-										<th class="th-count">matches</th>
-									</tr>
-								</thead>
-								<tbody>
-									{#each facet.expectations as exp (exp.id)}
-										<tr class="exp-row exp-{exp.status}">
-											<td class="exp-status" title={exp.status}>
-												<span class="status-glyph">{statusGlyph(exp.status)}</span>
-											</td>
-											<td class="exp-id">
-												<span class="mono">{exp.id}</span>
-												{#if exp.kind !== 'presence'}
-													<span class="exp-kind">{exp.kind}</span>
-												{/if}
-											</td>
-											<td class="exp-xpath mono">{exp.xpath}</td>
-											<td class="exp-w mono">{exp.weight}</td>
-											<td class="exp-count mono">
-												{exp.matchCount}{#if exp.value && exp.kind === 'enum'} <span class="exp-val">→ {exp.value}</span>{/if}
-											</td>
-										</tr>
-									{/each}
-								</tbody>
-							</table>
-
-							{#if facet.findings.length}
-								<ul class="findings">
-									{#each facet.findings as f, i (i)}
-										<li class="finding sev-{f.severity}">
-											<div class="finding-head">
-												<span class="finding-sev">{f.severity}</span>
-												<span class="finding-id mono">{f.expectation}</span>
-											</div>
-											<div class="finding-msg">{f.message}</div>
-											<div class="finding-rationale">{f.rationale}</div>
-											<code class="finding-xpath">{f.xpath}</code>
-										</li>
-									{/each}
-								</ul>
-							{/if}
-						</div>
-					</article>
-				{/each}
-			</div>
-		</section>
-	{:else if activeTab === 'xml'}
-		<section class="xml-view">
-			{#if xmlSources.length > 1}
-				<nav class="xml-subtabs" aria-label="XML source">
-					{#each xmlSources as src (src.key)}
-						<button
-							type="button"
-							class="xml-subtab"
-							class:xml-subtab-active={src.key === activeXmlKey}
-							onclick={() => setXmlSource(src.key)}
-							title={src.title}
-						>
-							<span class="xml-subtab-type">{src.type}</span>
-							<span class="xml-subtab-id mono">{src.nativeId}</span>
-						</button>
-					{/each}
-				</nav>
-			{/if}
-			<header class="xml-toolbar">
-				<div class="xml-meta">
-					<span class="xml-meta-label">raw XML</span>
-					<span class="xml-meta-sep">·</span>
-					<span class="mono">{(activeXmlSource.xml.length / 1024).toFixed(1)} KB</span>
-					<span class="xml-meta-sep">·</span>
-					<span class="mono">{activeXmlSource.xml.split('\n').length.toLocaleString()} lines</span>
-				</div>
-				<button type="button" class="xml-copy" onclick={copyXml}>
-					{xmlCopied ? '✓ copied' : 'copy'}
-				</button>
-			</header>
-			<pre class="xml-pre" style="--gutter-w: {xmlGutterWidth};"><span class="xml-gutter" aria-hidden="true">{xmlGutter}</span><code class="xml-code">{@html highlightXml(activeXmlSource.xml)}</code></pre>
-		</section>
-	{:else}
 	<div class="cols">
-		<!-- ─── TIMELINE (LEFT) ─── -->
 		<aside class="timeline">
 			<h2 class="eyebrow">Timeline</h2>
 			<p class="hint">
@@ -627,7 +325,6 @@
 			{/if}
 		</aside>
 
-		<!-- ─── DETAIL (RIGHT) ─── -->
 		<section class="detail">
 			{#if selectedRow}
 				<h2 class="eyebrow">Event detail</h2>
@@ -749,11 +446,9 @@
 			{/if}
 		</section>
 	</div>
-	{/if}
 </div>
 
 <style>
-	/* ─── Page shell ─── */
 	.page {
 		max-width: 72rem;
 		margin: 0 auto;
@@ -764,132 +459,8 @@
 		color: #1f2937;
 	}
 
-	.back {
-		display: inline-block;
-		margin-bottom: 14px;
-		font-family: var(--font-mono);
-		font-size: 12px;
-		color: var(--color-brand-dark);
-		text-decoration: none;
-		border-bottom: 1px dotted transparent;
-		transition: border-color 0.1s ease;
-	}
-	.back:hover {
-		border-bottom-color: var(--color-brand-dark);
-	}
-
-	/* ─── Header band (full-width) ─── */
-	.head-band {
-		background: #ffffff;
-		border-bottom: 1px solid #e5e7eb;
-	}
-	.head {
-		max-width: 72rem;
-		margin: 0 auto;
-		padding: 18px 16px 14px;
-	}
-	.head-tag {
-		display: flex;
-		gap: 6px;
-		align-items: baseline;
-		flex-wrap: wrap;
-		font-family: var(--font-mono);
-		font-size: 11px;
-		color: #6b7280;
-		margin-bottom: 8px;
-	}
-	.tag-mono :global(.text) {
-		font-family: var(--font-mono);
-	}
-	.tag-sep {
-		color: #d1d5db;
-	}
-	.tag-sub {
-		color: #4b5563;
-	}
-	.head-row {
-		display: flex;
-		align-items: center;
-		gap: 10px;
-		min-width: 0;
-	}
-	.head-id {
-		display: inline-block;
-		font-family: var(--font-mono);
-		font-size: 13px;
-		font-weight: 500;
-		line-height: 1;
-		color: #4b5563;
-		background: #f3f4f6;
-		border: 1px solid #e5e7eb;
-		border-radius: 4px;
-		padding: 3px 7px;
-		margin-right: 8px;
-		letter-spacing: 0;
-		vertical-align: 1px;
-		white-space: nowrap;
-	}
-	.head-title {
-		margin: 0;
-		min-width: 0;
-		flex: 1 1 auto;
-		font-family: var(--font-heading);
-		font-size: 14px;
-		font-weight: 400;
-		line-height: 1.4;
-		color: #111827;
-		letter-spacing: -0.005em;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: clip;
-	}
-	.head-title-expanded {
-		white-space: normal;
-		overflow: visible;
-	}
-	.head-title-toggle {
-		flex: none;
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		width: 20px;
-		height: 20px;
-		background: transparent;
-		border: none;
-		padding: 0;
-		color: #6b7280;
-		cursor: pointer;
-		line-height: 1;
-		transition: color 0.1s ease;
-	}
-	.head-title-toggle :global(svg) {
-		fill: #6b7280;
-		transition: fill 0.1s ease;
-	}
-	.head-title-toggle:hover :global(svg) {
-		fill: #111827;
-	}
-	.head-title-collapse {
-		display: inline-block;
-		margin: 6px 0 0 -6px;
-		padding: 2px 6px;
-		background: transparent;
-		border: none;
-		border-radius: 3px;
-		font-family: var(--font-heading);
-		font-size: 11px;
-		font-weight: 500;
-		color: #6b7280;
-		cursor: pointer;
-		line-height: 1;
-		transition: background-color 0.1s ease, color 0.1s ease;
-	}
-	.head-title-collapse:hover {
-		background: #f3f4f6;
-		color: #111827;
-	}
 	.warnings {
-		margin-top: 14px;
+		margin-bottom: 14px;
 	}
 	.warn-card {
 		background: #fffbeb;
@@ -902,7 +473,6 @@
 		margin-top: 6px;
 	}
 
-	/* ─── Two columns ─── */
 	.cols {
 		display: grid;
 		grid-template-columns: 260px 1fr;
@@ -910,7 +480,6 @@
 		align-items: start;
 	}
 
-	/* ─── Eyebrows ─── */
 	.eyebrow {
 		font-family: var(--font-heading);
 		font-size: 10px;
@@ -928,7 +497,6 @@
 		max-width: 60ch;
 	}
 
-	/* ─── Timeline (spine) ─── */
 	.timeline {
 		position: sticky;
 		top: 96px;
@@ -1066,7 +634,6 @@
 		color: #64748b;
 	}
 
-	/* ─── Event detail (no card chrome) ─── */
 	.event {
 		margin-bottom: 16px;
 	}
@@ -1085,7 +652,6 @@
 		flex: 1;
 	}
 
-	/* ─── Source badge (internal vs linked) ─── */
 	.src-badge {
 		display: inline-flex;
 		align-items: center;
@@ -1120,7 +686,6 @@
 		font-weight: 500;
 	}
 
-	/* ─── AKN provenance disclosure ─── */
 	.provenance {
 		margin-top: 18px;
 		border-top: 1px dotted #e5e7eb;
@@ -1147,7 +712,6 @@
 	.provenance[open] > summary .prov-caret {
 		transform: rotate(90deg);
 	}
-	/* ─── Provenance XML snippet ─── */
 	.prov-xml {
 		margin: 12px 0 0;
 		padding: 12px 14px;
@@ -1169,7 +733,6 @@
 	.prov-xml :global(.prov-comment) { color: #94a3b8; font-style: italic; }
 	.prov-xml :global(.prov-ellipsis) { color: #94a3b8; }
 
-	/* ─── Linked-inline (linked documents in event card) ─── */
 	.linked-inline {
 		margin-top: 16px;
 		padding-top: 12px;
@@ -1193,7 +756,6 @@
 		line-height: 1.4;
 	}
 
-	/* ─── Modifications ─── */
 	.mods {
 		list-style: none;
 		padding: 0;
@@ -1304,7 +866,6 @@
 		border-radius: 0 3px 3px 0;
 	}
 
-	/* ─── Linked amendments / span-focus list ─── */
 	.amend-list {
 		list-style: none;
 		padding: 0;
@@ -1318,8 +879,7 @@
 	.amend-list li:last-child {
 		border-bottom: none;
 	}
-	.amend-list a,
-	.event-link {
+	.amend-list a {
 		color: var(--color-brand-dark);
 		text-decoration: none;
 		background: none;
@@ -1334,8 +894,7 @@
 		align-items: baseline;
 		flex-wrap: wrap;
 	}
-	.amend-list a:hover,
-	.event-link:hover {
+	.amend-list a:hover {
 		text-decoration: underline;
 		text-underline-offset: 3px;
 	}
@@ -1343,14 +902,12 @@
 		color: #d1d5db;
 	}
 
-	/* ─── Body tree wrapper ─── */
 	.body-tree {
 		margin-top: 28px;
 		padding-top: 24px;
 		border-top: 1px solid #e5e7eb;
 	}
 
-	/* ─── Misc ─── */
 	.muted { color: #6b7280; }
 	.mono { font-family: var(--font-mono); }
 	.ink { color: var(--color-brand-dark); }
@@ -1364,480 +921,6 @@
 		margin-top: 14px;
 	}
 
-	/* ─── Bill sub-nav (icon + nativeId + tabs) ─── */
-	.bill-subnav {
-		display: flex;
-		align-items: center;
-		gap: 4px;
-		max-width: 72rem;
-		margin: 0 auto;
-		padding: 0 16px;
-		overflow-x: auto;
-	}
-	.subtab {
-		display: inline-flex;
-		align-items: center;
-		gap: 6px;
-		background: transparent;
-		border: none;
-		border-bottom: 2px solid transparent;
-		padding: 8px 12px;
-		font-family: var(--font-sans, inherit);
-		font-size: 14px;
-		font-weight: 500;
-		color: #6b7280;
-		cursor: pointer;
-		transition: color 0.1s ease, border-color 0.1s ease;
-		margin-bottom: -1px;
-		white-space: nowrap;
-	}
-	.bill-subnav .subtab:first-of-type {
-		margin-left: -12px;
-	}
-	.subtab:hover {
-		color: #374151;
-		border-bottom-color: #d1d5db;
-	}
-	.subtab-active {
-		color: #111827;
-		border-bottom-color: #111827;
-	}
-	.tab-score {
-		font-family: var(--font-mono);
-		font-size: 10.5px;
-		padding: 1px 6px;
-		border-radius: 3px;
-		font-weight: 500;
-		letter-spacing: 0;
-	}
-	.score-good {
-		background: #ecfdf5;
-		color: #065f46;
-		border: 1px solid #6ee7b7;
-	}
-	.score-mid {
-		background: #fef3c7;
-		color: #92400e;
-		border: 1px solid #fcd34d;
-	}
-	.score-low {
-		background: var(--color-deletion-50);
-		color: var(--color-deletion-800);
-		border: 1px solid var(--color-deletion-500);
-	}
-	.tab-pip {
-		font-family: var(--font-mono);
-		font-size: 10px;
-		padding: 0 5px;
-		border-radius: 8px;
-		font-weight: 500;
-		letter-spacing: 0;
-	}
-	.pip-err {
-		background: var(--color-deletion-500);
-		color: #ffffff;
-	}
-	.pip-warn {
-		background: #fbbf24;
-		color: #78350f;
-	}
-
-	/* ─── Lint view ─── */
-	.lint-view {
-		display: flex;
-		flex-direction: column;
-		gap: 16px;
-	}
-	.lint-summary {
-		padding: 16px 22px 14px;
-	}
-	.lint-summary-main {
-		display: flex;
-		align-items: center;
-		gap: 32px;
-		flex-wrap: wrap;
-	}
-	.lint-score-block {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	.lint-score-num {
-		font-family: var(--font-heading);
-		font-size: 38px;
-		font-weight: 700;
-		line-height: 1;
-		padding: 4px 10px;
-		border-radius: 6px;
-	}
-	.lint-score-num .pct {
-		font-size: 18px;
-		opacity: 0.7;
-		margin-left: 2px;
-	}
-	.lint-score-label {
-		font-family: var(--font-heading);
-		font-size: 9.5px;
-		text-transform: uppercase;
-		letter-spacing: 0.12em;
-		color: #6b7280;
-		margin-top: 6px;
-	}
-	.lint-counts {
-		display: flex;
-		gap: 22px;
-		margin: 0;
-	}
-	.lint-counts > div {
-		display: flex;
-		flex-direction: column;
-	}
-	.lint-counts dt {
-		font-family: var(--font-heading);
-		font-size: 9.5px;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		color: #6b7280;
-	}
-	.lint-counts dd {
-		margin: 4px 0 0;
-		font-family: var(--font-mono);
-		font-size: 22px;
-		font-weight: 600;
-	}
-	.cnt-err { color: var(--color-deletion-800); }
-	.cnt-warn { color: #92400e; }
-	.cnt-info { color: #4b5563; }
-	.lint-hint {
-		margin-top: 14px;
-		max-width: 80ch;
-	}
-	.lint-hint code {
-		background: #f3f4f6;
-		padding: 1px 5px;
-		border-radius: 3px;
-		font-size: 10.5px;
-	}
-
-	.facets {
-		display: flex;
-		flex-direction: column;
-		gap: 14px;
-	}
-	.facet {
-		padding: 0;
-		overflow: hidden;
-	}
-	.facet-head {
-		padding: 14px 18px 12px;
-		border-bottom: 1px solid #e5e7eb;
-		background: #f9fafb;
-	}
-	.facet-title {
-		display: flex;
-		align-items: center;
-		gap: 12px;
-		flex-wrap: wrap;
-	}
-	.facet-title h3 {
-		margin: 0;
-		font-family: var(--font-heading);
-		font-size: 14px;
-		font-weight: 600;
-		color: #0a0f1c;
-	}
-	.facet-score {
-		font-family: var(--font-mono);
-		font-size: 11px;
-		padding: 1px 7px;
-		border-radius: 3px;
-	}
-	.facet-meta {
-		font-family: var(--font-mono);
-		font-size: 10.5px;
-		color: #6b7280;
-	}
-	.facet-rationale {
-		margin: 8px 0 0;
-		font-size: 11.5px;
-		color: #4b5563;
-		line-height: 1.55;
-		max-width: 80ch;
-	}
-	.facet-body {
-		padding: 12px 16px 16px;
-	}
-
-	.exp-table {
-		width: 100%;
-		border-collapse: collapse;
-		font-size: 11px;
-	}
-	.exp-table th {
-		text-align: left;
-		font-family: var(--font-heading);
-		font-size: 9.5px;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		color: #6b7280;
-		font-weight: 600;
-		padding: 4px 8px 6px;
-		border-bottom: 1px solid #e5e7eb;
-	}
-	.exp-table td {
-		padding: 5px 8px;
-		border-bottom: 1px dotted #e5e7eb;
-		vertical-align: top;
-	}
-	.th-status { width: 22px; }
-	.th-w { width: 36px; text-align: right; }
-	.th-count { width: 110px; }
-	.th-xpath { width: 38%; }
-	.exp-status {
-		text-align: center;
-		font-family: var(--font-mono);
-		font-size: 13px;
-		font-weight: 700;
-	}
-	.exp-ok .status-glyph { color: var(--color-addition-500); }
-	.exp-missing .status-glyph { color: var(--color-deletion-500); }
-	.exp-invalid .status-glyph { color: var(--color-deletion-500); }
-	.exp-optional-missing .status-glyph { color: #9ca3af; }
-	.exp-row.exp-missing { background: var(--color-deletion-50); }
-	.exp-row.exp-invalid { background: var(--color-deletion-50); }
-	.exp-row.exp-optional-missing { color: #6b7280; }
-	.exp-id .mono {
-		font-family: var(--font-mono);
-		font-size: 11px;
-		color: #1f2937;
-	}
-	.exp-kind {
-		display: inline-block;
-		font-family: var(--font-heading);
-		font-size: 9px;
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		color: #6b7280;
-		padding: 0 4px;
-		margin-left: 4px;
-		background: #f3f4f6;
-		border-radius: 2px;
-	}
-	.exp-xpath {
-		font-size: 10.5px;
-		color: #4b5563;
-		word-break: break-all;
-	}
-	.exp-w {
-		text-align: right;
-		color: #6b7280;
-	}
-	.exp-count {
-		font-size: 11px;
-	}
-	.exp-val {
-		color: #4b5563;
-	}
-
-	.findings {
-		list-style: none;
-		padding: 0;
-		margin: 14px 0 0;
-		display: flex;
-		flex-direction: column;
-		gap: 8px;
-	}
-	.finding {
-		padding: 10px 12px;
-		border: 1px solid #e5e7eb;
-		border-left-width: 3px;
-		border-radius: 4px;
-		background: #ffffff;
-	}
-	.finding.sev-error {
-		border-left-color: var(--color-deletion-500);
-		background: var(--color-deletion-50);
-	}
-	.finding.sev-warn {
-		border-left-color: #fbbf24;
-		background: #fffbeb;
-	}
-	.finding.sev-info {
-		border-left-color: #9ca3af;
-		background: #f9fafb;
-	}
-	.finding-head {
-		display: flex;
-		gap: 8px;
-		align-items: baseline;
-		margin-bottom: 4px;
-	}
-	.finding-sev {
-		font-family: var(--font-heading);
-		font-size: 9px;
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		color: #6b7280;
-	}
-	.finding.sev-error .finding-sev { color: var(--color-deletion-800); }
-	.finding.sev-warn .finding-sev { color: #92400e; }
-	.finding-id {
-		font-size: 11px;
-		color: #1f2937;
-	}
-	.finding-msg {
-		font-size: 12px;
-		color: #1f2937;
-		margin-bottom: 4px;
-	}
-	.finding-rationale {
-		font-size: 11px;
-		color: #4b5563;
-		line-height: 1.55;
-		margin-bottom: 6px;
-	}
-	.finding-xpath {
-		display: inline-block;
-		font-family: var(--font-mono);
-		font-size: 10.5px;
-		color: #6b7280;
-		background: #f3f4f6;
-		padding: 1px 5px;
-		border-radius: 3px;
-	}
-
-	/* ─── XML view ─── */
-	.xml-view {
-		display: flex;
-		flex-direction: column;
-		gap: 8px;
-	}
-	.xml-subtabs {
-		display: flex;
-		gap: 4px;
-		flex-wrap: wrap;
-		padding: 0 0 4px;
-	}
-	.xml-subtab {
-		display: inline-flex;
-		align-items: baseline;
-		gap: 6px;
-		background: transparent;
-		border: 1px solid #e5e7eb;
-		border-radius: 999px;
-		padding: 3px 10px;
-		font-family: var(--font-heading);
-		font-size: 10px;
-		font-weight: 600;
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		color: #6b7280;
-		cursor: pointer;
-		transition: background-color 0.1s ease, border-color 0.1s ease, color 0.1s ease;
-	}
-	.xml-subtab:hover {
-		background: #f3f4f6;
-		border-color: #d1d5db;
-		color: #1f2937;
-	}
-	.xml-subtab-active {
-		background: #1f2937;
-		border-color: #1f2937;
-		color: #ffffff;
-	}
-	.xml-subtab-active:hover {
-		background: #1f2937;
-		border-color: #1f2937;
-		color: #ffffff;
-	}
-	.xml-subtab-id {
-		font-family: var(--font-mono);
-		font-size: 10px;
-		font-weight: 500;
-		letter-spacing: 0;
-		text-transform: none;
-		color: inherit;
-		opacity: 0.85;
-	}
-	.xml-toolbar {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 12px;
-		padding: 6px 2px 2px;
-	}
-	.xml-meta {
-		display: flex;
-		gap: 8px;
-		align-items: baseline;
-		font-size: 11px;
-		color: #6b7280;
-	}
-	.xml-meta-label {
-		font-family: var(--font-heading);
-		font-size: 10px;
-		font-weight: 600;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-	}
-	.xml-meta-sep {
-		color: #d1d5db;
-	}
-	.xml-copy {
-		font-family: var(--font-heading);
-		font-size: 10px;
-		font-weight: 600;
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		color: #6b7280;
-		background: transparent;
-		border: 1px solid #e5e7eb;
-		border-radius: 4px;
-		padding: 4px 10px;
-		cursor: pointer;
-		transition: background-color 0.1s ease, border-color 0.1s ease, color 0.1s ease;
-	}
-	.xml-copy:hover {
-		background: #f3f4f6;
-		border-color: #d1d5db;
-		color: #1f2937;
-	}
-	.xml-pre {
-		margin: 0;
-		padding: 16px 0;
-		background: #f9fafb;
-		border: 1px solid #e5e7eb;
-		border-radius: 6px;
-		font-family: var(--font-mono);
-		font-size: 11.5px;
-		line-height: 1.65;
-		color: #334155;
-		overflow: auto;
-		tab-size: 2;
-		display: grid;
-		grid-template-columns: calc(var(--gutter-w, 4ch) + 28px) 1fr;
-	}
-	.xml-gutter {
-		white-space: pre;
-		text-align: right;
-		padding: 0 12px 0 14px;
-		color: #cbd5e1;
-		user-select: none;
-		border-right: 1px solid #e5e7eb;
-	}
-	.xml-code {
-		white-space: pre;
-		padding: 0 18px 0 14px;
-		min-width: 0;
-	}
-	.xml-pre :global(.xml-bracket) { color: #94a3b8; }
-	.xml-pre :global(.xml-tag) { color: #1e40af; }
-	.xml-pre :global(.xml-attr) { color: #7c2d92; }
-	.xml-pre :global(.xml-val) { color: #166534; }
-	.xml-pre :global(.xml-comment) { color: #94a3b8; font-style: italic; }
-
-	/* ─── Responsive ─── */
 	@media (max-width: 900px) {
 		.cols {
 			grid-template-columns: 1fr;
